@@ -1,0 +1,222 @@
+  <p class="tree-text-up">{{"La División de Investigaciones invita a consultar las presentaciones más representativas orientadas a sus investigadores o grupos de investigación."|t}}</p>
+  <p class="tree-text-up">{{"De clic sobre el mes vigente para abrir el boletín en formato PDF."|t}}</p>
+  <div class="years">
+    {% for key, tree in trees %}
+      <div class="tree-year {{key}}">{{key}}</div>
+    {% endfor %}
+
+  </div>
+
+  {% for key, tree in trees %}
+    <div class="tree tree-{{key}} ">
+      <div class="web" >
+        <img src="/modules/custom/fucs_form/images/tree/arbol.png" class="tree-main" />
+        <div class="tree-icons">
+        {% for index, month in tree.months %}
+          <div class="tree-{{month.month}} tree-months">
+            <a href="{{month.file}}" target="_blank" >
+              <img src="/modules/custom/fucs_form/images/tree/{{month.month}}.png" class="tree-icon-{{month.month}} tree-icon" alt="{{month.title}}" />
+              <p class="tree-text tree-text-{{month.month}}">{{month.title}}</p>
+            </a>
+            <section class="tree-alt">{{month.name}}</section>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+
+      <div class="mobile">
+      {% for index, month in tree.months %}
+        {% if month.file is not empty %}
+          <div class="mobile-month">
+            <a href="{{month.file}}" target="_blank" >
+              <img src="/modules/custom/fucs_form/images/tree/mobile/{{month.month}}.png" class="" alt="{{month.title}}" />
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+
+  {% endfor %}
+
+
+<style>
+.tree {
+  margin: auto;
+  width: {{config.width}}px;
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.tree-icons, .tree-icon {
+  margin: auto;
+  text-align:center;
+}
+
+.tree-main {
+  background: white;
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+
+.tree a {
+  text-decoration: none;
+}
+
+.tree-enero {
+  position: absolute;
+  margin-top: -{{1197 + config.y}}px;
+  margin-left: {{config.x + 366}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-icon {
+  margin-top: 15px;
+  width: 30px;
+}
+
+.tree-text {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.tree-text-marzo, .tree-text-septiembre{
+  color: #6fa3ef;
+}
+
+.tree-text-inverse {
+  color: #6fa3ef;
+}
+
+.tree-febrero{
+  position: absolute;
+  margin-top: -{{1166 + config.y}}px;
+  margin-left: {{config.x + 490}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-marzo {
+  position: absolute;
+  margin-top: -{{1078 + config.y}}px;
+  margin-left: {{config.x + 372}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-abril {
+  position: absolute;
+  margin-top: -{{1092 + config.y}}px;
+  margin-left: {{config.x + 163}}px;
+  width: 87px;
+  height: 87px;
+
+}
+
+.tree-mayo {
+  position: absolute;
+  margin-top: -{{1006 + config.y}}px;
+  margin-left: {{config.x + 70}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-junio {
+  position: absolute;
+  margin-top: -{{946 + config.y}}px;
+  margin-left: {{config.x + 263}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-julio {
+  position: absolute;
+  margin-top: -{{1046 + config.y}}px;
+  margin-left: {{config.x + 580}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-agosto {
+  position: absolute;
+  margin-top: -{{956 + config.y}}px;
+  margin-left: {{config.x + 698}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-septiembre {
+  position: absolute;
+  margin-top: -{{852 + config.y}}px;
+  margin-left: {{config.x + 613}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-octubre {
+  position: absolute;
+  margin-top: -{{742 + config.y}}px;
+  margin-left: {{config.x + 334}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-noviembre {
+  position: absolute;
+  margin-top: -{{778 + config.y}}px;
+  margin-left: {{config.x + 139}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.tree-diciembre {
+  position: absolute;
+  margin-top: -{{864 + config.y}}px;
+  margin-left: {{config.x + 7}}px;
+  width: 87px;
+  height: 87px;
+}
+
+.years {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tree-year {
+  cursor: pointer;
+  color: #00000082;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 5px 50px;
+  border: 1px solid #00000021;
+  border-radius: 2px;
+}
+
+.tree-year-selected {
+  background:#E3633B;
+  color:white;
+  border:none;
+}
+
+.tree-alt {
+  background: black;
+  color: white;
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  padding: 3px 7px;
+  border-radius: 10px;
+}
+
+.tree-months:hover > .tree-alt {
+  display: block;
+}
+
+.tree-text-up {
+  text-align: center;
+}
+
+</style>

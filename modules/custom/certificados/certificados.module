@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\Core\Routing\TrustedRedirectResponse;
+
+function certificados_listado() {
+	$response = new TrustedRedirectResponse('http://localhost/drupal8/certificados/lista-certificados');
+
+	$response->send();
+	return;
+}
+
+function certificados_theme($existing, $type, $theme, $path) {
+		return [
+			'conferencista' => [
+				'variables' => [
+					'data' => NULL
+				],
+				'template' => 'certificados',
+			],
+		];
+	}

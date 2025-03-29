@@ -1,0 +1,23 @@
+<footer>
+    <div class="chat">
+        <img src="/themes/custom/fucs/images/chat.png" alt="">
+        <h4>CHAT</h4>
+    </div>
+    <div class="footer-menu">
+        <a class="a-sedes">Nuestras Sedes</a>
+        <a href="/laboratorios/laboratorio-simulacion">Laboratorios</a>
+        <a href="/auditorios/salon-fundadores">Auditorios</a>
+    </div>
+    <div class="firts-footer">
+        <div class="laboratorios sedes "  style="display:none">
+            <div class="wrapper">
+                {{ page.laboratories }}
+            </div>
+        </div>
+        {{ page.first_footer }}
+    </div>
+
+    <div class="second-footer">
+        {{ page.second_footer }}
+    </div>
+</footer>

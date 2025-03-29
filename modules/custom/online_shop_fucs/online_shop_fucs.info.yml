@@ -1,0 +1,6 @@
+name: Tienda virtual Fucs
+type: module
+description: Pagina en donde se muestran las compras hechas en la tienda virtual
+core: 8.x
+package: Manimator
+core_version_requirement: ^8 || ^9 || ^10

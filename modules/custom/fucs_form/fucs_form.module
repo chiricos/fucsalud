@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Contains fucs_form.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function fucs_form_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the oneapp_home module.
+    case 'help.page.fucs_form':
+      $output = '';
+      $output .= '<h3>' . $this->t('About') . '</h3>';
+      $output .= '<p>' . $this->t('Contains features for all fucs form') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function fucs_form_theme($existing, $type, $theme, $path) {
+  return array(
+    'fucs_form' => [
+      'variables' => [
+        'config' => NULL,
+        'form' => NULL,
+      ],
+      'template' => 'block--fucs-form',
+    ],
+    'fucs_status' => [
+      'variables' => [
+        'configurations' => NULL,
+        'data' => NULL,
+      ],
+      'template' => 'controller--fucs-status',
+    ],
+    'fucs_form_build' => [
+      'render element' => 'form',
+      'template' => 'form--fucs-build',
+    ],
+    'fucs_tree' => [
+      'variables' => [
+        'trees' => NULL,
+        'config' => NULL,
+      ],
+      'template' => 'block--tree-form',
+    ],
+  );
+}

@@ -1,0 +1,107 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function fucs_form_schema() {
+  $schema['fucs_form'] = [
+    'description' => 'The base table for fucs form.',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'document' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Number of document",
+        'not null' => FALSE,
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Email",
+        'not null' => FALSE,
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Name",
+        'not null' => FALSE,
+      ],
+      'course' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Course",
+        'not null' => FALSE,
+      ],
+      'number' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Number of question",
+        'not null' => FALSE,
+      ],
+      'question' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => "Question",
+        'not null' => FALSE,
+      ],
+      'type' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Type of question",
+        'not null' => FALSE,
+      ],
+      'answer' => [
+        'type' => 'varchar',
+        'length' => 100,
+        'description' => "Answer of the question",
+        'not null' => FALSE,
+      ],
+      'status' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Question correct o incorrect",
+        'not null' => FALSE,
+      ],
+      'uuid' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => "Number of block",
+        'not null' => FALSE,
+      ],
+      'min' => [
+        'type' => 'int',
+        'length' => 2,
+        'description' => "Min to pass the exam",
+        'not null' => FALSE,
+      ],
+      'form' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => "Number of form",
+        'not null' => FALSE,
+      ],
+      'form_id' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => "Number of form",
+        'not null' => FALSE,
+      ],
+      'created' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => "Date of create",
+        'not null' => FALSE,
+      ],
+    ],
+    'unique keys' => [
+      'id' => ['id'],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}

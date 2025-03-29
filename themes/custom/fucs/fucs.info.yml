@@ -1,0 +1,65 @@
+name: fucs
+type: theme
+description: "Thema realizado por Manimator"
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: custom
+version: 1.0
+base theme: classy
+
+regions:
+  header: "Header"
+  soy_header: "Encabezado Soy"
+  inscribete: "Sección de inscribete"
+  logo: "Logo"
+  message: "Mensaje de estado"
+  slider_principal: "Slider principal"
+  second_slider: "Segundo Banners"
+  slider_page: "Slider de la segunda pagina"
+  banner_page: "Baner de los programas"
+  social: "Social Buttons"
+  icon_help: "Meno icon help"
+  top_menu: "Top Menu"
+  primary_menu: "Primary Menu"
+  secundary_menu: "Segundo Menu"
+  submenu_page: "Menu segunda pagina"
+  sub_menu: "Sub menu segunda pagina"
+  sub_contenido_1: "Primer contenido con sub menu"
+  sub_contenido_2: "Segundo contenido con sub menu"
+  content: "Content"
+  content_first_page: "Primer contenido pagina"
+  content_second_page: "Segundo contenido pagina"
+  lenguaje: "Traductor"
+  sidebar_first: "Sidebar"
+  footer: "Footer"
+  first_footer: "Primer footer"
+  second_footer: "Segundo footer"
+  categories: "Botones de categorías"
+  regulations: "Reglamentos y Derechos"
+  various: "Varios"
+  calendar: "Home Calendario"
+  events: "Eventos"
+  news: "Noticias"
+  news_bienestar: "Noticias bienestar"
+  notibienestar: "Notibienestar"
+  video: "Videos"
+  poll: "Encuestas"
+  form_modal: "Formulario modal"
+  egresados_contenido_1: "Egresados primer contenido"
+  colaboradores_contenido_2: "Colaboradores segun contenido"
+  laboratories: "laboratorios"
+  convocatorias: "Convocatorias"
+  blog: "Blog contenidos"
+  form_linea: "Formulario en linea"
+  galeria_bienestar: "Galeria de imagenes de Bienestar universitario"
+  preuniversitario_content_1: "Preuniversitario contenido 1"
+  preuniversitario_content_2: "Preuniversitario contenido 2"
+  pregrado_link: "Pregrado link"
+  pregrado_contenido_0: "Pregrado contenido 0"
+  pregrado_contenido_1: "Pregrado contenido 1"
+  pregrado_contenido_2: "Pregrado contenido 2"
+  pregrado_contenido_3: "Pregrado contenido 3"
+
+
+libraries:
+  - fucs/base

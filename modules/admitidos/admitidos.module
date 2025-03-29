@@ -1,0 +1,10 @@
+<?php
+
+use Drupal\Core\Routing\TrustedRedirectResponse;
+
+function admitidos_listado() {
+	$response = new TrustedRedirectResponse('https://www.fucsalud.edu.co/aspirantes/lista-admitidos');
+
+	$response->send();
+	return;
+}

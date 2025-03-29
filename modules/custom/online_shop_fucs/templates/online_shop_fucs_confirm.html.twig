@@ -1,0 +1,81 @@
+<div class="pregrado-administracion-content ">
+	<div property="schema:text" data-quickedit-field-id="node/72/body/es/full" class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+<h1 style="text-align:center;color: #010149;">ESTADO DE TU TRANSACCIÓN</h1>
+
+		<div>
+			<div id="notaPaginaCaduca">
+				El contenido de esta página solo podrá verse una vez, en el momento en el que usted abandone esta página, no será accesible nuevamente.
+			</div>
+			<table border="0" align="center" cellspacing="5">
+				<tr>
+					<td>Nit</td>
+					<td>860.051.853-4</td>
+				</tr>
+				<tr>
+					<td>Razón social</td>
+					<td>Fundación Universitaria de Ciencias de la Salud</td>
+				</tr>
+				<tr>
+					<td>Valor de la transacción</td>
+          <td>$ {{data_payment.trans_value}}</td>
+				</tr>
+				<tr>
+					<td>Fecha de la transacción</td>
+          <td>{{data_payment.bank_process_date}}</td>
+				</tr>
+				<tr>
+					<td>Estado de su transacción</td>
+          <td>{{status_name}}</td>
+				</tr>
+				<tr>
+					<td>Banco</td>
+          <td>{{data_payment.bank_name}}</td>
+				</tr>
+				<tr>
+					<td>Código CUS</td>
+          <td>{{data_payment.trazability_code}}</td>
+				</tr>
+				<tr>
+					<td>Comprobante de transacción</td>
+          <td>{{data_payment.ticket_id}}</td>
+				</tr>
+			</table>
+      <div id="mensajeFinal" style="margin: 40px auto 0">
+
+      {% if status == "failed" %}
+
+En este momento su #Recibo_{{data_payment.ticket_id}} ha finalizado su proceso de pago y cuya transacción se encuentra FALLIDA en su entidad financiera. Si desea mayor información sobre el estado de su operación puede comunicarse a nuestras líneas de atención al cliente 3538100 Ext. 3572, celular: 3006687140 o enviar un correo electrónico a tiendavirtual@fucsalud.edu.co con copia a sistemas@fucsalud.edu.co y preguntar por el estado de la transacción:
+<#CUS{{data_payment.trazability_code}}>
+
+      {% elseif status == 'pending' %}
+
+En este momento su #Recibo_{{data_payment.ticket_id}} presenta un proceso de pago cuya transacción se encuentra PENDIENTE de recibir confirmación por parte de su entidad financiera, por favor espere unos minutos y vuelva a consultar más tarde para verificar si su pago fue confirmado de forma exitosa. Si desea mayor información sobre el estado de su operación puede comunicarse a nuestras líneas de atención al cliente 3538100 Ext. 3572, celular: 3006687140 o enviar un correo electrónico a tiendavirtual@fucsalud.edu.co con copia a sistemas@fucsalud.edu.co y preguntar por el estado de la transacción:
+<#CUS{{data_payment.trazability_code}}>
+
+      {% elseif status == 'not_authorized' %}
+
+En este momento su #Recibo_{{data_payment.ticket_id}} presenta un proceso de pago cuya transacción se encuentra NO AUTORIZADA en su entidad financiera. Si desea mayor información sobre el estado de su operación puede comunicarse a nuestras líneas de atención al cliente 3538100 Ext. 3572, celular: 3006687140 o enviar un correo electrónico a tiendavirtual@fucsalud.edu.co con copia a sistemas@fucsalud.edu.co y preguntar por el estado de la transacción:
+<#CUS{{data_payment.trazability_code}}>
+
+      {% else %}
+
+En este momento su #Recibo_{{data_payment.ticket_id}} ha finalizado su proceso de pago y cuya transacción se encuentra APROBADA en su entidad financiera.
+
+        <br>Si desea mayor información sobre el estado de su operación:</br><ol>
+        <li>
+          Si su transacción fue la
+          <b>compra de un libro o publicación</b>
+          puede comunicarse a nuestras líneas de atención al cliente 3538100 Ext. 3572, celular: 3006687140 o enviar un correo electrónico a tiendavirtual@fucsalud.edu.co con copia a sistemas@fucsalud.edu.co y preguntar por el estado de la transacción.</li>
+
+        <li>
+          Si su transacción fue una donación para apoyar
+          <b>el programa sembrando futuro o el bingo solidario,</b>
+          puede comunicarse al celular: 3118049534 o enviar un correo a sembrandofuturo@fucsalud.edu.co y preguntar por el estado de su transacción.</li>
+        <ol>
+
+
+      {% endif %}
+			</div>
+		</div>
+	</div>
+</div>

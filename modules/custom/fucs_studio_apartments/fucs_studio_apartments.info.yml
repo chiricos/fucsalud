@@ -1,0 +1,8 @@
+name: "Fucs Apartaestudios"
+type: module
+description: "Contains features for studio apartments"
+package: "Fucs"
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+version: "8.1.0"
+dependencies:

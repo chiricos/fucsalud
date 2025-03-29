@@ -1,0 +1,41 @@
+
+<div class="continuada-contenidos row" >
+    <div class="wrapper">
+        <div class="content-continuada">
+            <div class="continuada-menu-contenido">
+                {{ page.sub_menu }}
+            </div>
+
+            <div class="continuada-eventos">
+                <section>
+                    {{ page.sub_contenido_1 }}
+
+                </section>
+                <div class="news">
+                    <div class="">
+                        <div class="tabs">
+                            <a class="active menu-noticias">NOTICIAS</a>
+                            <a class=" menu-eventos">EVENTOS</a>
+                        </div>
+                        <div class="eventos noticias sub-noticias">
+                            {{ page.news }}
+                        </div>
+                        <div class="sub-eventos sub-seccion" style="display: none">
+                            <div class="col-xs-6 calendar-content" >
+                                {{ page.calendar }}
+                            </div>
+                            <div class="col-xs-6 eventos " >
+                                {{ page.events }}
+                            </div>
+                        </div>
+
+                    </div>
+               </div>
+
+                {{ page.sub_contenido_2 }}
+               
+
+            </div>
+        </div>
+    </div>
+</div>

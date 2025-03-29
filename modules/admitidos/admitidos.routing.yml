@@ -1,0 +1,23 @@
+admitidos.content:
+  path: '/admin/importar-admitidos'
+  defaults:
+    _controller: '\Drupal\admitidos\Controller\ImportPage::content'
+    _title: 'Importar listado de admitidos'
+  requirements:
+    _permission: 'access administration pages'
+
+admitidos.consulta:
+  path: '/consulta-aspirantes'
+  defaults:
+    _controller: '\Drupal\admitidos\Controller\ConsultaAspirante::consulta'
+    _title: 'Consultar estado de aspirante'
+  requirements:
+    _permission: 'access content'
+
+admitidos.resultado:
+  path: '/resultado-consulta/{documento}'
+  defaults:
+    _controller: '\Drupal\admitidos\Controller\ResultadoConsulta::consulta_resultado'
+    _title: 'Resultado de su consulta'
+  requirements:
+    _permission: 'access content'

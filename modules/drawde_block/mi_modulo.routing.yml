@@ -1,0 +1,7 @@
+mi_modulo.insertarGastoForm:
+  path: '/mi_modulo/insertar-gasto'
+  defaults:
+    _form: '\Drupal\mi_modulo\Form\InsertarGastoForm'
+    _title: 'Insertar gasto'
+  requirements:
+    _permission: 'access content'

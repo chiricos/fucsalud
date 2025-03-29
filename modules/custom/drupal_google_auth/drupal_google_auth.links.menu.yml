@@ -1,0 +1,6 @@
+drupal_google_auth.google_auth_configs:
+  title: 'Configuración de Google Auth'
+  route_name: config
+  description: 'Configuración de la Google Auth'
+  parent: system.admin_config_system
+  weight: 1

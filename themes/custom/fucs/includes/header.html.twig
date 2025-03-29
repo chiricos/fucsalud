@@ -1,0 +1,137 @@
+<header><meta charset="gb18030">
+	<div class="menu-tablet">
+		<figure class="logo ">
+			<a href="/" aria-label="logo">
+				<img src="/sites/default/files/logo.png" alt="Logo fucs">
+			</a>
+		</figure>
+		<div class=" menu-first " >
+			{{ page.top_menu }}
+			<div class="inscribete-mobil-top">
+				<img src="/themes/custom/fucs/images/inscribete.png" alt="inscribete">
+				<h4>{{ "CONTACTO PROGRAMAS"|t}}</h4>
+			</div>
+		</div>
+		<div class="menu-mobil">
+			<img src="/themes/custom/fucs/images/menu-mobil.png" alt="menu" class="mobil-open">
+			<img src="/themes/custom/fucs/images/menu-mobil-open.png" alt="menu" class="mobil-close" style="display: none">
+			<div class="menu-desplegable">
+				<div class="mobil-header">
+					<div class="iniciar-mobil">
+						<a href="/user/login">
+							<img src="/themes/custom/fucs/images/iniciar.png" alt="login">
+							{{"Iniciar sesión"|t}}
+						</a>
+
+					</div>
+					<div class="google-mobil ">
+						<a href="http://mail.fucsalud.edu.co/" class="icon-mail" target="_blank" aria-label="correo"></a>
+					</div>
+
+					<div class="menu-tablet-desplegable" >
+						<div class="region-icon-help-mobile">
+							{{ page.icon_help }}
+						</div>
+						<div class="search-mobil search">
+							<input type="text" placeholder="Buscar" class="form-control" id="inputSearch1">
+							<button class="glyphicon glyphicon-search" id="inputButton1"></button>
+						</div>
+						<div class="menu-primero-mobil">
+							{{ page.top_menu }}
+						</div>
+						<div class="mobil-social">
+							{{ page.social }}
+						</div>
+						<div class="soy-header-mobil">
+							{{page.soy_header}}
+						</div>
+						<div class="menu-segundo-mobil">
+							{{ page.primary_menu }}
+						</div>
+					
+						<a href="/contactenos">
+							<div class="inscribete-mobil">
+								<p><img alt="inscribete" src="/themes/custom/fucs/images/inscribete.png"></p>
+								<h4>{{ "CONTACTO PROGRAMAS"|t}}</h4>
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="send col-md-4">
+			<a href="http://mail.fucsalud.edu.co/" class="icon-mail" target="_blank" aria-label="Correo"></a>
+			<div class="line"></div>
+			<div class="google-trans">
+				{{ page.lenguaje }}
+			</div>
+
+		</div>
+	</div>
+    <div class="menu-top " >
+        <div class="top " >
+			<div class="region-icon-help">
+				{{ page.icon_help }}
+			</div>
+            <div class=" menu-first " >
+                {{ page.top_menu }}
+            </div>
+            <div class="search-login ">
+                <div class="send ">
+                    <a href="http://mail.fucsalud.edu.co/" class="icon-mail" target="_blank" aria-label="Correo"></a>
+                    <div class="google-trans">
+                        {{ page.lenguaje }}
+    
+                    </div>
+
+                </div>
+                <div class="search ">
+					<div class="line-search">
+						<input type="text" placeholder="Buscar" class="form-control" id="inputSearch">
+					</div>
+                    <button class="glyphicon glyphicon-search" id="inputButton" aria-labelledby="search-button"></button>
+					
+                </div>
+                <div class="menu region-soy-header">
+					<div class="line"></div>
+					{{page.soy_header}}
+				</div>
+                <div class=" login ">
+                    <a href="/user/login" class="">Iniciar sesión <span ><img src="/themes/custom/fucs/images/iniciar.png" alt="login"></span></a>
+                </div>
+                <div class="quiero-fucs">
+					<section > 
+						<a href="/index.php/contacto" class=""> <span >Quiero ser FUCS</span></a>
+					</section>
+					<section > 
+						<a href="/aspirantes/inscripcion-en-linea" class=""> <span >Inscripciones</span></a>
+					</section>
+                </div>
+              
+            </div>
+
+        </div>
+         
+        
+    </div>
+	<div class="region-section-logo" >
+		<figure class="logo ">
+			{{ page.logo }}
+
+		</figure>
+        <div class="menu ">
+            {{ page.primary_menu }}
+        
+
+	</div>
+	</div>
+	<div class="social">
+		{{ page.social }}
+	</div>
+	{{ page.inscribete }}
+
+
+</header>

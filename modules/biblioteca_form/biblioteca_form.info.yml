@@ -1,0 +1,11 @@
+
+
+name: formulario de biblioteca
+description: formulario de biblioteca
+package: drawde
+core_version_requirement: ^8 || ^9
+type: module
+core: 8.x
+
+dependencies:
+  - block

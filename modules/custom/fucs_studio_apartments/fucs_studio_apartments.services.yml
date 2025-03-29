@@ -1,0 +1,4 @@
+services:
+  fucs_studio_apartments.email:
+    class: Drupal\fucs_studio_apartments\Services\EmailService
+    arguments: []

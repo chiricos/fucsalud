@@ -1,0 +1,23 @@
+<div class="md:flex text-center">
+  <div class="bg-white p-8 w-2/4 m-auto shadow-xl rounded mb-4 form-question form-question-question0 js-form-wrapper form-wrapper border-2 border-gray-100">
+    <img src="/modules/custom/fucs_form/images/soy_la_fucs.png" alt="la fucs" class="w-full max-w-sm m-auto" />
+    <p class="mt-2 text-gray-600 hidden">{{ "¿Estás a punto de iniciar formalmente tu carrera y has considerado que tu futuro debe estar en la FUCS?"|t }}</p>
+    <p class="mt-2 text-gray-600 hidden">{{ "¡Excelente!, tenemos muchas cosas que enseñarte y para ello te contamos lo más importante que debes conocer sobre tu Institución."|t }}</p>
+    <p class="mt-2 text-gray-600 font-black hidden">{{ "¡Empecemos!"|t }}</p>
+    <p class="mt-2 text-gray-600 hidden">{{ "¿Ya consultaste el manual de inducción? ¿Lo tienes a la mano? Entonces inicia el juego. Responde las preguntas lo antes posible; para superarlo, debes obtener como mínimo 80 puntos. ¡Adelante!"|t }}</p>
+    <p class="mt-2 text-gray-600 hidden">{{ "Tienes tres (3) intentos y 45 minutos por intento, así que muy concentrado."|t }}</p>
+    <a href="#" class="mt-2 text-gray-600 text-3xl block">{{ "Respuestas correctas:"|t }} {{data.good}}</a>
+    <a href="#" class="mt-2 text-gray-600 text-3xl block">{{ "Respuestas incorrectas:"|t }} {{data.bad}}</a>
+    <p class="mt-2 text-gray-600 text-3xl">{{data.message}}</p>
+    {% if configurations.repeat %}
+      <p class="mt-2 text-gray-600  text-3xl">{{ "¡Vamos! Es un juego que te permite aprender sobre su Institución."|t }}</p>
+      <a href="{{configurations.repeatUrl}}" class="text-2xl">
+        <img src="/modules/custom/fucs_form/images/bt-nuevo-intento.png" alt="Volverlo a intentar" class="w-full max-w-sm m-auto" />
+      </a>
+    {% else %}
+      <a href="{{data.certificate}}" target="_blank" class="text-2xl">
+        <img src="/modules/custom/fucs_form/images/bt-certificado-descarga.png" alt="Descargar certificado" class="w-full max-w-sm m-auto" />
+      </a>
+    {% endif %}
+  </div>
+</div>

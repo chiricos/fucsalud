@@ -1,0 +1,172 @@
+@font-face {
+	font-family: 'coronet';
+	src: url('fonts/Coronet.eot');
+	src: url('fonts/Coronet.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Coronet.woff2') format('woff2'),
+			url('fonts/Coronet.woff') format('woff'),
+			url('fonts/Coronet.ttf') format('truetype'),
+			url('fonts/Coronet.svg#Coronet') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'erasDemi';
+	src: url('fonts/ErasITC-Demi.eot');
+	src: url('fonts/ErasITC-Demi.eot?#iefix') format('embedded-opentype'),
+			url('fonts/ErasITC-Demi.woff2') format('woff2'),
+			url('fonts/ErasITC-Demi.woff') format('woff'),
+			url('fonts/ErasITC-Demi.ttf') format('truetype'),
+			url('fonts/ErasITC-Demi.svg#ErasITC-Demi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'erasMedium';
+	src: url('fonts/ErasITC-Medium.eot');
+	src: url('fonts/ErasITC-Medium.eot?#iefix') format('embedded-opentype'),
+			url('fonts/ErasITC-Medium.woff2') format('woff2'),
+			url('fonts/ErasITC-Medium.woff') format('woff'),
+			url('fonts/ErasITC-Medium.ttf') format('truetype'),
+			url('fonts/ErasITC-Medium.svg#ErasITC-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'erasBold';
+	src: url('fonts/ErasITC-Bold.eot');
+	src: url('fonts/ErasITC-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/ErasITC-Bold.woff2') format('woff2'),
+			url('fonts/ErasITC-Bold.woff') format('woff'),
+			url('fonts/ErasITC-Bold.ttf') format('truetype'),
+			url('fonts/ErasITC-Bold.svg#ErasITC-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+html
+{
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body
+{
+	border: none !important;
+	color: black;
+	height: 100% !important;
+	margin: 0 !important;
+	overflow: hidden;
+	padding: 0 !important;
+	text-align: center;
+	width: 100% !important;
+}
+
+table
+{
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+}
+
+p
+{
+	border: none !important;
+	color: black;
+	display: block;
+	overflow: hidden;
+	overflow-wrap: break-word !important;
+	padding: 0;
+	position: relative;
+	text-align: center;
+}
+
+td
+{
+	overflow-wrap: break-word !important;
+}
+
+td p, td h2, td img
+{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+img
+{
+	display: block;
+}
+
+.respuestaCertificado
+{
+	height: 100%;
+	width: 100%
+}
+
+td img.imgLogo
+{
+	padding: 10px 0 0 !important;
+}
+
+.titulo
+{
+	color: #001160;
+	font: normal 28px 'erasDemi';
+	padding: 0 0 00px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.certifica
+{
+	font: normal 17px 'erasDemi';
+	padding: 0 0 10px !important;
+}
+
+.nombre
+{
+	font: 500 17px 'erasMedium';
+	padding: 0 0 10px !important;
+}
+
+.asistio
+{
+	font: 500 17px 'erasMedium';
+	padding: 0 0 10px;
+}
+
+.autores
+{
+	background: url(images/fondoNombre.png) no-repeat center;
+	background-size: cover;
+	font: normal 30px 'coronet';
+	line-height: 15px !important;
+	padding: 0 0 20px !important;
+	text-transform: capitalize;
+	vertical-align: middle !important;
+}
+
+.posicion, .evento
+{
+	font: normal 19px 'erasDemi';
+	padding: 0 0 10px !important;
+}
+
+.fecha
+{
+	font: 500 18px 'erasMedium';
+	padding: 0 0 10px !important;
+}
+
+.constancia
+{
+	font: normal 18px 'erasDemi';
+	padding: 0 0 30px;
+}
+
+.acuerdo {
+	font: 500 12px 'erasMedium';
+}

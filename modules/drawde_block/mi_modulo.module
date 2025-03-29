@@ -1,0 +1,23 @@
+<?php
+/**
+ * Theme hook
+ */
+function mi_modulo_theme($existing, $type, $theme, $path) {
+    return [
+        'bloque_insertar_gasto' => [
+            'variables'         => [
+                'title'         => 'Default title',
+                'description'   =>  NULL,
+                'formulario'    => NULL
+            ],
+            'template' => 'bloque-insertar-gasto'],
+
+        'pagina_insertar_gasto' => [
+            'variables'         => [
+                'title'         => 'Default title',
+                'description'   => NULL,
+                'formulario'    => NULL
+            ],
+            'template' => 'pagina-insertar-gasto'],
+    ];
+}

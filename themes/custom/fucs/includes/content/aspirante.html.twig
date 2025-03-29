@@ -1,0 +1,41 @@
+
+<div class="aspirante-contenidos row">
+    <div class="wrapper">
+        {{ page.colaboradores_contenido_1 }}
+        <div class="news-aspirante ">
+                <div class="tabs">
+                    <p><img alt="" src="/themes/custom/fucs/images/news.png" />NOTICIAS</p>
+                </div>
+
+                <div class="eventos noticias">{{ page.news }}</div>
+        </div>
+
+        <div class="aspirantes-admisiones">
+            <div class="col-xs-12 col-md-8 ">
+                <div class="tabs">
+                    <a class="active menu-eventos" id="calendario">CALENDARIO DE ADMISIONES</a>
+                    <a class="menu-encuestas" id="menu-encuestas">CAE</a>
+                    <a class="menu-videos" id="menu-videos">VIDEO</a>
+                </div>
+
+                <div class="sub-eventos sub-seccion">
+                    <div class="col-xs-6 calendar-content">{{ page.calendar_admisiones }}</div>
+
+                    <div class="col-xs-6 eventos ">
+                        {{ page.events }}</div>
+                </div>
+
+                <div class="sub-encuestas sub-seccion" style="display: none">
+                    {{ page.poll }}
+                </div>
+
+                <div class="sub-videos sub-seccion" style="display:none;">
+                    {{ page.video }}
+                </div>
+            </div>
+        </div>
+
+        {{ page.colaboradores_contenido_2 }}
+
+    </div>
+</div>

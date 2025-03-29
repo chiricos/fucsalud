@@ -1,0 +1,20 @@
+fucs_form.form_configs:
+  title: 'Configuración de correos del certificado de la fucs'
+  route_name: fucs_form.settings.config_fucs
+  description: 'Configuración de la fucs'
+  parent: system.admin_config_system
+  weight: 1
+
+fucs_form.form_settings:
+  title: 'Configuración del formulario de la Fucs'
+  route_name: fucs_form.form_settings
+  description: 'Permite establecer la configuración global el formulario de la Fucs'
+  parent: system.admin_config_system
+  weight: 2
+
+fucs_form.form_filters:
+  title: 'Exportar formularios de la Fucs'
+  route_name: fucs_form.form_filters
+  description: 'Exportar formulario de la Fucs'
+  parent: system.admin_config_system
+  weight: 3

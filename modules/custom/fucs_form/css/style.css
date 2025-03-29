@@ -1,0 +1,41 @@
+.page-title {
+  text-align: center;
+}
+
+.block-fucs-form h2{
+  margin: 0;
+  text-align: center;
+}
+
+.fieldset-legend {
+  color: black;
+  font-size: 18px;
+}
+
+.mobile {
+  display: none;
+  max-width: 100%;
+}
+
+.mobile-month {
+  text-align: center;
+  max-width: 100%;
+}
+
+.mobile-month img {
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 800px) {
+  .web {
+    display: none!important;
+  }
+
+  .mobile {
+    display: block!important;
+  }
+
+  .tree{
+    width: 100%!important;
+  }
+}

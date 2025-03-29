@@ -1,0 +1,47 @@
+
+<div class="investigacion-contenidos row">
+    <div class="wrapper">
+        <div class="convocatoria-investigacion ">
+
+            <div class="col-xs-6 col-md-4 ">
+                <div class="investigacion-tabs">
+                    <p><img alt="" src="/themes/custom/fucs/images/investigacion/icon.png" />CONVOCATORIAS</p>
+                    <!--<div class="balls">
+                                        <span><figure class="active"></figure></span>
+                                        <span><figure></figure></span>
+                                        <span><figure></figure></span>
+                                    </div>--></div>
+
+                <div class="investigacion-eventos investigacion-noticias">{{ page.convocatorias }}</div>
+            </div>
+        </div>
+
+        <div class="aspirantes-admisiones investigacion-pestañas">
+            <div class="col-xs-12 col-md-8 ">
+                <div class="tabs">
+
+                    <a class="active menu-encuestas" id="menu-encuestas">NOTICIAS </a>
+                    <a class=" menu-eventos" id="calendario">EVENTOS</a>
+                    <a class="menu-videos" id="menu-videos">VIDEOS</a>
+                </div>
+
+                <div class="sub-encuestas sub-seccion" >
+                    {{ page.news }}
+                </div>
+
+                <div class="sub-eventos sub-seccion" style="display: none">
+                    <div class="col-xs-6 calendar-content">{{ page.calendar_admisiones }}</div>
+
+                    <div class="col-xs-6 eventos ">
+                        {{ page.events }}</div>
+                </div>
+
+
+
+                <div class="sub-videos sub-seccion" style="display:none;">
+                    {{ page.video }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

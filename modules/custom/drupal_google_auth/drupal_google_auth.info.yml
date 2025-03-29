@@ -1,0 +1,6 @@
+name: Drupal Google Auth
+type: module
+description: Loging con google
+core: 8.x
+package: Edward Díaz
+core_version_requirement: ^8 || ^9 || ^10

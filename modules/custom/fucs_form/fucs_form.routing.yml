@@ -1,0 +1,79 @@
+fucs_form.form_settings:
+  path: '/admin/config/fucs/settings'
+  defaults:
+    _form: '\Drupal\fucs_form\Form\FucsSettingsForm'
+    _title: 'Configuraciones del formulario de la Fucs'
+  requirements:
+    _permission: 'access fucs form settings'
+  options:
+    _admin_route: TRUE
+
+fucs_form.settings.config_fucs:
+  path: '/admin/config/system/fucs/config'
+  defaults:
+    _form: '\Drupal\fucs_form\Form\FucsConfig'
+    _title: 'Configuración de correos del certificado de la fucs'
+  requirements:
+    _permission: 'access fucs form settings'
+  options:
+    _admin_route: TRUE
+
+fucs_form.form_filters:
+  path: '/admin/config/fucs/export'
+  defaults:
+    _form: '\Drupal\fucs_form\Form\FucsExportForm'
+    _title: 'Exportar formularios de la Fucs'
+  requirements:
+    _permission: 'access fucs form settings'
+  options:
+    _admin_route: TRUE
+
+fucs_form.form_status:
+  path: '/fucs/formulario/resultado'
+  defaults:
+    _controller: '\Drupal\fucs_form\Controller\FucsFormController::status'
+    _title: 'Resultado del examen'
+  requirements:
+    _custom_access: '\Drupal\fucs_form\Controller\FucsFormController::access'
+  options:
+    no_cache: TRUE
+
+fucs_form.form_timeout:
+  path: '/fucs/formulario/limite-de-tiempo'
+  defaults:
+    _controller: '\Drupal\fucs_form\Controller\FucsFormController::tiemout'
+    _title: 'Su tiempo se acabo'
+  requirements:
+    _custom_access: '\Drupal\fucs_form\Controller\FucsFormController::access'
+  options:
+    no_cache: TRUE
+
+fucs_form.form_login:
+  path: '/fucs/formulario/registro'
+  defaults:
+    _form: '\Drupal\fucs_form\Form\FucsLoginForm'
+    _title: 'Ingresa tus datos'
+  requirements:
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE
+
+fucs_form.form_certificate:
+  path: '/fucs/formulario/certificado'
+  defaults:
+    _controller: '\Drupal\fucs_form\Controller\FucsFormController::genratePdf'
+    _title: 'Resultado del examen'
+  requirements:
+    _custom_access: '\Drupal\fucs_form\Controller\FucsFormController::access'
+  options:
+    no_cache: TRUE
+
+fucs_form.form_search:
+  path: '/fucs/induccion/buscar'
+  defaults:
+    _form: '\Drupal\fucs_form\Form\FucsSearchForm'
+    _title: 'Buscar por documento'
+  requirements:
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE

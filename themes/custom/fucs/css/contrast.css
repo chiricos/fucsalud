@@ -1,0 +1,185 @@
+
+html.dark-mode body {
+  background: black;
+}
+
+html.dark-mode .region-section-logo {
+  background: black;
+}
+
+html.dark-mode .top {
+  background: wheat;
+}
+
+html.dark-mode .menu-first ul li a {
+  color: #092755 !important;
+}
+
+html.dark-mode .region-soy-header .menu .menu-item>.is-active {
+  color: #092755 !important;
+}
+
+html.dark-mode .region-primary-menu ul.menu a.is-active {
+  color: white;
+}
+
+html.dark-mode .region-primary-menu ul.menu a {
+  color: white;
+}
+
+html.dark-mode .menu ul li>ul {
+  background: white;
+}
+
+html.dark-mode .region-primary-menu .menu .menu-item--expanded:nth-child(2)>.menu>li>.menu>li>a {
+  background: back;
+}
+
+html.dark-mode .varios-text a {
+  color: wheat;
+}
+
+html.dark-mode .tabs p {
+  color: wheat;
+}
+
+html.dark-mode .noticias-title-content a {
+  color: wheat;
+}
+
+html.dark-mode .tabs a {
+  color: wheat;
+}
+
+html.dark-mode .noticias-text {
+  color: white;
+}
+
+html.dark-mode .events .views-field-title a {
+  color: wheat;
+}
+
+html.dark-mode .views-field-body {
+  color: white;
+}
+
+html.dark-mode .video .field-content a {
+  color: wheat;
+}
+
+html.dark-mode .footer-menu {
+  background: white;
+}
+
+html.dark-mode .wrapper-first-footer, html.dark-mode .second-footer, html.dark-mode .footer-info, html.dark-mode .footer-resena {
+  background: wheat;
+}
+
+html.dark-mode .footer-sedes-txt span {
+  color: black;
+}
+
+html.dark-mode .footer-info-web h2 {
+  color: black;
+}
+
+html.dark-mode .footer-resena {
+  color: black;
+}
+
+html.dark-mode .footer-content-legal a {
+  color:black;
+}
+
+html.dark-mode .footer-info p {
+  color: black;
+}
+
+html.dark-mode .second-footer p {
+  color: black;
+}
+
+html.dark-mode .second-footer-contacto a {
+  color: black;
+}
+
+html.dark-mode .botones-aspirantes p {
+  color: wheat;
+}
+
+html.dark-mode b, html.dark-mode strong {
+  color: wheat;
+}
+
+html.dark-mode body {
+  color: wheat;
+}
+html.dark-mode .acordion-lateral-iz ul li {
+  border-top: 1px dashed wheat;
+}
+
+html.dark-mode .acordion-lateral-iz ul li a {
+  color: wheat;
+}
+
+html.dark-mode .pregrado-administracion-content h1 {
+  color: wheat;
+}
+
+html.dark-mode .pregrado-administracion-content p {
+  color: white;
+}
+
+html.dark-mode .pregrado-administracion-content h3 {
+  color: wheat;
+}
+
+html.dark-mode .preuniversitario-botton section>div {
+  background: wheat;
+}
+
+html.dark-mode .preuniversitario-botton section div div h5 {
+  color: black;
+}
+
+html.dark-mode .preuniversitario-botton section div div p {
+  color: black;
+}
+
+html.dark-mode .pregrado-administracion .panel-default>.panel-heading {
+  background: black;
+  border-top: 1px dashed wheat;
+  border-bottom: 1px dashed wheat;
+}
+
+html.dark-mode .biblioteca-sedes .sede-title h2 {
+  color: wheat;
+}
+
+html.dark-mode .biblioteca-sedes .view-content section p:first-child {
+  color: wheat;
+}
+
+html.dark-mode .continuada-redes div article div p {
+  color: wheat;
+}
+
+html.dark-mode .pregrado-administracion-content ul li, html.dark-mode .pregrado-administracion-content ol li {
+  color:white;
+}
+
+html.dark-mode .pregrado-administracion-content h2 {
+  color: wheat;
+}
+
+html.dark-mode .events-date time {
+  color: white;
+}
+
+html.dark-mode .events-text {
+  color: white;
+}
+
+html.dark-mode .estudiantes-sub-menu ul li a {
+  font-size: 16px;
+}

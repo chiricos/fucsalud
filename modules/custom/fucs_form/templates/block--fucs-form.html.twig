@@ -1,0 +1,90 @@
+{% if config.attempts.valid %}
+    <div class="modal-fucs-form fixed w-full top-0 right-0 h-full shadow-lg alert-primary p-4 bg-black z-10 shadow-md" style="z-index:9999">
+      <a><i class="bg-primary zi-close-outline block h-8 w-8 float-right m-4 cursor-pointer modal-login-close"></i></a>
+      <div class="w-full md:w-2/6 m-auto bg-white rounded p-4 mt-24">
+          <div class="title-container p-4 text-center">
+              <h4 class="text-center font-black text-teal-800 title text-3xl form-login">{{ "Lo sentimos" | t }}</h4>
+              <p class="mt-2 text-gray-600">Solo tienes {{ config.attempts.number }} intentos.</p>
+              <a class="inline-block align-baseline font-bold text-2xl text-blue-500 hover:text-blue-800" href="/">
+                  Volver
+                </a>
+          </div>
+      </div>
+    </div>
+{% else %}
+  {% if config.valid %}
+
+  <div class="text-center">
+   <img src="/modules/custom/fucs_form/images/soy_la_fucs.png" alt="la fucs" class="w-full max-w-sm m-auto" />
+    <div class="text-2xl text-gray-800">{{ "Tiempo total" | t }}: {{config.time}}</div>
+    <div class="text-2xl text-gray-800">{{ "Tiempo transcurrido" | t }} <span class="fucs-hour">00</span>:<span class="fucs-minute">00</span>:<span class="fucs-second">00</span></div>
+    <input type="number" value="{{config.timeout}}" class="timeout hidden">
+    {{form}}
+  </div>
+
+  {% else %}
+    <div class="modal-fucs-form fixed overflow-auto w-full top-0 right-0 h-full shadow-lg alert-primary p-4 bg-black z-10 shadow-md" style="z-index:9999">
+        <a><i class="bg-primary zi-close-outline block h-8 w-8 float-right m-4 cursor-pointer modal-login-close"></i></a>
+        <div class="w-full md:w-2/6 m-auto bg-white rounded p-4 mt-24">
+            <div class="title-container p-4 text-center">
+                <img src="/modules/custom/fucs_form/images/soy_la_fucs.png" alt="la fucs" class="w-full max-w-sm m-auto" />
+                <h4 class="text-center font-black text-teal-800 title text-3xl form-login mt-0">{{ "Ingresa tus datos" | t }}</h4>
+                <p class="m-0 text-gray-600">
+                  {{ "Por favor digitar correctamente nombres y apellidos ya que se verá reflejado al momento de descargar el certificado." | t }}
+                </p>
+            </div>
+            <div class="w-full max-w-md m-auto">
+              <form class="bg-white  rounded px-8 pt-6 pb-8 mb-4">
+                {% if config.formConfig.name %}
+                <div class="mb-4">
+                  <label class="block text-gray-700 text-2xl font-bold mb-2" for="name">
+                    {{ "Nombres y apellidos" | t }}
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" required type="text" placeholder="Nombres y apellidos">
+
+                </div>
+                {% endif %}
+
+                {% if config.formConfig.email %}
+                <div class="mb-4">
+                  <label class="block text-gray-700 text-2xl font-bold mb-2" for="email">
+                    {{ "Correo electrónico" | t }}
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" id="email" required type="email" placeholder="Correo electrónico">
+                </div>
+                {% endif %}
+
+                {% if config.formConfig.course %}
+                <div class="mb-4">
+                  <label class="block text-gray-700 text-2xl font-bold mb-2" for="course">
+                    {{ "Programa académico" | t }}
+                  </label>
+                  <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="course" id="course" required type="text" placeholder="Programa academico">
+                    {% for course in config.formConfig.courses %}
+                        <option value="{{course}}">{{course}}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+                {% endif %}
+
+                <div class="mb-4">
+                  <label class="block text-gray-700 text-2xl font-bold mb-2" for="docuemnt">
+                    {{ "Número de documento" | t }}
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="document" id="document" required type="number" placeholder="Número de documento">
+                </div>
+
+                <div class="flex items-center justify-between mt-12">
+                  <input type="submit" class="w-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" value="Enviar">
+                  <a class="inline-block align-baseline font-bold text-2xl text-blue-500 hover:text-blue-800" href="/">
+                    {{ "Salir" | t }}
+                  </a>
+                </div>
+
+              </form>
+            </div>
+        </div>
+    </div>
+  {% endif %}
+
+{% endif %}

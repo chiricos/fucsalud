@@ -1,0 +1,18 @@
+base:
+  version: 1.x
+  css:
+    theme:
+      pluggins/fuentes/trebuchet/trebuchet.css: { weight: -14 }
+      pluggins/fuentes/futura.css: { weight: -13 }
+      css/flexslider.css: { weight: -12 }
+      pluggins/fontello/css/fontello.css: { weight: -11 }
+      pluggins/bootstrap/css/bootstrap.min.css: { weight: -10 }
+      css/style.css: { weight: -9 }
+      css/contrast.css: { weight: -8 }
+  js:
+    js/jquery.flexslider.js: {}
+    js/main.js: {}
+    js/car.js: {}
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery

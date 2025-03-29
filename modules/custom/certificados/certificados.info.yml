@@ -1,0 +1,6 @@
+name: Certificados
+description: Muestra los diferentes certificados emitidos.
+package: Manimator
+core_version_requirement: ^8 || ^9 || ^10
+type: module
+core: 8.x

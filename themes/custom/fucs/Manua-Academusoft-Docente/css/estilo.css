@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+margin:0;
+padding:0;
+height:80%;
+}
+.bodyversion{
+margin:5px;
+background-color:#f0f0f0;
+}
+img{
+border:none;
+}
+#contenedor{
+position:absolute;
+width:100%;
+height:80%;
+min-width:800px;
+margin:0px;
+}
+#header{
+height:115px;
+background-image:url(../images/headerbg.jpg);
+text-align:left;
+}
+#header1{
+float:left;
+}
+#header2{
+background-image:url(../images/header2.jpg);
+background-repeat:no-repeat;
+width:328px;
+height:75px;
+float:right;
+text-align:right;
+font-family: "Trebuchet MS", Tahoma, Arial;
+font-size: 20px;
+font-weight:bold;
+letter-spacing:2px;
+color:#ffcc00;
+padding:40px 20px 0px 0px;
+}
+#plataforma{
+font-family: "Trebuchet MS", Tahoma, Arial;
+font-size: 12px;
+color:#666;
+text-align:right;
+margin:2px 5px 0 0;
+}
+#contenedorframes{
+padding:5px 5px 8px 5px;
+}
+#pie{
+font-family: "Trebuchet MS", Tahoma, Arial;
+font-size: 12px;
+color:#333;
+text-align:center;
+margin:0px;
+clear:both;
+}
+#pestana{
+float:left;
+margin:0px;
+}
+#contenidos {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#333333;
+text-align:justify;
+padding:0 30px 0 10px;
+min-width:96%;
+}
+.titulos_01{
+font-family: "Trebuchet MS", Tahoma, Arial;
+font-size: 18px;
+font-weight: bold;
+color: #01488E;
+}
+.titulos_02{
+font-family: "Trebuchet MS", Tahoma, Arial;
+font-size: 14px;
+font-weight: bold;
+color: #990000;
+}
+.subtitulos{
+font-family: "Trebuchet MS", Tahoma, Arial;
+font-size: 12px;
+font-weight: bold;
+color: #000;
+}
+#contenidos .negrilla{
+font-weight: bold;
+}
+.contenidos_bgcolor{
+background:#e6e6e6;
+}
+a:link{
+color: #01488E;
+}
+a:visited {
+color: #666666;
+}
+a:hover {
+color: #01488E;
+}
+a:active {
+color: #01488E;
+}
+.tablaversion {
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+border-collapse:collapse;
+width:100%;
+background-color:#FFFFFF;
+}
+.tablaversion caption {
+font-family:"Trebuchet MS", Tahoma, Arial;
+font-size: 14px;
+color: #990000;
+font-weight: bold;
+text-align: left;
+margin-bottom: 5px;
+margin-left:0px;
+}
+.tablaversion thead th {
+border-bottom:2px solid #990000;
+color:#999;
+text-align:left;
+padding:5px;
+text-transform:uppercase;
+font-weight: bold;
+}
+.colfecha .colmanual .colproducto{
+width:15%
+}
+.coldescripcion{
+width:35%;
+}
+.colautor{
+width:20%;
+}
+.colconcepto{
+width:30%;
+}
+.coldefinicion{
+width:70%;
+}
+.tablaversion tbody tr {
+border-bottom:1px solid #e6e6e6;
+}
+.tablaversion tbody td {
+color:#333;
+padding:5px;
+text-align:left;
+vertical-align:text-top;
+}
+.tablaversion tbody th {
+text-align:left;
+padding:2px;
+}
+.tablaversion tbody td:hover {
+background-color:#e6e6e6;
+}

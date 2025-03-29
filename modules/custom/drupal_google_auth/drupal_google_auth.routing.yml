@@ -1,0 +1,31 @@
+google:
+  path: /google-auth
+  defaults:
+    _controller: Drupal\drupal_google_auth\Controller\GoogleAuthController::getAuth
+    _title: Google
+  requirements:
+    _permission: 'access content'
+
+callback:
+  path: /auth/google/callback
+  defaults:
+    _controller: Drupal\drupal_google_auth\Controller\GoogleAuthController::callback
+    _title: Google
+  requirements:
+    _permission: 'access content'
+
+login:
+  path: /auth/google/login
+  defaults:
+    _controller: Drupal\drupal_google_auth\Controller\GoogleAuthController::login
+    _title: Google
+  requirements:
+    _permission: 'access content'
+
+config:
+  path: /admin/google-auth/config
+  defaults:
+    _form: Drupal\drupal_google_auth\Form\GoogleAuthForm
+    _title: Google Auth config
+  requirements:
+    _permission: 'access content'

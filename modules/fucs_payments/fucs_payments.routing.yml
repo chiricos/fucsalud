@@ -1,0 +1,19 @@
+fucs_payments.see_payments:
+  path: '/admin/config/fucs/payments'
+  defaults:
+    _form: '\Drupal\fucs_payments\Form\FucsPaymentsForm'
+    _title: 'Ver el listado de compras de libros'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+fucs_payments.see_payments_pending:
+  path: '/admin/config/fucs/payments/pending'
+  defaults:
+    _form: '\Drupal\fucs_payments\Form\FucsPaymentsPendingForm'
+    _title: 'Compras de libros pendientes'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

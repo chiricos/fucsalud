@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Academusoft - Universidad de Pamplona</title>
+<link rel="StyleSheet" href="css/dtree.css" type="text/css" />
+	<script type="text/javascript" src="js/dtree.js"></script>
+</head>
+
+<script type="text/javascript">
+d = new dTree('d');
+
+		d.add(0,-1, 'ACADEMICO AMBIENTE DOCENTE','bienvenida.html','Bienvenida','framecontenido','','');
+		d.add(1,0,'1. CALIFICACIONES','contenidos.html#1','CALIFICACIONES','framecontenido','','');
+		d.add(2,0,'2. DATOS PERSONALES','contenidos.html#2','DATOS PERSONALES','framecontenido','','');
+		d.add(3,0,'3. HORARIOS POR DOCENTE','contenidos.html#3','HORARIOS POR DOCENTE','framecontenido','','');
+		d.add(4,0,'4. VER MATERIAS DOCENTE','contenidos1.html#4','VER MATERIAS DOCENTE','framecontenido','','');
+		d.add(5,0,'5. RESPONSABILIDAD ACADÉMICA','contenidos1.html#5','RESPONSABILIDAD ACADÉMICA','framecontenido','','');
+		d.add(6,0,'6. LISTADO DE ESTUDIANTES POR GRUPO','contenidos2.html#6','LISTADO DE ESTUDIANTES POR GRUPO','framecontenido','','');
+		d.add(7,0,'7. CALIFICACIONES HISTÓRICAS POR DOCENTE','contenidos2.html#7','CALIFICACIONES HISTÓRICAS POR DOCENTE','framecontenido','','');
+		
+		d.add(8,1,'1.1 NOTAS','contenidos.html#11','NOTAS','framecontenido','','');
+		d.add(9,1,'1.2 INGRESAR CALIFICACIONES','contenidos.html#12','INGRESAR CALIFICACIONES','framecontenido','','');
+		d.add(10,1,'1.3 INGRESAR HABILITACIONES','contenidos.html#13','INGRESAR HABILITACIONES','framecontenido','','');		
+        d.add(11,1,'1.4 VER','contenidos.html#14','VER','framecontenido','','');	
+		d.add(12,1,'1.5 BLOQUEAR GRUPO','contenidos.html#15','BLOQUEAR GRUPO','framecontenido','','');	
+		d.add(13,1,'1.6 AUTORIZAR SUPLETORIO','contenidos.html#16','AUTORIZAR SUPLETORIO','framecontenido','','');	
+		d.add(14,1,'1.7 IMPRIMIR PLANILLA DE CALIFICACIONES','contenidos.html#17','IMPRIMIR PLANILLA DE CALIFICACIONES','framecontenido','','');	
+		
+		
+		
+		d.add(15,3,'3.1 CONSULTAR DISPONIBILIDAD DOCENTE','contenidos1.html#31','CONSULTAR DISPONIBILIDAD DOCENTE','framecontenido','','');
+		d.add(16,3,'3.2 CONSULTAR HORARIO DOCENTE','contenidos1.html#32','CONSULTAR HORARIO DOCENTE','framecontenido','','');
+		d.add(17,3,'3.3 HORARIO DE ATENCIÓN AL ESTUDIANTE','contenidos1.html#33','HORARIO DE ATENCIÓN AL ESTUDIANTE','framecontenido','','');
+		d.add(18,3,'3.4 CONSULTAR HORARIO DE ATENCIÓN AL ESTUDIANTE','contenidos1.html#34','CONSULTAR HORARIO DE ATENCIÓN AL ESTUDIANTE','framecontenido','','');
+		
+
+		
+		d.add(19,5,'5.1 OPCIÓN AGREGAR','contenidos1.html#51','OPCIÓN AGREGAR','framecontenido','','');
+		d.add(20,5,'5.2 OPCIÓN VER','contenidos1.html#52','OPCIÓN VER','framecontenido','','');
+		d.add(21,5,'5.3 OPCIÓN CONTINUAR','contenidos1.html#53','OPCIÓN CONTINUAR','framecontenido','','');
+
+		d.add(22,21,'5.3.1 Docencia.','contenidos1.html#531','Docencia.','framecontenido','','');
+		d.add(23,21,'5.3.2 Investigación.','contenidos2.html#532','Investigación.','framecontenido','','');    
+		d.add(24,21,'5.3.3 Proyección Social.','contenidos2.html#533','Proyección Social.','framecontenido','','');    
+		d.add(25,21,'5.3.4 Académico-Administrativas.','contenidos2.html#534','Académico-Administrativas.','framecontenido','','');   		d.add(26,21,'5.3.5 Otras.','contenidos2.html#535','Otras.','framecontenido','','');    
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		d.add(80,0,'GLOSARIO','javascript:glosario();');
+		d.add(81,0,'VERSIÓN','javascript:version();');
+		d.add(82,0,'GENERALIDADES','javascript:generalidades();');
+		document.write(d);		
+function generalidades(){
+	window.open('Generalidades.html','Generalidades','width=500, height=500,resizable=yes,scrollbars=yes')
+}
+
+function glosario(){
+	window.open('glosario.html','glosario','width=500, height=500,resizable=yes,scrollbars=yes')
+}
+function version(){
+	window.open('version.html','version','width=500, height=300,resizable=yes,scrollbars=yes')
+}
+</script>
+
+
+
+<body style="background-color:#f0f0f0; margin:5px;">
+
+</body>
+</html>

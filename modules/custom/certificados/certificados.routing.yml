@@ -1,0 +1,196 @@
+certificados.content:
+  path: '/admin/importar-certificados'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ImportPage::content'
+    _title: 'Importar datos de certificados'
+  requirements:
+    _permission: 'access administration pages'
+
+certificados.consulta:
+  path: '/consulta-certificado'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ConsultaCertificado::consulta'
+    _title: 'Consultar estado del certificado'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado:
+  path: '/resultado-consulta-certificado/{documento}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado'
+    _title: 'Resultado de su consulta'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado.pdf:
+  path: '/resultado-consulta-certificado-pdf/{id}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_pdf'
+    _title: 'Pdf de su consulta'
+  requirements:
+    _permission: 'access content'
+
+
+certificados.content_conferencista:
+  path: '/admin/importar-certificados-conferencista'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ImportPage::content_conferencista'
+    _title: 'Importar datos de certificados para Conferencista'
+  requirements:
+    _permission: 'access administration pages'
+
+certificados.consulta_conferencista:
+  path: '/consulta-certificado-conferencista'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ConsultaCertificado::consulta_conferencista'
+    _title: 'Consultar estado del certificado conferencista'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_conferencista:
+  path: '/resultado-consulta-certificado-conferencista/{documento}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_conferencista'
+    _title: 'Resultado de su consulta conferencista'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_conferencista.pdf:
+  path: '/resultado-consulta-certificado-conferencista-pdf/{id}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_conferencista_pdf'
+    _title: 'Pdf de su consulta conferencista'
+  requirements:
+    _permission: 'access content'
+
+
+certificados.content_eventos_conferencista:
+  path: '/admin/importar-certificados-eventos-conferencista'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ImportPage::content_eventos_conferencista'
+    _title: 'Importar datos de certificados para eventos conferencista'
+  requirements:
+    _permission: 'access administration pages'
+
+certificados.consulta_eventos_conferencista:
+  path: '/consulta-certificado-eventos-conferencista'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ConsultaCertificado::consulta_eventos_conferencista'
+    _title: 'Consultar estado del certificado eventos conferencista'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_eventos_conferencista:
+  path: '/resultado-consulta-certificado-eventos-conferencista/{documento}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_eventos_conferencista'
+    _title: 'Resultado de su consulta eventos conferencista'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_eventos_conferencista.pdf:
+  path: '/resultado-consulta-certificado-eventos-conferencista-pdf/{id}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_eventos_conferencista_pdf'
+    _title: 'Pdf de su consulta conferencista'
+  requirements:
+    _permission: 'access content'
+
+
+certificados.content_jurado:
+  path: '/admin/importar-certificados-jurado'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ImportPage::content_jurado'
+    _title: 'Importar datos de certificados para jurado'
+  requirements:
+    _permission: 'access administration pages'
+
+certificados.consulta_jurado:
+  path: '/consulta-certificado-jurado'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ConsultaCertificado::consulta_jurado'
+    _title: 'Consultar estado del certificado jurado'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_jurado:
+  path: '/resultado-consulta-certificado-jurado/{documento}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_jurado'
+    _title: 'Resultado de su consulta jurado'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_jurado.pdf:
+  path: '/resultado-consulta-certificado-jurado-pdf/{id}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_jurado_pdf'
+    _title: 'Pdf de su consulta jurado'
+  requirements:
+    _permission: 'access content'
+
+
+certificados.content_ganador:
+  path: '/admin/importar-certificados-ganador'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ImportPage::content_ganador'
+    _title: 'Importar datos de certificados para ganador'
+  requirements:
+    _permission: 'access administration pages'
+
+certificados.consulta_ganador:
+  path: '/consulta-certificado-ganador'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ConsultaCertificado::consulta_ganador'
+    _title: 'Consultar estado del certificado ganador'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_ganador:
+  path: '/resultado-consulta-certificado-ganador/{documento}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_ganador'
+    _title: 'Resultado de su consulta ganador'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_ganador.pdf:
+  path: '/resultado-consulta-certificado-ganador-pdf/{id}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_ganador_pdf'
+    _title: 'Pdf de su consulta ganador'
+  requirements:
+    _permission: 'access content'
+
+
+certificados.content_trabajo:
+  path: '/admin/importar-certificados-trabajo'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ImportPage::content_trabajo'
+    _title: 'Importar datos de certificados para trabajo'
+  requirements:
+    _permission: 'access administration pages'
+
+certificados.consulta_trabajo:
+  path: '/consulta-certificado-trabajo'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ConsultaCertificado::consulta_trabajo'
+    _title: 'Consultar estado del certificado trabajo'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_trabajo:
+  path: '/resultado-consulta-certificado-trabajo/{documento}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_trabajo'
+    _title: 'Resultado de su consulta trabajo'
+  requirements:
+    _permission: 'access content'
+
+certificados.resultado_trabajo.pdf:
+  path: '/resultado-consulta-certificado-trabajo-pdf/{id}'
+  defaults:
+    _controller: '\Drupal\certificados\Controller\ResultadoCertificado::consulta_resultado_trabajo_pdf'
+    _title: 'Pdf de su consulta trabajo'
+  requirements:
+    _permission: 'access content'

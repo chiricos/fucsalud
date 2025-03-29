@@ -1,0 +1,6 @@
+name: Admitidos
+description: Muestra el listado de aspirantes admitidos.
+package: Manimator
+core_version_requirement: ^8 || ^9
+type: module
+core: 8.x

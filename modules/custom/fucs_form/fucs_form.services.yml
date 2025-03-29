@@ -1,0 +1,4 @@
+services:
+  fucs_form.email:
+    class: Drupal\fucs_form\Services\FucsEmail
+    arguments: []

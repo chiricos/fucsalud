@@ -1,0 +1,14 @@
+fucs_payments.see_payments:
+  title: 'Ver el listado de compras de libros'
+  route_name: fucs_payments.see_payments
+  description: 'Permite visualizar las compras de la Fucs'
+  parent: system.admin_config_system
+  weight: 99
+
+fucs_payments.see_payments_pending:
+  title: 'Compras de libros pendientes'
+  route_name: fucs_payments.see_payments_pending
+  description: 'Permite visualizar las compras de la Fucs'
+  parent: system.admin_config_system
+  weight: 99
+  

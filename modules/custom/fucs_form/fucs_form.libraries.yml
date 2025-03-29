@@ -1,0 +1,10 @@
+fucs-form:
+  version: 1.x
+  js:
+    js/fucs_form.js: {}
+  css:
+    theme:
+      css/tailwind.css: {}
+      css/style.css: {}
+  dependencies:
+    - core/jquery

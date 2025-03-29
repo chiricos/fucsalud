@@ -1,0 +1,16 @@
+<div class="biblioteca-reserva">
+	<h2><img src="/themes/custom/fucs/images/biblioteca/relog.png">Compra en tienda</h2>
+	<div class="form">
+	{% if form.user is empty %}
+	<p>No puedes acceder a este modulo, vuelve a iniciar el proceso de compra
+		<a href="/tienda-virtual/publicaciones">Volver</a>
+	</p>
+
+	{% else %}
+			{{form}}
+	{% endif %}
+
+	</div>
+
+
+</div>

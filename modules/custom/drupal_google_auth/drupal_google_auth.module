@@ -1,0 +1,32 @@
+<?php 
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
+
+function drupal_google_auth_node_access(NodeInterface $node, $operation, AccountInterface $account) {
+  if ($node->bundle() === 'documentos_privados') {
+    if ($account->isAnonymous()) {
+      return AccessResult::forbidden();
+    }
+  }
+  return AccessResult::neutral();
+}
+
+function drupal_google_auth_theme($existing, $type, $theme, $path) {
+  return array(
+    'google_auth' => [
+      'variables' => [
+        'config' => NULL,
+      ],
+      'template' => 'block--google-auth',
+    ],
+    'google_login' => [
+      'variables' => [
+        'name' => NULL,
+        'login' => NULL,
+      ],
+      'template' => 'block--google-login',
+    ],
+  );
+}

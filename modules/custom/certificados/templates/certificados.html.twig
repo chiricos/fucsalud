@@ -1,0 +1,4 @@
+<h2>Certificados</h2>
+{% for certificate in data %}
+    <p><a href="{{certificate.url}}" target="_blank">{{certificate.description }}<a></p>
+{% endfor %}

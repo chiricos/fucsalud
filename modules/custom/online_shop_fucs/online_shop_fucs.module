@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Contains online_shop_fucs.module.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function online_shop_fucs_form_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the oneapp_home module.
+    case 'help.page.online_shop_fucs':
+      $output = '';
+      $output .= '<h3>' . $this->t('About') . '</h3>';
+      $output .= '<p>' . $this->t('Contains features for all Online Shop Fucs ') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function online_shop_fucs_theme($existing, $type, $theme, $path) {
+  return array(
+    'online_shop_fucs_items' => [
+      'variables' => [
+        'items' => NULL,
+        'total' => NULL,
+      ],
+      'template' => 'block--shop-items',
+    ],
+    'online_shop_fucs_confirm' => [
+      'variables' => [
+        'items' => NULL,
+        'data_payment' => NULL,
+        'status' => NULL,
+        'status_name' => NULL
+      ],
+      'template' => 'online_shop_fucs_confirm',
+    ],
+    'personal_data_form_build' => [
+      'render element' => 'form',
+      'template' => 'form--personal-data-build',
+    ],
+    'donation' => [
+      'variables' => [],
+      'template' => 'donation',
+    ],
+
+  );
+}

@@ -1,0 +1,263 @@
+
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - node.getCreatedTime() will return the node creation timestamp.
+ *   - node.hasField('field_example') returns TRUE if the node bundle includes
+ *     field_example. (This does not indicate the presence of a value in this
+ *     field.)
+ *   - node.isPublished() will return whether the node is published or not.
+ *   Calling other methods, such as node.delete(), will result in an exception.
+ *   See \Drupal\node\Entity\Node for a full list of public properties and
+ *   methods for the node object.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{%
+set classes = [
+'node',
+'node--type-' ~ node.bundle|clean_class,
+node.isPromoted() ? 'node--promoted',
+node.isSticky() ? 'node--sticky',
+not node.isPublished() ? 'node--unpublished',
+view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+
+    {{ title_prefix }}
+    {% if not page %}
+        <h2{{ title_attributes }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    {% if display_submitted %}
+        <footer class="node__meta">
+            {{ author_picture }}
+            <div{{ author_attributes.addClass('node__submitted') }}>
+                {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+                {{ metadata }}
+            </div>
+        </footer>
+    {% endif %}
+
+
+
+    <div class="pregrado-administracion-content " title="{{content.field_titulo_cursos.0}}">
+        <h1>{{ content.field_titulo_cursos }}</h1>
+        {{ content.field_cursos_imagen }}
+        {{ content.field_curso_categoria }}
+    </div>
+
+
+    <div class="pregrado-administracion ">
+
+        <div class="acordion-info">
+            {% if content.field_titulo_a|render is not empty %}
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title ">
+                                <a data-toggle="collapse" data-parent="#accordion" >{{ content.field_titulo_a }} <span class="icon-down-dir"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                {{ content.field_cuerpos_acordion_1 }}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            {% endif %}
+            {% if content.field_titulo_|render is not empty %}
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title ">
+                                <a data-toggle="collapse" data-parent="#accordion" >{{ content.field_titulo_ }} <span class="icon-down-dir"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                {{ content.field_cuer_acor_2 }}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            {% endif %}
+            {% if content.field_titulos_acordion_3|render is not empty %}
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title ">
+                                <a data-toggle="collapse" data-parent="#accordion" >{{ content.field_titulos_acordion_3 }} <span class="icon-down-dir"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                {{ content.field_cur }}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            {% endif %}
+            {% if content.field_titulo_acordion_|render is not empty %}
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title ">
+                                <a data-toggle="collapse" data-parent="#accordion" >{{ content.field_titulo_acordion_ }} <span class="icon-down-dir"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                {{ content.field_cuer_acor_4 }}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            {% endif %}
+             {% if content.field_acordion_titulo_5|render is not empty %}
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title ">
+                                <a data-toggle="collapse" data-parent="#accordion" >{{ content.field_acordion_titulo_5 }} <span class="icon-down-dir"></span></a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse asdasdasd">
+                            <div class="panel-body">
+                                {{ content.field_acordion_cuerpo_5 }}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+    <div class="preuniversitario-botton" >
+           <section>
+               <div>
+                   <img src="/themes/custom/fucs/images/preuniversitario/archivo.png" alt="archivo" title="archivo">
+                   <div>
+                       <p>
+                           Nota: Los programas de educación continuada, hacen parte de la oferta de educación informal de la Fundación Universitaria de Ciencias de la Salud - FUCS y no conducen a título alguno o certificado de aptitud ocupacional, por lo cual su desarrollo solo conduce a la expedición de una constancia o certificación de asistencia y se efectúan bajo las normas internas institucionales y (Artículo 2.6.6.8 Decreto 1075 de 2015). La FUCS se reserva el derecho de modificar la oferta de programas de educación continuada, sus horarios, fechas, docentes y contenidos, así como la facultad de aplazar o cancelar los programas, de acuerdo con las necesidades institucionales y según el número mínimo de inscritos requerido para dar apertura.  Si las condiciones de oferta del programa cambian, el participante tendrá la opción de tomar otro programa de Educación Continuada que se esté ofreciendo, reservar su cupo para tomar el mismo una vez se ofrezca de nuevo, o solicitar la devolución del valor de matrícula pagado. Los gastos en que el participante incurra para tomar los programas presenciales, serán asumidos por su propia cuenta, por lo cual deberá verificar las fechas de oferta antes de matricularse y constatar su apertura antes de la fecha de inicio. La FUCS en ningún caso responderá por los gastos en que incurran los participantes para tomar los cursos ofrecidos.
+                       </p>
+                   </div>
+               </div>
+            </section>
+            <section>
+               <div>
+                   <img src="/themes/custom/fucs/images/preuniversitario/telefono.png" alt="telefono" title="telefono">
+                   <div>
+                       <h5>CONTÁCTANOS:</h5>
+                       <p>
+                                                      Educación Continuada<br>
+                           e-educationfucs <br>
+                           Teléfono: 3538099 - 4375395<br>
+                           e-mail: educacion@fucsalud.edu.co
+                       </p>
+                   </div>
+               </div>
+            </section>
+
+        </div>
+    <p class="text-align-right" style="margin-left: 18pt; font-size:12px;">Fecha última actualización: {{ node.changed.value|date("d/m/Y") }}</p>
+    <div class="preuniversitario-botton" style=" width: 100%;margin-top: 15px;">
+        {{ pregrado_contenido_3 }}
+
+    </div>
+
+
+
+</article>
+<style>
+.pregrado-administracion-content {
+    text-align:center;
+}
+.pregrado-administracion-content img{
+    height: auto;
+    width:auto;
+}
+.pregrado-administracion-content h1{
+    color: #96ca2d;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.pregrado-administracion  .panel-title  .field{
+    color: #96ca2d;
+    text-transform: uppercase;
+}
+.pregrado-administracion .panel-title .icon-down-dir{
+    color: #96ca2d;
+}
+</style>

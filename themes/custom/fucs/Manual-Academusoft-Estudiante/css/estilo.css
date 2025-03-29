@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+body {
+	margin:0;
+	padding:0;
+	background-color:#fff;
+	height:80%;
+}
+.bodyversion {
+	margin:10px;
+	background-color:#fff;
+}
+img {
+	border:none;
+}
+#contenedor {
+	position:absolute;
+	width:100%;
+	height:80%;
+	min-width:960px;
+	margin:0;
+	top:0;
+	left:0;
+}
+#header {
+	height:100px;
+	background-color:#ad3333;
+	border-bottom:10px solid #fff;
+	-webkit-box-shadow: #999 5px;
+	-moz-box-shadow: #999 5px;
+	box-shadow: 0 0 5px #999;
+	margin-bottom:10px;
+	background-image:url(../images/bgheader.png);
+	background-repeat:no-repeat;
+	background-size:20%;
+	background-position:center left;
+}
+#header1 {
+	float:left;
+	padding:15px;
+	min-width:600px;
+}
+#header1 p {
+	font-family: 'Roboto', sans-serif;
+	font-size:1.7em;
+	max-width:600px;
+	color:#fff;
+	font-weight:500;
+	text-shadow:1px 1px 1px #000;
+	padding:0;
+	margin:0;
+	line-height:1em;
+}
+#header1 p:first-line {
+	font-size:0.8em;
+	font-weight:300;
+}
+#header2 {
+	width:300px;
+	float:right;
+	text-align:right;
+	font-family: 'Cormorant Garamond', serif;
+	font-size:2em;
+	color:#fff;
+	padding:15px 15px 15px 0;
+	text-shadow:1px 1px 1px #000;
+}
+#header2 sup {
+	font-size:0.5em;
+}
+#header2 img {
+	margin-left:20px;
+}
+#contenedorframes {
+	padding:5px 5px 8px 5px;
+}
+#pie {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color:#333;
+	text-align:center;
+	margin:0px;
+	clear:both;
+	border-top:1px dashed #ccc;
+	padding-top:10px;
+}
+#pestana {
+	float:left;
+	margin:0px;
+}
+#contenidos {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	color:#333;
+	text-align:justify;
+	padding:0 30px 0 10px;
+	min-width:96%;
+}
+#contenidos img { max-width:90%; height:auto;}
+.titulos_01, .titulos_02, .titulos_03, .titulos_04, .titulos_05, .titulos_06, .subtitulos {
+	font-family: 'Roboto', sans-serif;
+}
+.titulos_01 {
+	font-size: 1.5em;
+	font-weight:700;
+	color: #fff;
+	padding:10px;
+	border-radius:10px;
+	background-color:#ad3333;
+}
+.titulos_02 {
+	font-size: 1.5em;
+	font-weight:700;
+	color: #000;
+	padding:10px;
+	border-radius:10px;
+	background-color:#f0f0f0;
+	border:1px solid #999;
+}
+.titulos_03 {
+	font-size: 1.3em;
+	border-bottom:1px dashed #666;
+	font-weight:700;
+	color: #000;
+}
+.titulos_04 {
+	font-size: 1.2em;
+	font-weight:700;
+	color:#333;
+}
+.titulos_05 {
+	font-size: 1.1em;
+	font-weight:700;
+	color: #666;
+}
+.titulos_06 {
+	font-size: 1em;
+	font-weight:600;
+	color: #666;
+	text-decoration:underline;
+}
+.subtitulos {
+	font-size: 1em;
+	font-weight: bold;
+	color: #000;
+}
+#contenidos .negrilla {
+	font-weight: bold;
+}
+.contenidos_bgcolor {
+	background:#e6e6e6;
+}
+a:link {
+	color: #ad3333;
+}
+a:visited {
+	color: #999;
+}
+a:hover {
+	color: #999;
+}
+a:active {
+	color: #ad3333;
+}
+.tablaversion {
+	font-size:1em;
+	font-family:Arial, Helvetica, sans-serif;
+	width:100%;
+	background-color:;
+}
+.tablaversion caption {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #fff;
+	background-color:#ad3333;
+	font-weight: 500;
+	padding:10px;
+	border-radius:5px;
+	text-align: left;
+	margin:0 0 5px 0;
+}
+.tablaversion thead th {
+		font-family: 'Roboto', sans-serif;
+	border-bottom:2px solid #ad3333;
+	color:#999;
+	text-align:left;
+	padding:5px;
+	text-transform:uppercase;
+	font-weight: bold;
+}
+.colfecha .colmanual .colproducto {
+	width:15%
+}
+.coldescripcion {
+	width:35%;
+}
+.colautor {
+	width:20%;
+}
+.colconcepto {
+	width:10%;
+}
+.coldefinicion {
+	width:90%;
+}
+.tablaversion tr {
+	border-bottom:1px solid red;
+}
+.tablaversion td {
+	color:#333;
+	padding:5px;
+	text-align:left;
+	vertical-align:middle;
+	border-bottom:1px dashed #ccc;
+}
+.tablaversion th {
+	text-align:left;
+	padding:2px;
+}
+.tablaversion tbody tr:hover {
+	background-color:#f0f0f0;
+}
+.tablaversion img { max-width:50px; height:auto;}

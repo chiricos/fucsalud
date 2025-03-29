@@ -1,0 +1,4 @@
+access fucs form settings:
+  title: 'Access fucs form Settings'
+  description: 'Allow access to global settings of fucs form'
+  restrict access: true

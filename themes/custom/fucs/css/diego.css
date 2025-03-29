@@ -1,0 +1,339 @@
+.videos-fucs iframe {
+    width: 100%;
+    max-width: 540px;
+    max-height: 360px;
+}
+.videos-fucs {
+    text-align: center;
+    height: auto;
+}
+.addthis_inline_share_toolbox {
+    margin: 24px auto;
+    width: 100%;
+    text-align: right;
+    max-width: 1280px;
+}
+.semilleros-contenidos .news > div {
+    border: 1px solid rgba(128,128,128,0.18);
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 100%;
+}
+.view-semilleros-videos .views-row:first-child {
+    width: 100%;
+		min-height: 350px;
+}
+
+#block-bannermuseo .clearfix.text-formatted.field.field--name-body.field--type-text-with-summary.field--label-hidden.field__item {
+    overflow: hidden;
+}
+
+body.path-estudiantes .biblioteca-info-slider, body.path-investigacion .biblioteca-info-slider , body.path-colaboradores .biblioteca-info-slider{
+	display: none !important;
+}
+
+@media only screen and (max-width: 450px) {
+
+
+	.slider-home .info-slider {
+	    margin-top: 20px !important;
+	}
+}
+
+
+
+.path-investigacion .info-slider{
+	margin-top: -240px;
+
+}
+
+
+@media (max-width: 768px) {
+
+	.path-investigacion .info-slider{
+		/*display: none;*/
+
+}
+
+
+	section article{
+		width:100% !important;
+
+	}
+
+.footer-menu {
+    /*display: none;*/
+}
+
+
+.footer-info{
+	padding-top:20px;
+}
+
+.firts-footer{
+	padding-bottom:0px;
+}
+
+.region-banner-page{
+	padding-top:70px;
+}
+
+
+.breadcrumb{
+	margin-bottom:0px;
+}
+
+.programas-lateral .content-continuada{
+	width:100%;
+	margin-left:0px !important;
+	margin-bottom:10px;
+}
+
+.programas-lateral-iz{
+	width:100% !important;
+	margin-left:0px !important;
+}
+
+.programas-lateral-iz ul{
+	margin:0px;
+	padding:0px;
+}
+
+.slider, .flex-viewport, .slider .flexslider, .flex-active-slide{
+	min-height:auto !important;
+	height:auto !important;
+}
+
+.views-element-container .events .views-row{
+	max-height:500px !important;
+	height:auto !important;
+}
+
+.investigacion-pestañas .views-field-body{
+	height:auto !important;
+}
+
+.pregrado-administracion-content img, article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aspirantes-admisiones{
+	height:auto !important;
+}
+
+.categories {
+    top: -115px !important;
+}
+
+.tecnologicas .carrera-visual ul li {
+    background: #9d9d9c;
+    border-radius: 4px;
+    display: inline-block;
+    height: asuto;
+    margin: auto;
+    padding: 5px;
+    vertical-align: top;
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+    min-height: 80px;
+    margin-bottom: 10px;
+    font-size: 9px;
+
+}
+
+.tecnologicas .carrera-visual ul li a p {
+    word-wrap: break-word;
+}
+
+.banner-page img {
+    width: 150%;
+    margin-left: -50%;
+}
+
+.banner-page h1{
+	    margin-top: -36px;
+}
+
+.continuada-redes{
+	width:100% !important;
+	display:block !important;
+	clear:both !important;
+}
+
+.continuada-redes > div{
+	width:100%;
+}
+
+.tabs a{
+	width:100%;
+	text-align:center;
+	margin-left:0px;
+	border-bottom:1px solid rgba(128,128,128,0.18);
+	text-transform:uppercase;
+	font-size:14px;
+}
+
+.tabs{
+	height:auto;
+}
+
+.video .views-row{
+	padding:0 10px;
+}
+
+.noticias .views-field-field-noticias-imagen, .noticias .views-field-body, .investigacion-pestañas .views-field-field-noticias-imagen, .investigacion-pestañas .views-field-body{
+	width:100%;
+}
+
+.investigacion-contenidos div{
+	display:block;
+}
+
+.investigacion-contenidos div img{
+	width:100%;
+}
+
+article ul{
+	margin:0px;
+	padding:0px;
+}
+
+.biblioteca-reserva{
+	width:100% !important;
+}
+
+.pregrado-administracion-content{
+	overflow-x: scroll;
+	padding:15px;
+}
+
+.info-slider h2{
+	font-size:27px;
+}
+
+.news{
+}
+
+.continuada-menu-contenido, .continuada-eventos{
+	padding:0px !important;
+}
+
+.events .views-field-body{
+	display:none;
+}
+
+
+.blog .views-field-field-noticias-imagen img{
+	height:auto !important;
+}
+
+.reserva-tiempo input, .reserva-tiempo select{
+	width:30% !important;
+}
+
+	.user-login-form{
+		width: 100%;
+		padding: 15px;
+		margin: 0px !important;
+
+	}
+
+	.user-login-form input{
+		width: 100%;
+	}
+
+
+
+	.estudiantes-sub-menu ul li, .egresados-sub-menu ul li{
+		width: 100% !important;
+	}
+
+	.addthis_inline_share_toolbox{
+		display: none;
+	}
+
+	#toolbar-item-user-tray{
+		display: none;
+	}
+
+	.user-logged-in .slider{
+		margin-top: 30px !important;
+	}
+
+	.aspirante-contenidos{
+		margin-top: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.manual-cumple a{
+		margin: 10px 0 !important;
+	}
+
+
+	.banner-page img {
+		/*width: 200% !important;
+		margin-left: -30%;*/
+	}
+
+	.banner-page h1{
+    	font-size: 24px !important;
+		letter-spacing: 2px;
+		top: 60%;
+		display: none;
+	}
+	#block-bannermuseo h1{
+	margin-top: -60px !important;
+		font-size: 24px !important;
+		letter-spacing: 2px;
+
+
+	}|
+
+	.bienestar-contenidos .notibienestar img{
+		height: auto !important;
+	}
+
+	.bienestar-galeria{
+		overflow: hidden;
+
+	}
+
+	.list-volumen{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.cursos-sub-menu ul{
+		margin: 0px;
+		padding: 0px;
+	}
+	.cursos-sub-menu ul li{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.curso-carrera-info{
+		width: 100% !important;
+	}
+
+
+	.content-page td, .content-page th{
+		/*display: block !important;*/
+		text-align: center !important;
+		width: 100% !important;
+	}
+
+}
+
+@media screen and (max-width: 1300px)
+{
+	.path-investigacion .info-slider
+	{
+		margin-top: -220px;
+	}
+}

@@ -1,0 +1,72 @@
+compras:
+  path: /compras
+  defaults:
+    _controller: Drupal\online_shop_fucs\Controller\ComprasController::mostrarCompra
+    _title: Compras
+  requirements:
+    _permission: 'access content'
+
+products:
+  path: /products
+  defaults:
+    _controller: Drupal\online_shop_fucs\Controller\ShoppingCartController::products
+    _title: Total productos
+  requirements:
+    _permission: 'access content'
+
+car:
+  path: /car
+  defaults:
+    _controller: Drupal\online_shop_fucs\Controller\ShoppingCartController::addItems
+    _title: Agregar carrito
+  requirements:
+    _permission: 'access content'
+
+delete:
+  path: /delete/item
+  defaults:
+    _controller: Drupal\online_shop_fucs\Controller\ShoppingCartController::deleteItems
+    _title: Delete carrito
+  requirements:
+    _permission: 'access content'
+
+items:
+  path: /compras/carrito
+  defaults:
+    _controller: Drupal\online_shop_fucs\Controller\ShoppingCartController::showItems
+    _title: Carro de compras
+  requirements:
+    _permission: 'access content'
+
+data:
+  path: /compras/datos
+  defaults:
+    _form: Drupal\online_shop_fucs\Form\PersonalDataForm
+    _title: Datos del usuario
+  requirements:
+    _permission: 'access content'
+
+confirmation:
+  path: /compras/confirmacion
+  defaults:
+    _controller: Drupal\online_shop_fucs\Controller\ShoppingCartController::confirm
+    _title: Confirmación de compras
+  requirements:
+    _permission: 'access content'
+
+donation:
+  path: /donacion/otro-monto
+  defaults:
+    _controller: Drupal\online_shop_fucs\Controller\ShoppingCartController::donation
+    _title: Donar otro monto
+  requirements:
+    _permission: 'access content'
+
+view.colaboradores.page_1:
+  path: '/colaboradores'
+  defaults:
+    _controller: '\Drupal\views\ViewExecutable::execute'
+    _title: 'Your View Page 1'
+  requirements:
+    _is_logged_in_route: 'TRUE'
+    _permission: 'access content'

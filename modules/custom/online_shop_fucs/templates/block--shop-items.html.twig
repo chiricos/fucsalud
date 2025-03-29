@@ -1,0 +1,81 @@
+<h1 class="tituloPagina">Carrito</h1>
+<div class='contenedorTable wrapper'>
+	<table class='table'>
+		<thead>
+			<tr>
+				<th>Nombre
+				</th>
+				<th>Precio</th>
+				<th>Eliminar
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+        {% for item in items %}
+			<tr>
+				<td>{{item.nombre}}</td>
+				<td>
+					{{item.precio}}
+				</td>
+				<td>
+					<button name="id" value="{{item.id}}" type="button" class="eliminarProducto">X</button>
+				</td>
+			</tr>
+            {% endfor %}
+
+		</tbody>
+	</table>
+</div>
+<div class="tienda-online-pop-up">
+	<form action="cart.php" method="get">
+		<input type="number" name="donar_valor" placeholder="Ingrese el valor a donar" id="donar_valor" required min="10000" lang="es">
+		<button>Enviar</button>
+	</form>
+</div>
+<style>
+	.tienda-online-pop-up {
+		background: #000000e0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		display: none;
+	}
+	.tienda-online-pop-up form {
+		width: 40%;
+		background: white;
+		margin: 10% auto auto;
+		padding: 30px;
+		padding: 30px;
+	}
+	#donar_valor {}
+	.tienda-online-pop-up form button {
+		background: #ffcc06;
+		border-radius: 4px;
+		color: black;
+		margin: 30px auto auto;
+		padding: 6px 10px;
+		padding: 6px 10px;
+		text-align: center;
+		width: 100px;
+	}
+</style>
+
+
+<div class="contentCar wrapper">
+	<div class="car-total">
+		<h1 >Total a pagar: ${{total}}</h1>
+
+
+		<a class="cancelacion" id="cancel_store_btn">Cancelar</a>
+		<a class="retroceder">Volver</a>
+		<a href="/compras/datos">Pagar</a>
+	</div>
+</div>';
+
+<div class="advertencia">
+	<h3>¡ATENCIÓN!</h3>
+	<p>Para finalizar el proceso de compra de manera correcta y poder generar el envío sin problemas, por favor no cierre su navegador, hasta ver en pantalla de está página web el mensaje con los datos con el estado de su transacción.</p>
+</div>';
