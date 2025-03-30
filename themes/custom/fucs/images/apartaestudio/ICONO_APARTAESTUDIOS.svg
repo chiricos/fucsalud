@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #092755;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="m45,21.5H6c0,17.12,9.45,31,24.81,31h37.19c0-17.12-7.64-31-23-31Z"/>
+  <g>
+    <path class="cls-1" d="m21.14,31.63h0c2.98,0,5.4,2.42,5.4,5.4h0c-2.98,0-5.4-2.42-5.4-5.4h0Z" transform="translate(47.67 68.65) rotate(-180)"/>
+    <path class="cls-1" d="m26.54,36.98h0c0,2.98-2.42,5.4-5.4,5.4h0c0-2.98,2.42-5.4,5.4-5.4Z"/>
+    <path class="cls-1" d="m27.72,31.63h0c2.98,0,5.4,2.42,5.4,5.4h0c-2.98,0-5.4-2.42-5.4-5.4h0Z" transform="translate(60.84 68.65) rotate(-180)"/>
+    <path class="cls-1" d="m33.12,36.98h0c0,2.98-2.42,5.4-5.4,5.4h0c0-2.98,2.42-5.4,5.4-5.4Z"/>
+    <path class="cls-1" d="m34.3,31.63h0c2.98,0,5.4,2.42,5.4,5.4h0c-2.98,0-5.4-2.42-5.4-5.4h0Z" transform="translate(74 68.65) rotate(180)"/>
+    <path class="cls-1" d="m39.7,36.98h0c0,2.98-2.42,5.4-5.4,5.4h0c0-2.98,2.42-5.4,5.4-5.4Z"/>
+    <path class="cls-1" d="m40.88,31.63h0c2.98,0,5.4,2.42,5.4,5.4h0c-2.98,0-5.4-2.42-5.4-5.4h0Z" transform="translate(87.16 68.65) rotate(-180)"/>
+    <path class="cls-1" d="m46.28,36.98h0c0,2.98-2.42,5.4-5.4,5.4h0c0-2.98,2.42-5.4,5.4-5.4Z"/>
+    <path class="cls-1" d="m47.46,31.63h0c2.98,0,5.4,2.42,5.4,5.4h0c-2.98,0-5.4-2.42-5.4-5.4h0Z" transform="translate(100.33 68.65) rotate(180)"/>
+    <path class="cls-1" d="m52.86,36.98h0c0,2.98-2.42,5.4-5.4,5.4h0c0-2.98,2.42-5.4,5.4-5.4Z"/>
+  </g>
+</svg>
