@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://support.ebscohost.com/eit/scripts/ebscohostsearch.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      function ebscoHostSearchRI(form, buff) {
+        var ebscohostsearchtext = chkObject(form.ebscohostsearchtext, "");
+        var ebscohostkeywords = chkObject(form.ebscohostkeywords, "");
+        var ebscohostsearchsrc = chkObject(form.ebscohostsearchsrc, "");
+        var ebscohostsearchmode = chkObject(
+          form.ebscohostsearchmode,
+          "\+AND\+"
+        );
+        var ebscohostwindow = parseInt(chkObject(form.ebscohostwindow, 0));
+        var ebscohosturl = chkObject(
+          form.ebscohosturl,
+          "https://search.ebscohost.com/login.aspx?"
+        );
+        var isDMP = ebscohosturl.indexOf("dynamed") > -1;
+        var bquery = "bquery";
+        if (isDMP) {
+          bquery = "q";
+        }
+
+        var strAlert = "";
+        /* [7.5.2017]  Updated below to encodeURIComponent to allow for # wildcard to work in Permalink */
+        ebscohostsearchtext = encodeURIComponent(ebscohostsearchtext);
+
+        if (
+          ebscohosturl.indexOf("eds-live") == -1 &&
+          ebscohosturl.indexOf("pfi-live") === -1
+        ) {
+          if (ebscohostsearchsrc == "db" || ebscohostsearchsrc == "dbgroup") {
+            var ebscohostdatabases = getSelectedDatabases(
+              form.cbs,
+              ebscohostsearchsrc
+            );
+            if (ebscohostdatabases == -1)
+              strAlert += "Please select one or more databases.\n";
+
+            ebscohosturl += ebscohostdatabases;
+          }
+        }
+
+        if (ebscohostsearchtext == "")
+          strAlert += "Please enter search term(s).\n";
+
+        if (strAlert !== "") {
+          alert(strAlert);
+          return false;
+        }
+
+        var cbFT = document.getElementById("chkFullText");
+        var matches = ebscohosturl.match(/cli[0-9]/g);
+        var index = matches === null ? 0 : matches.length;
+
+        if (!_isEmpty(cbFT) && cbFT.checked) {
+          ebscohosturl += "&cli" + index + "=FT&clv" + index + "=Y";
+          index++;
+        }
+
+        //[a.hazen 7.5.2017] Add IR to EDS
+        var cbIRO = document.getElementById("chekIROnly");
+
+        if (!_isEmpty(cbIRO) && cbIRO.checked) {
+          ebscohosturl += "&cli" + index + "=FC1&clv" + index + "=Y";
+          index++;
+        }
+
+        try {
+          ebscoAddDisciplines();
+        } catch (e) {
+          debugger;
+        }
+
+        if (ebscohostkeywords != "")
+          ebscohostkeywords =
+            ebscoHostSearchParse(ebscohostkeywords, ebscohostsearchmode) +
+            "\+AND\+";
+
+        var keywordSelector = document.getElementById("guidedField_0");
+        var titleSelector = document.getElementById("guidedField_1");
+        var authorSelector = document.getElementById("guidedField_2");
+
+        if (!_isEmpty(authorSelector) && authorSelector.checked) {
+          ebscohosturl +=
+            "&bquery=AU+(" +
+            ebscohostkeywords +
+            ebscoHostSearchParse(ebscohostsearchtext, ebscohostsearchmode) +
+            ")";
+        } else if (!_isEmpty(titleSelector) && titleSelector.checked) {
+          ebscohosturl +=
+            "&bquery=TI+(" +
+            ebscohostkeywords +
+            ebscoHostSearchParse(ebscohostsearchtext, ebscohostsearchmode) +
+            ")";
+        } else {
+          ebscohosturl +=
+            "&" +
+            bquery +
+            "=" +
+            ebscohostkeywords +
+            ebscoHostSearchParse(ebscohostsearchtext, ebscohostsearchmode);
+        }
+
+        if (ebscohostwindow) window.open(ebscohosturl, "EBSCOhost");
+        else window.location = ebscohosturl;
+
+        return false;
+      }
+
+      function ebscoHostSearchOpac(form, buff) {
+        var ebscohostsearchtext = chkObject(form.ebscohostsearchtext, "");
+        var ebscohostkeywords = chkObject(form.ebscohostkeywords, "");
+        var ebscohostsearchsrc = chkObject(form.ebscohostsearchsrc, "");
+        var ebscohostsearchmode = chkObject(
+          form.ebscohostsearchmode,
+          "\+AND\+"
+        );
+        var ebscohostwindow = parseInt(chkObject(form.ebscohostwindow, 0));
+        var ebscohosturl = chkObject(
+          form.ebscohosturl,
+          "https://search.ebscohost.com/login.aspx?"
+        );
+        var isDMP = ebscohosturl.indexOf("dynamed") > -1;
+        var bquery = "bquery";
+        if (isDMP) {
+          bquery = "q";
+        }
+
+        var strAlert = "";
+        /* [7.5.2017]  Updated below to encodeURIComponent to allow for # wildcard to work in Permalink */
+        ebscohostsearchtext = encodeURIComponent(ebscohostsearchtext);
+
+        if (
+          ebscohosturl.indexOf("eds-live") == -1 &&
+          ebscohosturl.indexOf("pfi-live") === -1
+        ) {
+          if (ebscohostsearchsrc == "db" || ebscohostsearchsrc == "dbgroup") {
+            var ebscohostdatabases = getSelectedDatabases(
+              form.cbs,
+              ebscohostsearchsrc
+            );
+            if (ebscohostdatabases == -1)
+              strAlert += "Please select one or more databases.\n";
+
+            ebscohosturl += ebscohostdatabases;
+          }
+        }
+
+        if (ebscohostsearchtext == "")
+          strAlert += "Please enter search term(s).\n";
+
+        if (strAlert !== "") {
+          alert(strAlert);
+          return false;
+        }
+
+        var cbFT = document.getElementById("chkFullText");
+        var matches = ebscohosturl.match(/cli[0-9]/g);
+        var index = matches === null ? 0 : matches.length;
+
+        if (!_isEmpty(cbFT) && cbFT.checked) {
+          ebscohosturl += "&cli" + index + "=FT&clv" + index + "=Y";
+          index++;
+        }
+
+        var cbCO = document.getElementById("chekCatalogOnly");
+
+        if (!_isEmpty(cbCO) && cbCO.checked) {
+          ebscohosturl += "&cli" + index + "=FC&clv" + index + "=Y";
+          index++;
+        }
+
+        try {
+          ebscoAddDisciplines();
+        } catch (e) {
+          debugger;
+        }
+
+        if (ebscohostkeywords != "")
+          ebscohostkeywords =
+            ebscoHostSearchParse(ebscohostkeywords, ebscohostsearchmode) +
+            "\+AND\+";
+
+        var keywordSelector = document.getElementById("guidedField_0");
+        var titleSelector = document.getElementById("guidedField_1");
+        var authorSelector = document.getElementById("guidedField_2");
+
+        if (!_isEmpty(authorSelector) && authorSelector.checked) {
+          ebscohosturl +=
+            "&bquery=AU+(" +
+            ebscohostkeywords +
+            ebscoHostSearchParse(ebscohostsearchtext, ebscohostsearchmode) +
+            ")";
+        } else if (!_isEmpty(titleSelector) && titleSelector.checked) {
+          ebscohosturl +=
+            "&bquery=TI+(" +
+            ebscohostkeywords +
+            ebscoHostSearchParse(ebscohostsearchtext, ebscohostsearchmode) +
+            ")";
+        } else {
+          ebscohosturl +=
+            "&" +
+            bquery +
+            "=" +
+            ebscohostkeywords +
+            ebscoHostSearchParse(ebscohostsearchtext, ebscohostsearchmode);
+        }
+
+        if (ebscohostwindow) window.open(ebscohosturl, "EBSCOhost");
+        else window.location = ebscohosturl;
+
+        return false;
+      }
+
+      function ebscoHostSearchOther(form, buff) {
+        var ebscohostsearchtext = chkObject(form.ebscohostsearchtext, "");
+        var ebscohostkeywords = chkObject(form.ebscohostkeywords, "");
+        var ebscohostsearchsrc = chkObject(form.ebscohostsearchsrc, "");
+        var ebscohostsearchmode = chkObject(
+          form.ebscohostsearchmode,
+          "\+AND\+"
+        );
+        var ebscohostwindow = parseInt(chkObject(form.ebscohostwindow, 0));
+        var ebscohosturl = chkObject(
+          form.ebscohosturl,
+          "https://search.ebscohost.com/login.aspx?"
+        );
+        var strAlert = "";
+
+        ebscohostsearchtext = encodeURI(ebscohostsearchtext);
+
+        if (ebscohostsearchtext == "")
+          strAlert += "Please enter search term(s).\n";
+
+        if (strAlert !== "") {
+          alert(strAlert);
+          return false;
+        }
+
+        //var searchFieldSelector =form["searchFieldSelector"].value;
+        var searchFieldSelector = "";
+        ebscohosturl +=
+          "&bquery=" +
+          searchFieldSelector +
+          "+(" +
+          ebscohostkeywords +
+          ebscoHostSearchParse(ebscohostsearchtext, ebscohostsearchmode) +
+          ")";
+
+        if (ebscohostwindow) window.open(ebscohosturl, "EBSCOhost");
+        else window.location = ebscohosturl;
+
+        return false;
+      }
+    </script>
+    <style>
+      .active {
+        color: black !important;
+      }
+
+      .nav {
+        border: none;
+      }
+      #renova {
+        background-color: rgba(9, 39, 85, 1);
+        color: rgba(248, 198, 128, 1);
+        text-decoration: none;
+        border-radius: 10px;
+        width: 130px;
+        height: 60px;
+        padding: 10px;
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-2">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #092755"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-tabs navbar-nav" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-toggle="tab"
+                href="#tab1"
+                style="color: #fff"
+                >Búsqueda integrada</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#tab3"
+                style="color: #fff"
+                >Catálogo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#tab2"
+                style="color: #fff"
+                >Libros y Revistas Electrónicas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#tab4"
+                style="color: #fff"
+                >ReDi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#tab1"
+                onclick="window.open('https://bibliografico.fucsalud.edu.co/cgi-bin/koha/opac-main.pl?logout.x=1')"
+                style="color: #fff"
+                >Renueve su material</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          class="btn btn-warning"
+          style="background-color: #f8c680"
+          type="button"
+          href="https://login.fucsalud.basesdedatosezproxy.com/public/menu.htm "
+          target="_blank"
+          >Listado a Bases de datos</a
+        >
+      </nav>
+      <!--Tab content-->
+      <div class="tab-content border border-top-0">
+        <div id="tab1" class="container tab-pane active mt-2" role="tabpanel">
+          <form
+            id="ebscohostCustomSearchBox"
+            action=""
+            onsubmit="return ebscoHostSearchGo(this);"
+            method="post"
+          >
+            <input
+              id="ebscohostwindow"
+              name="ebscohostwindow"
+              type="hidden"
+              value="1"
+            />
+            <input
+              id="ebscohosturl"
+              name="ebscohosturl"
+              type="hidden"
+              value="https://fucsalud.basesdedatosezproxy.com/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s5919318&groupid=main&profid=eds&mode=all&lang=es&authtype=ip,guest"
+            />
+            <input
+              id="ebscohostsearchsrc"
+              name="ebscohostsearchsrc"
+              type="hidden"
+              value="db"
+            />
+            <input
+              id="ebscohostsearchmode"
+              name="ebscohostsearchmode"
+              type="hidden"
+              value="+"
+            />
+            <input
+              id="ebscohostkeywords"
+              name="ebscohostkeywords"
+              type="hidden"
+              value=""
+            />
+            <div>
+              <div>
+                <input
+                  id="ebscohostsearchtext"
+                  class="rounded w-75"
+                  name="ebscohostsearchtext"
+                  type="text"
+                  size="50"
+                />
+                <button
+                  class="btn btn-warning"
+                  style="background-color: rgba(248, 198, 128, 1)"
+                >
+                  Buscar
+                </button>
+                <div>
+                  <div id="guidedFieldSelectors">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_0"
+                      value=""
+                      checked="checked"
+                    />
+                    <label class="label" for="guidedField_0">
+                      Palabra Clave</label
+                    >
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_1"
+                      value="TI"
+                    />
+                    <label class="label" for="guidedField_1"> Título</label>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_2"
+                      value="AU"
+                    />
+                    <label class="label" for="guidedField_2"> Autor</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--PFI-->
+        <div
+          id="tab2"
+          class="container tab-pane fade mt-2 mb-2"
+          role="tabpanel"
+        >
+          <form
+            id="sbPeriodici"
+            action=""
+            onsubmit="return ebscoHostSearchOther(this);"
+            method="post"
+          >
+            <input
+              id="ebscohostwindow"
+              name="ebscohostwindow"
+              type="hidden"
+              value="1"
+            />
+            <input
+              id="ebscohosturl"
+              name="ebscohosturl"
+              type="hidden"
+              value="https://fucsalud.basesdedatosezproxy.com/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s5919318&amp;groupid=main&amp;profid=eds&amp;mode=bool&amp;lang=es&amp;authtype=ip"
+            />
+            <input
+              id="ebscohostsearchsrc"
+              name="ebscohostsearchsrc"
+              type="hidden"
+              value="db"
+            />
+            <input
+              id="ebscohostsearchmode"
+              name="ebscohostsearchmode"
+              type="hidden"
+              value="+"
+            />
+            <input
+              id="ebscohostkeywords"
+              name="ebscohostkeywords"
+              type="hidden"
+              value=""
+            />
+            <input
+              id="ebscohostsearchtext"
+              name="ebscohostsearchtext"
+              class="rounded w-75"
+              type="text"
+              size="50"
+              placeholder="Escribe un título, tema, o número de ISSN/ISBN"
+            />
+            <button
+              class="btn btn-warning"
+              style="background-color: rgba(248, 198, 128, 1)"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+        <!--catalogo-->
+        <div id="tab3" class="container tab-pane fade mt-2" role="tabpanel">
+          <form
+            class="ebscohostCustomSearchBox"
+            action=""
+            onsubmit="return ebscoHostSearchOpac(this);"
+            method="post"
+          >
+            <input
+              id="ebscohostwindow"
+              name="ebscohostwindow"
+              type="hidden"
+              value="1"
+            />
+            <input
+              id="ebscohosturl"
+              name="ebscohosturl"
+              type="hidden"
+              value="https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s5919318&groupid=main&profid=eds&lang=es&authtype=ip,guest"
+            />
+            <input
+              id="ebscohostsearchsrc"
+              name="ebscohostsearchsrc"
+              type="hidden"
+              value="db"
+            />
+            <input
+              id="ebscohostsearchmode"
+              name="ebscohostsearchmode"
+              type="hidden"
+              value="+"
+            />
+            <input
+              id="ebscohostkeywords"
+              name="ebscohostkeywords"
+              type="hidden"
+              value=""
+            />
+
+            <div>
+              <div>
+                <div>
+                  <input
+                    id="ebscohostsearchtext"
+                    class="rounded w-75"
+                    name="ebscohostsearchtext"
+                    type="text"
+                    size="50"
+                  />
+                  <button
+                    class="btn btn-warning"
+                    style="background-color: rgba(248, 198, 128, 1)"
+                  >
+                    Buscar
+                  </button>
+
+                  <div id="guidedFieldSelectors">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_0"
+                      value=""
+                      checked="checked"
+                    />
+                    <label class="label" for="guidedField_0">
+                      Palabras Clave</label
+                    >
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_1"
+                      value="TI"
+                    />
+                    <label class="label" for="guidedField_1"> Título</label>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_2"
+                      value="AU"
+                    />
+                    <label class="label" for="guidedField_2"> Autor</label>
+                  </div>
+                  <div class="limiter" style="display: none">
+                    <input
+                      type="checkbox"
+                      id="chekCatalogOnly"
+                      name="chekCatalogOnly"
+                      checked="checked"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--Repositorio-->
+        <div id="tab4" class="container tab-pane fade mt-2" role="tabpanel">
+          <form
+            class="ebscohostCustomSearchBox"
+            action=""
+            onsubmit="return ebscoHostSearchRI(this);"
+            method="post"
+          >
+            <input
+              id="ebscohostwindow"
+              name="ebscohostwindow"
+              type="hidden"
+              value="1"
+            />
+            <input
+              id="ebscohosturl"
+              name="ebscohosturl"
+              type="hidden"
+              value="https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s5919318&groupid=main&profid=eds&lang=es&authtype=ip,guest"
+            />
+            <input
+              id="ebscohostsearchsrc"
+              name="ebscohostsearchsrc"
+              type="hidden"
+              value="db"
+            />
+            <input
+              id="ebscohostsearchmode"
+              name="ebscohostsearchmode"
+              type="hidden"
+              value="+"
+            />
+            <input
+              id="ebscohostkeywords"
+              name="ebscohostkeywords"
+              type="hidden"
+              value=""
+            />
+
+            <div>
+              <div>
+                <div>
+                  <input
+                    id="ebscohostsearchtext"
+                    class="rounded w-75"
+                    name="ebscohostsearchtext"
+                    type="text"
+                    size="50"
+                  />
+                  <button
+                    class="btn btn-warning"
+                    style="background-color: rgba(248, 198, 128, 1)"
+                  >
+                    Buscar
+                  </button>
+
+                  <div id="guidedFieldSelectors">
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_0"
+                      value=""
+                      checked="checked"
+                    />
+                    <label class="label" for="guidedField_0">
+                      Palabras Clave</label
+                    >
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_1"
+                      value="TI"
+                    />
+                    <label class="label" for="guidedField_1"> Título</label>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="searchFieldSelector"
+                      id="guidedField_2"
+                      value="AU"
+                    />
+                    <label class="label" for="guidedField_2"> Autor</label>
+                  </div>
+                  <div class="limiter" style="display: none">
+                    <input
+                      type="checkbox"
+                      id="chekIROnly"
+                      name="chkIROnly"
+                      checked="checked"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
