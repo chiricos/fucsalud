@@ -4,6 +4,7 @@ namespace Drupal\certificados\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Dompdf\Dompdf;
+use Symfony\Component\HttpFoundation\Response;
 
 class ResultadoCertificado extends ControllerBase {
 
@@ -103,16 +104,18 @@ class ResultadoCertificado extends ControllerBase {
 
 					$dompdf = new Dompdf();
 					$dompdf->loadHtml($markup);
-
-					// (Optional) Setup the paper size and orientation
 					$dompdf->setPaper('letter', 'landscape');
-
-					// Render the HTML as PDF
 					$dompdf->render();
+					
+					// Captura el contenido del PDF
+					$pdfOutput = $dompdf->output();
+					
+					// Crea la respuesta HTTP adecuada
+					$response = new Response($pdfOutput);
+					$response->headers->set('Content-Type', 'application/pdf');
+					$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
 				}
 
-				// Output the generated PDF to Browser
-				$dompdf->stream("certificado", array("Attachment" => 0));
 
 			}
 
@@ -216,7 +219,7 @@ class ResultadoCertificado extends ControllerBase {
 													<col style="width: 528px">
 												</colgroup>
 											  <tr>
-											    <td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+											    <td colspan="4"><img src="file://'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
 											  </tr>
 											  <tr>
 											    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -262,16 +265,24 @@ class ResultadoCertificado extends ControllerBase {
 
 					$dompdf = new Dompdf();
 					$dompdf->loadHtml($markup);
-
-					// (Optional) Setup the paper size and orientation
 					$dompdf->setPaper('letter', 'landscape');
-
-					// Render the HTML as PDF
 					$dompdf->render();
+					
+					// Captura el contenido del PDF
+					$pdfOutput = $dompdf->output();
+					
+					// Crea la respuesta HTTP adecuada
+					$response = new Response($pdfOutput);
+					$response->headers->set('Content-Type', 'application/pdf');
+					$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
+					
+					return $response;
 				}
 
-				// Output the generated PDF to Browser
-				$dompdf->stream("certificado", array("Attachment" => 0));
+				$contenido = array();
+				$contenido['linea1'] = array(
+					'#markup' => '<strong> No hay resultados!!! </strong><br><br>',
+				);
 
 			}
 

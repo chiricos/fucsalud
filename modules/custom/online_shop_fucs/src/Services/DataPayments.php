@@ -210,7 +210,7 @@ class DataPayments
 
   public function updateStatus() {
     $items = $this->getItemsWithStatus();
-    if (count($items) == 0) {
+    if (count($items) > 0) {
       $items = $this->getItems("confirm");
       $data_payment = $this->callbackDataPayment($items[0]);
       if ($data_payment['getTransactionInformationResult']['TranState'] == "CREATED") {
