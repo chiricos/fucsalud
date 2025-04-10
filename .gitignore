@@ -58,3 +58,6 @@ sites/default/settings.php
 *.mp3
 *.mp4
 /profiles
+*.zip
+*.doc
+*.xlsx

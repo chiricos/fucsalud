@@ -183,3 +183,6 @@ BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </ifmodule>
 
+<Files "search_biblioteca2024.html">
+    Header always set X-Frame-Options "ALLOWALL"
+</Files>
