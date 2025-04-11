@@ -264,7 +264,6 @@ class ResultadoCertificado extends ControllerBase {
 											  <tr>
 											  	<td colspan="4"><img src="'. $base_url .'/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
 											  </tr>
-												<p>Ruta usada: '.$base_url.'/modules/custom/certificados/css/images/logo.png</p>
 											</table>
 										</body>';
 
