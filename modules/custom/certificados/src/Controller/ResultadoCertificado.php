@@ -4,6 +4,7 @@ namespace Drupal\certificados\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Dompdf\Dompdf;
+use Dompdf\Options;
 use Symfony\Component\HttpFoundation\Response;
 
 class ResultadoCertificado extends ControllerBase {
@@ -102,7 +103,9 @@ class ResultadoCertificado extends ControllerBase {
 												</table>
 											</body>';
 
-					$dompdf = new Dompdf();
+					$options = new Options();
+					$options->set('isRemoteEnabled', true);
+					$dompdf = new Dompdf($options);
 					$dompdf->loadHtml($markup);
 					$dompdf->setPaper('letter', 'landscape');
 					$dompdf->render();
@@ -209,6 +212,7 @@ class ResultadoCertificado extends ControllerBase {
 				$fecha = isset($row->Fecha) ? $row->Fecha : $row['Fecha'];
 				$id = isset($row->Id) ? $row->Id : $row['Id'];
 				$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
+				$base_url = \Drupal::request()->getSchemeAndHttpHost();
 
 				$markup = '
 										<body>
@@ -219,7 +223,7 @@ class ResultadoCertificado extends ControllerBase {
 													<col style="width: 528px">
 												</colgroup>
 											  <tr>
-											    <td colspan="4"><img src="file://'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+											    <td colspan="4"><img src="'. $base_url .'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
 											  </tr>
 											  <tr>
 											    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -250,20 +254,22 @@ class ResultadoCertificado extends ControllerBase {
 											  </tr>
 											  <tr>
 											  	<td></td>
-											    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-											    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+											    <td><img src="' . $base_url .'/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
+											    <td><img src="'. $base_url .'/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
 											    <td></td>
 											  </tr>
 												<tr>
 													<td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												</tr>
 											  <tr>
-											  	<td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+											  	<td colspan="4"><img src="'. $base_url .'/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
 											  </tr>
 											</table>
 										</body>';
 
-					$dompdf = new Dompdf();
+					$options = new Options();
+					$options->set('isRemoteEnabled', true); 
+					$dompdf = new Dompdf($options);
 					$dompdf->loadHtml($markup);
 					$dompdf->setPaper('letter', 'landscape');
 					$dompdf->render();
