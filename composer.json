@@ -42,6 +42,7 @@
         "drupal/upgrade_status": "^4.3",
         "drupal/views_templates": "^1.4",
         "drupal/webform": "^6.1",
+        "drupal/yoast_seo": "^2.1",
         "drush/drush": "^10.6",
         "google/apiclient": "^2.10",
         "nguyenanhung/nusoap": "^0.9.15",
