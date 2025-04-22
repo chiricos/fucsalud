@@ -225,7 +225,7 @@ class ResultadoCertificado extends ControllerBase {
 													<col style="width: 528px">
 												</colgroup>
 											  <tr>
-											    <td colspan="4"><img src="'. $base_url .'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+											    <td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
 											  </tr>
 											  <tr>
 											    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -256,15 +256,15 @@ class ResultadoCertificado extends ControllerBase {
 											  </tr>
 											  <tr>
 											  	<td></td>
-											    <td><img src="' . $base_url .'/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-											    <td><img src="'. $base_url .'/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+											    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
+											    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
 											    <td></td>
 											  </tr>
 												<tr>
 													<td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												</tr>
 											  <tr>
-											  	<td colspan="4"><img src="'. $base_url .'/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+											  	<td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
 											  </tr>
 											</table>
 										</body>';
