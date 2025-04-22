@@ -54,7 +54,7 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = $row->codigo;
 
-					$markup .= '
+					$markup = '
 											<body>
 												<style> ' . $this->getCssStyle() . '</style>
 												<table style="table-layout: fixed; width: 1056px">
@@ -63,7 +63,7 @@ class ResultadoCertificado extends ControllerBase {
 														<col style="width: 528px">
 													</colgroup>
 												  <tr>
-												    <td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+												    <td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -91,14 +91,14 @@ class ResultadoCertificado extends ControllerBase {
 												  </tr>
 												  <tr>
 														<td></td>
-												    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-												    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
+												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
 												  </tr>
 													<tr>
 												    <td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												  </tr>
 												  <tr>
-												  	<td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+												  	<td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
 												  </tr>
 												</table>
 											</body>';
@@ -117,6 +117,8 @@ class ResultadoCertificado extends ControllerBase {
 					$response = new Response($pdfOutput);
 					$response->headers->set('Content-Type', 'application/pdf');
 					$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
+
+					return $response;
 				}
 
 
@@ -461,7 +463,7 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 
-					$markup .= '
+					$markup = '
 											<body>
 											<style>' . $this->getCssTrabajo() .'</style>
 												<table style="table-layout: fixed; width: 1056px">
@@ -592,7 +594,7 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 
-					$markup .= '
+					$markup = '
 											<body>
 											<style>' . $this->getCssTrabajo() .'</style>
 											  <style>' . $this->getCssGanador() .'</style>
@@ -726,7 +728,7 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 
-					$markup .= '
+					$markup = '
 											<body>
 												<style>' . $this->getCssTrabajo() .'</style>
 												<table style="table-layout: fixed; width: 1056px">
