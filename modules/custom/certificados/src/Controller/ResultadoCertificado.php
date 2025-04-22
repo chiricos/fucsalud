@@ -472,7 +472,7 @@ class ResultadoCertificado extends ControllerBase {
 														<col style="width: 528px">
 													</colgroup>
 												  <tr>
-												    <td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+												    <td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -500,31 +500,38 @@ class ResultadoCertificado extends ControllerBase {
 												  </tr>
 												  <tr>
 														<td></td>
-												    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-												    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
+												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
 														<td></td>
 												  </tr>
 													<tr>
 												    <td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												  </tr>
 												  <tr>
-												  	<td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+												  	<td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
 												  </tr>
 												</table>
 											</body>';
 
-					$dompdf = new Dompdf();
-					$dompdf->loadHtml($markup);
-
-					// (Optional) Setup the paper size and orientation
-					$dompdf->setPaper('letter', 'landscape');
-
-					// Render the HTML as PDF
-					$dompdf->render();
+				
 				}
 
-				// Output the generated PDF to Browser
-				$dompdf->stream("certificado", array("Attachment" => 0));
+				$options = new Options();
+				$options->set('isRemoteEnabled', true); 
+				$dompdf = new Dompdf($options);
+				$dompdf->loadHtml($markup);
+				$dompdf->setPaper('letter', 'landscape');
+				$dompdf->render();
+				
+				// Captura el contenido del PDF
+				$pdfOutput = $dompdf->output();
+				
+				// Crea la respuesta HTTP adecuada
+				$response = new Response($pdfOutput);
+				$response->headers->set('Content-Type', 'application/pdf');
+				$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
+				
+				return $response;
 
 			}
 
