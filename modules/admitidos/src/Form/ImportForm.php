@@ -93,33 +93,29 @@ class ImportForm extends FormBase {
 	}
 
 	public function readCSV($csvFile){
-		//Detecta en que momento se termina cada fila del archivo CSV
-		ini_set('auto_detect_line_endings',TRUE);
+		$row = 0;
+		$header = null;
+		$datos = [];
 
-		$row = 0;															//Variable que controla numero de filas
-		$header = NULL;												//Variable para identificar los encabezados de las filas
-		$datos = array();											//Array para ir guardado los datos del CSV
-		$file_handle = fopen($csvFile, 'r');	//Abre el archivo CSV
+		// Leer y normalizar el contenido del archivo CSV
+		$csv_content = file_get_contents($csvFile);
+		$csv_content = str_replace(["\r\n", "\r"], "\n", $csv_content);
 
-		//Ciclo para leer lineas por linea el CSV
-		while (!feof($file_handle) ) {
-			$line_of_text[] = fgetcsv($file_handle, 1024, ',');
+		// Crear un archivo temporal con el contenido normalizado
+		$temp = tmpfile();
+		fwrite($temp, $csv_content);
+		rewind($temp);
 
-			if(!$header)
-				$header = $line_of_text[$row]; //Guarda en la variable los encabezados de las filas del CSV
-			else
-				$datos[] = array_combine($header, $line_of_text[$row]); //Guarda los datos en un array con cadaencabezado correspondiente
-
-			//Aumenta el contador de filas
-			$row++;
+		while (($line = fgetcsv($temp, 1024, ',')) !== false) {
+				if (!$header) {
+						$header = $line;
+				} else {
+						$datos[] = array_combine($header, $line);
+				}
 		}
 
-		//Cierra el archivo CSV
-		fclose($file_handle);
+		fclose($temp);
 
 		return $datos;
-
-		//Cierra la lectura de fin de filas
-		ini_set('auto_detect_line_endings',FALSE);
 	}
 }
