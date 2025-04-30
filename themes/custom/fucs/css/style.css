@@ -9305,6 +9305,12 @@ strong {
   padding-left: 10px;
 }
 
+.region-primary-menu .menu .menu-item--expanded>.menu>li>a {
+  color: #606060;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
 .fucs-pop-up {
   background: #00000099;
   position: fixed;
