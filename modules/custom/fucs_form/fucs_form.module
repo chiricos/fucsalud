@@ -55,7 +55,7 @@ function fucs_form_theme($existing, $type, $theme, $path) {
 
 function fucs_form_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
   if ($block->getBaseId() == 'lineadeatencionsinenredos') {
-    $build['#weight'] = -100;
+    $build['#weight'] = 100;
   }
 
 }
