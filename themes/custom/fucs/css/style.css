@@ -9235,6 +9235,10 @@ strong {
   list-style-image: url(../images/menu/08-educacion-continuada.svg);
 }
 
+.region-primary-menu .menu .menu-item--expanded:nth-child(2)>.menu .menu-item--expanded:nth-child(9) {
+  list-style-image: url(../images/menu/09-ciencias-basicas.svg);
+}
+
 .region-primary-menu .menu .menu-item--expanded:nth-child(2)>.menu .menu-item--expanded::marker {
   font-size: 40px;
 }
@@ -9243,12 +9247,15 @@ strong {
   width: 1300px;
   margin-left: -269px;
   padding-left: 50px;
-  padding-top: 0;
+  padding-top: 15px;
 }
 
 .region-primary-menu .menu .menu-item--expanded:nth-child(2)>.menu>li {
   width: 33%;
-  float: left;
+  /*float: left;*/
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0px;
 }
 
 .region-primary-menu .menu .menu-item--expanded:nth-child(2)>.menu>li>a {
