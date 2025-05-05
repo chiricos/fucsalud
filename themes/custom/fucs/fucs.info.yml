@@ -24,6 +24,7 @@ regions:
   secundary_menu: "Segundo Menu"
   submenu_page: "Menu segunda pagina"
   sub_menu: "Sub menu segunda pagina"
+  sub_menu_footer: "Sub menu footer segunda pagina"
   sub_contenido_1: "Primer contenido con sub menu"
   sub_contenido_2: "Segundo contenido con sub menu"
   content: "Content"
