@@ -9247,14 +9247,12 @@ strong {
   width: 1300px;
   margin-left: -269px;
   padding-left: 50px;
-  padding-top: 15px;
+  padding-top: 0;
 }
 
 .region-primary-menu .menu .menu-item--expanded:nth-child(2)>.menu>li {
   width: 33%;
-  /*float: left;*/
-  display: inline-block;
-  vertical-align: top;
+  float: left;
   margin-top: 0px;
 }
 
