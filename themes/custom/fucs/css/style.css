@@ -9348,6 +9348,10 @@ strong {
   width: 100%;
 }
 
+.fucs-pop-up-oferta-academica {
+  display: block;
+}
+
 /*========================================
                 RESPONSIVE
 ========================================*/
