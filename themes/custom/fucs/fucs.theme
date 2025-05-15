@@ -24,7 +24,7 @@ function fucs_preprocess_node(&$variables) {
   // If view mode is in allowed view modes list, pass to fucs_add_regions_to_node()
   if(in_array($view_mode, $allowed_view_modes)) {
     // Allowed regions (for performance so as to not execute for unneeded region)
-    $allowed_regions = ['preuniversitario_content_2','pregrado_contenido_3','submenu_page','preuniversitario_content_1','sub_menu','pregrado_contenido_1'];
+    $allowed_regions = ['preuniversitario_content_2','pregrado_contenido_3','submenu_page','preuniversitario_content_1','sub_menu', 'sub_footer_menu','pregrado_contenido_1'];
     fucs_add_regions_to_node($allowed_regions, $variables);
   }
 
