@@ -12396,6 +12396,21 @@ body .contenedorTable
     width: 100%;
   }
 
+  .carrito {
+    width: 100%;
+  }
+
+  .tienda-catalogo-item {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .apartaestudios-content, .acordion-lateral .acordion-lateral-de{
+    margin:  0;
+    padding: 0;
+  }
+
 }
 
 
