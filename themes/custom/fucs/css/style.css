@@ -7520,6 +7520,8 @@ acordion lateral
   border-radius: 0;
   margin-bottom: 15px;
   margin-top: 58px;
+  width: 100%;
+  height: auto;
 }
 
 .tienda-catalogo-info {
