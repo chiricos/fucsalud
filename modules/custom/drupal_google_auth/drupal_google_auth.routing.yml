@@ -4,7 +4,7 @@ google:
     _controller: Drupal\drupal_google_auth\Controller\GoogleAuthController::getAuth
     _title: Google
   requirements:
-    _permission: 'access content'
+    _access: 'TRUE'
 
 callback:
   path: /auth/google/callback
@@ -12,7 +12,7 @@ callback:
     _controller: Drupal\drupal_google_auth\Controller\GoogleAuthController::callback
     _title: Google
   requirements:
-    _permission: 'access content'
+    _access: 'TRUE'
 
 login:
   path: /auth/google/login
@@ -20,7 +20,7 @@ login:
     _controller: Drupal\drupal_google_auth\Controller\GoogleAuthController::login
     _title: Google
   requirements:
-    _permission: 'access content'
+    _access: 'TRUE'
 
 config:
   path: /admin/google-auth/config
@@ -28,4 +28,4 @@ config:
     _form: Drupal\drupal_google_auth\Form\GoogleAuthForm
     _title: Google Auth config
   requirements:
-    _permission: 'access content'
+    _permission: 'administer site configuration'
