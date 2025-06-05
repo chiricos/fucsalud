@@ -49,8 +49,12 @@ class ShoppingCartController
             $message = "Item no pudo ser eliminado";
         }
         return array(
+            '#type' => 'markup',
+            '#markup' => $id,
             '#title' => $message,
-            'markup' => $id,
+            '#cache' => array(
+                'max-age' => 0,
+            ),
         );
     }
 
