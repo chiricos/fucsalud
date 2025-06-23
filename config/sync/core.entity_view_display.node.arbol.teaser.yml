@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.arbol.field_term_tree
     - field.field.node.arbol.field_tree_month
     - field.field.node.arbol.field_tree_name
+    - field.field.node.arbol.field_yoast_seo
     - node.type.arbol
   module:
     - text
@@ -38,4 +39,5 @@ hidden:
   field_term_tree: true
   field_tree_month: true
   field_tree_name: true
+  field_yoast_seo: true
   langcode: true

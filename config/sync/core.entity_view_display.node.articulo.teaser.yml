@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.articulo.field_meta_tags
     - field.field.node.articulo.field_pdf
     - field.field.node.articulo.field_volumen_revista
+    - field.field.node.articulo.field_yoast_seo
     - node.type.articulo
   module:
     - text
@@ -40,4 +41,5 @@ hidden:
   field_meta_tags: true
   field_pdf: true
   field_volumen_revista: true
+  field_yoast_seo: true
   langcode: true

@@ -1,0 +1,21 @@
+uuid: fa6274b5-46fd-4af0-98c5-bb2d9d86bce6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.slider_segundo_home_investigacio
+  module:
+    - yoast_seo
+id: node.slider_segundo_home_investigacio.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: slider_segundo_home_investigacio
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.volumen.field_ano
     - field.field.node.volumen.field_meta_tags
     - field.field.node.volumen.field_volumen
+    - field.field.node.volumen.field_yoast_seo
     - node.type.volumen
   module:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.volumen.default
 targetEntityType: node
 bundle: volumen
@@ -52,6 +54,13 @@ content:
     weight: 33
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.arbol.field_term_tree
     - field.field.node.arbol.field_tree_month
     - field.field.node.arbol.field_tree_name
+    - field.field.node.arbol.field_yoast_seo
     - node.type.arbol
   module:
     - file
@@ -65,6 +66,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 107
+    region: content
+  field_yoast_seo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
     region: content
   links:
     settings: {  }

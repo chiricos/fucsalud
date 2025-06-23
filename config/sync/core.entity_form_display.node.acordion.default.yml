@@ -45,11 +45,13 @@ dependencies:
     - field.field.node.acordion.field_acordion_titulo_8
     - field.field.node.acordion.field_acordion_titulo_9
     - field.field.node.acordion.field_meta_tags
+    - field.field.node.acordion.field_yoast_seo
     - node.type.acordion
   module:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.acordion.default
 targetEntityType: node
 bundle: acordion
@@ -438,6 +440,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.base_de_datos.body
     - field.field.node.base_de_datos.field_base_de_datos
     - field.field.node.base_de_datos.field_meta_tags
+    - field.field.node.base_de_datos.field_yoast_seo
     - node.type.base_de_datos
   module:
     - text
@@ -32,4 +33,5 @@ content:
 hidden:
   field_base_de_datos: true
   field_meta_tags: true
+  field_yoast_seo: true
   langcode: true

@@ -46,6 +46,7 @@ dependencies:
     - field.field.node.acordion.field_acordion_titulo_8
     - field.field.node.acordion.field_acordion_titulo_9
     - field.field.node.acordion.field_meta_tags
+    - field.field.node.acordion.field_yoast_seo
     - node.type.acordion
   module:
     - text
@@ -110,4 +111,5 @@ hidden:
   field_acordion_titulo_8: true
   field_acordion_titulo_9: true
   field_meta_tags: true
+  field_yoast_seo: true
   langcode: true

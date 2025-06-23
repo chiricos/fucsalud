@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.tienda_virtual_tienda.field_image
     - field.field.node.tienda_virtual_tienda.field_meta_tags
     - field.field.node.tienda_virtual_tienda.field_texto_
+    - field.field.node.tienda_virtual_tienda.field_yoast_seo
     - image.style.thumbnail
     - node.type.tienda_virtual_tienda
   module:
     - image
     - metatag
     - path
+    - yoast_seo
 id: node.tienda_virtual_tienda.default
 targetEntityType: node
 bundle: tienda_virtual_tienda
@@ -47,6 +49,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

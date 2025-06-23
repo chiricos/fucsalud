@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.cursos.field_titulo_acordion_
     - field.field.node.cursos.field_titulo_cursos
     - field.field.node.cursos.field_titulos_acordion_3
+    - field.field.node.cursos.field_yoast_seo
     - image.style.thumbnail
     - node.type.cursos
   module:
@@ -25,6 +26,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.cursos.default
 targetEntityType: node
 bundle: cursos
@@ -155,6 +157,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   path:
     type: path

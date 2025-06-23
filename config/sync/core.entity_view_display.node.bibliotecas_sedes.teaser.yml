@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.bibliotecas_sedes.field_image
     - field.field.node.bibliotecas_sedes.field_meta_tags
     - field.field.node.bibliotecas_sedes.field_sede
+    - field.field.node.bibliotecas_sedes.field_yoast_seo
     - node.type.bibliotecas_sedes
   module:
     - user
@@ -28,4 +29,5 @@ hidden:
   field_image: true
   field_meta_tags: true
   field_sede: true
+  field_yoast_seo: true
   langcode: true

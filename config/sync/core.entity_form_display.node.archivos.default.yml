@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.archivos.field_meta_tags
     - field.field.node.archivos.field_office
+    - field.field.node.archivos.field_yoast_seo
     - node.type.archivos
   module:
     - file
     - metatag
     - path
+    - yoast_seo
 id: node.archivos.default
 targetEntityType: node
 bundle: archivos
@@ -35,6 +37,13 @@ content:
     region: content
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

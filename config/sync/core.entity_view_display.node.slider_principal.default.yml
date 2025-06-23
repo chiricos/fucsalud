@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.slider_principal.field_link
     - field.field.node.slider_principal.field_meta_tags
     - field.field.node.slider_principal.field_slider_1400x600_
+    - field.field.node.slider_principal.field_yoast_seo
     - image.style.home_slider
     - node.type.slider_principal
   module:
@@ -59,6 +60,14 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_yoast_seo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }

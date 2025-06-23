@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.slider_infraestructura.field_link
     - field.field.node.slider_infraestructura.field_meta_tags
     - field.field.node.slider_infraestructura.field_slider_1400x600_
+    - field.field.node.slider_infraestructura.field_yoast_seo
     - image.style.thumbnail
     - node.type.slider_infraestructura
   module:
     - image
     - metatag
     - path
+    - yoast_seo
 id: node.slider_infraestructura.default
 targetEntityType: node
 bundle: slider_infraestructura
@@ -55,6 +57,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 125
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

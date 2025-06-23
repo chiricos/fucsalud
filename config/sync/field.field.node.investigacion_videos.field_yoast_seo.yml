@@ -1,0 +1,21 @@
+uuid: 07cc7abe-df4a-4411-9f8c-e0ff42ba99f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.investigacion_videos
+  module:
+    - yoast_seo
+id: node.investigacion_videos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: investigacion_videos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

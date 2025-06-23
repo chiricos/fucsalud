@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.programas.body
     - field.field.node.programas.field_meta_tags
+    - field.field.node.programas.field_yoast_seo
     - node.type.programas
   module:
     - metatag
     - text
+    - yoast_seo
 id: node.programas.default
 targetEntityType: node
 bundle: programas
@@ -31,6 +33,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   status:
     type: boolean_checkbox

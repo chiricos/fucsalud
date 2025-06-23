@@ -1,0 +1,21 @@
+uuid: 4cd32908-cae9-4022-b039-41176d8d0cb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.bienestar_noticias
+  module:
+    - yoast_seo
+id: node.bienestar_noticias.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: bienestar_noticias
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

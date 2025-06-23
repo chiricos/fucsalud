@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.continuada_noticias.field_meta_tags
     - field.field.node.continuada_noticias.field_noticias_imagen
     - field.field.node.continuada_noticias.field_noticias_titulo
+    - field.field.node.continuada_noticias.field_yoast_seo
     - node.type.continuada_noticias
   module:
     - text
@@ -36,4 +37,5 @@ hidden:
   field_meta_tags: true
   field_noticias_imagen: true
   field_noticias_titulo: true
+  field_yoast_seo: true
   langcode: true

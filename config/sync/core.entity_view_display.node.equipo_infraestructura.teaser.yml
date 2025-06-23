@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.equipo_infraestructura.field_cargo
     - field.field.node.equipo_infraestructura.field_meta_tags
     - field.field.node.equipo_infraestructura.field_testimonio_imagen
+    - field.field.node.equipo_infraestructura.field_yoast_seo
     - node.type.equipo_infraestructura
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_cargo: true
   field_meta_tags: true
   field_testimonio_imagen: true
+  field_yoast_seo: true
   langcode: true

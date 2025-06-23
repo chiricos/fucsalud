@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.testimonios.field_testimonio_enlace
     - field.field.node.testimonios.field_testimonio_imagen
     - field.field.node.testimonios.field_testimonio_nombre
+    - field.field.node.testimonios.field_yoast_seo
     - node.type.testimonios
   module:
     - text
@@ -40,4 +41,5 @@ hidden:
   field_testimonio_enlace: true
   field_testimonio_imagen: true
   field_testimonio_nombre: true
+  field_yoast_seo: true
   langcode: true

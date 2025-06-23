@@ -22,6 +22,7 @@ dependencies:
     - field.field.node.posgrado.field_titulo
     - field.field.node.posgrado.field_titulo_
     - field.field.node.posgrado.field_titulo_acordion_
+    - field.field.node.posgrado.field_yoast_seo
     - node.type.posgrado
   module:
     - image
@@ -178,6 +179,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 111
+    region: content
+  field_yoast_seo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 121
     region: content
   links:
     settings: {  }

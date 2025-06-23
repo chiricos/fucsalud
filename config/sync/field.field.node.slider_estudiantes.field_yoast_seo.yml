@@ -1,0 +1,21 @@
+uuid: e81cb97a-0370-42fc-8564-beb02c68d820
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.slider_estudiantes
+  module:
+    - yoast_seo
+id: node.slider_estudiantes.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: slider_estudiantes
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

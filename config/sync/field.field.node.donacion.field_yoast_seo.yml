@@ -1,0 +1,21 @@
+uuid: b1964217-b2ed-4835-98cb-b16e70272a60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.donacion
+  module:
+    - yoast_seo
+id: node.donacion.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: donacion
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

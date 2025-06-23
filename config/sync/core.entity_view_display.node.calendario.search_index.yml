@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.calendario.field_home_even_fecha
     - field.field.node.calendario.field_meta_tags
     - field.field.node.calendario.field_noticias_imagen
+    - field.field.node.calendario.field_yoast_seo
     - node.type.calendario
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_home_even_fecha: true
   field_meta_tags: true
   field_noticias_imagen: true
+  field_yoast_seo: true
   langcode: true

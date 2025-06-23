@@ -1,0 +1,21 @@
+uuid: 5bedb524-a51f-4e5c-9268-c777325cc530
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.tienda
+  module:
+    - yoast_seo
+id: node.tienda.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: tienda
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

@@ -81,6 +81,7 @@ dependencies:
     - field.field.node.colaborador_acordion_lateral.field_body_5
     - field.field.node.colaborador_acordion_lateral.field_body_6
     - field.field.node.colaborador_acordion_lateral.field_meta_tags
+    - field.field.node.colaborador_acordion_lateral.field_yoast_seo
     - node.type.colaborador_acordion_lateral
   module:
     - text
@@ -180,4 +181,5 @@ hidden:
   field_body_5: true
   field_body_6: true
   field_meta_tags: true
+  field_yoast_seo: true
   langcode: true

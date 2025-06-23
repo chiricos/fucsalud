@@ -1,0 +1,21 @@
+uuid: d43e5368-40cf-4de1-a618-c10f575e9ee8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.acordion
+  module:
+    - yoast_seo
+id: node.acordion.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: acordion
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

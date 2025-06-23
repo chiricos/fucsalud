@@ -1,0 +1,21 @@
+uuid: 20a2ca4d-520e-4c82-8b79-28d27865a373
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.semilleros_videos
+  module:
+    - yoast_seo
+id: node.semilleros_videos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: semilleros_videos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

@@ -1,0 +1,21 @@
+uuid: dbade4d9-1ac7-4d61-96df-821295227e4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.documentos_privados
+  module:
+    - yoast_seo
+id: node.documentos_privados.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: documentos_privados
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

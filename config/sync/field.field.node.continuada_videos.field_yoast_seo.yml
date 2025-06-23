@@ -1,0 +1,21 @@
+uuid: 244d69ed-e7bc-4a19-8eb3-f66e037bbaa5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.continuada_videos
+  module:
+    - yoast_seo
+id: node.continuada_videos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: continuada_videos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

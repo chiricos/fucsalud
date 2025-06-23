@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.proyeccion_social_videos.body
     - field.field.node.proyeccion_social_videos.field_meta_tags
+    - field.field.node.proyeccion_social_videos.field_yoast_seo
     - node.type.proyeccion_social_videos
   module:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.proyeccion_social_videos.default
 targetEntityType: node
 bundle: proyeccion_social_videos
@@ -38,6 +40,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

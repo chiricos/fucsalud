@@ -1,0 +1,21 @@
+uuid: 1755b4c0-22db-4705-b264-abf5dd537bb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.posgrado
+  module:
+    - yoast_seo
+id: node.posgrado.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: posgrado
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

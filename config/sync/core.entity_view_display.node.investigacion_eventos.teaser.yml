@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.investigacion_eventos.field_inve_eve_fecha
     - field.field.node.investigacion_eventos.field_meta_tags
     - field.field.node.investigacion_eventos.field_noticias_imagen
+    - field.field.node.investigacion_eventos.field_yoast_seo
     - node.type.investigacion_eventos
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_inve_eve_fecha: true
   field_meta_tags: true
   field_noticias_imagen: true
+  field_yoast_seo: true
   langcode: true

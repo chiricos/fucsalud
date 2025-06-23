@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.tienda_virtual_tienda.field_image
     - field.field.node.tienda_virtual_tienda.field_meta_tags
     - field.field.node.tienda_virtual_tienda.field_texto_
+    - field.field.node.tienda_virtual_tienda.field_yoast_seo
     - node.type.tienda_virtual_tienda
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_image: true
   field_meta_tags: true
   field_texto_: true
+  field_yoast_seo: true
   langcode: true

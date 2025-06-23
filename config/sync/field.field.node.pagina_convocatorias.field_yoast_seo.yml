@@ -1,0 +1,21 @@
+uuid: a2ddeb8c-0dfc-447f-bf0a-11828f49a0c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.pagina_convocatorias
+  module:
+    - yoast_seo
+id: node.pagina_convocatorias.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: pagina_convocatorias
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

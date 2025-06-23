@@ -1,0 +1,21 @@
+uuid: a7f6d6aa-e7db-40cc-aacc-5ae5d80e651d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.testimonios
+  module:
+    - yoast_seo
+id: node.testimonios.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: testimonios
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

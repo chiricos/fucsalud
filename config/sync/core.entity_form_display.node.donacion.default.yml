@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.donacion.body
     - field.field.node.donacion.field_meta_tags
     - field.field.node.donacion.field_precio
+    - field.field.node.donacion.field_yoast_seo
     - node.type.donacion
   module:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.donacion.default
 targetEntityType: node
 bundle: donacion
@@ -46,6 +48,13 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

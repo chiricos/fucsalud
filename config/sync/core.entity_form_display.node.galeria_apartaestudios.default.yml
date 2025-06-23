@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.galeria_apartaestudios.field_meta_tags
     - field.field.node.galeria_apartaestudios.field_testimonio_imagen
+    - field.field.node.galeria_apartaestudios.field_yoast_seo
     - node.type.galeria_apartaestudios
   module:
     - filefield_sources
     - image
     - metatag
     - path
+    - yoast_seo
 id: node.galeria_apartaestudios.default
 targetEntityType: node
 bundle: galeria_apartaestudios
@@ -53,6 +55,13 @@ content:
             path: file_attach
             absolute: 0
             attach_mode: move
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 124
+    region: content
+    settings:
+      body: body
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2

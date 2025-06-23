@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.colaboradores_eventos.field_col_fec
     - field.field.node.colaboradores_eventos.field_meta_tags
     - field.field.node.colaboradores_eventos.field_noticias_imagen
+    - field.field.node.colaboradores_eventos.field_yoast_seo
     - node.type.colaboradores_eventos
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_col_fec: true
   field_meta_tags: true
   field_noticias_imagen: true
+  field_yoast_seo: true
   langcode: true

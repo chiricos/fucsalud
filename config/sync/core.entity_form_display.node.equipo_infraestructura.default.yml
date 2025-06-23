@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.equipo_infraestructura.field_cargo
     - field.field.node.equipo_infraestructura.field_meta_tags
     - field.field.node.equipo_infraestructura.field_testimonio_imagen
+    - field.field.node.equipo_infraestructura.field_yoast_seo
     - image.style.thumbnail
     - node.type.equipo_infraestructura
   module:
     - image
     - metatag
     - path
+    - yoast_seo
 id: node.equipo_infraestructura.default
 targetEntityType: node
 bundle: equipo_infraestructura
@@ -47,6 +49,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 28
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

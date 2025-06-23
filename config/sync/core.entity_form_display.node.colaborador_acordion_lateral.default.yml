@@ -80,11 +80,13 @@ dependencies:
     - field.field.node.colaborador_acordion_lateral.field_body_5
     - field.field.node.colaborador_acordion_lateral.field_body_6
     - field.field.node.colaborador_acordion_lateral.field_meta_tags
+    - field.field.node.colaborador_acordion_lateral.field_yoast_seo
     - node.type.colaborador_acordion_lateral
   module:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.colaborador_acordion_lateral.default
 targetEntityType: node
 bundle: colaborador_acordion_lateral
@@ -793,6 +795,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

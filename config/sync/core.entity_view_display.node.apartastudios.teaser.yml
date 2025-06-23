@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.apartastudios.field_apartaestudio_descripcion
     - field.field.node.apartastudios.field_image
     - field.field.node.apartastudios.field_meta_tags
+    - field.field.node.apartastudios.field_yoast_seo
     - node.type.apartastudios
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_apartaestudio_descripcion: true
   field_image: true
   field_meta_tags: true
+  field_yoast_seo: true
   langcode: true

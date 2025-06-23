@@ -1,0 +1,21 @@
+uuid: 8c717058-779d-4e01-b22d-c22983a4a77d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.slider_investigaciones
+  module:
+    - yoast_seo
+id: node.slider_investigaciones.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: slider_investigaciones
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

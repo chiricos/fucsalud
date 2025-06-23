@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.semilleros_noticias.field_noticias_imagen
     - field.field.node.semilleros_noticias.field_noticias_titulo
     - field.field.node.semilleros_noticias.field_semilleros_noticas_fecha
+    - field.field.node.semilleros_noticias.field_yoast_seo
     - node.type.semilleros_noticias
   module:
     - text
@@ -36,4 +37,5 @@ hidden:
   field_noticias_imagen: true
   field_noticias_titulo: true
   field_semilleros_noticas_fecha: true
+  field_yoast_seo: true
   langcode: true

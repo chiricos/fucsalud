@@ -1,0 +1,21 @@
+uuid: 367f494f-263b-4e30-b0c2-1e8c1963d50b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.noticias
+  module:
+    - yoast_seo
+id: node.noticias.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: noticias
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

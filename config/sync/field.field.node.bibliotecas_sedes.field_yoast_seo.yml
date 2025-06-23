@@ -1,0 +1,21 @@
+uuid: b23a40ba-3a02-4440-88d3-8e0738fadfed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.bibliotecas_sedes
+  module:
+    - yoast_seo
+id: node.bibliotecas_sedes.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: bibliotecas_sedes
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

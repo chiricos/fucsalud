@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.semilleros_patrocinadores.field_meta_tags
     - field.field.node.semilleros_patrocinadores.field_noticias_imagen
+    - field.field.node.semilleros_patrocinadores.field_yoast_seo
     - image.style.thumbnail
     - node.type.semilleros_patrocinadores
   module:
     - image
     - metatag
     - path
+    - yoast_seo
 id: node.semilleros_patrocinadores.default
 targetEntityType: node
 bundle: semilleros_patrocinadores
@@ -37,6 +39,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

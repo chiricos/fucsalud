@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.eventos_bienestar.field_meta_tags
     - field.field.node.eventos_bienestar.field_noticias_imagen
     - field.field.node.eventos_bienestar.field_titulo_bienestar
+    - field.field.node.eventos_bienestar.field_yoast_seo
     - node.type.eventos_bienestar
   module:
     - text
@@ -36,4 +37,5 @@ hidden:
   field_meta_tags: true
   field_noticias_imagen: true
   field_titulo_bienestar: true
+  field_yoast_seo: true
   langcode: true

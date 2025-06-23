@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.publicaciones.field_price_format
     - field.field.node.publicaciones.field_referencia
     - field.field.node.publicaciones.field_titulo_publicaciones
+    - field.field.node.publicaciones.field_yoast_seo
     - node.type.publicaciones
   module:
     - text
@@ -44,4 +45,5 @@ hidden:
   field_price_format: true
   field_referencia: true
   field_titulo_publicaciones: true
+  field_yoast_seo: true
   langcode: true

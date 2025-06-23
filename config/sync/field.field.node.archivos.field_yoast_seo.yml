@@ -1,0 +1,21 @@
+uuid: de451504-ae62-43ac-bf92-29a34cbb0314
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.archivos
+  module:
+    - yoast_seo
+id: node.archivos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: archivos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

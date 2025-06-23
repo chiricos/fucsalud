@@ -1,0 +1,21 @@
+uuid: d401a8f7-2ef3-4501-8627-322d7ab67df5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.bienestar_videos
+  module:
+    - yoast_seo
+id: node.bienestar_videos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: bienestar_videos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

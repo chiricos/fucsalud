@@ -1,0 +1,21 @@
+uuid: 70930b2a-72f9-4900-a1b6-960a0ec76a36
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.tienda_virtual_tienda
+  module:
+    - yoast_seo
+id: node.tienda_virtual_tienda.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: tienda_virtual_tienda
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

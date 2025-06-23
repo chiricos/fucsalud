@@ -1,0 +1,21 @@
+uuid: 47ef1ff8-a3da-4224-87a5-7aef8d0b55d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.bienestar_eventos
+  module:
+    - yoast_seo
+id: node.bienestar_eventos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: bienestar_eventos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

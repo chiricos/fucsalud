@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.revistas.field_meta_tags
     - field.field.node.revistas.field_precio
     - field.field.node.revistas.field_titulo_de_la_revista
+    - field.field.node.revistas.field_yoast_seo
     - node.type.revistas
   module:
     - text
@@ -38,4 +39,5 @@ hidden:
   field_meta_tags: true
   field_precio: true
   field_titulo_de_la_revista: true
+  field_yoast_seo: true
   langcode: true

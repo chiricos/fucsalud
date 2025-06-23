@@ -1,0 +1,21 @@
+uuid: 06771307-d981-4535-a219-3bd32ca3e2a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.prueba_drawde
+  module:
+    - yoast_seo
+id: node.prueba_drawde.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: prueba_drawde
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

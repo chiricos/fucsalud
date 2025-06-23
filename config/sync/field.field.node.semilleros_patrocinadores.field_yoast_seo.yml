@@ -1,0 +1,21 @@
+uuid: fe50a95a-82b9-4148-8c18-0468d909cec7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.semilleros_patrocinadores
+  module:
+    - yoast_seo
+id: node.semilleros_patrocinadores.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: semilleros_patrocinadores
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

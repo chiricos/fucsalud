@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.pregrado.field_titulo
     - field.field.node.pregrado.field_titulo_
     - field.field.node.pregrado.field_titulo_acordion_
+    - field.field.node.pregrado.field_yoast_seo
     - node.type.pregrado
   module:
     - text
@@ -64,4 +65,5 @@ hidden:
   field_titulo: true
   field_titulo_: true
   field_titulo_acordion_: true
+  field_yoast_seo: true
   langcode: true

@@ -1,0 +1,21 @@
+uuid: 6bd3fa1a-0484-4f8b-8a7b-6b85692dabf3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.investigacion_eventos
+  module:
+    - yoast_seo
+id: node.investigacion_eventos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: investigacion_eventos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

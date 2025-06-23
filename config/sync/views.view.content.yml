@@ -2,9 +2,12 @@ uuid: 91cf4bfa-7687-4853-a7b7-4b8eb41f9236
 langcode: es
 status: true
 dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
   module:
     - node
     - user
+    - yoast_seo
 _core:
   default_config_hash: YIwhIF9MSP1E_HMam6MrYeti_UqMXQiLDMjDsPFKK8s
 id: content
@@ -237,6 +240,12 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: true
+        field_yoast_seo:
+          id: field_yoast_seo
+          table: node__field_yoast_seo
+          field: field_yoast_seo
+          plugin_id: field
+          type: yoastseo_formatter
       pager:
         type: full
         options:
@@ -583,7 +592,8 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_yoast_seo'
   page_1:
     id: page_1
     display_title: Page
@@ -615,4 +625,5 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_yoast_seo'

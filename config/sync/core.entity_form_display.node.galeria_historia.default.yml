@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.galeria_historia.field_imagen_bienestar
     - field.field.node.galeria_historia.field_meta_tags
+    - field.field.node.galeria_historia.field_yoast_seo
     - image.style.thumbnail
     - node.type.galeria_historia
   module:
     - image
     - metatag
     - path
+    - yoast_seo
 id: node.galeria_historia.default
 targetEntityType: node
 bundle: galeria_historia
@@ -37,6 +39,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

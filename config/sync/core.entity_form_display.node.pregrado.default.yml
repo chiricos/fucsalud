@@ -22,6 +22,7 @@ dependencies:
     - field.field.node.pregrado.field_titulo
     - field.field.node.pregrado.field_titulo_
     - field.field.node.pregrado.field_titulo_acordion_
+    - field.field.node.pregrado.field_yoast_seo
     - image.style.thumbnail
     - node.type.pregrado
   module:
@@ -29,6 +30,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.pregrado.default
 targetEntityType: node
 bundle: pregrado
@@ -205,6 +207,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

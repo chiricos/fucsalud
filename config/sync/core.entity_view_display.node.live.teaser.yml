@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.live.field_cuerpo
     - field.field.node.live.field_meta_tags
     - field.field.node.live.field_titulo_mostrado
+    - field.field.node.live.field_yoast_seo
     - node.type.live
   module:
     - user
@@ -26,4 +27,5 @@ hidden:
   field_cuerpo: true
   field_meta_tags: true
   field_titulo_mostrado: true
+  field_yoast_seo: true
   langcode: true

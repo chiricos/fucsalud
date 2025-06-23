@@ -1,0 +1,21 @@
+uuid: 6dbdf6e4-4762-49a3-ae40-5ab6adea7f10
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.slider_aspirantes
+  module:
+    - yoast_seo
+id: node.slider_aspirantes.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: slider_aspirantes
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

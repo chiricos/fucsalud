@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.bienestar_noticias.body
     - field.field.node.bienestar_noticias.field_meta_tags
     - field.field.node.bienestar_noticias.field_noticias_imagen
+    - field.field.node.bienestar_noticias.field_yoast_seo
     - node.type.bienestar_noticias
   module:
     - text
@@ -32,4 +33,5 @@ content:
 hidden:
   field_meta_tags: true
   field_noticias_imagen: true
+  field_yoast_seo: true
   langcode: true

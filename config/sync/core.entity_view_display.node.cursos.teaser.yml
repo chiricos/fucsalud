@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.cursos.field_titulo_acordion_
     - field.field.node.cursos.field_titulo_cursos
     - field.field.node.cursos.field_titulos_acordion_3
+    - field.field.node.cursos.field_yoast_seo
     - node.type.cursos
   module:
     - text
@@ -56,4 +57,5 @@ hidden:
   field_titulo_acordion_: true
   field_titulo_cursos: true
   field_titulos_acordion_3: true
+  field_yoast_seo: true
   langcode: true

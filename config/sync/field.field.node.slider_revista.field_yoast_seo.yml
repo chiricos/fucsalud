@@ -1,0 +1,21 @@
+uuid: 3f867824-77c0-4b97-a322-3a151bc06242
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.slider_revista
+  module:
+    - yoast_seo
+id: node.slider_revista.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: slider_revista
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

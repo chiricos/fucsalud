@@ -82,6 +82,7 @@ dependencies:
     - field.field.node.acordion_lateral.field_acordion_titulo_8
     - field.field.node.acordion_lateral.field_acordion_titulo_9
     - field.field.node.acordion_lateral.field_meta_tags
+    - field.field.node.acordion_lateral.field_yoast_seo
     - node.type.acordion_lateral
   module:
     - text
@@ -182,4 +183,5 @@ hidden:
   field_acordion_titulo_8: true
   field_acordion_titulo_9: true
   field_meta_tags: true
+  field_yoast_seo: true
   langcode: true

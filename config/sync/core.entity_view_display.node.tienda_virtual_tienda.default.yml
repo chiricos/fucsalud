@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.tienda_virtual_tienda.field_image
     - field.field.node.tienda_virtual_tienda.field_meta_tags
     - field.field.node.tienda_virtual_tienda.field_texto_
+    - field.field.node.tienda_virtual_tienda.field_yoast_seo
     - node.type.tienda_virtual_tienda
   module:
     - image
@@ -50,6 +51,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_yoast_seo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }

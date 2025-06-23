@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.programas_lateral.body
     - field.field.node.programas_lateral.field_meta_tags
+    - field.field.node.programas_lateral.field_yoast_seo
     - node.type.programas_lateral
   module:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.programas_lateral.default
 targetEntityType: node
 bundle: programas_lateral
@@ -38,6 +40,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

@@ -1,0 +1,21 @@
+uuid: 7c80fcfb-8cde-45a8-a34a-c7643c9d4a3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.programas_lateral
+  module:
+    - yoast_seo
+id: node.programas_lateral.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: programas_lateral
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

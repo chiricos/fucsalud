@@ -1,0 +1,21 @@
+uuid: 0df9050e-e3b9-4f02-af1b-f2bf68de8c5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.calendario_de_admisiones_
+  module:
+    - yoast_seo
+id: node.calendario_de_admisiones_.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: calendario_de_admisiones_
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

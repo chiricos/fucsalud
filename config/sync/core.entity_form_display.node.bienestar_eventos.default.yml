@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.bienestar_eventos.field_bie_fecha
     - field.field.node.bienestar_eventos.field_meta_tags
     - field.field.node.bienestar_eventos.field_noticias_imagen
+    - field.field.node.bienestar_eventos.field_yoast_seo
     - image.style.thumbnail
     - node.type.bienestar_eventos
   module:
@@ -15,6 +16,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.bienestar_eventos.default
 targetEntityType: node
 bundle: bienestar_eventos
@@ -57,6 +59,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

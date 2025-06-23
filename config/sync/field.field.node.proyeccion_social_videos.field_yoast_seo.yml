@@ -1,0 +1,21 @@
+uuid: 8a0671aa-b7ed-489b-9f03-49ee3070ef0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.proyeccion_social_videos
+  module:
+    - yoast_seo
+id: node.proyeccion_social_videos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: proyeccion_social_videos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

@@ -1,0 +1,21 @@
+uuid: 1908a73b-339d-4cc0-ae99-08f60c0cfaf0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.colaborador_acordion_lateral
+  module:
+    - yoast_seo
+id: node.colaborador_acordion_lateral.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: colaborador_acordion_lateral
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

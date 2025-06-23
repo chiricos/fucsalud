@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.cursos.field_titulo_acordion_
     - field.field.node.cursos.field_titulo_cursos
     - field.field.node.cursos.field_titulos_acordion_3
+    - field.field.node.cursos.field_yoast_seo
     - node.type.cursos
   module:
     - image
@@ -129,6 +130,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_yoast_seo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
     region: content
   links:
     settings: {  }

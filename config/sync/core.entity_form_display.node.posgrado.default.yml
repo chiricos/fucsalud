@@ -22,6 +22,7 @@ dependencies:
     - field.field.node.posgrado.field_titulo
     - field.field.node.posgrado.field_titulo_
     - field.field.node.posgrado.field_titulo_acordion_
+    - field.field.node.posgrado.field_yoast_seo
     - image.style.thumbnail
     - node.type.posgrado
   module:
@@ -29,6 +30,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.posgrado.default
 targetEntityType: node
 bundle: posgrado
@@ -205,6 +207,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

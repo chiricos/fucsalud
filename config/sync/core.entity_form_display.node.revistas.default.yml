@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.revistas.field_meta_tags
     - field.field.node.revistas.field_precio
     - field.field.node.revistas.field_titulo_de_la_revista
+    - field.field.node.revistas.field_yoast_seo
     - image.style.thumbnail
     - node.type.revistas
   module:
@@ -16,6 +17,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.revistas.default
 targetEntityType: node
 bundle: revistas
@@ -75,6 +77,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

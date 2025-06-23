@@ -1,0 +1,21 @@
+uuid: 44b141a6-2601-4f00-bb43-19fe3e72c22b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.cursos
+  module:
+    - yoast_seo
+id: node.cursos.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: cursos
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

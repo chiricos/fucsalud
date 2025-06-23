@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.volumen.field_ano
     - field.field.node.volumen.field_meta_tags
     - field.field.node.volumen.field_volumen
+    - field.field.node.volumen.field_yoast_seo
     - node.type.volumen
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_ano: true
   field_meta_tags: true
   field_volumen: true
+  field_yoast_seo: true
   langcode: true

@@ -9,11 +9,13 @@ dependencies:
     - field.field.node.arbol.field_term_tree
     - field.field.node.arbol.field_tree_month
     - field.field.node.arbol.field_tree_name
+    - field.field.node.arbol.field_yoast_seo
     - node.type.arbol
   module:
     - file
     - metatag
     - path
+    - yoast_seo
 id: node.arbol.default
 targetEntityType: node
 bundle: arbol
@@ -63,6 +65,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

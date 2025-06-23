@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.semilleros_noticias.field_noticias_imagen
     - field.field.node.semilleros_noticias.field_noticias_titulo
     - field.field.node.semilleros_noticias.field_semilleros_noticas_fecha
+    - field.field.node.semilleros_noticias.field_yoast_seo
     - node.type.semilleros_noticias
   module:
     - datetime
@@ -60,6 +61,14 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_yoast_seo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
     region: content
 hidden:
   langcode: true

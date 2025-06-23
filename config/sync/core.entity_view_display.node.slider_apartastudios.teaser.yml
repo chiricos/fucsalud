@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.slider_apartastudios.field_link
     - field.field.node.slider_apartastudios.field_meta_tags
     - field.field.node.slider_apartastudios.field_slider_1400x600_
+    - field.field.node.slider_apartastudios.field_yoast_seo
     - node.type.slider_apartastudios
   module:
     - user
@@ -26,4 +27,5 @@ hidden:
   field_link: true
   field_meta_tags: true
   field_slider_1400x600_: true
+  field_yoast_seo: true
   langcode: true

@@ -1,0 +1,21 @@
+uuid: 5455f352-8079-41fe-b52d-1dc02320ab68
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.infraestructura_noticias
+  module:
+    - yoast_seo
+id: node.infraestructura_noticias.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: infraestructura_noticias
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

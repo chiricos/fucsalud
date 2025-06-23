@@ -1,0 +1,21 @@
+uuid: 8b5fcec9-230c-4f38-a436-417d21071946
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.apartastudios
+  module:
+    - yoast_seo
+id: node.apartastudios.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: apartastudios
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

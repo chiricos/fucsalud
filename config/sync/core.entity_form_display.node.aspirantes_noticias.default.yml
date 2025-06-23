@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.aspirantes_noticias.field_meta_tags
     - field.field.node.aspirantes_noticias.field_noticias_imagen
     - field.field.node.aspirantes_noticias.field_noticias_titulo
+    - field.field.node.aspirantes_noticias.field_yoast_seo
     - image.style.thumbnail
     - node.type.aspirantes_noticias
   module:
@@ -16,6 +17,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.aspirantes_noticias.default
 targetEntityType: node
 bundle: aspirantes_noticias
@@ -68,6 +70,13 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

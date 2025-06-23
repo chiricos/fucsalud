@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.prueba_drawde.body
     - field.field.node.prueba_drawde.field_meta_tags
     - field.field.node.prueba_drawde.field_prueba
+    - field.field.node.prueba_drawde.field_yoast_seo
     - node.type.prueba_drawde
   module:
     - datetime
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.prueba_drawde.default
 targetEntityType: node
 bundle: prueba_drawde
@@ -46,6 +48,13 @@ content:
     weight: 32
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

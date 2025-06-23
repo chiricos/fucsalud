@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.slider_segundo_home_estudiantes.field_link
     - field.field.node.slider_segundo_home_estudiantes.field_meta_tags
     - field.field.node.slider_segundo_home_estudiantes.field_slider_1400x600_
+    - field.field.node.slider_segundo_home_estudiantes.field_yoast_seo
     - image.style.thumbnail
     - node.type.slider_segundo_home_estudiantes
   module:
@@ -14,6 +15,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.slider_segundo_home_estudiantes.default
 targetEntityType: node
 bundle: slider_segundo_home_estudiantes
@@ -58,6 +60,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

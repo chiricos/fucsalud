@@ -1,0 +1,21 @@
+uuid: d67099d4-04ee-42c6-ba7c-c644d7481deb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.programas
+  module:
+    - yoast_seo
+id: node.programas.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: programas
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

@@ -1,0 +1,21 @@
+uuid: a5d29ebb-a906-4d1c-ab0a-c7965100d845
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.egresados_noticias
+  module:
+    - yoast_seo
+id: node.egresados_noticias.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: egresados_noticias
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

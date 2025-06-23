@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.publicaciones.field_price_format
     - field.field.node.publicaciones.field_referencia
     - field.field.node.publicaciones.field_titulo_publicaciones
+    - field.field.node.publicaciones.field_yoast_seo
     - image.style.publicaciones
     - node.type.publicaciones
   module:
@@ -97,6 +98,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_yoast_seo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
     region: content
   links:
     settings: {  }

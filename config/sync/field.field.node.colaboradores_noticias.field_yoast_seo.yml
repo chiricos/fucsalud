@@ -1,0 +1,21 @@
+uuid: 0d7ccc0b-370b-44fb-bf0c-d445aa792b03
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.colaboradores_noticias
+  module:
+    - yoast_seo
+id: node.colaboradores_noticias.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: colaboradores_noticias
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

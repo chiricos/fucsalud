@@ -1,0 +1,21 @@
+uuid: 0862ec7d-c2c4-443f-9b9d-acbae1af4759
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.galeria_infraestructura
+  module:
+    - yoast_seo
+id: node.galeria_infraestructura.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: galeria_infraestructura
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

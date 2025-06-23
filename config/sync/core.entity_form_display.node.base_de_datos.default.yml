@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.base_de_datos.body
     - field.field.node.base_de_datos.field_base_de_datos
     - field.field.node.base_de_datos.field_meta_tags
+    - field.field.node.base_de_datos.field_yoast_seo
     - node.type.base_de_datos
   module:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.base_de_datos.default
 targetEntityType: node
 bundle: base_de_datos
@@ -45,6 +47,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 123
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

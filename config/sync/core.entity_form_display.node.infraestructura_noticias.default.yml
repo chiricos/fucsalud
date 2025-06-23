@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.infraestructura_noticias.body
     - field.field.node.infraestructura_noticias.field_meta_tags
     - field.field.node.infraestructura_noticias.field_noticias_imagen
+    - field.field.node.infraestructura_noticias.field_yoast_seo
     - image.style.thumbnail
     - node.type.infraestructura_noticias
   module:
@@ -13,6 +14,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.infraestructura_noticias.default
 targetEntityType: node
 bundle: infraestructura_noticias
@@ -49,6 +51,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 124
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select

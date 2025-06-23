@@ -1,0 +1,21 @@
+uuid: 890272a9-3b8c-4b42-aab8-e3d7947a90ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.slider_egresados
+  module:
+    - yoast_seo
+id: node.slider_egresados.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: slider_egresados
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

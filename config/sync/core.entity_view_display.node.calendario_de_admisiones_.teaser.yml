@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.calendario_de_admisiones_.field_aspirantes_admisiones
     - field.field.node.calendario_de_admisiones_.field_aspirantes_calendario_de_i
     - field.field.node.calendario_de_admisiones_.field_meta_tags
+    - field.field.node.calendario_de_admisiones_.field_yoast_seo
     - node.type.calendario_de_admisiones_
   module:
     - text
@@ -34,4 +35,5 @@ hidden:
   field_aspirantes_admisiones: true
   field_aspirantes_calendario_de_i: true
   field_meta_tags: true
+  field_yoast_seo: true
   langcode: true

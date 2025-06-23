@@ -1,0 +1,21 @@
+uuid: e297db98-6e69-479a-a069-ed67119d55ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.revistas
+  module:
+    - yoast_seo
+id: node.revistas.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: revistas
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.apartastudios.field_apartaestudio_descripcion
     - field.field.node.apartastudios.field_image
     - field.field.node.apartastudios.field_meta_tags
+    - field.field.node.apartastudios.field_yoast_seo
     - image.style.thumbnail
     - node.type.apartastudios
   module:
@@ -14,6 +15,7 @@ dependencies:
     - metatag
     - path
     - text
+    - yoast_seo
 id: node.apartastudios.default
 targetEntityType: node
 bundle: apartastudios
@@ -58,6 +60,13 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 125
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select
