@@ -72,6 +72,7 @@ dependencies:
     - taxonomy
     - toolbar
     - tour
+    - yoast_seo
 id: editor
 label: editor
 weight: 6
@@ -100,6 +101,7 @@ permissions:
   - 'administer taxonomy_term display'
   - 'administer url aliases'
   - 'administer user display'
+  - 'administer yoast seo'
   - 'create acordion content'
   - 'create acordion_lateral content'
   - 'create arbol content'
@@ -168,6 +170,7 @@ permissions:
   - 'use text format basic_html'
   - 'use text format drawde'
   - 'use text format full_html'
+  - 'use yoast seo'
   - 'view article revisions'
   - 'view continuada_noticias revisions'
   - 'view slider_investigaciones revisions'
