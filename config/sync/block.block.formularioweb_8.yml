@@ -1,0 +1,28 @@
+uuid: 2d863243-90ff-4826-9f36-815ad9e6d6bd
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_8
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Normalización de Referencias Bibliográficas'
+  label_display: '0'
+  provider: webform
+  webform_id: formulario_normalizacion_de_refe
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/normalizacion-referencias-bibliograficas

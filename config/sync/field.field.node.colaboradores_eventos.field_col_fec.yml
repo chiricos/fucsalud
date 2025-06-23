@@ -1,0 +1,24 @@
+uuid: 15b65ea7-0413-4c37-920e-182c163621d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_col_fec
+    - node.type.colaboradores_eventos
+  module:
+    - datetime
+id: node.colaboradores_eventos.field_col_fec
+field_name: field_col_fec
+entity_type: node
+bundle: colaboradores_eventos
+label: col_fec
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

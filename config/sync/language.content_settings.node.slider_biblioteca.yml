@@ -1,0 +1,11 @@
+uuid: 1d1102df-5b6b-4b74-9d12-e0053b9b6648
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_biblioteca
+id: node.slider_biblioteca
+target_entity_type_id: node
+target_bundle: slider_biblioteca
+default_langcode: site_default
+language_alterable: false

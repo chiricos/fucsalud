@@ -1,0 +1,31 @@
+uuid: de1c2229-4ae4-4f99-b2bc-bb3048fc9415
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f97c33c9-da77-43e8-9062-012e137fc618'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: pregradocontenido2psicologia
+theme: fucs
+region: pregrado_contenido_2
+weight: 0
+provider: null
+plugin: 'block_content:f97c33c9-da77-43e8-9062-012e137fc618'
+settings:
+  id: 'block_content:f97c33c9-da77-43e8-9062-012e137fc618'
+  label: 'Pregrado contenido 2 Psicología'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /pregrado/carreras_profesionales/psicologia

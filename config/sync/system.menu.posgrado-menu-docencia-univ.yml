@@ -1,0 +1,8 @@
+uuid: e3c84511-8b78-4477-9278-38a367b440de
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-docencia-univ
+label: posgrado-menu-docencia-universitaria
+description: posgrado-menu-docencia-universitaria
+locked: false

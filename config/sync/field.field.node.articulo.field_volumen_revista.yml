@@ -1,0 +1,28 @@
+uuid: b6e864b0-2d6b-4184-8445-3feb1c780057
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volumen_revista
+    - node.type.articulo
+    - taxonomy.vocabulary.volumen
+id: node.articulo.field_volumen_revista
+field_name: field_volumen_revista
+entity_type: node
+bundle: articulo
+label: 'volumen revista'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      volumen: volumen
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

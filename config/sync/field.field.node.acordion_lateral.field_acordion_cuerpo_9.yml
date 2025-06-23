@@ -1,0 +1,23 @@
+uuid: 78c6e021-a0bd-4096-9ca9-0b6a075a30fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_9
+    - node.type.acordion_lateral
+  module:
+    - text
+id: node.acordion_lateral.field_acordion_cuerpo_9
+field_name: field_acordion_cuerpo_9
+entity_type: node
+bundle: acordion_lateral
+label: acordion_cuerpo_9
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

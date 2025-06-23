@@ -1,0 +1,23 @@
+uuid: 75dfa1f3-e0a5-42da-b3b9-dd5a14b55d3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.internacionalizacion_videos
+  module:
+    - text
+id: node.internacionalizacion_videos.body
+field_name: body
+entity_type: node
+bundle: internacionalizacion_videos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

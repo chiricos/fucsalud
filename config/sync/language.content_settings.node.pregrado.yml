@@ -1,0 +1,11 @@
+uuid: ec6f32ad-0bce-43f7-9a45-a2aa67623da4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pregrado
+id: node.pregrado
+target_entity_type_id: node
+target_bundle: pregrado
+default_langcode: site_default
+language_alterable: false

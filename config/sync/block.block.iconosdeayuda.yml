@@ -1,0 +1,25 @@
+uuid: 9b9e7a9d-28d8-438d-8cc5-40cbb93fc8d1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a76eb201-16ea-41d8-bf6d-380b6ff58bf3'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: iconosdeayuda
+theme: fucs
+region: icon_help
+weight: 0
+provider: null
+plugin: 'block_content:a76eb201-16ea-41d8-bf6d-380b6ff58bf3'
+settings:
+  id: 'block_content:a76eb201-16ea-41d8-bf6d-380b6ff58bf3'
+  label: 'iconos de ayuda'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

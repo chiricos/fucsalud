@@ -1,0 +1,25 @@
+uuid: 4d042c86-a90a-416d-918b-be32d8cf8fe5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galeria_infraestructura.field_imagen_bienestar
+    - field.field.node.galeria_infraestructura.field_meta_tags
+    - node.type.galeria_infraestructura
+  module:
+    - user
+id: node.galeria_infraestructura.teaser
+targetEntityType: node
+bundle: galeria_infraestructura
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen_bienestar: true
+  field_meta_tags: true
+  langcode: true

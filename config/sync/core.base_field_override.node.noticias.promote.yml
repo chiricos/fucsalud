@@ -1,0 +1,22 @@
+uuid: 706a6e15-50a2-462c-b574-68a776d545ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticias
+id: node.noticias.promote
+field_name: promote
+entity_type: node
+bundle: noticias
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

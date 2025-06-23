@@ -1,0 +1,22 @@
+uuid: 596936d2-043d-41ad-8a46-545263508968
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.acordion
+id: node.acordion.promote
+field_name: promote
+entity_type: node
+bundle: acordion
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

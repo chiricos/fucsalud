@@ -1,0 +1,19 @@
+uuid: 66c8d69f-5df1-494f-8521-deab38078387
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_
+    - node.type.acordion_lateral
+id: node.acordion_lateral.field_acordion_titulo_
+field_name: field_acordion_titulo_
+entity_type: node
+bundle: acordion_lateral
+label: acordion_titulo_3
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

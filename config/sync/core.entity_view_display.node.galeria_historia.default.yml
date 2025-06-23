@@ -1,0 +1,42 @@
+uuid: be9e798f-8197-425b-9a07-c2c66613a8d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria_historia.field_imagen_bienestar
+    - field.field.node.galeria_historia.field_meta_tags
+    - node.type.galeria_historia
+  module:
+    - image
+    - metatag
+    - user
+id: node.galeria_historia.default
+targetEntityType: node
+bundle: galeria_historia
+mode: default
+content:
+  field_imagen_bienestar:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

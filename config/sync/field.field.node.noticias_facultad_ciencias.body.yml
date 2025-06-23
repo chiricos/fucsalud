@@ -1,0 +1,23 @@
+uuid: 34123b63-b48e-4cfc-9b0a-dad480e6f5ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.noticias_facultad_ciencias
+  module:
+    - text
+id: node.noticias_facultad_ciencias.body
+field_name: body
+entity_type: node
+bundle: noticias_facultad_ciencias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

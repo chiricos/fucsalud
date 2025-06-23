@@ -1,0 +1,11 @@
+uuid: 4e6ddc60-89cc-4aa6-bf80-f44783195aa5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.arbol_ano
+id: taxonomy_term.arbol_ano
+target_entity_type_id: taxonomy_term
+target_bundle: arbol_ano
+default_langcode: site_default
+language_alterable: false

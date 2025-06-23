@@ -1,0 +1,8 @@
+uuid: 5b88d147-b963-4bd2-830f-e6e19acc4371
+langcode: es
+status: true
+dependencies: {  }
+id: fucs-bilingue
+label: 'FUCS Bilingüe'
+description: 'FUCS Bilingüe'
+locked: false

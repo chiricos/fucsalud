@@ -1,0 +1,22 @@
+uuid: c92a66cb-5b02-43ce-a5dc-d46e55d66476
+langcode: es
+status: false
+dependencies:
+  theme:
+    - fucs
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: fucs_local_tasks
+theme: fucs
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: e4bb6e76-18f1-4028-9d74-fab838be4f01
+langcode: es
+status: true
+dependencies: {  }
+id: pregrado-menu-prehospitalar
+label: pregrado-menu-prehospitalaria
+description: pregrado-menu-prehospitalaria
+locked: false

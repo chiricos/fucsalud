@@ -1,0 +1,8 @@
+uuid: 3bba8c17-9c1a-4416-953d-7909199e65db
+langcode: es
+status: true
+dependencies: {  }
+id: centro-de-emprendimiento
+label: 'Centro de emprendimiento'
+description: 'Centro de emprendimiento'
+locked: false

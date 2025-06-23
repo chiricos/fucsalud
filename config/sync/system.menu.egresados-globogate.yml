@@ -1,0 +1,8 @@
+uuid: 8747293a-f24b-4eb8-994f-dfcf540ccca1
+langcode: es
+status: true
+dependencies: {  }
+id: egresados-globogate
+label: 'Egresados Globogate'
+description: ''
+locked: false

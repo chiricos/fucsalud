@@ -1,0 +1,8 @@
+uuid: 837d095e-c1a6-4437-9c10-17f845584e42
+langcode: es
+status: true
+dependencies: {  }
+id: tecnologia-en-radiologia
+label: 'TECNOLOGÍA EN RADIOLOGÍA '
+description: 'TECNOLOGÍA EN RADIOLOGÍA '
+locked: false

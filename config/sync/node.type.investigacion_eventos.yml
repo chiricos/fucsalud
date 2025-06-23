@@ -1,0 +1,17 @@
+uuid: e73fac08-213e-43d5-a432-d465f70738e2
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'investigacion eventos'
+type: investigacion_eventos
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

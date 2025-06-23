@@ -1,0 +1,21 @@
+uuid: cee14898-2845-4cf4-bb55-0aab42f264d4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_titulo_publicaciones
+field_name: field_titulo_publicaciones
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

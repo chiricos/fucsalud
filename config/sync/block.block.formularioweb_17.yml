@@ -1,0 +1,28 @@
+uuid: 31d216be-74db-45a2-ae65-42fb8ae141c3
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_17
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario web'
+  label_display: visible
+  provider: webform
+  webform_id: contacto_home
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /prueba-formulario-home

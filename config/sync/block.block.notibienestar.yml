@@ -1,0 +1,25 @@
+uuid: c8fa94e6-e741-4dfb-9e09-88af2379ada6
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:4887de9e-4583-4156-aaf0-c8a67dee7d92'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: notibienestar
+theme: fucs
+region: notibienestar
+weight: 0
+provider: null
+plugin: 'block_content:4887de9e-4583-4156-aaf0-c8a67dee7d92'
+settings:
+  id: 'block_content:4887de9e-4583-4156-aaf0-c8a67dee7d92'
+  label: Notibienestar
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

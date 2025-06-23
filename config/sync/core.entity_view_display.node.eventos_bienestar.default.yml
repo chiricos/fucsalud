@@ -1,0 +1,71 @@
+uuid: cd0586ee-55ef-41b9-abba-1a0b6b7cdb4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.eventos_bienestar.body
+    - field.field.node.eventos_bienestar.field_fecha_bienestar
+    - field.field.node.eventos_bienestar.field_meta_tags
+    - field.field.node.eventos_bienestar.field_noticias_imagen
+    - field.field.node.eventos_bienestar.field_titulo_bienestar
+    - node.type.eventos_bienestar
+  module:
+    - datetime
+    - image
+    - metatag
+    - text
+    - user
+id: node.eventos_bienestar.default
+targetEntityType: node
+bundle: eventos_bienestar
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fecha_bienestar:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_noticias_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_titulo_bienestar:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

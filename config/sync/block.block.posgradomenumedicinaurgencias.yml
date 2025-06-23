@@ -1,0 +1,30 @@
+uuid: bc37216a-1a27-42d1-b6ca-8f0fbf4a5c0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-medicina-urge
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenumedicinaurgencias
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-medicina-urge'
+settings:
+  id: 'system_menu_block:posgrado-menu-medicina-urge'
+  label: posgrado-menu-medicina-urgencias
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/327\r\n/node/328\r\n/node/329\r\n/posgrado/medicina-de-urgencias"

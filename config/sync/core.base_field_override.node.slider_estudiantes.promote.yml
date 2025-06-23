@@ -1,0 +1,22 @@
+uuid: 422a5848-059b-4067-b930-45246167a4b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_estudiantes
+id: node.slider_estudiantes.promote
+field_name: promote
+entity_type: node
+bundle: slider_estudiantes
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

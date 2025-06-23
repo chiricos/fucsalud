@@ -1,0 +1,23 @@
+uuid: 3c3e1886-5958-4081-b140-0d955f1e1c0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.proyeccion_social_noticias
+  module:
+    - text
+id: node.proyeccion_social_noticias.body
+field_name: body
+entity_type: node
+bundle: proyeccion_social_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

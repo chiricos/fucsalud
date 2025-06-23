@@ -1,0 +1,11 @@
+uuid: b95a717f-98af-49f8-b6e9-4da34f433193
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.servicios
+id: taxonomy_term.servicios
+target_entity_type_id: taxonomy_term
+target_bundle: servicios
+default_langcode: site_default
+language_alterable: false

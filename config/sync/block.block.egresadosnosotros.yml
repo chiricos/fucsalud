@@ -1,0 +1,30 @@
+uuid: d233714e-d112-4539-88ee-c44b30886418
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.egresados-nosotros
+  module:
+    - system
+  theme:
+    - fucs
+id: egresadosnosotros
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:egresados-nosotros'
+settings:
+  id: 'system_menu_block:egresados-nosotros'
+  label: 'Egresados Nosotros '
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/nosotros/*\r\n/egresados/nosotros"

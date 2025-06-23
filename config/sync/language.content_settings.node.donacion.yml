@@ -1,0 +1,11 @@
+uuid: 496ba4e9-cb6e-4c0e-9af8-b0c687811b0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.donacion
+id: node.donacion
+target_entity_type_id: node
+target_bundle: donacion
+default_langcode: site_default
+language_alterable: false

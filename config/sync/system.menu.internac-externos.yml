@@ -1,0 +1,8 @@
+uuid: c1f79bd6-a327-4804-bc82-f0de15f9b1ce
+langcode: es
+status: true
+dependencies: {  }
+id: internac-externos
+label: 'INTERNACIONALIZACIÓN EXTRANJEROS Y EXTERNOS'
+description: ''
+locked: false

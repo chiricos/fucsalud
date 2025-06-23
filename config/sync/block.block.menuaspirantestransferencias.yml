@@ -1,0 +1,30 @@
+uuid: 847da7e6-a729-46a5-b4b7-e67348dcc7cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-aspirantes-transferenc
+  module:
+    - system
+  theme:
+    - fucs
+id: menuaspirantestransferencias
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-aspirantes-transferenc'
+settings:
+  id: 'system_menu_block:menu-aspirantes-transferenc'
+  label: menú-aspirantes-transferencias
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/aspirantes/transferencias-y-traslados\r\n/aspirantes/transferencias-y-traslados/carreras-TEC\r\n/aspirantes/transferencias-y-traslados/carreras-profesionales\r\n/aspirantes/transferencias-y-traslados/traslados"

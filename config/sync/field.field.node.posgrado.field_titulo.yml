@@ -1,0 +1,19 @@
+uuid: cb2aea23-cebb-4343-b56f-4b77bbb29782
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo
+    - node.type.posgrado
+id: node.posgrado.field_titulo
+field_name: field_titulo
+entity_type: node
+bundle: posgrado
+label: titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

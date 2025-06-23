@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: es
+uuid: 7900138f-3d20-4041-9445-c48a8f10f0ac
+name: FUCS
+mail: coordinacionweb@fucsalud.edu.co
+slogan: FUCSALUD
+page:
+  403: /node/6617
+  404: /node/6617
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: ''

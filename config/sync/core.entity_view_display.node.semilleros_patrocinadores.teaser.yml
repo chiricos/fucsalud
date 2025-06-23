@@ -1,0 +1,25 @@
+uuid: 3c48651a-ed5c-4e21-bb68-6267ffb48a07
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.semilleros_patrocinadores.field_meta_tags
+    - field.field.node.semilleros_patrocinadores.field_noticias_imagen
+    - node.type.semilleros_patrocinadores
+  module:
+    - user
+id: node.semilleros_patrocinadores.teaser
+targetEntityType: node
+bundle: semilleros_patrocinadores
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_noticias_imagen: true
+  langcode: true

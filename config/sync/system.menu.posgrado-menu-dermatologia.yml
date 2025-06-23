@@ -1,0 +1,8 @@
+uuid: eb801778-de1d-4fce-b6a6-d4c8df57755b
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-dermatologia
+label: posgrado-menu-dermatologia
+description: posgrado-menu-dermatologia
+locked: false

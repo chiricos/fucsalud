@@ -1,0 +1,23 @@
+uuid: ca71aab7-0a35-41df-b708-5e13ac932bfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.testimonios
+  module:
+    - text
+id: node.testimonios.body
+field_name: body
+entity_type: node
+bundle: testimonios
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

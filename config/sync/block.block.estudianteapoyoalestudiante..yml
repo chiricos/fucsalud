@@ -1,0 +1,30 @@
+uuid: cee7e0c8-fe29-47fc-b20a-e805a385c6e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.estudiante-e-learning
+  module:
+    - system
+  theme:
+    - fucs
+id: estudianteapoyoalestudiante.
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:estudiante-e-learning'
+settings:
+  id: 'system_menu_block:estudiante-e-learning'
+  label: 'Estudiante Apoyo al estudiante.'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/orientacion-universitaria\r\n/estudiantes/autoevaluacion-practica\r\n/estudiantes/cento-de-idiomas\r\n/estudiantes/gestiHormiga\r\n/estudiantes/convenio-docencia-servicio\r\n/estudiantes/evaluacion-de-desempeno-docente\r\n/estudiantes/boletines-institucionales\r\n/estudiantes/manual-de-imagen-institucional\r\n"

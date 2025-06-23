@@ -1,0 +1,21 @@
+uuid: 9cacf69b-b4f7-463e-9247-bba91162d5bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.bloque_lateral
+  module:
+    - metatag
+id: node.bloque_lateral.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: bloque_lateral
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

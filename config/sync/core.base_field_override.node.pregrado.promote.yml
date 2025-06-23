@@ -1,0 +1,22 @@
+uuid: 4a417451-7d09-4ccd-a8b0-2aa6a6452099
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pregrado
+id: node.pregrado.promote
+field_name: promote
+entity_type: node
+bundle: pregrado
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

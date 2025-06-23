@@ -1,0 +1,23 @@
+uuid: 1afbcbc3-6665-4fc8-b183-63a71562efad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_noticias_titulo
+    - node.type.continuada_noticias
+  module:
+    - text
+id: node.continuada_noticias.field_noticias_titulo
+field_name: field_noticias_titulo
+entity_type: node
+bundle: continuada_noticias
+label: noticias_titulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

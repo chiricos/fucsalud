@@ -1,0 +1,31 @@
+uuid: 2afcfdfe-1767-46d1-9a78-1d222d8c58ee
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:53fba00e-9c97-471c-86ea-4d76ac0a8b67'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: preuniversitariocontenido4_2
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:53fba00e-9c97-471c-86ea-4d76ac0a8b67'
+settings:
+  id: 'block_content:53fba00e-9c97-471c-86ea-4d76ac0a8b67'
+  label: 'Preuniversitario contenido 4'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/posgrado/*'

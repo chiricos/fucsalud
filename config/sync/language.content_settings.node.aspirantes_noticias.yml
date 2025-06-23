@@ -1,0 +1,11 @@
+uuid: aef97db3-abd7-4bed-bd66-5fbb94b0bda2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aspirantes_noticias
+id: node.aspirantes_noticias
+target_entity_type_id: node
+target_bundle: aspirantes_noticias
+default_langcode: site_default
+language_alterable: false

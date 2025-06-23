@@ -1,0 +1,15 @@
+uuid: cbc22f09-6e91-4a0a-86de-69e5a01d5e6f
+langcode: es
+status: true
+dependencies: {  }
+name: home
+label: home
+effects:
+  4c304fab-98cf-4126-a102-fdc8a5b6ee94:
+    uuid: 4c304fab-98cf-4126-a102-fdc8a5b6ee94
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 650
+      anchor: center-center

@@ -1,0 +1,22 @@
+uuid: 00348ae4-99f1-465f-90f3-2f77eb123564
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticias_facultad_ciencias
+id: node.noticias_facultad_ciencias.promote
+field_name: promote
+entity_type: node
+bundle: noticias_facultad_ciencias
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

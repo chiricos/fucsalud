@@ -1,0 +1,30 @@
+uuid: f3ce27ca-bb7a-46ba-9a46-1b54ce424e9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.plan-vuelve
+  module:
+    - system
+  theme:
+    - fucs
+id: planvuelve
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:plan-vuelve'
+settings:
+  id: 'system_menu_block:plan-vuelve'
+  label: 'Plan vuelve'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/plan-vuelve/nuestro-vinculo\r\n/egresados/plan-vuelve/encuentro-egresados\r\n/egresados/plan-vuelve/master-class\r\n/egresados/plan-vuelve/preguntele-al-especialista\r\n/egresados/plan-vuelve/mas-actividades"

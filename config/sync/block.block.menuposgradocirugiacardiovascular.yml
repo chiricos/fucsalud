@@ -1,0 +1,30 @@
+uuid: 918054d9-37f8-4c0b-9ce7-e380ecbefba9
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-posgrado-cirugia-cardi
+  module:
+    - system
+  theme:
+    - fucs
+id: menuposgradocirugiacardiovascular
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-posgrado-cirugia-cardi'
+settings:
+  id: 'system_menu_block:menu-posgrado-cirugia-cardi'
+  label: 'menú-posgrado-cirugia cardio-vascular'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/284\r\n/node/285\r\n/node/286\r\n/posgrado/sub-cirugia-general/cirugia-cardiovascular"

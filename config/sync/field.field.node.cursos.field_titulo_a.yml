@@ -1,0 +1,21 @@
+uuid: 676e27a6-d4c2-48bd-a704-5a9faf8e81a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_a
+    - node.type.cursos
+id: node.cursos.field_titulo_a
+field_name: field_titulo_a
+entity_type: node
+bundle: cursos
+label: 'titulo acordion 1'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Información general'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: e0bce3e6-1689-4193-b399-a3f9d42ebba9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a4d61459-9fa0-4cfa-b736-744b1f24d363'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido0cirugiadelamano
+theme: fucs
+region: pregrado_contenido_0
+weight: 0
+provider: null
+plugin: 'block_content:a4d61459-9fa0-4cfa-b736-744b1f24d363'
+settings:
+  id: 'block_content:a4d61459-9fa0-4cfa-b736-744b1f24d363'
+  label: 'Posgrado contenido 0 Cirugía de la Mano'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-ortopedia-y-traumatologia/cirugia-mano

@@ -1,0 +1,30 @@
+uuid: c9f09051-6b8e-46b0-9fed-f37d4367669f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-ortopedia2
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuortopediatraumatologiapediatrica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-ortopedia2'
+settings:
+  id: 'system_menu_block:posgrado-menu-ortopedia2'
+  label: posgrado-menu-ortopedia-traumatologia-pediatrica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/419\r\n/node/420\r\n/node/421\r\n/posgrado/sub-ortopedia-y-traumatologia/ortopedia-traumatologia-pediatrica"

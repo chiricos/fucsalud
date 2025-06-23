@@ -1,0 +1,21 @@
+uuid: 07bd4d4c-a004-445b-be21-ebae97c3761e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.slider_internacionalizacion
+  module:
+    - metatag
+id: node.slider_internacionalizacion.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: slider_internacionalizacion
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

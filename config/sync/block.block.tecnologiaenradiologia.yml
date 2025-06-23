@@ -1,0 +1,30 @@
+uuid: b905fafb-82ea-48c3-874e-ffa10baaaccd
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.tecnologia-en-radiologia
+  module:
+    - system
+  theme:
+    - fucs
+id: tecnologiaenradiologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:tecnologia-en-radiologia'
+settings:
+  id: 'system_menu_block:tecnologia-en-radiologia'
+  label: 'TECNOLOGÍA EN RADIOLOGÍA '
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_tecnologicas/Radiologia-e-imagenes-diagnosticas\r\n/pregrado/carreras_tecnologicas/Radiologia-e-imagenes-diagnosticas/perfiles\r\n/pregrado/carreras_tecnologicas/Radiologia-e-imagenes-diagnosticas/plan-estudios\r\n/pregrado/carreras_tecnologicas/Radiologia-e-imagenes-diagnosticas/docentes\r\n/pregrado/carreras_tecnologicas/Radiologia-e-imagenes-diagnosticas-Fortalezas\r\n/pregrado/carreras_tecnologicas/Radiologia-e-imagenes-diagnosticas-Practicas"

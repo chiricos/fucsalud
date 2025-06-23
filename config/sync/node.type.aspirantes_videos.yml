@@ -1,0 +1,17 @@
+uuid: 5668d588-7a35-4b23-a7cb-96e5c083704f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Aspirantes Videos'
+type: aspirantes_videos
+description: 'Videos del micrositio aspirantes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

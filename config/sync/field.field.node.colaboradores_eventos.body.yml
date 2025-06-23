@@ -1,0 +1,23 @@
+uuid: 29faf0fb-77d9-4721-a7a2-40ace94254d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.colaboradores_eventos
+  module:
+    - text
+id: node.colaboradores_eventos.body
+field_name: body
+entity_type: node
+bundle: colaboradores_eventos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

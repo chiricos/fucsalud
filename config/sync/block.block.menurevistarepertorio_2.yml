@@ -1,0 +1,31 @@
+uuid: 9ce34262-701f-4a88-9f77-ae121b41c239
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:df142b48-2497-4690-94d3-0402e6b671e8'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menurevistarepertorio_2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'block_content:df142b48-2497-4690-94d3-0402e6b671e8'
+settings:
+  id: 'block_content:df142b48-2497-4690-94d3-0402e6b671e8'
+  label: 'Menu revista repertorio'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/revista\r\n/revista/*"

@@ -1,0 +1,8 @@
+uuid: 2911f7d2-3158-4ebd-8532-78d847216e7f
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-endocrinologi
+label: posgrado-menu-endocrinologia
+description: posgrado-menu-endocrinologia
+locked: false

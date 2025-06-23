@@ -1,0 +1,8 @@
+uuid: d7c0f39e-b895-460b-9e24-ca6a58a0dc7d
+langcode: es
+status: true
+dependencies: {  }
+id: egresados-6profiles
+label: 'Egresados 6Profiles'
+description: ''
+locked: false

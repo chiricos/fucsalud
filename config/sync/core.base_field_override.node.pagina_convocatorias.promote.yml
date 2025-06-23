@@ -1,0 +1,22 @@
+uuid: 529b57e0-5257-45a4-81a1-f694bf1e04a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_convocatorias
+id: node.pagina_convocatorias.promote
+field_name: promote
+entity_type: node
+bundle: pagina_convocatorias
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

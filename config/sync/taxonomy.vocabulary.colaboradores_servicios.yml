@@ -1,0 +1,8 @@
+uuid: a783efeb-9abe-4cf9-827f-7e31c480a0e1
+langcode: es
+status: true
+dependencies: {  }
+name: 'colaboradores servicios'
+vid: colaboradores_servicios
+description: ''
+weight: 0

@@ -1,0 +1,47 @@
+uuid: 0008fb29-274d-4b14-baf4-97dd88c663c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.posgrado.field_icono_azul
+    - field.field.taxonomy_term.posgrado.field_icono_blanco
+    - taxonomy.vocabulary.posgrado
+  module:
+    - image
+    - text
+id: taxonomy_term.posgrado.default
+targetEntityType: taxonomy_term
+bundle: posgrado
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icono_azul:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icono_blanco:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

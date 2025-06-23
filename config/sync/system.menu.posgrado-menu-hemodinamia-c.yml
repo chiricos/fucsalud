@@ -1,0 +1,8 @@
+uuid: 6c83ca32-194d-4515-89ba-f56cd552f6e1
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-hemodinamia-c
+label: posgrado-menu-hemodinamia-cardiologia
+description: posgrado-menu-hemodinamia-cardiologia
+locked: false

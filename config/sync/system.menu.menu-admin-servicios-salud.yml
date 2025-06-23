@@ -1,0 +1,8 @@
+uuid: b383b698-63e8-41a3-a4da-91735a7b8f88
+langcode: es
+status: true
+dependencies: {  }
+id: menu-admin-servicios-salud
+label: menú-admin-servicios-salud
+description: menú-admin-servicios-salud
+locked: false

@@ -1,0 +1,31 @@
+uuid: 5005b67d-725e-42fa-b170-3144f0902adc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2cf063ff-8716-48f9-b532-9a0c6d65f04d'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonesinternacionalizacion
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:2cf063ff-8716-48f9-b532-9a0c6d65f04d'
+settings:
+  id: 'block_content:2cf063ff-8716-48f9-b532-9a0c6d65f04d'
+  label: 'Botones internacionalización'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/internacionalizacion\r\n/internacionalizacion/*"

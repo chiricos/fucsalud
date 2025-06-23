@@ -1,0 +1,22 @@
+uuid: c662a1c4-088b-43c8-844a-a3b8aa906b4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estudiantes_eventos
+id: node.estudiantes_eventos.promote
+field_name: promote
+entity_type: node
+bundle: estudiantes_eventos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

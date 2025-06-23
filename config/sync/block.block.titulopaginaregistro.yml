@@ -1,0 +1,31 @@
+uuid: 3bd9b188-696d-48e7-ad81-433df9a1ec74
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3d72c308-b9bd-4a01-810e-bd0fa275f291'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: titulopaginaregistro
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:3d72c308-b9bd-4a01-810e-bd0fa275f291'
+settings:
+  id: 'block_content:3d72c308-b9bd-4a01-810e-bd0fa275f291'
+  label: 'Titulo pagina registro'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /user/register

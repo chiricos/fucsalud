@@ -1,0 +1,8 @@
+uuid: 77fc4678-f913-4b05-a238-0c3bde03719a
+langcode: es
+status: true
+dependencies: {  }
+id: pregrado-menu-medicina
+label: pregrado-menu-medicina
+description: pregrado-menu-medicina
+locked: false

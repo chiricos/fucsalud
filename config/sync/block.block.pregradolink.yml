@@ -1,0 +1,31 @@
+uuid: 2198851d-afb9-4028-aa3e-ce2290e4f043
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9820ac6e-11cc-490c-abe2-a199e6cdaeae'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: pregradolink
+theme: fucs
+region: pregrado_link
+weight: 0
+provider: null
+plugin: 'block_content:9820ac6e-11cc-490c-abe2-a199e6cdaeae'
+settings:
+  id: 'block_content:9820ac6e-11cc-490c-abe2-a199e6cdaeae'
+  label: 'Pregrado link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado\r\n/pregrado/carreras_profesionales/administracion-de-empresas"

@@ -1,0 +1,30 @@
+uuid: aa9217c1-c1f8-49a7-a452-ffa94e2834dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-pos-cirugia-pediatrica
+  module:
+    - system
+  theme:
+    - fucs
+id: menuposcirugiapediatrica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-pos-cirugia-pediatrica'
+settings:
+  id: 'system_menu_block:menu-pos-cirugia-pediatrica'
+  label: menu-pos-Cirugía-Pediátrica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/2999\r\n/node/3001\r\n/node/3002\r\n/node/3000\r\n/node/7284"

@@ -1,0 +1,385 @@
+uuid: 3e0db9d5-7cf7-444d-b0dc-30a931ae182a
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: contacto_home
+title: 'Contacto home'
+description: 'formulario SugarCRM home'
+categories: {  }
+elements: |-
+  pqrs:
+    '#type': webform_markup
+    '#markup': '<a href="/pqrs">Si tiene una PQRS (Peticiones, Quejas, Reclamos y Sugerencias) haga clic aqu&iacute;. </a>'
+  markup:
+    '#type': webform_markup
+    '#markup': '<p>Si requiere informaci&oacute;n de uno de nuestros programas, por favor diligenciar los siguientes campos:</p>'
+  fucs_primer_nombre_c:
+    '#type': textfield
+    '#title': fucs_primer_nombre_c
+    '#title_display': invisible
+    '#placeholder': 'Primer Nombre *'
+    '#required': true
+    '#required_error': 'Debe ingresar Primer Nombre'
+  fucs_segundo_nombre_c:
+    '#type': textfield
+    '#title': fucs_segundo_nombre_c
+    '#title_display': invisible
+    '#placeholder': 'Segundo Nombre *'
+    '#required': true
+    '#required_error': 'Debe ingresar Segundo Nombre'
+  fucs_primer_apellido_c:
+    '#type': textfield
+    '#title': fucs_primer_apellido_c
+    '#title_display': invisible
+    '#placeholder': 'Primer Apellido *'
+    '#required': true
+    '#required_error': 'Debe ingresar Primer Apellido'
+  fucs_segundo_apellido_c:
+    '#type': textfield
+    '#title': fucs_segundo_apellido_c
+    '#title_display': invisible
+    '#placeholder': 'Segundo Apellido *'
+    '#required': true
+    '#required_error': 'Debe ingresar Segundo Apellido'
+  phone_mobile:
+    '#type': number
+    '#title': phone_mobile
+    '#title_display': invisible
+    '#placeholder': 'Teléfono *'
+    '#required': true
+    '#required_error': 'Debe ingresar teléfono'
+    '#min': 0
+    '#max': 9999999999
+  fucs_programa_interes_c:
+    '#type': select
+    '#title': fucs_programa_interes_c
+    '#title_display': invisible
+    '#options':
+      remove: 'Programa de interés:'
+    '#empty_option': 'Programa de interés:'
+    '#required': true
+    '#required_error': 'Debe seleccionar programa de interés'
+  email1:
+    '#type': email
+    '#title': email1
+    '#title_display': invisible
+    '#placeholder': 'E-mail *'
+    '#required': true
+    '#required_error': 'Debe ingresar correo electrónico'
+  lbl_fucs_semestre_c:
+    '#type': select
+    '#title': lbl_fucs_semestre_c
+    '#title_display': invisible
+    '#options':
+      2016-0: 2016-0
+      2016-2: 2016-2
+      2017-0: 2017-0
+      2017-1: 2017-1
+      2017-2: 2017-2
+      2018-0: 2018-0
+      2018-1: 2018-1
+      2018-2: 2018-2
+      2019-0: 2019-0
+      2019-1: 2019-1
+      2019-2: 2019-2
+      2020-0: 2020-0
+      2020-1: 2020-1
+      2020-2: 2020-2
+      2021-0: 2021-0
+      2021-1: 2021-1
+      2021-2: 2021-2
+      2022-0: 2022-0
+      2022-1: 2022-1
+      2022-2: 2022-2
+    '#empty_option': 'Semestre de ingreso'
+    '#required': true
+    '#required_error': 'Debe seleccionar semestre de ingreso'
+  fucs_documento_identidad_c:
+    '#type': number
+    '#title': fucs_documento_identidad_c
+    '#title_display': invisible
+    '#placeholder': 'Nº de documento'
+    '#required': true
+    '#required_error': 'Debe ingresar Nº de documento'
+  comentarios:
+    '#type': textfield
+    '#title': Comentarios
+    '#title_display': invisible
+    '#placeholder': Comentarios
+  markup_01:
+    '#type': webform_markup
+    '#markup': '<p>Acepto, consiento y autorizo que mis datos personales sean tratados por la FUCS conforme a lo previsto en la presente <a href="http://www.fucsalud.edu.co/PolItica-de-tratamiento-y-proteccion-de-datos-personales/formato-de-autorizacion-para-la-recoleccion-y-tratamiento-de-datos-personales-en-formularios-electronicos" target="_blank">autorizaci&oacute;n</a> y de acuerdo con su <a href="/PolItica-de-tratamiento-y-proteccion-de-datos-personales" target="_blank">Pol&iacute;tica de Tratamiento y protecci&oacute;n de Datos Personales</a></p>'
+  politica_aceptacion_manejo_d_c:
+    '#type': select
+    '#title': politica_aceptacion_manejo_d_c
+    '#title_display': invisible
+    '#options':
+      si: si
+      'no': 'no'
+    '#empty_option': '¿Acepta los términos?'
+    '#states':
+      optional:
+        ':input[name="politica_aceptacion_manejo_d_c"]':
+          value: si
+      required:
+        ':input[name="politica_aceptacion_manejo_d_c"]':
+          value: 'no'
+  captcha:
+    '#type': captcha
+    '#captcha_type': image_captcha/Image
+  processed_text:
+    '#type': processed_text
+    '#text': |-
+      <input id="campaign_id" type="hidden" name="campaign_id" value="9bae91fe-d92a-83c7-95e4-57e97a3ec8a0">
+      <input id="redirect_url" type="hidden" name="redirect_url" value="https://www.fucsalud.edu.co/" >
+      <input id="assigned_user_id" type="hidden" name="assigned_user_id" value="1">
+      <input id="team_id" type="hidden" name="team_id" value="1">
+      <input id="team_set_id" type="hidden" name="team_set_id" value="Global">
+      <input id="req_id" type="hidden" name="req_id" value="fucs_primer_nombre_c;fucs_primer_apellido_c;first_name;last_name;politica_aceptacion_manejo_d_c;">
+    '#format': plain_text
+  actions:
+    '#type': webform_actions
+    '#title': Enviar
+    '#submit__label': Enviar
+css: ''
+javascript: "function CSVToArray(strData, strDelimiter) {\r\n\t\tstrDelimiter = (strDelimiter || \",\");\r\n\t\tvar objPattern = new RegExp((\"(\\\\\" + strDelimiter + \"|\\\\r?\\\\n|\\\\r|^)\" + \"(?:\\\"([^\\\"]*(?:\\\"\\\"[^\\\"]*)*)\\\"|\" + \"([^\\\"\\\\\" + strDelimiter + \"\\\\r\\\\n]*))\"), \"gi\");\r\n\t\tvar arrData = [\r\n\t\t\t[]\r\n\t\t];\r\n\t\tvar arrMatches = null;\r\n\t\twhile (arrMatches = objPattern.exec(strData)) {\r\n\t\t\tvar strMatchedDelimiter = arrMatches[1];\r\n\t\t\tif (strMatchedDelimiter.length && strMatchedDelimiter !== strDelimiter) {\r\n\t\t\t\tarrData.push([]);\r\n\t\t\t}\r\n\t\t\tvar strMatchedValue;\r\n\t\t\tif (arrMatches[2]) {\r\n\t\t\t\tstrMatchedValue = arrMatches[2].replace(new RegExp(\"\\\"\\\"\", \"g\"), \"\\\"\");\r\n\t\t\t} else {\r\n\t\t\t\tstrMatchedValue = arrMatches[3];\r\n\t\t\t}\r\n\t\t\tarrData[arrData.length - 1].push(strMatchedValue);\r\n\t\t}\r\n\t\treturn (arrData);\r\n\t}\r\n\r\n\t/*$(\"#edit-fucs-programa-interes-c option[value='remove']\").remove();*/\r\n\t/*var dropdown = $('select#edit-fucs-programa-interes-c');*/\r\n\r\n\tvar csv_path = \"datos-programas/programas.csv\";\r\n\tvar renderCSVDropdown = function(csv) {\r\n\t\tvar dropdown2 = $('select#edit-fucs-programa-interes-c');\r\n\t\tfor (var i = 0; i < csv.length; i++) {\r\n\t\t\tvar record = csv[i];\r\n\t\t\tvar entry = $('<option>', {\r\n\t\t\t\tvalue: record[0].trim(),\r\n\t\t\t\ttext: record[1],\r\n\t\t\t\tid: record[2],\r\n\t\t\t});\r\n\t\t\tdropdown2.append(entry);\r\n\t\t}\r\n\t};\r\n\r\n\t$.get(csv_path, function(data) {\r\n\t\tvar csv = CSVToArray(data, \";\");\r\n\t\trenderCSVDropdown(csv);\r\n\t});\r\n\r\n\tdocument.getElementById(\"assigned_user_id\").value=\"1\";\r\n\r\n\t$(\"select[name=fucs_programa_interes_c]\").change(function(){\r\n\t\tvar indice = document.getElementById(\"fucs_programa_interes_c\").selectedIndex; \r\n\t\tvar idOption = document.getElementById(\"fucs_programa_interes_c\").options[indice].id;\r\n\t\tdocument.getElementById(\"assigned_user_id\").value=idOption;\r\n\t});"
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  enviar_a_sugar:
+    id: remote_post
+    handler_id: enviar_a_sugar
+    label: 'Enviar a Sugar'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+      custom_data: ''
+      custom_options: ''
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: 'https://fucs.sugarondemand.com/index.php?entryPoint=WebToLeadCapture'
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_created_url: ''
+      draft_created_custom_data: ''
+      draft_updated_url: ''
+      draft_updated_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+      error_url: ''
+variants: {  }

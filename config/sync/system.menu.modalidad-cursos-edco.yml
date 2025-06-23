@@ -1,0 +1,8 @@
+uuid: d5a2c4e4-8c07-48b2-9386-163ce6ac3690
+langcode: es
+status: true
+dependencies: {  }
+id: modalidad-cursos-edco
+label: 'Modalidad cursos EDCO'
+description: ''
+locked: false

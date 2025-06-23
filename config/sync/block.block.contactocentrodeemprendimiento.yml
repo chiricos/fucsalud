@@ -1,0 +1,31 @@
+uuid: ce1de53e-e802-41d8-880e-b237f5f93a78
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e8995b4c-f6e8-45ef-bc46-6a62d58085d4'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactocentrodeemprendimiento
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:e8995b4c-f6e8-45ef-bc46-6a62d58085d4'
+settings:
+  id: 'block_content:e8995b4c-f6e8-45ef-bc46-6a62d58085d4'
+  label: 'contacto centro de emprendimiento'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/estudiantes/apoyalestudiante/centro-de-emprendimiento/*'

@@ -1,0 +1,31 @@
+uuid: b3962605-9ad6-4eac-8d46-fabc8db01772
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c8750581-51f9-4f28-bf10-165b55481959'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuapartastudios
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:c8750581-51f9-4f28-bf10-165b55481959'
+settings:
+  id: 'block_content:c8750581-51f9-4f28-bf10-165b55481959'
+  label: 'menu apartastudios'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/apartaestudios\r\n/apartaestudios/*"

@@ -1,0 +1,30 @@
+uuid: cc0e5326-e1ef-44be-81c8-f61720929e48
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-enfermeria-ad
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuenfermeriaadultos
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-enfermeria-ad'
+settings:
+  id: 'system_menu_block:posgrado-menu-enfermeria-ad'
+  label: posgrado-menu-enfermeria-adultos
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/361\r\n/node/362\r\n/node/363\r\n/node/364\r\n/node/365\r\n/node/366\r\n/node/367\r\n/posgrado/enfermeria-cuidado-intensivo\r\n/posgrado/enfermeria-cuidado-critico-del-adulto"

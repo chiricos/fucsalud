@@ -1,0 +1,30 @@
+uuid: 477108ae-e597-4680-802e-9534ce16b114
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.proyeccion-social-2021
+  module:
+    - system
+  theme:
+    - fucs
+id: proyeccionsocial2021
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:proyeccion-social-2021'
+settings:
+  id: 'system_menu_block:proyeccion-social-2021'
+  label: 'Proyección Social 2021'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social/que-es-proyeccion-social\r\n/proyeccion-social/proyectos-productos\r\n/proyeccion-social/aliados-y-convenios\r\n/proyeccion-social/rendicion-de-cuentas\r\n/proyeccion-social/noticias\r\n"

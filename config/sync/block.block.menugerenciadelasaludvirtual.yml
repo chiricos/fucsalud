@@ -1,0 +1,30 @@
+uuid: 91fe6ea3-8830-465e-a8fc-88f825057fdc
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-gerencia-de-la-salud-v
+  module:
+    - system
+  theme:
+    - fucs
+id: menugerenciadelasaludvirtual
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-gerencia-de-la-salud-v'
+settings:
+  id: 'system_menu_block:menu-gerencia-de-la-salud-v'
+  label: 'Menu gerencia de la salud virtual'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/general-gerencia-de-la-salud-virtual\r\n/posgrado/general-gerencia-de-la-salud-virtual/*"

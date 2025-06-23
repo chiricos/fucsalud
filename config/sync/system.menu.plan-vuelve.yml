@@ -1,0 +1,8 @@
+uuid: dee7b48c-09bb-48a3-ab1c-0d7561d6d757
+langcode: es
+status: true
+dependencies: {  }
+id: plan-vuelve
+label: 'Plan vuelve'
+description: 'Plan vuelve'
+locked: false

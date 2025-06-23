@@ -1,0 +1,21 @@
+uuid: 7ea2a04d-892f-4aff-81cc-e56d79aeeda0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_acordion_
+    - node.type.cursos
+id: node.cursos.field_titulo_acordion_
+field_name: field_titulo_acordion_
+entity_type: node
+bundle: cursos
+label: 'titulo acordion 4'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'COMPETENCIAS Y TEMAS'
+default_value_callback: ''
+settings: {  }
+field_type: string

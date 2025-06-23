@@ -1,0 +1,30 @@
+uuid: 12a2914d-85dd-44f3-8a8d-6c9617b9c93b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.especializacion-psicooncolo
+  module:
+    - system
+  theme:
+    - fucs
+id: especializacionpsicooncologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:especializacion-psicooncolo'
+settings:
+  id: 'system_menu_block:especializacion-psicooncolo'
+  label: 'Especialización PSICOONCOLOGÍA'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Psicooncologia\r\n/posgrado/Psicooncologia-plan-de-estudios\r\n/posgrado/Psicooncologia-docentes"

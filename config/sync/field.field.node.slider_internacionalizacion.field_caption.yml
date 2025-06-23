@@ -1,0 +1,19 @@
+uuid: 26ea36f1-e2b9-4cd2-816b-de3bc6d44ec8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.slider_internacionalizacion
+id: node.slider_internacionalizacion.field_caption
+field_name: field_caption
+entity_type: node
+bundle: slider_internacionalizacion
+label: caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

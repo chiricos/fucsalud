@@ -1,0 +1,29 @@
+uuid: dcbef5c6-838c-41e7-96c7-8fbc4b59da5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_apartastudios.field_caption
+    - field.field.node.slider_apartastudios.field_link
+    - field.field.node.slider_apartastudios.field_meta_tags
+    - field.field.node.slider_apartastudios.field_slider_1400x600_
+    - node.type.slider_apartastudios
+  module:
+    - user
+id: node.slider_apartastudios.teaser
+targetEntityType: node
+bundle: slider_apartastudios
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

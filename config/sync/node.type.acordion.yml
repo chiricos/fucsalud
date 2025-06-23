@@ -1,0 +1,30 @@
+uuid: a411a78b-9bad-40b5-ba1e-3f022756ff8e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - aseguramiento-de-calidad
+      - colaboradores---gestion-org
+      - consejo-super
+      - documentos-institucionales
+      - home-historia
+      - normas-de-publicacion
+      - politicas-de-uso
+      - politicas-privacidad
+      - pqrs
+      - revista-repertorio
+      - servicios-de-linea
+      - saludo-del-rector
+      - main
+    parent: 'main:'
+name: acordion
+type: acordion
+description: 'tipo de contenido acordion'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

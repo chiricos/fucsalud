@@ -1,0 +1,30 @@
+uuid: 9edf2697-8077-466b-b9f9-41554b1119ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.continuada_videos
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__continuada_videos_block_1
+theme: fucs
+region: video
+weight: 3
+provider: null
+plugin: 'views_block:continuada_videos-block_1'
+settings:
+  id: 'views_block:continuada_videos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /continuada

@@ -1,0 +1,17 @@
+uuid: 5489bb50-544e-45c7-bb27-a0698030336c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'investigacion noticias'
+type: investigacion_noticias
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

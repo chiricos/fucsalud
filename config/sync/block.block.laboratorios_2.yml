@@ -1,0 +1,25 @@
+uuid: abe02a8f-512c-4d19-9a19-f238705396e0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f99d56a-0bcb-4716-aa40-aaf32d12ce49'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: laboratorios_2
+theme: fucs
+region: laboratories
+weight: 0
+provider: null
+plugin: 'block_content:3f99d56a-0bcb-4716-aa40-aaf32d12ce49'
+settings:
+  id: 'block_content:3f99d56a-0bcb-4716-aa40-aaf32d12ce49'
+  label: Laboratorios
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

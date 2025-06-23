@@ -1,0 +1,19 @@
+uuid: 004d8a54-5891-4a37-8cd2-8e79cd8cb3d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.slider_investigaciones
+id: node.slider_investigaciones.field_caption
+field_name: field_caption
+entity_type: node
+bundle: slider_investigaciones
+label: caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,23 @@
+uuid: afaa35a7-6c6b-43df-9478-a200f46a3310
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - fucs
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: fucs_search
+theme: fucs
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

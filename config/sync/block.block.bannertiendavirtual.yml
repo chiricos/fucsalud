@@ -1,0 +1,31 @@
+uuid: ca84a6bc-a9c2-446f-96aa-897b1c506349
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1ac80d6d-6e03-4907-91de-1246c60980c2'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannertiendavirtual
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:1ac80d6d-6e03-4907-91de-1246c60980c2'
+settings:
+  id: 'block_content:1ac80d6d-6e03-4907-91de-1246c60980c2'
+  label: 'banner tienda virtual'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/tienda-virtual\r\n/tienda-virtual/*\r\n/carrito"

@@ -1,0 +1,22 @@
+uuid: 26fc596c-1c1f-4b6a-a472-2b3e36f38a92
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyeccion_social_videos
+id: node.proyeccion_social_videos.promote
+field_name: promote
+entity_type: node
+bundle: proyeccion_social_videos
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

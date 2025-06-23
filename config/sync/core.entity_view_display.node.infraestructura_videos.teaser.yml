@@ -1,0 +1,33 @@
+uuid: f4e9d85c-0cc6-43d7-9514-a84d4b5cc38c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.infraestructura_videos.body
+    - field.field.node.infraestructura_videos.field_meta_tags
+    - node.type.infraestructura_videos
+  module:
+    - text
+    - user
+id: node.infraestructura_videos.teaser
+targetEntityType: node
+bundle: infraestructura_videos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

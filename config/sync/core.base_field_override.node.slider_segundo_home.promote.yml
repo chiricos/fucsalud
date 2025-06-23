@@ -1,0 +1,22 @@
+uuid: a3ca753b-1a93-4642-a20d-e5497fd64a7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_segundo_home
+id: node.slider_segundo_home.promote
+field_name: promote
+entity_type: node
+bundle: slider_segundo_home
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,31 @@
+uuid: 16d0fec0-a04f-418d-86e2-e57345b51567
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6661562b-e65e-4e36-8f02-f37aa1d480bd'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerservicios
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:6661562b-e65e-4e36-8f02-f37aa1d480bd'
+settings:
+  id: 'block_content:6661562b-e65e-4e36-8f02-f37aa1d480bd'
+  label: 'banner servicios'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/servicios-en-linea\r\n/servicio/*\r\n/servicios-en-linea/*"

@@ -1,0 +1,8 @@
+uuid: f7d0c978-dfee-41aa-9aa3-9d84ef565677
+langcode: es
+status: true
+dependencies: {  }
+id: menu-estudiante-investigaci
+label: 'menu estudiante investigacion'
+description: ''
+locked: false

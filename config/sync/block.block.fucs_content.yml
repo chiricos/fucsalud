@@ -1,0 +1,22 @@
+uuid: c5a73401-e714-4528-819f-03c293f26a6a
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - fucs
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: fucs_content
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido de la página principal'
+  label_display: '0'
+  provider: system
+visibility: {  }

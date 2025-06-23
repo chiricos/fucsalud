@@ -1,0 +1,11 @@
+uuid: 8fc35ec4-3db7-48ac-84ca-1ea7546a9c31
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.investigacion_videos
+id: node.investigacion_videos
+target_entity_type_id: node
+target_bundle: investigacion_videos
+default_langcode: site_default
+language_alterable: false

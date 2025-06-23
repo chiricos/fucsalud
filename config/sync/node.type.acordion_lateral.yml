@@ -1,0 +1,58 @@
+uuid: c9a651ae-0270-40ae-8891-92b76fe0ace0
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - auditorios
+      - aulas
+      - audiovisuales
+      - bienestar-pregrado
+      - bienestar-posgrado
+      - colaboradores---gestion-org
+      - centro-de-emprendimiento
+      - comite-etica
+      - explorando-en-la-fucs
+      - egresados-nosotros
+      - estudiante-e-learning
+      - estudiante-convenios-docenc
+      - filosofia-corporativa
+      - internacionalizacion
+      - internac-externos
+      - movilidad-docente
+      - investigacion-centro-colabo
+      - investigacion-grupos
+      - investigacion
+      - investigacion-semilleros
+      - laboratorio-de-psicologia
+      - laboratorios
+      - museo-home
+      - menu-gerencia-de-la-salud-v
+      - museo
+      - proyeccion-social
+      - semilleros
+      - semilleros-encuentros
+      - telesalud-y-telemedicina
+      - banners
+      - biblioteca-bvs
+      - biblioteca-bvs-colombia
+      - b
+      - biblioteca-servicios
+      - biblioteca-base-de-datos
+      - colaboradores-documentos
+      - colaboradores-gestion-organ
+      - colaboradores-servicios-en-
+      - estudiante-registro-y-contr
+      - estudiantes-matriculas
+      - menu-estudiante-investigaci
+    parent: 'banners:'
+name: 'acordion lateral'
+type: acordion_lateral
+description: 'tipo de contenido acordion con menu lateral'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

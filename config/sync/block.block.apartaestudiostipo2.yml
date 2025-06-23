@@ -1,0 +1,30 @@
+uuid: a862c28d-4a73-4e57-b85a-3cae950419bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.apartaestudios-tipo-2
+  module:
+    - system
+  theme:
+    - fucs
+id: apartaestudiostipo2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:apartaestudios-tipo-2'
+settings:
+  id: 'system_menu_block:apartaestudios-tipo-2'
+  label: 'Apartaestudios habitación tipo 2'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/apartaestudios/habitacion_tipo2\r\n/apartaestudios/habitacion_tipo2/*"

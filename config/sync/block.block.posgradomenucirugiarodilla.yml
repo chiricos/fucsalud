@@ -1,0 +1,30 @@
+uuid: 4b169073-950a-4284-a107-48fb76fffd85
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-rodil
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiarodilla
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-rodil'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-rodil'
+  label: posgrado-menu-cirugia-rodilla
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/412\r\n/node/413\r\n/node/414\r\n/posgrado/sub-ortopedia-y-traumatologia/cirugia-rodilla"

@@ -1,0 +1,19 @@
+uuid: 69b9f021-508b-41ce-9937-c2eabae923f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.slider_semilleros
+id: node.slider_semilleros.field_caption
+field_name: field_caption
+entity_type: node
+bundle: slider_semilleros
+label: caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

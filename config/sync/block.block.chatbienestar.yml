@@ -1,0 +1,31 @@
+uuid: d4bd4540-f27e-4830-a827-f74f946338e0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9056ca7a-6782-484a-a00d-77458a2d3535'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: chatbienestar
+theme: fucs
+region: first_footer
+weight: 0
+provider: null
+plugin: 'block_content:9056ca7a-6782-484a-a00d-77458a2d3535'
+settings:
+  id: 'block_content:9056ca7a-6782-484a-a00d-77458a2d3535'
+  label: 'chat bienestar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/bienestar/*\r\n/bienestar"

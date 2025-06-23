@@ -1,0 +1,8 @@
+uuid: a4fa8783-8e89-4e4b-87a9-ad76cdd35f78
+langcode: es
+status: true
+dependencies: {  }
+id: comunidad-egresados
+label: 'Comunidad egresados'
+description: 'Comunidad egresados'
+locked: false

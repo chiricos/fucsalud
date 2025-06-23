@@ -1,0 +1,21 @@
+uuid: 7c0d9e4b-55a3-4e0b-afbd-5dbd7dcc4c3d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_acordion_titulo_25_4
+field_name: field_acordion_titulo_25_4
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

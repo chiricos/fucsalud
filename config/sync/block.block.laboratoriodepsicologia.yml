@@ -1,0 +1,30 @@
+uuid: 6eb17a17-e87c-4513-993f-e36f5b9ebd83
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.laboratorio-de-psicologia
+  module:
+    - system
+  theme:
+    - fucs
+id: laboratoriodepsicologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:laboratorio-de-psicologia'
+settings:
+  id: 'system_menu_block:laboratorio-de-psicologia'
+  label: 'LABORATORIO DE PSICOLOGIA'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/laboratorios/laboratorio-de-psicologia/*\r\n/laboratorios/laboratorio-de-psicologia"

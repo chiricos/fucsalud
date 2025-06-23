@@ -1,0 +1,12 @@
+host: ''
+port: 389
+encryption: none
+readonly: false
+binddn: ''
+bindpw: ''
+basedn: ''
+pagesize: ''
+opt_referrals: false
+_core:
+  default_config_hash: 02_1zGrczNfrN_-Hbv4-5IlAB_vSgf9OvPCECfal-HI
+langcode: es

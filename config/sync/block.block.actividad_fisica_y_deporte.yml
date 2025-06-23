@@ -1,0 +1,29 @@
+uuid: 4a380505-886f-4f46-be2f-133dbb132d5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.actividad-fisica-y-deporte
+  module:
+    - system
+  theme:
+    - fucs
+id: actividad_fisica_y_deporte
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:actividad-fisica-y-deporte'
+settings:
+  id: 'system_menu_block:actividad-fisica-y-deporte'
+  label: actividad_fisica_y_deporte
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/pregrado/carreras_profesionales/actividad_fisica_y_deporte/*\r\n/pregrado/carreras_profesionales/actividad_fisica_y_deporte\r\n/pregrado/carreras_profesionales/actividad_fisica_y_deporte/pla_de_estudio\r\n/pregrado/carreras_profesionales/actividad_fisica_y_deporte/directivos_docentes"

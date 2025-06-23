@@ -1,0 +1,52 @@
+uuid: 72c25ddf-be2d-436c-b476-b2282b44e9f4
+langcode: es
+status: true
+dependencies:
+  module:
+    - fucs_form
+    - system
+  theme:
+    - fucs
+id: modulodeinducciones_3
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: fucs_form_block
+settings:
+  id: fucs_form_block
+  label: Test
+  label_display: visible
+  provider: fucs_form
+  configurations:
+    uuid: 10a7cdd970fe135cf4f7bb55c0e3b59f
+    title: pruebas
+    min: '50'
+    timeout: '3600'
+    attempts: '3'
+    login:
+      name: 1
+      email: 1
+      course: 0
+      courses: ''
+    questions:
+      question0:
+        question: verdad
+        answer: A
+        type: only
+        optionA: ''
+        optionB: ''
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: ''
+          name: ''
+          uri: ''
+          urlTotal: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /test

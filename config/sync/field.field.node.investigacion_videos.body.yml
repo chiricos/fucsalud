@@ -1,0 +1,23 @@
+uuid: 4fc4934c-6fe1-4c6f-8364-7855e6656dd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.investigacion_videos
+  module:
+    - text
+id: node.investigacion_videos.body
+field_name: body
+entity_type: node
+bundle: investigacion_videos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

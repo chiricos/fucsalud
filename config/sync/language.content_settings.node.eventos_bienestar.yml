@@ -1,0 +1,11 @@
+uuid: 4da46997-dff2-4af7-96f0-136b7f79ba88
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.eventos_bienestar
+id: node.eventos_bienestar
+target_entity_type_id: node
+target_bundle: eventos_bienestar
+default_langcode: site_default
+language_alterable: false

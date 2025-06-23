@@ -1,0 +1,11 @@
+uuid: ad4dc098-6dfd-4b2c-a68a-a95492df95df
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.archivos
+id: node.archivos
+target_entity_type_id: node
+target_bundle: archivos
+default_langcode: site_default
+language_alterable: false

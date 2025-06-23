@@ -1,0 +1,30 @@
+uuid: 9c1a59a3-3118-4014-b0b4-7a93b7dcac7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-materno-fetal
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenumaternofetal
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-materno-fetal'
+settings:
+  id: 'system_menu_block:posgrado-menu-materno-fetal'
+  label: posgrado-menu-materno-fetal
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/317\r\n/node/318\r\n/node/319\r\n/posgrado/sub-ginecologia-y-obstetricia/medicina-materno-fetal"

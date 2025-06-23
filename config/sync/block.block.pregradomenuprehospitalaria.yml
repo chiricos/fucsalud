@@ -1,0 +1,30 @@
+uuid: c798c841-8df6-45a4-848a-eb58b4d90901
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.pregrado-menu-prehospitalar
+  module:
+    - system
+  theme:
+    - fucs
+id: pregradomenuprehospitalaria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:pregrado-menu-prehospitalar'
+settings:
+  id: 'system_menu_block:pregrado-menu-prehospitalar'
+  label: pregrado-menu-prehospitalaria
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/229\r\n/node/230\r\n/node/231\r\n/pregrado/carreras_tecnologicas/prehospitalaria\r\n/pregrado/carreras_tecnologicas/prehospitalaria1"

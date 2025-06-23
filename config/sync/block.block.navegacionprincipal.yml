@@ -1,0 +1,25 @@
+uuid: 78a66110-e061-42bc-a59f-23c0a9a7b613
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - fucs
+id: navegacionprincipal
+theme: fucs
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 4
+  expand_all_items: false
+visibility: {  }

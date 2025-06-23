@@ -1,0 +1,17 @@
+uuid: 7adda7d5-a605-4ca2-9656-8e3a2f0c0e62
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'slider segundo home - estudiantes'
+type: slider_segundo_home_estudiantes
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

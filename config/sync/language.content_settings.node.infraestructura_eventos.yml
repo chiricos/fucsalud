@@ -1,0 +1,11 @@
+uuid: 6d6845f4-6419-4e77-bcd3-2889aa000c78
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.infraestructura_eventos
+id: node.infraestructura_eventos
+target_entity_type_id: node
+target_bundle: infraestructura_eventos
+default_langcode: site_default
+language_alterable: false

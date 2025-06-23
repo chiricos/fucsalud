@@ -1,0 +1,28 @@
+uuid: 5b689a15-e35c-4daf-8e35-51232131709b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_term_tree
+    - node.type.arbol
+    - taxonomy.vocabulary.arbol_ano
+id: node.arbol.field_term_tree
+field_name: field_term_tree
+entity_type: node
+bundle: arbol
+label: term_tree
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      arbol_ano: arbol_ano
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

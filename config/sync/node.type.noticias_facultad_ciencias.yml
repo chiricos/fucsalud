@@ -1,0 +1,17 @@
+uuid: a8c4a814-45dc-463c-9a80-b30400f581b4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Noticias Facultad Ciencias'
+type: noticias_facultad_ciencias
+description: 'Noticias Facultad Ciencias Administrativas en Salud'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

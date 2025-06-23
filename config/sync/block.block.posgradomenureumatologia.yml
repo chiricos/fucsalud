@@ -1,0 +1,30 @@
+uuid: c95d395e-9624-4ec1-99b1-8de555c1cd35
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-reumatologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenureumatologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-reumatologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-reumatologia'
+  label: posgrado-menu-reumatologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/sub-medicina-interna/Reumatologia\r\n/posgrado/sub-medicina-interna/Reumatologia-perfiles\r\n/posgrado/sub-medicina-interna/Por-que-estudiar-en-la-FUCS-Reumatologia\r\n/posgrado/sub-medicina-interna/Reumatologia-Plan-Estudios\r\n/posgrado/sub-medicina-interna/Reumatologia-docentes"

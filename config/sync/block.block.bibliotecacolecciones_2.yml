@@ -1,0 +1,30 @@
+uuid: d0e26854-bcb9-43bb-bc54-2f6cf5b1ad6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.biblioteca-colecciones
+  module:
+    - system
+  theme:
+    - fucs
+id: bibliotecacolecciones_2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:biblioteca-colecciones'
+settings:
+  id: 'system_menu_block:biblioteca-colecciones'
+  label: 'Biblioteca colecciones'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/biblioteca/colecciones/*'

@@ -1,0 +1,11 @@
+uuid: de0c1766-af82-4288-9473-dedcbc500b0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.articulo
+id: node.articulo
+target_entity_type_id: node
+target_bundle: articulo
+default_langcode: site_default
+language_alterable: false

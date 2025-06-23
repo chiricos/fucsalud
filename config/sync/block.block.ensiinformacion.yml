@@ -1,0 +1,30 @@
+uuid: 0545585f-f290-4bf1-98cc-555d1e09dc22
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:71976e03-9d01-48ee-92f6-893cbddf58e8'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: ensiinformacion
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:71976e03-9d01-48ee-92f6-893cbddf58e8'
+settings:
+  id: 'block_content:71976e03-9d01-48ee-92f6-893cbddf58e8'
+  label: 'ENSI INFORMACION bloque'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /semilleros

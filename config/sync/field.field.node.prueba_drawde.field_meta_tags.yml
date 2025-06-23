@@ -1,0 +1,21 @@
+uuid: 90fad6d0-613d-4042-84c3-81fc18cb2b4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.prueba_drawde
+  module:
+    - metatag
+id: node.prueba_drawde.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: prueba_drawde
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

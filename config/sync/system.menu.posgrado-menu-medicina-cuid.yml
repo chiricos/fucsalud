@@ -1,0 +1,8 @@
+uuid: 0f041901-1e8d-4cd2-94ac-125fa8a0ddb0
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-medicina-cuid
+label: posgrado-menu-medicina-cuidado
+description: posgrado-menu-medicina-cuidado
+locked: false

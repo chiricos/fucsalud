@@ -1,0 +1,23 @@
+uuid: f9c46450-d60f-4d31-bd09-73f86079316a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_3
+    - node.type.colaborador_acordion_lateral
+  module:
+    - text
+id: node.colaborador_acordion_lateral.field_body_3
+field_name: field_body_3
+entity_type: node
+bundle: colaborador_acordion_lateral
+label: 'body 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

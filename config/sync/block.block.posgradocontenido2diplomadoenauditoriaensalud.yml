@@ -1,0 +1,31 @@
+uuid: 1892b233-620c-4981-bfc8-fc2a4a5de53d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4762cd1a-ad0d-4f4a-9255-9af067f2a310'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido2diplomadoenauditoriaensalud
+theme: fucs
+region: pregrado_contenido_2
+weight: 0
+provider: null
+plugin: 'block_content:4762cd1a-ad0d-4f4a-9255-9af067f2a310'
+settings:
+  id: 'block_content:4762cd1a-ad0d-4f4a-9255-9af067f2a310'
+  label: 'Posgrado contenido 2 Diplomado en Auditoria en Salud'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-administrativos/auditoria-en-salud

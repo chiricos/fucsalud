@@ -1,0 +1,31 @@
+uuid: 48396e85-22bf-4e28-a75a-4e93ec919031
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e39cc9f5-4e53-4e6f-86b9-71f438c1c2b0'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: colaboradoractivarmenuserviciosenlinea
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:e39cc9f5-4e53-4e6f-86b9-71f438c1c2b0'
+settings:
+  id: 'block_content:e39cc9f5-4e53-4e6f-86b9-71f438c1c2b0'
+  label: 'colaborador activar menu servicios en linea'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /colaborador/servicios-en-linea

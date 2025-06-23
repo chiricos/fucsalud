@@ -1,0 +1,21 @@
+uuid: 77682ef7-9d0e-432f-a9a2-65b202a7d99a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.slider_segundo_home_investigacio
+  module:
+    - metatag
+id: node.slider_segundo_home_investigacio.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: slider_segundo_home_investigacio
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

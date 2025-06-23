@@ -1,0 +1,8 @@
+uuid: 00715827-93bc-4f05-8069-422c482803c0
+langcode: es
+status: true
+dependencies: {  }
+id: pqrs
+label: PQRS
+description: ''
+locked: false

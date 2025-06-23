@@ -1,0 +1,30 @@
+uuid: f943c491-fd9f-496a-bf1b-f9379960a85e
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.actualizacion_datos_egresados
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: webform_2
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario actualizar datos egresados'
+  label_display: '0'
+  provider: webform
+  webform_id: actualizacion_datos_egresados
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /egresados/actualizacion-datos-egresadosFUCS

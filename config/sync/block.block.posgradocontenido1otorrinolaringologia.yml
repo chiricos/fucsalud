@@ -1,0 +1,31 @@
+uuid: 7980ef65-0b6f-417d-8f69-14c508c17b61
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:63579604-4bb5-44d1-a52f-3cccb297ea9a'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1otorrinolaringologia
+theme: fucs
+region: pregrado_contenido_1
+weight: 15
+provider: null
+plugin: 'block_content:63579604-4bb5-44d1-a52f-3cccb297ea9a'
+settings:
+  id: 'block_content:63579604-4bb5-44d1-a52f-3cccb297ea9a'
+  label: 'Posgrado contenido 1 otorrinolaringología'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-otorrinolaringologia/otorrinolaringologia

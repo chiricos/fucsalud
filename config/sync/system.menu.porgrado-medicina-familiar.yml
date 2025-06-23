@@ -1,0 +1,8 @@
+uuid: 55a512fa-5fb1-454f-bc05-35b209b10445
+langcode: es
+status: true
+dependencies: {  }
+id: porgrado-medicina-familiar
+label: porgrado-medicina-familiar
+description: porgrado-medicina-familiar
+locked: false

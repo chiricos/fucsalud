@@ -1,0 +1,21 @@
+uuid: a5f06b52-b515-4cb1-9a4b-1f6029a96ba1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.proyeccion_social_noticias
+  module:
+    - metatag
+id: node.proyeccion_social_noticias.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: proyeccion_social_noticias
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

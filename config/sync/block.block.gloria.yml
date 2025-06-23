@@ -1,0 +1,30 @@
+uuid: 777bbbe2-17d5-409b-af31-dd2440e29f46
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.gloria
+  module:
+    - system
+  theme:
+    - fucs
+id: gloria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:gloria'
+settings:
+  id: 'system_menu_block:gloria'
+  label: Gloria
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/investigacion/Proyectos/Gloria/*\r\n/node/7141\r\n/node/7140\r\n/node/7142\r\n/node/7143"

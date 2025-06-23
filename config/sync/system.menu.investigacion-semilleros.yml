@@ -1,0 +1,8 @@
+uuid: d17d01c1-526c-4936-bf3f-4ef1d8191e6a
+langcode: es
+status: true
+dependencies: {  }
+id: investigacion-semilleros
+label: 'INVESTIGACION SEMILLEROS'
+description: 'INVESTIGACION SEMILLEROS'
+locked: false

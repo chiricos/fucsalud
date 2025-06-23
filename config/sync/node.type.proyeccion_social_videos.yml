@@ -1,0 +1,17 @@
+uuid: a33cf834-6df4-4ff1-b44b-513ae980e7cc
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Proyeccion social videos'
+type: proyeccion_social_videos
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

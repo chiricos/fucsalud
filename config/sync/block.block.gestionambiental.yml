@@ -1,0 +1,30 @@
+uuid: 16e3ca5e-54e2-46be-bdea-2b0decab90ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.gestion-ambiental
+  module:
+    - system
+  theme:
+    - fucs
+id: gestionambiental
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:gestion-ambiental'
+settings:
+  id: 'system_menu_block:gestion-ambiental'
+  label: 'menu gestion ambiental'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/gestion_ambiental/*\r\n/gestion_ambiental\r\n/node/7285"

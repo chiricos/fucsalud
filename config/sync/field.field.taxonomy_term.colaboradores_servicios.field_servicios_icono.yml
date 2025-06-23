@@ -1,0 +1,38 @@
+uuid: 62a4ff9c-33de-43cf-9791-3179a2520c5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_servicios_icono
+    - taxonomy.vocabulary.colaboradores_servicios
+  module:
+    - image
+id: taxonomy_term.colaboradores_servicios.field_servicios_icono
+field_name: field_servicios_icono
+entity_type: taxonomy_term
+bundle: colaboradores_servicios
+label: 'servicios icono'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

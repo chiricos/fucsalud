@@ -1,0 +1,19 @@
+uuid: 0d6e6919-45d5-4094-a236-a01737c34309
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.slider_apartastudios
+id: node.slider_apartastudios.field_caption
+field_name: field_caption
+entity_type: node
+bundle: slider_apartastudios
+label: caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

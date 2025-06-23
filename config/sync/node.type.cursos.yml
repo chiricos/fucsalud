@@ -1,0 +1,18 @@
+uuid: 7c90efc3-0af2-4254-b977-2f6c4606fbc5
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: cursos
+type: cursos
+description: 'cursos programas'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

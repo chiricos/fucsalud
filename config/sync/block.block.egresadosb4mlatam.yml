@@ -1,0 +1,30 @@
+uuid: 8aab990e-eaed-4f78-8e88-99e763383866
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.egresados-b4m-latam
+  module:
+    - system
+  theme:
+    - fucs
+id: egresadosb4mlatam
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:egresados-b4m-latam'
+settings:
+  id: 'system_menu_block:egresados-b4m-latam'
+  label: 'Egresados B4M Latam'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/b4m/vinculacion\r\n/egresados/b4m/requisitos\r\n/egresados/b4m/beneficios\r\n/egresados/b4m/escuela"

@@ -1,0 +1,31 @@
+uuid: e6bd1717-8249-482f-8f10-bc8a3cfc65f9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bc0d1585-8eef-46c2-9e11-aa1bae521a2c'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannercarreratecnicas
+theme: fucs
+region: banner_page
+weight: 0
+provider: null
+plugin: 'block_content:bc0d1585-8eef-46c2-9e11-aa1bae521a2c'
+settings:
+  id: 'block_content:bc0d1585-8eef-46c2-9e11-aa1bae521a2c'
+  label: 'banner carrera tecnicas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /pregrado/carreras_tecnicas

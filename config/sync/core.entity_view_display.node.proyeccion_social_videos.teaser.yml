@@ -1,0 +1,33 @@
+uuid: 330e6e7b-c74b-4934-8cda-fa6c2d3200c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.proyeccion_social_videos.body
+    - field.field.node.proyeccion_social_videos.field_meta_tags
+    - node.type.proyeccion_social_videos
+  module:
+    - text
+    - user
+id: node.proyeccion_social_videos.teaser
+targetEntityType: node
+bundle: proyeccion_social_videos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

@@ -1,0 +1,494 @@
+uuid: 16f5c2b2-3b30-4f21-b974-ef7b8960d1a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.acordion.body
+    - field.field.node.acordion.field_a
+    - field.field.node.acordion.field_ac
+    - field.field.node.acordion.field_acor
+    - field.field.node.acordion.field_acordion_cuerpo_1
+    - field.field.node.acordion.field_acordion_cuerpo_10
+    - field.field.node.acordion.field_acordion_cuerpo_11
+    - field.field.node.acordion.field_acordion_cuerpo_12
+    - field.field.node.acordion.field_acordion_cuerpo_13
+    - field.field.node.acordion.field_acordion_cuerpo_14
+    - field.field.node.acordion.field_acordion_cuerpo_15
+    - field.field.node.acordion.field_acordion_cuerpo_16
+    - field.field.node.acordion.field_acordion_cuerpo_17
+    - field.field.node.acordion.field_acordion_cuerpo_18
+    - field.field.node.acordion.field_acordion_cuerpo_19
+    - field.field.node.acordion.field_acordion_cuerpo_2
+    - field.field.node.acordion.field_acordion_cuerpo_20
+    - field.field.node.acordion.field_acordion_cuerpo_3
+    - field.field.node.acordion.field_acordion_cuerpo_4
+    - field.field.node.acordion.field_acordion_cuerpo_5
+    - field.field.node.acordion.field_acordion_cuerpo_6
+    - field.field.node.acordion.field_acordion_cuerpo_7
+    - field.field.node.acordion.field_acordion_cuerpo_8
+    - field.field.node.acordion.field_acordion_cuerpo_9
+    - field.field.node.acordion.field_acordion_titulo_
+    - field.field.node.acordion.field_acordion_titulo_1
+    - field.field.node.acordion.field_acordion_titulo_11
+    - field.field.node.acordion.field_acordion_titulo_12
+    - field.field.node.acordion.field_acordion_titulo_13
+    - field.field.node.acordion.field_acordion_titulo_14
+    - field.field.node.acordion.field_acordion_titulo_15
+    - field.field.node.acordion.field_acordion_titulo_16
+    - field.field.node.acordion.field_acordion_titulo_17
+    - field.field.node.acordion.field_acordion_titulo_18
+    - field.field.node.acordion.field_acordion_titulo_19
+    - field.field.node.acordion.field_acordion_titulo_20
+    - field.field.node.acordion.field_acordion_titulo_5
+    - field.field.node.acordion.field_acordion_titulo_6
+    - field.field.node.acordion.field_acordion_titulo_7
+    - field.field.node.acordion.field_acordion_titulo_8
+    - field.field.node.acordion.field_acordion_titulo_9
+    - field.field.node.acordion.field_meta_tags
+    - node.type.acordion
+  module:
+    - metatag
+    - path
+    - text
+id: node.acordion.default
+targetEntityType: node
+bundle: acordion
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 7
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_a:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ac:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acor:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_cuerpo_1:
+    type: text_textarea_with_summary
+    weight: 9
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_10:
+    type: text_textarea_with_summary
+    weight: 27
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_11:
+    type: text_textarea_with_summary
+    weight: 29
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_12:
+    type: text_textarea_with_summary
+    weight: 31
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_13:
+    type: text_textarea_with_summary
+    weight: 33
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_14:
+    type: text_textarea_with_summary
+    weight: 35
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_15:
+    type: text_textarea_with_summary
+    weight: 37
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_16:
+    type: text_textarea_with_summary
+    weight: 39
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_17:
+    type: text_textarea_with_summary
+    weight: 41
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_18:
+    type: text_textarea_with_summary
+    weight: 43
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_19:
+    type: text_textarea_with_summary
+    weight: 45
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_2:
+    type: text_textarea_with_summary
+    weight: 11
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_20:
+    type: text_textarea_with_summary
+    weight: 47
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_3:
+    type: text_textarea_with_summary
+    weight: 13
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_4:
+    type: text_textarea_with_summary
+    weight: 15
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_5:
+    type: text_textarea_with_summary
+    weight: 17
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_6:
+    type: text_textarea_with_summary
+    weight: 19
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_7:
+    type: text_textarea_with_summary
+    weight: 21
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_8:
+    type: text_textarea_with_summary
+    weight: 23
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_cuerpo_9:
+    type: text_textarea_with_summary
+    weight: 25
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_acordion_titulo_:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_1:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_11:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_12:
+    type: string_textfield
+    weight: 30
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_13:
+    type: string_textfield
+    weight: 32
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_14:
+    type: string_textfield
+    weight: 34
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_15:
+    type: string_textfield
+    weight: 36
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_16:
+    type: string_textfield
+    weight: 38
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_17:
+    type: string_textfield
+    weight: 40
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_18:
+    type: string_textfield
+    weight: 42
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_19:
+    type: string_textfield
+    weight: 44
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_20:
+    type: string_textfield
+    weight: 46
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_5:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_6:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_7:
+    type: string_textfield
+    weight: 20
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_8:
+    type: string_textfield
+    weight: 22
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_acordion_titulo_9:
+    type: string_textfield
+    weight: 24
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 122
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 121
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

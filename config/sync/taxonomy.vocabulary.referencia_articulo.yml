@@ -1,0 +1,8 @@
+uuid: d02fe600-b962-4d17-8701-9c133cb81a0f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Referencia articulo'
+vid: referencia_articulo
+description: 'Referencias para los artículos de la tienda virtual'
+weight: 0

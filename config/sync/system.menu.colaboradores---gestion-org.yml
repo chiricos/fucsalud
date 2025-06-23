@@ -1,0 +1,8 @@
+uuid: 50981b16-b32c-4ea4-ad57-0872c6fe8a25
+langcode: es
+status: true
+dependencies: {  }
+id: colaboradores---gestion-org
+label: 'COLABORADORES - GESTION ORGANIZACIONAL'
+description: ''
+locked: false

@@ -1,0 +1,31 @@
+uuid: 362a75da-2045-4666-ab95-db9e56741d7f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7b4ca22a-7f15-4864-9699-9e2d8146a882'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: authenticacioncongoogle
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7b4ca22a-7f15-4864-9699-9e2d8146a882'
+settings:
+  id: 'block_content:7b4ca22a-7f15-4864-9699-9e2d8146a882'
+  label: 'Authenticación con google'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /user/login

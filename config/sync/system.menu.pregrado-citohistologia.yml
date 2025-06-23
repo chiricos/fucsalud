@@ -1,0 +1,8 @@
+uuid: 7e7e05b7-d520-4934-8d9c-eccb9182f09f
+langcode: es
+status: true
+dependencies: {  }
+id: pregrado-citohistologia
+label: pregrado-citohistologia
+description: pregrado-citohistologia
+locked: false

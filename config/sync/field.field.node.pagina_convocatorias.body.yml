@@ -1,0 +1,23 @@
+uuid: a7c0657a-967d-45f6-a64c-b603ab07d9ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_convocatorias
+  module:
+    - text
+id: node.pagina_convocatorias.body
+field_name: body
+entity_type: node
+bundle: pagina_convocatorias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

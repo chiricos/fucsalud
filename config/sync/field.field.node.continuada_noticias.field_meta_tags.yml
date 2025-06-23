@@ -1,0 +1,21 @@
+uuid: 73d3743e-99b8-4c79-a8af-1ab700c843f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.continuada_noticias
+  module:
+    - metatag
+id: node.continuada_noticias.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: continuada_noticias
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

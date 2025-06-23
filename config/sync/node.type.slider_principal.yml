@@ -1,0 +1,18 @@
+uuid: 19219ea3-7880-441f-84dc-ab95f9bdce55
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Home Slider principal'
+type: slider_principal
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,30 @@
+uuid: bde33fe2-8e56-4fc8-bbca-368242f59441
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.especializacion-en-cardiolo
+  module:
+    - system
+  theme:
+    - fucs
+id: cardiologia_inter_hemodinamia_pediatrica2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:especializacion-en-cardiolo'
+settings:
+  id: 'system_menu_block:especializacion-en-cardiolo'
+  label: Cardiología-Intervencionista-Hemodinamia-Pediátrica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Cardiologia-intervencionista-hemodinamia-pediatrica\r\n/posgrado/Cardiologia-intervencionista-hemodinamia-pediatrica-Perfiles\r\n/posgrado/Cardiologia-intervencionista-hemodinamia-pediatrica-planestudio\r\n/posgrado/Cardiologia-intervencionista-hemodinamia-pediatrica-docentes"

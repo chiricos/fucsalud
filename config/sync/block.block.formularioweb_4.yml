@@ -1,0 +1,28 @@
+uuid: aaeb0af0-36d1-43f7-b50b-1dbfa4bbe90e
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_4
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Programas a la medida'
+  label_display: '0'
+  provider: webform
+  webform_id: programas_a_la_medida
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /continuada/programas-a-la-medida

@@ -1,0 +1,23 @@
+uuid: 308c3b4d-319f-4d3b-b8b2-da95412494b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_3
+    - node.type.posgrado
+  module:
+    - text
+id: node.posgrado.field_acordion_cuerpo_3
+field_name: field_acordion_cuerpo_3
+entity_type: node
+bundle: posgrado
+label: acordion_cuerpo_3
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

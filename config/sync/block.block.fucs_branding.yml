@@ -1,0 +1,25 @@
+uuid: 88c3abfd-4bfc-4f4a-ae52-84ccc423c012
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fucs
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: fucs_branding
+theme: fucs
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

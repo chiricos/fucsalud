@@ -1,0 +1,30 @@
+uuid: b8ce34ec-be24-463b-985b-e5d0ef100472
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.pregrado-citohistologia
+  module:
+    - system
+  theme:
+    - fucs
+id: pregradocitohistologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:pregrado-citohistologia'
+settings:
+  id: 'system_menu_block:pregrado-citohistologia'
+  label: pregrado-citohistologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/232\r\n/node/233\r\n/node/234\r\n/node/235\r\n/pregrado/carreras_tecnologicas/citohistologia"

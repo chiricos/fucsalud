@@ -1,0 +1,22 @@
+uuid: 2ff591b8-71f4-4be8-bc06-acc77b86d1c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_biblioteca
+id: node.slider_biblioteca.promote
+field_name: promote
+entity_type: node
+bundle: slider_biblioteca
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

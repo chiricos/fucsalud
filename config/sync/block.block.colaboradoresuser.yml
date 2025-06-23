@@ -1,0 +1,31 @@
+uuid: 8471958c-9bc5-486d-94b9-fc681f09214b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7180cc27-93a5-4a46-b989-73ae1253b654'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: colaboradoresuser
+theme: fucs
+region: content_first_page
+weight: -95
+provider: null
+plugin: 'block_content:7180cc27-93a5-4a46-b989-73ae1253b654'
+settings:
+  id: 'block_content:7180cc27-93a5-4a46-b989-73ae1253b654'
+  label: 'colaboradores user'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /user/login

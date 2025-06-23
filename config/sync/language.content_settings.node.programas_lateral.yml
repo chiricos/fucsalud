@@ -1,0 +1,11 @@
+uuid: 2b16e196-be43-43d0-b34c-13e1337f5b67
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.programas_lateral
+id: node.programas_lateral
+target_entity_type_id: node
+target_bundle: programas_lateral
+default_langcode: site_default
+language_alterable: false

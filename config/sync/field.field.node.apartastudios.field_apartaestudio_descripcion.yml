@@ -1,0 +1,21 @@
+uuid: 1b59b569-b5d1-430d-bfc5-4215ad29931e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apartaestudio_descripcion
+    - node.type.apartastudios
+  module:
+    - text
+id: node.apartastudios.field_apartaestudio_descripcion
+field_name: field_apartaestudio_descripcion
+entity_type: node
+bundle: apartastudios
+label: apartaestudio_descripcion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

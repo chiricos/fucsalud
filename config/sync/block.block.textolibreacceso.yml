@@ -1,0 +1,31 @@
+uuid: e4c72bbe-d919-47d6-a7fc-82aaa4710622
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f104fb07-cfc5-4af4-9503-7a836c5c70ab'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: textolibreacceso
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:f104fb07-cfc5-4af4-9503-7a836c5c70ab'
+settings:
+  id: 'block_content:f104fb07-cfc5-4af4-9503-7a836c5c70ab'
+  label: 'texto LIBRE ACCESO'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /base-de-datos-libre-acceso

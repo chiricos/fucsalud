@@ -1,0 +1,31 @@
+uuid: 351cca5f-bbac-4d3a-bdd8-2f5ca3a40a69
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:23a3fc49-1ec2-4896-9ca1-5a7db0b9bdbd'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: investigacionconvocatorias
+theme: fucs
+region: convocatorias
+weight: 0
+provider: null
+plugin: 'block_content:23a3fc49-1ec2-4896-9ca1-5a7db0b9bdbd'
+settings:
+  id: 'block_content:23a3fc49-1ec2-4896-9ca1-5a7db0b9bdbd'
+  label: 'investigacion convocatorias'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /investigacion

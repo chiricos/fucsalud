@@ -1,0 +1,8 @@
+uuid: e62fd07f-a9a6-4b35-86e8-6bf8e9fc1c68
+langcode: es
+status: true
+dependencies: {  }
+id: salud-comunitaria-p-social
+label: 'salud comunitaria p-Social'
+description: 'salud comunitaria p-Social'
+locked: false

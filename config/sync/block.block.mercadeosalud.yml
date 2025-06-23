@@ -1,0 +1,30 @@
+uuid: df86e113-1e6f-436d-bcaa-4ce4628940f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mercadeo-salud
+  module:
+    - system
+  theme:
+    - fucs
+id: mercadeosalud
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:mercadeo-salud'
+settings:
+  id: 'system_menu_block:mercadeo-salud'
+  label: 'Mercadeo salud'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/gerencia-mercadeo-servicios-salud\r\n/posgrado/gerencia-mercadeo-servicios-salud/perfiles\r\n/posgrado/gerencia-mercadeo-servicios-salud/requisitos\r\n/posgrado/gerencia-mercadeo-servicios-salud/plan-estudios\r\n/posgrado/gerencia-mercadeo-servicios-salud/preguntas-frecuentes\r\n/posgrado/gerencia-mercadeo-servicios-salud/docentes"

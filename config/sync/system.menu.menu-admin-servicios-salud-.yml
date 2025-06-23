@@ -1,0 +1,8 @@
+uuid: 8b86ee8b-ae3d-44c5-97c1-6636aca6d921
+langcode: es
+status: true
+dependencies: {  }
+id: menu-admin-servicios-salud-
+label: menú-admin-servicios-salud-tegnológico
+description: menú-admin-servicios-salud-tegnológico
+locked: false

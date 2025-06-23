@@ -1,0 +1,8 @@
+uuid: fc34c7c7-7665-40d3-b841-486ba14912af
+langcode: es
+status: true
+dependencies: {  }
+id: mercadeo-salud
+label: 'Mercadeo salud'
+description: 'Mercadeo salud'
+locked: false

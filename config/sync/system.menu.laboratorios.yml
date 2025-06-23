@@ -1,0 +1,8 @@
+uuid: 83cfc996-89f9-4007-8d96-9b86d808fbba
+langcode: es
+status: true
+dependencies: {  }
+id: laboratorios
+label: LABORATORIOS
+description: ''
+locked: false

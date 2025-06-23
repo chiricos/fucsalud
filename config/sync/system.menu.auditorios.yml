@@ -1,0 +1,8 @@
+uuid: 568a13da-9452-4cdb-8b2b-fb282c80d481
+langcode: es
+status: true
+dependencies: {  }
+id: auditorios
+label: AUDITORIOS
+description: ''
+locked: false

@@ -1,0 +1,31 @@
+uuid: e18504d2-42ae-472f-a022-f197014429a5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b816dd50-f419-4d81-9516-901b6ad616cd'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bibliotecacontacto
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:b816dd50-f419-4d81-9516-901b6ad616cd'
+settings:
+  id: 'block_content:b816dd50-f419-4d81-9516-901b6ad616cd'
+  label: 'biblioteca contacto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca/*\r\n/base-de-datos-suscritas\r\n/base-de-datos-libre-acceso\r\n/base-de-datos-libros-electronicos\r\n/base-de-datos-en-demostracion\r\n/base-de-datos-guias-y-manuales-de-uso"

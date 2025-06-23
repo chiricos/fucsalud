@@ -1,0 +1,31 @@
+uuid: 53d9c878-e277-4180-bf9f-08cfad6a03cf
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:023bebd8-cee8-40c9-ae5e-f0852c56b5f1'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: textosuscritas
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:023bebd8-cee8-40c9-ae5e-f0852c56b5f1'
+settings:
+  id: 'block_content:023bebd8-cee8-40c9-ae5e-f0852c56b5f1'
+  label: 'texto suscritas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /base-de-datos-suscritas

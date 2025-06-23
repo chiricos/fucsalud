@@ -1,0 +1,22 @@
+uuid: 337787f0-6d9c-4dff-a2b9-b9f0e72b0ea7
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fucs
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: fucs_messages
+theme: fucs
+region: message
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

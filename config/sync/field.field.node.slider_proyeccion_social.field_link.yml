@@ -1,0 +1,19 @@
+uuid: 4dc1a8c1-f6f3-4eef-95d9-9c3f52521c6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_proyeccion_social
+id: node.slider_proyeccion_social.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_proyeccion_social
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

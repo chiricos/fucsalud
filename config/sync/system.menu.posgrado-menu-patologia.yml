@@ -1,0 +1,8 @@
+uuid: 7b4b426c-524a-4749-9d4f-7e4b235eea50
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-patologia
+label: posgrado-menu-patologia
+description: posgrado-menu-patologia
+locked: false

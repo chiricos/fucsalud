@@ -1,0 +1,11 @@
+uuid: 8a2de43d-9501-44f3-bf8b-3fbbb6f893da
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.revistas
+id: node.revistas
+target_entity_type_id: node
+target_bundle: revistas
+default_langcode: site_default
+language_alterable: false

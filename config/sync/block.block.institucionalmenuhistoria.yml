@@ -1,0 +1,31 @@
+uuid: cce88405-3650-4d24-9c87-09150cb2d8f9
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ba31c651-94ba-4e45-9252-86f720861621'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: institucionalmenuhistoria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'block_content:ba31c651-94ba-4e45-9252-86f720861621'
+settings:
+  id: 'block_content:ba31c651-94ba-4e45-9252-86f720861621'
+  label: 'Institucional menú historia'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /historia

@@ -1,0 +1,7 @@
+uuid: c98dc984-e9a5-4d6b-8d58-61c143d2d8d3
+langcode: es
+status: false
+dependencies: {  }
+formId: node_aspirantes_noticias_form
+captchaType: default
+label: node_aspirantes_noticias_form

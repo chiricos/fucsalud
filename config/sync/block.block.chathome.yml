@@ -1,0 +1,31 @@
+uuid: 41018995-1d61-439f-8009-90bc0fb2eb91
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:005a7626-51b1-4077-a04c-56546875b9c9'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: chathome
+theme: fucs
+region: first_footer
+weight: 0
+provider: null
+plugin: 'block_content:005a7626-51b1-4077-a04c-56546875b9c9'
+settings:
+  id: 'block_content:005a7626-51b1-4077-a04c-56546875b9c9'
+  label: 'chat home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/biblioteca/*\r\n/biblioteca\r\n/bienestar/*\r\n/bienestar\r\n/continuada/*\r\n/continuada\r\n/base-de-datos-suscritas\r\n/base-de-datos-libre-acceso\r\n/base-de-datos-libros-electronicos\r\n/base-de-datos-en-demostracion\r\n/diplomados\r\n/cursos\r\n/seminarios\r\n/avales"

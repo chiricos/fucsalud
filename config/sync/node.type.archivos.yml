@@ -1,0 +1,17 @@
+uuid: c12d0a44-9925-4ff0-940f-1f07f9bd24e4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: office
+type: archivos
+description: 'para subir cualquier tipo de archivo'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

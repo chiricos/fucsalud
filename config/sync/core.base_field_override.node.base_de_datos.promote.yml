@@ -1,0 +1,22 @@
+uuid: ecc74929-c18f-4232-9fe4-e53213a6da6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.base_de_datos
+id: node.base_de_datos.promote
+field_name: promote
+entity_type: node
+bundle: base_de_datos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 07a4c8b2-a9bd-47fb-892d-f905699f5250
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_apartaestudio_descripcion
+field_name: field_apartaestudio_descripcion
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

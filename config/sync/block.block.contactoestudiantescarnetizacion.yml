@@ -1,0 +1,31 @@
+uuid: 06f8b055-8951-46a3-b109-746dd9d3af2a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5b19a241-74e2-4b80-88da-d9f32a07c572'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactoestudiantescarnetizacion
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:5b19a241-74e2-4b80-88da-d9f32a07c572'
+settings:
+  id: 'block_content:5b19a241-74e2-4b80-88da-d9f32a07c572'
+  label: contacto-estudiantes-carnetización
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /estudiantes/registro-y-control/carnetizacion

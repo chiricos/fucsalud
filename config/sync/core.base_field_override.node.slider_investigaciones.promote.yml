@@ -1,0 +1,22 @@
+uuid: b5969f59-0f03-4057-b751-b03f8034d394
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_investigaciones
+id: node.slider_investigaciones.promote
+field_name: promote
+entity_type: node
+bundle: slider_investigaciones
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

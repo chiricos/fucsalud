@@ -1,0 +1,11 @@
+uuid: 6bf68e3c-7593-42fc-bbd9-dd69f0c3d829
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colaboradores_eventos
+id: node.colaboradores_eventos
+target_entity_type_id: node
+target_bundle: colaboradores_eventos
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,8 @@
+uuid: 362e57f7-f814-4ec4-a260-d78bf06eba58
+langcode: es
+status: true
+dependencies: {  }
+id: menus-aspirantes
+label: 'menus aspirantes'
+description: ''
+locked: false

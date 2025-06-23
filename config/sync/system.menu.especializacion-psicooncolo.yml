@@ -1,0 +1,8 @@
+uuid: 00c683ee-25f4-4438-a5f1-b04a05437366
+langcode: es
+status: true
+dependencies: {  }
+id: especializacion-psicooncolo
+label: 'Especialización PSICOONCOLOGÍA'
+description: 'Especialización PSICOONCOLOGÍA'
+locked: false

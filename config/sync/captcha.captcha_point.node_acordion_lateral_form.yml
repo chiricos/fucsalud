@@ -1,0 +1,7 @@
+uuid: 2a86f838-f4a7-442c-8bc4-2b7d5558f3a4
+langcode: es
+status: false
+dependencies: {  }
+formId: node_acordion_lateral_form
+captchaType: default
+label: node_acordion_lateral_form

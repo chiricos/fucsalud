@@ -1,0 +1,19 @@
+uuid: 7b5f3ee7-be78-49b4-852a-bd1a01e87d6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_34
+    - node.type.acordion_lateral
+id: node.acordion_lateral.field_acordion_titulo_34
+field_name: field_acordion_titulo_34
+entity_type: node
+bundle: acordion_lateral
+label: 'acordion titulo 34'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

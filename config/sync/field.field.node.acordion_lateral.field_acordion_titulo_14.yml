@@ -1,0 +1,19 @@
+uuid: bcb30a46-1bf9-4eea-8a73-b1554c9a6e61
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_14
+    - node.type.acordion_lateral
+id: node.acordion_lateral.field_acordion_titulo_14
+field_name: field_acordion_titulo_14
+entity_type: node
+bundle: acordion_lateral
+label: acordion_titulo_14
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: 0a7a38f0-622b-447f-9fac-fd2706075847
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.genetica-medica
+  module:
+    - system
+  theme:
+    - fucs
+id: geneticamedica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:genetica-medica'
+settings:
+  id: 'system_menu_block:genetica-medica'
+  label: 'Genética médica'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Genetica-Medica\r\n/posgrado/Genetica-Medica/por-que-estudiar-en-la-FUCS\r\n/posgrado/Genetica-Medica/perfiles\r\n/posgrado/Genetica-Medica/plan-de-estudios\r\n/posgrado/Genetica-Medica/docentes"

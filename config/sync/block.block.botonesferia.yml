@@ -1,0 +1,31 @@
+uuid: 8353d4cf-595d-429e-92b3-cdf3bf638892
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6f3479ae-268a-4901-8683-23c6736fbfcc'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonesferia
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:6f3479ae-268a-4901-8683-23c6736fbfcc'
+settings:
+  id: 'block_content:6f3479ae-268a-4901-8683-23c6736fbfcc'
+  label: 'Botones feria'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/home/Feria-U-Salud-virtual\r\n/home/FeriaVirtual-admision-financiacion\r\n/home/Feria-U-Salud-virtual-dejanos-tus-datos\r\n/home/FeriaVirtual-Charlas-talleres\r\n/home/FeriaVirtual-Stands\r\n/home/FeriaVirtual-admision-financiacion"

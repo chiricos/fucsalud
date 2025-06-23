@@ -1,0 +1,30 @@
+uuid: 2a3b82d3-1165-4818-b293-aba866f8f8c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.beneficios-
+  module:
+    - system
+  theme:
+    - fucs
+id: beneficiosegresados
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:beneficios-'
+settings:
+  id: 'system_menu_block:beneficios-'
+  label: 'Beneficios Egresados'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/beneficios/institucionales\r\n/egresados/beneficios/comerciales"

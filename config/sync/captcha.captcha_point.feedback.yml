@@ -1,0 +1,7 @@
+uuid: 05cfaa10-bc5c-469f-846a-391f4d9c8096
+langcode: es
+status: true
+dependencies: {  }
+formId: feedback
+captchaType: image_captcha/Image
+label: feedback

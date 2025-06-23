@@ -1,0 +1,25 @@
+uuid: dc10facc-5cf0-4548-bc8d-ce4167945502
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e091215c-71d2-4016-8bfc-b5b626e658b1'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: redessociales
+theme: fucs
+region: inscribete
+weight: 0
+provider: null
+plugin: 'block_content:e091215c-71d2-4016-8bfc-b5b626e658b1'
+settings:
+  id: 'block_content:e091215c-71d2-4016-8bfc-b5b626e658b1'
+  label: 'Redes sociales'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

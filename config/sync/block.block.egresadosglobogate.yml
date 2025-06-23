@@ -1,0 +1,30 @@
+uuid: 9b835b1e-9866-4571-ade4-e690d13e54ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.egresados-globogate
+  module:
+    - system
+  theme:
+    - fucs
+id: egresadosglobogate
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:egresados-globogate'
+settings:
+  id: 'system_menu_block:egresados-globogate'
+  label: 'Egresados Globogate'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/globogate/vinculacion\r\n/egresados/globogate/requisitos\r\n/egresados/globogate/beneficios\r\n/egresados/globogate/escuela"

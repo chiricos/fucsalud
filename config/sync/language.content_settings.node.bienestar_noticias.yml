@@ -1,0 +1,11 @@
+uuid: b1f1b1e0-57cb-44f5-88bb-d639e18537f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bienestar_noticias
+id: node.bienestar_noticias
+target_entity_type_id: node
+target_bundle: bienestar_noticias
+default_langcode: site_default
+language_alterable: false

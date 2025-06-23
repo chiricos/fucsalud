@@ -1,0 +1,27 @@
+uuid: f65d5aec-e364-4bdc-b83c-ec9c0f3b1411
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - poll
+    - search
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access polls'
+  - 'access site-wide contact form'
+  - 'administer polls'
+  - 'search content'
+  - 'use text format restricted_html'

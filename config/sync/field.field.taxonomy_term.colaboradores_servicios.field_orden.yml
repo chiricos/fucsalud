@@ -1,0 +1,23 @@
+uuid: 0d3642b8-b755-44fe-aee7-1308efd44e49
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_orden
+    - taxonomy.vocabulary.colaboradores_servicios
+id: taxonomy_term.colaboradores_servicios.field_orden
+field_name: field_orden
+entity_type: taxonomy_term
+bundle: colaboradores_servicios
+label: orden
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

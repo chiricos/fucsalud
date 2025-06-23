@@ -1,0 +1,30 @@
+uuid: 733012df-373b-4514-a896-c9f7e9371dab
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.pregrado-menu-enfermeria
+  module:
+    - system
+  theme:
+    - fucs
+id: pregradomenuenfermeria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:pregrado-menu-enfermeria'
+settings:
+  id: 'system_menu_block:pregrado-menu-enfermeria'
+  label: pregrado-menu-enfermeria
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/244\r\n/node/245\r\n/node/246\r\n/node/247\r\n/pregrado/carreras_profesionales/enfermeria/docentes\r\n/node/249\r\n/node/250\r\n/node/251\r\n/node/252\r\n/node/2570\r\n/pregrado/carreras_profesionales/enfermeria/practica\r\n/pregrado/carreras_profesionales/enfermeria\r\n/pregrado/carreras_profesionales/enfermerias\r\n"

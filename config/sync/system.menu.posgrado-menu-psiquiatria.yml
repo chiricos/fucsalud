@@ -1,0 +1,8 @@
+uuid: c62f0d52-d909-4782-9db7-cec8a30b6979
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-psiquiatria
+label: posgrado-menu-psiquiatría
+description: posgrado-menu-psiquiatría
+locked: false

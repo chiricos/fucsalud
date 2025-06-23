@@ -1,0 +1,8 @@
+uuid: 4ceb8c6a-19ad-44e7-8ddd-ffac6e14df9c
+langcode: es
+status: true
+dependencies: {  }
+id: biblioteca-colecciones
+label: 'Biblioteca colecciones'
+description: Biblioteca-colecciones
+locked: false

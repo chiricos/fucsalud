@@ -1,0 +1,8 @@
+uuid: 4b4214ee-ee6b-463c-88a1-49052e347e79
+langcode: es
+status: true
+dependencies: {  }
+id: biblioteca-bvs
+label: 'biblioteca bvs'
+description: ''
+locked: false

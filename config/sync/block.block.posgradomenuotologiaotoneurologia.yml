@@ -1,0 +1,30 @@
+uuid: 55ca9631-0c78-49e8-8cf8-932581f272f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-otologia-oton
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuotologiaotoneurologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-otologia-oton'
+settings:
+  id: 'system_menu_block:posgrado-menu-otologia-oton'
+  label: posgrado-menu-otología-otoneurologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/403\r\n/node/404\r\n/node/405\r\n/posgrado/sub-otorrinolaringologia/otologia-y-otoneurologia"

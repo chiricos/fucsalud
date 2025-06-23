@@ -1,0 +1,17 @@
+uuid: c69b27fb-b863-4850-9b1b-58833dc67be5
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Continuada noticias'
+type: continuada_noticias
+description: 'Noticias para pagina de educación continuada.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

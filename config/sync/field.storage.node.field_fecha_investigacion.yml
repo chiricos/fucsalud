@@ -1,0 +1,20 @@
+uuid: a08a1d51-70e2-4bb8-a87d-7d7b7a1a7bdf
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fecha_investigacion
+field_name: field_fecha_investigacion
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

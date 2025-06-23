@@ -1,0 +1,59 @@
+uuid: 7a49012b-a79d-4531-8fb1-9964671c6354
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_apartastudios.field_caption
+    - field.field.node.slider_apartastudios.field_link
+    - field.field.node.slider_apartastudios.field_meta_tags
+    - field.field.node.slider_apartastudios.field_slider_1400x600_
+    - node.type.slider_apartastudios
+  module:
+    - image
+    - metatag
+    - user
+id: node.slider_apartastudios.default
+targetEntityType: node
+bundle: slider_apartastudios
+mode: default
+content:
+  field_caption:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_slider_1400x600_:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

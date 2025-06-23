@@ -1,0 +1,37 @@
+uuid: b93d8dc1-c6d8-460a-a43c-2c8e24fc48eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.apartastudios.body
+    - field.field.node.apartastudios.field_apartaestudio_descripcion
+    - field.field.node.apartastudios.field_image
+    - field.field.node.apartastudios.field_meta_tags
+    - node.type.apartastudios
+  module:
+    - text
+    - user
+id: node.apartastudios.teaser
+targetEntityType: node
+bundle: apartastudios
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_apartaestudio_descripcion: true
+  field_image: true
+  field_meta_tags: true
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 2362bde1-8a62-42c8-bad7-933e7339f0c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.proyeccion_social_videos
+  module:
+    - text
+id: node.proyeccion_social_videos.body
+field_name: body
+entity_type: node
+bundle: proyeccion_social_videos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

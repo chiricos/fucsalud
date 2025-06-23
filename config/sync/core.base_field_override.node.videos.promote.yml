@@ -1,0 +1,22 @@
+uuid: 816f8d22-dcc3-49de-8643-f94f69665ea2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos
+id: node.videos.promote
+field_name: promote
+entity_type: node
+bundle: videos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

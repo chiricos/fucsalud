@@ -1,0 +1,29 @@
+uuid: e5a7cc2d-f6ac-4034-9d68-9ce1594eaa21
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_revista.field_caption
+    - field.field.node.slider_revista.field_link
+    - field.field.node.slider_revista.field_meta_tags
+    - field.field.node.slider_revista.field_slider_1400x600_
+    - node.type.slider_revista
+  module:
+    - user
+id: node.slider_revista.teaser
+targetEntityType: node
+bundle: slider_revista
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

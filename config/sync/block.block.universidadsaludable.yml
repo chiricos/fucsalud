@@ -1,0 +1,30 @@
+uuid: aa1918d7-d46a-4374-9039-8cd0c8471847
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.universidad-saludable
+  module:
+    - system
+  theme:
+    - fucs
+id: universidadsaludable
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:universidad-saludable'
+settings:
+  id: 'system_menu_block:universidad-saludable'
+  label: 'Universidad Saludable'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/bienestar/universidad-saludable\r\n/bienestar/universidad-saludable-servicios\r\n/bienestar/universidad-saludable-sesiones-educativas\r\n/bienestar/universidad-saludable-cuidarnos\r\n/bienestar/universidad-saludable-violencias-genero-y-discriminacion"

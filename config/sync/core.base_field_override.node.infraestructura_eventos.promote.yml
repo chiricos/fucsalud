@@ -1,0 +1,22 @@
+uuid: d23432e8-c971-4ed5-ab4d-fde53c869660
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.infraestructura_eventos
+id: node.infraestructura_eventos.promote
+field_name: promote
+entity_type: node
+bundle: infraestructura_eventos
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

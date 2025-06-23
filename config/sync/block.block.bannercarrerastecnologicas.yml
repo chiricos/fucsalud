@@ -1,0 +1,31 @@
+uuid: f58dafcb-4cfb-4a59-bf6a-bd3c3fa6c617
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:df9e8b81-f52a-4c86-b34e-dc161ace94f8'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannercarrerastecnologicas
+theme: fucs
+region: banner_page
+weight: 0
+provider: null
+plugin: 'block_content:df9e8b81-f52a-4c86-b34e-dc161ace94f8'
+settings:
+  id: 'block_content:df9e8b81-f52a-4c86-b34e-dc161ace94f8'
+  label: 'banner carreras tecnologicas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_tecnologicas\r\n/pregrado/carreras_tecnologicas/*"

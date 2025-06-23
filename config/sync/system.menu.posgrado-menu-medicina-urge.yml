@@ -1,0 +1,8 @@
+uuid: 34b1a93a-4ae3-48ed-a57d-318d1ea2623f
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-medicina-urge
+label: posgrado-menu-medicina-urgencias
+description: posgrado-menu-medicina-urgencias
+locked: false

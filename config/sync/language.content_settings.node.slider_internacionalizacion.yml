@@ -1,0 +1,11 @@
+uuid: 0ffd9d86-a674-4709-ae29-348e6f706e7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_internacionalizacion
+id: node.slider_internacionalizacion
+target_entity_type_id: node
+target_bundle: slider_internacionalizacion
+default_langcode: site_default
+language_alterable: false

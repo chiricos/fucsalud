@@ -1,0 +1,31 @@
+uuid: e4d80841-37c8-4661-81ef-b68ff714cb85
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8858aa1c-c182-4a53-8b64-9a9f1e988703'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: estudiantesbanner
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:8858aa1c-c182-4a53-8b64-9a9f1e988703'
+settings:
+  id: 'block_content:8858aa1c-c182-4a53-8b64-9a9f1e988703'
+  label: 'estudiantes banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/registro-y-control\r\n/estudiantes/registro-y-control/*\r\n/estudiantes/nucleo-electivo\r\n/estudiantes/nucleo-electivo-por-facultad\r\n/estudiantes/nucleo-electivo-funciones\r\n/estudiantes/nucleo-electivo-fundamentacion-social-humanistica\r\n/estudiantes/nucleo-electivo-portafolio-electivas\r\n/estudiantes/nucleo-electivo-gestion-curricular\r\n/estudiantes/nucleo-electivo-temas-interes\r\n/estudiantes/nucleo-electivo-inscripcion\r\n/estudiantes/reglamentos\r\n/estudiantes/autoevaluacion-practica\r\n/estudiantes/evaluacion-de-desempeno-docente\r\n/estudiantes/convenio-docencia-servicio\r\n/estudiantes/centro-de-emprendimiento\r\n/estudiantes/centro-de-emprendimiento/*\r\n/estudiantes/manual-de-imagen-institucional\r\n/estudiantes/boletines-institucionales\r\n/estudiantes/e-learning/*\r\n/estudiantes/calendario-academico\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"

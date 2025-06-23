@@ -1,0 +1,22 @@
+uuid: 3ee9084b-9d5c-46c8-8a88-8b84ef3cc9ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_bienestar
+id: node.slider_bienestar.promote
+field_name: promote
+entity_type: node
+bundle: slider_bienestar
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

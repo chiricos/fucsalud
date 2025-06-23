@@ -1,0 +1,32 @@
+uuid: 3a3be9b7-10c5-4341-8e94-e24e9b7e3d8f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_referencia
+    - node.type.publicaciones
+    - taxonomy.vocabulary.referencia_articulo
+  content:
+    - 'taxonomy_term:referencia_articulo:41cd3451-9148-4459-982e-131b8989a485'
+id: node.publicaciones.field_referencia
+field_name: field_referencia
+entity_type: node
+bundle: publicaciones
+label: Referencia
+description: 'Referencia de producto, identifica si es un libro, una sudadera o algún otro tipo de articulo.'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 41cd3451-9148-4459-982e-131b8989a485
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      referencia_articulo: referencia_articulo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

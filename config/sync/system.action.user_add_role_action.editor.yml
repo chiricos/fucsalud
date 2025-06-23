@@ -1,0 +1,14 @@
+uuid: b8453a2a-7e39-43c4-a228-a2c000c257c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor
+  module:
+    - user
+id: user_add_role_action.editor
+label: 'Agregar el rol editor a los usuarios seleccionados'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor

@@ -1,0 +1,11 @@
+uuid: cac859e9-6869-40cc-acbe-b5385c4eb1ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.egresados_noticias
+id: node.egresados_noticias
+target_entity_type_id: node
+target_bundle: egresados_noticias
+default_langcode: site_default
+language_alterable: false

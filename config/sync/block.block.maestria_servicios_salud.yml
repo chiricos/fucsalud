@@ -1,0 +1,30 @@
+uuid: 8f1a22e3-ce1c-4f25-8de5-dccc99ea0955
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.maestria-servicios-salud
+  module:
+    - system
+  theme:
+    - fucs
+id: maestria_servicios_salud
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:maestria-servicios-salud'
+settings:
+  id: 'system_menu_block:maestria-servicios-salud'
+  label: maestria_admin_servicios_salud
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/maestria-en-administracion-en-salud\r\n/posgrado/maestria-en-administracion-en-salud/*"

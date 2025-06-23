@@ -1,0 +1,30 @@
+uuid: 5c4667b6-abe4-4c94-a16c-f358adde5467
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c9577fd5-1138-40a8-8e95-29a5e936ed3e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: orientacion_u
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:c9577fd5-1138-40a8-8e95-29a5e936ed3e'
+settings:
+  id: 'block_content:c9577fd5-1138-40a8-8e95-29a5e936ed3e'
+  label: orientacion_universitaria
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bienestar/bienestar-pregrado\r\n/bienestar/pregrado/equipo-de-trabajo\r\n/bienestar/pregrado/orientacion-universitaria\r\n/bienestar/pregrado/servicios\r\n\r\n"

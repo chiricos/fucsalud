@@ -1,0 +1,11 @@
+uuid: 31094d20-1216-4834-9dc3-c153548fd549
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.equipo_infraestructura
+id: node.equipo_infraestructura
+target_entity_type_id: node
+target_bundle: equipo_infraestructura
+default_langcode: site_default
+language_alterable: false

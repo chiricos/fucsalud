@@ -1,0 +1,8 @@
+uuid: ef508be6-918c-4ac9-970d-2fae132244df
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-gastroente
+label: posgrado-menu-gastroenterologia
+description: posgrado-menu-gastroenterologia
+locked: false

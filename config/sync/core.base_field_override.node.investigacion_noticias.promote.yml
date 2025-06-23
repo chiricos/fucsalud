@@ -1,0 +1,22 @@
+uuid: 116a2135-e75d-4802-93dc-66812324ca7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.investigacion_noticias
+id: node.investigacion_noticias.promote
+field_name: promote
+entity_type: node
+bundle: investigacion_noticias
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,29 @@
+uuid: 2661f754-e7d3-415c-a880-f98215ac1a18
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_estudiantes.field_caption
+    - field.field.node.slider_estudiantes.field_link
+    - field.field.node.slider_estudiantes.field_meta_tags
+    - field.field.node.slider_estudiantes.field_slider_1400x600_
+    - node.type.slider_estudiantes
+  module:
+    - user
+id: node.slider_estudiantes.teaser
+targetEntityType: node
+bundle: slider_estudiantes
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

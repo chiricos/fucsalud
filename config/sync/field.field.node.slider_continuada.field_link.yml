@@ -1,0 +1,19 @@
+uuid: ec6af4c3-51fe-4d1c-b3c4-cb04a15a593a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_continuada
+id: node.slider_continuada.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_continuada
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

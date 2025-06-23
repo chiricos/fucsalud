@@ -1,0 +1,30 @@
+uuid: 6ef0c51d-0f79-42f9-b908-2b7e8a2d1730
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-docencia-univ
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenudocenciauniversitaria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-docencia-univ'
+settings:
+  id: 'system_menu_block:posgrado-menu-docencia-univ'
+  label: posgrado-menu-docencia-universitaria
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/375\r\n/node/376\r\n/posgrado/docencia-universitaria\r\n/posgrado/docencia-universitaria-docentes"

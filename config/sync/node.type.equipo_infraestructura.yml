@@ -1,0 +1,17 @@
+uuid: 1e09002f-e038-4938-9340-8eb8cc97e40b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Equipo infraestructura'
+type: equipo_infraestructura
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,31 @@
+uuid: b55c79f2-98be-4323-9e37-d9eb3f9444eb
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:10dd1267-5a05-4481-834f-3f4f9ba71ca4'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerferiavirtual
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:10dd1267-5a05-4481-834f-3f4f9ba71ca4'
+settings:
+  id: 'block_content:10dd1267-5a05-4481-834f-3f4f9ba71ca4'
+  label: 'Banner feria virtual'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/home/FeriaVirtual-Stands\r\n/home/FeriaVirtual-Charlas-talleres\r\n/home/Feria-U-Salud-virtual\r\n/home/FeriaVirtual-admision-financiacion\r\n/home/Feria-U-Salud-virtual-dejanos-tus-datos"

@@ -1,0 +1,22 @@
+uuid: aab5b6b0-5beb-4def-a578-d447c7dee3d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyeccion_social_noticias
+id: node.proyeccion_social_noticias.promote
+field_name: promote
+entity_type: node
+bundle: proyeccion_social_noticias
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

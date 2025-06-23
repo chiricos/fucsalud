@@ -1,0 +1,45 @@
+uuid: 70308741-67b7-4181-bfaf-1d1d21719ab5
+langcode: es
+status: true
+dependencies:
+  module:
+    - editor
+_core:
+  default_config_hash: hewPmBgni9jlDK_IjLxUx1HsTbinK-hdl0lOwjbteIY
+name: 'HTML completo'
+format: full_html
+weight: -6
+filters:
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a target href hreflang data-parent data-toggle class> <em class> <strong class> <cite class> <blockquote cite class> <code class> <ul type class> <ol start type class> <li class> <dl class> <dt class> <dd class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <s class> <sup class> <sub class> <img src alt data-entity-type data-entity-uuid data-align data-caption class> <table class> <caption class> <tbody class> <thead class> <tfoot class> <th class> <td class> <tr class> <hr class> <p class> <h1 class id> <pre class> <iframe class id> <div class id>'
+      filter_html_help: true
+      filter_html_nofollow: false

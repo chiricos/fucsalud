@@ -1,0 +1,11 @@
+uuid: b533b7a5-bb1b-4024-b1a1-82af735387ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.internacionalizacion_noticias
+id: node.internacionalizacion_noticias
+target_entity_type_id: node
+target_bundle: internacionalizacion_noticias
+default_langcode: site_default
+language_alterable: false

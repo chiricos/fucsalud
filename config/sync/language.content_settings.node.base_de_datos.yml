@@ -1,0 +1,11 @@
+uuid: feb5706d-2f65-41f2-8d9e-30eaea6971c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.base_de_datos
+id: node.base_de_datos
+target_entity_type_id: node
+target_bundle: base_de_datos
+default_langcode: site_default
+language_alterable: false

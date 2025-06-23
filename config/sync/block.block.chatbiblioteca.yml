@@ -1,0 +1,31 @@
+uuid: cd0d1861-49cf-4be4-ae08-37adb56e9566
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b2e551ef-0ae4-4a4f-b730-893c00f63f34'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: chatbiblioteca
+theme: fucs
+region: first_footer
+weight: 0
+provider: null
+plugin: 'block_content:b2e551ef-0ae4-4a4f-b730-893c00f63f34'
+settings:
+  id: 'block_content:b2e551ef-0ae4-4a4f-b730-893c00f63f34'
+  label: 'chat biblioteca'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca/*\r\n/biblioteca\r\n/base-de-datos-suscritas\r\n/base-de-datos-libre-acceso\r\n/base-de-datos-libros-electronicos\r\n/base-de-datos-en-demostracion"

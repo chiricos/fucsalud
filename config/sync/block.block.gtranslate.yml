@@ -1,0 +1,20 @@
+uuid: 54496163-051f-4f97-a2d4-9eff93f63d3b
+langcode: es
+status: true
+dependencies:
+  module:
+    - gtranslate
+  theme:
+    - fucs
+id: gtranslate
+theme: fucs
+region: lenguaje
+weight: 0
+provider: null
+plugin: gtranslate_block
+settings:
+  id: gtranslate_block
+  label: GTranslate
+  label_display: '0'
+  provider: gtranslate
+visibility: {  }

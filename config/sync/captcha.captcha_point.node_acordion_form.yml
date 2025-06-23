@@ -1,0 +1,7 @@
+uuid: 6d281d29-a1b5-4a8b-b66c-a183c39b1fcf
+langcode: es
+status: false
+dependencies: {  }
+formId: node_acordion_form
+captchaType: default
+label: node_acordion_form

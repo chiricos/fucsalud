@@ -1,0 +1,21 @@
+uuid: e8701c53-5c31-4ac1-a093-feec847af4c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_5
+    - node.type.cursos
+id: node.cursos.field_acordion_titulo_5
+field_name: field_acordion_titulo_5
+entity_type: node
+bundle: cursos
+label: acordion_titulo_5
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: COMPETENCIAS
+default_value_callback: ''
+settings: {  }
+field_type: string

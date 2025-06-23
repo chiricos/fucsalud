@@ -1,0 +1,34 @@
+uuid: fce6d15e-1860-4d05-b815-5dd3879032c4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4b9635e9-137f-4ba9-9f32-a055b9a9efe9'
+  module:
+    - block_content
+    - node
+  theme:
+    - fucs
+id: popupcompraatienda
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:4b9635e9-137f-4ba9-9f32-a055b9a9efe9'
+settings:
+  id: 'block_content:4b9635e9-137f-4ba9-9f32-a055b9a9efe9'
+  label: 'Pop up comprar tienda'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      publicaciones: publicaciones
+      tienda: tienda

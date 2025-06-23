@@ -1,0 +1,8 @@
+uuid: 89cf7bb7-8e30-4c20-ae6c-26e11aeb0349
+langcode: es
+status: true
+dependencies: {  }
+id: especializacion-en-endocrin
+label: 'Especialización en Endocrinología Pediátrica'
+description: ''
+locked: false

@@ -1,0 +1,39 @@
+uuid: 817ebef3-1ead-4b74-abc4-29e36851ba85
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.archivos.field_meta_tags
+    - field.field.node.archivos.field_office
+    - node.type.archivos
+  module:
+    - file
+    - metatag
+    - user
+id: node.archivos.default
+targetEntityType: node
+bundle: archivos
+mode: default
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_office:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

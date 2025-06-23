@@ -1,0 +1,22 @@
+uuid: a22a10d5-e78c-45aa-b864-f1b5ed2b0a39
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_infraestructura
+id: node.galeria_infraestructura.promote
+field_name: promote
+entity_type: node
+bundle: galeria_infraestructura
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

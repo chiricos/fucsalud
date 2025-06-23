@@ -1,0 +1,21 @@
+uuid: 41f4af8a-161b-4189-b08b-22b8c91d9cea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.calendario_de_admisiones_
+  module:
+    - metatag
+id: node.calendario_de_admisiones_.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: calendario_de_admisiones_
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

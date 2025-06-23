@@ -1,0 +1,30 @@
+uuid: f8244796-dae9-40d2-9c6e-48e76cb1ae93
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.nucleo-social-electivo
+  module:
+    - system
+  theme:
+    - fucs
+id: nucleosocialelectivo
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:nucleo-social-electivo'
+settings:
+  id: 'system_menu_block:nucleo-social-electivo'
+  label: Nucleo-social-electivo
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/nucleo-electivo\r\n/estudiantes/nucleo-electivo-funciones\r\n/estudiantes/nucleo-electivo-fundamentacion-social-humanistica\r\n/estudiantes/nucleo-electivo-portafolio-electivas\r\n/estudiantes/nucleo-electivo-gestion-curricular\r\n/estudiantes/nucleo-electivo-temas-interes\r\n/estudiantes/nucleo-electivo-por-facultad\r\n/estudiantes/nucleo-electivo-inscripcion"

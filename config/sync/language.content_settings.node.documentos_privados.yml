@@ -1,0 +1,11 @@
+uuid: 6362a9de-3e41-4c6b-80ef-39bcf709a224
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documentos_privados
+id: node.documentos_privados
+target_entity_type_id: node
+target_bundle: documentos_privados
+default_langcode: site_default
+language_alterable: false

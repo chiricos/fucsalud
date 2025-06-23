@@ -1,0 +1,11 @@
+uuid: d0989dfa-cbfe-4e63-9bd3-5ea1ad97f823
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.calendario
+id: node.calendario
+target_entity_type_id: node
+target_bundle: calendario
+default_langcode: es
+language_alterable: false

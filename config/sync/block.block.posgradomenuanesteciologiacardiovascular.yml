@@ -1,0 +1,30 @@
+uuid: 2f6204ca-0832-48d9-9871-89f8ec84e04c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-anestec
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuanesteciologiacardiovascular
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-anestec'
+settings:
+  id: 'system_menu_block:posgrado-menu-anestec'
+  label: posgrado-menu-anesteciologia-cardiovascular
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/279\r\n/node/280\r\n/node/278\r\n/posgrado/sub-anestesiologia-y-reanimacion/anestesiologia-cardiovascular-docentes\r\n/posgrado/sub-anestesiologia-y-reanimacion/anestesiologia-cardiovascular"

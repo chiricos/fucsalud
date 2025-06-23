@@ -1,0 +1,23 @@
+uuid: a48b0a38-6eed-41bb-9d5d-d21f1ba9a670
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_18
+    - node.type.acordion_lateral
+  module:
+    - text
+id: node.acordion_lateral.field_acordion_cuerpo_18
+field_name: field_acordion_cuerpo_18
+entity_type: node
+bundle: acordion_lateral
+label: acordion_cuerpo_18
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,31 @@
+uuid: bd5fc3d1-5075-4e8c-a159-8d029e785218
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b12d5a6c-03b6-4726-9073-3bf9f874580f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: redesbienestar
+theme: fucs
+region: notibienestar
+weight: 0
+provider: null
+plugin: 'block_content:b12d5a6c-03b6-4726-9073-3bf9f874580f'
+settings:
+  id: 'block_content:b12d5a6c-03b6-4726-9073-3bf9f874580f'
+  label: 'redes bienestar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /bienestar

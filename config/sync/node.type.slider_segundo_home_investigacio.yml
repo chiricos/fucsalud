@@ -1,0 +1,17 @@
+uuid: 70ffd991-604b-46cb-9875-3d6716ed9f2d
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'slider segundo home - investigacion'
+type: slider_segundo_home_investigacio
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

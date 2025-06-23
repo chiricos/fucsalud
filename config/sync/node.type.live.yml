@@ -1,0 +1,17 @@
+uuid: 5fbd0e71-c155-4c5a-87e4-f4c751159a4b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Live
+type: live
+description: 'Contenido para youtube live y chatroom'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

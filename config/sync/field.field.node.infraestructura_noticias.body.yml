@@ -1,0 +1,23 @@
+uuid: c74b9b43-0395-411a-a89e-a1a9bd996e3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.infraestructura_noticias
+  module:
+    - text
+id: node.infraestructura_noticias.body
+field_name: body
+entity_type: node
+bundle: infraestructura_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,8 @@
+uuid: fcc5dfb5-2f9a-40da-8729-c00bf73340d2
+langcode: es
+status: true
+dependencies: {  }
+id: rendicion-cuentas-p-social
+label: 'Rendición cuentas P social'
+description: 'Rendición cuentas P social'
+locked: false

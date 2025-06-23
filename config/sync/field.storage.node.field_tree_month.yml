@@ -1,0 +1,57 @@
+uuid: 22952944-1602-4c4a-ab5d-1f3ca0cbe45f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tree_month
+field_name: field_tree_month
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: enero
+      label: enero
+    -
+      value: febrero
+      label: febrero
+    -
+      value: marzo
+      label: marzo
+    -
+      value: abril
+      label: abril
+    -
+      value: mayo
+      label: mayo
+    -
+      value: junio
+      label: junio
+    -
+      value: julio
+      label: julio
+    -
+      value: agosto
+      label: agosto
+    -
+      value: septiembre
+      label: septiembre
+    -
+      value: octubre
+      label: octubre
+    -
+      value: noviembre
+      label: noviembre
+    -
+      value: diciembre
+      label: diciembre
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

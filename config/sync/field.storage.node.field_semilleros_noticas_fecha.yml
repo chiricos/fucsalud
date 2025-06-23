@@ -1,0 +1,20 @@
+uuid: b8c5c931-a78d-4ccd-b2a3-76a08ee3777f
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_semilleros_noticas_fecha
+field_name: field_semilleros_noticas_fecha
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

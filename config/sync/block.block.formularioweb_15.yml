@@ -1,0 +1,28 @@
+uuid: 18cfa28a-5b6a-4cf3-91c4-1ce4395c079e
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_15
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Semilleros contacto'
+  label_display: '0'
+  provider: webform
+  webform_id: semilleros_contacto
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /semilleros/contacto

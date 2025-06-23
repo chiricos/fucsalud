@@ -1,0 +1,29 @@
+uuid: cada2b13-1068-408e-a8c9-cf059e2bdb6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-centro-de-idiomas
+  module:
+    - system
+  theme:
+    - fucs
+id: menucentrodeidiomas
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-centro-de-idiomas'
+settings:
+  id: 'system_menu_block:menu-centro-de-idiomas'
+  label: 'Centro de idiomas'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/estudiantes/centro_de_idiomas\r\n/estudiantes/centro_de_idiomas/historia\r\n/estudiantes/centro_de_idiomas/contacto\r\n/estudiantes/centro_de_idiomas/*"

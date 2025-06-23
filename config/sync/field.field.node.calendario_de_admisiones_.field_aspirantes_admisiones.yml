@@ -1,0 +1,21 @@
+uuid: df4e66f1-0464-472d-a82f-c74bb020e2b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspirantes_admisiones
+    - node.type.calendario_de_admisiones_
+  module:
+    - datetime
+id: node.calendario_de_admisiones_.field_aspirantes_admisiones
+field_name: field_aspirantes_admisiones
+entity_type: node
+bundle: calendario_de_admisiones_
+label: aspirantes_admisiones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

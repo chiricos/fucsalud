@@ -1,0 +1,31 @@
+uuid: c1740fc1-152f-4175-a6ef-e3e719b1e448
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:93bc568a-8dd6-404d-93b6-b181d6f54acb'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bibliotecafacebook
+theme: fucs
+region: pregrado_contenido_2
+weight: 0
+provider: null
+plugin: 'block_content:93bc568a-8dd6-404d-93b6-b181d6f54acb'
+settings:
+  id: 'block_content:93bc568a-8dd6-404d-93b6-b181d6f54acb'
+  label: 'z biblioteca facebook'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca

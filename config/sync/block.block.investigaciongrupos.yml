@@ -1,0 +1,30 @@
+uuid: af41d2ab-fe59-4459-b56d-7544b78a63da
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.investigacion-grupos
+  module:
+    - system
+  theme:
+    - fucs
+id: investigaciongrupos
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:investigacion-grupos'
+settings:
+  id: 'system_menu_block:investigacion-grupos'
+  label: 'INVESTIGACION GRUPOS'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/investigacion/grupos\r\n/investigacion/grupos/*\r\n/investigacion/grupos/facultad-de-ciencias-del-movimiento"

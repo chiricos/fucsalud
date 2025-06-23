@@ -1,0 +1,18 @@
+uuid: d9796daf-a110-4b17-88dc-40103f51bc44
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: lateral
+type: programas_lateral
+description: 'internas de los programas'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

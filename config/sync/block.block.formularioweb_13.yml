@@ -1,0 +1,28 @@
+uuid: 1be90337-4135-4e84-9cf7-84e973428ec2
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_13
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario PRE-INSCRIPCIÓN ASPIRANTE CURSO BLS - ACLS - PALS - SALVACORAZONES'
+  label_display: '0'
+  provider: webform
+  webform_id: pre_inscripcion_aspirante_curso_
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /curso/BLS-ACLS-PALS/preinscripcion

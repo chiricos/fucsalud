@@ -1,0 +1,31 @@
+uuid: 56433588-8794-4df1-9eff-d500c2c640c4
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f370b148-77e6-486f-869f-4f64e10e4d32'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: submenusemilleros
+theme: fucs
+region: sub_menu
+weight: -41
+provider: null
+plugin: 'block_content:f370b148-77e6-486f-869f-4f64e10e4d32'
+settings:
+  id: 'block_content:f370b148-77e6-486f-869f-4f64e10e4d32'
+  label: 'Sub menu semilleros'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/semilleros/\r\n/semilleros/ENSI\r\n/semilleros/encuentros/6to-encuentro"

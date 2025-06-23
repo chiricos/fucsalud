@@ -1,0 +1,38 @@
+uuid: 1726a08d-78e1-4199-8ba4-0d2ee89a9f3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.programas_lateral.body
+    - field.field.node.programas_lateral.field_meta_tags
+    - node.type.programas_lateral
+  module:
+    - metatag
+    - text
+    - user
+id: node.programas_lateral.default
+targetEntityType: node
+bundle: programas_lateral
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

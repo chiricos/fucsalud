@@ -1,0 +1,8 @@
+uuid: 55c8b5fa-4578-4b87-93c9-896eb8d9111e
+langcode: es
+status: true
+dependencies: {  }
+id: menu-maestria-educacion
+label: menú-maestria-educacion
+description: menú-maestria-educacion
+locked: false

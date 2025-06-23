@@ -1,0 +1,30 @@
+uuid: 16906f93-2829-480d-94d7-b7f4ac2e1407
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-mano
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiamano
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-mano'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-mano'
+  label: posgrado-menu-cirugia-mano
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/409\r\n/node/410\r\n/node/411\r\n/posgrado/sub-ortopedia-y-traumatologia/cirugia-mano\r\n/node/2534"

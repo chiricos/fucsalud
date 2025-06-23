@@ -1,0 +1,30 @@
+uuid: 611633d6-c16d-48cb-9334-14405d434b8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tienda_virtual_footer
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__tienda_virtual_footer_block_1
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'views_block:tienda_virtual_footer-block_1'
+settings:
+  id: 'views_block:tienda_virtual_footer-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/tienda-virtual\r\n/tienda-virtual/*"

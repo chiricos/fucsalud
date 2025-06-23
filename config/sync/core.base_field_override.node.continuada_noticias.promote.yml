@@ -1,0 +1,22 @@
+uuid: 2f600e61-1d78-4f5d-9edc-0c4bba99de93
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.continuada_noticias
+id: node.continuada_noticias.promote
+field_name: promote
+entity_type: node
+bundle: continuada_noticias
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

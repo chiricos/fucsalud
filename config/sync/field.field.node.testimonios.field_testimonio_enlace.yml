@@ -1,0 +1,23 @@
+uuid: f16f7f1a-7001-4b86-8664-4e6d5b546a2f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonio_enlace
+    - node.type.testimonios
+  module:
+    - link
+id: node.testimonios.field_testimonio_enlace
+field_name: field_testimonio_enlace
+entity_type: node
+bundle: testimonios
+label: testimonio_enlace
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

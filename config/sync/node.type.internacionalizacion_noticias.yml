@@ -1,0 +1,17 @@
+uuid: dd460d21-55a4-4aa3-9b74-7b92d7e39623
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'internacionalizacion noticias'
+type: internacionalizacion_noticias
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

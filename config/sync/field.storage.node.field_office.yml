@@ -1,0 +1,23 @@
+uuid: 66b83ea0-90a1-49a1-b63f-8e58315a50ee
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_office
+field_name: field_office
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

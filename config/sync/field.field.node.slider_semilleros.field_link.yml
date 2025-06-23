@@ -1,0 +1,19 @@
+uuid: 5372bbcd-9721-469d-8d78-c536a9765311
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_semilleros
+id: node.slider_semilleros.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_semilleros
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

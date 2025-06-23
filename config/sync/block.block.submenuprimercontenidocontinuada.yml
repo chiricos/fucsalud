@@ -1,0 +1,31 @@
+uuid: 5d577f3e-6cc2-46c6-8fc7-36ddcf1cdd2e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5f0c54a7-d920-4422-98e9-b15c114de9a6'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: submenuprimercontenidocontinuada
+theme: fucs
+region: sub_contenido_1
+weight: 0
+provider: null
+plugin: 'block_content:5f0c54a7-d920-4422-98e9-b15c114de9a6'
+settings:
+  id: 'block_content:5f0c54a7-d920-4422-98e9-b15c114de9a6'
+  label: 'Sub menu primer contenido continuada'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/educacionContinuada\r\n/continuada\r\n/continuada/calendario-de-admisiones-preuniversitario"

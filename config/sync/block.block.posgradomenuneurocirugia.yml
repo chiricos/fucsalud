@@ -1,0 +1,30 @@
+uuid: 7fca07f1-5d7d-4f4d-92f4-27595b1dd46e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-neurocirugia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuneurocirugia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-neurocirugia'
+settings:
+  id: 'system_menu_block:posgrado-menu-neurocirugia'
+  label: posgrado-menu-neurocirugia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/337\r\n/node/2743\r\n/posgrado/neurocirugia\r\n/posgrado/neurocirugia/*\r\n/posgrado/neurocirugia/perfiles"

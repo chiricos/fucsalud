@@ -1,0 +1,27 @@
+uuid: 705045a7-bd48-41d3-81d1-17170367853b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office
+    - node.type.archivos
+  module:
+    - file
+id: node.archivos.field_office
+field_name: field_office
+entity_type: node
+bundle: archivos
+label: office
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt docx xlsx pptx doc xls zip'
+  max_filesize: 10MB
+  description_field: false
+field_type: file

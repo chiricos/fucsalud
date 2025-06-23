@@ -1,0 +1,8 @@
+uuid: f0c043fe-e173-4084-9338-076ec2f3db26
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-epidemiologia
+label: posgrado-menu-epidemiologia
+description: posgrado-menu-epidemiologia
+locked: false

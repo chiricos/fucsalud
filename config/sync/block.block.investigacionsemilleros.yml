@@ -1,0 +1,30 @@
+uuid: efd10579-2040-48c8-a0d8-d1b07a8a4b00
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.investigacion-semilleros
+  module:
+    - system
+  theme:
+    - fucs
+id: investigacionsemilleros
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:investigacion-semilleros'
+settings:
+  id: 'system_menu_block:investigacion-semilleros'
+  label: 'INVESTIGACION SEMILLEROS'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/investigacion/semilleros/*'

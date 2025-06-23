@@ -1,0 +1,21 @@
+uuid: 2f8ed4c5-c7d3-4da8-8bb0-e65ff72d7175
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colaboradores_noticias_fec
+    - node.type.colaboradores_noticias
+  module:
+    - datetime
+id: node.colaboradores_noticias.field_colaboradores_noticias_fec
+field_name: field_colaboradores_noticias_fec
+entity_type: node
+bundle: colaboradores_noticias
+label: 'colaboradores noticias fecha'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

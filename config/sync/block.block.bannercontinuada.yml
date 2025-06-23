@@ -1,0 +1,31 @@
+uuid: 3df83cb5-23be-4969-89bf-88b0cc5c67a1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d3f69449-80cb-46a6-b8e6-35322c16aed3'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannercontinuada
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:d3f69449-80cb-46a6-b8e6-35322c16aed3'
+settings:
+  id: 'block_content:d3f69449-80cb-46a6-b8e6-35322c16aed3'
+  label: 'banner continuada'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/educacion-continuada\r\n/educacion-continuada/*\r\n/continuada/*"

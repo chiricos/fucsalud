@@ -1,0 +1,28 @@
+uuid: 0b325444-3ce0-4c6b-ba50-52f8bcc4ce63
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_google_nombre
+    - field.field.user.user.user_picture
+  module:
+    - user
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  field_google_nombre: true
+  langcode: true
+  language: true
+  timezone: true
+  user_picture: true

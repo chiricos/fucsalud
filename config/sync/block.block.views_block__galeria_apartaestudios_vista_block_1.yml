@@ -1,0 +1,30 @@
+uuid: d39e2875-dcc3-4902-9d6f-8bdefb70fc30
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.galeria_apartaestudios_vista
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__galeria_apartaestudios_vista_block_1
+theme: fucs
+region: sub_contenido_2
+weight: 0
+provider: null
+plugin: 'views_block:galeria_apartaestudios_vista-block_1'
+settings:
+  id: 'views_block:galeria_apartaestudios_vista-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /apartaestudios

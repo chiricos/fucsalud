@@ -1,0 +1,30 @@
+uuid: 7ef8a03b-e491-4c10-87f4-a1efdf8ed1ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.egresados_noticias
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__egresados_noticias_block_1
+theme: fucs
+region: news
+weight: 3
+provider: null
+plugin: 'views_block:egresados_noticias-block_1'
+settings:
+  id: 'views_block:egresados_noticias-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /egresados

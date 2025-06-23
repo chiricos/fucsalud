@@ -1,0 +1,29 @@
+uuid: b6b42112-2040-4d40-b289-83ebb58e9fc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_investigaciones.field_caption
+    - field.field.node.slider_investigaciones.field_link
+    - field.field.node.slider_investigaciones.field_meta_tags
+    - field.field.node.slider_investigaciones.field_slider_1400x600_
+    - node.type.slider_investigaciones
+  module:
+    - user
+id: node.slider_investigaciones.teaser
+targetEntityType: node
+bundle: slider_investigaciones
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

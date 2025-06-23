@@ -1,0 +1,8 @@
+uuid: 12880ce4-fc2d-4332-9b56-41f8a40f4c40
+langcode: es
+status: true
+dependencies: {  }
+id: menu-maestria-farmacologiac
+label: Menú-Maestria-FarmacologiaC
+description: Menú-Maestria-FarmacologiaC
+locked: false

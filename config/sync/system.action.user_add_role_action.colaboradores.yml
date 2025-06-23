@@ -1,0 +1,14 @@
+uuid: 831f5fd3-90e4-4e7c-8a15-f51d316c2eb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.colaboradores
+  module:
+    - user
+id: user_add_role_action.colaboradores
+label: 'Agregar el rol Colaboradores a los usuarios seleccionados'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: colaboradores

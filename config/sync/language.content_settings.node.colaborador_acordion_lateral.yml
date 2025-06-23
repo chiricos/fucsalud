@@ -1,0 +1,11 @@
+uuid: 77bc6b2e-b7b2-445a-a7bb-777238468ecf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colaborador_acordion_lateral
+id: node.colaborador_acordion_lateral
+target_entity_type_id: node
+target_bundle: colaborador_acordion_lateral
+default_langcode: site_default
+language_alterable: false

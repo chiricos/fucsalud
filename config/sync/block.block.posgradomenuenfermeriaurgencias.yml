@@ -1,0 +1,30 @@
+uuid: 8cc14c7b-2a78-469a-841c-f572d37878be
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-enfermeria-ur
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuenfermeriaurgencias
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-enfermeria-ur'
+settings:
+  id: 'system_menu_block:posgrado-menu-enfermeria-ur'
+  label: posgrado-menu-enfermeria-urgencias
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/354\r\n/node/355\r\n/node/356\r\n/node/357\r\n/node/358\r\n/node/359\r\n/node/360\r\n/posgrado/enfermeria-urgencias"

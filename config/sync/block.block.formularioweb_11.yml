@@ -1,0 +1,28 @@
+uuid: 06d3f5c7-fe40-49a6-98de-761750446634
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_11
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Préstamo externo'
+  label_display: '0'
+  provider: webform
+  webform_id: prestamo_externo
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/prestamo-a-domicilio-material-bibliografico

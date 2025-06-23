@@ -1,0 +1,38 @@
+uuid: ac537dc5-3bcd-4d9a-94c1-75f8e7019569
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.continuada_videos.body
+    - field.field.node.continuada_videos.field_meta_tags
+    - node.type.continuada_videos
+  module:
+    - metatag
+    - text
+    - user
+id: node.continuada_videos.default
+targetEntityType: node
+bundle: continuada_videos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

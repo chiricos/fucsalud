@@ -1,0 +1,25 @@
+uuid: 6ef48f17-c42f-41ee-99a6-c9b3582a7091
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.documentos_privados.field_meta_tags
+    - field.field.node.documentos_privados.field_pdf_private
+    - node.type.documentos_privados
+  module:
+    - user
+id: node.documentos_privados.teaser
+targetEntityType: node
+bundle: documentos_privados
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_pdf_private: true
+  langcode: true

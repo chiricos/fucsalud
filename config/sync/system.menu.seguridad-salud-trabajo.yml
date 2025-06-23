@@ -1,0 +1,8 @@
+uuid: 492e42f2-964b-43d8-ac39-7509eb1bf1e3
+langcode: es
+status: true
+dependencies: {  }
+id: seguridad-salud-trabajo
+label: seguridad-salud-trabajo
+description: seguridad-salud-trabajo
+locked: false

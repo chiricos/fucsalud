@@ -1,0 +1,8 @@
+uuid: e75b4bf4-54ee-4aac-8d6f-b842c1f55fd7
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-ginecologia
+label: posgrado-menu-ginecologia-obstetricia
+description: posgrado-menu-ginecologia-obstetricia
+locked: false

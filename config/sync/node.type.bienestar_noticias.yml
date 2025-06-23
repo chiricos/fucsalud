@@ -1,0 +1,17 @@
+uuid: 9aa51e32-9537-48a7-aa44-ddab737325a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'bienestar noticias'
+type: bienestar_noticias
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

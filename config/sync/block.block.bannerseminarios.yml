@@ -1,0 +1,31 @@
+uuid: e724cddc-e184-4d88-9f75-e13eda9a0294
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6f6ae655-2a7e-42e1-a48b-6d49b4cf58f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerseminarios
+theme: fucs
+region: banner_page
+weight: 0
+provider: null
+plugin: 'block_content:6f6ae655-2a7e-42e1-a48b-6d49b4cf58f0'
+settings:
+  id: 'block_content:6f6ae655-2a7e-42e1-a48b-6d49b4cf58f0'
+  label: 'banner seminarios'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/seminarios\r\n/seminarios/*"

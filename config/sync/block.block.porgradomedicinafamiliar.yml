@@ -1,0 +1,30 @@
+uuid: 29fc209f-a68c-4acd-aee9-0a608ed34eaa
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.porgrado-medicina-familiar
+  module:
+    - system
+  theme:
+    - fucs
+id: porgradomedicinafamiliar
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:porgrado-medicina-familiar'
+settings:
+  id: 'system_menu_block:porgrado-medicina-familiar'
+  label: porgrado-medicina-familiar
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/333\r\n/node/334\r\n/node/335\r\n/posgrado/medicina-familiar"

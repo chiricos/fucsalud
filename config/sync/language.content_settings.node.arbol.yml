@@ -1,0 +1,11 @@
+uuid: 82a905d2-0aec-45b3-9668-e15d13eeadac
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.arbol
+id: node.arbol
+target_entity_type_id: node
+target_bundle: arbol
+default_langcode: site_default
+language_alterable: false

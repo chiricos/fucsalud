@@ -1,0 +1,8 @@
+uuid: ee4bbf69-b0f2-45a2-8218-5f6d86cb7bd9
+langcode: es
+status: true
+dependencies: {  }
+id: estudiante-registro-y-contr
+label: 'estudiante registro y control'
+description: ''
+locked: false

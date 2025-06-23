@@ -1,0 +1,11 @@
+uuid: ffb5380e-031c-442d-9c4f-5ab07946e4b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_revista
+id: node.slider_revista
+target_entity_type_id: node
+target_bundle: slider_revista
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: a28b16c9-a718-4428-a84f-f3cad120bd91
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_semilleros
+id: node.slider_semilleros
+target_entity_type_id: node
+target_bundle: slider_semilleros
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,7 @@
+uuid: 32576474-6776-45d3-b5a9-d8a490d55135
+langcode: es
+status: false
+dependencies: {  }
+formId: node_galeria_historia_form
+captchaType: default
+label: node_galeria_historia_form

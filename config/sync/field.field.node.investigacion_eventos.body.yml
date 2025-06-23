@@ -1,0 +1,23 @@
+uuid: dcbdd625-7706-4125-96b8-6b7db923ae9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.investigacion_eventos
+  module:
+    - text
+id: node.investigacion_eventos.body
+field_name: body
+entity_type: node
+bundle: investigacion_eventos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

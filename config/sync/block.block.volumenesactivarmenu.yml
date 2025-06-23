@@ -1,0 +1,31 @@
+uuid: 20aa6dd2-4311-4fef-8766-030b5c66f2ed
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:466c6725-4caf-460f-95ce-9032b0e8f182'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: volumenesactivarmenu
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:466c6725-4caf-460f-95ce-9032b0e8f182'
+settings:
+  id: 'block_content:466c6725-4caf-460f-95ce-9032b0e8f182'
+  label: 'volumenes activar menu'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/volumenes\r\n/volumenes/*"

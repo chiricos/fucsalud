@@ -1,0 +1,42 @@
+uuid: e39e6ada-9967-471e-a317-0ac4b59b8f0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria_infraestructura.field_imagen_bienestar
+    - field.field.node.galeria_infraestructura.field_meta_tags
+    - node.type.galeria_infraestructura
+  module:
+    - image
+    - metatag
+    - user
+id: node.galeria_infraestructura.default
+targetEntityType: node
+bundle: galeria_infraestructura
+mode: default
+content:
+  field_imagen_bienestar:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

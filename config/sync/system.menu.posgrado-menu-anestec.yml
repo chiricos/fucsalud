@@ -1,0 +1,8 @@
+uuid: 901197e6-4e71-4127-ab64-dc7bc6a9d90b
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-anestec
+label: posgrado-menu-anesteciologia-cardiovascular
+description: posgrado-menu-anesteciologia-cardiovascular
+locked: false

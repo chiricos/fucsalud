@@ -1,0 +1,23 @@
+uuid: 0440ffbf-00e5-4f77-951e-8670c1c91958
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.internacionalizacion_noticias
+  module:
+    - text
+id: node.internacionalizacion_noticias.body
+field_name: body
+entity_type: node
+bundle: internacionalizacion_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

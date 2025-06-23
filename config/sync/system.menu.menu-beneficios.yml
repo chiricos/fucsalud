@@ -1,0 +1,8 @@
+uuid: f58dd1e1-994c-454b-9229-0fb35460e7cf
+langcode: es
+status: true
+dependencies: {  }
+id: menu-beneficios
+label: 'Menú beneficios'
+description: 'Menu de la pagina beneficios dentro e colaboradores'
+locked: false

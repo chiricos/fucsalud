@@ -1,0 +1,15 @@
+uuid: b1050f78-61c9-4a3f-8ee3-c51f385e597c
+langcode: es
+status: true
+dependencies: {  }
+name: slider_bi
+label: 'slider biblioteca 1920x330'
+effects:
+  cd4a6387-84fb-4237-9901-b93767f53381:
+    uuid: cd4a6387-84fb-4237-9901-b93767f53381
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 330
+      anchor: center-center

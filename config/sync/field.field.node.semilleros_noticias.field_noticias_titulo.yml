@@ -1,0 +1,23 @@
+uuid: fe9a1c32-5e0c-4e81-99c8-c4efc7d12386
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_noticias_titulo
+    - node.type.semilleros_noticias
+  module:
+    - text
+id: node.semilleros_noticias.field_noticias_titulo
+field_name: field_noticias_titulo
+entity_type: node
+bundle: semilleros_noticias
+label: noticias_titulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

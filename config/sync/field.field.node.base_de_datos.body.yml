@@ -1,0 +1,23 @@
+uuid: 8d2bf366-e2ce-4100-b809-c60d66fc3a61
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.base_de_datos
+  module:
+    - text
+id: node.base_de_datos.body
+field_name: body
+entity_type: node
+bundle: base_de_datos
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

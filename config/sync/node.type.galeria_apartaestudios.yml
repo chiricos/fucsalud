@@ -1,0 +1,17 @@
+uuid: 087bc5c5-3d1b-4fe1-ad4c-b9d462883bfd
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Galeria apartaestudios'
+type: galeria_apartaestudios
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

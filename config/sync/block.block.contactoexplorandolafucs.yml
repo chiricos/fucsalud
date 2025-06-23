@@ -1,0 +1,31 @@
+uuid: e0dfa410-fa8f-4a91-bb47-7c53dc3b4ce2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e67fdd24-9812-487d-a3b7-1cb5a0c052bf'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactoexplorandolafucs
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:e67fdd24-9812-487d-a3b7-1cb5a0c052bf'
+settings:
+  id: 'block_content:e67fdd24-9812-487d-a3b7-1cb5a0c052bf'
+  label: 'contacto explorando la fucs'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/home/explorando-en-la-fucs\r\n/home/explorando-en-la-fucs/*"

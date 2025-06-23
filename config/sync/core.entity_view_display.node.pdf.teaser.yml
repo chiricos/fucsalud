@@ -1,0 +1,25 @@
+uuid: 4eada959-7cb7-468c-a7e1-638f4fe356d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pdf.field_meta_tags
+    - field.field.node.pdf.field_pdf
+    - node.type.pdf
+  module:
+    - user
+id: node.pdf.teaser
+targetEntityType: node
+bundle: pdf
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_pdf: true
+  langcode: true

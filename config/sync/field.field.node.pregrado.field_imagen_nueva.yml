@@ -1,0 +1,38 @@
+uuid: 02d6f8a0-f4b0-44e5-979e-bfa2334de46c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_nueva
+    - node.type.pregrado
+  module:
+    - image
+id: node.pregrado.field_imagen_nueva
+field_name: field_imagen_nueva
+entity_type: node
+bundle: pregrado
+label: 'imagen nueva'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

@@ -1,0 +1,30 @@
+uuid: 4d4db132-5996-4886-8c28-fa9e99e5c292
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:405aabc1-4222-4b4f-a8f3-83b0e0f51146'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannercentroidiomas
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:405aabc1-4222-4b4f-a8f3-83b0e0f51146'
+settings:
+  id: 'block_content:405aabc1-4222-4b4f-a8f3-83b0e0f51146'
+  label: 'banner centro idiomas bloque'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/estudiantes/centro_de_idiomas\r\n/estudiantes/centro_de_idiomas/*"

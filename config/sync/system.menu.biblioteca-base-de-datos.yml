@@ -1,0 +1,8 @@
+uuid: ae701f80-ca6c-4147-b042-3443e22e4fd0
+langcode: es
+status: true
+dependencies: {  }
+id: biblioteca-base-de-datos
+label: 'biblioteca-base de datos'
+description: ''
+locked: false

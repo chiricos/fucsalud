@@ -1,0 +1,22 @@
+uuid: 523522ba-8536-4467-a4cd-ed3629a06501
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tienda_virtual_tienda
+id: node.tienda_virtual_tienda.promote
+field_name: promote
+entity_type: node
+bundle: tienda_virtual_tienda
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

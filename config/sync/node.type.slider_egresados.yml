@@ -1,0 +1,18 @@
+uuid: be0e9738-7594-4176-8b5c-3001ba6ae77f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'slider egresados'
+type: slider_egresados
+description: 'imagenes del slider de egresados'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

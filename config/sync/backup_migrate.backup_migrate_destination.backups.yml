@@ -1,0 +1,9 @@
+uuid: 32af46bc-fb3f-4f6d-afbb-50a8ef1c2d33
+langcode: es
+status: true
+dependencies: {  }
+id: backups
+label: backups
+type: Directory
+config:
+  directory: sites/default/files/private/backups

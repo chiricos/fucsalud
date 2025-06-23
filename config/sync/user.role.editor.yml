@@ -1,0 +1,179 @@
+uuid: 1963a501-1e9a-4589-8a74-8b0f94eef51b
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.drawde
+    - filter.format.full_html
+    - node.type.acordion
+    - node.type.acordion_lateral
+    - node.type.arbol
+    - node.type.article
+    - node.type.articulo
+    - node.type.aspirantes_noticias
+    - node.type.aspirantes_videos
+    - node.type.base_de_datos
+    - node.type.bibliotecas_sedes
+    - node.type.bienestar_eventos
+    - node.type.bienestar_noticias
+    - node.type.blog
+    - node.type.bloque_lateral
+    - node.type.calendario
+    - node.type.colaborador_acordion_lateral
+    - node.type.continuada_noticias
+    - node.type.continuada_videos
+    - node.type.cursos
+    - node.type.donacion
+    - node.type.estudiantes_noticias
+    - node.type.eventos_bienestar
+    - node.type.galeria_bienestar
+    - node.type.galeria_historia
+    - node.type.live
+    - node.type.noticias
+    - node.type.noticias_facultad_ciencias
+    - node.type.page
+    - node.type.pagina_convocatorias
+    - node.type.programas
+    - node.type.programas_lateral
+    - node.type.proyeccion_social_videos
+    - node.type.revistas
+    - node.type.slider_bienestar
+    - node.type.slider_continuada
+    - node.type.slider_investigaciones
+    - node.type.slider_principal
+    - node.type.testimonios
+    - node.type.tienda
+    - node.type.tienda_virtual_tienda
+    - node.type.videos
+    - node.type.volumen
+    - node.type.webform
+    - taxonomy.vocabulary.arbol_ano
+    - taxonomy.vocabulary.cursos
+    - taxonomy.vocabulary.di
+    - taxonomy.vocabulary.posgrados
+    - taxonomy.vocabulary.pregrado
+  module:
+    - admin_toolbar_search
+    - block_content
+    - comment
+    - config
+    - config_translation
+    - contact
+    - contextual
+    - easy_breadcrumb
+    - field_ui
+    - file_replace
+    - filter
+    - menu_link_attributes
+    - node
+    - path
+    - poll
+    - taxonomy
+    - toolbar
+    - tour
+    - yoast_seo
+id: editor
+label: editor
+weight: 6
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer block_content display'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer easy breadcrumb'
+  - 'administer menu link attributes'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer nodes'
+  - 'administer poll display'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer yoast seo'
+  - 'create acordion content'
+  - 'create acordion_lateral content'
+  - 'create arbol content'
+  - 'create articulo content'
+  - 'create aspirantes_noticias content'
+  - 'create aspirantes_videos content'
+  - 'create base_de_datos content'
+  - 'create bibliotecas_sedes content'
+  - 'create bienestar_eventos content'
+  - 'create bienestar_noticias content'
+  - 'create blog content'
+  - 'create calendario content'
+  - 'create colaborador_acordion_lateral content'
+  - 'create continuada_noticias content'
+  - 'create continuada_videos content'
+  - 'create donacion content'
+  - 'create estudiantes_noticias content'
+  - 'create eventos_bienestar content'
+  - 'create galeria_bienestar content'
+  - 'create galeria_historia content'
+  - 'create live content'
+  - 'create noticias content'
+  - 'create noticias_facultad_ciencias content'
+  - 'create page content'
+  - 'create pagina_convocatorias content'
+  - 'create programas content'
+  - 'create proyeccion_social_videos content'
+  - 'create revistas content'
+  - 'create slider_bienestar content'
+  - 'create slider_principal content'
+  - 'create terms in arbol_ano'
+  - 'create tienda_virtual_tienda content'
+  - 'create url aliases'
+  - 'create videos content'
+  - 'create webform content'
+  - 'edit any acordion content'
+  - 'edit any acordion_lateral content'
+  - 'edit any bloque_lateral content'
+  - 'edit any continuada_noticias content'
+  - 'edit any continuada_videos content'
+  - 'edit any programas_lateral content'
+  - 'edit any slider_continuada content'
+  - 'edit own acordion content'
+  - 'edit own acordion_lateral content'
+  - 'edit own bloque_lateral content'
+  - 'edit own colaborador_acordion_lateral content'
+  - 'edit own comments'
+  - 'edit own continuada_videos content'
+  - 'edit own cursos content'
+  - 'edit own programas_lateral content'
+  - 'edit own slider_continuada content'
+  - 'edit terms in cursos'
+  - 'edit terms in di'
+  - 'edit terms in posgrados'
+  - 'edit terms in pregrado'
+  - 'export configuration'
+  - 'import configuration'
+  - 'post comments'
+  - 'replace files'
+  - 'revert continuada_noticias revisions'
+  - 'skip comment approval'
+  - 'synchronize configuration'
+  - 'translate configuration'
+  - 'use admin toolbar search'
+  - 'use menu link attributes'
+  - 'use text format basic_html'
+  - 'use text format drawde'
+  - 'use text format full_html'
+  - 'use yoast seo'
+  - 'view article revisions'
+  - 'view continuada_noticias revisions'
+  - 'view slider_investigaciones revisions'
+  - 'view testimonios revisions'
+  - 'view tienda revisions'
+  - 'view volumen revisions'

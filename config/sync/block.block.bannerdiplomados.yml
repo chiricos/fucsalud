@@ -1,0 +1,31 @@
+uuid: e8fd1d9f-918d-4095-b3eb-7250cfbfe2c9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3e0a2230-a5f9-4023-8571-f4116cbbd6e3'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerdiplomados
+theme: fucs
+region: banner_page
+weight: 0
+provider: null
+plugin: 'block_content:3e0a2230-a5f9-4023-8571-f4116cbbd6e3'
+settings:
+  id: 'block_content:3e0a2230-a5f9-4023-8571-f4116cbbd6e3'
+  label: 'banner diplomados'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/educacionContinuada/diplomados\r\n/educacionContinuada/diplomados/*\r\n/diplomados\r\n/diplomados/*"

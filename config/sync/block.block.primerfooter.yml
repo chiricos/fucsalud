@@ -1,0 +1,25 @@
+uuid: 6bfddb30-f050-44d5-98b9-24abfb24a91e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:00fd4a2c-d51c-4f7a-abfa-04db2c9e1202'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: primerfooter
+theme: fucs
+region: first_footer
+weight: 0
+provider: null
+plugin: 'block_content:00fd4a2c-d51c-4f7a-abfa-04db2c9e1202'
+settings:
+  id: 'block_content:00fd4a2c-d51c-4f7a-abfa-04db2c9e1202'
+  label: 'Primer footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

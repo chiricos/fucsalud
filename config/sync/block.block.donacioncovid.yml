@@ -1,0 +1,30 @@
+uuid: 6b018f00-3d63-4160-8ae7-ce821af66d47
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.donacion-covid
+  module:
+    - system
+  theme:
+    - fucs
+id: donacioncovid
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:donacion-covid'
+settings:
+  id: 'system_menu_block:donacion-covid'
+  label: donacion-covid
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/donaciones-gracias-familia-San-Jose\r\n/donaciones-quiero-apoyar-a-un-valiente-de-la-salud\r\n/donaciones-salud-psico-emocional\r\n/donaciones-mensajes-gracias-familia-san-jose\r\n/donaciones-tienes-dudas"

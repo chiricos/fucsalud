@@ -1,0 +1,11 @@
+uuid: b8330d68-b727-4241-a024-752bcdc3c944
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pregrado
+id: taxonomy_term.pregrado
+target_entity_type_id: taxonomy_term
+target_bundle: pregrado
+default_langcode: site_default
+language_alterable: false

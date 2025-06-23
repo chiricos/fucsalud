@@ -1,0 +1,31 @@
+uuid: 90b2997c-4607-4cf1-854b-8e63c4769a54
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:19dd789e-aeb1-4cf2-80fd-a3f0630e1ace'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: banneraudiovisuales
+theme: fucs
+region: slider_page
+weight: -7
+provider: null
+plugin: 'block_content:19dd789e-aeb1-4cf2-80fd-a3f0630e1ace'
+settings:
+  id: 'block_content:19dd789e-aeb1-4cf2-80fd-a3f0630e1ace'
+  label: 'banner audiovisuales'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/audiovisuales/presentacion\r\n/audiovisuales/*"

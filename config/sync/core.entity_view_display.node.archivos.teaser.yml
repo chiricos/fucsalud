@@ -1,0 +1,25 @@
+uuid: db2a0554-fefb-4c77-9399-a47bc584700b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.archivos.field_meta_tags
+    - field.field.node.archivos.field_office
+    - node.type.archivos
+  module:
+    - user
+id: node.archivos.teaser
+targetEntityType: node
+bundle: archivos
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_office: true
+  langcode: true

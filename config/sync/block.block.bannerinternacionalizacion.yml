@@ -1,0 +1,31 @@
+uuid: 86d506f2-c78b-40c9-8ca3-fb86827728db
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ef836ee4-e734-4628-bc28-816b456fcbeb'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerinternacionalizacion
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:ef836ee4-e734-4628-bc28-816b456fcbeb'
+settings:
+  id: 'block_content:ef836ee4-e734-4628-bc28-816b456fcbeb'
+  label: 'banner internacionalizacion'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/internacionalizacion/*\r\n/noticias-internacionalizacion\r\n/noticias-internacionalizacion/*"

@@ -1,0 +1,30 @@
+uuid: 69dbf73d-fb76-487a-83cb-bb9e568519bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-cabez
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiacabeza
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-cabez'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-cabez'
+  label: posgrado-menu-cirugia-cabeza
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/287\r\n/posgrado/sub-cirugia-general/cirugia-cabeza-cuello\r\n/node/507\r\n/node/508"

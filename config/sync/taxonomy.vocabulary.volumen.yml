@@ -1,0 +1,8 @@
+uuid: 409219cc-e29a-4755-b8fc-dcc71dd55cfd
+langcode: es
+status: true
+dependencies: {  }
+name: Volumen
+vid: volumen
+description: 'volumen de Revista Repertorio'
+weight: 0

@@ -1,0 +1,30 @@
+uuid: 2de1bd3e-274c-4043-b385-302ff4a3c5b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-beneficios
+  module:
+    - system
+  theme:
+    - fucs
+id: menubeneficios
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-beneficios'
+settings:
+  id: 'system_menu_block:menu-beneficios'
+  label: 'Menú beneficios'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/colaboradores/Manual-plan-B\r\n/colaboradores/convenios-aliados\r\n/colaboradores/otros-beneficios/portafolio-de-formacion\r\n/colaboradores/otros-beneficios/induccion-institucional\r\n/colaboradores/representantes-consejos\r\n/colaboradores/otros-beneficios/*\r\n/colaboradores/otros-beneficios/somos-un-espacio-cardioprotegido\r\n"

@@ -1,0 +1,10 @@
+contact:
+  emails: 'edwarddiaz92@gmail.com,coordinacionweb@fucsalud.edu.co'
+  userEmail: cursoweb@fucsalud.edu.co
+  passwordEmail: 'fucs**20'
+  subject: 'CERTIFICADO DE INDUCCION'
+  header: 'Fundación Universitaria de Ciencias de la Salud - Inducción Institucional'
+  smtpsecure: ssl
+  host: smtp.gmail.com
+  port: '587'
+  body: "Inicias uno de los proyectos más importantes en tu vida y nos sentimos felices de poder recibirte.\r\n<br>\r\n¡Excelente! ya puedes decir a todos #SoyFUCS.\r\n<br>\r\nSi tienes preguntas relacionadas a tu certificado remite tus inquietudes al correo coordinacionweb@fucsalud.edu.co\r\n<br>\r\nDescarga tu certificado en el siguiente enlace, y no olvides enviarlo a tu Facultad:"

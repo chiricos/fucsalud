@@ -1,0 +1,30 @@
+uuid: a899ea2e-7c79-4326-bec6-dd7a2c588a3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-medicina-inte
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenumedicinainterna
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-medicina-inte'
+settings:
+  id: 'system_menu_block:posgrado-menu-medicina-inte'
+  label: posgrado-menu-medicina-interna
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/391\r\n/node/392\r\n/node/393\r\n/posgrado/sub-medicina-interna/medicina-interna"

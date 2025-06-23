@@ -1,0 +1,31 @@
+uuid: 03bb33cc-8603-4779-9b7d-5dd99ada0f5b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d354a400-ef72-4a4e-ae4d-128d6ae27a3c'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1docenciauniversitariaec
+theme: fucs
+region: pregrado_contenido_1
+weight: 2
+provider: null
+plugin: 'block_content:d354a400-ef72-4a4e-ae4d-128d6ae27a3c'
+settings:
+  id: 'block_content:d354a400-ef72-4a4e-ae4d-128d6ae27a3c'
+  label: 'Posgrado contenido 1 DOCENCIA UNIVERSITARIA EC'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-educacion/docencia-universitaria

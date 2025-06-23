@@ -1,0 +1,23 @@
+uuid: 1b8a5a75-9f67-4e4f-8838-78eb05e4ba11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.semilleros_noticias
+  module:
+    - text
+id: node.semilleros_noticias.body
+field_name: body
+entity_type: node
+bundle: semilleros_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

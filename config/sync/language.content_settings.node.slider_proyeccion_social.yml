@@ -1,0 +1,11 @@
+uuid: 49b96b1b-8b6f-43e0-bcb3-68e35ac30725
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_proyeccion_social
+id: node.slider_proyeccion_social
+target_entity_type_id: node
+target_bundle: slider_proyeccion_social
+default_langcode: site_default
+language_alterable: false

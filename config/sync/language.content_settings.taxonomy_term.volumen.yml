@@ -1,0 +1,11 @@
+uuid: 2144b4d2-98e5-4640-b833-e008bf376b36
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.volumen
+id: taxonomy_term.volumen
+target_entity_type_id: taxonomy_term
+target_bundle: volumen
+default_langcode: site_default
+language_alterable: false

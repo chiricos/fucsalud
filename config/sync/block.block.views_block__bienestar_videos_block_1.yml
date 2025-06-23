@@ -1,0 +1,30 @@
+uuid: 1638de94-4526-415b-a88c-27624981f684
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bienestar_videos
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__bienestar_videos_block_1
+theme: fucs
+region: video
+weight: 0
+provider: null
+plugin: 'views_block:bienestar_videos-block_1'
+settings:
+  id: 'views_block:bienestar_videos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /bienestar

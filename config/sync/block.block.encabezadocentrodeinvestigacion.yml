@@ -1,0 +1,31 @@
+uuid: 346d1734-ac18-4d46-b566-d3c08a9f8296
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1a4a0eed-94e4-4534-81d4-4b22ddfb20c1'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: encabezadocentrodeinvestigacion
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:1a4a0eed-94e4-4534-81d4-4b22ddfb20c1'
+settings:
+  id: 'block_content:1a4a0eed-94e4-4534-81d4-4b22ddfb20c1'
+  label: 'encabezado Centro de Investigación'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/centro-de-investigaciones\r\n/centro-de-investigaciones/*"

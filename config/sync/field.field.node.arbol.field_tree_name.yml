@@ -1,0 +1,19 @@
+uuid: c3f37873-c29d-4c05-a273-6ac048779ac7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tree_name
+    - node.type.arbol
+id: node.arbol.field_tree_name
+field_name: field_tree_name
+entity_type: node
+bundle: arbol
+label: tree_name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

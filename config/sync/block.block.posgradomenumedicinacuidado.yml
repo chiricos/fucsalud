@@ -1,0 +1,30 @@
+uuid: f7f1721a-7837-49e8-8926-8564703bd5c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-medicina-cuid
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenumedicinacuidado
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-medicina-cuid'
+settings:
+  id: 'system_menu_block:posgrado-menu-medicina-cuid'
+  label: posgrado-menu-medicina-cuidado
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/330\r\n/node/331\r\n/node/332\r\n/posgrado/medicina-del-dolor-y-cuidados-paliativos"

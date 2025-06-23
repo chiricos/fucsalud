@@ -1,0 +1,31 @@
+uuid: 0a8e4c70-f6bc-42c6-9d53-7798a0b015a3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:17eab9d9-603c-48e1-a1cb-f0ede541df31'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonesinvestigacion
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:17eab9d9-603c-48e1-a1cb-f0ede541df31'
+settings:
+  id: 'block_content:17eab9d9-603c-48e1-a1cb-f0ede541df31'
+  label: 'Botones investigacion'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/investigacion\r\n/investigacion/*\r\n/ensi\r\n/ensi/*"

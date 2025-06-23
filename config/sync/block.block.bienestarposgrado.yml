@@ -1,0 +1,30 @@
+uuid: df698dea-1064-41de-b39b-46a16a71f88b
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.bienestar-posgrado
+  module:
+    - system
+  theme:
+    - fucs
+id: bienestarposgrado
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:bienestar-posgrado'
+settings:
+  id: 'system_menu_block:bienestar-posgrado'
+  label: 'Bienestar posgrado'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/bienestar/posgrado/*\r\n/bienestar/bienestar-posgrado"

@@ -1,0 +1,8 @@
+uuid: cff37b08-4388-4d0e-81b5-1f4b760b077a
+langcode: es
+status: true
+dependencies: {  }
+id: apartaestudios
+label: 'Apartaestudios Tipo 1'
+description: ''
+locked: false

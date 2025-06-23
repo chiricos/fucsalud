@@ -1,0 +1,11 @@
+uuid: 475f631d-3649-43a4-aba1-89a5c7842557
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.colaboradores_servicios
+id: taxonomy_term.colaboradores_servicios
+target_entity_type_id: taxonomy_term
+target_bundle: colaboradores_servicios
+default_langcode: site_default
+language_alterable: false

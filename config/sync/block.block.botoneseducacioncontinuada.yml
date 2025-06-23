@@ -1,0 +1,31 @@
+uuid: 5c6311ad-bff9-4edd-9142-b55598916885
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c311149e-9514-41cd-a6ef-437b7d11b63a'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botoneseducacioncontinuada
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:c311149e-9514-41cd-a6ef-437b7d11b63a'
+settings:
+  id: 'block_content:c311149e-9514-41cd-a6ef-437b7d11b63a'
+  label: 'botones educacion continuada'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/continuada\r\n/continuada/*\r\n/diplomados/*\r\n/diplomados\r\n/cursos\r\n/curso/*\r\n/cursos/*\r\n/seminarios\r\n/seminarios/*\r\n/avales\r\n/avales/*"

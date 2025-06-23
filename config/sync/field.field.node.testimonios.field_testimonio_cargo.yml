@@ -1,0 +1,19 @@
+uuid: 6f752d08-d077-4e86-b5e8-7d60e392d82e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonio_cargo
+    - node.type.testimonios
+id: node.testimonios.field_testimonio_cargo
+field_name: field_testimonio_cargo
+entity_type: node
+bundle: testimonios
+label: testimonio_cargo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

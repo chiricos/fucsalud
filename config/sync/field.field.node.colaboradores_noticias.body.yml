@@ -1,0 +1,23 @@
+uuid: 42728f5b-cb78-4bb9-8b55-29e2409b6ae4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.colaboradores_noticias
+  module:
+    - text
+id: node.colaboradores_noticias.body
+field_name: body
+entity_type: node
+bundle: colaboradores_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

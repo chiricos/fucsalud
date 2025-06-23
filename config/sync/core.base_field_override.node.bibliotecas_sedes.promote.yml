@@ -1,0 +1,22 @@
+uuid: 0727c056-9cb1-42e5-88ff-dd9d54cb67c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bibliotecas_sedes
+id: node.bibliotecas_sedes.promote
+field_name: promote
+entity_type: node
+bundle: bibliotecas_sedes
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: f5ed3355-7df4-4158-9851-36c1a81c3a1f
+langcode: es
+status: true
+dependencies: {  }
+id: estudiante-certificaciones
+label: 'estudiante certificaciones'
+description: ''
+locked: false

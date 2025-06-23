@@ -1,0 +1,31 @@
+uuid: 1030d7a8-1ac0-4169-ac59-b5df2a86660b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:40947c9e-889d-4ef6-8a1d-d2d1e083510c'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactoestudiantesconveniosdocencia
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:40947c9e-889d-4ef6-8a1d-d2d1e083510c'
+settings:
+  id: 'block_content:40947c9e-889d-4ef6-8a1d-d2d1e083510c'
+  label: contacto-estudiantes-convenios-docencia
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/662

@@ -1,0 +1,8 @@
+uuid: 618538bb-4c06-40cb-a61b-12bd627a1431
+langcode: es
+status: true
+dependencies: {  }
+id: menu---posgrado---anastecio
+label: 'Menu - Posgrado - Anasteciología reanimación'
+description: 'Menu - Posgrado - Anasteciología reanimación'
+locked: false

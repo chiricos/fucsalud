@@ -1,0 +1,30 @@
+uuid: 69934ba8-00d6-4843-b3c3-395d9cf00da8
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-maestria-epidemio
+  module:
+    - system
+  theme:
+    - fucs
+id: menumaestriaepidemio
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-maestria-epidemio'
+settings:
+  id: 'system_menu_block:menu-maestria-epidemio'
+  label: menú-maestria-epidemio
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/maestrias/Epidemiologia-Clinica\r\n/node/4041\r\n/maestrias/Maestria-epidemiologia-clinica-perfiles\r\n/maestrias/Maestria-epidemiologia-clinica-plan-estudios\r\n/maestrias/Maestria-epidemiologia-clinica-docentes"

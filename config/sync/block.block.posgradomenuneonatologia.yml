@@ -1,0 +1,30 @@
+uuid: 8ad1f7fd-e6db-4ca5-a75a-1487dc179922
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-neonatologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuneonatologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-neonatologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-neonatologia'
+  label: posgrado-menu-neonatologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/422\r\n/node/423\r\n/posgrado/sub-pediatria-y-neonatologia/neonatologia\r\n/posgrado/sub-pediatria-y-neonatologia/neonatologia-docentes\r\n/posgrado/sub-pediatria-y-neonatologia/neonatologia-planestudios\r\n/posgrado/sub-pediatria-y-neonatologia/neonatologia-perfiles\r\n"

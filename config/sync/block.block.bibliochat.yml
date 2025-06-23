@@ -1,0 +1,31 @@
+uuid: 713ade03-d9f3-4d4f-9f13-a40fa850cc27
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3938a6df-558b-4272-b082-51826389ed42'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bibliochat
+theme: fucs
+region: inscribete
+weight: -8
+provider: null
+plugin: 'block_content:3938a6df-558b-4272-b082-51826389ed42'
+settings:
+  id: 'block_content:3938a6df-558b-4272-b082-51826389ed42'
+  label: bibliochat
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca1

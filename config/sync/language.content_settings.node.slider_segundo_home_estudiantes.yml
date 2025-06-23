@@ -1,0 +1,11 @@
+uuid: 870a4092-4ecc-40ab-af88-727e31b92b57
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_segundo_home_estudiantes
+id: node.slider_segundo_home_estudiantes
+target_entity_type_id: node
+target_bundle: slider_segundo_home_estudiantes
+default_langcode: site_default
+language_alterable: false

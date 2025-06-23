@@ -1,0 +1,62 @@
+uuid: fc71feb2-f0e0-46a2-8eac-75cf660986bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.infraestructura_eventos.body
+    - field.field.node.infraestructura_eventos.field_bie_fecha
+    - field.field.node.infraestructura_eventos.field_meta_tags
+    - field.field.node.infraestructura_eventos.field_noticias_imagen
+    - node.type.infraestructura_eventos
+  module:
+    - datetime
+    - image
+    - metatag
+    - text
+    - user
+id: node.infraestructura_eventos.default
+targetEntityType: node
+bundle: infraestructura_eventos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_bie_fecha:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_noticias_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

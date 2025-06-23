@@ -1,0 +1,21 @@
+uuid: 4a587475-f871-48f8-84ff-55755c67aff8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulos_acordion_3
+    - node.type.cursos
+id: node.cursos.field_titulos_acordion_3
+field_name: field_titulos_acordion_3
+entity_type: node
+bundle: cursos
+label: 'titulo acordion 3'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'JUSTIFICACIÓN:'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: 825e9227-5fd3-472e-ab7a-47492807e0bf
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8effe42e-586e-437d-b5ef-6e1b17252f9b'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bibliotecatwitter
+theme: fucs
+region: pregrado_contenido_2
+weight: 0
+provider: null
+plugin: 'block_content:8effe42e-586e-437d-b5ef-6e1b17252f9b'
+settings:
+  id: 'block_content:8effe42e-586e-437d-b5ef-6e1b17252f9b'
+  label: 'biblioteca twitter'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca

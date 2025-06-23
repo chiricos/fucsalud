@@ -1,0 +1,7 @@
+uuid: b12078cd-aec5-49f1-aeec-55011c3a4b30
+langcode: es
+status: true
+dependencies: {  }
+name: home_slider
+label: 'home slider'
+effects: {  }

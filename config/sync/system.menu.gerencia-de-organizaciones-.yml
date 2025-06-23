@@ -1,0 +1,8 @@
+uuid: 9b6034da-bc24-4b1c-9431-041ec93d9258
+langcode: es
+status: true
+dependencies: {  }
+id: gerencia-de-organizaciones-
+label: 'Gerencia de Organizaciones de Salud'
+description: 'Gerencia de Organizaciones de Salud'
+locked: false

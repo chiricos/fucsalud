@@ -1,0 +1,30 @@
+uuid: 614d6c67-d7b8-4955-b9c4-62c9f63eefbe
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-radiologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuradiologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-radiologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-radiologia'
+  label: posgrado-menu-radiologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/radiologia-e-imagenes-diagnosticas\r\n/posgrado/radiologia-e-imagenes-diagnosticas-planestudios\r\n/posgrado/Docentes-radiologia-e-imagenes-diagnosticas\r\n/posgrado/radiologia-e-imagenes-diagnosticas-perfiles"

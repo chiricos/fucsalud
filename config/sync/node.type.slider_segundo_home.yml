@@ -1,0 +1,17 @@
+uuid: d40b4eb4-e410-4af7-b8d1-c9db50e3ceb6
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'slider segundo home'
+type: slider_segundo_home
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

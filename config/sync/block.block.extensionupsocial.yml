@@ -1,0 +1,30 @@
+uuid: 36d1332f-9a53-4846-b44a-083bb499f00d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.extension-u--p-social
+  module:
+    - system
+  theme:
+    - fucs
+id: extensionupsocial
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:extension-u--p-social'
+settings:
+  id: 'system_menu_block:extension-u--p-social'
+  label: 'Extensión Universitaria - P Social'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social/area-extension-universitaria\r\n/proyeccion-social/gestion-egresados\r\n/proyeccion-social/formacion-continua\r\n/proyeccion-social/apoyo-sector-externo\r\n/proyeccion-social/experiencias-exitosas\r\n/proyeccion-social/ascun\r\n/proyeccion-social/Proyecta-FUCS"

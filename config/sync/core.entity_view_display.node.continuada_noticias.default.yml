@@ -1,0 +1,59 @@
+uuid: 2c9df718-6951-4686-aa38-b17168e8db28
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.continuada_noticias.body
+    - field.field.node.continuada_noticias.field_calendario_fecha
+    - field.field.node.continuada_noticias.field_meta_tags
+    - field.field.node.continuada_noticias.field_noticias_imagen
+    - field.field.node.continuada_noticias.field_noticias_titulo
+    - node.type.continuada_noticias
+  module:
+    - datetime
+    - metatag
+    - text
+    - user
+id: node.continuada_noticias.default
+targetEntityType: node
+bundle: continuada_noticias
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_calendario_fecha:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_noticias_titulo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_noticias_imagen: true
+  langcode: true

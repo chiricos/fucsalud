@@ -1,0 +1,11 @@
+uuid: eea937c6-339b-4a9f-9718-9aaeac5be4f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_apartastudios
+id: node.slider_apartastudios
+target_entity_type_id: node
+target_bundle: slider_apartastudios
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,17 @@
+uuid: 823cdc90-c260-4e7c-b11b-48181b699f8e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Estudiantes noticias'
+type: estudiantes_noticias
+description: 'noticias del micrositio estudiantes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

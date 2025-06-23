@@ -1,0 +1,31 @@
+uuid: a2c994b5-55ac-48a3-a7fa-3f25e49978fc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e6e3a0b0-5a35-4980-a2ca-a05a0cb40b80'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: revistabuscador
+theme: fucs
+region: egresados_contenido_1
+weight: 2
+provider: null
+plugin: 'block_content:e6e3a0b0-5a35-4980-a2ca-a05a0cb40b80'
+settings:
+  id: 'block_content:e6e3a0b0-5a35-4980-a2ca-a05a0cb40b80'
+  label: 'revista buscador'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/revista\r\n/revista-repertorio"

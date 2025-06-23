@@ -1,0 +1,11 @@
+uuid: d34f4275-5fae-4602-bebb-60ebb9072741
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bienestar_videos
+id: node.bienestar_videos
+target_entity_type_id: node
+target_bundle: bienestar_videos
+default_langcode: site_default
+language_alterable: false

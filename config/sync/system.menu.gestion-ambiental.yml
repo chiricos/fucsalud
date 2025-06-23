@@ -1,0 +1,8 @@
+uuid: 2b945449-82fc-46a5-9708-a0a897e8ae9c
+langcode: es
+status: true
+dependencies: {  }
+id: gestion-ambiental
+label: 'gestion ambiental'
+description: ''
+locked: false

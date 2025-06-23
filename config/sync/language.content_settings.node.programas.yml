@@ -1,0 +1,11 @@
+uuid: e3e20ca3-b101-47fd-80da-567b29d9ca0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.programas
+id: node.programas
+target_entity_type_id: node
+target_bundle: programas
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 26c90d0a-84b2-4f09-87f7-b987fb0749c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_estudiantes
+id: node.slider_estudiantes
+target_entity_type_id: node
+target_bundle: slider_estudiantes
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: 444e593c-df72-4851-80be-f6fcfb8a7783
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:42e3eb6e-20e6-47cb-b444-6b802a073de5'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerapartaestudio
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:42e3eb6e-20e6-47cb-b444-6b802a073de5'
+settings:
+  id: 'block_content:42e3eb6e-20e6-47cb-b444-6b802a073de5'
+  label: 'banner apartaestudio'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/apartaestudios/*'

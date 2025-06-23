@@ -1,0 +1,8 @@
+uuid: 792f536d-58ae-4b88-9788-42668614b347
+langcode: es
+status: true
+dependencies: {  }
+id: node__pregrado
+label: 'Contenido: pregrado'
+tags:
+  abstract: '[node:content-type:description]'

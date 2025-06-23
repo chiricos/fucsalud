@@ -1,0 +1,8 @@
+uuid: 02e56732-b88f-448d-85f1-e5fc1502d9bf
+langcode: es
+status: true
+dependencies: {  }
+id: bienestar-virtual
+label: 'Bienestar virtual'
+description: ''
+locked: false

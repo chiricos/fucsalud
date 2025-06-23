@@ -1,0 +1,22 @@
+uuid: 1dba78fb-b0be-4517-a48c-77fde382876f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_egresados
+id: node.slider_egresados.promote
+field_name: promote
+entity_type: node
+bundle: slider_egresados
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

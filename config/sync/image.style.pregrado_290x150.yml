@@ -1,0 +1,15 @@
+uuid: 1c0c2d0f-6564-44cb-b21a-5df161053ee9
+langcode: es
+status: true
+dependencies: {  }
+name: pregrado_290x150
+label: 'pregrado 290x150'
+effects:
+  dfe939d9-d8ea-4e08-b858-c83a72067563:
+    uuid: dfe939d9-d8ea-4e08-b858-c83a72067563
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 290
+      height: 150
+      anchor: center-center

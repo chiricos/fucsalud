@@ -1,0 +1,41 @@
+uuid: 05d0ffde-a71f-4533-aa1a-45554fc7d276
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.revistas.body
+    - field.field.node.revistas.field_articulo_escrito_por
+    - field.field.node.revistas.field_image
+    - field.field.node.revistas.field_meta_tags
+    - field.field.node.revistas.field_precio
+    - field.field.node.revistas.field_titulo_de_la_revista
+    - node.type.revistas
+  module:
+    - text
+    - user
+id: node.revistas.teaser
+targetEntityType: node
+bundle: revistas
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_articulo_escrito_por: true
+  field_image: true
+  field_meta_tags: true
+  field_precio: true
+  field_titulo_de_la_revista: true
+  langcode: true

@@ -1,0 +1,31 @@
+uuid: 7d71f449-afc8-49cf-a8ab-757ea86f2bd1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:450991fb-7f37-49ca-8c75-2db542c977a6'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: none
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:450991fb-7f37-49ca-8c75-2db542c977a6'
+settings:
+  id: 'block_content:450991fb-7f37-49ca-8c75-2db542c977a6'
+  label: 'Datos Tienda'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /tienda-datos

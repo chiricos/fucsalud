@@ -1,0 +1,30 @@
+uuid: 9817ab81-524b-4add-8f2f-040829715446
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.biblioteca-recursos
+  module:
+    - system
+  theme:
+    - fucs
+id: bibliotecarecursos_2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:biblioteca-recursos'
+settings:
+  id: 'system_menu_block:biblioteca-recursos'
+  label: Biblioteca-Recursos
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca/recursos/gestores-bibliografias\r\n/biblioteca/recursos/enlaces-sitios-interes\r\n/biblioteca/recursos/solucitud-documentos\r\n/biblioteca/recursos"

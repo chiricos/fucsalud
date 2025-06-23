@@ -1,0 +1,11 @@
+uuid: 987a2886-0298-4cd2-915f-18ec93937812
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bloque_lateral
+id: node.bloque_lateral
+target_entity_type_id: node
+target_bundle: bloque_lateral
+default_langcode: site_default
+language_alterable: false

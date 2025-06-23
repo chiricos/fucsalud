@@ -1,0 +1,8 @@
+uuid: 1da1738e-6f30-4c8a-a987-77dee6c97d8e
+langcode: es
+status: true
+dependencies: {  }
+id: menu-especializacion-colopr
+label: Menú-Especialización-Coloproctología
+description: Menú-Especialización-Coloproctología
+locked: false

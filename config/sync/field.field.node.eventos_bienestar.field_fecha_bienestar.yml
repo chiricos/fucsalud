@@ -1,0 +1,21 @@
+uuid: edea674e-646e-4de9-be1c-321d6bcfd9c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_bienestar
+    - node.type.eventos_bienestar
+  module:
+    - datetime
+id: node.eventos_bienestar.field_fecha_bienestar
+field_name: field_fecha_bienestar
+entity_type: node
+bundle: eventos_bienestar
+label: fecha_bienestar
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

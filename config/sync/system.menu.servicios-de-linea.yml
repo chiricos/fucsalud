@@ -1,0 +1,8 @@
+uuid: a1e7d0f4-0ac8-4fcd-a9f1-1eba10e12b73
+langcode: es
+status: true
+dependencies: {  }
+id: servicios-de-linea
+label: 'SERVICIOS DE LINEA'
+description: ''
+locked: false

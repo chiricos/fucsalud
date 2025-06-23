@@ -1,0 +1,11 @@
+uuid: 6aff0ebd-c8e8-442c-9c1e-361ffa628940
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.infraestructura_noticias
+id: node.infraestructura_noticias
+target_entity_type_id: node
+target_bundle: infraestructura_noticias
+default_langcode: site_default
+language_alterable: false

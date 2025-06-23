@@ -1,0 +1,25 @@
+uuid: 9f82d96f-ce23-4bb2-a7be-b628a1dcf374
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galeria_apartaestudios.field_meta_tags
+    - field.field.node.galeria_apartaestudios.field_testimonio_imagen
+    - node.type.galeria_apartaestudios
+  module:
+    - user
+id: node.galeria_apartaestudios.teaser
+targetEntityType: node
+bundle: galeria_apartaestudios
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_testimonio_imagen: true
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: d12f5f7e-c069-4e31-8603-e4f50bb9d9d3
+langcode: es
+status: true
+dependencies: {  }
+id: revista-repertorio
+label: 'REVISTA REPERTORIO'
+description: ''
+locked: false

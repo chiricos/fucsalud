@@ -1,0 +1,22 @@
+uuid: 7a683c3c-004a-42b3-b1ec-2b04bce8ce22
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colaboradores_noticias
+id: node.colaboradores_noticias.promote
+field_name: promote
+entity_type: node
+bundle: colaboradores_noticias
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

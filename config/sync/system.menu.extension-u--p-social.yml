@@ -1,0 +1,8 @@
+uuid: 40b44137-a9a2-4d9e-a071-d50d5e1bdbce
+langcode: es
+status: true
+dependencies: {  }
+id: extension-u--p-social
+label: 'Extensión U -P Social'
+description: ''
+locked: false

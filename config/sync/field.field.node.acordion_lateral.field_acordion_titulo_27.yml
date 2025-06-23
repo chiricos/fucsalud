@@ -1,0 +1,19 @@
+uuid: 4e28eefd-9d2e-41ba-b960-d80cee7de275
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_27
+    - node.type.acordion_lateral
+id: node.acordion_lateral.field_acordion_titulo_27
+field_name: field_acordion_titulo_27
+entity_type: node
+bundle: acordion_lateral
+label: 'acordion titulo 27'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

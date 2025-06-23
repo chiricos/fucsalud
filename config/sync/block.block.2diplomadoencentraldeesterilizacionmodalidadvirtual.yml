@@ -1,0 +1,31 @@
+uuid: 959d949b-b99a-4cd1-a071-9c3e34ba2c75
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:52da3e20-c9a1-4078-adf1-89b49758bf8c'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: 2diplomadoencentraldeesterilizacionmodalidadvirtual
+theme: fucs
+region: pregrado_contenido_1
+weight: 17
+provider: null
+plugin: 'block_content:52da3e20-c9a1-4078-adf1-89b49758bf8c'
+settings:
+  id: 'block_content:52da3e20-c9a1-4078-adf1-89b49758bf8c'
+  label: 'Posgrado contenido 2 Diplomado en Central de Esterilización - Modalidad Virtual'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-ciencias-salud/central-esterizacion-virtual

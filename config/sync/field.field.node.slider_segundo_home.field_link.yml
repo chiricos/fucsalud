@@ -1,0 +1,19 @@
+uuid: f26dbf45-26a1-4e54-9c13-5cfe01ecc79e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_segundo_home
+id: node.slider_segundo_home.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_segundo_home
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

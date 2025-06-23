@@ -1,0 +1,29 @@
+uuid: 7bbbe16f-9285-429c-a4c0-250b8fd3c034
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_colaboradores.field_caption
+    - field.field.node.slider_colaboradores.field_link
+    - field.field.node.slider_colaboradores.field_meta_tags
+    - field.field.node.slider_colaboradores.field_slider_1400x600_
+    - node.type.slider_colaboradores
+  module:
+    - user
+id: node.slider_colaboradores.teaser
+targetEntityType: node
+bundle: slider_colaboradores
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

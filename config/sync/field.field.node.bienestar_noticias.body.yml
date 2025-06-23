@@ -1,0 +1,23 @@
+uuid: 96b11fd7-515f-435b-9bcc-98aedddb8cdb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bienestar_noticias
+  module:
+    - text
+id: node.bienestar_noticias.body
+field_name: body
+entity_type: node
+bundle: bienestar_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

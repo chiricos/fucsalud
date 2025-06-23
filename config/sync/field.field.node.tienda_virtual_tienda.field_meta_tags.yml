@@ -1,0 +1,21 @@
+uuid: 86dfab5d-0f22-43d9-af91-ea6c10467b08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.tienda_virtual_tienda
+  module:
+    - metatag
+id: node.tienda_virtual_tienda.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: tienda_virtual_tienda
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

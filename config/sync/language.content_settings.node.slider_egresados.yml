@@ -1,0 +1,11 @@
+uuid: 040a1595-49a8-496d-94d7-4de65a10ceed
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_egresados
+id: node.slider_egresados
+target_entity_type_id: node
+target_bundle: slider_egresados
+default_langcode: site_default
+language_alterable: false

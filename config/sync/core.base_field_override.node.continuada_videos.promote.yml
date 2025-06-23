@@ -1,0 +1,22 @@
+uuid: a2b20e98-dd64-4764-bb07-90c1173d5a8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.continuada_videos
+id: node.continuada_videos.promote
+field_name: promote
+entity_type: node
+bundle: continuada_videos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

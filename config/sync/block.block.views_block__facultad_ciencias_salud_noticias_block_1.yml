@@ -1,0 +1,30 @@
+uuid: d19a4147-d3bc-4b98-93ab-592780cf5ab0
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.facultad_ciencias_salud_noticias
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__facultad_ciencias_salud_noticias_block_1
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'views_block:facultad_ciencias_salud_noticias-block_1'
+settings:
+  id: 'views_block:facultad_ciencias_salud_noticias-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /Facultad-de-Ciencias-Administrativas-en-Salud

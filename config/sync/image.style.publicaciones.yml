@@ -1,0 +1,15 @@
+uuid: 1a279390-43fb-4eeb-b5b1-e312534f92c9
+langcode: es
+status: true
+dependencies: {  }
+name: publicaciones
+label: 'publicaciones (230x300)'
+effects:
+  91fd1242-c750-4c62-84dd-aaa706fd2300:
+    uuid: 91fd1242-c750-4c62-84dd-aaa706fd2300
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 230
+      height: 300
+      anchor: center-center

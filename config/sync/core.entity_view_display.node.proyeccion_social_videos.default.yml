@@ -1,0 +1,38 @@
+uuid: d7e0e469-11f8-4dc5-a587-49d3995a05ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.proyeccion_social_videos.body
+    - field.field.node.proyeccion_social_videos.field_meta_tags
+    - node.type.proyeccion_social_videos
+  module:
+    - metatag
+    - text
+    - user
+id: node.proyeccion_social_videos.default
+targetEntityType: node
+bundle: proyeccion_social_videos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

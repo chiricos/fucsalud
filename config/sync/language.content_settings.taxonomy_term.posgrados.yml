@@ -1,0 +1,11 @@
+uuid: 5022f13d-ff5c-429d-b303-e684ecadb6cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.posgrados
+id: taxonomy_term.posgrados
+target_entity_type_id: taxonomy_term
+target_bundle: posgrados
+default_langcode: site_default
+language_alterable: false

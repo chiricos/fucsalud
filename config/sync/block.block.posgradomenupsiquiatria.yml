@@ -1,0 +1,30 @@
+uuid: 113ac30f-f2f6-428a-8b24-1cf21fbe17ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-psiquiatria
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenupsiquiatria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-psiquiatria'
+settings:
+  id: 'system_menu_block:posgrado-menu-psiquiatria'
+  label: posgrado-menu-psiquiatría
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Psiquiatria\r\n/posgrado/Psiquiatria/Campos-de-accion\r\n/posgrado/Psiquiatria/Plan-de-estudios\r\n/posgrado/Psiquiatria/Por-que-estudiar-en-la-FUCS\r\n/posgrado/Psiquiatria/Docentes"

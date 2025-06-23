@@ -1,0 +1,38 @@
+uuid: 491b038e-5d9b-4606-a815-d437ad5fbe8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.bloque_lateral.body
+    - field.field.node.bloque_lateral.field_meta_tags
+    - node.type.bloque_lateral
+  module:
+    - metatag
+    - text
+    - user
+id: node.bloque_lateral.default
+targetEntityType: node
+bundle: bloque_lateral
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

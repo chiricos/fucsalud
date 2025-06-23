@@ -1,0 +1,8 @@
+uuid: 887d1067-1e44-47b1-a29c-fdc3c53071e5
+langcode: es
+status: true
+dependencies: {  }
+id: menu-seguridad-y-salud-en-el-tra
+label: 'menu seguridad y salud en el trabajo '
+description: ''
+locked: false

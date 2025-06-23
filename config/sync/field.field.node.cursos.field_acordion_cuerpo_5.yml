@@ -1,0 +1,23 @@
+uuid: ef39a56e-99c1-44c1-b176-a2e0641a09f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_5
+    - node.type.cursos
+  module:
+    - text
+id: node.cursos.field_acordion_cuerpo_5
+field_name: field_acordion_cuerpo_5
+entity_type: node
+bundle: cursos
+label: acordion_cuerpo_5
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

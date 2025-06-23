@@ -1,0 +1,8 @@
+uuid: 21c64d85-f1fc-4f55-8731-967e786062ab
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-medicina-inte
+label: posgrado-menu-medicina-interna
+description: posgrado-menu-medicina-interna
+locked: false

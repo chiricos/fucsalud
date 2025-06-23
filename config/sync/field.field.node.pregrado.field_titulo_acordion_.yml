@@ -1,0 +1,19 @@
+uuid: 1c0b93bb-4b3d-4ac2-b8c8-b6659014c430
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_acordion_
+    - node.type.pregrado
+id: node.pregrado.field_titulo_acordion_
+field_name: field_titulo_acordion_
+entity_type: node
+bundle: pregrado
+label: 'titulo acordion 4'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

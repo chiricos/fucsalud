@@ -1,0 +1,19 @@
+uuid: 25f2d74b-dcb0-444d-b83a-8ec5e127651e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_articulo_escrito_por
+    - node.type.articulo
+id: node.articulo.field_articulo_escrito_por
+field_name: field_articulo_escrito_por
+entity_type: node
+bundle: articulo
+label: autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

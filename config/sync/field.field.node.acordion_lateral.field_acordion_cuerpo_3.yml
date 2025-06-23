@@ -1,0 +1,23 @@
+uuid: 71eaee11-5468-4e5b-b4ba-fa26858f6ac3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_3
+    - node.type.acordion_lateral
+  module:
+    - text
+id: node.acordion_lateral.field_acordion_cuerpo_3
+field_name: field_acordion_cuerpo_3
+entity_type: node
+bundle: acordion_lateral
+label: acordion_cuerpo_3
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

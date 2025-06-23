@@ -1,0 +1,31 @@
+uuid: 18056f90-4870-46fc-aa16-60c598a81332
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:006ac2ff-4581-45ee-9a5f-93b326528d6e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: inscribete
+theme: fucs
+region: social
+weight: -7
+provider: null
+plugin: 'block_content:006ac2ff-4581-45ee-9a5f-93b326528d6e'
+settings:
+  id: 'block_content:006ac2ff-4581-45ee-9a5f-93b326528d6e'
+  label: inscribete
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

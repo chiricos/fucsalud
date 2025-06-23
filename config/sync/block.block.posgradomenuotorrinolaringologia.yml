@@ -1,0 +1,30 @@
+uuid: 63d1d433-5e46-4302-917b-118fb8526317
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-otorrinolarin
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuotorrinolaringologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-otorrinolarin'
+settings:
+  id: 'system_menu_block:posgrado-menu-otorrinolarin'
+  label: posgrado-menu-otorrinolaringologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/406\r\n/node/407\r\n/node/408\r\n/posgrado/sub-otorrinolaringologia/otorrinolaringologia"

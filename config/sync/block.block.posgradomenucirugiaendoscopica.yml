@@ -1,0 +1,30 @@
+uuid: 955530e7-ea97-4973-8b21-08975901c776
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-endos
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiaendoscopica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-endos'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-endos'
+  label: posgrado-menu-cirugia-endoscopica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/306\r\n/node/307\r\n/node/308\r\n/posgrado/sub-ginecologia-y-obstetricia/cirugia-endoscopica-ginecologica"

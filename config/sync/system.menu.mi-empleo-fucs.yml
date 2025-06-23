@@ -1,0 +1,8 @@
+uuid: 369ba331-970a-4137-a129-c38b55e01af8
+langcode: es
+status: true
+dependencies: {  }
+id: mi-empleo-fucs
+label: 'Mi empleo FUCS'
+description: 'Mi empleo FUCS'
+locked: false

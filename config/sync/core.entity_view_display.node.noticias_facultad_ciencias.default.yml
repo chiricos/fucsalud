@@ -1,0 +1,55 @@
+uuid: f69d5d7a-b65e-4248-ad61-2b0db35a013b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.noticias_facultad_ciencias.body
+    - field.field.node.noticias_facultad_ciencias.field_calendario_fecha
+    - field.field.node.noticias_facultad_ciencias.field_meta_tags
+    - field.field.node.noticias_facultad_ciencias.field_noticias_imagen
+    - field.field.node.noticias_facultad_ciencias.field_noticias_titulo
+    - node.type.noticias_facultad_ciencias
+  module:
+    - datetime
+    - metatag
+    - text
+    - user
+id: node.noticias_facultad_ciencias.default
+targetEntityType: node
+bundle: noticias_facultad_ciencias
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_calendario_fecha:
+    type: datetime_default
+    label: visually_hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_noticias_titulo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_noticias_imagen: true
+  langcode: true
+  links: true

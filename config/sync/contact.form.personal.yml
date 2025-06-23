@@ -1,0 +1,13 @@
+uuid: 3433a749-2bc3-4810-8b75-6f83179a9a2e
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4w1vDIuPlVqNIiynysHZHU-9sBCpx5uiEIPlo4SW1tw
+id: personal
+label: 'Formulario de contacto personal'
+recipients: {  }
+reply: ''
+weight: 0
+message: "<p>Su solicitud ha sido enviada por favor este atento a la confirmaci&oacute;n de su reserva.*<br />\r\n<br />\r\n<em>*Apreciado usuario, recuerde que su reserva se mantendr&aacute; durante 15 minutos; pasado este tiempo si el espacio na ha sido utilizado quedara nuevamente habilitado.</em><br />\r\n<br />\r\n<strong>Recomendaciones a tener en cuenta:</strong></p>\r\n\r\n<ul>\r\n\t<li>Si pasados 15 minutos no se ocupa la sala o auditorio, se cancela la reserva.</li>\r\n\t<li>Las reservas se hacen con m&iacute;nimo 12 horas de anticipaci&oacute;n.</li>\r\n\t<li>Las salas cuentan con un n&uacute;mero determinado de computadores para los usuarios, por favor al reservar tenga &nbsp;en cuenta la capacidad de los espacios.</li>\r\n\t<li>En todos los espacios del Sistema de Bibliotecas, se debe manejar un tono de voz moderado.&nbsp;</li>\r\n\t<li>No cosumir alimentos ni bebidas.</li>\r\n</ul>"
+redirect: ''

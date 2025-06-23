@@ -1,0 +1,11 @@
+uuid: 592ff12f-b548-4b43-8290-1eba9cc1abbe
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_infraestructura
+id: node.slider_infraestructura
+target_entity_type_id: node
+target_bundle: slider_infraestructura
+default_langcode: site_default
+language_alterable: false

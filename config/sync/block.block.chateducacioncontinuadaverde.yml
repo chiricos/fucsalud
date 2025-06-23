@@ -1,0 +1,31 @@
+uuid: 0b322359-fe6d-47f6-bad8-d3b7217754af
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:900567d1-bf7d-4420-b8b2-3ca888fe660e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: chateducacioncontinuadaverde
+theme: fucs
+region: first_footer
+weight: 0
+provider: null
+plugin: 'block_content:900567d1-bf7d-4420-b8b2-3ca888fe660e'
+settings:
+  id: 'block_content:900567d1-bf7d-4420-b8b2-3ca888fe660e'
+  label: 'Chat educacion continuada verde'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/diplomados\r\n/cursos\r\n/seminarios\r\n/avales\r\n/diplomados/*\r\n/cursos/*\r\n/seminarios/*\r\n/avales/*"

@@ -1,0 +1,31 @@
+uuid: f9dadf12-2434-4b21-9b69-66989a31a3f9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cc42bd2d-e4f3-4c78-b734-a03fc9218f10'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactotelesalud
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:cc42bd2d-e4f3-4c78-b734-a03fc9218f10'
+settings:
+  id: 'block_content:cc42bd2d-e4f3-4c78-b734-a03fc9218f10'
+  label: 'contacto telesalud'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/telesalud-telemedicina/*\r\n/telesalud-y-telemedicina/*"

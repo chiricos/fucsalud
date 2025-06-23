@@ -1,0 +1,19 @@
+uuid: f9162a11-176f-433b-a197-d54ef935970a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.slider_estudiantes
+id: node.slider_estudiantes.field_caption
+field_name: field_caption
+entity_type: node
+bundle: slider_estudiantes
+label: caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

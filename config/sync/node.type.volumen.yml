@@ -1,0 +1,17 @@
+uuid: ea845236-1255-4757-ab8d-9a6cf11e6eab
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: volumen
+type: volumen
+description: 'articulos del volumen'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

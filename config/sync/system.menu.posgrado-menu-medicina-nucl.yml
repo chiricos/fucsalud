@@ -1,0 +1,8 @@
+uuid: 135e71d8-8a71-44e6-a550-66f1bdcabd0f
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-medicina-nucl
+label: posgrado-menu-medicina-nuclear
+description: posgrado-menu-medicina-nuclear
+locked: false

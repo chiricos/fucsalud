@@ -1,0 +1,91 @@
+uuid: 7ec27ab5-9a68-450b-bbf5-70005d69c6b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.testimonios.body
+    - field.field.node.testimonios.field_meta_tags
+    - field.field.node.testimonios.field_testimonio_
+    - field.field.node.testimonios.field_testimonio_cargo
+    - field.field.node.testimonios.field_testimonio_enlace
+    - field.field.node.testimonios.field_testimonio_imagen
+    - field.field.node.testimonios.field_testimonio_nombre
+    - node.type.testimonios
+  module:
+    - image
+    - link
+    - metatag
+    - text
+    - user
+id: node.testimonios.default
+targetEntityType: node
+bundle: testimonios
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_testimonio_:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_testimonio_cargo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_testimonio_enlace:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_testimonio_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_testimonio_nombre:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

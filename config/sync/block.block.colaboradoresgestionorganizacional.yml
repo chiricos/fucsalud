@@ -1,0 +1,30 @@
+uuid: 9fb7b573-81a7-4b45-8213-3aaf1d54a3c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.colaboradores---gestion-org
+  module:
+    - system
+  theme:
+    - fucs
+id: colaboradoresgestionorganizacional
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:colaboradores---gestion-org'
+settings:
+  id: 'system_menu_block:colaboradores---gestion-org'
+  label: 'COLABORADORES - GESTION ORGANIZACIONAL'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/colaboradores/gestion-organizacional/*\r\n/colaboradores/gestion-organizacional/"

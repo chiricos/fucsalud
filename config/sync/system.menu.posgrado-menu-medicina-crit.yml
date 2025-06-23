@@ -1,0 +1,8 @@
+uuid: 018c91d8-7fb5-4945-bd4f-f38d52873f56
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-medicina-crit
+label: posgrado-menu-medicina-critica
+description: posgrado-menu-medicina-critica
+locked: false

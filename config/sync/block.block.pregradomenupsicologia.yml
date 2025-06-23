@@ -1,0 +1,30 @@
+uuid: 9ca295c0-481c-4f1a-85c0-20a6d80faab0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.pregrado-menu-psicologia
+  module:
+    - system
+  theme:
+    - fucs
+id: pregradomenupsicologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:pregrado-menu-psicologia'
+settings:
+  id: 'system_menu_block:pregrado-menu-psicologia'
+  label: pregrado-menu-psicologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/263\r\n/node/264\r\n/pregrado/carreras_profesionales/psicologia/campos-de-accion-psicologia\r\n/node/266\r\n/node/267\r\n/node/268\r\n/node/269\r\n/node/270\r\n/pregrado/carreras_profesionales/psicologia"

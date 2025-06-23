@@ -1,0 +1,31 @@
+uuid: 0eb305b9-8e1f-469e-abb4-23ad352f9400
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:32f45a41-8e49-49a8-9dca-3726a5cc9d1e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: museocontacto
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:32f45a41-8e49-49a8-9dca-3726a5cc9d1e'
+settings:
+  id: 'block_content:32f45a41-8e49-49a8-9dca-3726a5cc9d1e'
+  label: 'museo contacto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/museo/*'

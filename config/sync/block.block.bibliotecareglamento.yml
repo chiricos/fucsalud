@@ -1,0 +1,31 @@
+uuid: fc417be8-f2c8-4b44-8da3-9c3527a75206
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b9a2c15e-9fa1-41ef-b70b-343668dfea62'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bibliotecareglamento
+theme: fucs
+region: pregrado_contenido_2
+weight: 0
+provider: null
+plugin: 'block_content:b9a2c15e-9fa1-41ef-b70b-343668dfea62'
+settings:
+  id: 'block_content:b9a2c15e-9fa1-41ef-b70b-343668dfea62'
+  label: 'a biblioteca reglamento'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca

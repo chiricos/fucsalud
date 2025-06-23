@@ -1,0 +1,30 @@
+uuid: fa5e2919-0166-45e3-b52f-5523051a7f20
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tienda_virtual_congresos
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__tienda_virtual_congresos_block_1
+theme: fucs
+region: pregrado_contenido_1
+weight: 0
+provider: null
+plugin: 'views_block:tienda_virtual_congresos-block_1'
+settings:
+  id: 'views_block:tienda_virtual_congresos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /tienda-virtual/congresos

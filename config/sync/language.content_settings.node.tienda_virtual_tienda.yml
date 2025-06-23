@@ -1,0 +1,11 @@
+uuid: 335eba1a-dad3-4448-9e53-6bba4988f6ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tienda_virtual_tienda
+id: node.tienda_virtual_tienda
+target_entity_type_id: node
+target_bundle: tienda_virtual_tienda
+default_langcode: site_default
+language_alterable: false

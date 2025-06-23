@@ -1,0 +1,11 @@
+uuid: b8362cad-dd47-410f-9496-10d0ec0a17ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estudiantes_eventos
+id: node.estudiantes_eventos
+target_entity_type_id: node
+target_bundle: estudiantes_eventos
+default_langcode: site_default
+language_alterable: false

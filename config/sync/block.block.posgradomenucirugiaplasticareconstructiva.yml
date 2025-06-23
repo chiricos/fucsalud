@@ -1,0 +1,30 @@
+uuid: 0d3a71eb-6f1e-4d07-8e21-dddce02dfc7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-plast
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiaplasticareconstructiva
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-plast'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-plast'
+  label: posgrado-menu-cirugia-plastica-reconstructiva
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/cirugia-plastica-reconstructiva-y-estetica/presentacion-cirugia-plastica-reconstructiva-y-estetica\r\n/node/300\r\n/node/301\r\n/node/302"

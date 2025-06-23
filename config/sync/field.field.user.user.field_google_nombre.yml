@@ -1,0 +1,20 @@
+uuid: 69bbf6f1-20c6-4dd0-af19-5fae0bc0fcd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_google_nombre
+  module:
+    - user
+id: user.user.field_google_nombre
+field_name: field_google_nombre
+entity_type: user
+bundle: user
+label: google_nombre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

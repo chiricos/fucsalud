@@ -1,0 +1,31 @@
+uuid: ec9f5d87-368a-4238-86df-c2c16c91d957
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8d0a347b-d186-42d8-81e7-328312ad0005'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido0diplomadoenatencionenurgencias
+theme: fucs
+region: pregrado_contenido_0
+weight: 4
+provider: null
+plugin: 'block_content:8d0a347b-d186-42d8-81e7-328312ad0005'
+settings:
+  id: 'block_content:8d0a347b-d186-42d8-81e7-328312ad0005'
+  label: 'Posgrado contenido 0 Diplomado en Atención en Urgencias'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-ciencias-salud/atencion-urgencias

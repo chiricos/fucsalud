@@ -1,0 +1,30 @@
+uuid: f1692f01-e0d9-4251-9583-be7e15318258
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.fisioterapia
+  module:
+    - system
+  theme:
+    - fucs
+id: fisioterapia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:fisioterapia'
+settings:
+  id: 'system_menu_block:fisioterapia'
+  label: menú-Fisioterapia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_profesionales/fisioterapia\r\n/node/3990\r\n/node/4060\r\n/pregrado/carreras_profesionales/fisioterapia/plan-estudios\r\n/pregrado/carreras_profesionales/fisioterapia/estudiar-fucs\r\n/pregrado/carreras_profesionales/fisioterapia/docentes\r\n/pregrado/carreras_profesionales/fisioterapia-laboratorio-movimiento\r\n/pregrado/carreras_profesionales/fisioterapia/red-practicas\r\n/pregrado/carreras_profesionales/fisioterapia/eventos-2\r\n/pregrado/carreras_profesionales/fisioterapia/innovacion-creatividad\r\n/pregrado/carreras_profesionales/fisioterapia/Noticias\r\n/pregrado/carreras_profesionales/fisioterapia/talentos\r\n/pregrado/carreras_profesionales/fisioterapia/INVESTIGACION-EN-MOVIMIENTO"

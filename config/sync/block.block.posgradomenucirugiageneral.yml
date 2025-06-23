@@ -1,0 +1,30 @@
+uuid: 37327f70-9ad7-4e31-8fc3-fd25eaf2428c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-gener
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiageneral
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-gener'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-gener'
+  label: posgrado-menu-cirugia-general
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/292\r\n/node/293\r\n/node/291\r\n/posgrado/sub-cirugia-general/cirugia-general\r\n"

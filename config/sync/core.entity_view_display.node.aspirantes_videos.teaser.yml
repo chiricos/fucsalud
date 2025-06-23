@@ -1,0 +1,33 @@
+uuid: 5e3093ae-5d45-4cab-b66f-3f20e65ac386
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.aspirantes_videos.body
+    - field.field.node.aspirantes_videos.field_meta_tags
+    - node.type.aspirantes_videos
+  module:
+    - text
+    - user
+id: node.aspirantes_videos.teaser
+targetEntityType: node
+bundle: aspirantes_videos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

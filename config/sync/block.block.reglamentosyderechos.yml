@@ -1,0 +1,31 @@
+uuid: cc8dd06a-ae23-453e-a5cf-e038e7881686
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e10e6e17-d41f-44bd-ba79-40b9d9c8dd69'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: reglamentosyderechos
+theme: fucs
+region: regulations
+weight: 0
+provider: null
+plugin: 'block_content:e10e6e17-d41f-44bd-ba79-40b9d9c8dd69'
+settings:
+  id: 'block_content:e10e6e17-d41f-44bd-ba79-40b9d9c8dd69'
+  label: 'Reglamentos y Derechos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

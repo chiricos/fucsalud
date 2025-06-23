@@ -1,0 +1,31 @@
+uuid: 31bee99c-1770-4fe3-a860-eb078734b1e3
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7b2905e5-d3a5-47f0-b8d8-6599049f1b8e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: encabezadopsocial
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:7b2905e5-d3a5-47f0-b8d8-6599049f1b8e'
+settings:
+  id: 'block_content:7b2905e5-d3a5-47f0-b8d8-6599049f1b8e'
+  label: 'Encabezado P-Social'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social/*\r\n"

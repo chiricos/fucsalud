@@ -1,0 +1,30 @@
+uuid: 0f49a9cf-8b9f-4ebb-bb4f-dcfe6331a0b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.estudiante-convenios-docenc
+  module:
+    - system
+  theme:
+    - fucs
+id: estudianteconveniosdocencia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:estudiante-convenios-docenc'
+settings:
+  id: 'system_menu_block:estudiante-convenios-docenc'
+  label: 'Estudiante Convenios Docencia'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/apoyoalestudiante/convenio-docencia-servicio\r\n/estudiantes/apoyoalestudiante/convenio-docencia-servicio/*"

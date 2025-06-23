@@ -1,0 +1,31 @@
+uuid: 4cabde2a-21c4-4a53-8e7b-490574b7f671
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d789fcbe-28a9-4009-9373-45f44c69cd3e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: colaboradoresencuesta
+theme: fucs
+region: poll
+weight: 0
+provider: null
+plugin: 'block_content:d789fcbe-28a9-4009-9373-45f44c69cd3e'
+settings:
+  id: 'block_content:d789fcbe-28a9-4009-9373-45f44c69cd3e'
+  label: 'colaboradores encuesta'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /colaboradores

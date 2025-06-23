@@ -1,0 +1,30 @@
+uuid: 3e13db4e-2021-4036-8465-1ea7615de75e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-cirugia-mama
+  module:
+    - system
+  theme:
+    - fucs
+id: menucirugiamama
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-cirugia-mama'
+settings:
+  id: 'system_menu_block:menu-cirugia-mama'
+  label: menu-cirugia-mama
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/288\r\n/node/289\r\n/node/290\r\n/posgrado/sub-cirugia-general/cirugia-cardiovascular-mama-tejidos-blandos\r\n"

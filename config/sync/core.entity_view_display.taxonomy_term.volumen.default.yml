@@ -1,0 +1,44 @@
+uuid: 11309504-c83f-4bfd-a426-f53ceca465f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.volumen.field_ano
+    - field.field.taxonomy_term.volumen.field_volumen_imagen
+    - taxonomy.vocabulary.volumen
+  module:
+    - image
+    - text
+id: taxonomy_term.volumen.default
+targetEntityType: taxonomy_term
+bundle: volumen
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ano:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_volumen_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

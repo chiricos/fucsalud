@@ -1,0 +1,8 @@
+uuid: 4081dd04-408d-431c-b707-58481a54b972
+langcode: es
+status: true
+dependencies: {  }
+id: responsabilidad-social-p-so
+label: 'Responsabilidad Social P-Social'
+description: ''
+locked: false

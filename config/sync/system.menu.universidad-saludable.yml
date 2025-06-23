@@ -1,0 +1,8 @@
+uuid: 8e6dfd3e-b427-44c1-87f5-8ff34cac1b37
+langcode: es
+status: true
+dependencies: {  }
+id: universidad-saludable
+label: 'Universidad saludable'
+description: 'Universidad saludable'
+locked: false

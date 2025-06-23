@@ -1,0 +1,19 @@
+uuid: 04f30e0f-4e14-43a8-9feb-45ae5b4b68e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_acordion_cuerpo_14
+field_name: field_acordion_cuerpo_14
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

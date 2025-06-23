@@ -1,0 +1,31 @@
+uuid: 420e5081-5a52-4874-8f21-a17a569231bd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5eed767e-c29f-4fb5-8abc-b70755d5472d'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerdonaciones
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:5eed767e-c29f-4fb5-8abc-b70755d5472d'
+settings:
+  id: 'block_content:5eed767e-c29f-4fb5-8abc-b70755d5472d'
+  label: 'Banner donaciones'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/donaciones\r\n/donaciones-gracias-familia-San-Jose\r\n/donaciones-quiero-apoyar-a-un-valiente-de-la-salud\r\n/donaciones-salud-psico-emocional\r\n/donaciones-mensajes-gracias-familia-san-jose\r\n/donaciones-tienes-dudas"

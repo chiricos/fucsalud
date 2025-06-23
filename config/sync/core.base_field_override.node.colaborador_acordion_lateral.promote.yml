@@ -1,0 +1,22 @@
+uuid: 06dc16e3-d336-469d-9075-8e1face4d250
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colaborador_acordion_lateral
+id: node.colaborador_acordion_lateral.promote
+field_name: promote
+entity_type: node
+bundle: colaborador_acordion_lateral
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

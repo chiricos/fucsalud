@@ -1,0 +1,8 @@
+uuid: ac59d74b-2c6c-48a6-8ece-203b7afb4a04
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-ginecologia-o
+label: posgrado-menu-ginecologia-oncologica
+description: posgrado-menu-ginecologia-oncologica
+locked: false

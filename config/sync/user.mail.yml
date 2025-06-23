@@ -1,0 +1,30 @@
+_core:
+  default_config_hash: m4J3ROov32OEquRYGLbx3SpdDGuqx9l_zJtNvihqdCg
+langcode: es
+cancel_confirm:
+  subject: 'Solicitud de cancelación de cuenta para [user:display-name] en [site:name]'
+  body: "[user:display-name],\r\n\r\nUna petición para cancelar su cuenta ha sido realizada en [site:name].\r\n\r\nPuede ahora cancelar su cuenta en [site:url-brief] haciendo clic en este enlace o copiando y pegandolo en su navegador:\r\n\r\n[user:cancel-url]\r\n\r\nAVISO: La cancelación de su cuenta no es reversible.\r\n\r\nEste enlace caduca en un día y no ocurrirá nada si no se usa.\r\n\r\n--  Equipo de [site:name]"
+password_reset:
+  subject: 'Reemplazo de información de inicio de sesión para [user:display-name] en [site:name]'
+  body: "[user:display-name],\r\n\r\nUna petición para reestablecer la contraseña de su cuenta ha sido realizada en [site:name].\r\n\r\nAhora puede iniciar sesión haciendo clic en este enlace o copiándolo y pegándolo en su navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nEste enlace solo puede ser usado una vez para iniciar sesión y le llevará a una página donde puede establecer su contraseña. Caduca después de un día y nada ocurrirá si no se usa.\r\n\r\n--  El equipo de [site:name]"
+register_admin_created:
+  subject: 'Un administrador ha creado una cuenta para usted en [site:name]'
+  body: "[user:display-name],\r\n\r\nUn administrador del sitio en [site:name] ha creado una cuenta para usted. Puede ahora iniciar sesión haciendo clic en este enlace o copiando y pegándolo en su navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nEste enlace solo puede ser usado una vez para iniciar sesión y le conducirá a la página donde podrá establecer su contraseña.\r\n\r\nDespués de establecer su contraseña, será capaz de iniciar sesión en [site:login-url] en el futuro usando:\r\n\r\nNombre de usuario: [user:name]\r\nContraseña: Su contraseña\r\n\r\n--  Equipo de [site:name]"
+register_no_approval_required:
+  subject: 'Detalles de la cuenta para [user:display-name] en [site:name]'
+  body: "[user:display-name],\r\n\r\nGracias por registrarse en [site:name]. Puede ahora iniciar sesión haciendo clic en este enlace o copiando y pegandolo en su navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nEste enlace solo puede ser usado una vez para iniciar sesión y le conducirá a una página donde podrá establecer sus contraseña.\r\n\r\nDespués de establecer su contraseña, será capaz de iniciar sesión en [site:login-url] en el futuro usando:\r\n\r\nNombre de usuario: [user:name]\r\nContraseña: Su contraseña\r\n\r\n--  Equipo de [site:name]"
+register_pending_approval:
+  subject: 'Detalles de cuenta para [user:display-name] en [site:name] (pendiente por activar por el administrador)'
+  body: "[user:display-name],\r\n\r\nGracias por registrarse en el minisitio exclusivo para Colaboradores y Docentes de la página web de la FUCS.\r\n\r\nSu solicitud de activación de cuenta está en proceso de aprobación por el administrador de la página web. Una vez que haya sido aprobada, recibirá otro correo electrónico con información de ingreso y activación de contraseña y otros detalles.\r\n\r\n-- \r\nCordialmente\r\nMarcela Muñoz\r\n​Coordinadora de página web\r\nComunicaciones y Relaciones Públicas\r\nFundación Universitaria de Ciencias de la Salud - FUCS\r\nCelular: 3023394751\r\nE-mail:\_\_coordinacionweb@fucsalud.edu.co\_\r\nwww.fucsalud.edu.co\_\r\nBogotá D.C., Colombia"
+register_pending_approval_admin:
+  subject: 'Detalles de cuenta para [user:display-name] en [site:name] (pendiente por activar por el administrador)'
+  body: "[user:display-name] ha solicitado una cuenta.\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: 'Detalles de la cuenta [user:display-name] - minisitio Colaborador - Docente FUCS (aprobado)'
+  body: "[user:display-name],\r\n\r\nSu cuenta de ingreso al minisitio Colaborador - Docente de la página web de la FUCS ha sido activada.\r\n\r\nPor favor ingrese al siguiente enlace o copie y pegue en el navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nRecuerde que este enlace solo puede ser usado una vez. \r\n\r\nUna vez ingrese, de clic en el botón \"Iniciar sesión\"\r\n\r\nGenere una nueva contraseña y de clic en el botón \"Guardar\", y ahora ingrese al minisitio Colaborador o Docente  en el menú superior #SOY – Colaborador o Docente https://www.fucsalud.edu.co/colaboradores\r\n\r\nUsuario: [user:account-name]\r\n\r\nNota: recuerde cerrar sesión una vez finalice su consulta en el menú superior izquierdo (fondo color negro).\r\n\r\n--\r\nCordialmente\r\nMarcela Muñoz\r\n​Coordinadora de página web\r\nComunicaciones y Relaciones Públicas\r\nFundación Universitaria de Ciencias de la Salud - FUCS\r\nCelular: 3023394751\r\nE-mail:\_\_coordinacionweb@fucsalud.edu.co\_\r\nwww.fucsalud.edu.co\_\r\nBogotá D.C., Colombia"
+status_blocked:
+  subject: 'Detalles de la cuenta de [user:display-name] en [site:name] (bloqueada)'
+  body: "[user:display-name],\r\n\r\nSu cuenta en [site:name] ha sido bloqueada.\r\n\r\n--  El equipo de [site:name]"
+status_canceled:
+  subject: 'Detalles de cuenta para [user:display-name] en [site:name] (cancelado)'
+  body: "[user:display-name],\r\n\r\nSu cuenta en [site:name] ha sido cancelada.\r\n\r\n--  El equipo de [site:name]"

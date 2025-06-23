@@ -1,0 +1,19 @@
+uuid: 6f34928b-1a70-4986-a5b8-32e2c75e7a64
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_35
+    - node.type.acordion_lateral
+id: node.acordion_lateral.field_acordion_titulo_35
+field_name: field_acordion_titulo_35
+entity_type: node
+bundle: acordion_lateral
+label: 'acordion titulo 35'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

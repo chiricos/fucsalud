@@ -1,0 +1,30 @@
+uuid: 91fe185d-f0c7-47b8-9bdd-e50bfa9d188c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slider_block_colaboradores_
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__slider_block_colaboradores__block_1
+theme: fucs
+region: slider_page
+weight: -16
+provider: null
+plugin: 'views_block:slider_block_colaboradores_-block_1'
+settings:
+  id: 'views_block:slider_block_colaboradores_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /colaboradores

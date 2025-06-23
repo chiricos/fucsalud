@@ -1,0 +1,8 @@
+uuid: ea5a7660-394a-42a2-8e48-1ed34c9097f9
+langcode: es
+status: true
+dependencies: {  }
+id: menu-gerencia-de-la-seguridad-y-
+label: 'Menu Gerencia de la Seguridad y Salud en el Trabajo virtual'
+description: ''
+locked: false

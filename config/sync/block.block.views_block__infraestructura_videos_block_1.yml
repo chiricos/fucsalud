@@ -1,0 +1,30 @@
+uuid: 30df1582-e30a-4e11-be59-bca87f2e07e0
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.infraestructura_videos
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__infraestructura_videos_block_1
+theme: fucs
+region: video
+weight: 0
+provider: null
+plugin: 'views_block:infraestructura_videos-block_1'
+settings:
+  id: 'views_block:infraestructura_videos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /infraestructura

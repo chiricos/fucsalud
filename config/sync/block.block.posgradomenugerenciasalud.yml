@@ -1,0 +1,30 @@
+uuid: b0d9192f-fc07-4baf-9829-221e2bcda853
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-gerencia-salu
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenugerenciasalud
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-gerencia-salu'
+settings:
+  id: 'system_menu_block:posgrado-menu-gerencia-salu'
+  label: posgrado-menu-gerencia-salud
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/379\r\n/node/380\r\n/node/381\r\n/node/506\r\n/posgrado/general-gerencia-de-la-salud\r\n/posgrado/general-gerencia-de-la-salud-camposaccion"

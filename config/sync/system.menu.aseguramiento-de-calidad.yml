@@ -1,0 +1,8 @@
+uuid: ae8675f3-1cda-45e3-9c4f-c830ad9ab5ef
+langcode: es
+status: true
+dependencies: {  }
+id: aseguramiento-de-calidad
+label: 'Aseguramiento de calidad'
+description: ''
+locked: false

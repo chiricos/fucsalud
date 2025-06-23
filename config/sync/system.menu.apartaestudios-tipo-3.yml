@@ -1,0 +1,8 @@
+uuid: 9c1a017f-c6e1-4185-acfb-d35386736217
+langcode: es
+status: true
+dependencies: {  }
+id: apartaestudios-tipo-3
+label: 'Habitación Tipo 2'
+description: ''
+locked: false

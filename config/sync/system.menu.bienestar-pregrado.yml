@@ -1,0 +1,8 @@
+uuid: 1c0021e9-a62d-4408-898a-2c2d79beee97
+langcode: es
+status: true
+dependencies: {  }
+id: bienestar-pregrado
+label: bienestar-pregrado
+description: ''
+locked: false

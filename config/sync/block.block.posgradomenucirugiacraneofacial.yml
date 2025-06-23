@@ -1,0 +1,30 @@
+uuid: f72c302b-6551-42a0-904d-bfba187798b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-crane
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiacraneofacial
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-crane'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-crane'
+  label: posgrado-menu-cirugia-craneofacial
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/297\r\n/node/298\r\n/node/299\r\n/posgrado/cirugia-plastica-reconstructiva-y-estetica/presentacion-cirugia-craneofacial\r\n"

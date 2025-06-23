@@ -1,0 +1,30 @@
+uuid: d35fdc50-7b85-46f9-ad0b-c2ebf4058cef
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.comite-etica
+  module:
+    - system
+  theme:
+    - fucs
+id: comitedeetica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:comite-etica'
+settings:
+  id: 'system_menu_block:comite-etica'
+  label: 'Comite de etica'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/comite-de-etica-investigacion/*\r\n/comite-de-etica-investigacion\r\n/investigacion/nosotros/comites/comite-de-etica-investigacion/*\r\n/investigacion/nosotros/comites/comite-de-etica-investigacion\r\n/investigacion/nosotros/comites/comite-de-etica-investigacion/Facultad-Ciencias-del-Movimiento"

@@ -1,0 +1,18 @@
+uuid: 1f4d62f8-9a36-4091-b9fc-dee3f67596f8
+langcode: es
+status: true
+dependencies: {  }
+name: live
+label: Live
+triggers:
+  registration: registration
+  login: login
+  one-time-login: one-time-login
+  logout: logout
+destination_path: 'internal:/es/live-fucs-global-es'
+pages_type: 0
+pages: ''
+roles:
+  live: live
+weight: 0
+enabled: false

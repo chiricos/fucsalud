@@ -1,0 +1,30 @@
+uuid: 5fd6f14a-3961-4376-93c6-9dab77a31199
+langcode: es
+status: false
+dependencies:
+  config:
+    - webform.webform.agenda_tu_cita
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Agenda tu cita:'
+  label_display: visible
+  provider: webform
+  webform_id: agenda_tu_cita
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /home/explorando-en-la-fucs/Espacio-formacion-colegios

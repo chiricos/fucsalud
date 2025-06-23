@@ -1,0 +1,11 @@
+uuid: 0a902330-ffed-4f27-b93f-e6a8c3d014a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estudiantes_noticias
+id: node.estudiantes_noticias
+target_entity_type_id: node
+target_bundle: estudiantes_noticias
+default_langcode: site_default
+language_alterable: false

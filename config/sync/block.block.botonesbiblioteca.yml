@@ -1,0 +1,31 @@
+uuid: cbb739e0-9a94-4e55-a357-68b76511f6d7
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9c04aa52-6ad2-46f5-8ce4-5ad38bb042e0'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonesbiblioteca
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:9c04aa52-6ad2-46f5-8ce4-5ad38bb042e0'
+settings:
+  id: 'block_content:9c04aa52-6ad2-46f5-8ce4-5ad38bb042e0'
+  label: 'Botones biblioteca'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca

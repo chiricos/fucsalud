@@ -1,0 +1,30 @@
+uuid: ec9e700a-e0ca-4e9e-ab0f-93f56dac2984
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.preguntas-frecuentes
+  module:
+    - system
+  theme:
+    - fucs
+id: preguntasfrecuentes
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:preguntas-frecuentes'
+settings:
+  id: 'system_menu_block:preguntas-frecuentes'
+  label: 'Preguntas frecuentes'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/preguntas-frecuentes/aspirantes\r\n/preguntas-frecuentes/estudiantes\r\n/preguntas-frecuentes/egresados\r\n/preguntas-frecuentes/colaboradores"

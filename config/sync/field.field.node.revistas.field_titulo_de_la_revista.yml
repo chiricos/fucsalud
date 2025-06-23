@@ -1,0 +1,19 @@
+uuid: 33763432-0ca5-4222-aa31-f62ecf9f5cce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_de_la_revista
+    - node.type.revistas
+id: node.revistas.field_titulo_de_la_revista
+field_name: field_titulo_de_la_revista
+entity_type: node
+bundle: revistas
+label: 'Título de la revista'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

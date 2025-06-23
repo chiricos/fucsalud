@@ -1,0 +1,30 @@
+uuid: 58f6b517-7b8d-484a-a1f9-aca8cd386f7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.auditorios
+  module:
+    - system
+  theme:
+    - fucs
+id: auditorios
+theme: fucs
+region: sub_menu
+weight: -39
+provider: null
+plugin: 'system_menu_block:auditorios'
+settings:
+  id: 'system_menu_block:auditorios'
+  label: AUDITORIOS
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/auditorios/*'

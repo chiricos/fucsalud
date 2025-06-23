@@ -1,0 +1,11 @@
+uuid: 807058f6-a7f7-49a9-ac98-342ef0233d1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.posgrado
+id: node.posgrado
+target_entity_type_id: node
+target_bundle: posgrado
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 3a0f6aa5-60fb-446c-9eeb-68154155e2ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.continuada_noticias
+id: node.continuada_noticias
+target_entity_type_id: node
+target_bundle: continuada_noticias
+default_langcode: site_default
+language_alterable: false

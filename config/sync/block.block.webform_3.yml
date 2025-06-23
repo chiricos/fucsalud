@@ -1,0 +1,30 @@
+uuid: 2110cc38-683d-49ec-b4eb-ea0c334d57fb
+langcode: es
+status: false
+dependencies:
+  config:
+    - webform.webform.1ra_feria_u_salud_virtual
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: webform_3
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Feria U Salud'
+  label_display: '0'
+  provider: webform
+  webform_id: 1ra_feria_u_salud_virtual
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /home/noticias/2da-feria-U-Salud-virtual-FUCS

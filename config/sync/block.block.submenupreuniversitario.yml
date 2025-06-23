@@ -1,0 +1,31 @@
+uuid: 1a1edd95-5c43-49e3-bf9d-10fc0a003b69
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:80e9e5cb-4a60-4fa8-ba53-76fa5ff1c865'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: submenupreuniversitario
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:80e9e5cb-4a60-4fa8-ba53-76fa5ff1c865'
+settings:
+  id: 'block_content:80e9e5cb-4a60-4fa8-ba53-76fa5ff1c865'
+  label: 'sub menu pre universitario'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/preUniversitario\r\n/node/427\r\n/node/428\r\n/node/429\r\n/preuniversitario/calendario-de-admisiones\r\n/preuniversitario/informacion-general"

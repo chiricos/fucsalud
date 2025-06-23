@@ -1,0 +1,30 @@
+uuid: 8b8b655b-c777-4dfb-aed2-043c5303af07
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-especializacion-colopr
+  module:
+    - system
+  theme:
+    - fucs
+id: menuespecializacioncoloproctologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-especializacion-colopr'
+settings:
+  id: 'system_menu_block:menu-especializacion-colopr'
+  label: Menú-Especialización-Coloproctología
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/sub-cirugia-general/Coloproctologia\r\n/posgrado/sub-cirugia-general/Coloproctologia-Perfiles\r\n/posgrado/sub-cirugia-general/Coloproctologia-Plan-de-estudios\r\n/posgrado/sub-cirugia-general/Coloproctologia-Docentes"

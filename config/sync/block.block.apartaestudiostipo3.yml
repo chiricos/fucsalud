@@ -1,0 +1,30 @@
+uuid: b6ca1006-7629-4fe1-88d8-6f399c5e50e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.apartaestudios-tipo-3
+  module:
+    - system
+  theme:
+    - fucs
+id: apartaestudiostipo3
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:apartaestudios-tipo-3'
+settings:
+  id: 'system_menu_block:apartaestudios-tipo-3'
+  label: 'Acomodación sencilla con baño privado'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/apartaestudios/habitacion_tipo3\r\n/apartaestudios/habitacion_tipo3/*"

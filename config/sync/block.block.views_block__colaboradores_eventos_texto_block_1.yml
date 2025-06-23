@@ -1,0 +1,30 @@
+uuid: ddce1d53-086b-4f78-a693-66f3906aba16
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.colaboradores_eventos_texto
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__colaboradores_eventos_texto_block_1
+theme: fucs
+region: events
+weight: 3
+provider: null
+plugin: 'views_block:colaboradores_eventos_texto-block_1'
+settings:
+  id: 'views_block:colaboradores_eventos_texto-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /colaboradores

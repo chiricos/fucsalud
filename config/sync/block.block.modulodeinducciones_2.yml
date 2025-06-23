@@ -1,0 +1,318 @@
+uuid: a50f0613-6aeb-4dea-a930-955ebfbf4f0a
+langcode: es
+status: false
+dependencies:
+  module:
+    - fucs_form
+    - system
+  theme:
+    - fucs
+id: modulodeinducciones_2
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: fucs_form_block
+settings:
+  id: fucs_form_block
+  label: 'PROCESO INDUCCIONES 2025-1'
+  label_display: '0'
+  provider: fucs_form
+  configurations:
+    uuid: 40008b9a5380fcacce3976bf7c08af5b
+    title: 'Inducción institucional 2025-1'
+    min: '80'
+    timeout: '2700'
+    attempts: '9'
+    login:
+      name: 1
+      email: 1
+      course: 1
+      courses: 'Seleccionar,Administración de Servicios de Salud,Atención Prehospitalaria,Enfermería,Fisioterapia,Instrumentación Quirúrgica,Medicina,Nutrición y Dietética,Psicología,Premédico,Técnico Profesional en Procesos Administrativos en Salud,Gestión de Información en Salud,Citohistología, Radiología e Imágenes Diagnósticas, Regencia de Farmacia'
+    questions:
+      question0:
+        question: '¿Cuál es el nombre del Rector de la FUCS?'
+        answer: 'Dr. Sergio Parra Duarte'
+        type: multiple
+        optionA: 'Dr. Édgar Muñoz Vargas'
+        optionB: 'Dr. Darío Cadena Rey'
+        optionC: 'Dr. Sergio Parra Duarte'
+        optionD: 'Dr. Jorge Gómez Cusnir'
+        image: {  }
+        imageQuestion:
+          id: '11674'
+          name: lapregunta1.png
+          uri: 'public://formulario-fucs/lapregunta1.png'
+          urlTotal: /sites/default/files/formulario-fucs/lapregunta1.png
+      question1:
+        question: 'Es cierto que la FUCS ofrece apartaestudios diseñados especialmente para sus estudiantes?'
+        answer: Verdadero
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11675'
+          name: lapregunta2.png
+          uri: 'public://formulario-fucs/lapregunta2.png'
+          urlTotal: /sites/default/files/formulario-fucs/lapregunta2.png
+      question2:
+        question: 'Educación Continuada ofrece programas de pregrado y posgrado a la medida de los aspirantes.'
+        answer: Falso
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11676'
+          name: pregunta3_1.jpg
+          uri: 'public://formulario-fucs/pregunta3_1.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta3_1.jpg
+      question3:
+        question: 'El Sistema de Bibliotecas cuenta con 4 sedes para el servicio de los estudiantes. '
+        answer: Falso
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11677'
+          name: pregunta4_1.jpg
+          uri: 'public://formulario-fucs/pregunta4_1.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta4_1.jpg
+      question4:
+        question: '¿Cómo se llama el evento de semilleros en investigación en salud más importante del país que realiza la FUCS?'
+        answer: 'Encuentro Nacional de Semilleros de Investigación de Ciencias de la Salud.'
+        type: multiple
+        optionA: 'Encuentro Nacional de Semilleros de Investigación de Ciencias de la Salud.'
+        optionB: 'Jornada Académica de Semilleros.'
+        optionC: 'Contando lo que Investigamos.'
+        optionD: 'Investigando salud para el país.'
+        image: {  }
+        imageQuestion:
+          id: '11678'
+          name: pregunta5_1.jpg
+          uri: 'public://formulario-fucs/pregunta5_1.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta5_1.jpg
+      question5:
+        question: 'Proyección social cuenta con tres áreas las cuales son:'
+        answer: 'Salud comunitaria, responsabilidad social y extensión universitaria'
+        type: multiple
+        optionA: 'Bienestar, ayuda a la comunidad y recaudación de fondos'
+        optionB: 'Salud comunitaria, responsabilidad social y extensión universitaria'
+        optionC: 'Más ayudas, visitas a comunidad, voluntariado'
+        optionD: 'Sembrando Futuro, becados, súper colaborador FUCS'
+        image: {  }
+        imageQuestion:
+          id: '11679'
+          name: pregunta6_1.jpg
+          uri: 'public://formulario-fucs/pregunta6_1.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta6_1.jpg
+      question6:
+        question: 'El siguiente NO es un requisito para hacer movilidad internacional.'
+        answer: 'Viajar con otro compañero.'
+        type: multiple
+        optionA: 'Excelencia académica'
+        optionB: 'Aceptación por parte de la institución de destino'
+        optionC: 'Dominio del idioma'
+        optionD: 'Viajar con otro compañero.'
+        image: {  }
+        imageQuestion:
+          id: '11680'
+          name: pregunta7_2.jpg
+          uri: 'public://formulario-fucs/pregunta7_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta7_2.jpg
+      question7:
+        question: 'El Centro de Idiomas exige como requisito de grado saber dos idiomas, los cuales puede elegir del portafolio actual. ¿Falso o verdadero?'
+        answer: Falso
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11681'
+          name: pregunta8.png
+          uri: 'public://formulario-fucs/pregunta8.png'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta8.png
+      question8:
+        question: 'La FUCS cuenta con un proceso democrático para la elección de representantes en:'
+        answer: 'Consejo Superior, Consejo Académico, Consejo de Facultad.'
+        type: multiple
+        optionA: 'Consejo Superior, Consejo Académico, Consejo de Facultad.'
+        optionB: 'Representantes de curso, representantes de grupos deportivos, representantes de grupos culturales'
+        optionC: 'Representante de comité de bienvenida, representante de tutores, representante para electivas.'
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11682'
+          name: pregunta9_2.jpg
+          uri: 'public://formulario-fucs/pregunta9_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta9_2.jpg
+      question9:
+        question: 'La siguiente NO es una beca ofrecida por la FUCS'
+        answer: 'Beca por transferencia de una universidad del exterior.'
+        type: multiple
+        optionA: 'Beca auxilio por estudio socioeconómico'
+        optionB: 'Beca auxilio por rendimiento académico'
+        optionC: 'Beca auxilio para estudiantes que se destacan en actividades culturales, deportivas y de proyección social'
+        optionD: 'Beca por transferencia de una universidad del exterior.'
+        image: {  }
+        imageQuestion:
+          id: '11683'
+          name: pregunta10_2.jpg
+          uri: 'public://formulario-fucs/pregunta10_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta10_2.jpg
+      question10:
+        question: 'La FUCS cuenta con solo un gimnasio como zona de bienestar. '
+        answer: Falso
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11684'
+          name: pregunta11_2.jpg
+          uri: 'public://formulario-fucs/pregunta11_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta11_2.jpg
+      question11:
+        question: 'Si soy de otra ciudad o país, Orientación Universitaria brinda un programa para conocer Bogotá, ¿Cómo se llama esa actividad?'
+        answer: 'Conozca a Bogotá.'
+        type: multiple
+        optionA: 'Recorre Bogotá.'
+        optionB: 'No te pierdas Bogotá.'
+        optionC: 'Conozca a Bogotá.'
+        optionD: 'De Safari por Bogotá.'
+        image: {  }
+        imageQuestion:
+          id: '11685'
+          name: pregunta12.jpg
+          uri: 'public://formulario-fucs/pregunta12.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta12.jpg
+      question12:
+        question: 'Si tengo un incidente de salud, debo acudir a:'
+        answer: 'Universidad Saludable.'
+        type: multiple
+        optionA: 'Universidad Saludable.'
+        optionB: 'A las urgencias de mi EPS.'
+        optionC: 'Bienestar Universitario.'
+        optionD: 'Admisiones, Registro y Control.'
+        image: {  }
+        imageQuestion:
+          id: '11686'
+          name: pregunta13_1.jpg
+          uri: 'public://formulario-fucs/pregunta13_1.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta13_1.jpg
+      question13:
+        question: '¿Cuál fue el segundo centro asistencial, que adquirió la FUCS para la formación de sus profesionales?'
+        answer: 'Hospital Infantil Universitario de San José'
+        type: multiple
+        optionA: 'Clínica Medicall Duarte'
+        optionB: 'Hospital San José'
+        optionC: 'Clínica Los Nogales'
+        optionD: 'Hospital Infantil Universitario de San José'
+        image: {  }
+        imageQuestion:
+          id: '11687'
+          name: pregunta14_2.jpg
+          uri: 'public://formulario-fucs/pregunta14_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta14_2.jpg
+      question14:
+        question: 'Según el reglamento estudiantil, se pierde la calidad de estudiante, cuando:'
+        answer: 'Todas las anteriores.'
+        type: multiple
+        optionA: 'El estudiante finaliza el programa académico. '
+        optionB: 'No se hace uso del derecho de renovación de matrícula, en los plazos señalados por la Institución.'
+        optionC: 'El estudiante a solicitud propia, se retira del periodo académico para el cual se matriculó. '
+        optionD: 'Todas las anteriores.'
+        image: {  }
+        imageQuestion:
+          id: '11688'
+          name: pregunta15_2.jpg
+          uri: 'public://formulario-fucs/pregunta15_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta15_2.jpg
+      question15:
+        question: 'De acuerdo a la historia, ¿Cuál es la fecha de apertura del Hospital de San José?'
+        answer: 'El 8 de febrero de 1925'
+        type: multiple
+        optionA: 'El 8 de febrero de 1925'
+        optionB: 'El 14 de marzo de 1905'
+        optionC: 'El 16 de agosto de 2006'
+        optionD: 'El 2 de julio de 2008'
+        image: {  }
+        imageQuestion:
+          id: '11689'
+          name: pregunta16_2.jpg
+          uri: 'public://formulario-fucs/pregunta16_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta16_2.jpg
+      question16:
+        question: 'El siguiente NO es un laboratorio de prácticas de la FUCS.'
+        answer: 'Laboratorio de vida animal.'
+        type: multiple
+        optionA: 'Laboratorio de histología'
+        optionB: 'Laboratorio de psicología.'
+        optionC: 'Laboratorio de vida animal.'
+        optionD: 'Laboratorio de microbiología.'
+        image: {  }
+        imageQuestion:
+          id: '11690'
+          name: pregunta17_2.jpg
+          uri: 'public://formulario-fucs/pregunta17_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta17_2.jpg
+      question17:
+        question: 'La División de Investigaciones desarrolla 4 Jornadas de Investigación al año, 2 para estudiantes pregrado y 2 para estudiantes de posgrado.'
+        answer: Verdadero
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11691'
+          name: pregunta18_2.jpg
+          uri: 'public://formulario-fucs/pregunta18_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta18_2.jpg
+      question18:
+        question: 'El Hospital de San José, tiene una capaci¬dad instalada de 329 camas y es visitado diariamente por cerca de 4000 usuarios, entre pacientes y familiares.'
+        answer: Verdadero
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '11692'
+          name: pregunta19_2.jpg
+          uri: 'public://formulario-fucs/pregunta19_2.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta19_2.jpg
+      question19:
+        question: 'El Proyecto Educativo Institucional (PEI) constituye dentro de la institución el elemento orientador de la administración y gestión de los programas y un aspecto importante dentro de los procesos de aseguramiento de la calidad.'
+        answer: Verdadero
+        type: multiple
+        optionA: Falso
+        optionB: Verdadero
+        optionC: ''
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '9454'
+          name: pregunta22_0.jpg
+          uri: 'public://formulario-fucs/pregunta22_0_0.jpg'
+          urlTotal: /sites/default/files/formulario-fucs/pregunta22_0_0.jpg
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /induccion

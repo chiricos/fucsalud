@@ -1,0 +1,30 @@
+uuid: 2a1d58e9-746c-44ce-a49b-275b9c637a8d
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_cursos_imagen
+field_name: field_cursos_imagen
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: 00178fa1-4593-4de3-b2f0-01238c181f34
+    alt: ''
+    title: ''
+    width: 483
+    height: 181
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

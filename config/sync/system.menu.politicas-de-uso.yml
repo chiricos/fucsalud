@@ -1,0 +1,8 @@
+uuid: b25f43b5-b054-4d91-a45f-bbc6c21a09b2
+langcode: es
+status: true
+dependencies: {  }
+id: politicas-de-uso
+label: 'POLITICAS DE USO'
+description: ''
+locked: false

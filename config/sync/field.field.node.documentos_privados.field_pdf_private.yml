@@ -1,0 +1,27 @@
+uuid: d207b611-6750-4c9b-a295-f4f385bacee2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf_private
+    - node.type.documentos_privados
+  module:
+    - file
+id: node.documentos_privados.field_pdf_private
+field_name: field_pdf_private
+entity_type: node
+bundle: documentos_privados
+label: pdf_private
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

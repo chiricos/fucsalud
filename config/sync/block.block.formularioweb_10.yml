@@ -1,0 +1,28 @@
+uuid: d4fba579-450e-4bae-925c-5ac044a8dc6a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_10
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Solicitud Asesorías'
+  label_display: '0'
+  provider: webform
+  webform_id: solicitud_asesorias
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/solicitud-asesorias

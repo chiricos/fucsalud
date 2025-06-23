@@ -1,0 +1,11 @@
+uuid: 645d8192-8b25-4cfd-8ab6-efd428b209ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticias_facultad_ciencias
+id: node.noticias_facultad_ciencias
+target_entity_type_id: node
+target_bundle: noticias_facultad_ciencias
+default_langcode: site_default
+language_alterable: false

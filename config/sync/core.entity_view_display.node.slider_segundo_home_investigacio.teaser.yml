@@ -1,0 +1,37 @@
+uuid: a87323b1-0b48-4c6b-8c13-4a8548d9936f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_segundo_home_investigacio.body
+    - field.field.node.slider_segundo_home_investigacio.field_link
+    - field.field.node.slider_segundo_home_investigacio.field_meta_tags
+    - field.field.node.slider_segundo_home_investigacio.field_slider_1400x600_
+    - node.type.slider_segundo_home_investigacio
+  module:
+    - text
+    - user
+id: node.slider_segundo_home_investigacio.teaser
+targetEntityType: node
+bundle: slider_segundo_home_investigacio
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

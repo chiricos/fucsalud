@@ -1,0 +1,11 @@
+uuid: 8c0daf78-db5c-4dbf-92b2-052022e89cb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.semilleros_patrocinadores
+id: node.semilleros_patrocinadores
+target_entity_type_id: node
+target_bundle: semilleros_patrocinadores
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,8 @@
+uuid: 10c22560-70f5-4966-90ef-b83c408709a7
+langcode: es
+status: true
+dependencies: {  }
+id: museo
+label: Museo
+description: ''
+locked: false

@@ -1,0 +1,17 @@
+uuid: efbc917f-cc6a-4672-895e-9207605c02e8
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: articulo
+type: articulo
+description: 'articulo de los volumenes de revista repertorio'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,31 @@
+uuid: 0a21db00-672d-4c27-b67b-5be992be9480
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf15a2b5-efec-41d2-b598-2a0c389f7b4f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: calendarioaspirantes
+theme: fucs
+region: calendar
+weight: 0
+provider: null
+plugin: 'block_content:bf15a2b5-efec-41d2-b598-2a0c389f7b4f'
+settings:
+  id: 'block_content:bf15a2b5-efec-41d2-b598-2a0c389f7b4f'
+  label: 'Calendario aspirantes'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /aspirantes

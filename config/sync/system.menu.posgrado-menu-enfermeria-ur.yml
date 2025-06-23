@@ -1,0 +1,8 @@
+uuid: b126f1c7-29c6-4490-8053-ca376ea00f65
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-enfermeria-ur
+label: posgrado-menu-enfermeria-urgencias
+description: posgrado-menu-enfermeria-urgencias
+locked: false

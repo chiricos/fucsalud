@@ -1,0 +1,31 @@
+uuid: 20eba00a-5d5a-4645-8426-92a1c8cb15d6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a5d639c5-9da5-40b6-acf4-5b7871f555b4'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonesbienestar
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:a5d639c5-9da5-40b6-acf4-5b7871f555b4'
+settings:
+  id: 'block_content:a5d639c5-9da5-40b6-acf4-5b7871f555b4'
+  label: 'Botones bienestar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/bienestar*'

@@ -1,0 +1,11 @@
+uuid: 815dd804-0242-485d-bdf0-6d5bf6bf7dcc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_colaboradores
+id: node.slider_colaboradores
+target_entity_type_id: node
+target_bundle: slider_colaboradores
+default_langcode: site_default
+language_alterable: false

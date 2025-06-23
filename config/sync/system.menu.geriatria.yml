@@ -1,0 +1,8 @@
+uuid: 7ab3248f-a22f-404c-99b8-ade47d87df88
+langcode: es
+status: true
+dependencies: {  }
+id: geriatria
+label: Geriatría
+description: Geriatría
+locked: false

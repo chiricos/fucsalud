@@ -1,0 +1,31 @@
+uuid: c3e92947-1fdb-4805-8407-07e96ca9fb6b
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7315bfcf-a405-4736-aaed-b0656b2b19fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: chateducacioncontinuada
+theme: fucs
+region: first_footer
+weight: 0
+provider: null
+plugin: 'block_content:7315bfcf-a405-4736-aaed-b0656b2b19fa'
+settings:
+  id: 'block_content:7315bfcf-a405-4736-aaed-b0656b2b19fa'
+  label: 'chat educacion continuada'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/continuada/*\r\n/continuada"

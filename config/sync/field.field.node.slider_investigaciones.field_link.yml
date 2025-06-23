@@ -1,0 +1,19 @@
+uuid: 32704367-d0f2-400b-8861-0980680f9855
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_investigaciones
+id: node.slider_investigaciones.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_investigaciones
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

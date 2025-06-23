@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: 3jAdehcNx4uO4L0m3G6YlWmkulstfN_jVKigkEtDB6E
+langcode: es
+include_invalid_paths: false
+excluded_paths: ''
+replaced_titles: ''
+custom_paths: ''
+include_home_segment: true
+home_segment_title: Inicio
+home_segment_keep: false
+include_title_segment: true
+title_segment_as_link: false
+language_path_prefix_as_segment: false
+add_structured_data_json_ld: false
+capitalizator_ignored_words:
+  - null
+capitalizator_forced_words:
+  - {  }
+capitalizator_forced_words_case_sensitivity: false
+capitalizator_forced_words_first_letter: false
+follow_redirects: true

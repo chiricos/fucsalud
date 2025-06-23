@@ -1,0 +1,30 @@
+uuid: e455f1ae-05c0-4555-92c8-1ee6c82ae428
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.estudiantes_eventos_texto
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__estudiantes_eventos_texto_block_1
+theme: fucs
+region: events
+weight: 4
+provider: null
+plugin: 'views_block:estudiantes_eventos_texto-block_1'
+settings:
+  id: 'views_block:estudiantes_eventos_texto-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: '5'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes\r\n/bienestar\r\n/internacionalizacion"

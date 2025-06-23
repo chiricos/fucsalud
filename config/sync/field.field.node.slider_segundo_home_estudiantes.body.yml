@@ -1,0 +1,23 @@
+uuid: a8420ea0-d4ad-4b55-9637-ff88f62ec224
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slider_segundo_home_estudiantes
+  module:
+    - text
+id: node.slider_segundo_home_estudiantes.body
+field_name: body
+entity_type: node
+bundle: slider_segundo_home_estudiantes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

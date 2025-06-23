@@ -1,0 +1,4 @@
+google:
+  clientId: 1011271420997-v2bthc31efoembca4r4rpsi81tlp333h.apps.googleusercontent.com
+  clientSecret: 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
+  roles: 'colaboradores,biblioteca,administrador'

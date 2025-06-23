@@ -1,0 +1,21 @@
+uuid: b469a3ae-ec1a-4820-b0a4-b725f0a799f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuerpo
+    - node.type.live
+  module:
+    - text
+id: node.live.field_cuerpo
+field_name: field_cuerpo
+entity_type: node
+bundle: live
+label: Cuerpo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

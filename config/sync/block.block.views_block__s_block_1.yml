@@ -1,0 +1,30 @@
+uuid: e1bb4bd1-07dd-4a97-a772-7842319cd5f3
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.s
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__s_block_1
+theme: fucs
+region: news
+weight: 1
+provider: null
+plugin: 'views_block:s-block_1'
+settings:
+  id: 'views_block:s-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /semilleros/noticias

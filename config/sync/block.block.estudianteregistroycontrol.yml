@@ -1,0 +1,30 @@
+uuid: 4d27fa4c-a894-4679-8a81-bf627fa5f57a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.estudiante-registro-y-contr
+  module:
+    - system
+  theme:
+    - fucs
+id: estudianteregistroycontrol
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:estudiante-registro-y-contr'
+settings:
+  id: 'system_menu_block:estudiante-registro-y-contr'
+  label: 'estudiante registro y control'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/registro-y-control/certificaciones\r\n/estudiantes/registro-y-control/carnetizacion\r\n/estudiantes/registro-y-control/cae\r\n/estudiantes/registro-y-control/preguntas\r\n/estudiantes/registro-y-control/proceso-matriculas-estudiantes-antiguos\r\n/estudiantes/registro-y-control/proceso-matriculas-estudiantes-nuevos\r\n/estudiantes/registro-y-control/solicitud-de-grado"

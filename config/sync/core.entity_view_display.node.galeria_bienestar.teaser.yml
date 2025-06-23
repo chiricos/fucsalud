@@ -1,0 +1,25 @@
+uuid: e3905983-314f-472f-abd8-e1b7666486f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galeria_bienestar.field_imagen_bienestar
+    - field.field.node.galeria_bienestar.field_meta_tags
+    - node.type.galeria_bienestar
+  module:
+    - user
+id: node.galeria_bienestar.teaser
+targetEntityType: node
+bundle: galeria_bienestar
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen_bienestar: true
+  field_meta_tags: true
+  langcode: true

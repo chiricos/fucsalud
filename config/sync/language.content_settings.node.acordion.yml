@@ -1,0 +1,11 @@
+uuid: 3d652391-f90f-4b85-b84b-c9da07f5de78
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.acordion
+id: node.acordion
+target_entity_type_id: node
+target_bundle: acordion
+default_langcode: site_default
+language_alterable: false

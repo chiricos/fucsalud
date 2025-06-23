@@ -1,0 +1,8 @@
+uuid: 8b32712a-44da-49ba-915e-6a116d017172
+langcode: es
+status: true
+dependencies: {  }
+id: pregrado-menu-enfermeria
+label: pregrado-menu-enfermeria
+description: pregrado-menu-enfermeria
+locked: false

@@ -1,0 +1,11 @@
+uuid: 6c328bd6-0f5b-4b32-958c-9414fc969012
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colaboradores_noticias
+id: node.colaboradores_noticias
+target_entity_type_id: node
+target_bundle: colaboradores_noticias
+default_langcode: site_default
+language_alterable: false

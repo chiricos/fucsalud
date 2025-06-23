@@ -1,0 +1,24 @@
+uuid: 22c8a71a-358b-4e6a-99da-dd4d696f23bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bie_fecha
+    - node.type.bienestar_eventos
+  module:
+    - datetime
+id: node.bienestar_eventos.field_bie_fecha
+field_name: field_bie_fecha
+entity_type: node
+bundle: bienestar_eventos
+label: 'bie fecha'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

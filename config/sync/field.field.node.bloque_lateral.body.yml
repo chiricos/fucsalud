@@ -1,0 +1,23 @@
+uuid: ccd5f4dc-3573-47e2-a3c5-38be4b1bfa9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bloque_lateral
+  module:
+    - text
+id: node.bloque_lateral.body
+field_name: body
+entity_type: node
+bundle: bloque_lateral
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

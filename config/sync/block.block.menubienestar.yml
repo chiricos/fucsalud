@@ -1,0 +1,31 @@
+uuid: f59dfdc4-2927-475b-a50f-0083def51d93
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d4b2d4af-0061-4ad1-9aa0-55ed042a933a'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menubienestar
+theme: fucs
+region: submenu_page
+weight: -29
+provider: null
+plugin: 'block_content:d4b2d4af-0061-4ad1-9aa0-55ed042a933a'
+settings:
+  id: 'block_content:d4b2d4af-0061-4ad1-9aa0-55ed042a933a'
+  label: 'Menu bienestar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/bienestar\r\n/bienestar/*\r\n/noticias-bienestar\r\n/noticias-bienestar/*\r\n/bienestar-eventos\r\n/bienestar-eventos/*"

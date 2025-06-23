@@ -1,0 +1,30 @@
+uuid: 26b951ac-05b6-49cc-9b0e-a6163176b3c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: webform
+theme: fucs
+region: form_modal
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Reserva Sala Digital o Auditorio'
+  label_display: visible
+  provider: webform
+  webform_id: contact
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca\r\n/biblioteca/*"

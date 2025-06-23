@@ -1,0 +1,19 @@
+uuid: 9c80c0d0-7889-4410-8e97-2202b499c025
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_bienestar
+id: node.slider_bienestar.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_bienestar
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

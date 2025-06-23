@@ -1,0 +1,30 @@
+uuid: 78fc40bb-ca47-4455-a731-ccae5570c98b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-hemodinamia-c
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuhemodinamiacardiologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-hemodinamia-c'
+settings:
+  id: 'system_menu_block:posgrado-menu-hemodinamia-c'
+  label: posgrado-menu-hemodinamia-cardiologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/320\r\n/posgrado/hemodinamia-y-cardiologia-intervencionista\r\n/posgrado/hemodinamia-y-cardiologia-intervencionista-docentes\r\n/posgrado/hemodinamia-y-cardiologia-intervencionista-perfiles"

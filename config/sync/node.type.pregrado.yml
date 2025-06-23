@@ -1,0 +1,17 @@
+uuid: 7f6b7822-ec57-4ec2-ba55-6e88349c1442
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: pregrado
+type: pregrado
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

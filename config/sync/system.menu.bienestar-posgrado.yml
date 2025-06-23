@@ -1,0 +1,8 @@
+uuid: 93a293d7-c40d-4a7d-b79c-01cb8371496f
+langcode: es
+status: true
+dependencies: {  }
+id: bienestar-posgrado
+label: 'Bienestar posgrado'
+description: ''
+locked: false

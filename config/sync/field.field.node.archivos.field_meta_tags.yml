@@ -1,0 +1,21 @@
+uuid: 8e12d7c3-2959-45c5-a4b6-ed3df46f3926
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.archivos
+  module:
+    - metatag
+id: node.archivos.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: archivos
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,8 @@
+uuid: b1ef2996-e9ae-4cb8-af2a-c165f898099f
+langcode: es
+status: true
+dependencies: {  }
+id: colaboradores-documentos
+label: 'colaboradores documentos'
+description: ''
+locked: false

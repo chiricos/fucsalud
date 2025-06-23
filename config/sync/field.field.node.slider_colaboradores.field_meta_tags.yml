@@ -1,0 +1,21 @@
+uuid: b5f286cb-1d75-4e9b-a2e4-62134faae2c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.slider_colaboradores
+  module:
+    - metatag
+id: node.slider_colaboradores.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: slider_colaboradores
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

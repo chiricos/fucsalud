@@ -1,0 +1,8 @@
+uuid: c82043b7-8f3f-4e47-9191-ee4b3d32a44e
+langcode: es
+status: true
+dependencies: {  }
+id: estudiante-e-learning
+label: 'Estudiante Apoyo al estudiante.'
+description: 'estudiante Apoyo al estudiante.'
+locked: false

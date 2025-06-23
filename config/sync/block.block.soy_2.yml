@@ -1,0 +1,25 @@
+uuid: cd51f059-f84d-4e56-aeaf-8eb594144d5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.soy
+  module:
+    - system
+  theme:
+    - fucs
+id: soy_2
+theme: fucs
+region: soy_header
+weight: 0
+provider: null
+plugin: 'system_menu_block:soy'
+settings:
+  id: 'system_menu_block:soy'
+  label: soy
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

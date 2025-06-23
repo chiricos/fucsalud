@@ -1,0 +1,21 @@
+uuid: 87edaf01-32d1-4f46-a1f6-8edb44d71222
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.slider_segundo_home_estudiantes
+  module:
+    - metatag
+id: node.slider_segundo_home_estudiantes.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: slider_segundo_home_estudiantes
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

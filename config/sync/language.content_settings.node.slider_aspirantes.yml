@@ -1,0 +1,11 @@
+uuid: 99c149b5-195d-4911-b1dc-e96ba264b5d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_aspirantes
+id: node.slider_aspirantes
+target_entity_type_id: node
+target_bundle: slider_aspirantes
+default_langcode: site_default
+language_alterable: false

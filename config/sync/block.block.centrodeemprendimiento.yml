@@ -1,0 +1,30 @@
+uuid: 61631f9f-862c-4060-ad85-f48e07d24c9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.centro-de-emprendimiento
+  module:
+    - system
+  theme:
+    - fucs
+id: centrodeemprendimiento
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:centro-de-emprendimiento'
+settings:
+  id: 'system_menu_block:centro-de-emprendimiento'
+  label: 'Centro de emprendimiento'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/centro-de-emprendimiento/*\r\n/estudiantes/formulario-inscripcion-actividades\r\n/estudiantes/centro-de-emprendimiento"

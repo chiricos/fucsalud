@@ -1,0 +1,23 @@
+uuid: 0da2f7cc-d98f-4214-8086-9f6807294624
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_orden
+    - taxonomy.vocabulary.servicios
+id: taxonomy_term.servicios.field_orden
+field_name: field_orden
+entity_type: taxonomy_term
+bundle: servicios
+label: orden
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

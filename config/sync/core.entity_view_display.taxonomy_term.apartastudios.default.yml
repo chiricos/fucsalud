@@ -1,0 +1,35 @@
+uuid: f1d2b0a7-0731-43dc-be81-6b32b314d19d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.apartastudios.field_img_servicios
+    - taxonomy.vocabulary.apartastudios
+  module:
+    - image
+    - text
+id: taxonomy_term.apartastudios.default
+targetEntityType: taxonomy_term
+bundle: apartastudios
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_img_servicios:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

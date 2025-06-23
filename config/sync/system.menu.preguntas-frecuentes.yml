@@ -1,0 +1,8 @@
+uuid: 830e90ef-165d-4ffa-a1e0-0b8bb0594c76
+langcode: es
+status: true
+dependencies: {  }
+id: preguntas-frecuentes
+label: 'Preguntas frecuentes'
+description: 'Preguntas frecuentes'
+locked: false

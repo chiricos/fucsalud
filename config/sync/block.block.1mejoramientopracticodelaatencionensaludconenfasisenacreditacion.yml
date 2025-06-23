@@ -1,0 +1,31 @@
+uuid: 445aa104-4ad9-44c5-8a88-3f54decc01f3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3e8db613-01ea-4ae5-8945-d3c2644b5dca'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: 1mejoramientopracticodelaatencionensaludconenfasisenacreditacion
+theme: fucs
+region: pregrado_contenido_1
+weight: 8
+provider: null
+plugin: 'block_content:3e8db613-01ea-4ae5-8945-d3c2644b5dca'
+settings:
+  id: 'block_content:3e8db613-01ea-4ae5-8945-d3c2644b5dca'
+  label: 'Posgrado contenido 1 Mejoramiento Práctico de la Atención en Salud con Énfasis en Acreditación'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-administrativos/atencion-en-salud-acreditacion

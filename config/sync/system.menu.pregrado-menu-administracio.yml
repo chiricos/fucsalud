@@ -1,0 +1,8 @@
+uuid: b4333fc6-c5cc-41e1-8848-4bf89373b795
+langcode: es
+status: true
+dependencies: {  }
+id: pregrado-menu-administracio
+label: pregrado-menu-administracion
+description: pregrado-menu-administracion
+locked: false

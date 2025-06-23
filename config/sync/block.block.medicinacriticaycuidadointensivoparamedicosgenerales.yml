@@ -1,0 +1,30 @@
+uuid: c5e13217-73ea-43d4-bf12-cf0a01701518
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.medicina-critica-y-cuidado-
+  module:
+    - system
+  theme:
+    - fucs
+id: medicinacriticaycuidadointensivoparamedicosgenerales
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:medicina-critica-y-cuidado-'
+settings:
+  id: 'system_menu_block:medicina-critica-y-cuidado-'
+  label: 'MEDICINA CRÍTICA Y CUIDADO INTENSIVO (para médicos generales)'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/medicina-critica-y-cuidado-intensivo-para-medicos\r\n/posgrado/medicina-critica-y-cuidado-intensivo-para-medicos/Campos-de-accion\r\n/posgrado/medicina-critica-y-cuidado-intensivo-para-medicos/Plan-de-estudios\r\n/posgrado/medicina-critica-y-cuidado-intensivo-para-medicos/Por-que-estudiar-esta-especializacion-FUCS\r\n/posgrado/medicina-critica-y-cuidado-intensivo-para-medicos/Docentes"

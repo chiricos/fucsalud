@@ -1,0 +1,17 @@
+uuid: 465f9f70-4e1c-4283-8af4-a968e9955cda
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'bienestar videos'
+type: bienestar_videos
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

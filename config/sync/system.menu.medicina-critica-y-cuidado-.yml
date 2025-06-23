@@ -1,0 +1,8 @@
+uuid: 4479d2fb-7271-4d54-b55e-c6e510164aa5
+langcode: es
+status: true
+dependencies: {  }
+id: medicina-critica-y-cuidado-
+label: 'MEDICINA CRÍTICA Y CUIDADO INTENSIVO (para médicos generales)'
+description: 'MEDICINA CRÍTICA Y CUIDADO INTENSIVO (para médicos generales)'
+locked: false

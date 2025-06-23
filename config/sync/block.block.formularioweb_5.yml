@@ -1,0 +1,28 @@
+uuid: 5b7c4d87-560e-4bc1-9ed2-5fcf008f29c4
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_5
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario busqueda de informacion o bibliografias'
+  label_display: '0'
+  provider: webform
+  webform_id: busquedas_de_informacion_o_bibli
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/formulario-busquedas-de-informacion-o-bibliograficas

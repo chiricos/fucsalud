@@ -1,0 +1,21 @@
+uuid: 02ab0054-0521-4818-b47d-ede9c000d251
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspirantes_admisiones
+    - node.type.estudiantes_eventos
+  module:
+    - datetime
+id: node.estudiantes_eventos.field_aspirantes_admisiones
+field_name: field_aspirantes_admisiones
+entity_type: node
+bundle: estudiantes_eventos
+label: aspirantes_admisiones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

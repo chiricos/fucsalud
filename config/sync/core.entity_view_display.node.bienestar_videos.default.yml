@@ -1,0 +1,38 @@
+uuid: 043a63bf-628e-4680-8af9-1d5cd2e2606b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.bienestar_videos.body
+    - field.field.node.bienestar_videos.field_meta_tags
+    - node.type.bienestar_videos
+  module:
+    - metatag
+    - text
+    - user
+id: node.bienestar_videos.default
+targetEntityType: node
+bundle: bienestar_videos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,17 @@
+uuid: 4a1280d4-4cde-4221-b487-108d64563050
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: tienda
+type: tienda
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

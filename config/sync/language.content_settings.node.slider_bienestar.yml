@@ -1,0 +1,11 @@
+uuid: d7ca44f1-906d-48e0-91ed-c59216ad73fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_bienestar
+id: node.slider_bienestar
+target_entity_type_id: node
+target_bundle: slider_bienestar
+default_langcode: site_default
+language_alterable: false

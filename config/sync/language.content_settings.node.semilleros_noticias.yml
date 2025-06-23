@@ -1,0 +1,11 @@
+uuid: 99f10e3b-3bd8-4044-9697-18adb6e3bff8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.semilleros_noticias
+id: node.semilleros_noticias
+target_entity_type_id: node
+target_bundle: semilleros_noticias
+default_langcode: site_default
+language_alterable: false

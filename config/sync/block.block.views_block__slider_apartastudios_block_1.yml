@@ -1,0 +1,30 @@
+uuid: d668e0cd-e6a7-4574-ba8f-45a7d72c23b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slider_apartastudios
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__slider_apartastudios_block_1
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'views_block:slider_apartastudios-block_1'
+settings:
+  id: 'views_block:slider_apartastudios-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/apartaestudios\r\n"

@@ -1,0 +1,30 @@
+uuid: 07258c4d-c03b-49bc-b3a0-cd6c69ad99d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.calendario-de-admisiones
+  module:
+    - system
+  theme:
+    - fucs
+id: calendariodeadmisiones
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:calendario-de-admisiones'
+settings:
+  id: 'system_menu_block:calendario-de-admisiones'
+  label: 'Calendario de admisiones'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/aspirantes/calendario-de-admisiones/*'

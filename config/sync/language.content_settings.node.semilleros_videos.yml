@@ -1,0 +1,11 @@
+uuid: 96946e01-4569-41cf-a219-5868283d2ab3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.semilleros_videos
+id: node.semilleros_videos
+target_entity_type_id: node
+target_bundle: semilleros_videos
+default_langcode: site_default
+language_alterable: false

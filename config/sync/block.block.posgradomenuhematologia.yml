@@ -1,0 +1,30 @@
+uuid: d6c5578e-44f6-4515-9fd6-10af64631b56
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-hematologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuhematologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-hematologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-hematologia'
+  label: posgrado-menu-hematologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/388\r\n/node/389\r\n/node/390\r\n/posgrado/sub-medicina-interna/hematologia"

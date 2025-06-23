@@ -1,0 +1,23 @@
+uuid: 66311eed-2641-4d50-8985-d3e55c49a5da
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slider_biblioteca
+  module:
+    - text
+id: node.slider_biblioteca.body
+field_name: body
+entity_type: node
+bundle: slider_biblioteca
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 85b025a2-70cc-404b-89be-8dcba38680bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.volumen
+  module:
+    - text
+id: node.volumen.body
+field_name: body
+entity_type: node
+bundle: volumen
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

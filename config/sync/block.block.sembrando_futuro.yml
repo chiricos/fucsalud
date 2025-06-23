@@ -1,0 +1,29 @@
+uuid: 6a68c446-4d9b-46c3-b2f4-7f52e5c309c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.sembrando-futuro
+  module:
+    - system
+  theme:
+    - fucs
+id: sembrando_futuro
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:sembrando-futuro'
+settings:
+  id: 'system_menu_block:sembrando-futuro'
+  label: sembrando_futuro
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bienestar/becas-sembrando-futuro\r\n/bienestar/sembrando-futuro\r\n/bienestar/cena-sembrando-futuro\r\n/bienestar/donaciones-sembrando-futuro\r\n/bienestar/aliados-sembrando-futuro"

@@ -1,0 +1,8 @@
+uuid: 01a47b63-d1f7-4650-b024-b7c59304e9fe
+langcode: es
+status: true
+dependencies: {  }
+id: egresados-talent-orange
+label: 'Egresados talent Orange'
+description: ''
+locked: false

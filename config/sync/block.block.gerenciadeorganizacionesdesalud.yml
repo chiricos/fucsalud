@@ -1,0 +1,30 @@
+uuid: d4236bf7-3059-4423-8738-afe55655bf0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.gerencia-de-organizaciones-
+  module:
+    - system
+  theme:
+    - fucs
+id: gerenciadeorganizacionesdesalud
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:gerencia-de-organizaciones-'
+settings:
+  id: 'system_menu_block:gerencia-de-organizaciones-'
+  label: 'Gerencia de Organizaciones de Salud'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/gerencia-de-organizaciones-de-salud\r\n/posgrado/gerencia-de-organizaciones-de-salud/docentes\r\n/posgrado/gerencia-de-organizaciones-de-salud/plan-estudios\r\n/posgrado/gerencia-de-organizaciones-de-salud/por-que-estudiar-FUCS\r\n/posgrado/gerencia-de-organizaciones-de-salud/perfiles"

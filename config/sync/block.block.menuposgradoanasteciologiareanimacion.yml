@@ -1,0 +1,30 @@
+uuid: a674464a-64fb-4488-9745-b660ec37853f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu---posgrado---anastecio
+  module:
+    - system
+  theme:
+    - fucs
+id: menuposgradoanasteciologiareanimacion
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu---posgrado---anastecio'
+settings:
+  id: 'system_menu_block:menu---posgrado---anastecio'
+  label: 'Menu - Posgrado - Anasteciología reanimación'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/281\r\n/node/282\r\n/node/283\r\n/posgrado/sub-anestesiologia-y-reanimacion/anestesiologia-y-reanimacion"

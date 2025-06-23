@@ -1,0 +1,30 @@
+uuid: 37bf4294-3274-4013-8785-e7dc79689e71
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.salud-comunitaria-p-social
+  module:
+    - system
+  theme:
+    - fucs
+id: saludcomunitariapsocial
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:salud-comunitaria-p-social'
+settings:
+  id: 'system_menu_block:salud-comunitaria-p-social'
+  label: 'salud comunitaria p-Social'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social/area-salud-comunitaria\r\n/proyeccion-social/Espacios-educativos-saludables\r\n/proyeccion-social/vivienda-familia-salud\r\n/proyeccion-social/FUCS-al-parque\r\n/proyeccion-social/entorno-seguro-paciente\r\n/proyeccion-social/formularios-salud-comunitaria\r\n"

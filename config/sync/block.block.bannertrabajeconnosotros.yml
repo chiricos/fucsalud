@@ -1,0 +1,30 @@
+uuid: 24bc5a0a-bb9a-4944-b25d-8000451c71aa
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b9bc6997-fca6-4c8d-aa60-8468a3d0a1c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannertrabajeconnosotros
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:b9bc6997-fca6-4c8d-aa60-8468a3d0a1c6'
+settings:
+  id: 'block_content:b9bc6997-fca6-4c8d-aa60-8468a3d0a1c6'
+  label: 'banner trabaje con nosotros - empleo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /trabaje-con-nosotros

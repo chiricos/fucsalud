@@ -1,0 +1,22 @@
+uuid: f33cf3a0-9597-4d51-a2b8-9f7bcfb1cde1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_aspirantes
+id: node.slider_aspirantes.promote
+field_name: promote
+entity_type: node
+bundle: slider_aspirantes
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,39 @@
+uuid: 01df707e-69dc-4a14-b8bd-17fc1b31d2a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pdf.field_meta_tags
+    - field.field.node.pdf.field_pdf
+    - node.type.pdf
+  module:
+    - file
+    - metatag
+    - user
+id: node.pdf.default
+targetEntityType: node
+bundle: pdf
+mode: default
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_pdf:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

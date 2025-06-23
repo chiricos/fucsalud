@@ -1,0 +1,23 @@
+uuid: 0d6885d4-be91-423d-86fe-d516fa19cd4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.calendario_de_admisiones_
+  module:
+    - text
+id: node.calendario_de_admisiones_.body
+field_name: body
+entity_type: node
+bundle: calendario_de_admisiones_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,31 @@
+uuid: 31c3c052-755f-4a10-94a8-979a7d24797e
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:365203cd-8ca7-428d-89b4-7a400173c45b'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: internacionalizacionfacebook
+theme: fucs
+region: blog
+weight: 0
+provider: null
+plugin: 'block_content:365203cd-8ca7-428d-89b4-7a400173c45b'
+settings:
+  id: 'block_content:365203cd-8ca7-428d-89b4-7a400173c45b'
+  label: 'internacionalizacion facebook'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /internacionalizacion

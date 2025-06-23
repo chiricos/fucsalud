@@ -1,0 +1,21 @@
+uuid: 0ac8fa89-d6b5-4081-bbd8-d64738df414f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.donacion
+  module:
+    - metatag
+id: node.donacion.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: donacion
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

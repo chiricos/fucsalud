@@ -1,0 +1,8 @@
+uuid: f8f824f8-033f-4ba8-8a87-0de6dc18967e
+langcode: es
+status: true
+dependencies: {  }
+id: centro-de-investigaciones
+label: 'Centro de investigaciones'
+description: 'Centro de investigaciones'
+locked: false

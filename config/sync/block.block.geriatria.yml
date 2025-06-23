@@ -1,0 +1,30 @@
+uuid: 10224150-249a-421e-bd3f-b8485e0b01d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.geriatria
+  module:
+    - system
+  theme:
+    - fucs
+id: geriatria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:geriatria'
+settings:
+  id: 'system_menu_block:geriatria'
+  label: Geriatría
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Geriatria\r\n/posgrado/Geriatria-perfiles\r\n/posgrado/Geriatria-fortalezas\r\n/posgrado/Geriatria-plan-de-estudios\r\n/posgrado/Geriatria-docentes"

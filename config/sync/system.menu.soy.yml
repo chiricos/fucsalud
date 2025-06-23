@@ -1,0 +1,8 @@
+uuid: ce9cea53-a1e9-41f6-82e1-ca325f00ab95
+langcode: es
+status: true
+dependencies: {  }
+id: soy
+label: soy
+description: ''
+locked: false

@@ -1,0 +1,31 @@
+uuid: 64bf6895-d4bc-4d6d-8010-f45dc020dcc8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3002baec-342f-4d83-bd8a-318f4d91c8ca'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido0pediatria
+theme: fucs
+region: pregrado_contenido_0
+weight: 15
+provider: null
+plugin: 'block_content:3002baec-342f-4d83-bd8a-318f4d91c8ca'
+settings:
+  id: 'block_content:3002baec-342f-4d83-bd8a-318f4d91c8ca'
+  label: 'Posgrado contenido 0 pediatria'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-pediatria-y-neonatologia/pediatria

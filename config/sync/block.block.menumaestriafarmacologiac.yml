@@ -1,0 +1,30 @@
+uuid: 1f033282-034c-4899-96a9-4716ef6aaf97
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-maestria-farmacologiac
+  module:
+    - system
+  theme:
+    - fucs
+id: menumaestriafarmacologiac
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-maestria-farmacologiac'
+settings:
+  id: 'system_menu_block:menu-maestria-farmacologiac'
+  label: Menú-Maestria-FarmacologiaC
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/maestrias/Farmacologia-Clinica\r\n/maestrias/Farmacologia-Clinica/perfiles\r\n/maestrias/Farmacologia-Clinica/plan-de-estudios\r\n/maestrias/Farmacologia-Clinica/docentes\r\n/maestrias/Farmacologia-Clinica/Por-que-estudiar-en-la-FUCS"

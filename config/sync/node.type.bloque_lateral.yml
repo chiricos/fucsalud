@@ -1,0 +1,17 @@
+uuid: 40595a5c-2f6b-4d06-8d16-9db2e6c1e172
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'bloque lateral'
+type: bloque_lateral
+description: 'Para la busqueda de la base de datos de biblioteca'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

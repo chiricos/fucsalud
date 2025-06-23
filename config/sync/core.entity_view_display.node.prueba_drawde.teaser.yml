@@ -1,0 +1,35 @@
+uuid: 9c9ba8bd-c648-44b5-b94b-86e0214a993e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.prueba_drawde.body
+    - field.field.node.prueba_drawde.field_meta_tags
+    - field.field.node.prueba_drawde.field_prueba
+    - node.type.prueba_drawde
+  module:
+    - text
+    - user
+id: node.prueba_drawde.teaser
+targetEntityType: node
+bundle: prueba_drawde
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_prueba: true
+  langcode: true

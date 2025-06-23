@@ -1,0 +1,30 @@
+uuid: 21eaa089-cd51-45ab-b30e-aa7b150286a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mi-empleo-fucs
+  module:
+    - system
+  theme:
+    - fucs
+id: miempleofucs
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:mi-empleo-fucs'
+settings:
+  id: 'system_menu_block:mi-empleo-fucs'
+  label: 'Mi empleo FUCS'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/mi-empleo-FUCS\r\n/egresados/mi-empleo-FUCS/portal-de-empleo\r\n/egresados/mi-empleo-FUCS/asesoria\r\n/egresados/mi-empleo-FUCS/tips\r\n/egresados/mi-empleo-FUCS/emprende"

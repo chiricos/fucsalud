@@ -1,0 +1,22 @@
+uuid: 7649e83a-dae2-4846-af93-536bbdb3b3d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cursos
+id: node.cursos.promote
+field_name: promote
+entity_type: node
+bundle: cursos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

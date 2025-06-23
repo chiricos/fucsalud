@@ -1,0 +1,30 @@
+uuid: 7aca96c0-3536-4dd3-af0f-2ef578165c7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cardiologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucardiologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cardiologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-cardiologia'
+  label: posgrado-menu-cardiologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/382\r\n/node/383\r\n/node/384\r\n/posgrado/sub-medicina-interna/cardiologia"

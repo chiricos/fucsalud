@@ -1,0 +1,29 @@
+uuid: b59e2581-6ec7-4e65-b9c2-2d0197508acb
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.tecnologia-actividad-fisica-entr
+  module:
+    - system
+  theme:
+    - fucs
+id: tecnologia_actividad_fisica_entrenamiento_deportivo
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:tecnologia-actividad-fisica-entr'
+settings:
+  id: 'system_menu_block:tecnologia-actividad-fisica-entr'
+  label: 'tecnologia actividad fisica y entrenamiento deportivo'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/pregrado/carreras_profesionales/tecnologia_actividad_fisica_entrenamiento_deportivo\r\n/pregrado/carreras_profesionales/tecnologia_actividad_fisica_entrenamiento_deportivo/plan_estudio\r\n/pregrado/carreras_profesionales/tecnologia_actividad_fisica_entrenamiento_deportivo/directivos_docentes\r\n/pregrado/carreras_profesionales/tecnologia_actividad_fisica_entrenamiento_deportivo/*"

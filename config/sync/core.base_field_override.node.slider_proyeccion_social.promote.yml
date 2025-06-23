@@ -1,0 +1,22 @@
+uuid: 3fd2659b-8f7a-4a33-a389-82e519ea3abd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_proyeccion_social
+id: node.slider_proyeccion_social.promote
+field_name: promote
+entity_type: node
+bundle: slider_proyeccion_social
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

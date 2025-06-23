@@ -1,0 +1,31 @@
+uuid: ad7378ce-7b4e-4869-b01b-002a63b6d673
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bd1a27e8-6342-4d04-bcca-05d41d1da001'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido0diplomadoenauditoriaensaludbogota
+theme: fucs
+region: pregrado_contenido_0
+weight: 5
+provider: null
+plugin: 'block_content:bd1a27e8-6342-4d04-bcca-05d41d1da001'
+settings:
+  id: 'block_content:bd1a27e8-6342-4d04-bcca-05d41d1da001'
+  label: 'Posgrado contenido 0 Diplomado en Auditoria en Salud - Bogotá'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-administrativos/auditoria-en-salud

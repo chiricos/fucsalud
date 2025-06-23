@@ -1,0 +1,30 @@
+uuid: 0334f1ed-f321-47c2-959d-547328048346
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-urologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuurologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-urologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-urologia'
+  label: posgrado-menu-urologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/351\r\n/node/352\r\n/node/353\r\n/posgrado/urologia"

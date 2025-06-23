@@ -1,0 +1,31 @@
+uuid: fffb7d1f-a1ea-462a-b80e-e0d76d9ee684
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0109ef67-7ede-45e7-bfb4-e3e21806a8bf'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerhome
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:0109ef67-7ede-45e7-bfb4-e3e21806a8bf'
+settings:
+  id: 'block_content:0109ef67-7ede-45e7-bfb4-e3e21806a8bf'
+  label: 'banner home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/historia\r\n/filosofia-corporativa/*\r\n/saludo-del-rector\r\n/consejo-superior\r\n/gestion_ambiental\r\n/preguntas-frecuentes\r\n/preguntas-frecuentes/*\r\n/aseguramiento-de-calidad\r\n/permanencia-regimen-tributario-especial\r\n/comite-de-etica-investigacion/comite-de-etica\r\n/comite-de-etica-investigacion/*\r\n/telesalud-telemedicina/*\r\n/telesalud-y-telemedicina/*\r\n/noticias-principales\r\n/noticias-principales/*\r\n/documentos_institucionales\r\n/auditorios/*\r\n/politicas-de-uso\r\n/PolItica-de-tratamiento-y-proteccion-de-datos-personales\r\n/PolItica-de-tratamiento-y-proteccion-de-datos-personales/*\r\n/mi_colegio_y_la_FUCS\r\n/mi_colegio_y_la_FUCS/*\r\n/publicaciones-FUCS\r\n/centro-de-investigaciones\r\n/centro-de-investigaciones/*"

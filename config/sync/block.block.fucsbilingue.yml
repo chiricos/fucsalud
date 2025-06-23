@@ -1,0 +1,30 @@
+uuid: c577ebb0-00f1-42b6-bb3c-2d9105b64ef9
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.fucs-bilingue
+  module:
+    - system
+  theme:
+    - fucs
+id: fucsbilingue
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:fucs-bilingue'
+settings:
+  id: 'system_menu_block:fucs-bilingue'
+  label: 'FUCS Bilingüe'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/home/FUCS-bilingue/informacion-general\r\n/home/FUCS-bilingue/direccion-coordinacion\r\n/home/FUCS-bilingue/proceso-requisitos-admision"

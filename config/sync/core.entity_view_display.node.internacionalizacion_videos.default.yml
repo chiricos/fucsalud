@@ -1,0 +1,38 @@
+uuid: 379b5676-f45a-4f37-b912-dc1259909a55
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.internacionalizacion_videos.body
+    - field.field.node.internacionalizacion_videos.field_meta_tags
+    - node.type.internacionalizacion_videos
+  module:
+    - metatag
+    - text
+    - user
+id: node.internacionalizacion_videos.default
+targetEntityType: node
+bundle: internacionalizacion_videos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

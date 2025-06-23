@@ -1,0 +1,30 @@
+uuid: 3e7fab57-27dc-419b-a11b-3f6963e4d3e6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6c2deba4-ca4b-4787-a9b9-69aebcf06676'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannersst
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:6c2deba4-ca4b-4787-a9b9-69aebcf06676'
+settings:
+  id: 'block_content:6c2deba4-ca4b-4787-a9b9-69aebcf06676'
+  label: 'banner sst bloque'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/seguridad_salud_en_el_trabajo\r\n/seguridad_salud_en_el_trabajo/*"

@@ -1,0 +1,31 @@
+uuid: 3cafe9fe-653c-4764-bee1-5dd337c9526c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cf723548-3cb6-4dc6-9e14-a77146104da5'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuposgrado
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:cf723548-3cb6-4dc6-9e14-a77146104da5'
+settings:
+  id: 'block_content:cf723548-3cb6-4dc6-9e14-a77146104da5'
+  label: 'menu posgrado'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado\r\n/posgrado/*"

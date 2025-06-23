@@ -1,0 +1,17 @@
+uuid: acbe34b2-e84d-429a-9fca-55132534090b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Tienda virtual footer'
+type: tienda_virtual_tienda
+description: 'Contenido de la parte de abajo de la tienda virtual'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

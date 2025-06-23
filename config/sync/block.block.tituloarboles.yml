@@ -1,0 +1,31 @@
+uuid: 429ebfac-b8ad-48a6-9271-2fb856f8e3b2
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:133529a6-5092-4be8-8d43-909d7f1dbe8f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: tituloarboles
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:133529a6-5092-4be8-8d43-909d7f1dbe8f'
+settings:
+  id: 'block_content:133529a6-5092-4be8-8d43-909d7f1dbe8f'
+  label: 'Titulo arboles'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /investigacion/arbol-investigaciones

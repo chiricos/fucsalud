@@ -1,0 +1,19 @@
+uuid: 31e18edb-42e1-46b9-93b7-0655f8805dc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.slider_egresados
+id: node.slider_egresados.field_caption
+field_name: field_caption
+entity_type: node
+bundle: slider_egresados
+label: caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

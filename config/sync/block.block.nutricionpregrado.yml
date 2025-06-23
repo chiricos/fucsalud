@@ -1,0 +1,30 @@
+uuid: 9f27029e-5191-46e3-9882-abc97324777c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.nutricion-pregrado
+  module:
+    - system
+  theme:
+    - fucs
+id: nutricionpregrado
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:nutricion-pregrado'
+settings:
+  id: 'system_menu_block:nutricion-pregrado'
+  label: 'Nutrición pregrado'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_profesionales/nutricion-y-dietetica\r\n/pregrado/carreras_profesionales/nutricion/estudiar-fucs\r\n/pregrado/carreras_profesionales/nutricion/plan-estudios\r\n/pregrado/carreras_profesionales/nutrición/docentes"

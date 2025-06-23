@@ -1,0 +1,8 @@
+uuid: 23cb62c8-afd4-4bf4-8e94-9ad272a6d42f
+langcode: es
+status: true
+dependencies: {  }
+id: saludo-del-rector
+label: 'Saludo del rector'
+description: ''
+locked: false

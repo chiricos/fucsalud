@@ -1,0 +1,61 @@
+uuid: c1266ee0-62d1-4b8a-9ad2-af81f4ad2a7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.live.field_cambio_de_idioma
+    - field.field.node.live.field_cuerpo
+    - field.field.node.live.field_meta_tags
+    - field.field.node.live.field_titulo_mostrado
+    - node.type.live
+  module:
+    - link
+    - metatag
+    - text
+    - user
+id: node.live.default
+targetEntityType: node
+bundle: live
+mode: default
+content:
+  field_cambio_de_idioma:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cuerpo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_titulo_mostrado:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

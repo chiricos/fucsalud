@@ -1,0 +1,11 @@
+uuid: f2b3c5c3-5248-486b-b463-790aebcb2a71
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.continuada_videos
+id: node.continuada_videos
+target_entity_type_id: node
+target_bundle: continuada_videos
+default_langcode: site_default
+language_alterable: false

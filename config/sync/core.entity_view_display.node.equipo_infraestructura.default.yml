@@ -1,0 +1,60 @@
+uuid: 21bef877-9bf1-471a-ac55-3cb823bab43d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.equipo_infraestructura.body
+    - field.field.node.equipo_infraestructura.field_cargo
+    - field.field.node.equipo_infraestructura.field_meta_tags
+    - field.field.node.equipo_infraestructura.field_testimonio_imagen
+    - node.type.equipo_infraestructura
+  module:
+    - image
+    - metatag
+    - text
+    - user
+id: node.equipo_infraestructura.default
+targetEntityType: node
+bundle: equipo_infraestructura
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_cargo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_testimonio_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

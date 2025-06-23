@@ -1,0 +1,24 @@
+uuid: cf453dec-ee21-47ef-aabd-90fa65a57c69
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.blog_comentarios
+    - field.field.comment.blog_comentarios.comment_body
+  module:
+    - text
+id: comment.blog_comentarios.default
+targetEntityType: comment
+bundle: blog_comentarios
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

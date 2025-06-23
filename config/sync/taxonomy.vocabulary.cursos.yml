@@ -1,0 +1,8 @@
+uuid: efd18cb7-10cc-4a8d-8cc5-782aa4a93cc5
+langcode: es
+status: true
+dependencies: {  }
+name: cursos
+vid: cursos
+description: 'cursos virtuales, presenciales y a distancia'
+weight: 0

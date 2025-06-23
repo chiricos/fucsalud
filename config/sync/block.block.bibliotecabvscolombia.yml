@@ -1,0 +1,30 @@
+uuid: 66c6178e-c053-4b58-b996-e4243d85a61b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.biblioteca-bvs-colombia
+  module:
+    - system
+  theme:
+    - fucs
+id: bibliotecabvscolombia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:biblioteca-bvs-colombia'
+settings:
+  id: 'system_menu_block:biblioteca-bvs-colombia'
+  label: 'biblioteca bvs colombia'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca/bvscolombia/*\r\n/biblioteca/infucsalud/*"

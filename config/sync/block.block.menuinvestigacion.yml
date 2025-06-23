@@ -1,0 +1,31 @@
+uuid: 12a1dc20-bc88-4b66-9191-15881405a226
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9f105d77-6111-4a24-b06e-3b3a431cd90b'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuinvestigacion
+theme: fucs
+region: submenu_page
+weight: -34
+provider: null
+plugin: 'block_content:9f105d77-6111-4a24-b06e-3b3a431cd90b'
+settings:
+  id: 'block_content:9f105d77-6111-4a24-b06e-3b3a431cd90b'
+  label: 'Menu investigación'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/investigacion\r\n/investigacion/*\r\n/noticias-investigacion\r\n/noticias-investigacion/*\r\n/ensi\r\n/ensi/*"

@@ -1,0 +1,17 @@
+uuid: ac83afd9-9f88-43cb-a916-913a37978254
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: publicaciones
+type: publicaciones
+description: 'publicaciones de tienda virtual'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

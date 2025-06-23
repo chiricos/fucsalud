@@ -1,0 +1,21 @@
+uuid: a3f1f6f6-5580-4fed-a877-4017342373cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.noticias_facultad_ciencias
+  module:
+    - metatag
+id: node.noticias_facultad_ciencias.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: noticias_facultad_ciencias
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

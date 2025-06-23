@@ -1,0 +1,19 @@
+uuid: 24114fd2-00e2-4e56-8c2e-a7502b4183f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_16
+    - node.type.acordion
+id: node.acordion.field_acordion_titulo_16
+field_name: field_acordion_titulo_16
+entity_type: node
+bundle: acordion
+label: acordion_titulo_16
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

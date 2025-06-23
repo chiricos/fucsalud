@@ -1,0 +1,29 @@
+uuid: 71c83410-f9d2-4899-8b27-37bccb0aff84
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-terapia-respiratoria
+  module:
+    - system
+  theme:
+    - fucs
+id: menu_terapia_respiratoria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-terapia-respiratoria'
+settings:
+  id: 'system_menu_block:menu-terapia-respiratoria'
+  label: Terapia-respiratoria
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/pregrado/carreras_profesionales/terapia_respiratoria\r\n/pregrado/carreras_profesionales/terapia_respiratoria/plan-estudios\r\n/pregrado/carreras_profesionales/terapia_respiratoria/docentes\r\n/pregrado/carreras_profesionales/terapia_respiratori/*\r\n"

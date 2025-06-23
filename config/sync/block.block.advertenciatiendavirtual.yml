@@ -1,0 +1,31 @@
+uuid: 3bdfe673-e76f-4e9e-84de-ec3f486ef40d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8ea232f5-ae65-4809-9f8c-1e409c8684ca'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: advertenciatiendavirtual
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:8ea232f5-ae65-4809-9f8c-1e409c8684ca'
+settings:
+  id: 'block_content:8ea232f5-ae65-4809-9f8c-1e409c8684ca'
+  label: 'Advertencia tienda virtual'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/tienda-virtual/publicaciones\r\n/tienda-datos"

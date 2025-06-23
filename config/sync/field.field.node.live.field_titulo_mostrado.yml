@@ -1,0 +1,19 @@
+uuid: 7c0df5ff-4258-43ab-94a2-f834fb55dadd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_mostrado
+    - node.type.live
+id: node.live.field_titulo_mostrado
+field_name: field_titulo_mostrado
+entity_type: node
+bundle: live
+label: 'Titulo mostrado'
+description: 'Titulo de la pagina que ve el usuario'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

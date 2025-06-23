@@ -1,0 +1,31 @@
+uuid: ae1ac2c7-8108-4b0b-92cb-a16b3a44e667
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed7b5423-3398-4824-8040-5d59ca0948e0'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuproyeccionsocial
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:ed7b5423-3398-4824-8040-5d59ca0948e0'
+settings:
+  id: 'block_content:ed7b5423-3398-4824-8040-5d59ca0948e0'
+  label: 'menu proyeccion social'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social\r\n/proyeccion-social/*"

@@ -1,0 +1,38 @@
+uuid: 44f0adfb-fc8f-40e8-af15-52b7a20b9290
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cursos_imagen
+    - node.type.cursos
+  module:
+    - image
+id: node.cursos.field_cursos_imagen
+field_name: field_cursos_imagen
+entity_type: node
+bundle: cursos
+label: 'cursos imagen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: f407ae11-12e6-4f85-88ba-fe610d65a31c
+    alt: ''
+    title: ''
+    width: 483
+    height: 181
+field_type: image

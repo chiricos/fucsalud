@@ -1,0 +1,28 @@
+uuid: 0ffbb58a-c3ae-439b-b18b-45e0dfa75410
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ano
+    - node.type.volumen
+    - taxonomy.vocabulary.ano
+id: node.volumen.field_ano
+field_name: field_ano
+entity_type: node
+bundle: volumen
+label: año
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ano: ano
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: volumen
+field_type: entity_reference

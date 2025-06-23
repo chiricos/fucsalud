@@ -1,0 +1,19 @@
+uuid: a86d0bdf-ce47-4b34-8cc8-72b2d6808276
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.pagina_convocatorias
+id: node.pagina_convocatorias.field_link
+field_name: field_link
+entity_type: node
+bundle: pagina_convocatorias
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

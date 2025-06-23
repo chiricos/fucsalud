@@ -1,0 +1,29 @@
+uuid: 66c97c44-5aa8-4a41-b81e-7a5e4fc1c091
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_infraestructura.field_caption
+    - field.field.node.slider_infraestructura.field_link
+    - field.field.node.slider_infraestructura.field_meta_tags
+    - field.field.node.slider_infraestructura.field_slider_1400x600_
+    - node.type.slider_infraestructura
+  module:
+    - user
+id: node.slider_infraestructura.teaser
+targetEntityType: node
+bundle: slider_infraestructura
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 58d76dc7-a6a9-4b95-9ac4-1f150b505cfd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.infraestructura_videos
+id: node.infraestructura_videos
+target_entity_type_id: node
+target_bundle: infraestructura_videos
+default_langcode: site_default
+language_alterable: false

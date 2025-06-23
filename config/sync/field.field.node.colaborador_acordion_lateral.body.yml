@@ -1,0 +1,23 @@
+uuid: 1693ef69-99ad-49bd-b65f-aee6c46a1e64
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.colaborador_acordion_lateral
+  module:
+    - text
+id: node.colaborador_acordion_lateral.body
+field_name: body
+entity_type: node
+bundle: colaborador_acordion_lateral
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

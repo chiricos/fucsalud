@@ -1,0 +1,17 @@
+uuid: f57ea386-5fc8-4d55-861a-1d5e88f05bdc
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'internacionalizacion videos'
+type: internacionalizacion_videos
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,8 @@
+uuid: 01a875e5-b2fc-4e45-948a-d284f9214b03
+langcode: es
+status: true
+dependencies: {  }
+id: egresados-nosotros
+label: 'Egresados Nosotros '
+description: 'Egresados Nosotros'
+locked: false

@@ -1,0 +1,13 @@
+uuid: 735e0a44-f6ff-4266-9344-65e9b90d889e
+langcode: es
+status: true
+dependencies: {  }
+id: daily_db_backup
+label: 'Base datos diario'
+enabled: true
+keep: null
+period: 86400
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: null

@@ -1,0 +1,31 @@
+uuid: 5c8c1024-16a6-4178-85ae-25f5855cd880
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1ee22d35-9340-49aa-9ee1-bd810e232772'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menubiblioteca
+theme: fucs
+region: submenu_page
+weight: -30
+provider: null
+plugin: 'block_content:1ee22d35-9340-49aa-9ee1-bd810e232772'
+settings:
+  id: 'block_content:1ee22d35-9340-49aa-9ee1-bd810e232772'
+  label: 'Menu biblioteca'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca\r\n/biblioteca/*\r\n/base-de-datos-suscritas\r\n/base-de-datos-libre-acceso\r\n/base-de-datos-libros-electronicos\r\n/base-de-datos-en-demostracion\r\n/base-de-datos-guias-y-manuales-de-uso"

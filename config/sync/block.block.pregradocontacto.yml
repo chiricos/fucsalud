@@ -1,0 +1,31 @@
+uuid: 215b48e4-1212-4d61-9893-1a5043c95bba
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a8dc78c6-1f49-4b05-9577-c42f9f05714e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: pregradocontacto
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:a8dc78c6-1f49-4b05-9577-c42f9f05714e'
+settings:
+  id: 'block_content:a8dc78c6-1f49-4b05-9577-c42f9f05714e'
+  label: 'pregrado contacto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_tecnologicas/*\r\n/pregrado/carreras_profesionales/*\r\n/pregrado\r\n/pregrado/*\r\n/node/229\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/*\r\n/pregrado/carreras_profesionales/fisioterapia/*"

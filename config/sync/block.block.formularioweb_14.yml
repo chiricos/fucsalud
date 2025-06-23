@@ -1,0 +1,28 @@
+uuid: 10db2fb4-9ea1-4387-9c28-7d529790ed8d
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_14
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Contacto webmaster'
+  label_display: '0'
+  provider: webform
+  webform_id: contacto_webmaster
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /contacto-webmaster

@@ -1,0 +1,30 @@
+uuid: a3e89fd7-f44f-4966-b4da-3d2cd8a83514
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.responsabilidad-social-p-so
+  module:
+    - system
+  theme:
+    - fucs
+id: responsabilidadsocialpsocial
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:responsabilidad-social-p-so'
+settings:
+  id: 'system_menu_block:responsabilidad-social-p-so'
+  label: 'Responsabilidad Social'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social/responsabilidad-social\r\n/proyeccion-social/calidad-vida-laboral\r\n/proyeccion-social/voluntariado-responsabilidad-s\r\n/proyeccion-social/Becas\r\n/proyeccion-social/Ability\r\n/proyeccion-social/FUCS-ECO\r\n/proyeccion-social/Universidad-Saludable\r\n/proyeccion-social/sembrando-futuro\r\n/proyeccion-social/crear-y-creer\r\n/proyeccion-social/permanencia-universitaria\r\n/proyeccion-social/desarrollo-sostenible\r\n/proyeccion-social/cursos-responsabilidad-sostenible\r\n/proyeccion-social/responsabilidad-social/Politica-Multidiversidad-e-Inclusion\r\n/proyeccion-social/micro_e_learning_iso26000"

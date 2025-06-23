@@ -1,0 +1,8 @@
+uuid: 36814630-f263-436d-ac95-cd6a9033b16a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-admin-salud-tecnico
+label: menú-admin-salud-técnico
+description: menú-admin-salud-técnico
+locked: false

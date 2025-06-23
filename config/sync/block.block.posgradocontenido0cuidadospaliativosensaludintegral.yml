@@ -1,0 +1,31 @@
+uuid: 5c9b8a30-62ba-4754-85e1-97eedeba823c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2217bebe-bbd2-411b-a20e-b42fee8d2eeb'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido0cuidadospaliativosensaludintegral
+theme: fucs
+region: pregrado_contenido_0
+weight: 1
+provider: null
+plugin: 'block_content:2217bebe-bbd2-411b-a20e-b42fee8d2eeb'
+settings:
+  id: 'block_content:2217bebe-bbd2-411b-a20e-b42fee8d2eeb'
+  label: 'Posgrado contenido 0 Cuidados Paliativos en Salud Integral'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-ciencias-salud/cuidados-paliativos-en-salud

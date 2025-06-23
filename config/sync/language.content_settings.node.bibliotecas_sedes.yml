@@ -1,0 +1,11 @@
+uuid: 250736ce-a792-4255-a918-3a3060615b2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bibliotecas_sedes
+id: node.bibliotecas_sedes
+target_entity_type_id: node
+target_bundle: bibliotecas_sedes
+default_langcode: site_default
+language_alterable: false

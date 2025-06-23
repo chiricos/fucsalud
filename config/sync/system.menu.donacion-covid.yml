@@ -1,0 +1,8 @@
+uuid: 3556c581-3881-47e9-b3b0-ab64d42de7f2
+langcode: es
+status: true
+dependencies: {  }
+id: donacion-covid
+label: donacion-covid
+description: ''
+locked: false

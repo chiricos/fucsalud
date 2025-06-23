@@ -1,0 +1,30 @@
+uuid: bda8c46c-d0c5-47f2-b240-0f5b4e99ec7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-pediatria
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenupediatria
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-pediatria'
+settings:
+  id: 'system_menu_block:posgrado-menu-pediatria'
+  label: posgrado-menu-pediatria
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/424\r\n/node/425\r\n/node/426\r\n/posgrado/sub-pediatria-y-neonatologia/pediatria"

@@ -1,0 +1,8 @@
+uuid: fa8333de-a267-44cd-8e91-e21d7c55cf89
+langcode: es
+status: true
+dependencies: {  }
+id: genetica-medica
+label: 'Genética médica'
+description: ''
+locked: false

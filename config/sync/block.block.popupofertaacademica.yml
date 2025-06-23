@@ -1,0 +1,30 @@
+uuid: ffdffd6c-47a6-447e-9661-cb0c73e3dac4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c9f37ddc-4d55-48d2-aa12-4470cc38fa73'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: popupofertaacademica
+theme: fucs
+region: slider_principal
+weight: 0
+provider: null
+plugin: 'block_content:c9f37ddc-4d55-48d2-aa12-4470cc38fa73'
+settings:
+  id: 'block_content:c9f37ddc-4d55-48d2-aa12-4470cc38fa73'
+  label: 'popup oferta academica'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

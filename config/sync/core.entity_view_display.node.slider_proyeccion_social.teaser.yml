@@ -1,0 +1,29 @@
+uuid: 00def5d9-ce88-4088-a3e4-c615919c2164
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_proyeccion_social.field_caption
+    - field.field.node.slider_proyeccion_social.field_link
+    - field.field.node.slider_proyeccion_social.field_meta_tags
+    - field.field.node.slider_proyeccion_social.field_slider_1400x600_
+    - node.type.slider_proyeccion_social
+  module:
+    - user
+id: node.slider_proyeccion_social.teaser
+targetEntityType: node
+bundle: slider_proyeccion_social
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

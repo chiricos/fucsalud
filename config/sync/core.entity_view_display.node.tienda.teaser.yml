@@ -1,0 +1,33 @@
+uuid: 9b45dd83-7e1e-4121-ad24-de697ecabc95
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tienda.body
+    - field.field.node.tienda.field_meta_tags
+    - node.type.tienda
+  module:
+    - text
+    - user
+id: node.tienda.teaser
+targetEntityType: node
+bundle: tienda
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

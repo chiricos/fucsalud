@@ -1,0 +1,23 @@
+uuid: 2fad39c8-22d5-466f-95b2-a1319bef1d72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_noticias_titulo
+    - node.type.noticias
+  module:
+    - text
+id: node.noticias.field_noticias_titulo
+field_name: field_noticias_titulo
+entity_type: node
+bundle: noticias
+label: noticias_titulo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

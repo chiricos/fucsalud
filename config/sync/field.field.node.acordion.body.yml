@@ -1,0 +1,23 @@
+uuid: e2ef2a48-20fc-431c-83f9-4bff4805af29
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.acordion
+  module:
+    - text
+id: node.acordion.body
+field_name: body
+entity_type: node
+bundle: acordion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

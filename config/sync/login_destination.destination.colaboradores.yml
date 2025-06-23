@@ -1,0 +1,23 @@
+uuid: e08fd4c8-06b8-4fe5-a3ac-c7c5a6d8c71d
+langcode: es
+status: true
+dependencies: {  }
+name: colaboradores
+label: Colaboradores
+triggers:
+  registration: registration
+  login: login
+  one-time-login: one-time-login
+  logout: logout
+destination_path: 'internal:/colaboradores'
+pages_type: 0
+pages: ''
+roles:
+  educacion_continuada: educacion_continuada
+  biblioteca: biblioteca
+  editor: editor
+  tienda: tienda
+  live: live
+  colaboradores: colaboradores
+weight: 0
+enabled: true

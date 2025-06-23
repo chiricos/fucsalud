@@ -1,0 +1,30 @@
+uuid: a28960c1-ee24-4748-8dd1-e84c649925e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menus-aspirantes
+  module:
+    - system
+  theme:
+    - fucs
+id: menusaspirantes
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'system_menu_block:menus-aspirantes'
+settings:
+  id: 'system_menu_block:menus-aspirantes'
+  label: 'menus aspirantes'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /drawde

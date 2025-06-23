@@ -1,0 +1,8 @@
+uuid: 5b295338-b337-4c58-b9c5-b53d48eb38de
+langcode: es
+status: true
+dependencies: {  }
+id: investigacion-grupos
+label: 'INVESTIGACION GRUPOS'
+description: 'INVESTIGACION GRUPOS'
+locked: false

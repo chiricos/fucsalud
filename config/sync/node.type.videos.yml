@@ -1,0 +1,17 @@
+uuid: 6f61d30b-4537-4b3b-9dae-936db7d72c52
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Home Videos'
+type: videos
+description: 'Videos de la fucs'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

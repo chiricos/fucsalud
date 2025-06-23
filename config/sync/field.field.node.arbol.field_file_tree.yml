@@ -1,0 +1,27 @@
+uuid: f9258c21-b5da-4d00-b84e-f8ec74822334
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_tree
+    - node.type.arbol
+  module:
+    - file
+id: node.arbol.field_file_tree
+field_name: field_file_tree
+entity_type: node
+bundle: arbol
+label: file_tree
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf docx doc'
+  max_filesize: '5 M'
+  description_field: false
+field_type: file

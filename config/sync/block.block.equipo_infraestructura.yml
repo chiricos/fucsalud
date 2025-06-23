@@ -1,0 +1,31 @@
+uuid: 4944c925-d367-4834-9c30-2e2d568cec08
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2b1d9ce6-ce6a-48df-b4dc-111f04e08783'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: equipo_infraestructura
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:2b1d9ce6-ce6a-48df-b4dc-111f04e08783'
+settings:
+  id: 'block_content:2b1d9ce6-ce6a-48df-b4dc-111f04e08783'
+  label: 'Equipo infraestructura'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /ciudad_universitaria

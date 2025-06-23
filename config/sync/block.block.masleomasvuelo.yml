@@ -1,0 +1,30 @@
+uuid: bc17573d-ed81-49e0-8a4e-d05683b22d73
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.mas-leo-mas-vuelo
+  module:
+    - system
+  theme:
+    - fucs
+id: masleomasvuelo
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:mas-leo-mas-vuelo'
+settings:
+  id: 'system_menu_block:mas-leo-mas-vuelo'
+  label: mas-leo-mas-vuelo
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca/mas-leo-mas-vuelo\r\n/biblioteca/mas-leo-mas-vuelo/experiencia\r\n/biblioteca/mas-leo-mas-vuelo/*\r\n"

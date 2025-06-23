@@ -1,0 +1,8 @@
+uuid: 683356d9-350d-4317-b35f-da35fb3af83e
+langcode: es
+status: true
+dependencies: {  }
+id: nutricion-pregrado
+label: 'Nutrición pregrado'
+description: ''
+locked: false

@@ -1,0 +1,11 @@
+uuid: 09f7dc2e-2e1e-40a3-84bb-16038f5ad5cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_convocatorias
+id: node.pagina_convocatorias
+target_entity_type_id: node
+target_bundle: pagina_convocatorias
+default_langcode: site_default
+language_alterable: false

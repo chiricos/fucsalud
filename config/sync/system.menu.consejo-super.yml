@@ -1,0 +1,8 @@
+uuid: 04815a58-2839-4619-9ce3-3cb02c776872
+langcode: es
+status: true
+dependencies: {  }
+id: consejo-super
+label: 'Consejo superior'
+description: ''
+locked: false

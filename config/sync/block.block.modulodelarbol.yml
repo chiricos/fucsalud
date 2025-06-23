@@ -1,0 +1,30 @@
+uuid: d8be3005-d7b3-4143-9fdc-a552bd52476a
+langcode: es
+status: false
+dependencies:
+  module:
+    - fucs_form
+    - system
+  theme:
+    - fucs
+id: modulodelarbol
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: fucs_tree_block
+settings:
+  id: fucs_tree_block
+  label: 'ÁRBOL DE INVESTIGACIONES'
+  label_display: '0'
+  provider: fucs_form
+  config:
+    width: '800'
+    'y': '-386'
+    x: '0'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /investigacion/arbol-investigaciones

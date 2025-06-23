@@ -1,0 +1,8 @@
+uuid: 6403379e-32f0-49a6-bb99-2e5c49115f86
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-enfermeria-ad
+label: posgrado-menu-enfermeria-adultos
+description: posgrado-menu-enfermeria-adultos
+locked: false

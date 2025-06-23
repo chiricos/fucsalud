@@ -1,0 +1,30 @@
+uuid: 8aaedc7d-26b1-45f7-ad1e-f7306684f899
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-maestria-educacion
+  module:
+    - system
+  theme:
+    - fucs
+id: menumaestriaeducacion
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-maestria-educacion'
+settings:
+  id: 'system_menu_block:menu-maestria-educacion'
+  label: menú-maestria-educacion
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/4338\r\n/maestrias/Educacion-y-desarrollo-social\r\n/maestrias/Educacion-y-desarrollo-social-perfiles\r\n/maestrias/Educacion-y-desarrollo-social-plan-estudios\r\n/maestrias/Educacion-y-desarrollo-social-docentes\r\n/maestrias/Educacion-y-desarrollo-social-por-que-estudiar-en-FUCS"

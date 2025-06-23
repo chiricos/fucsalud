@@ -1,0 +1,19 @@
+uuid: bed7a360-0afd-48d5-91cc-3ac32a7e2afe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_8
+    - node.type.acordion_lateral
+id: node.acordion_lateral.field_acordion_titulo_8
+field_name: field_acordion_titulo_8
+entity_type: node
+bundle: acordion_lateral
+label: acordion_titulo_8
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

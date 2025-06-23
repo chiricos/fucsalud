@@ -1,0 +1,28 @@
+uuid: 135d0a17-3d59-4c8c-b69d-352a12d9074f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_9
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Solicitud Capacitación'
+  label_display: '0'
+  provider: webform
+  webform_id: solicitud_capacitacion
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/solicitud-capacitacion

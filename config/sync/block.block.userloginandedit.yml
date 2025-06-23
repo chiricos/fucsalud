@@ -1,0 +1,39 @@
+uuid: ae63af07-2d4a-4c87-a95f-0d12ea5e1e82
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3c741535-b400-4bb4-86e3-1ab7a23d55de'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - fucs
+id: userloginandedit
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:3c741535-b400-4bb4-86e3-1ab7a23d55de'
+settings:
+  id: 'block_content:3c741535-b400-4bb4-86e3-1ab7a23d55de'
+  label: 'user login and edit'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

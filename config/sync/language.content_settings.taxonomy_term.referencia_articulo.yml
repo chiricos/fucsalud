@@ -1,0 +1,11 @@
+uuid: 6b921e4b-f468-4449-959c-bc351ee1a18e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.referencia_articulo
+id: taxonomy_term.referencia_articulo
+target_entity_type_id: taxonomy_term
+target_bundle: referencia_articulo
+default_langcode: site_default
+language_alterable: false

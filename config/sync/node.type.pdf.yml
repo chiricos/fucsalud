@@ -1,0 +1,17 @@
+uuid: fcb2688d-29c7-4776-b92f-28c2bf7c3b6f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: pdf
+type: pdf
+description: 'carga de pdf'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

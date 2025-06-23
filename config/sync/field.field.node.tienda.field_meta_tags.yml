@@ -1,0 +1,21 @@
+uuid: 42859fe7-c1f5-43a2-b81a-0a35db546320
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.tienda
+  module:
+    - metatag
+id: node.tienda.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: tienda
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

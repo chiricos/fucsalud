@@ -1,0 +1,30 @@
+uuid: 66013ee2-7548-4f60-b873-10bcf6c80d65
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-nefrologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenunefrologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-nefrologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-nefrologia'
+  label: posgrado-menu-nefrologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/397\r\n/node/398\r\n/node/399\r\n/posgrado/sub-medicina-interna/nefrologia"

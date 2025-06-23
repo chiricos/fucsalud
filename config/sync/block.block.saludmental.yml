@@ -1,0 +1,29 @@
+uuid: 55f99418-0042-4ed3-8f2b-ea49b67c4d45
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.salud-mental
+  module:
+    - system
+  theme:
+    - fucs
+id: saludmental
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:salud-mental'
+settings:
+  id: 'system_menu_block:salud-mental'
+  label: 'salud mental'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bienestar/salud_mental/*\r\n/bienestar/salud_mental\r\n/bienestar/salud_mental/atencion_urgencias"

@@ -1,0 +1,19 @@
+uuid: bac1a1cc-a48b-4f2d-af75-bad2a712449d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_format
+    - node.type.publicaciones
+id: node.publicaciones.field_price_format
+field_name: field_price_format
+entity_type: node
+bundle: publicaciones
+label: price_format
+description: 'va el precio como queremos que se vea al usuario final $100.000 por ejemplo'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

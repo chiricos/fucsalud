@@ -1,0 +1,8 @@
+uuid: 36f03b20-7731-4a22-a6c0-bacd3f221e7d
+langcode: es
+status: true
+dependencies: {  }
+name: Medicina
+vid: posgrado
+description: ''
+weight: 0

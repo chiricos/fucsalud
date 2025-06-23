@@ -1,0 +1,15 @@
+uuid: 11b761e8-4ae5-463c-985f-802f6759c230
+langcode: es
+status: true
+dependencies: {  }
+name: apartaestudio_galeria
+label: 'apartaestudio galeria'
+effects:
+  c3588060-a668-4274-b254-33c9ad98941a:
+    uuid: c3588060-a668-4274-b254-33c9ad98941a
+    id: image_scale
+    weight: 1
+    data:
+      width: 255
+      height: 300
+      upscale: true

@@ -1,0 +1,11 @@
+uuid: 3e4ee658-f03e-4eae-9c38-1561d1b62717
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_apartaestudios
+id: node.galeria_apartaestudios
+target_entity_type_id: node
+target_bundle: galeria_apartaestudios
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,30 @@
+uuid: fbddd6da-2493-4c85-9391-d2ef385ed483
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-medicina-crit
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenumedicinacritica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-medicina-crit'
+settings:
+  id: 'system_menu_block:posgrado-menu-medicina-crit'
+  label: posgrado-menu-medicina-critica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/321\r\n/node/322\r\n/node/323\r\n/posgrado/medicina-critica-y-cuidado-intensivo"

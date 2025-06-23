@@ -1,0 +1,30 @@
+uuid: 0c3aeb4a-62bd-4554-b6a8-3dec3ed86bfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.bienestar-pregrado
+  module:
+    - system
+  theme:
+    - fucs
+id: bienestarpregrado
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:bienestar-pregrado'
+settings:
+  id: 'system_menu_block:bienestar-pregrado'
+  label: 'Bienestar Pregrado'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/bienestar/pregrado/*\r\n/bienestar/bienestar-pregrado\r\n"

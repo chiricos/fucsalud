@@ -1,0 +1,19 @@
+uuid: 8c20650d-550e-41fa-96f9-f90f0f8808ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_8
+    - node.type.colaborador_acordion_lateral
+id: node.colaborador_acordion_lateral.field_acordion_titulo_8
+field_name: field_acordion_titulo_8
+entity_type: node
+bundle: colaborador_acordion_lateral
+label: acordion_titulo_8
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

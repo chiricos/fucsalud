@@ -1,0 +1,30 @@
+uuid: a17bce93-439a-4dfc-82e5-c811d7f6697b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.biblioteca-nosotros
+  module:
+    - system
+  theme:
+    - fucs
+id: bibliotecanosotros
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:biblioteca-nosotros'
+settings:
+  id: 'system_menu_block:biblioteca-nosotros'
+  label: Biblioteca-Nosotros
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/biblioteca/nosotros/*'

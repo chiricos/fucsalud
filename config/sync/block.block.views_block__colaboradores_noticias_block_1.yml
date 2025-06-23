@@ -1,0 +1,30 @@
+uuid: 969ebeec-d94d-4e11-b691-7cff56c0beae
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.colaboradores_noticias
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__colaboradores_noticias_block_1
+theme: fucs
+region: news
+weight: 2
+provider: null
+plugin: 'views_block:colaboradores_noticias-block_1'
+settings:
+  id: 'views_block:colaboradores_noticias-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /colaboradores

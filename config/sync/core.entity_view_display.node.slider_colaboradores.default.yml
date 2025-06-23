@@ -1,0 +1,60 @@
+uuid: 27fa5ebe-1462-4c51-ade4-b1f25c1b3bee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_colaboradores.field_caption
+    - field.field.node.slider_colaboradores.field_link
+    - field.field.node.slider_colaboradores.field_meta_tags
+    - field.field.node.slider_colaboradores.field_slider_1400x600_
+    - image.style.slider_bi
+    - node.type.slider_colaboradores
+  module:
+    - image
+    - metatag
+    - user
+id: node.slider_colaboradores.default
+targetEntityType: node
+bundle: slider_colaboradores
+mode: default
+content:
+  field_caption:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_slider_1400x600_:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: slider_bi
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

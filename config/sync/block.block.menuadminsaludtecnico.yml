@@ -1,0 +1,30 @@
+uuid: 6acb9fa9-3ba9-4a4f-85f3-6b028cdac3bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-admin-salud-tecnico
+  module:
+    - system
+  theme:
+    - fucs
+id: menuadminsaludtecnico
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-admin-salud-tecnico'
+settings:
+  id: 'system_menu_block:menu-admin-salud-tecnico'
+  label: menú-admin-salud-técnico
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_tecnicas/Tecnico-profesional-procesos-administrativos-en-salud\r\n/pregrado/carreras_tecnologicas/Gestion-de-informacion-en-salud\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/fortalezas\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/Plan-estudios\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/Docentes\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/preguntas-frecuentes\r\n/aspirantes/costos\r\n/aspirantes/calendario-de-admisiones/pregrado\r\n/pregrado/carreras_profesionales/Tec-Teg-Pro-Proceso-homologacion"

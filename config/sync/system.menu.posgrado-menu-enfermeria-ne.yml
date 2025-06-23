@@ -1,0 +1,8 @@
+uuid: c1f37b57-6537-44e4-aeb0-890a67b7f385
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-enfermeria-ne
+label: posgrado-menu-enfermeria-nefrologica
+description: posgrado-menu-enfermeria-nefrologica
+locked: false

@@ -1,0 +1,30 @@
+uuid: caf1516f-b77b-4277-bab7-3f1691c3af7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.laboratorios
+  module:
+    - system
+  theme:
+    - fucs
+id: laboratorios
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:laboratorios'
+settings:
+  id: 'system_menu_block:laboratorios'
+  label: LABORATORIOS
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/laboratorios/laboratorio-de-histologia\r\n/laboratorios/instrumentos-y-pruebas\r\n/laboratorios/laboratorio-de-microbiologia\r\n/laboratorios/laboratorio-de-biologia\r\n/laboratorios/laboratorio-bioquímica\r\n/laboratorios/laboratorio-de-biomedica\r\n/laboratorios/laboratorio-de-genetica\r\n/laboratorios/laboratorio-simulacion\r\n/laboratorios/laboratorio-movimiento-humano\r\n/laboratorios"

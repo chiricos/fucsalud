@@ -1,0 +1,33 @@
+uuid: 816fa8ab-03ac-4528-82b8-a1ac5da3d3f8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5e222201-1073-4be2-8a5e-580fcfd71229'
+  module:
+    - block_content
+    - node
+  theme:
+    - fucs
+id: quitarespaciondelbanner
+theme: fucs
+region: banner_page
+weight: 0
+provider: null
+plugin: 'block_content:5e222201-1073-4be2-8a5e-580fcfd71229'
+settings:
+  id: 'block_content:5e222201-1073-4be2-8a5e-580fcfd71229'
+  label: 'quitar espacion del banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      programas_lateral: programas_lateral

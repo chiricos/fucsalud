@@ -1,0 +1,75 @@
+uuid: 6ebd2703-4bd8-4d93-b205-ffbf721976c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.colaboradores_servicios.field_link
+    - field.field.taxonomy_term.colaboradores_servicios.field_orden
+    - field.field.taxonomy_term.colaboradores_servicios.field_servicios_hover
+    - field.field.taxonomy_term.colaboradores_servicios.field_servicios_icono
+    - field.field.taxonomy_term.colaboradores_servicios.field_target
+    - taxonomy.vocabulary.colaboradores_servicios
+  module:
+    - image
+    - text
+id: taxonomy_term.colaboradores_servicios.default
+targetEntityType: taxonomy_term
+bundle: colaboradores_servicios
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_orden:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_servicios_hover:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_servicios_icono:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_target:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true

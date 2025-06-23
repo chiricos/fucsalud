@@ -1,0 +1,29 @@
+uuid: 114f8482-3a14-425d-b75d-ca4d1e2ba710
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.live.field_cambio_de_idioma
+    - field.field.node.live.field_cuerpo
+    - field.field.node.live.field_meta_tags
+    - field.field.node.live.field_titulo_mostrado
+    - node.type.live
+  module:
+    - user
+id: node.live.teaser
+targetEntityType: node
+bundle: live
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cambio_de_idioma: true
+  field_cuerpo: true
+  field_meta_tags: true
+  field_titulo_mostrado: true
+  langcode: true

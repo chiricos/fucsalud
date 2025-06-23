@@ -1,0 +1,30 @@
+uuid: 3db6b751-589d-4ae0-b820-1272a8a59956
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.regencia-farmacia
+  module:
+    - system
+  theme:
+    - fucs
+id: regenciafarmacia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:regencia-farmacia'
+settings:
+  id: 'system_menu_block:regencia-farmacia'
+  label: Regencia-farmacia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_tecnologicas/Regencia-de-Farmacia\r\n/pregrado/carreras_tecnologicas/Regencia-de-Farmacia/Perfiles\r\n/pregrado/carreras_tecnologicas/Regencia-de-Farmacia/Plan-estudios\r\n/pregrado/carreras_tecnologicas/Regencia-de-Farmacia/Docentes\r\n/pregrado/carreras_tecnologicas/Regencia-de-Farmacia/homologacion\r\n/pregrado/carreras_tecnologicas/Regencia-de-Farmacia/*"

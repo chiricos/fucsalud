@@ -1,0 +1,30 @@
+uuid: 22f1c2ba-0400-4306-9afe-97c0aa08a0a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-ortopedia-tra
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuortopediatraumatologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-ortopedia-tra'
+settings:
+  id: 'system_menu_block:posgrado-menu-ortopedia-tra'
+  label: posgrado-menu-ortopedia-traumatologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/415\r\n/node/416\r\n/node/417\r\n/posgrado/sub-ortopedia-y-traumatologia/ortopedia-traumatologia"

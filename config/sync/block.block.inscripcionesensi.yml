@@ -1,0 +1,29 @@
+uuid: 68a6fc64-a82d-45ef-b4fb-a15bd030d865
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.inscripciones-ensi
+  module:
+    - system
+  theme:
+    - fucs
+id: inscripcionesensi
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:inscripciones-ensi'
+settings:
+  id: 'system_menu_block:inscripciones-ensi'
+  label: 'Encuentro de Semilleros de Investigación en Ciencias de la Salud'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/semilleros/evento\r\n/semilleros/que_es_un_semillero_investigacion\r\n/semilleros/objetivos\r\n/semilleros/diciplinas_y_areas_de_interes\r\n/semilleros/categorizacion\r\n/semilleros/lineamientos\r\n/semilleros/modalidades\r\n/semilleros/estructura\r\n/semilleros/evaluacion\r\n/semilleros/tarifas\r\n/semilleros/consideraciones"

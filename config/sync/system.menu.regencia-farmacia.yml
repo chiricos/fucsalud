@@ -1,0 +1,8 @@
+uuid: ba65ca06-24af-41c2-807a-cee48437e3ff
+langcode: es
+status: true
+dependencies: {  }
+id: regencia-farmacia
+label: Regencia-farmacia
+description: ''
+locked: false

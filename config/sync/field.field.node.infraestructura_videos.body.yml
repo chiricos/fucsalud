@@ -1,0 +1,23 @@
+uuid: c7b2fc4f-c55f-45dc-889b-915a81722154
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.infraestructura_videos
+  module:
+    - text
+id: node.infraestructura_videos.body
+field_name: body
+entity_type: node
+bundle: infraestructura_videos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

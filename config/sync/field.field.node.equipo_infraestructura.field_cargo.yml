@@ -1,0 +1,19 @@
+uuid: be8f90e3-18ff-4954-8b19-ff506a38a6c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cargo
+    - node.type.equipo_infraestructura
+id: node.equipo_infraestructura.field_cargo
+field_name: field_cargo
+entity_type: node
+bundle: equipo_infraestructura
+label: Cargo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

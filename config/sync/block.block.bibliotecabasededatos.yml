@@ -1,0 +1,30 @@
+uuid: b568eb86-cd68-4873-b050-5abb83a61d8b
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.biblioteca-base-de-datos
+  module:
+    - system
+  theme:
+    - fucs
+id: bibliotecabasededatos
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:biblioteca-base-de-datos'
+settings:
+  id: 'system_menu_block:biblioteca-base-de-datos'
+  label: 'biblioteca-base de datos'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca/recursos/base-datos/*\r\n/biblioteca/recursos/base-de-datos/*\r\n/biblioteca/base-de-datos/*\r\n/base-de-datos-suscritas\r\n/base-de-datos-libre-acceso\r\n/base-de-datos-libros-electronicos\r\n/base-de-datos-en-demostracion\r\n/base-de-datos-guias-y-manuales-de-uso"

@@ -1,0 +1,19 @@
+uuid: f803aced-4013-4027-bc63-fe5a8c93d1a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_acordion_
+    - node.type.posgrado
+id: node.posgrado.field_titulo_acordion_
+field_name: field_titulo_acordion_
+entity_type: node
+bundle: posgrado
+label: 'titulo acordion 4'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: e5121b56-ebd8-4fbe-99ce-803cf4e6721d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slider_aspirantes
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__slider_aspirantes_block_1
+theme: fucs
+region: slider_page
+weight: -14
+provider: null
+plugin: 'views_block:slider_aspirantes-block_1'
+settings:
+  id: 'views_block:slider_aspirantes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/aspirantes\r\n"

@@ -1,0 +1,23 @@
+uuid: c6a00904-65c2-4336-a112-3fc0663a246c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slider_segundo_home_investigacio
+  module:
+    - text
+id: node.slider_segundo_home_investigacio.body
+field_name: body
+entity_type: node
+bundle: slider_segundo_home_investigacio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

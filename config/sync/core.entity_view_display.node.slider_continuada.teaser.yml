@@ -1,0 +1,29 @@
+uuid: 70a222df-a033-4e18-a4ed-17380e37fb6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_continuada.field_caption
+    - field.field.node.slider_continuada.field_link
+    - field.field.node.slider_continuada.field_meta_tags
+    - field.field.node.slider_continuada.field_slider_1400x600_
+    - node.type.slider_continuada
+  module:
+    - user
+id: node.slider_continuada.teaser
+targetEntityType: node
+bundle: slider_continuada
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caption: true
+  field_link: true
+  field_meta_tags: true
+  field_slider_1400x600_: true
+  langcode: true

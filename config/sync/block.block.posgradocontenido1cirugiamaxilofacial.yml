@@ -1,0 +1,31 @@
+uuid: 175093ca-c145-4971-987b-af7d988568c5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d1d549f5-5fcc-4dd4-a9d2-bf70e14cfb90'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1cirugiamaxilofacial
+theme: fucs
+region: pregrado_contenido_1
+weight: 12
+provider: null
+plugin: 'block_content:d1d549f5-5fcc-4dd4-a9d2-bf70e14cfb90'
+settings:
+  id: 'block_content:d1d549f5-5fcc-4dd4-a9d2-bf70e14cfb90'
+  label: 'Posgrado contenido 1 cirugía maxilofacial'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-otorrinolaringologia/cirugia-maxilofacial

@@ -1,0 +1,31 @@
+uuid: 11a2d055-051b-4e97-a5a6-4bcf6b71fe27
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7f05084b-4bff-4430-ade5-207255b1b733'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuensi
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:7f05084b-4bff-4430-ade5-207255b1b733'
+settings:
+  id: 'block_content:7f05084b-4bff-4430-ade5-207255b1b733'
+  label: 'menu ensi'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/semilleros*\r\n/noticias-semilleros*"

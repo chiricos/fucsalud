@@ -1,0 +1,31 @@
+uuid: 552fd980-5307-4358-bf25-484d84db6785
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7b939d07-7e46-4a20-88c0-d96d605a8016'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: primercontenidoegresados
+theme: fucs
+region: egresados_contenido_1
+weight: 0
+provider: null
+plugin: 'block_content:7b939d07-7e46-4a20-88c0-d96d605a8016'
+settings:
+  id: 'block_content:7b939d07-7e46-4a20-88c0-d96d605a8016'
+  label: 'Primer contenido egresados'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /egresados

@@ -1,0 +1,19 @@
+uuid: cad4a588-f687-4c11-9b1c-35e17b167208
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_principal
+id: node.slider_principal.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_principal
+label: link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

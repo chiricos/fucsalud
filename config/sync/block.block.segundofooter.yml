@@ -1,0 +1,25 @@
+uuid: 6fda16a5-a9fa-4e86-bdf6-d4d8aa33cae9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a329ac9e-cbf6-4126-8edf-4d17a3638169'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: segundofooter
+theme: fucs
+region: second_footer
+weight: 0
+provider: null
+plugin: 'block_content:a329ac9e-cbf6-4126-8edf-4d17a3638169'
+settings:
+  id: 'block_content:a329ac9e-cbf6-4126-8edf-4d17a3638169'
+  label: 'Segundo footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

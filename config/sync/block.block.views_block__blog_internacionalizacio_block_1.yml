@@ -1,0 +1,30 @@
+uuid: ee6aa7e8-4271-4df6-8fdc-4d82e603ef04
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.blog_internacionalizacio
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__blog_internacionalizacio_block_1
+theme: fucs
+region: blog
+weight: 0
+provider: null
+plugin: 'views_block:blog_internacionalizacio-block_1'
+settings:
+  id: 'views_block:blog_internacionalizacio-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/internalizacion\r\n/internacionalizacion"

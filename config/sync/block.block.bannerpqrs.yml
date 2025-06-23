@@ -1,0 +1,31 @@
+uuid: 65cff099-4293-4aec-a508-bc8007c5c017
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:24b9c8f6-bf6c-4114-b46a-0f65ee0b3e8d'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerpqrs
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:24b9c8f6-bf6c-4114-b46a-0f65ee0b3e8d'
+settings:
+  id: 'block_content:24b9c8f6-bf6c-4114-b46a-0f65ee0b3e8d'
+  label: 'banner pqrs'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /pqrs

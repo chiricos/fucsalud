@@ -1,0 +1,42 @@
+uuid: f91909c1-280a-47db-a099-5b8f9702f0ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.estudiantes_eventos.body
+    - field.field.node.estudiantes_eventos.field_aspirantes_admisiones
+    - field.field.node.estudiantes_eventos.field_meta_tags
+    - field.field.node.estudiantes_eventos.field_noticias_imagen
+    - node.type.estudiantes_eventos
+  module:
+    - metatag
+    - text
+    - user
+id: node.estudiantes_eventos.default
+targetEntityType: node
+bundle: estudiantes_eventos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_aspirantes_admisiones: true
+  field_noticias_imagen: true
+  langcode: true

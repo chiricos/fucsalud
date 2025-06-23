@@ -1,0 +1,8 @@
+uuid: 70e8535f-8865-4a01-b691-bef292dd0496
+langcode: es
+status: true
+dependencies: {  }
+id: aulas
+label: AULAS
+description: ''
+locked: false

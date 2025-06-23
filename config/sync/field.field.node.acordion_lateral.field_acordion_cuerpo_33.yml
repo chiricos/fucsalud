@@ -1,0 +1,23 @@
+uuid: 39c03d4c-8381-422f-8327-007d643d89d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_33
+    - node.type.acordion_lateral
+  module:
+    - text
+id: node.acordion_lateral.field_acordion_cuerpo_33
+field_name: field_acordion_cuerpo_33
+entity_type: node
+bundle: acordion_lateral
+label: 'acordion cuerpo 33'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

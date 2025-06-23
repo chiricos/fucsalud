@@ -1,0 +1,30 @@
+uuid: 3bf6736f-c5ae-4ec2-ac76-02f8b4846b6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-toxicologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenutoxicologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-toxicologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-toxicologia'
+  label: posgrado-menu-toxicologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/348\r\n/node/349\r\n/node/350\r\n/posgrado/toxicologia-clinica"

@@ -1,0 +1,8 @@
+uuid: f2b158e7-9ecb-4ed3-89f9-d399088e5779
+langcode: es
+status: true
+dependencies: {  }
+id: nucleo-social-electivo
+label: Nucleo-social-electivo
+description: Nucleo-social-electivo
+locked: false

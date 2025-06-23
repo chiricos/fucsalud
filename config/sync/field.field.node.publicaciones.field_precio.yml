@@ -1,0 +1,23 @@
+uuid: 6ca98aba-cd7e-4875-bbfa-3a6b5b3cfed2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precio
+    - node.type.publicaciones
+id: node.publicaciones.field_precio
+field_name: field_precio
+entity_type: node
+bundle: publicaciones
+label: precio
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

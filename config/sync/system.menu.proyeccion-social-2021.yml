@@ -1,0 +1,8 @@
+uuid: cad869b1-8cc9-4a31-8542-a17b35e659af
+langcode: es
+status: true
+dependencies: {  }
+id: proyeccion-social-2021
+label: 'Proyección Social 2021'
+description: 'Proyección Social 2021'
+locked: false

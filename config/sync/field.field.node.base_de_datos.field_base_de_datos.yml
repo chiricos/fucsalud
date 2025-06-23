@@ -1,0 +1,28 @@
+uuid: 3ce30367-e7ec-47aa-93bc-f363c2f60e18
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_base_de_datos
+    - node.type.base_de_datos
+    - taxonomy.vocabulary.base_de_datos
+id: node.base_de_datos.field_base_de_datos
+field_name: field_base_de_datos
+entity_type: node
+bundle: base_de_datos
+label: 'base de datos'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      base_de_datos: base_de_datos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

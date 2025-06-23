@@ -1,0 +1,21 @@
+uuid: 88447216-09da-4811-822a-987706561623
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.pagina_convocatorias
+  module:
+    - metatag
+id: node.pagina_convocatorias.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: pagina_convocatorias
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

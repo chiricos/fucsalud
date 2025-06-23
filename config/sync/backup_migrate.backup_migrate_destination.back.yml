@@ -1,0 +1,9 @@
+uuid: d5707668-dd95-4638-a83b-17ba376f775f
+langcode: es
+status: true
+dependencies: {  }
+id: back
+label: back
+type: Directory
+config:
+  directory: /home/fucs/public_html/back

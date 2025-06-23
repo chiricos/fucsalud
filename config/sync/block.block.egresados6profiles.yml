@@ -1,0 +1,30 @@
+uuid: 0b83651f-765d-4282-8e8e-79dbb2361525
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.egresados-6profiles
+  module:
+    - system
+  theme:
+    - fucs
+id: egresados6profiles
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:egresados-6profiles'
+settings:
+  id: 'system_menu_block:egresados-6profiles'
+  label: 'Egresados 6Profiles'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/gprofiles/vinculacion\r\n/egresados/gprofiles/requisitos\r\n/egresados/gprofiles/beneficios\r\n/egresados/movilidad_internacional"

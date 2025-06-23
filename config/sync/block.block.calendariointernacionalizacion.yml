@@ -1,0 +1,31 @@
+uuid: a202705e-029e-4871-bf08-2fb07429baab
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b0327336-e451-4114-80da-46ce6151ee7c'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: calendariointernacionalizacion
+theme: fucs
+region: calendar
+weight: 0
+provider: null
+plugin: 'block_content:b0327336-e451-4114-80da-46ce6151ee7c'
+settings:
+  id: 'block_content:b0327336-e451-4114-80da-46ce6151ee7c'
+  label: 'Calendario internacionalización'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /internacionalizacion

@@ -1,0 +1,30 @@
+uuid: 5b9a2d1a-e35d-47f0-9fd5-60078a19321b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.gerencia-calidad-virtual
+  module:
+    - system
+  theme:
+    - fucs
+id: gerenciacalidadvirtual
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:gerencia-calidad-virtual'
+settings:
+  id: 'system_menu_block:gerencia-calidad-virtual'
+  label: 'Gerencia calidad virtual'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Gerencia-de-la-Calidad-y-Gestion-Clinica\r\n/posgrado/Gerencia-de-la-Calidad-y-Gestion-Clinica-perfiles\r\n/posgrado/Gerencia-de-la-Calidad-y-Gestion-Clinica-docentes\r\n/posgrado/Gerencia-de-la-Calidad-y-Gestion-Clinica-Plan-estudios"

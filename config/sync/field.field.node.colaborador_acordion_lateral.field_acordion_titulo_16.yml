@@ -1,0 +1,19 @@
+uuid: e2a7faf0-d934-4e98-ac33-e1468c317780
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_titulo_16
+    - node.type.colaborador_acordion_lateral
+id: node.colaborador_acordion_lateral.field_acordion_titulo_16
+field_name: field_acordion_titulo_16
+entity_type: node
+bundle: colaborador_acordion_lateral
+label: acordion_titulo_16
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

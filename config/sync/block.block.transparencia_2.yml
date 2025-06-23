@@ -1,0 +1,31 @@
+uuid: 2344e3a0-e0a2-4be3-aa92-3bf6fdd32edc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cec7d46f-f283-4384-b6d4-a1aaf8e8e5ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: transparencia_2
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:cec7d46f-f283-4384-b6d4-a1aaf8e8e5ae'
+settings:
+  id: 'block_content:cec7d46f-f283-4384-b6d4-a1aaf8e8e5ae'
+  label: Transparencia
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/transparencia\r\n/transparencia/*"

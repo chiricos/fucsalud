@@ -1,0 +1,22 @@
+uuid: 02ca6392-e5bb-4f29-ba7e-4ce89ca3b685
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pdf
+id: node.pdf.promote
+field_name: promote
+entity_type: node
+bundle: pdf
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

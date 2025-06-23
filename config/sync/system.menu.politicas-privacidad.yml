@@ -1,0 +1,8 @@
+uuid: 546d3b58-aaf4-4d61-acaa-dc553081146b
+langcode: es
+status: true
+dependencies: {  }
+id: politicas-privacidad
+label: 'POLITICAS PRIVACIDAD'
+description: ''
+locked: false

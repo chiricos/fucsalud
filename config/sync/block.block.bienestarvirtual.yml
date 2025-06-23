@@ -1,0 +1,30 @@
+uuid: 301b3e6a-57ce-42f9-8a13-ee9da2f52832
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.bienestar-virtual
+  module:
+    - system
+  theme:
+    - fucs
+id: bienestarvirtual
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:bienestar-virtual'
+settings:
+  id: 'system_menu_block:bienestar-virtual'
+  label: 'Bienestar virtual'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/bienestar/bienestar-virtual\r\n/bienestar/bienestar-virtual/Deportes-recreacion\r\n/bienestar/bienestar-virtual/cultura\r\n/bienestar/bienestar-virtual/comunidad-virtual\r\n/bienestar/bienestar-virtual/consejeria-virtual"

@@ -1,0 +1,31 @@
+uuid: 8f196702-9b2f-405e-8169-fab52a1aaa29
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a57a0bd1-8688-4fc3-ba25-15c088f4c36f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido0ortopediaytraumatologia
+theme: fucs
+region: pregrado_contenido_0
+weight: 8
+provider: null
+plugin: 'block_content:a57a0bd1-8688-4fc3-ba25-15c088f4c36f'
+settings:
+  id: 'block_content:a57a0bd1-8688-4fc3-ba25-15c088f4c36f'
+  label: 'Posgrado contenido 0 Ortopedia y Traumatología'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-ortopedia-y-traumatologia/ortopedia-traumatologia

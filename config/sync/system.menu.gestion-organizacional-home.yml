@@ -1,0 +1,8 @@
+uuid: 8c6bf077-af56-4c9b-b575-7898aa4d7fb1
+langcode: es
+status: true
+dependencies: {  }
+id: gestion-organizacional-home
+label: 'Gestión organizacional home'
+description: ''
+locked: false

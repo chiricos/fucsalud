@@ -1,0 +1,8 @@
+uuid: 24b841d2-ffcb-4ae9-a939-abb4ae456893
+langcode: es
+status: true
+dependencies: {  }
+id: tecnologia-actividad-fisica-entr
+label: tecnologia_actividad_fisica_entrenamiento_deportivo
+description: ''
+locked: false

@@ -1,0 +1,17 @@
+uuid: 4c8be50d-e0c6-4eb1-b5ad-bc3775219b6a
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'proyeccion social noticias'
+type: proyeccion_social_noticias
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

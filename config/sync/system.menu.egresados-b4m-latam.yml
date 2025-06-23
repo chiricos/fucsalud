@@ -1,0 +1,8 @@
+uuid: 185f91ea-0029-4c86-8d5f-ef9cea498ba6
+langcode: es
+status: true
+dependencies: {  }
+id: egresados-b4m-latam
+label: 'Egresados b4m latam'
+description: ''
+locked: false

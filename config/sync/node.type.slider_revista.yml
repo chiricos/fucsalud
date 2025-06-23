@@ -1,0 +1,17 @@
+uuid: 7e67812f-bf26-40d0-9701-ed5f23c170e3
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'slider revista'
+type: slider_revista
+description: 'slider de revista repertorio'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

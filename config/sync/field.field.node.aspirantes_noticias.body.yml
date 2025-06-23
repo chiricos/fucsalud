@@ -1,0 +1,23 @@
+uuid: 89989aa7-803b-4968-90cf-8fda4cf24450
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.aspirantes_noticias
+  module:
+    - text
+id: node.aspirantes_noticias.body
+field_name: body
+entity_type: node
+bundle: aspirantes_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

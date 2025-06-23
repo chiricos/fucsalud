@@ -1,0 +1,19 @@
+uuid: 3f6a2ca7-876e-4de3-8888-20304204b86a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_internacionalizacion_tit
+    - node.type.blog
+id: node.blog.field_internacionalizacion_tit
+field_name: field_internacionalizacion_tit
+entity_type: node
+bundle: blog
+label: internacionalizacion_titulo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

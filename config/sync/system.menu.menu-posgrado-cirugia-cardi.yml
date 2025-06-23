@@ -1,0 +1,8 @@
+uuid: a9f372c6-8b1f-42e6-85e1-55335ea45d45
+langcode: es
+status: true
+dependencies: {  }
+id: menu-posgrado-cirugia-cardi
+label: 'menú-posgrado-cirugia cardio-vascular'
+description: 'menú-posgrado-cirugia cardio-vascular'
+locked: false

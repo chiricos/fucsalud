@@ -1,0 +1,22 @@
+uuid: 0c8720c7-196c-497c-bebf-d07038da18e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.egresados_noticias
+id: node.egresados_noticias.promote
+field_name: promote
+entity_type: node
+bundle: egresados_noticias
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

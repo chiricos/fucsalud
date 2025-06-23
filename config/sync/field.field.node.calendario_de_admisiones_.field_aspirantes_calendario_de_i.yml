@@ -1,0 +1,21 @@
+uuid: e972e50a-4733-4814-be75-5bea99317846
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspirantes_calendario_de_i
+    - node.type.calendario_de_admisiones_
+  module:
+    - datetime
+id: node.calendario_de_admisiones_.field_aspirantes_calendario_de_i
+field_name: field_aspirantes_calendario_de_i
+entity_type: node
+bundle: calendario_de_admisiones_
+label: 'aspirantes calendario de induccion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

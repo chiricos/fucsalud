@@ -1,0 +1,8 @@
+uuid: 98edf0f1-0cb6-4607-8f7c-41f9d7928df0
+langcode: es
+status: true
+dependencies: {  }
+id: pregrado-menu-psicologia
+label: pregrado-menu-psicologia
+description: pregrado-menu-psicologia
+locked: false

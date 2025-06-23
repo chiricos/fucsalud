@@ -1,0 +1,30 @@
+uuid: 301b29d4-a042-45cc-b2dd-9410c69eb72d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.banners
+  module:
+    - system
+  theme:
+    - fucs
+id: banners
+theme: fucs
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:banners'
+settings:
+  id: 'system_menu_block:banners'
+  label: banners
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/biblioteca/banners/*'

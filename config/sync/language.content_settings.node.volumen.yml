@@ -1,0 +1,11 @@
+uuid: 53ba39ee-71f2-4ddf-9663-c3c6e7f49ea1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.volumen
+id: node.volumen
+target_entity_type_id: node
+target_bundle: volumen
+default_langcode: site_default
+language_alterable: false

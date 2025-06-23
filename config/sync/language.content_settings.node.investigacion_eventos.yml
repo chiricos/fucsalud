@@ -1,0 +1,11 @@
+uuid: 6fc80e3a-31e4-4c7c-9a41-2933a1cf469a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.investigacion_eventos
+id: node.investigacion_eventos
+target_entity_type_id: node
+target_bundle: investigacion_eventos
+default_langcode: site_default
+language_alterable: false

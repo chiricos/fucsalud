@@ -1,0 +1,8 @@
+uuid: ea1b0f4a-d4c2-4fbb-b72f-b1359d8e9f63
+langcode: es
+status: true
+dependencies: {  }
+id: desarrollo-humano-bu
+label: 'Desarrollo Humano BU'
+description: 'Desarrollo Humano BU'
+locked: false

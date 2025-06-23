@@ -1,0 +1,31 @@
+uuid: 7d808486-8861-49b3-bab3-5b768e12cdb5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6c22ef6a-9f20-4bf1-947b-4e26a90ae99e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: buscadorbiblioteca
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:6c22ef6a-9f20-4bf1-947b-4e26a90ae99e'
+settings:
+  id: 'block_content:6c22ef6a-9f20-4bf1-947b-4e26a90ae99e'
+  label: 'Buscador biblioteca'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/biblioteca\r\n/biblioteca/*"

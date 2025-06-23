@@ -1,0 +1,31 @@
+uuid: 808f5b5c-a229-490f-8b61-335dfeb8706c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:625fedf4-6f25-482a-9776-2555cf459da6'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1neonatologia
+theme: fucs
+region: pregrado_contenido_1
+weight: 13
+provider: null
+plugin: 'block_content:625fedf4-6f25-482a-9776-2555cf459da6'
+settings:
+  id: 'block_content:625fedf4-6f25-482a-9776-2555cf459da6'
+  label: 'Posgrado contenido 1 neonatología'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-pediatria-y-neonatologia/neonatologia

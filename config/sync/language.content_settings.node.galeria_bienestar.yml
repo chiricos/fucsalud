@@ -1,0 +1,11 @@
+uuid: 16754732-5b5f-4eb8-8e1b-6fc822dec49f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_bienestar
+id: node.galeria_bienestar
+target_entity_type_id: node
+target_bundle: galeria_bienestar
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: 1897f260-684f-4a0e-b3b3-980e2a51279e
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:42333ab9-3736-4852-ae0c-5f8a88cb5da6'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactopsocial
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:42333ab9-3736-4852-ae0c-5f8a88cb5da6'
+settings:
+  id: 'block_content:42333ab9-3736-4852-ae0c-5f8a88cb5da6'
+  label: 'Contacto P Social'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/proyeccion-social/*'

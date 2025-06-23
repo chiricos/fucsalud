@@ -1,0 +1,30 @@
+uuid: 95858d4b-60f9-4e46-880f-8d43e157d70e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-gerencia-de-la-seguridad-y-
+  module:
+    - system
+  theme:
+    - fucs
+id: menugerenciadelaseguridadysaludeneltrabajovirtual
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-gerencia-de-la-seguridad-y-'
+settings:
+  id: 'system_menu_block:menu-gerencia-de-la-seguridad-y-'
+  label: 'Menu Gerencia de la Seguridad y Salud en el Trabajo virtual'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Gerencia-de-la-Seguridad-Salud-en-el-Trabajo/*\r\n/posgrado/Gerencia-de-la-Seguridad-Salud-en-el-Trabajo/docentes\r\n/posgrado/Gerencia-de-la-Seguridad-Salud-en-el-Trabajo\r\n/posgrado/Gerencia-de-la-Seguridad-Salud-en-el-Trabajo/plan_de_trabajo\r\n/node/7167\r\n/node/7168\r\n/node/7171\r\n"

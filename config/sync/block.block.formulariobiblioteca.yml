@@ -1,0 +1,25 @@
+uuid: 81c92433-092f-4e29-95a3-dc9e32de53e9
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1e3b3877-cd95-4ca1-823f-a36962f72223'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: formulariobiblioteca
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:1e3b3877-cd95-4ca1-823f-a36962f72223'
+settings:
+  id: 'block_content:1e3b3877-cd95-4ca1-823f-a36962f72223'
+  label: 'formulario biblioteca'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

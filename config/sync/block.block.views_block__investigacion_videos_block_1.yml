@@ -1,0 +1,30 @@
+uuid: 8937ac1e-631d-4943-acbe-1c6c5c1bf2d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.investigacion_videos
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__investigacion_videos_block_1
+theme: fucs
+region: video
+weight: 5
+provider: null
+plugin: 'views_block:investigacion_videos-block_1'
+settings:
+  id: 'views_block:investigacion_videos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/investigacion\r\n/ensi"

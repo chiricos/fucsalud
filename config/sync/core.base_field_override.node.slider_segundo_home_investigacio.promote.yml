@@ -1,0 +1,22 @@
+uuid: af7fe5c7-da4e-4017-86e1-0c59fb7b877c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_segundo_home_investigacio
+id: node.slider_segundo_home_investigacio.promote
+field_name: promote
+entity_type: node
+bundle: slider_segundo_home_investigacio
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

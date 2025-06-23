@@ -1,0 +1,8 @@
+uuid: 5c88e4f2-7db7-4337-8d53-49fd244b8cc4
+langcode: es
+status: true
+dependencies: {  }
+id: menu-maestria-epidemio
+label: menú-maestria-epidemio
+description: menú-maestria-epidemio
+locked: false

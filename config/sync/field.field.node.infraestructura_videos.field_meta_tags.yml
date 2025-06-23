@@ -1,0 +1,21 @@
+uuid: a5bbe158-8fc4-48e2-aedc-f6715272d75a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.infraestructura_videos
+  module:
+    - metatag
+id: node.infraestructura_videos.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: infraestructura_videos
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,31 @@
+uuid: 5b69a38f-6a0f-4c67-bb11-e03cad367da4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2b3021b5-15e0-4733-a94a-adfe47120b8e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: zdescripcionregistro
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:2b3021b5-15e0-4733-a94a-adfe47120b8e'
+settings:
+  id: 'block_content:2b3021b5-15e0-4733-a94a-adfe47120b8e'
+  label: 'Z Descripción registro'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /user/register

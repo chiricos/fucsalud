@@ -1,0 +1,29 @@
+uuid: 254aadbe-4476-4df0-bdf7-9ccb15bce5cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-seguridad-y-salud-en-el-tra
+  module:
+    - system
+  theme:
+    - fucs
+id: menuseguridadysaludeneltrabajo
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-seguridad-y-salud-en-el-tra'
+settings:
+  id: 'system_menu_block:menu-seguridad-y-salud-en-el-tra'
+  label: 'menu seguridad y salud en el trabajo home'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/seguridad_salud_en_el_trabajo\r\n/seguridad_salud_en_el_trabajo/*"

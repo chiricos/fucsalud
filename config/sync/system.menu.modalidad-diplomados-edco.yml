@@ -1,0 +1,8 @@
+uuid: 8ae39f5b-b528-45f2-8022-cb4973f7ee80
+langcode: es
+status: true
+dependencies: {  }
+id: modalidad-diplomados-edco
+label: 'Modalidad Diplomados EDCO'
+description: ''
+locked: false

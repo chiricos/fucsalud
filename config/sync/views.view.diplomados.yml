@@ -1,0 +1,1018 @@
+uuid: 0c033287-ae62-40c2-9489-1c04d0ba9285
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuer_acor_2
+    - field.storage.node.field_cuer_acor_4
+    - field.storage.node.field_cuerpos_acordion_1
+    - field.storage.node.field_cur
+    - field.storage.node.field_cursos_imagen
+    - field.storage.node.field_titulo_
+    - field.storage.node.field_titulo_a
+    - field.storage.node.field_titulo_acordion_
+    - field.storage.node.field_titulo_cursos
+    - field.storage.node.field_titulos_acordion_3
+    - node.type.cursos
+    - taxonomy.vocabulary.cursos
+  content:
+    - 'taxonomy_term:cursos:0ce00a36-be4e-43e7-8b86-62014a3bb594'
+    - 'taxonomy_term:cursos:3e09be45-f09d-4337-ab36-d8bfc8d485c5'
+    - 'taxonomy_term:cursos:5bdb8415-219e-47ac-9c99-7cbd73cb6b03'
+  module:
+    - image
+    - node
+    - taxonomy
+    - text
+    - user
+id: diplomados
+label: Diplomados
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
+    display_options:
+      title: Diplomados
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_cur:
+          id: field_cur
+          table: node__field_cur
+          field: field_cur
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_cuerpos_acordion_1:
+          id: field_cuerpos_acordion_1
+          table: node__field_cuerpos_acordion_1
+          field: field_cuerpos_acordion_1
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_cuer_acor_2:
+          id: field_cuer_acor_2
+          table: node__field_cuer_acor_2
+          field: field_cuer_acor_2
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_cuer_acor_4:
+          id: field_cuer_acor_4
+          table: node__field_cuer_acor_4
+          field: field_cuer_acor_4
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_cursos_imagen:
+          id: field_cursos_imagen
+          table: node__field_cursos_imagen
+          field: field_cursos_imagen
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '<div title="{{ field_cursos_imagen__alt }}">{{ field_cursos_imagen }}</div>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: ''
+            image_style: ''
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_titulo_a:
+          id: field_titulo_a
+          table: node__field_titulo_a
+          field: field_titulo_a
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_titulo_:
+          id: field_titulo_
+          table: node__field_titulo_
+          field: field_titulo_
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_titulos_acordion_3:
+          id: field_titulos_acordion_3
+          table: node__field_titulos_acordion_3
+          field: field_titulos_acordion_3
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_titulo_acordion_:
+          id: field_titulo_acordion_
+          table: node__field_titulo_acordion_
+          field: field_titulo_acordion_
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_titulo_cursos:
+          id: field_titulo_cursos
+          table: node__field_titulo_cursos
+          field: field_titulo_cursos
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"cursos-continuada\">\r\n\t<section>\r\n\t\t<h2>{{ title }} </h2>\r\n\t\r\n\r\n\t\t<div class=\"carrera\">\r\n\t\t\t<div class=\"carrera-visual\">{{ field_cursos_imagen }}\r\n\t\t\t<ul>\r\n\t\t\t\t<li><a href=\"/themes/custom/fucs/images/continuada/PORTAFOLIO-DIGITAL-ED-FUCS.pdf\" target=\"_blank\"><img alt=\"\" src=\"/themes/custom/fucs/images/preuniversitario/seccion_EDCO.png\" /> </a>\r\n\t\t\t\t<p><a href=\"/themes/custom/fucs/images/continuada/PORTAFOLIO-DIGITAL-ED-FUCS.pdf\" target=\"_blank\">Portafolio EDCO</a></p>\r\n\t\t\t\t<a href=\"/themes/custom/fucs/images/continuada/PORTAFOLIO-DIGITAL-ED-FUCS.pdf\"> </a></li>\r\n\t\t\t\t<li><a href=\"/continuada/formulario-contacto\" target=\"_blank\"><img alt=\"\" src=\"/themes/custom/fucs/images/preuniversitario/seccion_5.png\" /> </a>\r\n\t\t\t\t<p><a href=\"/continuada/formulario-contacto\" tartget=\"_blank\">Solicitar información</a></p>\r\n\t\t\t\t<a href=\"/continuada/formulario-contacto\" target=\"_blank\"> </a></li>\r\n\t\t\t\t<li><a href=\"/aspirantes/financiacion\"><img alt=\"\" src=\"/themes/custom/fucs/images/preuniversitario/seccion_4.png\" /> </a>\r\n\t\t\t\t<p><a href=\"/sites/default/files/2018-12/INSTRUCTIVO-PSE-EDCO.pdf\" target=\"_blank\">Instructivo PSE</a></p>\r\n\t\t\t\t<a href=\"/sites/default/files/2018-12/INSTRUCTIVO-PSE-EDCO.pdf\"> </a></li>\r\n\t\t\t</ul>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"curso-carrera-info\">\r\n\t\t\t\t<div class=\"panel-group\" id=\"accordion\">\r\n\t\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t\t<div class=\"panel-heading\">\r\n\t\t\t\t<h4 class=\"panel-title\"><a data-parent=\"#accordion\" data-toggle=\"collapse\" >{{ field_titulo_a }}<span class=\"icon-down-dir\"></span></a></h4>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"panel-collapse\" id=\"collapse1\">\r\n\t\t\t\t<div class=\"panel-body\">{{ field_cuerpos_acordion_1 }}\r\n                          </div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t<div class=\"panel-heading\">\r\n\t\t\t<h4 class=\"panel-title\"><a data-parent=\"#accordion\" data-toggle=\"collapse\" >{{ field_titulo_ }} <span class=\"icon-down-dir\"></span></a></h4>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"panel-collapse collapse\" id=\"collapse2\">\r\n\t\t\t<div class=\"panel-body\">{{ field_cuer_acor_2 }} </div>\r\n\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"panel panel-default\">\r\n\t\t\t<div class=\"panel-heading\">\r\n\t\t\t<h4 class=\"panel-title\"><a data-parent=\"#accordion\" data-toggle=\"collapse\">{{ field_titulos_acordion_3 }} <span class=\"icon-down-dir\"></span></a></h4>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"panel-collapse collapse\" id=\"collapse3\">\r\n\t\t\t<div class=\"panel-body\">{{ field_cur }}</div>\r\n\t\t\t</div>\r\n\t\t\t</div>\r\n <div class=\"panel panel-default\">\r\n      <div class=\"panel-heading\">\r\n        <h4 class=\"panel-title\">\r\n          <a data-toggle=\"collapse\" data-parent=\"#accordion\" >{{ field_titulo_acordion_ }}<span class=\"icon-down-dir\"></span></a>\r\n        </h4>\r\n      </div>\r\n      <div id=\"collapse4\" class=\"panel-collapse collapse\">\r\n        <div class=\"panel-body\">{{ field_cuer_acor_4 }}</div>\r\n      </div>\r\n    </div>\r\n\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</section>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 100
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_titulo_cursos_value:
+          id: field_titulo_cursos_value
+          table: node__field_titulo_cursos
+          field: field_titulo_cursos_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_titulo_cursos_value
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            cursos: cursos
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_curso_categoria_target_id:
+          id: field_curso_categoria_target_id
+          table: node__field_curso_categoria
+          field: field_curso_categoria_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 5
+            - 4
+            - 3
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: cursos
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+      style:
+        type: default
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: "<div class=\"preuniversitario-botton\" style=\"    float: right;width: 97%;margin-top: 15px;\">\r\n   <section>\r\n       <div>\r\n           <img src=\"/themes/custom/fucs/images/preuniversitario/archivo.png\" alt=\"\">\r\n           <div>\r\n               <p>\r\n                   Nota: los programas de educación continuada, hacen parte de la oferta de educación informal de la Fundación Universitaria de Ciencias de la Salud - FUCS y no conducen a título alguno o certificado de aptitud ocupacional, por lo cual su desarrollo solo conduce a la expedición de una constancia o certificación de asistencia y se efectúan bajo las normas internas institucionales y (Artículo 2.6.6.8 Decreto 1075 de 2015). La FUCS se reserva el derecho de modificar la oferta de programas de educación continuada, sus horarios, fechas, docentes y contenidos, así como la facultad de aplazar o cancelar los programas, de acuerdo con las necesidades institucionales y según el número mínimo de inscritos requerido para dar apertura. Si las condiciones de oferta del programa cambian, el participante tendrá la opción de tomar otro programa de Educación Continuada que se esté ofreciendo, reservar su cupo para tomar el mismo una vez se ofrezca de nuevo, o solicitar la devolución del valor de matrícula pagado. Los gastos en que el participante incurra para tomar los programas presenciales, serán asumidos por su propia cuenta, por lo cual deberá verificar las fechas de oferta antes de matricularse y constatar su apertura antes de la fecha de inicio. La FUCS en ningún caso responderá por los gastos en que incurran los participantes para tomar los cursos ofrecidos.\r\n               </p>\r\n           </div>\r\n       </div>\r\n    </section>\r\n    <section>\r\n       <div>\r\n           <img src=\"/themes/custom/fucs/images/preuniversitario/telefono.png\" alt=\"\">\r\n           <div>\r\n               <h5>CONTÁCTANOS:</h5>\r\n               <p>\r\n                   Educación Continuada<br>\r\n                   e-educationfucs<br>\r\n                   Teléfono: +(571) 3538099, +(571) 3538100 Ext: 3645 - 3543 -3640<br>\r\n                  <a href=\"[site:url]formulario-PQRS\">Formulario de PQRS</a>\r\n               </p>\r\n           </div>\r\n       </div>\r\n    </section>\r\n</div>"
+          tokenize: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_cuer_acor_2'
+        - 'config:field.storage.node.field_cuer_acor_4'
+        - 'config:field.storage.node.field_cuerpos_acordion_1'
+        - 'config:field.storage.node.field_cur'
+        - 'config:field.storage.node.field_cursos_imagen'
+        - 'config:field.storage.node.field_titulo_'
+        - 'config:field.storage.node.field_titulo_a'
+        - 'config:field.storage.node.field_titulo_acordion_'
+        - 'config:field.storage.node.field_titulo_cursos'
+        - 'config:field.storage.node.field_titulos_acordion_3'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      path: diplomados
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_cuer_acor_2'
+        - 'config:field.storage.node.field_cuer_acor_4'
+        - 'config:field.storage.node.field_cuerpos_acordion_1'
+        - 'config:field.storage.node.field_cur'
+        - 'config:field.storage.node.field_cursos_imagen'
+        - 'config:field.storage.node.field_titulo_'
+        - 'config:field.storage.node.field_titulo_a'
+        - 'config:field.storage.node.field_titulo_acordion_'
+        - 'config:field.storage.node.field_titulo_cursos'
+        - 'config:field.storage.node.field_titulos_acordion_3'

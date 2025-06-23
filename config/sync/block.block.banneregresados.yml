@@ -1,0 +1,31 @@
+uuid: c0ca0ba8-a449-4761-848b-1658da8b36fd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3d4363eb-6724-4907-ab25-57ac7ea46b21'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: banneregresados
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:3d4363eb-6724-4907-ab25-57ac7ea46b21'
+settings:
+  id: 'block_content:3d4363eb-6724-4907-ab25-57ac7ea46b21'
+  label: 'banner egresados'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/carnetizacion\r\n/egresados/comunidad\r\n/egresados/vida-universitaria\r\n/egresados/grados\r\n/egresados/boletin\r\n/egresados/comunidad-egresado-destacado\r\n/egresados/nuestro-libro\r\n/egresados/saber-de-ti\r\n/egresados/beneficios/*\r\n/egresados/plan-vuelve/*\r\n/egresados/nosotros\r\n/egresados/nosotros/*\r\n/egresados/infografia-egresados\r\n/egresados/actualizacion-datos-egresadosFUCS\r\n/egresados/movilidad_internacional\r\n/noticias-egresados\r\n/noticias-egresados/*"

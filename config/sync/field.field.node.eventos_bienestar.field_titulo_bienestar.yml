@@ -1,0 +1,19 @@
+uuid: ddd0326d-fdad-46ce-8972-c6d996c20c3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_bienestar
+    - node.type.eventos_bienestar
+id: node.eventos_bienestar.field_titulo_bienestar
+field_name: field_titulo_bienestar
+entity_type: node
+bundle: eventos_bienestar
+label: titulo_bienestar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

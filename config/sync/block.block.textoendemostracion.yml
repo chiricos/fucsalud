@@ -1,0 +1,31 @@
+uuid: fb63dd21-6cb5-43c3-8ed4-4c82968c2f09
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bfc62cf3-f805-4f5c-82e5-a75908a40803'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: textoendemostracion
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:bfc62cf3-f805-4f5c-82e5-a75908a40803'
+settings:
+  id: 'block_content:bfc62cf3-f805-4f5c-82e5-a75908a40803'
+  label: 'texto en demostracion'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /base-de-datos-en-demostracion

@@ -1,0 +1,26 @@
+uuid: 62b03456-ac71-43db-b05e-31a8d39e2524
+langcode: es
+status: true
+dependencies:
+  module:
+    - poll
+    - system
+  theme:
+    - fucs
+id: encuestamasreciente
+theme: fucs
+region: poll
+weight: 0
+provider: null
+plugin: poll_recent_block
+settings:
+  id: poll_recent_block
+  label: 'Encuesta más reciente'
+  label_display: visible
+  provider: poll
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

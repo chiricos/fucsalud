@@ -1,0 +1,8 @@
+uuid: 04cb53aa-c431-4603-9459-0bc3e454ceb9
+langcode: es
+status: true
+dependencies: {  }
+id: menu-centro-de-idiomas
+label: 'menu centro de idiomas'
+description: ''
+locked: false

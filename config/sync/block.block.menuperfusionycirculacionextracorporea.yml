@@ -1,0 +1,30 @@
+uuid: cda59e72-b9f2-403b-8591-e1e1b55db504
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-perfusion-y-circulacio
+  module:
+    - system
+  theme:
+    - fucs
+id: menuperfusionycirculacionextracorporea
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-perfusion-y-circulacio'
+settings:
+  id: 'system_menu_block:menu-perfusion-y-circulacio'
+  label: 'Menú perfusión y circulación extracorpórea'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/perfusion-circulacion-extracorporea\r\n/posgrado/perfusion/plan-de-estudios\r\n/posgrado/perfusion/docentes\r\n/posgrado/perfusion/perfiles\r\n/posgrado/perfusion/campo_de_accion"

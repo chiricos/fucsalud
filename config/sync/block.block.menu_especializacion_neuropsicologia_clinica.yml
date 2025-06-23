@@ -1,0 +1,29 @@
+uuid: c709eafd-c16f-4d21-8903-c4e1ed6e320e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-especializacion-neuropsicol
+  module:
+    - system
+  theme:
+    - fucs
+id: menu_especializacion_neuropsicologia_clinica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-especializacion-neuropsicol'
+settings:
+  id: 'system_menu_block:menu-especializacion-neuropsicol'
+  label: 'Especializacion Neuropsicologia Clinica'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/posgrado/Neuropsicologia\r\n/posgrado/Neuropsicologia-plan-de-estudios\r\n/posgrado/Neuropsicologia-docentes"

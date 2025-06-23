@@ -1,0 +1,17 @@
+uuid: 05fc9817-01b1-446a-b781-f7f282581bf5
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Aspirantes Noticias'
+type: aspirantes_noticias
+description: 'noticias de aspirantes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

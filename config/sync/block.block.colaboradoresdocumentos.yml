@@ -1,0 +1,30 @@
+uuid: 5aac814e-0356-449a-9b70-1e3f5ed179aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.colaboradores-documentos
+  module:
+    - system
+  theme:
+    - fucs
+id: colaboradoresdocumentos
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:colaboradores-documentos'
+settings:
+  id: 'system_menu_block:colaboradores-documentos'
+  label: 'colaboradores documentos'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/colaboradores/documentos/*\r\n/home/documentos/*"

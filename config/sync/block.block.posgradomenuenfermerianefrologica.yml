@@ -1,0 +1,30 @@
+uuid: cb4c68dc-777d-409f-944d-5ae14bc252e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-enfermeria-ne
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuenfermerianefrologica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-enfermeria-ne'
+settings:
+  id: 'system_menu_block:posgrado-menu-enfermeria-ne'
+  label: posgrado-menu-enfermeria-nefrologica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/368\r\n/node/369\r\n/node/370\r\n/node/371\r\n/node/372\r\n/node/373\r\n/node/374\r\n/posgrado/enfermeria-nefrologica-adulto"

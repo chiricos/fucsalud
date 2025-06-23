@@ -1,0 +1,30 @@
+uuid: e487ea87-e1cb-46a6-8aeb-e150d1de5e40
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-maxil
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiamaxilofacial
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-maxil'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-maxil'
+  label: posgrado-menu-cirugia-maxilofacial
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/400\r\n/node/401\r\n/node/402\r\n/posgrado/sub-otorrinolaringologia/cirugia-maxilofacial"

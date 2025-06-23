@@ -1,0 +1,30 @@
+uuid: 482fd524-6a98-481b-a170-7eda6d7978d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-dermatologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenudermatologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-dermatologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-dermatologia'
+  label: posgrado-menu-dermatologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/303\r\n/node/304\r\n/node/305\r\n/posgrado/dermatologia"

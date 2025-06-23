@@ -1,0 +1,22 @@
+uuid: 2349c2f7-5258-4058-a2cf-43eed81a4ef7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.infraestructura_videos
+id: node.infraestructura_videos.promote
+field_name: promote
+entity_type: node
+bundle: infraestructura_videos
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

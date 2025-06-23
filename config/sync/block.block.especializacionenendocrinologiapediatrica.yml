@@ -1,0 +1,30 @@
+uuid: 070b7d9f-5acb-420d-8fd1-0026c422b399
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.especializacion-en-endocrin
+  module:
+    - system
+  theme:
+    - fucs
+id: especializacionenendocrinologiapediatrica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:especializacion-en-endocrin'
+settings:
+  id: 'system_menu_block:especializacion-en-endocrin'
+  label: 'Especialización en Endocrinología Pediátrica'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/Endocrinologia-Pediatrica\r\n/posgrado/Endocrinologia-Pediatrica-Perfiles\r\n/posgrado/Endocrinologia-Pediatrica-Docentes\r\n/posgrado/Endocrinologia-Pediatrica-Plan-de-estudios"

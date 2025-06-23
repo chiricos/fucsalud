@@ -1,0 +1,8 @@
+uuid: bc3d8929-9427-4705-bf2f-3867af1a0418
+langcode: es
+status: true
+dependencies: {  }
+id: internacionalizacion
+label: INTERNACIONALIZACIÓN
+description: ''
+locked: false

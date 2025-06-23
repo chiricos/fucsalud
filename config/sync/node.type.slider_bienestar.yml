@@ -1,0 +1,18 @@
+uuid: cb505b89-6e3a-43c0-9485-948a30111151
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Slider bienestar'
+type: slider_bienestar
+description: 'imagenes de banner de bienetar'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

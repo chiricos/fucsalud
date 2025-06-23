@@ -1,0 +1,11 @@
+uuid: dce737ef-3c82-481e-8d07-71e730bbbb11
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_infraestructura
+id: node.galeria_infraestructura
+target_entity_type_id: node
+target_bundle: galeria_infraestructura
+default_langcode: site_default
+language_alterable: false

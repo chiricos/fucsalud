@@ -1,0 +1,31 @@
+uuid: 75b23cb5-e618-4976-94b1-58067848f055
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:8491e20f-3d35-458a-a96e-bc84c546d4fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: preuniversitariocontenido2
+theme: fucs
+region: preuniversitario_content_2
+weight: 0
+provider: null
+plugin: 'block_content:8491e20f-3d35-458a-a96e-bc84c546d4fa'
+settings:
+  id: 'block_content:8491e20f-3d35-458a-a96e-bc84c546d4fa'
+  label: 'Preuniversitario contenido 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /preUniversitario

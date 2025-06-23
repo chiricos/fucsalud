@@ -1,0 +1,38 @@
+uuid: ab854f6a-fbc8-491a-8a9a-e8ab4e257a6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.investigacion_videos.body
+    - field.field.node.investigacion_videos.field_meta_tags
+    - node.type.investigacion_videos
+  module:
+    - metatag
+    - text
+    - user
+id: node.investigacion_videos.default
+targetEntityType: node
+bundle: investigacion_videos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

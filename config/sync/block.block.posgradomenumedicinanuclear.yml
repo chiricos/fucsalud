@@ -1,0 +1,30 @@
+uuid: bdcc670e-30ce-46b5-a043-078179bd9f44
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-medicina-nucl
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenumedicinanuclear
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-medicina-nucl'
+settings:
+  id: 'system_menu_block:posgrado-menu-medicina-nucl'
+  label: posgrado-menu-medicina-nuclear
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/394\r\n/node/395\r\n/node/396\r\n/posgrado/sub-medicina-interna/medicina-nuclear"

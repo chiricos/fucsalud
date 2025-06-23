@@ -1,0 +1,17 @@
+uuid: 88630bd3-5978-46a4-942d-281617a162e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'infraestructura videos'
+type: infraestructura_videos
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

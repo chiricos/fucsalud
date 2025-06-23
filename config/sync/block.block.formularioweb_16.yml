@@ -1,0 +1,30 @@
+uuid: 6301f4bc-ee43-4481-84e2-0141a1e0893b
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.formulario_internacionalizacion
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_16
+theme: fucs
+region: form_linea
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario en línea'
+  label_display: visible
+  provider: webform
+  webform_id: formulario_internacionalizacion
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /internacionalizacion/formulario-en-linea

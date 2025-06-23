@@ -1,0 +1,8 @@
+uuid: ef804b8e-a8f5-4f8c-8c11-9aa4e0e3020b
+langcode: es
+status: true
+dependencies: {  }
+id: transparencia
+label: Transparencia
+description: Transparencia
+locked: false

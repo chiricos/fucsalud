@@ -1,0 +1,18 @@
+uuid: b456d86c-75e7-432a-b05b-0ede22ef00fe
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'slider estudiantes'
+type: slider_estudiantes
+description: 'imagen del slider de estudiantes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

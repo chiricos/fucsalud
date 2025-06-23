@@ -1,0 +1,11 @@
+uuid: 6e04ac6f-e1b9-4098-bb24-1126a0ed4829
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.base_de_datos
+id: taxonomy_term.base_de_datos
+target_entity_type_id: taxonomy_term
+target_bundle: base_de_datos
+default_langcode: site_default
+language_alterable: false

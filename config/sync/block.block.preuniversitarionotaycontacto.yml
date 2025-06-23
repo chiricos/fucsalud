@@ -1,0 +1,31 @@
+uuid: fd3ca3a9-93b8-4395-8190-3937ec226086
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c1d40680-e244-440e-a704-1c69cb91eb83'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: preuniversitarionotaycontacto
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:c1d40680-e244-440e-a704-1c69cb91eb83'
+settings:
+  id: 'block_content:c1d40680-e244-440e-a704-1c69cb91eb83'
+  label: 'preuniversitario nota y contacto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/preuniversitario\r\n/preuniversitario/*"

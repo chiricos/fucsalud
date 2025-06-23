@@ -1,0 +1,31 @@
+uuid: db362bb5-fa99-4021-9dac-9410e380a4dc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:571f850a-7b3f-4c5d-95a1-7e819280cf9f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: internacionalizacioninduccionvirtual
+theme: fucs
+region: notibienestar
+weight: 0
+provider: null
+plugin: 'block_content:571f850a-7b3f-4c5d-95a1-7e819280cf9f'
+settings:
+  id: 'block_content:571f850a-7b3f-4c5d-95a1-7e819280cf9f'
+  label: 'internacionalizacion induccion virtual'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /internacionalizacion

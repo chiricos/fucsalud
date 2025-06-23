@@ -1,0 +1,30 @@
+uuid: 893af23c-28d9-4471-9b08-f23f8cd20151
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.centro-de-investigaciones
+  module:
+    - system
+  theme:
+    - fucs
+id: centrodeinvestigaciones
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:centro-de-investigaciones'
+settings:
+  id: 'system_menu_block:centro-de-investigaciones'
+  label: 'Centro de investigaciones'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/centro-de-investigaciones\r\n/centro-de-investigaciones/*"

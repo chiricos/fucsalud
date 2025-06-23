@@ -1,0 +1,31 @@
+uuid: c62d462e-c8b3-43bd-95e5-788e218b2a50
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3a0ee080-915c-4189-a73c-21a44d425fb7'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerdepregrado
+theme: fucs
+region: banner_page
+weight: 0
+provider: null
+plugin: 'block_content:3a0ee080-915c-4189-a73c-21a44d425fb7'
+settings:
+  id: 'block_content:3a0ee080-915c-4189-a73c-21a44d425fb7'
+  label: 'banner de pregrado'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado\r\n/pregrado/fortalezas\r\n/pregrado/competencias\r\n/pregrado/estudiar-fucs\r\n/pregrado/plan-de-estudios\r\n/pregrado/campos-de-accion\r\n/pregrado/practicas\r\n/pregrado/directivos-y-docentes\r\n/pregrado/programas-de-permanencia-universitaria"

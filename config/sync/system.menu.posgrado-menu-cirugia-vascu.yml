@@ -1,0 +1,8 @@
+uuid: 0f55cb34-524f-4af5-becb-5c0bc6e7e4d2
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-cirugia-vascu
+label: posgrado-menu-cirugia-vascular-periferica
+description: posgrado-menu-cirugia-vascular-periferica
+locked: false

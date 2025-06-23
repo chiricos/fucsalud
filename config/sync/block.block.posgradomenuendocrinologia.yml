@@ -1,0 +1,30 @@
+uuid: 0048068d-5543-44d1-aae7-2f8e0e411bcc
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-endocrinologi
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuendocrinologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-endocrinologi'
+settings:
+  id: 'system_menu_block:posgrado-menu-endocrinologi'
+  label: posgrado-menu-endocrinologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/sub-medicina-interna/endocrinologia\r\n/node/509\r\n/posgrado/sub-medicina-interna/Endocrinologia-Docente\r\n/posgrado/sub-medicina-interna/endocrinologia-planestudios\r\n/posgrado/sub-medicina-interna/endocrinologia-perfiles"

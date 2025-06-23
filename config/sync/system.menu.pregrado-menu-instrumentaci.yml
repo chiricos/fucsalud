@@ -1,0 +1,8 @@
+uuid: dc8a92af-bb9f-4392-aabe-25585396a5c8
+langcode: es
+status: true
+dependencies: {  }
+id: pregrado-menu-instrumentaci
+label: pregrado-menu-instrumentacion
+description: pregrado-menu-instrumentacion
+locked: false

@@ -1,0 +1,30 @@
+uuid: 42f3f95d-6789-4aaf-8e4b-0a07d86a3bf7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.enfer-oncologica
+  module:
+    - system
+  theme:
+    - fucs
+id: enferoncologica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:enfer-oncologica'
+settings:
+  id: 'system_menu_block:enfer-oncologica'
+  label: 'Enfer oncologica'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/enfermeria-oncologica\r\n/posgrado/enfermeria-oncologica/perfiles\r\n/posgrado/enfermeria-oncologica/plan-de-estudios\r\n/posgrado/enfermeria-oncologica/Docentes\r\n/posgrado/enfermeria-oncologica/campo_accion\r\n"

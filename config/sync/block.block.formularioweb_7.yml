@@ -1,0 +1,28 @@
+uuid: 1441708a-a0c2-4187-90da-41ce12595076
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_7
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Diseminación Selectiva de Información'
+  label_display: visible
+  provider: webform
+  webform_id: formulario_diseminacion_selectiv
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/diseminacion-selectiva-infomacion

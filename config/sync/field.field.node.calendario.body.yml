@@ -1,0 +1,23 @@
+uuid: 1426fba7-636f-48c0-8c2e-87ea65b5addd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.calendario
+  module:
+    - text
+id: node.calendario.body
+field_name: body
+entity_type: node
+bundle: calendario
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

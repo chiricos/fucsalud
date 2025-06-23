@@ -1,0 +1,31 @@
+uuid: 2558c79d-3b1b-4119-8d43-dc763cff2606
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:33c805f3-5af6-4010-93dd-a9774b2cda20'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuinfraestructura
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:33c805f3-5af6-4010-93dd-a9774b2cda20'
+settings:
+  id: 'block_content:33c805f3-5af6-4010-93dd-a9774b2cda20'
+  label: 'Menu Infraestructura'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/ciudad_universitaria\r\n/ciudad_universitaria/*"

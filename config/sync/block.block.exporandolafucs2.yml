@@ -1,0 +1,30 @@
+uuid: 47eff7f0-bbd6-4111-abc7-c85df99eaac1
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.exporando-la-fucs2
+  module:
+    - system
+  theme:
+    - fucs
+id: exporandolafucs2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:exporando-la-fucs2'
+settings:
+  id: 'system_menu_block:exporando-la-fucs2'
+  label: 'exporando la fucs 2'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/mi_colegio_y_la_FUCS\r\n/mi_colegio_y_la_FUCS/*"

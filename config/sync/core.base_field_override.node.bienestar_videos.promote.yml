@@ -1,0 +1,22 @@
+uuid: 2c52d7d5-a077-406c-a4c6-cc7d1a1f9163
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bienestar_videos
+id: node.bienestar_videos.promote
+field_name: promote
+entity_type: node
+bundle: bienestar_videos
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

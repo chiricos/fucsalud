@@ -1,0 +1,11 @@
+uuid: c0e8ed7a-f483-42e0-a513-cec0f58caa96
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyeccion_social_noticias
+id: node.proyeccion_social_noticias
+target_entity_type_id: node
+target_bundle: proyeccion_social_noticias
+default_langcode: site_default
+language_alterable: false

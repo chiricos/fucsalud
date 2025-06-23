@@ -1,0 +1,28 @@
+uuid: 9ec2e041-8d3b-4044-b38e-39cba86f6309
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curso_categoria
+    - node.type.cursos
+    - taxonomy.vocabulary.cursos
+id: node.cursos.field_curso_categoria
+field_name: field_curso_categoria
+entity_type: node
+bundle: cursos
+label: 'curso categoria'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cursos: cursos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: posgrado
+field_type: entity_reference

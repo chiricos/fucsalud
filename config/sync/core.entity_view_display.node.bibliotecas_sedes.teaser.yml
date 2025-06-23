@@ -1,0 +1,31 @@
+uuid: 3aed4242-a120-458d-869c-3a405defc114
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bibliotecas_sedes.field_direccion
+    - field.field.node.bibliotecas_sedes.field_horario
+    - field.field.node.bibliotecas_sedes.field_image
+    - field.field.node.bibliotecas_sedes.field_meta_tags
+    - field.field.node.bibliotecas_sedes.field_sede
+    - node.type.bibliotecas_sedes
+  module:
+    - user
+id: node.bibliotecas_sedes.teaser
+targetEntityType: node
+bundle: bibliotecas_sedes
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_direccion: true
+  field_horario: true
+  field_image: true
+  field_meta_tags: true
+  field_sede: true
+  langcode: true

@@ -1,0 +1,31 @@
+uuid: 852af9bc-435b-401c-9999-046e6509a7f1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:818c9733-f16d-429d-b3fd-aa4800a83c9e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: aspirantecontacto
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:818c9733-f16d-429d-b3fd-aa4800a83c9e'
+settings:
+  id: 'block_content:818c9733-f16d-429d-b3fd-aa4800a83c9e'
+  label: 'aspirante contacto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/aspirantes/*'

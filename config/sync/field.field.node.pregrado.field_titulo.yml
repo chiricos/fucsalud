@@ -1,0 +1,19 @@
+uuid: 76055b25-7c4d-4337-8d78-502d91b2057e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo
+    - node.type.pregrado
+id: node.pregrado.field_titulo
+field_name: field_titulo
+entity_type: node
+bundle: pregrado
+label: titulo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

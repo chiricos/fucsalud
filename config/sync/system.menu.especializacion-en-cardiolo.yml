@@ -1,0 +1,8 @@
+uuid: 7045cd4d-90e3-403e-90c3-92d40389216e
+langcode: es
+status: true
+dependencies: {  }
+id: especializacion-en-cardiolo
+label: Cardiología-Intervencionista-Hemodinamia-Pediátrica
+description: 'Cardiología Intervencionista y Hemodinamia Pediátrica'
+locked: false

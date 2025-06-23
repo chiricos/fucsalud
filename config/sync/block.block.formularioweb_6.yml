@@ -1,0 +1,28 @@
+uuid: 4d8d5020-0b58-4456-837e-7d5a999ed63e
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_6
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Localización y Obtención de Documentos'
+  label_display: '0'
+  provider: webform
+  webform_id: formulario_localizacion_y_obtenc
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/localizacion-y-obtencion-documentos

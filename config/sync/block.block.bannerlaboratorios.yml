@@ -1,0 +1,31 @@
+uuid: 51974060-5e9e-4bac-9f59-e8d2be5d3abb
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2b849775-8ad4-44ea-94aa-5d65bd8523fe'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerlaboratorios
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:2b849775-8ad4-44ea-94aa-5d65bd8523fe'
+settings:
+  id: 'block_content:2b849775-8ad4-44ea-94aa-5d65bd8523fe'
+  label: 'banner laboratorios'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/laboratorios/*\r\n/laboratorios"

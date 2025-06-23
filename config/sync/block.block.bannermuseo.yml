@@ -1,0 +1,31 @@
+uuid: b895ee42-f7df-468d-bcfe-78f225130b61
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6876503d-6e5b-40d1-b4c4-0d7ced41ba2f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannermuseo
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:6876503d-6e5b-40d1-b4c4-0d7ced41ba2f'
+settings:
+  id: 'block_content:6876503d-6e5b-40d1-b4c4-0d7ced41ba2f'
+  label: 'banner museo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/museo/*'

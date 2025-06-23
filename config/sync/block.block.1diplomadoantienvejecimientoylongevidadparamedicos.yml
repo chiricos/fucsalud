@@ -1,0 +1,31 @@
+uuid: 20838dfa-58c2-4510-b312-df5cdf22afae
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b52577a9-96c3-4ab0-ab89-a6a2a8d81cc1'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: 1diplomadoantienvejecimientoylongevidadparamedicos
+theme: fucs
+region: pregrado_contenido_1
+weight: 24
+provider: null
+plugin: 'block_content:b52577a9-96c3-4ab0-ab89-a6a2a8d81cc1'
+settings:
+  id: 'block_content:b52577a9-96c3-4ab0-ab89-a6a2a8d81cc1'
+  label: 'educacion continuada 1 Diplomado Antienvejecimiento y Longevidad para Médicos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-ciencias-salud/antienvejecimiento-y-longevidad-medicos

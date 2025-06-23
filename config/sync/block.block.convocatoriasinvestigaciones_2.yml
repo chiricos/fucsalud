@@ -1,0 +1,29 @@
+uuid: d96be204-fe20-4033-922e-e1d2667d8e26
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.convocatorias-investigaciones
+  module:
+    - system
+  theme:
+    - fucs
+id: convocatoriasinvestigaciones_2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:convocatorias-investigaciones'
+settings:
+  id: 'system_menu_block:convocatorias-investigaciones'
+  label: 'convocatorias internas y externas investigaciones'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/convocatorias-internas\r\n/investigacion/convocatoria-externa\r\n/investigacion/convocatorias-internas/*\r\n"

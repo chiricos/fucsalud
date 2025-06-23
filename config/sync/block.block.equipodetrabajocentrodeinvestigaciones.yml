@@ -1,0 +1,30 @@
+uuid: 774a8956-dfbf-4738-b5e7-c9b1d728519a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:13c86b05-105c-4411-a0f2-5b6508a47d51'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: equipodetrabajocentrodeinvestigaciones
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:13c86b05-105c-4411-a0f2-5b6508a47d51'
+settings:
+  id: 'block_content:13c86b05-105c-4411-a0f2-5b6508a47d51'
+  label: 'Equipo de Trabajo - centro de investigaciones'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home/centro-de-investigaciones

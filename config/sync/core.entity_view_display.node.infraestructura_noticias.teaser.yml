@@ -1,0 +1,35 @@
+uuid: 62f279b6-966a-4e2a-922c-4e4920676248
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.infraestructura_noticias.body
+    - field.field.node.infraestructura_noticias.field_meta_tags
+    - field.field.node.infraestructura_noticias.field_noticias_imagen
+    - node.type.infraestructura_noticias
+  module:
+    - text
+    - user
+id: node.infraestructura_noticias.teaser
+targetEntityType: node
+bundle: infraestructura_noticias
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_noticias_imagen: true
+  langcode: true

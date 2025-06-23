@@ -1,0 +1,30 @@
+uuid: 4a7b3fb4-2979-4260-9728-0ffc123cefb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.telesalud-y-telemedicina
+  module:
+    - system
+  theme:
+    - fucs
+id: telesaludytelemedicina_2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:telesalud-y-telemedicina'
+settings:
+  id: 'system_menu_block:telesalud-y-telemedicina'
+  label: 'Telesalud y Telemedicina'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/telesalud-y-telemedicina/*\r\n/home/telesalud-telemedicina1\r\n/home/telesalud-telemedicina/*"

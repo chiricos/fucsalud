@@ -1,0 +1,31 @@
+uuid: 44fb7f50-c9b2-47ef-95c6-89decf8277ee
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ad7f428-fc3d-4f24-bc11-642bf1a34fde'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menupregrado
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:6ad7f428-fc3d-4f24-bc11-642bf1a34fde'
+settings:
+  id: 'block_content:6ad7f428-fc3d-4f24-bc11-642bf1a34fde'
+  label: 'menu pregrado'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado\r\n/pregrado/*"

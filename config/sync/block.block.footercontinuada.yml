@@ -1,0 +1,31 @@
+uuid: 34acc191-3039-4b89-8690-75d173f12028
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ce9e741c-a079-4bf1-802c-c1b216df0e3d'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: footercontinuada
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:ce9e741c-a079-4bf1-802c-c1b216df0e3d'
+settings:
+  id: 'block_content:ce9e741c-a079-4bf1-802c-c1b216df0e3d'
+  label: 'Footer continuada'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/avales/convenios-y-avales-FUCS-EDCO\r\n/continuada/quienes-somos\r\n/continuada/sevicios\r\n/continuada/financiacion\r\n/continuada/beneficios"

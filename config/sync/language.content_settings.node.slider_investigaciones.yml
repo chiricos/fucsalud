@@ -1,0 +1,11 @@
+uuid: 419a0864-adae-4c1f-a63f-127ebc8ae2c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_investigaciones
+id: node.slider_investigaciones
+target_entity_type_id: node
+target_bundle: slider_investigaciones
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: f4770dbc-200d-49f9-9b02-fad231e19b90
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:768c5de1-4def-40f4-952a-16915eb1ef62'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menudiplomados
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:768c5de1-4def-40f4-952a-16915eb1ef62'
+settings:
+  id: 'block_content:768c5de1-4def-40f4-952a-16915eb1ef62'
+  label: 'menu diplomados'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados

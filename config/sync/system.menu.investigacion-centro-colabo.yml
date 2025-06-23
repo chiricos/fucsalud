@@ -1,0 +1,8 @@
+uuid: 8a25ee52-334a-49f1-941b-e41fc6d50e15
+langcode: es
+status: true
+dependencies: {  }
+id: investigacion-centro-colabo
+label: 'INVESTIGACION CENTRO COLABORADOR'
+description: 'INVESTIGACION CENTRO COLABORADOR'
+locked: false

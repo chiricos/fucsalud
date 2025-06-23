@@ -1,0 +1,30 @@
+uuid: 41aaf291-afb0-433b-9858-9bdcbb63869a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1eb9e756-d175-4fc0-b70a-7bc9cc4cf9da'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: conexionlaboral
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:1eb9e756-d175-4fc0-b70a-7bc9cc4cf9da'
+settings:
+  id: 'block_content:1eb9e756-d175-4fc0-b70a-7bc9cc4cf9da'
+  label: 'conexión Laboral'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/egresados/mi-empleo-FUCS\r\n/egresados/mi-empleo-FUCS/*"

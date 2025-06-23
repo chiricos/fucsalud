@@ -1,0 +1,8 @@
+uuid: eb29ffcb-104c-409c-924d-7e91b341178e
+langcode: es
+status: true
+dependencies: {  }
+id: estudiante-convenios-docenc
+label: 'Estudiante Convenios Docencia'
+description: 'Estudiante Convenios Docencia'
+locked: false

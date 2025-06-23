@@ -1,0 +1,8 @@
+uuid: fba1d20a-4785-4624-a34e-218d8380f852
+langcode: es
+status: true
+dependencies: {  }
+id: colaboradores-gestion-organ
+label: 'colaboradores gestion organizacional'
+description: ''
+locked: false

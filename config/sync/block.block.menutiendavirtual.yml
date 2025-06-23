@@ -1,0 +1,31 @@
+uuid: bd69de72-ed51-4480-abec-fe4c7dc56da9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e7d1a87a-44e2-4318-83bc-56bdd4901d26'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menutiendavirtual
+theme: fucs
+region: submenu_page
+weight: -27
+provider: null
+plugin: 'block_content:e7d1a87a-44e2-4318-83bc-56bdd4901d26'
+settings:
+  id: 'block_content:e7d1a87a-44e2-4318-83bc-56bdd4901d26'
+  label: 'MENU TIENDA VIRTUAL'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/tienda-virtual\r\n/tienda-virtual/*\r\n/carrito\r\n/donaciones"

@@ -1,0 +1,7 @@
+uuid: 4316d464-922f-49fb-a304-0779c5c37ddb
+langcode: es
+status: true
+dependencies: {  }
+name: prueba
+label: prueba
+effects: {  }

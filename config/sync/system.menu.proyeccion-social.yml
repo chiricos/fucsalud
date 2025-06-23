@@ -1,0 +1,8 @@
+uuid: 164886df-a129-41c4-a05c-b8bb1a065997
+langcode: es
+status: true
+dependencies: {  }
+id: proyeccion-social
+label: 'Proyección social'
+description: 'Proyección social'
+locked: false

@@ -1,0 +1,31 @@
+uuid: c818d673-c3b0-4971-be9d-b1572dba8315
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:625ea381-db18-461e-8304-8f692b8d79c8'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bannerdeaspirantes
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:625ea381-db18-461e-8304-8f692b8d79c8'
+settings:
+  id: 'block_content:625ea381-db18-461e-8304-8f692b8d79c8'
+  label: 'banner de aspirantes'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/aspirantes/*'

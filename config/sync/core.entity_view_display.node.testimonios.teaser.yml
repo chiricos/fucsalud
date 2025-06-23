@@ -1,0 +1,43 @@
+uuid: 8391ae12-cbbd-4acc-88cd-09466474ecdd
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonios.body
+    - field.field.node.testimonios.field_meta_tags
+    - field.field.node.testimonios.field_testimonio_
+    - field.field.node.testimonios.field_testimonio_cargo
+    - field.field.node.testimonios.field_testimonio_enlace
+    - field.field.node.testimonios.field_testimonio_imagen
+    - field.field.node.testimonios.field_testimonio_nombre
+    - node.type.testimonios
+  module:
+    - text
+    - user
+id: node.testimonios.teaser
+targetEntityType: node
+bundle: testimonios
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_testimonio_: true
+  field_testimonio_cargo: true
+  field_testimonio_enlace: true
+  field_testimonio_imagen: true
+  field_testimonio_nombre: true
+  langcode: true

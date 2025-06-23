@@ -1,0 +1,31 @@
+uuid: 1d2297fe-d717-4f94-b739-39d7efa9b1ae
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0e2f61e8-37ef-423f-be6d-48d952312f0b'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1ortopediaytraumatologiapediatrica
+theme: fucs
+region: pregrado_contenido_1
+weight: 10
+provider: null
+plugin: 'block_content:0e2f61e8-37ef-423f-be6d-48d952312f0b'
+settings:
+  id: 'block_content:0e2f61e8-37ef-423f-be6d-48d952312f0b'
+  label: 'Posgrado contenido 1 Ortopedia y Traumatología Pediátrica'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-ortopedia-y-traumatologia/ortopedia-traumatologia-pediatrica

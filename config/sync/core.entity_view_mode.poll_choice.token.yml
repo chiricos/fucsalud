@@ -1,0 +1,10 @@
+uuid: 9a513eba-339a-4b7c-875b-48016a49aee4
+langcode: es
+status: true
+dependencies:
+  module:
+    - poll
+id: poll_choice.token
+label: Token
+targetEntityType: poll_choice
+cache: true

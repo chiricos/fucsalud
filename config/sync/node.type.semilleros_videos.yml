@@ -1,0 +1,17 @@
+uuid: aa02c611-5877-4f0f-b8fa-e4b236dee075
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'semilleros videos'
+type: semilleros_videos
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

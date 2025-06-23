@@ -1,0 +1,38 @@
+uuid: 8d03eefa-9d30-4a90-bc9d-cb377ed10fef
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.gestihormiga
+  module:
+    - system
+    - user
+    - webform
+  theme:
+    - fucs
+id: formularioweb_2
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Gestihormiga'
+  label_display: '0'
+  provider: webform
+  webform_id: gestihormiga
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /colaboradores/gestion-organizacional/necesita-ayuda
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      colaboradores: colaboradores

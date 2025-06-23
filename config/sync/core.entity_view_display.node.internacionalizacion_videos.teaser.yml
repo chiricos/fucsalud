@@ -1,0 +1,33 @@
+uuid: 618206b6-1aad-46c3-95a7-f9a0726764b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.internacionalizacion_videos.body
+    - field.field.node.internacionalizacion_videos.field_meta_tags
+    - node.type.internacionalizacion_videos
+  module:
+    - text
+    - user
+id: node.internacionalizacion_videos.teaser
+targetEntityType: node
+bundle: internacionalizacion_videos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

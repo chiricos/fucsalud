@@ -1,0 +1,8 @@
+uuid: 67a125c1-2cef-4aeb-90f8-fd86697d3ccb
+langcode: es
+status: true
+dependencies: {  }
+name: 'base de datos'
+vid: base_de_datos
+description: ''
+weight: 0

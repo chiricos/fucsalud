@@ -1,0 +1,23 @@
+uuid: 3ac50c22-2aae-4096-8de5-b829d5e0c97e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_6
+    - node.type.pregrado
+  module:
+    - text
+id: node.pregrado.field_acordion_cuerpo_6
+field_name: field_acordion_cuerpo_6
+entity_type: node
+bundle: pregrado
+label: acordion_cuerpo_6
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

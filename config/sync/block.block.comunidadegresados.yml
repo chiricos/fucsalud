@@ -1,0 +1,30 @@
+uuid: 537a7873-c5ae-4d83-842c-3ba27ad00827
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.comunidad-egresados
+  module:
+    - system
+  theme:
+    - fucs
+id: comunidadegresados
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:comunidad-egresados'
+settings:
+  id: 'system_menu_block:comunidad-egresados'
+  label: 'Comunidad egresados'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/egresados/comunidad\r\n/egresados/vida-universitaria\r\n/egresados/carnetizacion\r\n/egresados/grados\r\n/egresados/boletin\r\n/egresados/comunidad-egresado-destacado\r\n/egresados/egresados-en-el-exterior\r\n/egresados/nuestro-libro\r\n"

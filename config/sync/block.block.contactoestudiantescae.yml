@@ -1,0 +1,31 @@
+uuid: 17d5f57d-4885-412e-8a2f-3b65effb02f9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c2f2a94-15e7-47ee-94ea-f964e03f8d3e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactoestudiantescae
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:5c2f2a94-15e7-47ee-94ea-f964e03f8d3e'
+settings:
+  id: 'block_content:5c2f2a94-15e7-47ee-94ea-f964e03f8d3e'
+  label: contacto-estudiantes-CAE
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /estudiantes/registro-y-control/cae

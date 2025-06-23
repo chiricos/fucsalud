@@ -1,0 +1,150 @@
+uuid: 67f56f26-a3fe-4e1e-8a15-002f9a2be7a9
+langcode: es
+status: true
+dependencies:
+  module:
+    - fucs_form
+    - system
+  theme:
+    - fucs
+id: modulodeinducciones
+theme: fucs
+region: content
+weight: 0
+provider: null
+plugin: fucs_form_block
+settings:
+  id: fucs_form_block
+  label: 'CURSO - ALFABETIZACIÓN DIGITAL PARA ESTUDIANTES FUCS'
+  label_display: visible
+  provider: fucs_form
+  configurations:
+    uuid: b7b16ecf8ca53723593894116071700c
+    title: 'Curso - Alfabetización digital'
+    min: '80'
+    timeout: '3500'
+    attempts: '3'
+    login:
+      name: 1
+      email: 1
+      course: 1
+      courses: 'Seleccionar,Administración de Servicios de Salud;Atención Prehospitalaria,Enfermería,Fisioterapia,Instrumentación Quirúrgica,Medicina,Nutrición y Dietética,Psicología,Premédico,Técnico Profesional en Procesos Administrativos en Salud,Gestión de Información en Salud,Citohistología, Radiología e Imágenes Diagnósticas'
+    questions:
+      question0:
+        question: '¿Qué es cultura digital?'
+        answer: 'Son las relaciones que resignifican las formas de interacción social, a través de la mediación de las TIC.'
+        type: multiple
+        optionA: 'Son las relaciones que resignifican las formas de interacción social, a través de la mediación de las TIC.'
+        optionB: 'Son un grupo de personas que comparten un mismo gusto digital.'
+        optionC: 'Es un espacio donde solo los amantes de la transformación digital y las diferentes plataformas online, comparten experiencias.'
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '8928'
+          name: cultura-digital.png
+          uri: 'public://formulario-fucs/cultura-digital_1.png'
+          urlTotal: /sites/default/files/formulario-fucs/cultura-digital_1.png
+      question1:
+        question: 'Estas son características de las redes sociales:'
+        answer: 'Conectan gustos, intereses o características comunes entre las personas.'
+        type: multiple
+        optionA: 'Son personales, intransferibles y seguras.'
+        optionB: 'Conectan gustos, intereses o características comunes entre las personas.'
+        optionC: 'Publicaciones sin restricciones de contenido y horario.  '
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '8929'
+          name: redes-sociales.png
+          uri: 'public://formulario-fucs/redes-sociales.png'
+          urlTotal: /sites/default/files/formulario-fucs/redes-sociales.png
+      question2:
+        question: '¿Cuáles son las redes sociales más comunes actualmente?'
+        answer: 'Youtube, Instagram, Linkedin, Tiktok, Twitter, WhatsApp y Facebook'
+        type: multiple
+        optionA: 'Telegram, Instagram, Facebook y WhatsApp '
+        optionB: 'Facebook, Youtube, Instagram y Snapchat'
+        optionC: 'Youtube, Instagram, Linkedin, Tiktok, Twitter, WhatsApp y Facebook'
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '8930'
+          name: redes-sociales.png
+          uri: 'public://formulario-fucs/redes-sociales_0.png'
+          urlTotal: /sites/default/files/formulario-fucs/redes-sociales_0.png
+      question3:
+        question: '¿Qué debes tener presente al momento de descargar una aplicación?'
+        answer: 'Informarte sobre la aplicación y sus políticas'
+        type: multiple
+        optionA: 'Es suficiente con tener buena conexión a internet'
+        optionB: 'Informarte sobre la aplicación y sus políticas'
+        optionC: 'Se pueden descargar sin problema'
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '8931'
+          name: app.png
+          uri: 'public://formulario-fucs/app.png'
+          urlTotal: /sites/default/files/formulario-fucs/app.png
+      question4:
+        question: '¿Cuáles son las características de un sitio web, portal web y página web?'
+        answer: 'Todas las anteriores'
+        type: multiple
+        optionA: 'El portal web brinda información general de la persona y la organización'
+        optionB: 'La página web es un espacio de consulta e información del sitio o portal web '
+        optionC: 'El sitio web busca brindar información general sobre la persona u organización'
+        optionD: 'Todas las anteriores'
+        image: {  }
+        imageQuestion:
+          id: '8932'
+          name: caracteristicas-web.png
+          uri: 'public://formulario-fucs/caracteristicas-web.png'
+          urlTotal: /sites/default/files/formulario-fucs/caracteristicas-web.png
+      question5:
+        question: '¿Dónde está ubicado el minisitio de Estudiante en la página web de la FUCS?'
+        answer: 'En la barra superior submenú #SOY '
+        type: multiple
+        optionA: 'No hay un espacio propio para estudiantes'
+        optionB: 'En la barra superior submenú #SOY '
+        optionC: 'En la sección de noticias del home'
+        optionD: 'Dentro de servicios en línea'
+        image: {  }
+        imageQuestion:
+          id: '8933'
+          name: soyEstudiante.png
+          uri: 'public://formulario-fucs/soyEstudiante.png'
+          urlTotal: /sites/default/files/formulario-fucs/soyEstudiante.png
+      question6:
+        question: '¿Cuál es el ecosistema digital de la FUCS?'
+        answer: 'Es el conjunto de los medios digitales (redes sociales, sitio web, aplicaciones móviles) en los que está presente una persona u '
+        type: multiple
+        optionA: 'Un espacio online donde toda la comunidad de una organización interactúa en torno a la marca. '
+        optionB: 'Es el conjunto de los medios digitales (redes sociales, sitio web, aplicaciones móviles) en los que está presente una persona u '
+        optionC: 'Ninguna de las anteriores.'
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '8934'
+          name: cultura-digital.png
+          uri: 'public://formulario-fucs/cultura-digital_2.png'
+          urlTotal: /sites/default/files/formulario-fucs/cultura-digital_2.png
+      question7:
+        question: '¿Qué son las Fake News?'
+        answer: 'Noticias que aparentemente son ciertas, pero resultan ser falsas'
+        type: multiple
+        optionA: 'Noticias enfocadas a las plataformas digitales'
+        optionB: 'Noticias que muestran la realidad de la situación en desarrollo '
+        optionC: 'Noticias que aparentemente son ciertas, pero resultan ser falsas'
+        optionD: ''
+        image: {  }
+        imageQuestion:
+          id: '8935'
+          name: fakeNews.png
+          uri: 'public://formulario-fucs/fakeNews.png'
+          urlTotal: /sites/default/files/formulario-fucs/fakeNews.png
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /curso-alfabetizacion-digital

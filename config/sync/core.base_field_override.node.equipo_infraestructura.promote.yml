@@ -1,0 +1,22 @@
+uuid: a5c7b8dc-36de-4e60-818a-3685f80e7ecc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.equipo_infraestructura
+id: node.equipo_infraestructura.promote
+field_name: promote
+entity_type: node
+bundle: equipo_infraestructura
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

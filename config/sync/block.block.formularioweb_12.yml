@@ -1,0 +1,28 @@
+uuid: a98abcaa-c615-43bf-a856-6a7c62627db2
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_12
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario Reservación de instalaciones'
+  label_display: '0'
+  provider: webform
+  webform_id: reservacion_de_instalaciones
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca/infucsalud/servicios/reserva-instalaciones

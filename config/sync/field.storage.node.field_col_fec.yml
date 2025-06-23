@@ -1,0 +1,20 @@
+uuid: 0bf19f0a-ea7c-4480-80a0-80c601c7f70a
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_col_fec
+field_name: field_col_fec
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

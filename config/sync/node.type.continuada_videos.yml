@@ -1,0 +1,17 @@
+uuid: e18e5d56-c7ff-42d7-81da-8959d08871a4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'continuada videos'
+type: continuada_videos
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

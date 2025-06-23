@@ -1,0 +1,30 @@
+uuid: 7311e811-4e1a-4604-8379-f6d98dc73f6c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-actividad-fis
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuactividadfisica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-actividad-fis'
+settings:
+  id: 'system_menu_block:posgrado-menu-actividad-fis'
+  label: posgrado-menu-actividad-fisica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/324\r\n/node/325\r\n/node/326\r\n/posgrado/medicina-de-la-actividad-fisica-y-del-deporte"

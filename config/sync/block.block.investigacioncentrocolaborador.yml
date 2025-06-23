@@ -1,0 +1,30 @@
+uuid: d9a91d5d-3550-413a-a172-8f83996668e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.investigacion-centro-colabo
+  module:
+    - system
+  theme:
+    - fucs
+id: investigacioncentrocolaborador
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:investigacion-centro-colabo'
+settings:
+  id: 'system_menu_block:investigacion-centro-colabo'
+  label: 'INVESTIGACION CENTRO COLABORADOR'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/investigacion/centrocolaboradorcochrane/*'

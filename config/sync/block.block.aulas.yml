@@ -1,0 +1,30 @@
+uuid: 2b0f616c-e433-4715-900f-f3a1bcc2d40e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.aulas
+  module:
+    - system
+  theme:
+    - fucs
+id: aulas
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:aulas'
+settings:
+  id: 'system_menu_block:aulas'
+  label: AULAS
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/servicios-en-linea/*'

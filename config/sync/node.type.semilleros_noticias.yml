@@ -1,0 +1,17 @@
+uuid: 4082b3aa-4476-4136-b0dd-adcbdefa51bd
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'semilleros noticias'
+type: semilleros_noticias
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

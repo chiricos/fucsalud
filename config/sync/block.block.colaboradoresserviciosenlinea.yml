@@ -1,0 +1,30 @@
+uuid: 6cec2472-4300-4767-ab4d-62e791830624
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.colaboradores-servicios-en-
+  module:
+    - system
+  theme:
+    - fucs
+id: colaboradoresserviciosenlinea
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:colaboradores-servicios-en-'
+settings:
+  id: 'system_menu_block:colaboradores-servicios-en-'
+  label: 'colaboradores servicios en linea'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /colaboradores/servicios-en-linea

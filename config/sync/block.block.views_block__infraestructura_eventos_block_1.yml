@@ -1,0 +1,30 @@
+uuid: 6c3b1c76-9d99-47df-924c-1b4c668a9396
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.infraestructura_eventos
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__infraestructura_eventos_block_1
+theme: fucs
+region: events
+weight: 0
+provider: null
+plugin: 'views_block:infraestructura_eventos-block_1'
+settings:
+  id: 'views_block:infraestructura_eventos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /infraestructura

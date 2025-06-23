@@ -1,0 +1,25 @@
+uuid: 768888d1-03cd-418f-aa21-d82bae8cdc08
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.segu
+  module:
+    - system
+  theme:
+    - fucs
+id: segundomenu
+theme: fucs
+region: secundary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:segu'
+settings:
+  id: 'system_menu_block:segu'
+  label: 'Segundo menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

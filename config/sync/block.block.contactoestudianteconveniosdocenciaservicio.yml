@@ -1,0 +1,31 @@
+uuid: 6e970480-dd83-432f-a23d-d193b4bcd048
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:87ae228c-653c-4e14-b248-942cfeef16fe'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactoestudianteconveniosdocenciaservicio
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:87ae228c-653c-4e14-b248-942cfeef16fe'
+settings:
+  id: 'block_content:87ae228c-653c-4e14-b248-942cfeef16fe'
+  label: contacto-estudiante-convenios-docencia-servicio
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/apoyoalestudiante/convenio-docencia-servicio/servicios\r\n/estudiantes/apoyoalestudiante/convenio-docencia-servicio/Instituciones"

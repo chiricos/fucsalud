@@ -1,0 +1,19 @@
+uuid: 9937cf93-548b-4f9e-897f-4603bfd4775b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.slider_revista
+id: node.slider_revista.field_caption
+field_name: field_caption
+entity_type: node
+bundle: slider_revista
+label: caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

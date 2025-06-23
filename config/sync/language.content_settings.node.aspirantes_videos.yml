@@ -1,0 +1,11 @@
+uuid: 50f0121d-471c-429e-867b-b92e3bfd0f1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aspirantes_videos
+id: node.aspirantes_videos
+target_entity_type_id: node
+target_bundle: aspirantes_videos
+default_langcode: site_default
+language_alterable: false

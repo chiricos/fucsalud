@@ -1,0 +1,11 @@
+uuid: fcfa4fa6-6ac6-4695-ab25-7ae9db19a993
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.investigacion_noticias
+id: node.investigacion_noticias
+target_entity_type_id: node
+target_bundle: investigacion_noticias
+default_langcode: site_default
+language_alterable: false

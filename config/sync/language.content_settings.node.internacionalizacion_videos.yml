@@ -1,0 +1,11 @@
+uuid: d965a8a6-88b3-4e9c-898d-378a7e5cbc28
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.internacionalizacion_videos
+id: node.internacionalizacion_videos
+target_entity_type_id: node
+target_bundle: internacionalizacion_videos
+default_langcode: site_default
+language_alterable: false

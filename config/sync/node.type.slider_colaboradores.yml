@@ -1,0 +1,18 @@
+uuid: 21e212b9-b056-4083-a412-0680392ad39a
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'slider colaboradores'
+type: slider_colaboradores
+description: 'imagenes para el banner de colaboradores'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

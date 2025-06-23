@@ -1,0 +1,23 @@
+uuid: a03baca1-a262-487c-a4de-cd935208127c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.egresados_noticias
+  module:
+    - text
+id: node.egresados_noticias.body
+field_name: body
+entity_type: node
+bundle: egresados_noticias
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

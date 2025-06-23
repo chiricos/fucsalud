@@ -1,0 +1,30 @@
+uuid: d952700e-46f1-456e-beab-20348033606b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.internacionalizacion_videos
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__internacionalizacion_videos_block_1
+theme: fucs
+region: video
+weight: 4
+provider: null
+plugin: 'views_block:internacionalizacion_videos-block_1'
+settings:
+  id: 'views_block:internacionalizacion_videos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /internacionalizacion

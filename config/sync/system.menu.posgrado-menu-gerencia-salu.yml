@@ -1,0 +1,8 @@
+uuid: 275160b3-1be2-416e-ae29-fd342f6a83b0
+langcode: es
+status: true
+dependencies: {  }
+id: posgrado-menu-gerencia-salu
+label: posgrado-menu-gerencia-salud
+description: posgrado-menu-gerencia-salud
+locked: false

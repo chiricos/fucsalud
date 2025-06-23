@@ -1,0 +1,31 @@
+uuid: ba7acd01-7ff6-4638-b4a0-e33e13c2f5e8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:64d7e2f4-9ff2-407b-bff5-63b7a596c76c'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonessemillero
+theme: fucs
+region: content_first_page
+weight: 0
+provider: null
+plugin: 'block_content:64d7e2f4-9ff2-407b-bff5-63b7a596c76c'
+settings:
+  id: 'block_content:64d7e2f4-9ff2-407b-bff5-63b7a596c76c'
+  label: 'botones semillero'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/semilleros*\r\n/noticias-semilleros*"

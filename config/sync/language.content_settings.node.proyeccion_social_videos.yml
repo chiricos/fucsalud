@@ -1,0 +1,11 @@
+uuid: 2d74ae08-c366-425c-95c1-a6388b065868
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyeccion_social_videos
+id: node.proyeccion_social_videos
+target_entity_type_id: node
+target_bundle: proyeccion_social_videos
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: 28f72d41-63e3-4613-9aa8-b7ee40ee9e3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calendario_fecha
+    - node.type.proyeccion_social_noticias
+  module:
+    - datetime
+id: node.proyeccion_social_noticias.field_calendario_fecha
+field_name: field_calendario_fecha
+entity_type: node
+bundle: proyeccion_social_noticias
+label: aspirantes_admisiones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

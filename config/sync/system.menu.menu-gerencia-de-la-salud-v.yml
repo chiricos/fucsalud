@@ -1,0 +1,8 @@
+uuid: 179a87b2-c273-46eb-b1d0-ef266720130d
+langcode: es
+status: true
+dependencies: {  }
+id: menu-gerencia-de-la-salud-v
+label: 'Menu gerencia de la salud virtual'
+description: ''
+locked: false

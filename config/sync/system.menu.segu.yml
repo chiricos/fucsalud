@@ -1,0 +1,8 @@
+uuid: 0c426a75-132a-45ea-b6dc-7479900123db
+langcode: es
+status: true
+dependencies: {  }
+id: segu
+label: 'Segundo menu'
+description: ''
+locked: false

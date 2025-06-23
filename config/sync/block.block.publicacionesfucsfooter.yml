@@ -1,0 +1,31 @@
+uuid: 2e8b05e6-120e-4879-8b49-aee9896c8e26
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8036ed35-8b82-4593-bea5-add450aae490'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: publicacionesfucsfooter
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:8036ed35-8b82-4593-bea5-add450aae490'
+settings:
+  id: 'block_content:8036ed35-8b82-4593-bea5-add450aae490'
+  label: 'publicaciones fucs footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /home/publicaciones-FUCS

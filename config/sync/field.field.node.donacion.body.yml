@@ -1,0 +1,23 @@
+uuid: 5238ae0f-46dd-4d5a-8fdf-77de9814a992
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.donacion
+  module:
+    - text
+id: node.donacion.body
+field_name: body
+entity_type: node
+bundle: donacion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

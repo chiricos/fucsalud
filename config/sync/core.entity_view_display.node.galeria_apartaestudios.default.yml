@@ -1,0 +1,42 @@
+uuid: 828106b5-affa-4645-9f39-0fc3a7ce548e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria_apartaestudios.field_meta_tags
+    - field.field.node.galeria_apartaestudios.field_testimonio_imagen
+    - node.type.galeria_apartaestudios
+  module:
+    - image
+    - metatag
+    - user
+id: node.galeria_apartaestudios.default
+targetEntityType: node
+bundle: galeria_apartaestudios
+mode: default
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_testimonio_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

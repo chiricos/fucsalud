@@ -1,0 +1,31 @@
+uuid: 7241c6bc-8a1f-4141-bc58-ee6aa1bd2092
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7d4e60b1-6b45-43ad-87e6-b441e66a352f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonescolaboradores
+theme: fucs
+region: colaboradores_contenido_2
+weight: 0
+provider: null
+plugin: 'block_content:7d4e60b1-6b45-43ad-87e6-b441e66a352f'
+settings:
+  id: 'block_content:7d4e60b1-6b45-43ad-87e6-b441e66a352f'
+  label: 'botones colaboradores'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/colaboradores\r\n/colaboradores/*"

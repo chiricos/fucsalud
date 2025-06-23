@@ -1,0 +1,23 @@
+uuid: bd8362d9-565d-40b9-9592-98767445ad2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.arbol
+  module:
+    - text
+id: node.arbol.body
+field_name: body
+entity_type: node
+bundle: arbol
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

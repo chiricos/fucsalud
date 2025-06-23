@@ -1,0 +1,8 @@
+uuid: ca869699-43ce-47c6-8706-df5cfe9389d4
+langcode: es
+status: true
+dependencies: {  }
+id: biblioteca-recursos
+label: Biblioteca-Recursos
+description: ''
+locked: false

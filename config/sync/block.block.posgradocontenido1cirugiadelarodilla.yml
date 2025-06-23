@@ -1,0 +1,31 @@
+uuid: b616794c-bc9f-464f-bff7-cb74d1bee2bd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:27816446-1d3b-4625-a2f0-04fa88acea08'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1cirugiadelarodilla
+theme: fucs
+region: pregrado_contenido_1
+weight: 11
+provider: null
+plugin: 'block_content:27816446-1d3b-4625-a2f0-04fa88acea08'
+settings:
+  id: 'block_content:27816446-1d3b-4625-a2f0-04fa88acea08'
+  label: 'Posgrado contenido 1 cirugía de la rodilla'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-ortopedia-y-traumatologia/cirugia-rodilla

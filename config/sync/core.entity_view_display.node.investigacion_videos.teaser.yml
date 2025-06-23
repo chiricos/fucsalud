@@ -1,0 +1,33 @@
+uuid: ef6fbd87-5558-4469-bc03-6bc1bdedcc24
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.investigacion_videos.body
+    - field.field.node.investigacion_videos.field_meta_tags
+    - node.type.investigacion_videos
+  module:
+    - text
+    - user
+id: node.investigacion_videos.teaser
+targetEntityType: node
+bundle: investigacion_videos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

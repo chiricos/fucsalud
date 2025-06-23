@@ -1,0 +1,8 @@
+uuid: 754e54ed-72e6-4710-a52a-11d749fe90b5
+langcode: es
+status: true
+dependencies: {  }
+id: laboratorio-de-psicologia
+label: 'LABORATORIO DE PSICOLOGIA'
+description: ''
+locked: false

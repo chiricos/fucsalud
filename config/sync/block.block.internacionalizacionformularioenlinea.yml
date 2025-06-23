@@ -1,0 +1,25 @@
+uuid: 595b91a7-97e9-459a-8abb-70675cd27fa7
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:bcec8d6e-af03-483a-b856-133b2cdc360c'
+  module:
+    - block_content
+  theme:
+    - fucs
+id: internacionalizacionformularioenlinea
+theme: fucs
+region: form_linea
+weight: 0
+provider: null
+plugin: 'block_content:bcec8d6e-af03-483a-b856-133b2cdc360c'
+settings:
+  id: 'block_content:bcec8d6e-af03-483a-b856-133b2cdc360c'
+  label: 'internacionalizacion formulario en linea'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

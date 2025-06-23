@@ -1,0 +1,23 @@
+uuid: 18846b52-34e1-45dd-9d05-420143e56a43
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_7
+    - node.type.acordion
+  module:
+    - text
+id: node.acordion.field_acordion_cuerpo_7
+field_name: field_acordion_cuerpo_7
+entity_type: node
+bundle: acordion
+label: acordion_cuerpo_7
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,30 @@
+uuid: 826b76b0-56c4-4c1f-afa8-0b0db414db09
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-admin-servicios-salud
+  module:
+    - system
+  theme:
+    - fucs
+id: menuadminserviciossalud
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-admin-servicios-salud'
+settings:
+  id: 'system_menu_block:menu-admin-servicios-salud'
+  label: menú-admin-servicios-salud
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/pregrado/carreras_tecnicas/Tecnico-profesional-procesos-administrativos-en-salud\r\n/pregrado/carreras_tecnologicas/Gestion-de-informacion-en-salud\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/fortalezas\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/Plan-estudios\r\n/pregrado/carreras_profesionales/Tec-Teg-Pro-Proceso/homologacion\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/Docentes\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/preguntas-frecuentes\r\n/pregrado/solicitar-informacion\r\n/aspirantes/costos\r\n/pregrado/carreras_profesionales/Administracion-servicios-de-salud/noticias\r\n"

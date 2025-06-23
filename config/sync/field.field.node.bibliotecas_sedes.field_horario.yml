@@ -1,0 +1,19 @@
+uuid: 9b2c549a-9de9-4e95-80ce-41dd2f498e16
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horario
+    - node.type.bibliotecas_sedes
+id: node.bibliotecas_sedes.field_horario
+field_name: field_horario
+entity_type: node
+bundle: bibliotecas_sedes
+label: horario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

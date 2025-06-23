@@ -1,0 +1,30 @@
+uuid: eae10203-c3ba-4d2e-94b1-11d05cb8c73f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.rendicion-cuentas-p-social
+  module:
+    - system
+  theme:
+    - fucs
+id: rendicioncuentaspsocial
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:rendicion-cuentas-p-social'
+settings:
+  id: 'system_menu_block:rendicion-cuentas-p-social'
+  label: 'Rendición cuentas P social'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social/rendicion-de-cuentas-PS\r\n/proyeccion-social/rendicion-de-cuentas/indicadores\r\n/proyeccion-social/rendicion-de-cuentas/experiencias-exitosas\r\n/proyeccion-social/rendicion-de-cuentas/equipo-de-trabajo"

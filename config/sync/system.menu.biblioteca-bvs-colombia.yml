@@ -1,0 +1,8 @@
+uuid: a1e3bc4b-58ac-46af-b4ee-c1e062c37db1
+langcode: es
+status: true
+dependencies: {  }
+id: biblioteca-bvs-colombia
+label: 'biblioteca bvs colombia'
+description: biblioteca-bvs-colombia
+locked: false

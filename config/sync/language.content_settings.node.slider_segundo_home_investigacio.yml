@@ -1,0 +1,11 @@
+uuid: d802e1a5-d89b-484c-bd6d-2d02ec4deef9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_segundo_home_investigacio
+id: node.slider_segundo_home_investigacio
+target_entity_type_id: node
+target_bundle: slider_segundo_home_investigacio
+default_langcode: site_default
+language_alterable: false

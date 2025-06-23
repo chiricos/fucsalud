@@ -1,0 +1,30 @@
+uuid: 538669da-e432-4fc4-9aa3-8c05d53690d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-cirugia-vascu
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenucirugiavascularperiferica
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-cirugia-vascu'
+settings:
+  id: 'system_menu_block:posgrado-menu-cirugia-vascu'
+  label: posgrado-menu-cirugia-vascular-periferica
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/294\r\n/node/295\r\n/node/296\r\n/posgrado/sub-cirugia-general/cirugia-vascular-periferica"

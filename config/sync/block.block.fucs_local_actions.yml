@@ -1,0 +1,20 @@
+uuid: 02fd2405-fed3-4680-b765-75f0ba6656e6
+langcode: es
+status: false
+dependencies:
+  theme:
+    - fucs
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: fucs_local_actions
+theme: fucs
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

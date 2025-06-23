@@ -1,0 +1,188 @@
+uuid: b7124bbd-3f00-4af8-870d-888fe2db202c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pregrado.body
+    - field.field.node.pregrado.field_acordion_cuerpo_1
+    - field.field.node.pregrado.field_acordion_cuerpo_2
+    - field.field.node.pregrado.field_acordion_cuerpo_3
+    - field.field.node.pregrado.field_acordion_cuerpo_4
+    - field.field.node.pregrado.field_acordion_cuerpo_5
+    - field.field.node.pregrado.field_acordion_cuerpo_6
+    - field.field.node.pregrado.field_acordion_cuerpo_7
+    - field.field.node.pregrado.field_acordion_titulo_
+    - field.field.node.pregrado.field_acordion_titulo_1
+    - field.field.node.pregrado.field_acordion_titulo_5
+    - field.field.node.pregrado.field_acordion_titulo_6
+    - field.field.node.pregrado.field_acordion_titulo_7
+    - field.field.node.pregrado.field_imagen_nueva
+    - field.field.node.pregrado.field_meta_tags
+    - field.field.node.pregrado.field_nivel_academico
+    - field.field.node.pregrado.field_titulo
+    - field.field.node.pregrado.field_titulo_
+    - field.field.node.pregrado.field_titulo_acordion_
+    - node.type.pregrado
+  module:
+    - image
+    - metatag
+    - text
+    - user
+id: node.pregrado.default
+targetEntityType: node
+bundle: pregrado
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_acordion_cuerpo_1:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_acordion_cuerpo_2:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_acordion_cuerpo_3:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_acordion_cuerpo_4:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_acordion_cuerpo_5:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_acordion_cuerpo_6:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_acordion_cuerpo_7:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 119
+    region: content
+  field_acordion_titulo_:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_acordion_titulo_1:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_acordion_titulo_5:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_acordion_titulo_6:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_acordion_titulo_7:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_imagen_nueva:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_nivel_academico:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_titulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_titulo_:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_titulo_acordion_:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

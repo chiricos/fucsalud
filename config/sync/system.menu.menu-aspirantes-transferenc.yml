@@ -1,0 +1,8 @@
+uuid: 4281ae5f-ff97-4af1-a7c9-02de2a36ef88
+langcode: und
+status: true
+dependencies: {  }
+id: menu-aspirantes-transferenc
+label: menú-aspirantes-transferencias
+description: ''
+locked: false

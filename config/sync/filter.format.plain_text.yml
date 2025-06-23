@@ -1,0 +1,24 @@
+uuid: f49ad556-c283-4680-9025-3a5df70fd4db
+langcode: es
+status: true
+dependencies:
+  module:
+    - editor
+_core:
+  default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
+name: 'Texto sin formato'
+format: plain_text
+weight: -10
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

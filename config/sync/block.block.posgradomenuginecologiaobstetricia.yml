@@ -1,0 +1,30 @@
+uuid: 442d9b6f-70d1-41c4-b17c-069036553396
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-ginecologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuginecologiaobstetricia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-ginecologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-ginecologia'
+  label: posgrado-menu-ginecologia-obstetricia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/311\r\n/node/312\r\n/node/313\r\n/posgrado/sub-ginecologia-y-obstetricia/ginecologia-y-obstetricia"

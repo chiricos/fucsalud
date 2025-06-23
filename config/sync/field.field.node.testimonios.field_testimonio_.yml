@@ -1,0 +1,23 @@
+uuid: 3e9a3426-ae00-41b9-8986-a0317ce6fbf6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonio_
+    - node.type.testimonios
+  module:
+    - text
+id: node.testimonios.field_testimonio_
+field_name: field_testimonio_
+entity_type: node
+bundle: testimonios
+label: testimonio_contenido
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

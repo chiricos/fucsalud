@@ -1,0 +1,31 @@
+uuid: bbf8bbda-864d-43bd-aef8-b74a10243243
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c1e93c4b-51eb-471c-96db-855cee5cf355'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1diplomadoatencionenareaquirurgica
+theme: fucs
+region: pregrado_contenido_1
+weight: 3
+provider: null
+plugin: 'block_content:c1e93c4b-51eb-471c-96db-855cee5cf355'
+settings:
+  id: 'block_content:c1e93c4b-51eb-471c-96db-855cee5cf355'
+  label: 'Posgrado contenido 1 Diplomado Atención en Área Quirúrgica'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-ciencias-salud/atencion-area-quirurgica

@@ -1,0 +1,17 @@
+uuid: 22114820-8665-48c1-9f77-c900bcdaa732
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Revistas
+type: revistas
+description: 'Revista de tienda virtual'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

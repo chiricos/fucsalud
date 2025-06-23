@@ -1,0 +1,8 @@
+uuid: 307437b5-7bbb-48be-be31-f7ce73f9bd66
+langcode: es
+status: true
+dependencies: {  }
+id: banners
+label: banners
+description: banners
+locked: false

@@ -1,0 +1,8 @@
+uuid: c68d1bfe-8bab-4103-bc9e-ccf04719b881
+langcode: es
+status: true
+dependencies: {  }
+id: normas-de-publicacion
+label: 'Normas de publicación'
+description: ''
+locked: false

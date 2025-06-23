@@ -1,0 +1,31 @@
+uuid: 5f423e95-f29b-472f-8722-62eb79c5cd4a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a0f28afc-78fa-4ff0-84d4-8726617b90a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: caecentrodeapoyoalestudiante
+theme: fucs
+region: poll
+weight: 0
+provider: null
+plugin: 'block_content:a0f28afc-78fa-4ff0-84d4-8726617b90a5'
+settings:
+  id: 'block_content:a0f28afc-78fa-4ff0-84d4-8726617b90a5'
+  label: 'CAE - Centro de Apoyo al Estudiante'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /aspirantes

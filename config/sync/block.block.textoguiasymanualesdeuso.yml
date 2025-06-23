@@ -1,0 +1,31 @@
+uuid: 05732333-883d-49f4-aae8-13f40c2cc311
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bbaab7cb-80af-4b4a-bbcb-b8dbbaccc1a7'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: textoguiasymanualesdeuso
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:bbaab7cb-80af-4b4a-bbcb-b8dbbaccc1a7'
+settings:
+  id: 'block_content:bbaab7cb-80af-4b4a-bbcb-b8dbbaccc1a7'
+  label: 'texto guias y manuales de uso'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /base-de-datos-guias-y-manuales-de-uso

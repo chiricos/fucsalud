@@ -1,0 +1,23 @@
+uuid: 5c7ca71f-9f99-4a09-afc2-0b92897f87b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.acordion_lateral
+  module:
+    - text
+id: node.acordion_lateral.body
+field_name: body
+entity_type: node
+bundle: acordion_lateral
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

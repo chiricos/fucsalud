@@ -1,0 +1,31 @@
+uuid: 52046dbc-95b8-4c60-8aed-47dae7d9fa37
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dc1f0450-b412-47f5-8802-5330844109ee'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactodrii
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:dc1f0450-b412-47f5-8802-5330844109ee'
+settings:
+  id: 'block_content:dc1f0450-b412-47f5-8802-5330844109ee'
+  label: 'contacto DRII'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/internacionalizacion/*'

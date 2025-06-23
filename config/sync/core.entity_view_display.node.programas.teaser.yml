@@ -1,0 +1,33 @@
+uuid: d3cfc419-decd-4c09-9052-8fdec4e10aa8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.programas.body
+    - field.field.node.programas.field_meta_tags
+    - node.type.programas
+  module:
+    - text
+    - user
+id: node.programas.teaser
+targetEntityType: node
+bundle: programas
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

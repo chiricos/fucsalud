@@ -1,0 +1,31 @@
+uuid: bccee102-7bc7-437d-a9d6-3a1f7dcac625
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0bb6c0c3-47e0-49c0-8343-3782cfffbca6'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido0diplomadocuidadointensivoneonatal
+theme: fucs
+region: pregrado_contenido_0
+weight: 3
+provider: null
+plugin: 'block_content:0bb6c0c3-47e0-49c0-8343-3782cfffbca6'
+settings:
+  id: 'block_content:0bb6c0c3-47e0-49c0-8343-3782cfffbca6'
+  label: 'Posgrado contenido 0 Diplomado Cuidado Intensivo Neonatal'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /educacionContinuada/diplomados/sub-ciencias-salud/cuidado-intensivo-neonatal

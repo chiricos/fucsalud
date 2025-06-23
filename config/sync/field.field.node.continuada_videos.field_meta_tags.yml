@@ -1,0 +1,21 @@
+uuid: 4d1260f1-064b-422f-acfc-533c65459b13
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.continuada_videos
+  module:
+    - metatag
+id: node.continuada_videos.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: continuada_videos
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

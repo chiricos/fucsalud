@@ -1,0 +1,25 @@
+uuid: 16faf9c6-db49-453f-9ca2-fbe17930deda
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.me
+  module:
+    - system
+  theme:
+    - fucs
+id: menutop
+theme: fucs
+region: top_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:me'
+settings:
+  id: 'system_menu_block:me'
+  label: 'Menu top'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

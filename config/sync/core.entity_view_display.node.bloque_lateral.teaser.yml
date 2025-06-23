@@ -1,0 +1,33 @@
+uuid: b56574fb-ef80-47d7-b0a9-e64f690b4f0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bloque_lateral.body
+    - field.field.node.bloque_lateral.field_meta_tags
+    - node.type.bloque_lateral
+  module:
+    - text
+    - user
+id: node.bloque_lateral.teaser
+targetEntityType: node
+bundle: bloque_lateral
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true

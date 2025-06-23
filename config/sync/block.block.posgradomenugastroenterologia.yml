@@ -1,0 +1,30 @@
+uuid: cec78af0-c975-44e5-a801-5e503ac5f97e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-gastroente
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenugastroenterologia
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-gastroente'
+settings:
+  id: 'system_menu_block:posgrado-menu-gastroente'
+  label: posgrado-menu-gastroenterologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado/sub-medicina-interna/gastroenterologia\r\n/posgrado/sub-medicina-interna/gastroenterologia-y-endoscopia-digestiva\r\n/posgrado/sub-medicina-interna/gastroenterologia-perfiles\r\n/posgrado/sub-medicina-interna/gastroenterologia-docentes\r\n/posgrado/sub-medicina-interna/gastroenterologia-plan-estudios\r\n"

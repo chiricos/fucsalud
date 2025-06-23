@@ -1,0 +1,31 @@
+uuid: fd5c0ef2-df89-4619-b98e-b8f0e8dc73b4
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:86700422-7830-48f0-b457-c8f374cfb6b9'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: redes_biblioteca
+theme: fucs
+region: pregrado_contenido_2
+weight: 0
+provider: null
+plugin: 'block_content:86700422-7830-48f0-b457-c8f374cfb6b9'
+settings:
+  id: 'block_content:86700422-7830-48f0-b457-c8f374cfb6b9'
+  label: redes_biblioteca
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /biblioteca

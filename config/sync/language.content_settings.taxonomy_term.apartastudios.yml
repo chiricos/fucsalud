@@ -1,0 +1,11 @@
+uuid: d1114f73-bf2b-42fa-ba02-b46ec1436a5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apartastudios
+id: taxonomy_term.apartastudios
+target_entity_type_id: taxonomy_term
+target_bundle: apartastudios
+default_langcode: site_default
+language_alterable: false

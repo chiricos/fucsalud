@@ -1,0 +1,22 @@
+uuid: 94b9bdbd-d77b-4678-a393-00034f3ff844
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colaboradores_eventos
+id: node.colaboradores_eventos.promote
+field_name: promote
+entity_type: node
+bundle: colaboradores_eventos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

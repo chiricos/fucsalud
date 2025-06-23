@@ -1,0 +1,59 @@
+uuid: 5a45b354-5fc0-4ad0-a0f8-c13cab956c6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_semilleros.field_caption
+    - field.field.node.slider_semilleros.field_link
+    - field.field.node.slider_semilleros.field_meta_tags
+    - field.field.node.slider_semilleros.field_slider_1400x600_
+    - node.type.slider_semilleros
+  module:
+    - image
+    - metatag
+    - user
+id: node.slider_semilleros.default
+targetEntityType: node
+bundle: slider_semilleros
+mode: default
+content:
+  field_caption:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_slider_1400x600_:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

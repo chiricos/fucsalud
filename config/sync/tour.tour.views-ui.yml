@@ -1,0 +1,88 @@
+uuid: d8d4095a-95ef-4e42-bee0-ac4e4bb43090
+langcode: es
+status: true
+dependencies:
+  module:
+    - views_ui
+_core:
+  default_config_hash: c-HMyZwgeP8H6AITDcq4hznePkd7azpe8xl_WTnx2O0
+id: views-ui
+label: 'Ver página de edición'
+module: views_ui
+routes:
+  -
+    route_name: entity.view.edit_form
+  -
+    route_name: entity.view.edit_display_form
+tips:
+  views-main:
+    id: views-main
+    plugin: text
+    label: 'Administrar las configuraciones de la vista'
+    weight: 1
+    body: 'Ver o editar la configuración.'
+  views-ui-displays:
+    id: views-ui-displays
+    plugin: text
+    label: 'Mostrar en esta vista'
+    weight: 2
+    selector: '#views-display-top'
+    body: 'Una visualización es una manera de mostrar los resultados, por ejemplo, como una página o un bloque. Una vista puede contener múltiples visualizaciones, las cuales figuran en esta lista. La visualización activa está resaltada.'
+  views-ui-view-admin:
+    id: views-ui-view-admin
+    plugin: text
+    label: 'Administración de Vista'
+    weight: 3
+    position: left-start
+    selector: '#views-display-extra-actions'
+    body: 'Realizar tareas administrativas, como agregar una descripción y la creación de un clon. Haga clic en el botón desplegable para ver las opciones disponibles.'
+  views-ui-format:
+    id: views-ui-format
+    plugin: text
+    label: 'Formato de salida'
+    weight: 4
+    selector: .views-ui-display-tab-bucket.format
+    body: 'Elija la forma de mostrar los resultados. Por ejemplo, elija <em>Contenido</em> para mostrar cada elemento completamente, utilizando sus opciones de visualización configuradas. O seleccione <em>Campos</em>, que le permite mostrar sólo campos específicos para cada resultado. Formatos adicionales se pueden agregar mediante la instalación de módulos para <em>extender</em> la funcionalidad básica de Drupal.'
+  views-ui-fields:
+    id: views-ui-fields
+    plugin: text
+    label: Campos
+    weight: 5
+    selector: .views-ui-display-tab-bucket.field
+    body: 'Si esta vista utiliza campos, ellos están listados aquí. Usted puede hacer click en un campo para configurarlo.'
+  views-ui-filter:
+    id: views-ui-filter
+    plugin: text
+    label: 'Filtrar su vista'
+    weight: 6
+    selector: .views-ui-display-tab-bucket.filter
+    body: 'Adicionar filtros para limitar los resultados en la salida. E.g., para mostrar sólo contenido que está publicado, Usted debería adicionar un filtro para <em>Publicado</em> y seleccionar <em>Sí</em>.'
+  views-ui-filter-operations:
+    id: views-ui-filter-operations
+    plugin: text
+    label: 'Acciones de filtrado'
+    weight: 7
+    selector: '.views-ui-display-tab-bucket.filter .dropbutton-widget'
+    body: 'Añadir, reordenar o eliminar filtros.'
+  views-ui-sorts:
+    id: views-ui-sorts
+    plugin: text
+    label: 'Criterios de ordenación'
+    weight: 8
+    selector: .views-ui-display-tab-bucket.sort
+    body: 'Controla el orden en que los resultados son mostrados. Haga clic en una regla de clasificación activa para configurarla.'
+  views-ui-sorts-operations:
+    id: views-ui-sorts-operations
+    plugin: text
+    label: 'Actiones de ordenamiento'
+    weight: 9
+    selector: '.views-ui-display-tab-bucket.sort .dropbutton-widget'
+    body: 'Añadir, reordenar o eliminar reglas de ordenación.'
+  views-ui-preview:
+    id: views-ui-preview
+    plugin: text
+    label: Preview
+    weight: 10
+    position: left-start
+    selector: '#preview-submit'
+    body: 'Mostrar una vista previa de la salida de la vista.'

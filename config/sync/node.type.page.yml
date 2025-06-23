@@ -1,0 +1,13 @@
+uuid: dc0dad64-ffa2-446b-9c35-c1aec5673859
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
+name: 'Página básica'
+type: page
+description: 'Use las <em>páginas básicas</em> para publicar contenido que no varía, como es el caso de una página "Sobre nosotros" o "Acerca de..."'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: 6648ac56-ac47-4e08-950f-3578a7e813d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.colaboradores_noticias
+  module:
+    - metatag
+id: node.colaboradores_noticias.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: colaboradores_noticias
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

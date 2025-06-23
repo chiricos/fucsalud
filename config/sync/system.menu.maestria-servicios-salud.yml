@@ -1,0 +1,8 @@
+uuid: 1fa4be1b-30fa-479d-93ff-2e0d0830ef8f
+langcode: es
+status: true
+dependencies: {  }
+id: maestria-servicios-salud
+label: maestria_servicios_salud
+description: maestria_servicios_salud
+locked: false

@@ -1,0 +1,11 @@
+uuid: bfc64bd0-5d55-4bcb-9424-0d2d18f8a53f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.calendario_de_admisiones_
+id: node.calendario_de_admisiones_
+target_entity_type_id: node
+target_bundle: calendario_de_admisiones_
+default_langcode: site_default
+language_alterable: false

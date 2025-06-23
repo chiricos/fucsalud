@@ -1,0 +1,31 @@
+uuid: fb138bd3-9d6e-4a03-ae31-fd4b361b5375
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ec2ad41c-0614-4c2b-b147-01a46ae54f86'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuadministrativos
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:ec2ad41c-0614-4c2b-b147-01a46ae54f86'
+settings:
+  id: 'block_content:ec2ad41c-0614-4c2b-b147-01a46ae54f86'
+  label: 'Menu administrativos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /user/login

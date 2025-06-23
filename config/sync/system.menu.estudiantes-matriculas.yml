@@ -1,0 +1,8 @@
+uuid: 5deb9002-c387-4b08-b28f-df716fde30fa
+langcode: es
+status: true
+dependencies: {  }
+id: estudiantes-matriculas
+label: 'estudiantes matriculas'
+description: ''
+locked: false

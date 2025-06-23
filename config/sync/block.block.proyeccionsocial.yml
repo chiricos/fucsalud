@@ -1,0 +1,30 @@
+uuid: 44c9c296-6e52-4adf-b958-75bf38063eaf
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.proyeccion-social
+  module:
+    - system
+  theme:
+    - fucs
+id: proyeccionsocial
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:proyeccion-social'
+settings:
+  id: 'system_menu_block:proyeccion-social'
+  label: 'Proyección social'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social/que-es-proyeccion-social\r\n/proyeccion-social/area-extension-universitaria\r\n/proyeccion-social/area-salud-comunitaria\r\n/proyeccion-social/responsabilidad-social\r\n/proyeccion-social/FUCS-ECO\r\n/proyeccion-social/MIAS\r\n/proyeccion-social/preguntale-al-especialista\r\n/proyeccion-social/galeria-p\r\n/proyeccion-social/noticias"

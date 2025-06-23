@@ -1,0 +1,8 @@
+uuid: 87518035-c71e-4f5e-9c40-c98b5d0f5f70
+langcode: es
+status: true
+dependencies: {  }
+id: menu-perfusion-y-circulacio
+label: 'Menú perfusión y circulación extracorpórea'
+description: 'Menú perfusión y circulación extracorpórea'
+locked: false

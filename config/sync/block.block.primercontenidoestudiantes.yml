@@ -1,0 +1,31 @@
+uuid: 9236911a-0288-4a8f-884e-655559f0eb82
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:08d35d11-5f7d-4f03-b24a-da4535ef20b0'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: primercontenidoestudiantes
+theme: fucs
+region: content_second_page
+weight: -98
+provider: null
+plugin: 'block_content:08d35d11-5f7d-4f03-b24a-da4535ef20b0'
+settings:
+  id: 'block_content:08d35d11-5f7d-4f03-b24a-da4535ef20b0'
+  label: 'Botones estudiantes'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes*\r\n"

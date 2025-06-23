@@ -1,0 +1,31 @@
+uuid: 1faa61ee-2f98-4ab2-9c5e-81baa08d6ec4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dc7e0fcb-35ec-4019-9b98-77048ddd5954'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: primercontenidoaspirantes
+theme: fucs
+region: content_second_page
+weight: -96
+provider: null
+plugin: 'block_content:dc7e0fcb-35ec-4019-9b98-77048ddd5954'
+settings:
+  id: 'block_content:dc7e0fcb-35ec-4019-9b98-77048ddd5954'
+  label: 'Botones aspirantes'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/aspirantes\r\n/aspirantes/*"

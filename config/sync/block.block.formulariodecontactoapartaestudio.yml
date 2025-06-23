@@ -1,0 +1,27 @@
+uuid: 9794272f-a8d0-4dbf-9d63-bda24a90a4ac
+langcode: es
+status: true
+dependencies:
+  module:
+    - fucs_studio_apartments
+    - system
+  theme:
+    - fucs
+id: formulariodecontactoapartaestudio
+theme: fucs
+region: form_linea
+weight: 0
+provider: null
+plugin: fucs_apartment_contact_block
+settings:
+  id: fucs_apartment_contact_block
+  label: 'Si estás interesado puedes ponerte en contacto con nosotros registrandote en el formulario o al correo electrónico: apartaestudiosfucs@fucsalud.edu.co'
+  label_display: visible
+  provider: fucs_studio_apartments
+  form: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /apartaestudios

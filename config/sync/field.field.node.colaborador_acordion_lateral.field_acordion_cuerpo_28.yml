@@ -1,0 +1,23 @@
+uuid: aebef392-b51c-4a0f-8b86-c6bc9a644dd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acordion_cuerpo_28
+    - node.type.colaborador_acordion_lateral
+  module:
+    - text
+id: node.colaborador_acordion_lateral.field_acordion_cuerpo_28
+field_name: field_acordion_cuerpo_28
+entity_type: node
+bundle: colaborador_acordion_lateral
+label: acordion_cuerpo_28
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

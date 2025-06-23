@@ -1,0 +1,30 @@
+uuid: ac0abf38-fda2-4c7b-81de-d4ed00a9e175
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slider_block_investigacion
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__slider_block_investigacion_block_1
+theme: fucs
+region: slider_page
+weight: -9
+provider: null
+plugin: 'views_block:slider_block_investigacion-block_1'
+settings:
+  id: 'views_block:slider_block_investigacion-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/investigacion\r\n/noticias-investigacion\r\n/ensi\r\n"

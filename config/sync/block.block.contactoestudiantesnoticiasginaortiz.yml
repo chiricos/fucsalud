@@ -1,0 +1,31 @@
+uuid: 0962f39c-33d0-4501-98eb-96e9d68a720a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7bd02ce5-341e-419e-91e6-4dc59125b0b0'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactoestudiantesnoticiasginaortiz
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:7bd02ce5-341e-419e-91e6-4dc59125b0b0'
+settings:
+  id: 'block_content:7bd02ce5-341e-419e-91e6-4dc59125b0b0'
+  label: 'contacto estudiantes noticias gina ortiz'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/estudiantes/noticias/suscripcion-de-nuevos-convenios-internacionales\r\n/estudiantes/noticias/suscripcion-de-nuevos-convenios-internacionales/convenios-internacionales\r\n/estudiantes/noticias/convocatorias"

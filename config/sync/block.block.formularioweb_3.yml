@@ -1,0 +1,28 @@
+uuid: 5458a74f-0ed0-4201-96b2-748e3c953add
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_3
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario web'
+  label_display: '0'
+  provider: webform
+  webform_id: contactenos_revista_repertorio
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /revista-repertorio/contactenos

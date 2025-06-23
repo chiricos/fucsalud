@@ -1,0 +1,19 @@
+uuid: 4e8a4b6d-49a8-43b9-ab0a-e2614dcb067b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_egresados
+id: node.slider_egresados.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_egresados
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

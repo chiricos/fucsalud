@@ -1,0 +1,27 @@
+uuid: 307a0190-c254-4da5-974a-8776624abc7d
+langcode: es
+status: true
+dependencies:
+  module:
+    - fucs_studio_apartments
+    - system
+  theme:
+    - fucs
+id: formulariodecontactoapartaestudio_2
+theme: fucs
+region: form_linea
+weight: 0
+provider: null
+plugin: fucs_apartment_contact_block
+settings:
+  id: fucs_apartment_contact_block
+  label: 'Formulario de contacto - apartaestudio'
+  label_display: '0'
+  provider: fucs_studio_apartments
+  form: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/apartaestudios/*'

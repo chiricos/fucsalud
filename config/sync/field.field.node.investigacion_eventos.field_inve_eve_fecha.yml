@@ -1,0 +1,21 @@
+uuid: c4290604-06a2-43fc-b43a-34fc23444fb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inve_eve_fecha
+    - node.type.investigacion_eventos
+  module:
+    - datetime
+id: node.investigacion_eventos.field_inve_eve_fecha
+field_name: field_inve_eve_fecha
+entity_type: node
+bundle: investigacion_eventos
+label: 'inve eve fecha'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

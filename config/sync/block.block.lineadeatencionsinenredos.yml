@@ -1,0 +1,30 @@
+uuid: 1ef69721-9040-4b3b-a576-78cff67b05b3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d5e26f37-7602-41ae-b30f-4ae93b36e227'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: lineadeatencionsinenredos
+theme: fucs
+region: sub_footer_menu
+weight: 0
+provider: null
+plugin: 'block_content:d5e26f37-7602-41ae-b30f-4ae93b36e227'
+settings:
+  id: 'block_content:d5e26f37-7602-41ae-b30f-4ae93b36e227'
+  label: 'linea de atención sin enredos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bienestar/salud_mental\r\n/bienestar/salud_mental/*"

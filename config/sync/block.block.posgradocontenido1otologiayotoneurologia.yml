@@ -1,0 +1,31 @@
+uuid: 21769c56-c268-4558-9616-efa915b6c510
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3d109746-f7dd-40bb-ada9-eac158b594ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: posgradocontenido1otologiayotoneurologia
+theme: fucs
+region: pregrado_contenido_1
+weight: 14
+provider: null
+plugin: 'block_content:3d109746-f7dd-40bb-ada9-eac158b594ae'
+settings:
+  id: 'block_content:3d109746-f7dd-40bb-ada9-eac158b594ae'
+  label: 'Posgrado contenido 1 otología y otoneurología'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /posgrado/sub-otorrinolaringologia/otologia-y-otoneurologia

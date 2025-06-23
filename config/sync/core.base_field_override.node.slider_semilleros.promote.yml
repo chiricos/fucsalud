@@ -1,0 +1,22 @@
+uuid: e677bb35-f19b-49f0-bb1c-989ce7d7d953
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_semilleros
+id: node.slider_semilleros.promote
+field_name: promote
+entity_type: node
+bundle: slider_semilleros
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

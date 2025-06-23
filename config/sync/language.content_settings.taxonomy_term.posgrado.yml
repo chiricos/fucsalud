@@ -1,0 +1,11 @@
+uuid: b10b05c3-ea75-4cf4-bdef-79e38e9b0231
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.posgrado
+id: taxonomy_term.posgrado
+target_entity_type_id: taxonomy_term
+target_bundle: posgrado
+default_langcode: site_default
+language_alterable: false

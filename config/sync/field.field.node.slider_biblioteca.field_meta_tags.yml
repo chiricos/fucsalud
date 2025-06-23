@@ -1,0 +1,21 @@
+uuid: 98c114bf-1e7a-4f41-bd8c-12dd6ad2a7e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.slider_biblioteca
+  module:
+    - metatag
+id: node.slider_biblioteca.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: slider_biblioteca
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,17 @@
+uuid: 489690ca-7e5c-475f-899b-197ff1c833ac
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'slider proyeccion social'
+type: slider_proyeccion_social
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

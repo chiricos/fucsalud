@@ -1,0 +1,8 @@
+uuid: 124c7d49-5b25-4408-be36-b0e5bec3f72b
+langcode: es
+status: true
+dependencies: {  }
+id: comite-etica
+label: 'Comite de etica'
+description: ''
+locked: false

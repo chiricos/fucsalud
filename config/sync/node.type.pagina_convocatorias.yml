@@ -1,0 +1,17 @@
+uuid: 7e80fe29-6b49-4265-8173-d3dee761a729
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Pagina convocatorias'
+type: pagina_convocatorias
+description: 'Aqui van las convocatorias recientes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

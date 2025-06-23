@@ -1,0 +1,8 @@
+uuid: 577123ee-5e39-49c6-9019-0c7db323c535
+langcode: es
+status: true
+dependencies: {  }
+id: volver-gestion-organizacion
+label: 'volver gestión organizacional'
+description: ''
+locked: false

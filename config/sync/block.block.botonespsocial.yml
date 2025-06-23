@@ -1,0 +1,31 @@
+uuid: 6db937b6-36f1-4820-9729-728f05b8560a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fb87701d-e3d3-4e63-9dd4-c0218bbc7816'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: botonespsocial
+theme: fucs
+region: content_second_page
+weight: 0
+provider: null
+plugin: 'block_content:fb87701d-e3d3-4e63-9dd4-c0218bbc7816'
+settings:
+  id: 'block_content:fb87701d-e3d3-4e63-9dd4-c0218bbc7816'
+  label: 'Botones P-Social'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/proyeccion-social\r\n/proyeccion-social/*\r\n/proyeccion-social/que-es-proyeccion-social\r\n/proyeccion-social/area-salud-comunitaria\r\n/proyeccion-social/area-extension-universitaria\r\n/proyeccion-social/responsabilidad-social\r\n/proyeccion-social/area-salud-comunitaria\r\n/proyeccion-social/vivienda-familia-salud\r\n/proyeccion-social/FUCS-al-parque\r\n/proyeccion-social/entorno-seguro-paciente\r\n/proyeccion-social/formularios-salud-comunitaria\r\n/proyeccion-social/proyectos-productos\r\n/proyeccion-social/aliados-y-convenios\r\n/proyeccion-social/cursos-responsabilidad-sostenible\r\n/proyeccion-social/rendicion-de-cuentas\r\n/proyeccion-social/desarrollo-sostenible\r\n/proyeccion-social/Espacios-educativos-saludables\r\n/proyeccion-social/calidad-vida-laboral\r\n/proyeccion-social/voluntariado-responsabilidad-s\r\n/proyeccion-social/Becas\r\n/proyeccion-social/Ability\r\n/proyeccion-social/gestion-egresados\r\n/proyeccion-social/formacion-continua\r\n/proyeccion-social/apoyo-sector-externo\r\n/proyeccion-social/preguntale-al-especialista\r\n/proyeccion-social/FUCS-ECO\r\n/proyeccion-social/Universidad-Saludable\r\n/proyeccion-social/sembrando-futuro\r\n/proyeccion-social/crear-y-creer\r\n/proyeccion-social/permanencia-universitaria\r\n/proyeccion-social/noticias\r\n/proyeccion-social/rendicion-de-cuentas-PS\r\n/proyeccion-social/rendicion-de-cuentas/indicadores\r\n/proyeccion-social/rendicion-de-cuentas/experiencias-exitosas\r\n/proyeccion-social/rendicion-de-cuentas/equipo-de-trabajo\r\n/proyeccion-social/experiencias-exitosas\r\n/proyeccion-social/Proyecta-FUCS\r\n\r\n"

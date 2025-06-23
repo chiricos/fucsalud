@@ -1,0 +1,31 @@
+uuid: baacf5f4-ac72-4752-8238-e5a66d021277
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bfef37bd-ca94-4568-bc1b-ae17e6989f0a'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: menuposgradoymaestrias
+theme: fucs
+region: submenu_page
+weight: 0
+provider: null
+plugin: 'block_content:bfef37bd-ca94-4568-bc1b-ae17e6989f0a'
+settings:
+  id: 'block_content:bfef37bd-ca94-4568-bc1b-ae17e6989f0a'
+  label: 'menu posgrado y maestrias'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/posgrado\r\n/posgrado/*\r\n/maestrias\r\n/maestrias/*"

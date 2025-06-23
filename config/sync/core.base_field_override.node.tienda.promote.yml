@@ -1,0 +1,22 @@
+uuid: 48cc3416-9a86-4396-a3ed-7c07a6c6b67d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tienda
+id: node.tienda.promote
+field_name: promote
+entity_type: node
+bundle: tienda
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

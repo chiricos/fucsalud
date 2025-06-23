@@ -1,0 +1,8 @@
+uuid: 006963df-e9e5-4218-9477-5b609d259d17
+langcode: es
+status: true
+dependencies: {  }
+id: inscripciones-ensi
+label: 'inscripciones ensi'
+description: ''
+locked: false

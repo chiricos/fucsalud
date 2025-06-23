@@ -1,0 +1,23 @@
+uuid: 1878de69-8f59-4247-875f-9ba953909f3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tienda_virtual_tienda
+  module:
+    - text
+id: node.tienda_virtual_tienda.body
+field_name: body
+entity_type: node
+bundle: tienda_virtual_tienda
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

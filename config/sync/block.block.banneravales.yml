@@ -1,0 +1,31 @@
+uuid: 1183161d-0695-48df-9729-61c1af0ff449
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1fda75c2-63ef-4658-8fb6-8e0b3ae46839'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: banneravales
+theme: fucs
+region: banner_page
+weight: 0
+provider: null
+plugin: 'block_content:1fda75c2-63ef-4658-8fb6-8e0b3ae46839'
+settings:
+  id: 'block_content:1fda75c2-63ef-4658-8fb6-8e0b3ae46839'
+  label: 'banner avales'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/avales\r\n/avales/*"

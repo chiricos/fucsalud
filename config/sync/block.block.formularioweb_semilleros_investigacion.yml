@@ -1,0 +1,28 @@
+uuid: 840601c1-d438-4f06-b2cd-f846f91b2b43
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - fucs
+id: formularioweb_semilleros_investigacion
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario de semilleros de investigación'
+  label_display: '0'
+  provider: webform
+  webform_id: semilleros_de_investigacion
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /investigacion/semilleros/formulario-de-semilleros-de-investigacion

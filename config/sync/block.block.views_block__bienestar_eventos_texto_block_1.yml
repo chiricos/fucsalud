@@ -1,0 +1,30 @@
+uuid: 697e12a8-572b-485a-be4a-7414dfc3549c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bienestar_eventos_texto
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__bienestar_eventos_texto_block_1
+theme: fucs
+region: events
+weight: 2
+provider: null
+plugin: 'views_block:bienestar_eventos_texto-block_1'
+settings:
+  id: 'views_block:bienestar_eventos_texto-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /bienestar

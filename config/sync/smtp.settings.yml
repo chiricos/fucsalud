@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: WEa5Ex_IeAcm6Bm0hmQ4vU_nDwJDB8hW-vxT1qpGIbM
+langcode: es
+smtp_on: true
+smtp_host: smtp.gmail.com
+smtp_hostbackup: aspmx.l.google.com
+smtp_port: '465'
+smtp_protocol: ssl
+smtp_autotls: true
+smtp_timeout: 30
+smtp_username: formulariosweb@fucsalud.edu.co
+smtp_password: 'ldaz gkvf ktzx mswj'
+smtp_from: formulariosweb@fucsalud.edu.co
+smtp_fromname: 'Coordinacion web FUCS'
+smtp_client_hostname: ''
+smtp_client_helo: ''
+smtp_allowhtml: true
+smtp_test_address: edwarddiaz92@gmail.com
+smtp_reroute_address: ''
+smtp_debugging: false
+smtp_debug_level: 1
+prev_mail_system: php_mail
+smtp_keepalive: false

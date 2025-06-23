@@ -1,0 +1,8 @@
+uuid: 81a010db-3194-4cc9-88ca-2f2ae9a380e7
+langcode: es
+status: true
+dependencies: {  }
+id: telesalud-y-telemedicina
+label: 'Telesalud y Telemedicina'
+description: ''
+locked: false

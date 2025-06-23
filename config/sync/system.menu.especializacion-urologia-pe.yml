@@ -1,0 +1,8 @@
+uuid: a8912f79-4d2f-4871-92ff-e60dfe5c77c5
+langcode: es
+status: true
+dependencies: {  }
+id: especializacion-urologia-pe
+label: 'Especialización Urología Pediátrica'
+description: ''
+locked: false

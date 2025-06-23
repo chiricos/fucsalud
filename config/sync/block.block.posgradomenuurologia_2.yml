@@ -1,0 +1,30 @@
+uuid: f0c62df0-728b-442c-aec2-31cd3b2e84d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrado-menu-urologia
+  module:
+    - system
+  theme:
+    - fucs
+id: posgradomenuurologia_2
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrado-menu-urologia'
+settings:
+  id: 'system_menu_block:posgrado-menu-urologia'
+  label: posgrado-menu-urologia
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /fdsa

@@ -1,0 +1,27 @@
+uuid: 6e90c652-e6ff-42b3-9b30-e20502506ab6
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - fucs
+id: formulariodebusqueda
+theme: fucs
+region: inscribete
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda'
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

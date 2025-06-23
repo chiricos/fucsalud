@@ -1,0 +1,21 @@
+uuid: f7b913d4-6d94-4f25-b86c-ff64433ef427
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.volumen
+  module:
+    - metatag
+id: node.volumen.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: volumen
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
