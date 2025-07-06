@@ -1,6 +1,6 @@
 uuid: c5d948be-d04e-480a-8065-c675d51f91b0
 langcode: es
-status: open
+status: closed
 dependencies: {  }
 weight: 0
 open: null
@@ -12,7 +12,7 @@ id: gestihormiga
 title: Gestihormiga
 description: "&iexcl;Hola! Mi nombre es&nbsp;<strong>Gestihormiga</strong>, y mi funci&oacute;n es comunicar todas la novedades del Sistema de Gesti&oacute;n Organizacional de la FUCS, si tiene dudas o inquietudes escr&iacute;bame al correo&nbsp;<a href=\"mailto:gestihormiga@fucsalud.edu.co\">gestihormiga@fucsalud.edu.co</a>&nbsp;o&nbsp;<a href=\"mailto:gestion.proyectos@fucsalud.edu.co\">gestion.proyectos@fucsalud.edu.co</a>&nbsp;y le responder&eacute; a la mayor brevedad.&nbsp;&nbsp;&nbsp;<br />\r\n&nbsp;"
 categories: {  }
-elements: |
+elements: |-
   nombres_y_apellidos:
     '#type': textfield
     '#title': 'Nombres y apellidos'
@@ -65,7 +65,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''

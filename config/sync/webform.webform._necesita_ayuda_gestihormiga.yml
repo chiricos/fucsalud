@@ -1,6 +1,6 @@
 uuid: b4b76b57-bc69-4dc7-9956-8bc1c0b702ec
 langcode: es
-status: open
+status: closed
 dependencies: {  }
 weight: 0
 open: null
@@ -12,7 +12,7 @@ id: _necesita_ayuda_gestihormiga
 title: 'Necesita ayuda - Gestihormiga'
 description: ''
 categories: {  }
-elements: |
+elements: |-
   nombres_y_apellidos:
     '#type': textfield
     '#title': 'Nombres y apellidos'
@@ -41,7 +41,11 @@ elements: |
     '#type': webform_buttons
     '#title': 'Acepto, consiento y autorizo que mis datos personales sean tratados por la FUCS de acuerdo con su Política de tratamiento y protección de datos personales.'
     '#help': '<a href="https://www.fucsalud.edu.co/PolItica-de-tratamiento-y-proteccion-de-datos-personales" target="_blank"><u>Pol&iacute;tica de Tratamiento y protecci&oacute;n de Datos Personales</u></a>'
-    '#description': "&nbsp;\n<ul>\n\t<li>Ver&nbsp;<a href=\"https://www.fucsalud.edu.co/PolItica-de-tratamiento-y-proteccion-de-datos-personales\" target=\"_blank\">Pol&iacute;tica de tratamiento y protecci&oacute;n de datos personales</a></li>\n</ul>"
+    '#description': |-
+      &nbsp;
+      <ul>
+      	<li>Ver&nbsp;<a href="https://www.fucsalud.edu.co/PolItica-de-tratamiento-y-proteccion-de-datos-personales" target="_blank">Pol&iacute;tica de tratamiento y protecci&oacute;n de datos personales</a></li>
+      </ul>
     '#options':
       SI: SI
       'NO': 'NO'
@@ -63,7 +67,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''

@@ -1,6 +1,6 @@
 uuid: 3464d10b-b736-406d-8249-d099d22b81dd
 langcode: es
-status: open
+status: closed
 dependencies: {  }
 weight: 0
 open: null
@@ -128,7 +128,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''

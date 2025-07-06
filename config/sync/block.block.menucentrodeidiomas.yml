@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/estudiantes/centro_de_idiomas\r\n/estudiantes/centro_de_idiomas/historia\r\n/estudiantes/centro_de_idiomas/contacto\r\n/estudiantes/centro_de_idiomas/*"
+    pages: "/estudiantes/centro_de_idiomas\r\n/estudiantes/centro_de_idiomas/historia\r\n/estudiantes/centro_de_idiomas/contacto\r\n/estudiantes/centro_de_idiomas/*\r\n/estudiantes/centro_de_idiomas/oferta"

@@ -1,0 +1,30 @@
+uuid: f4851a71-8255-48a4-8c4c-a85ec9c3e4fa
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:234a32b5-3287-4275-9f82-310551ef71a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: bloquecentroidionas
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:234a32b5-3287-4275-9f82-310551ef71a5'
+settings:
+  id: 'block_content:234a32b5-3287-4275-9f82-310551ef71a5'
+  label: bloque-centro-idionas
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/estudiantes/centro_de_idiomas/*\r\n/estudiantes/centro_de_idiomas"

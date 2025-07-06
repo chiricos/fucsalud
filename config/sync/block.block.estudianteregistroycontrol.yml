@@ -27,4 +27,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/estudiantes/registro-y-control/certificaciones\r\n/estudiantes/registro-y-control/carnetizacion\r\n/estudiantes/registro-y-control/cae\r\n/estudiantes/registro-y-control/preguntas\r\n/estudiantes/registro-y-control/proceso-matriculas-estudiantes-antiguos\r\n/estudiantes/registro-y-control/proceso-matriculas-estudiantes-nuevos\r\n/estudiantes/registro-y-control/solicitud-de-grado"
+    pages: "/estudiantes/registro-y-control/certificaciones\r\n/estudiantes/registro-y-control/carnetizacion\r\n/estudiantes/registro-y-control/cae\r\n/estudiantes/registro-y-control/preguntas\r\n/estudiantes/registro-y-control/proceso-matriculas-estudiantes-antiguos\r\n/estudiantes/registro-y-control/proceso-matriculas-estudiantes-nuevos\r\n/estudiantes/registro-y-control/solicitud-de-grado\r\n/estudiantes/apoyos-financieros"

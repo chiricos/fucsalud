@@ -1,6 +1,6 @@
 uuid: 2a44139c-dd2b-45dc-9fae-60052310a0d3
 langcode: es
-status: open
+status: closed
 dependencies: {  }
 weight: 0
 open: null
@@ -116,7 +116,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_open_message: "<p align=\"center\">Nuestro mayor objetivo es mantener el contacto contigo.</p>\r\n\r\n<p align=\"center\">Queremos conocer que piensas de la FUCS</p>\r\n\r\n<p align=\"center\"><strong>&iexcl;Porque el v&iacute;nculo contin&uacute;a!</strong></p>"
   form_close_message: ''
