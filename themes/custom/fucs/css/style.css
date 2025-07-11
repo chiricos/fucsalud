@@ -8520,6 +8520,7 @@ SUB MENU INTERNACIONALIZACIÓN
 
 .intenacionalizacion-sub-menu ul li:nth-child(5) {
   border-bottom: none;
+  margin-top: -12px;
 }
 
 .intenacionalizacion-sub-menu ul li:nth-child(6) {
@@ -12319,7 +12320,7 @@ body .contenedorTable
 }
 
 .acordion-lateral-iz .block-fucs-studio-apartments {
-  display: none;
+  display: block;
   background: #0000008a;
   position: fixed;
   top: 0;
