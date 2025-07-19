@@ -24,6 +24,7 @@
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/db_maintenance": "^3.0@RC",
         "drupal/externalauth": "^1.4",
+        "drupal/facebook_pixel": "^2.0@RC",
         "drupal/file_replace": "^1.4",
         "drupal/filefield_sources": "^1.0@alpha",
         "drupal/force_password_change": "^2.0",
