@@ -9356,6 +9356,97 @@ strong {
   display: block;
 }
 
+.fucs-one-site {
+  background: #0c1953;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  z-index: 100000000000000;
+  display: block;
+}
+
+.fucs-one-site .content-pop-up {
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+  height: 100%;
+}
+
+.fucs-one-site .close-pop-up {
+  color: white;
+  float: right;
+  margin-left: 97%;
+  font-weight: bold;
+  font-size: 28px;
+  border: none;
+  border-radius: 0;
+  width: 40px;
+  height: 40px;
+  background: #bb0111;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 15px;
+  z-index: 10000000000000000;
+}
+.fucs-one-site .fucs-pop-up img {
+  width: 100%;
+}
+
+.fucs-one-site .description-frist {
+  background: #0e1756;
+  color: white;
+  font-size: 20px;
+  padding: 30px 33%;
+  font-weight: 200;
+}
+
+.fucs-one-site .description-second {
+  background: #ffe07e;
+  color: #0e1756;
+  font-size: 20px;
+  padding: 30px 33%;
+  font-weight: 200;
+}
+
+.fucs-one-site .description-second h4 {
+  font-weight: bold;
+  color: #0e1756;
+  font-size: 25px;
+}
+
+.fucs-one-site .description-second p {
+  background: #ffe07e;
+  color: #0e1756;
+  font-size: 22px;
+}
+
+.description-end {
+  background: #0e1756;
+  color: white;
+  padding: 30px 33%;
+}
+
+.description-end a {
+  background: #b7cdeb;
+  color: #0e1756;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fucs-one-site video {
+  width: 100%;
+}
+
+.fucs-one-site .fucs-pop-up-oferta-academica {
+  display: block;
+}
+
 /*========================================
                 RESPONSIVE
 ========================================*/

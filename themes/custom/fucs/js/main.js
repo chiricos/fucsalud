@@ -1,5 +1,13 @@
 (function ($) {
 	$(window).on('load', function () {
+
+		$('#videoFondo').on('click', function () {
+      if (this.paused) {
+        this.play();
+      } else {
+        this.pause();
+      }
+    });
 		$('.flexslider').flexslider({
 			animation: "slide",
 			controlNav: true/*,
@@ -687,7 +695,12 @@
 		$('.close-pop-up').click(function() {
 			$(".fucs-pop-up").hide();
 		})
-
+		$('.fucs-one-site .close-pop-up').click(function() {
+			$(".fucs-one-site").hide();
+		})
+		$('.fucs-one-site-close').click(function() {
+			$(".fucs-one-site").hide();
+		})
 	});
 
 	$(document).on('ready', function() {

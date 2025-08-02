@@ -56,7 +56,6 @@ modules/contrib/
 sites/default/settings.php
 *.pdf
 *.mp3
-*.mp4
 /profiles
 *.zip
 *.doc
