@@ -9396,7 +9396,11 @@ strong {
 }
 
 .fucs-one-site .description-frist {
-  background: #0e1756;
+  background-color: #0e1756;
+  background-image: url('/themes/custom/fucs/images/Prehome-fondo.jpg');
+  background-size: cover;         /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat;   /* Evita que la imagen se repita */
+  background-position: center;
   color: white;
   font-size: 20px;
   padding: 30px 33%;
