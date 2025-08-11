@@ -116,6 +116,7 @@ class DataPayments
       $type = $this->getType($items[0]);
       $data['reference'] = $items[0]->referencia;
       $total = (string) $this->getTotal($items);
+      $data['compra'] = $this->getTitles($items);
       $params['request'] = $this->getData($type, $data, $total);
       $payment = $this->sendDataPayment($params);
       if ($payment['createTransactionPaymentResult']['ReturnCode'] == "SUCCESS") {
@@ -128,6 +129,19 @@ class DataPayments
       return $payment;
     }
     return FALSE;
+  }
+
+  public function getTitles($items) {
+    $title = "";
+    foreach ($items as $key => $item) {
+      if ($key == 0) {
+        $title = $item->nombre;
+      }
+      else {
+        $title .= " - " . $item->nombre;
+      }
+    }
+    return $title;
   }
 
   public function getType($item)
@@ -155,7 +169,9 @@ class DataPayments
       'URLRedirect' => 'https://fucsalud.edu.co/compras/confirmacion',
       'Sign' => '',
       'SignFields' => '',
-      'ReferenceArray' => $this->getReference($data)
+      'ReferenceArray' => $this->getReference($data),
+      'ciudad' => $data["city"],
+      'compra' => $data["compra"],
     );
 
     return $params;
