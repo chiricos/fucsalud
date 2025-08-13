@@ -9365,7 +9365,7 @@ strong {
   text-align: center;
   height: 100%;
   z-index: 100000000000000;
-  display: none;
+  display: block;
 }
 
 .fucs-one-site .content-pop-up {
@@ -9393,6 +9393,11 @@ strong {
 }
 .fucs-one-site .fucs-pop-up img {
   width: 100%;
+}
+
+.fucs-one-site iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .fucs-one-site .description-frist {
