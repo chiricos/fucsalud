@@ -9365,7 +9365,7 @@ strong {
   text-align: center;
   height: 100%;
   z-index: 100000000000000;
-  display: block;
+  display: none;
 }
 
 .fucs-one-site .content-pop-up {
