@@ -30,6 +30,7 @@
         "drupal/filefield_sources": "^1.0@alpha",
         "drupal/force_password_change": "^2.0",
         "drupal/formblock": "^2.0@beta",
+        "drupal/image_captcha": "^2.0",
         "drupal/jquery_ui_checkboxradio": "^2.1",
         "drupal/login_destination": "^2.0@beta",
         "drupal/menu_breadcrumb": "^1.16",
