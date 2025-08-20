@@ -134,7 +134,9 @@ class FucsPaymentsForm extends FormBase {
         echo implode("\t", array_keys($row)) . "\r\n";
         $flag = TRUE;
       }
-      array_walk($row, __NAMESPACE__ . '\cleanData');
+      if (is_array($row)) {
+        array_walk($row, [$this, 'cleanData']);
+      }
       echo implode("\t", array_values($row)) . "\r\n";
     }
     exit;
