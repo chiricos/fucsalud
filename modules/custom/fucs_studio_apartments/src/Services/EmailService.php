@@ -30,18 +30,10 @@ class EmailService {
     $params['message'] = $body;
     $params['subject'] = $to;
     $langcode = \Drupal::currentUser()->getPreferredLangcode();
-    $send = true;
+    $send = TRUE;
 
     // Enviar el correo.
     $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
-
-    // Verificar si el correo fue enviado correctamente.
-    if ($result['result'] !== true) {
-      \Drupal::messenger()->addError(t('There was a problem sending your email to @email.', ['@email' => $to]));
-    }
-    else {
-      \Drupal::messenger()->addStatus(t('An email has been sent to @email.', ['@email' => $to]));
-    }
   }
 
 }
