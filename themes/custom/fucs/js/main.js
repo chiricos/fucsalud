@@ -826,7 +826,7 @@
 		createCookie('usuario', "", -1);
 	});
 
-	$('.apartaestudio-reserva').click(function() {
+	/*$('.apartaestudio-reserva').click(function() {
 		$('.acordion-lateral-iz .block-fucs-studio-apartments').show();
 	});
 	$(document).keydown(function(event) {
@@ -836,5 +836,5 @@
 	});
 	$('.apartment-contact-form .close').click(function() {
 		$('.acordion-lateral-iz .block-fucs-studio-apartments').hide();
-	});
+	});*/
 }(jQuery));

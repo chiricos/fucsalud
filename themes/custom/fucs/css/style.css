@@ -12357,6 +12357,7 @@ body .contenedorTable
   background: #f8f8f8;
   border-radius: 20px;
   padding: 30px;
+  text-align: center;
 }
 
 .apartaestudios-content .field--type-image {
@@ -12388,7 +12389,7 @@ body .contenedorTable
   margin: 15px auto;
   border: none;
   color: white;
-  display: block;
+  display: inline;
   padding: 15px;
   font-size: 30px;
   font-weight: bold;
@@ -12420,7 +12421,7 @@ body .contenedorTable
 }
 
 .acordion-lateral-iz .block-fucs-studio-apartments {
-  display: block;
+  display: none;
   background: #0000008a;
   position: fixed;
   top: 0;
