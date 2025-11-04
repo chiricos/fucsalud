@@ -1,0 +1,12 @@
+<?php
+
+function fucs_modal_theme($existing, $type, $theme, $path) {
+  return array(
+    'modal_block' => [
+      'variables' => [
+        'config' => NULL,
+      ],
+      'template' => 'block--modal',
+    ],
+  );
+}

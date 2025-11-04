@@ -1,0 +1,5 @@
+name: 'Fucs Modal'
+type: module
+description: 'Configuración del modal'
+core_version_requirement: ^8 || ^9 || ^10
+package: fucs
