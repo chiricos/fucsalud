@@ -9,6 +9,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\Node;
 use Drupal\file\Entity\File;
+use Drupal\certificados\Services\Utils;
 
 class ImportFormJurado extends FormBase {
 	/**
@@ -73,10 +74,11 @@ class ImportFormJurado extends FormBase {
 
 		//Variable para controlar número de registros creados
 		$conteo = 0;
-
+		$utils = new Utils();
 		//Ciclo para insertar en base de datos lo que venga en cada linea del archivo CSV
 		foreach($data as $row) {
 			$conteo++;
+			$row = $utils->fix_row_utf8($row);
 			$result = $connection->insert('certificado_jurado')
 				->fields([
 				'Nombre' => $row['nombre'],

@@ -1,0 +1,4 @@
+services:
+  certicados.utils:
+    class: Drupal\certificados\Services\Utils
+    arguments: []
