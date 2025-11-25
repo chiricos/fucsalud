@@ -11,6 +11,7 @@ class Utils {
    * {@inheritdoc}
    */
 	function fix_row_utf8($row) {
+    return $row;
     foreach ($row as $key => $value) {
       if (is_string($value)) {
         // Corrige ISO-8859-1 a UTF-8
