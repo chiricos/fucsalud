@@ -120,7 +120,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
 
                 <div class="pregrado-administracion ">
-                    <p class="text-align-right" style="margin-left: 18pt; font-size:12px;">Fecha última actualización: {{ node.changed.value|date("d/m/Y") }}</p><!--aura-->
+                    <p class="text-align-right" style="margin-left: 18pt; font-size:12px;">Fecha última actualización: {{ node.changed.value|date("d/m/Y") }}</p>
                     <div class="acordion-info">
                         {% if content.field_acordion_titulo_1|render is not empty %}
                             <div class="panel-group" id="accordion">
