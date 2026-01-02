@@ -6,16 +6,32 @@
   align-items: center;
 }
 
+.menu-icon-help {
+  margin-top: 0;
+}
+
 .region-icon-help {
-  margin-left: 15px;
+  margin-left: 8px;
+}
+
+.menu-first ul {
+  margin-top: 2px;
 }
 
 .menu-first ul li {
   border-right: 1px solid #092755;
+  padding-right: 10px;
 }
 
 .menu-first ul li a {
   color: #092755 !important;
+  font-weight: 200;
+}
+
+.menu-first ul li a {
+  font-size: 16px;
+  height: 14px;
+  line-height: 0;
 }
 
 .send .google-trans {
@@ -29,4 +45,77 @@
   padding-left: 0;
   padding-right: 0;
   border-right: 1px solid #092755;
+}
+
+.search button {
+  color: #80808061;
+}
+
+.quiero-fucs {
+  margin-left: 0;
+  vertical-align: middle;
+  margin-top: 3px;
+}
+
+.quiero-fucs a {
+  display: initial;
+  line-height: 2;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
+  background-color: #adc775;
+}
+
+.quiero-fucs a:hover {
+  text-decoration: none;
+}
+
+.send {
+  margin-top: 9px;
+  padding-top: 0px;
+  margin-right: 8px;
+}
+
+.search .line-search input {
+  border: none;
+  width: 100px;
+  font-size: 17px;
+  padding: 4px 6px;
+}
+
+.menu ul li a {
+  font-size: 16px;
+  color: #092755;
+}
+
+.region-soy-header .menu .menu-item>a {
+  font-weight: 100;
+}
+
+@media (min-width: 1280px) {
+  .search .line-search input {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .search .line-search input {
+    width: 350px;
+  }
+
+  .region-icon-help {
+    margin-left: 15px;
+  }
+
+  .send {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .search .line-search input {
+    width: 550px;
+  }
 }
