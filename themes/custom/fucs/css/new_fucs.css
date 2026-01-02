@@ -1,3 +1,4 @@
+/************* TOP ********************/
 .top {
   border-bottom: 1px solid #092755;
   background: #e6e8ee;
@@ -92,6 +93,34 @@
 
 .region-soy-header .menu .menu-item>a {
   font-weight: 100;
+}
+
+/************* SLIDER ********************/
+
+.slider {
+    width: 95%;
+    margin: auto;
+}
+
+.flex-viewport {
+  border-radius: 0 0 20px 20px;
+}
+
+header {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 6px 12px #0000004a;
+}
+
+.slider .flex-control-nav {
+  bottom: 12px;
+  font-size: 0;
+  text-align: start;
+  padding-left: 10px;
+}
+
+body .slider .flexslider {
+  background: none;
 }
 
 @media (min-width: 1280px) {
