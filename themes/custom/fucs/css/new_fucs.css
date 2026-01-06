@@ -127,6 +127,90 @@ header {
   display: block;
 }
 
+/************* PROGRAMAS DESTACADOS **************/
+
+.varios {
+  margin-top: 135px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.programas-destacados {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.programas-destacados img {
+  height: auto;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.programas-destacados .views-field-title {
+  background: #e99d00;
+  padding: 10px;
+}
+
+.programas-destacados .views-field-title a {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.programas-destacados .views-field-body {
+  padding: 10px;
+  border-bottom: 2px solid #808080a1;
+  color: gray;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.varios .pager__items {
+  text-align: end;
+  padding-top: 10px;
+}
+
+.varios .pager__item.is-active {
+  display: none;
+}
+
+.varios .pager__item a {
+  color: #e99d00;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0px 11px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+.varios .pager__item--previous a {
+  border: 2px solid #000000a6;
+}
+
+.varios h2 {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 35px; /* espacio para la barra */
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2a5a; /* azul oscuro similar al de la imagen */
+}
+
+.varios h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #cfd3de 70%,
+    #71799b 30%
+  );
+}
+
 /************** FOOTER *************/
 
 .footer-menu {
@@ -195,6 +279,13 @@ header {
 .footer-bottom-center p {
   font-weight: 100;
 }
+
+@media (min-width: 1280px) {
+  .varios {
+    margin-top: 30px;
+  }
+}
+
 
 @media (min-width: 1280px) {
   .search .line-search input {
