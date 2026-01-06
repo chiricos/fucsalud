@@ -97,9 +97,11 @@
 
 /************* SLIDER ********************/
 
-.slider {
-    width: 95%;
-    margin: auto;
+body .slider .flexslider {
+  background: none;
+  width: 95%;
+  margin: auto;
+  z-index: 2;
 }
 
 .flex-viewport {
@@ -119,8 +121,10 @@ header {
   padding-left: 10px;
 }
 
-body .slider .flexslider {
-  background: none;
+.capa {
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  margin-top: -105px;
+  display: block;
 }
 
 /************** FOOTER *************/
