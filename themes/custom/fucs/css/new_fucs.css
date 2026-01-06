@@ -123,6 +123,75 @@ body .slider .flexslider {
   background: none;
 }
 
+/************** FOOTER *************/
+
+.footer-menu {
+  display: none;
+}
+
+.footer-wrapper h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.footer-wrapper p {
+  color: white;
+  font-weight: 600;
+}
+
+.footer-wrapper section {
+  margin-bottom: 10px;
+}
+
+.footer-wrapper section p {
+  margin: 0;
+}
+
+.footer-redes-sociales a {
+  background: #0A3E7C;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.footer-redes-sociales a img {
+  width: 55px;
+  height: auto;
+  padding: 8px;
+}
+
+.footer-wrapper .footer-full {
+
+}
+
+.footer-wrapper .footer-full p {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.footer-wrapper .hr {
+  border-top: 1px dashed white;
+}
+
+.region-second-footer {
+  width: 97%;
+  margin: auto;
+}
+
+.footer-bottom {
+  margin-top: 7px !important;
+}
+
+.footer-bottom  p {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.footer-bottom-center p {
+  font-weight: 100;
+}
+
 @media (min-width: 1280px) {
   .search .line-search input {
     width: 250px;
