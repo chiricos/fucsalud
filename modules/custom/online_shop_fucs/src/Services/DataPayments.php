@@ -161,7 +161,6 @@ class DataPayments
   {
     $params = array(
       'EntityCode' => '10228',
-      //'SessionToken' => 'ses_x=2XDk[3q+7Z!5Rr8m]C,9Ma4p}EY0b)1j¡W;6GdKy4<g|T8%2',
       'SrvCode' => $type,
       'TransValue' => $total,
       'TransVatValue' => '0',
@@ -171,8 +170,7 @@ class DataPayments
       'Sign' => '',
       'SignFields' => '',
       'ReferenceArray' => $this->getReference($data),
-      'ciudad' => $data["city"],
-      'compra' => $data["compra"],
+      //'compra' => $data["compra"],
     );
 
     return $params;
@@ -195,8 +193,8 @@ class DataPayments
 
   public function sendDataPayment($data)
   {
-    $wsdl = "https://www.e-collect.com/p_express/webservice/eCollectWebservicesv2.asmx?wsdl";
-    //$wsdl = "https://test1.e-collect.com/p_express/webservice/eCollectWebservicesv2.asmx?wsdl";
+    //$wsdl = "https://www.e-collect.com/p_express/webservice/eCollectWebservicesv2.asmx?wsdl";
+    $wsdl = "https://test1.e-collect.com/d_express/webservice/eCollectWebservicesv2.asmx";
     $client = new nusoap_client($wsdl, 'wsdl');
     $client->setUseCurl('0');
     $client->soap_defencoding = 'UTF-8';
