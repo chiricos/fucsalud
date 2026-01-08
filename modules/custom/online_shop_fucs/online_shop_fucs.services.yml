@@ -2,7 +2,6 @@ services:
   online_shop_fucs.data_payments:
     class: Drupal\online_shop_fucs\Services\DataPayments
     arguments: []
-
   online_shop_fucs.email_utils:
     class: Drupal\online_shop_fucs\Services\EmailUtils
     arguments: []
@@ -11,3 +10,6 @@ services:
     arguments: ['@current_user']
     tags:
       - { name: event_subscriber }
+  online_shop_fucs.ecollet_payment:
+    class: Drupal\online_shop_fucs\Services\EcolletPayment
+    arguments: ['@http_client_factory']
