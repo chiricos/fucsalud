@@ -63,4 +63,65 @@ class EcolletPayment {
     return "";
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function sendPayment($data) {
+    $response = $this->httpClient->post($this->baseUrl . 'createTransactionPayment', [
+      'headers' => [
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json',
+      ],
+      'json' => $data['request'],
+    ]);
+    $data = json_decode($response->getBody()->getContents(), TRUE);
+    if (is_array($data) && isset($data["ReturnCode"])) {
+      if ($data["ReturnCode"] == "SUCCESS") {
+        return [
+          'code' => $data["ReturnCode"],
+          'TicketId' => $data["TicketId"],
+          'eCollectUrl' => $data["eCollectUrl"],
+        ];
+      }
+      else {
+        return [
+          'code' => $data["ReturnCode"],
+          'TicketId' => "",
+          'eCollectUrl' => "",
+        ];
+      }
+    }
+    return "";
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getTransaction($data) {
+    $response = $this->httpClient->post($this->baseUrl . 'getTransactionInformation', [
+      'headers' => [
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json',
+      ],
+      'json' => [
+        'EntityCode' => $data["request"]["EntityCode"],
+        'SessionToken' => $this->getSessionToken(),
+        'TicketId' => $data["request"]["TicketId"],
+      ],
+    ]);
+    $data = json_decode($response->getBody()->getContents(), TRUE);
+    if (is_array($data) && isset($data["ReturnCode"])) {
+      if ($data["ReturnCode"] == "SUCCESS") {
+        return $data;
+      }
+      else {
+        return [
+          'code' => $data["ReturnCode"],
+          'TicketId' => "",
+          'eCollectUrl' => "",
+        ];
+      }
+    }
+    return "";
+  }
 }
