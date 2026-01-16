@@ -70,3 +70,11 @@ view.colaboradores.page_1:
   requirements:
     _is_logged_in_route: 'TRUE'
     _permission: 'access content'
+
+ecollet:
+  path: '/admin/config/system/ecollet'
+  defaults:
+    _form: '\Drupal\online_shop_fucs\Form\EcolletSettingsForm'
+    _title: 'Configuración Ecollet'
+  requirements:
+    _permission: 'administer site configuration'

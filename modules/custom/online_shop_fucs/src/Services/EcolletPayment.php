@@ -15,7 +15,14 @@ class EcolletPayment {
    *
    * @var string
    */
-  protected $baseUrl = "https://test1.e-collect.com/app_express/api/";
+  protected $baseUrl;
+
+  /**
+   * La URL base utilizada para construir las solicitudes.
+   *
+   * @var string
+   */
+  protected $config;
 
   /**
    * El cliente HTTP Guzzle usado para realizar solicitudes.
@@ -28,8 +35,15 @@ class EcolletPayment {
    * {@inheritdoc}
    */
   public function __construct(ClientFactory $client_factory) {
+    $this->config = \Drupal::config('online_shop_fucs.ecollet_settings');
+    if ($this->config->get('ecollet')["test"]) {
+      $this->baseUrl = $this->config->get('ecollet')["url_test"];
+    }
+    else {
+      $this->baseUrl = $this->config->get('ecollet')["url_prod"];
+    }
     $this->httpClient = $client_factory->fromOptions([
-      'timeout' => 10,
+      'timeout' => 60,
     ]);
   }
 
@@ -52,8 +66,8 @@ class EcolletPayment {
         'Accept' => 'application/json',
       ],
       'json' => [
-        'EntityCode' => 10228,
-        'Apikey' => 'FU231fs4lnd',
+        'EntityCode' => $this->config->get('ecollet')['code'],
+        'Apikey' => $this->config->get('ecollet')['apikey'],
       ],
     ]);
     $data = json_decode($response->getBody()->getContents(), TRUE);
@@ -124,4 +138,5 @@ class EcolletPayment {
     }
     return "";
   }
+
 }
