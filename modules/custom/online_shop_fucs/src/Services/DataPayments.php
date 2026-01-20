@@ -238,7 +238,7 @@ class DataPayments {
       $data['address'],
       $data['phone_number'],
       $data['email'],
-      $data['reference'],
+      $data['reference'] . ' - ' . $data["compra"],
       $data["city"],
     ];
   }
