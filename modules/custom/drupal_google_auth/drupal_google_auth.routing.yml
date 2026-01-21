@@ -5,6 +5,8 @@ google:
     _title: Google
   requirements:
     _access: 'TRUE'
+  options:
+    no_cache: TRUE
 
 callback:
   path: /auth/google/callback
@@ -13,6 +15,8 @@ callback:
     _title: Google
   requirements:
     _access: 'TRUE'
+  options:
+    no_cache: TRUE
 
 login:
   path: /auth/google/login
@@ -21,6 +25,8 @@ login:
     _title: Google
   requirements:
     _access: 'TRUE'
+  options:
+    no_cache: TRUE
 
 config:
   path: /admin/google-auth/config
