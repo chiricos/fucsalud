@@ -92,46 +92,36 @@
 		{{ page.various }}
 	</div>
 
-
-    <div class="news">
+	<div class="news">
 		<div class="news-fucs-informa">
-            <div class="tabs">
-                <p><img src="/themes/custom/fucs/images/01-fucs-informa.svg" alt="fucs informa" title="FUCSInforma">FUCS te Informa</p>
-				<a href="/noticias-principales" class="noticias-principales">{{"Ver todas"|t}}</a>
-            </div>
-            <div class="eventos noticias">
-                {{ page.news }}
-            </div>
-
-        </div>
-        <div class="news-eventos">
-            <div class="tabs">
-                <p><img src="/themes/custom/fucs/images/02-eventos.svg" alt="eventos" title="Eventos">Eventos</p>
-				<a href="/eventos-home" class="noticias-principales">{{"Ver todas"|t}}</a>
-            </div>
-            <div class="eventos-seccion">
-                {{ page.events }}
-            </div>
-           
-            
-        </div>
-        <div class="banner-eventos">
-            {{ page.second_slider }}
-        </div>
-
-    </div>
-
-
-	<div class="news news-videos" >
-		<div class="videosvideos" style="width:100%">
 			<div class="tabs">
-				<p><img src="/themes/custom/fucs/images/03-videos.svg" alt="videos" title="VIDEOS">VIDEOS</p>
+				<p><img src="/themes/custom/fucs/images/01-fucs-informa.svg" alt="fucs informa" title="FUCSInforma">FUCS te Informa</p>
+				<a href="/noticias-principales" class="noticias-principales">{{"Ver todas"|t}}</a>
 			</div>
-			<div class="calendar-content">
-				{{ page.video }}
+			<div class="eventos noticias">
+					{{ page.news }}
 			</div>
 		</div>
-
+		<div class="news-eventos hidden">
+			<div class="tabs">
+				<p><img src="/themes/custom/fucs/images/02-eventos.svg" alt="eventos" title="Eventos">Eventos</p>
+				<a href="/eventos-home" class="noticias-principales">{{"Ver todas"|t}}</a>
+			</div>
+			<div class="eventos-seccion">
+				{{ page.events }}
+			</div>  
+		</div>
+		<div class="know-fucs">
+			<div class="tabs">
+				<p>Conoce la fucs</p>
+			</div>
+			<div class="eventos-seccion">
+				{{ page.events }}
+			</div>  
+		</div>
+		<div class="banner-eventos">
+				{{ page.second_slider }}
+		</div>
 	</div>
 
 	<div class="reglamentos">
