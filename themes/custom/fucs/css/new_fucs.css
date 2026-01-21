@@ -221,10 +221,10 @@ header {
 .varios h2 {
   position: relative;
   margin-left: 15px;
-  padding-left: 35px; /* espacio para la barra */
+  padding-left: 35px;
   font-size: 28px;
   font-weight: 700;
-  color: #1f2a5a; /* azul oscuro similar al de la imagen */
+  color: #1f2a5a; 
 }
 
 .varios h2::before {
@@ -273,6 +273,7 @@ header {
   padding-left: 30px;
   margin-bottom: 15px;
   margin-top: 2px;
+  color: #092755;
 }
 
 .views-element-container h2::before {
@@ -296,7 +297,7 @@ header {
 
 .search-section {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   text-align: center;
 }
 
@@ -386,6 +387,22 @@ header {
 
 .search-btn:hover {
   background: #17b89a;
+}
+
+.banner-eventos .flexslider {
+  margin: 15px auto;
+}
+
+.banner-eventos .flexslider .views-field-field-link {
+  width: 95%;
+  margin: auto;
+}
+
+.know-fucs {
+  width: 65%;
+  display: inline-block;
+  padding-right: 20px;
+  vertical-align: top;
 }
 
 /************** FOOTER *************/
