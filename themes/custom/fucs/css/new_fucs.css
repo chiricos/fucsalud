@@ -183,6 +183,19 @@ header {
   text-align: justify;
 }
 
+.programas-destacados .conoce-mas {
+  text-align: end;
+  margin-top: 15px;
+}
+
+.programas-destacados .conoce-mas a {
+  background: #092755;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 4px 10px;
+}
+
 .varios .pager__items {
   text-align: end;
   padding-top: 10px;
@@ -226,6 +239,57 @@ header {
     #cfd3de 70%,
     #71799b 30%
   );
+}
+
+/******************* content *******************/
+
+.tabs p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 0;
+  letter-spacing: 0px;
+}
+
+.tabs p::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 35px;
+  background: linear-gradient(to right, #cfd3de 70%, #71799b 30%);
+}
+
+.tabs p img {
+  margin-left: 25px;
+  width: 40px;
+  margin-right: 0px;
+  margin-top: -2px;
+
+}
+
+.views-element-container h2 {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  margin-top: 2px;
+}
+
+.views-element-container h2::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 35px;
+  left: 0;
+  background: linear-gradient(to right, #cfd3de 70%, #71799b 30%);
+}
+
+.block-views-blockslider-segundo-home-block-1 > div {
+  border-top: 1px dashed #707070;
+}
+
+.banner-info {
+  display: none;
 }
 
 /************** BUSCADOR ****************/
@@ -325,6 +389,10 @@ header {
 }
 
 /************** FOOTER *************/
+
+footer {
+  margin-top: 40px;
+}
 
 .footer-menu {
   display: none;
