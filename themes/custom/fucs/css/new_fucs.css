@@ -121,6 +121,15 @@ header {
   padding-left: 10px;
 }
 
+.slider .flex-control-paging li a {
+  height: 12px;
+  width: 12px;
+}
+
+.slider .flex-control-paging li a.flex-active {
+  width: 40px;
+}
+
 .capa {
   background: linear-gradient(to bottom, #f0f0f0, #ffffff);
   margin-top: -105px;
@@ -196,16 +205,16 @@ header {
   padding: 4px 10px;
 }
 
-.varios .pager__items {
+.pager__items {
   text-align: end;
   padding-top: 10px;
 }
 
-.varios .pager__item.is-active {
+.pager__item.is-active {
   display: none;
 }
 
-.varios .pager__item a {
+.pager li>a, .pager li>span {
   color: #e99d00;
   font-weight: bold;
   font-size: 25px;
@@ -214,7 +223,7 @@ header {
   border: 1px solid black;
 }
 
-.varios .pager__item--previous a {
+.pager li>a, .pager li>span {
   border: 2px solid #000000a6;
 }
 
@@ -227,7 +236,7 @@ header {
   color: #1f2a5a; 
 }
 
-.varios h2::before {
+.varios h2::before, .know-fucs h2::before {
   content: "";
   position: absolute;
   left: 0;
@@ -239,6 +248,20 @@ header {
     #cfd3de 70%,
     #71799b 30%
   );
+}
+
+.know-fucs h2 {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  color: #092755;
+}
+
+.eventos-seccion {
+  border-top: 1px dashed #707070;
 }
 
 /******************* content *******************/
@@ -291,6 +314,28 @@ header {
 
 .banner-info {
   display: none;
+}
+
+.conoce-fucs .view-content {
+  display: flex;
+  gap: 20px;
+  padding: 18px 15px 15px 0px;
+}
+
+.conoce-fucs .views-row {
+  flex: 1;
+  margin-right: 15px;
+  max-width: 50%;
+}
+
+.conoce-fucs .views-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.banner-eventos .flex-control-nav {
+  bottom: -40px;
 }
 
 /************** BUSCADOR ****************/
@@ -390,7 +435,7 @@ header {
 }
 
 .banner-eventos .flexslider {
-  margin: 15px auto;
+  margin: 15px auto 35px;
 }
 
 .banner-eventos .flexslider .views-field-field-link {
@@ -403,6 +448,16 @@ header {
   display: inline-block;
   padding-right: 20px;
   vertical-align: top;
+}
+
+.banner-eventos .flex-control-paging li a {
+  background: #808080bd;
+  height: 12px;
+  width: 12px;
+}
+
+.banner-eventos .flex-control-paging li a.flex-active {
+  width: 40px;
 }
 
 /************** FOOTER *************/
@@ -489,6 +544,13 @@ footer {
 
   .filters button {
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .conoce-fucs .view-content  {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
