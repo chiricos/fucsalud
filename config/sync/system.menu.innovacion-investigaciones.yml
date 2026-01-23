@@ -1,0 +1,8 @@
+uuid: 01c6931b-e0cb-4bab-b5c6-dc2919cb3d9a
+langcode: es
+status: true
+dependencies: {  }
+id: innovacion-investigaciones
+label: 'innovacion investigaciones'
+description: ''
+locked: false

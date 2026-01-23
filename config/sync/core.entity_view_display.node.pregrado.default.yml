@@ -16,8 +16,10 @@ dependencies:
     - field.field.node.pregrado.field_acordion_titulo_5
     - field.field.node.pregrado.field_acordion_titulo_6
     - field.field.node.pregrado.field_acordion_titulo_7
+    - field.field.node.pregrado.field_facultad
     - field.field.node.pregrado.field_imagen_nueva
     - field.field.node.pregrado.field_meta_tags
+    - field.field.node.pregrado.field_modalidad
     - field.field.node.pregrado.field_nivel_academico
     - field.field.node.pregrado.field_titulo
     - field.field.node.pregrado.field_titulo_
@@ -130,6 +132,14 @@ content:
     third_party_settings: {  }
     weight: 116
     region: content
+  field_facultad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 122
+    region: content
   field_imagen_nueva:
     type: image
     label: hidden
@@ -147,6 +157,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 120
+    region: content
+  field_modalidad:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 123
     region: content
   field_nivel_academico:
     type: entity_reference_label

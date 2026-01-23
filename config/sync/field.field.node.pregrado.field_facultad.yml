@@ -1,0 +1,29 @@
+uuid: 4107d696-bdfe-42e7-8c96-64ee537b3d14
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facultad
+    - node.type.pregrado
+    - taxonomy.vocabulary.facultad
+id: node.pregrado.field_facultad
+field_name: field_facultad
+entity_type: node
+bundle: pregrado
+label: Facultad
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      facultad: facultad
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

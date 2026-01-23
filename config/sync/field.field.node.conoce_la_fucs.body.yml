@@ -1,16 +1,16 @@
-uuid: e6c00cd1-9b67-4600-887c-c3d3d14e919c
+uuid: befbcb94-0f0e-412f-a098-158109f13408
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.prueba_drawde
+    - node.type.conoce_la_fucs
   module:
     - text
-id: node.prueba_drawde.body
+id: node.conoce_la_fucs.body
 field_name: body
 entity_type: node
-bundle: prueba_drawde
+bundle: conoce_la_fucs
 label: Body
 description: ''
 required: false

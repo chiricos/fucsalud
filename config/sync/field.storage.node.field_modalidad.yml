@@ -1,17 +1,18 @@
-uuid: 1d4c223f-b138-4145-a369-2ae520489893
+uuid: db93302a-01dc-4991-9b54-401ed59ff9e4
 langcode: es
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_prueba
-field_name: field_prueba
+id: node.field_modalidad
+field_name: field_modalidad
 entity_type: node
-type: datetime
+type: string
 settings:
-  datetime_type: datetime
-module: datetime
+  max_length: 50
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

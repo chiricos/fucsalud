@@ -1,14 +1,14 @@
-uuid: 8e874508-d632-4db0-8226-0954e34be714
+uuid: 3dd37359-c46c-4d57-b4a5-c6b00be67502
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.prueba_drawde
-id: node.prueba_drawde.promote
+    - node.type.conoce_la_fucs
+id: node.conoce_la_fucs.promote
 field_name: promote
 entity_type: node
-bundle: prueba_drawde
-label: 'Promocionado a la página principal'
+bundle: conoce_la_fucs
+label: 'Promoted to front page'
 description: ''
 required: false
 translatable: true

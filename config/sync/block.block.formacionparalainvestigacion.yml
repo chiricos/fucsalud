@@ -1,0 +1,29 @@
+uuid: 1d9b5a54-1987-4364-b42a-d726bf5a1dd2
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.formacion-para-la-investigacion
+  module:
+    - system
+  theme:
+    - fucs
+id: formacionparalainvestigacion
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:formacion-para-la-investigacion'
+settings:
+  id: 'system_menu_block:formacion-para-la-investigacion'
+  label: 'bloque Formación para la Investigación'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/formacion/*\r\n/investigacion/formacion"

@@ -1,0 +1,29 @@
+uuid: 6b516ae0-1131-474b-a52d-befa7de4c45a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-apropiacion-social-del-cono
+  module:
+    - system
+  theme:
+    - fucs
+id: menuapropiacionsocialdelconocimiento
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-apropiacion-social-del-cono'
+settings:
+  id: 'system_menu_block:menu-apropiacion-social-del-cono'
+  label: 'bloque Apropiación Social del Conocimiento'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/apropiacion\r\n/investigacion/apropiacion/*"

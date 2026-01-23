@@ -1,0 +1,8 @@
+uuid: 420af19d-5abf-4196-811a-e9df8b8b88bb
+langcode: es
+status: true
+dependencies: {  }
+id: formacion-para-la-investigacion
+label: 'Formación para la Investigación'
+description: ''
+locked: false

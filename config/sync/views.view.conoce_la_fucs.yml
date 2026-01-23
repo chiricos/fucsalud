@@ -1,20 +1,17 @@
-uuid: b3c950cf-c10d-41b5-b87b-926285198d7f
+uuid: 23e3fe07-30ee-4b6d-856b-c2b31647c957
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_link
-    - field.storage.node.field_slider_1400x600_
+    - field.storage.node.field_image
     - image.style.large
-    - node.type.slider_segundo_home
+    - node.type.conoce_la_fucs
   module:
     - image
     - node
-    - text
     - user
-id: slider_segundo_home
-label: 'slider segundo home'
+id: conoce_la_fucs
+label: 'Conoce la fucs'
 module: views
 description: ''
 tag: ''
@@ -23,11 +20,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
-      title: 'slider segundo home'
+      title: 'Conoce la fucs'
       fields:
         title:
           id: title
@@ -36,6 +33,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: true
@@ -57,8 +56,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: true
-            ellipsis: true
+            word_boundary: false
+            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -81,7 +80,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -92,19 +91,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_slider_1400x600_:
-          id: field_slider_1400x600_
-          table: node__field_slider_1400x600_
-          field: field_slider_1400x600_
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
-            text: '<div title="{{ field_slider_1400x600_ }}">{{ field_slider_1400x600_ }}</div>'
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -158,155 +157,31 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_link:
-          id: field_link
-          table: node__field_link
-          field: field_link
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: |+
-              {{ field_slider_1400x600_ }}
-              <div class="banner-info" title="{{ title }}">
-
-              	<h3>{{ title }}</h3>
-              	<div class="banner-content">
-
-              	<p>
-              	{{ body }}
-              	</p>
-              	<div class="second-ver-mas">
-              	<a href="{{ field_link }}">Ver más</a></div></div>
-              </div>
-
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
-        type: none
+        type: mini
         options:
           offset: 0
+          items_per_page: 2
+          total_pages: null
+          id: 0
+          tags:
+            next: '>'
+            previous: '<'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Ordenar por'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -332,7 +207,7 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: created
+            field_identifier: ''
           exposed: false
           granularity: second
       arguments: {  }
@@ -358,19 +233,12 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            slider_segundo_home: slider_segundo_home
+            conoce_la_fucs: conoce_la_fucs
           expose:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: html_list
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          type: ul
-          wrapper_class: item-list
-          class: slides
+        type: default
       row:
         type: fields
       query:
@@ -382,7 +250,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: flexslider
+      css_class: conoce-fucs
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -391,12 +260,11 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_link'
-        - 'config:field.storage.node.field_slider_1400x600_'
+        - 'config:field.storage.node.field_image'
   block_1:
     id: block_1
     display_title: Block
@@ -404,16 +272,16 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      block_description: 'slider segundo home'
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_link'
-        - 'config:field.storage.node.field_slider_1400x600_'
+        - 'config:field.storage.node.field_image'

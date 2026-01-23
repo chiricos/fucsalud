@@ -1,20 +1,20 @@
-uuid: 401ce437-3522-46b3-a463-8a6289d67b80
+uuid: e5949776-86f9-4d68-b9c1-65562b649f5a
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_home_even_fecha
-    - field.storage.node.field_noticias_imagen
-    - node.type.calendario
+    - field.storage.node.field_facultad
+    - field.storage.node.field_imagen_nueva
+    - field.storage.node.field_modalidad
+    - node.type.pregrado
   module:
-    - datetime
     - image
     - node
     - text
     - user
-id: eventos
-label: Eventos
+id: _que_quieres_estudiar_
+label: '¿Qué quieres estudiar?'
 module: views
 description: ''
 tag: ''
@@ -23,25 +23,25 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
-      title: Eventos
+      title: 'Programas Destacados'
       fields:
-        field_noticias_imagen:
-          id: field_noticias_imagen
-          table: node__field_noticias_imagen
-          field: field_noticias_imagen
+        field_imagen_nueva:
+          id: field_imagen_nueva
+          table: node__field_imagen_nueva
+          field: field_imagen_nueva
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
-            alter_text: true
-            text: '<div title="{{ field_noticias_imagen__alt }}">{{ field_noticias_imagen }}</div>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -81,11 +81,74 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: ''
+            image_link: content
             image_style: ''
             image_loading:
               attribute: lazy
           group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_facultad:
+          id: field_facultad
+          table: node__field_facultad
+          field: field_facultad
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -106,10 +169,10 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "{{ title }}\r\n<span class=\"span-facultad\">{{ field_facultad }}</span>"
             make_link: false
             path: ''
             absolute: false
@@ -160,16 +223,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_home_even_fecha:
-          id: field_home_even_fecha
-          table: node__field_home_even_fecha
-          field: field_home_even_fecha
+        field_modalidad:
+          id: field_modalidad
+          table: node__field_modalidad
+          field: field_modalidad
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -197,6 +260,69 @@ display:
             trim: false
             preserve_tags: ''
             html: false
+          element_type: div
+          element_class: modalidad-destacado
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: true
+            max_length: 200
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: true
+            preserve_tags: '<img>'
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -210,10 +336,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: text_summary_or_trimmed
           settings:
-            timezone_override: ''
-            format_type: medium
+            trim_length: 200
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -234,7 +359,7 @@ display:
           entity_type: node
           plugin_id: entity_link
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -262,8 +387,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: conoce-mas
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -274,77 +399,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Leer más'
+          text: 'Conoce más'
           output_url_as_text: false
           absolute: false
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "<div class=\"events-image\">\r\n    {{ field_noticias_imagen }}\r\n</div>\r\n<div class=\"events-body\">\r\n    <div class=\"events-title\">\r\n        <span class=\"noticias-title-content\">\r\n            {{ title }}\r\n        </span>\r\n    </div>\r\n    <div class=\"events-text\">\r\n        {{ body }}\r\n    </div>\r\n    <div class=\"events-more\">\r\n        {{view_node}}\r\n    </div>\r\n</div>"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_summary_or_trimmed
-          settings:
-            trim_length: 600
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
         type: mini
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 3
           total_pages: null
           id: 0
           tags:
@@ -390,7 +452,7 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: created
+            field_identifier: ''
           exposed: false
           granularity: second
       arguments: {  }
@@ -416,7 +478,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            calendario: calendario
+            pregrado: pregrado
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -424,7 +486,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: row-events
+          row_class: 'col-12 col-md-4 programas-destacados'
           default_row_class: true
       row:
         type: fields
@@ -437,7 +499,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: ' events'
+      css_class: row
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -451,8 +514,9 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_home_even_fecha'
-        - 'config:field.storage.node.field_noticias_imagen'
+        - 'config:field.storage.node.field_facultad'
+        - 'config:field.storage.node.field_imagen_nueva'
+        - 'config:field.storage.node.field_modalidad'
   block_1:
     id: block_1
     display_title: Block
@@ -473,29 +537,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_home_even_fecha'
-        - 'config:field.storage.node.field_noticias_imagen'
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
-    position: 2
-    display_options:
-      defaults:
-        css_class: false
-      css_class: 'news-eventos events'
-      display_extenders:
-        metatag_display_extender: {  }
-      path: eventos-home
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_home_even_fecha'
-        - 'config:field.storage.node.field_noticias_imagen'
+        - 'config:field.storage.node.field_facultad'
+        - 'config:field.storage.node.field_imagen_nueva'
+        - 'config:field.storage.node.field_modalidad'
