@@ -1559,7 +1559,7 @@ p {
   border: none;
   border-radius: 0;
   color: gray;
-  height: 0;
+  /*height: 0;*/
   font-size: 20px;
   padding: 0;
 }
@@ -1611,7 +1611,7 @@ p {
 .noticias .views-field-title {}
 
 .row-events {
-  border-bottom: 1px dashed #707070 !important;
+  border-bottom: 1px dashed #707070;
 }
 
 .video {}
