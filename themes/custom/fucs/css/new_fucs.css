@@ -418,6 +418,10 @@ header {
   padding: 0;
 }
 
+.noticias-image img {
+
+}
+
 /************** BUSCADOR ****************/
 
 .search-section {
@@ -512,6 +516,10 @@ header {
 
 .search-btn:hover {
   background: #17b89a;
+}
+
+.banner-eventos {
+  border-left: 1px solid #707070;
 }
 
 .banner-eventos .flexslider {
