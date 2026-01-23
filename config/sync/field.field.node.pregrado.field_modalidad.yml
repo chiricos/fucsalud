@@ -1,0 +1,19 @@
+uuid: 0ff8c4ef-2d86-4ea9-ac93-503890633f2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modalidad
+    - node.type.pregrado
+id: node.pregrado.field_modalidad
+field_name: field_modalidad
+entity_type: node
+bundle: pregrado
+label: modalidad
+description: 'Presencial - Vritual 2025-2'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

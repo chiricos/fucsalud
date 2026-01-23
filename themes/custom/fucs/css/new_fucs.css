@@ -205,6 +205,10 @@ header {
   padding: 4px 10px;
 }
 
+.pager {
+  margin: 0;
+}
+
 .pager__items {
   text-align: end;
   padding-top: 10px;
@@ -215,16 +219,16 @@ header {
 }
 
 .pager li>a, .pager li>span {
-  color: #e99d00;
+  color: #e99d00 !important;
   font-weight: bold;
-  font-size: 25px;
-  padding: 0px 11px;
-  border-radius: 50px;
-  border: 1px solid black;
+  font-size: 25px !important;
+  padding: 0px 11px !important;
+  border-radius: 50px !important;
+  border: 2px solid #000000a6 !important;
 }
 
 .pager li>a, .pager li>span {
-  border: 2px solid #000000a6;
+  
 }
 
 .varios h2 {
@@ -338,6 +342,86 @@ header {
   bottom: -40px;
 }
 
+.news {
+  
+}
+
+.news-fucs-informa, .news-eventos {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-left: -3px;
+}
+
+.news-fucs-informa {
+  padding-right: 30px;
+}
+
+.news-eventos {
+  border-left: 1px solid #707070;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.events {
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.events .pager {
+  display: block;
+}
+
+.events .views-row {
+  border-bottom: none;
+}
+
+.events .views-row {
+  border-bottom: none;
+}
+
+.eventos-seccion {
+  border-bottom: none;
+}
+
+.events-more a {
+  background: #092755;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 4px 10px;
+}
+
+.events-image {
+  width: 40%;
+}
+
+.events-body {
+  width: 60%;
+}
+
+.events-text {
+  line-height: 1.2;
+}
+
+.noticias-text {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.noticias-image {
+  width: 40%;
+}
+
+.noticias-body {
+  width: 57%;
+  padding: 0;
+}
+
+.noticias-image img {
+
+}
+
 /************** BUSCADOR ****************/
 
 .search-section {
@@ -432,6 +516,10 @@ header {
 
 .search-btn:hover {
   background: #17b89a;
+}
+
+.banner-eventos {
+  border-left: 1px solid #707070;
 }
 
 .banner-eventos .flexslider {

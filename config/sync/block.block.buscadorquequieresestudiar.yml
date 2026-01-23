@@ -1,23 +1,23 @@
-uuid: ffdffd6c-47a6-447e-9661-cb0c73e3dac4
+uuid: 3942a111-d3e6-43b4-b60b-e23fd6b26310
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:c9f37ddc-4d55-48d2-aa12-4470cc38fa73'
+    - 'block_content:basic:62aebd44-7f97-4a63-ae70-0f1a7c8e54c0'
   module:
     - block_content
     - system
   theme:
     - fucs
-id: popupofertaacademica
+id: buscadorquequieresestudiar
 theme: fucs
-region: slider_principal
+region: various
 weight: 0
 provider: null
-plugin: 'block_content:c9f37ddc-4d55-48d2-aa12-4470cc38fa73'
+plugin: 'block_content:62aebd44-7f97-4a63-ae70-0f1a7c8e54c0'
 settings:
-  id: 'block_content:c9f37ddc-4d55-48d2-aa12-4470cc38fa73'
-  label: 'popup oferta academica'
+  id: 'block_content:62aebd44-7f97-4a63-ae70-0f1a7c8e54c0'
+  label: 'Buscador - que quieres estudiar'
   label_display: '0'
   provider: block_content
   status: true

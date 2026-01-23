@@ -1,0 +1,29 @@
+uuid: d06c7dc8-b369-495f-a1db-707cf7b606e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.conoce_la_fucs
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block__conoce_la_fucs_block_1
+theme: fucs
+region: know_fucs
+weight: 0
+provider: null
+plugin: 'views_block:conoce_la_fucs-block_1'
+settings:
+  id: 'views_block:conoce_la_fucs-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

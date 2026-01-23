@@ -1,0 +1,30 @@
+uuid: 03b1b84e-8ba6-4941-bf58-4550b680f0a8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1b23ad07-23b6-40ed-8e42-3cfbe94868eb'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: gloriamenu
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'block_content:1b23ad07-23b6-40ed-8e42-3cfbe94868eb'
+settings:
+  id: 'block_content:1b23ad07-23b6-40ed-8e42-3cfbe94868eb'
+  label: 'bloque gloria menu'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/Proyectos/Gloria\r\n/investigacion/Proyectos/Gloria/*"

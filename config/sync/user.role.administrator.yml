@@ -49,7 +49,6 @@ dependencies:
     - node.type.pregrado
     - node.type.programas
     - node.type.programas_lateral
-    - node.type.prueba_drawde
     - node.type.publicaciones
     - node.type.revistas
     - node.type.semilleros_noticias
@@ -96,6 +95,7 @@ dependencies:
     - contact
     - content_translation
     - contextual
+    - facebook_pixel
     - field_ui
     - file
     - file_replace
@@ -211,6 +211,7 @@ permissions:
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'
+  - 'configure facebook_pixel'
   - 'create acordion content'
   - 'create acordion_lateral content'
   - 'create arbol content'
@@ -255,7 +256,6 @@ permissions:
   - 'create pregrado content'
   - 'create programas content'
   - 'create programas_lateral content'
-  - 'create prueba_drawde content'
   - 'create publicaciones content'
   - 'create revistas content'
   - 'create semilleros_noticias content'
@@ -329,7 +329,6 @@ permissions:
   - 'delete any pregrado content'
   - 'delete any programas content'
   - 'delete any programas_lateral content'
-  - 'delete any prueba_drawde content'
   - 'delete any publicaciones content'
   - 'delete any revistas content'
   - 'delete any semilleros_noticias content'
@@ -434,7 +433,6 @@ permissions:
   - 'delete own pregrado content'
   - 'delete own programas content'
   - 'delete own programas_lateral content'
-  - 'delete own prueba_drawde content'
   - 'delete own publicaciones content'
   - 'delete own revistas content'
   - 'delete own semilleros_noticias content'
@@ -468,7 +466,6 @@ permissions:
   - 'delete pregrado revisions'
   - 'delete programas revisions'
   - 'delete programas_lateral revisions'
-  - 'delete prueba_drawde revisions'
   - 'delete publicaciones revisions'
   - 'delete revistas revisions'
   - 'delete semilleros_noticias revisions'
@@ -549,7 +546,6 @@ permissions:
   - 'edit any pregrado content'
   - 'edit any programas content'
   - 'edit any programas_lateral content'
-  - 'edit any prueba_drawde content'
   - 'edit any publicaciones content'
   - 'edit any revistas content'
   - 'edit any semilleros_noticias content'
@@ -620,7 +616,6 @@ permissions:
   - 'edit own pregrado content'
   - 'edit own programas content'
   - 'edit own programas_lateral content'
-  - 'edit own prueba_drawde content'
   - 'edit own publicaciones content'
   - 'edit own revistas content'
   - 'edit own semilleros_noticias content'
@@ -715,7 +710,6 @@ permissions:
   - 'revert pregrado revisions'
   - 'revert programas revisions'
   - 'revert programas_lateral revisions'
-  - 'revert prueba_drawde revisions'
   - 'revert publicaciones revisions'
   - 'revert revistas revisions'
   - 'revert semilleros_noticias revisions'
@@ -752,6 +746,7 @@ permissions:
   - 'update content translations'
   - 'use advanced search'
   - 'use menu link attributes'
+  - 'use php for page_visibility'
   - 'use text format drawde'
   - 'use text format full_html'
   - 'use text format restricted_html'
@@ -803,7 +798,6 @@ permissions:
   - 'view pregrado revisions'
   - 'view programas revisions'
   - 'view programas_lateral revisions'
-  - 'view prueba_drawde revisions'
   - 'view publicaciones revisions'
   - 'view revistas revisions'
   - 'view semilleros_noticias revisions'

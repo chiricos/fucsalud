@@ -1,0 +1,29 @@
+uuid: ba35644b-b342-4d82-ac04-56acf801ab8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view._que_quieres_estudiar_
+  module:
+    - system
+    - views
+  theme:
+    - fucs
+id: views_block___que_quieres_estudiar__block_1
+theme: fucs
+region: various
+weight: 0
+provider: null
+plugin: 'views_block:_que_quieres_estudiar_-block_1'
+settings:
+  id: 'views_block:_que_quieres_estudiar_-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

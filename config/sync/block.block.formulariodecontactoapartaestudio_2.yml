@@ -9,7 +9,7 @@ dependencies:
     - fucs
 id: formulariodecontactoapartaestudio_2
 theme: fucs
-region: form_linea
+region: sub_menu
 weight: 0
 provider: null
 plugin: fucs_apartment_contact_block

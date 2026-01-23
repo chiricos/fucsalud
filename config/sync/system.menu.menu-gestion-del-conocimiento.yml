@@ -1,0 +1,8 @@
+uuid: 525700d2-91e7-4ebc-92be-1cf0c6ea2459
+langcode: es
+status: true
+dependencies: {  }
+id: menu-gestion-del-conocimiento
+label: 'menu Gestión Del Conocimiento'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 8054df44-6a1a-4bca-aafc-4953063bf19f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-apropiacion-social-del-cono
+label: 'menu Apropiación Social del Conocimiento'
+description: ''
+locked: false

@@ -1,0 +1,30 @@
+uuid: 9271fffd-4083-473d-a595-54529af95151
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e1206d76-0850-457e-890e-0b4f58d89899'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactoelectivas
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:e1206d76-0850-457e-890e-0b4f58d89899'
+settings:
+  id: 'block_content:e1206d76-0850-457e-890e-0b4f58d89899'
+  label: 'contacto electivas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/estudiantes/nucleo-electivo-portafolio-electivas\r\n/estudiantes/nucleo-electivo-portafolio-electivas/*"

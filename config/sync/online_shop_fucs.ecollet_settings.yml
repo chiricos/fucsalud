@@ -1,0 +1,6 @@
+ecollet:
+  test: 1
+  code: '10228'
+  apikey: FU231fs4lnd
+  url_test: 'https://test1.e-collect.com/app_express/api/'
+  url_prod: ''

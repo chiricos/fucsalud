@@ -1,0 +1,29 @@
+uuid: 9f09637c-e5e1-4b26-92e1-c38c39bd4573
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-gestion-del-conocimiento
+  module:
+    - system
+  theme:
+    - fucs
+id: menugestiondelconocimiento
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-gestion-del-conocimiento'
+settings:
+  id: 'system_menu_block:menu-gestion-del-conocimiento'
+  label: 'bloque Gestión Del Conocimiento'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/conocimiento\r\n/investigacion/conocimiento/*"

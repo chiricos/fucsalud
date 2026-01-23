@@ -1,0 +1,30 @@
+uuid: 8fe8d2cd-9958-419c-b790-c19b7bfbca19
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f44891dd-091e-4ecb-8974-8588a291ed5e'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: innovaciondatos
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'block_content:f44891dd-091e-4ecb-8974-8588a291ed5e'
+settings:
+  id: 'block_content:f44891dd-091e-4ecb-8974-8588a291ed5e'
+  label: 'bloque innovación datos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/innovacion/*\r\n/investigacion/innovacion"
