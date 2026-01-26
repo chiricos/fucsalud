@@ -15,7 +15,7 @@ class GoogleAuthForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames() {
     return [
-      'google_auth.config',
+      'drupal_google_auth.config',
     ];
   }
 
@@ -30,7 +30,7 @@ class GoogleAuthForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('google_auth.config');
+    $config = $this->config('drupal_google_auth.config');
 
     $form['#tree'] = TRUE;
 
@@ -67,7 +67,7 @@ class GoogleAuthForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);
-    $this->config('google_auth.config')
+    $this->config('drupal_google_auth.config')
       ->set('google', $form_state->getValue('google'))
       ->save();
   }
