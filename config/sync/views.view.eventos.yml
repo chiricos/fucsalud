@@ -438,6 +438,7 @@ display:
           query_tags: {  }
       relationships: {  }
       css_class: ' events'
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }

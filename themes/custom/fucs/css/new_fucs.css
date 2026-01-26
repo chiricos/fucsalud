@@ -1,10 +1,10 @@
 /************* TOP ********************/
 .top {
+  align-items: center;
   border-bottom: 1px solid #092755;
   background: #e6e8ee;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .menu-icon-help {
@@ -37,15 +37,15 @@
 
 .send .google-trans {
   border-left: none;
-  width: 100%;
   padding-left: 0;
+  width: 100%;
 }
 
 .search .line-search {
   border-left: none;
+  border-right: 1px solid #092755;
   padding-left: 0;
   padding-right: 0;
-  border-right: 1px solid #092755;
 }
 
 .search button {
@@ -54,19 +54,19 @@
 
 .quiero-fucs {
   margin-left: 0;
-  vertical-align: middle;
   margin-top: 3px;
+  vertical-align: middle;
 }
 
 .quiero-fucs a {
-  display: initial;
-  line-height: 2;
-  font-size: 20px;
-  padding: 5px;
-  color: white;
-  border-radius: 25px;
-  font-weight: 700;
   background-color: #adc775;
+  border-radius: 25px;
+  color: white;
+  display: initial;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2;
+  padding: 5px;
 }
 
 .quiero-fucs a:hover {
@@ -75,20 +75,20 @@
 
 .send {
   margin-top: 9px;
-  padding-top: 0px;
   margin-right: 8px;
+  padding-top: 0px;
 }
 
 .search .line-search input {
   border: none;
-  width: 100px;
   font-size: 17px;
   padding: 4px 6px;
+  width: 100px;
 }
 
 .menu ul li a {
-  font-size: 16px;
   color: #092755;
+  font-size: 16px;
 }
 
 .region-soy-header .menu .menu-item>a {
@@ -99,8 +99,8 @@
 
 body .slider .flexslider {
   background: none;
-  width: 95%;
   margin: auto;
+  width: 95%;
   z-index: 2;
 }
 
@@ -109,16 +109,16 @@ body .slider .flexslider {
 }
 
 header {
+  box-shadow: 0 6px 12px #0000004a;
   position: relative;
   z-index: 10;
-  box-shadow: 0 6px 12px #0000004a;
 }
 
 .slider .flex-control-nav {
   bottom: 12px;
   font-size: 0;
-  text-align: start;
   padding-left: 10px;
+  text-align: start;
 }
 
 .slider .flex-control-paging li a {
@@ -132,17 +132,17 @@ header {
 
 .capa {
   background: linear-gradient(to bottom, #f0f0f0, #ffffff);
-  margin-top: -105px;
   display: block;
+  margin-top: -105px;
 }
 
 /************* PROGRAMAS DESTACADOS **************/
 
 .varios {
   margin-top: 135px;
+  position: relative;
   width: 100%;
   z-index: 2;
-  position: relative;
 }
 
 .programas-destacados {
@@ -151,9 +151,9 @@ header {
 }
 
 .programas-destacados img {
+  border-radius: 15px 15px 0 0;
   height: auto;
   width: 100%;
-  border-radius: 15px 15px 0 0;
 }
 
 .programas-destacados .views-field-title {
@@ -171,37 +171,37 @@ header {
   font-weight: 500;
   color: white;
   display: block;
-  width: 100%;
   margin-top: 5px;
+  width: 100%;
 }
 
 .programas-destacados .modalidad-destacado {
   background: #f4f4f4;
   color: #1f2a5a;
-  padding: 8px 15px;
-  text-align: end;
   font-weight: 600;
   font-size: 11px;
+  padding: 8px 15px;
+  text-align: end;
 }
 
 .programas-destacados .views-field-body {
-  padding: 10px;
   border-bottom: 2px solid #808080a1;
   color: gray;
   font-size: 12px;
+  padding: 10px;
   text-align: justify;
 }
 
 .programas-destacados .conoce-mas {
-  text-align: end;
   margin-top: 15px;
+  text-align: end;
 }
 
 .programas-destacados .conoce-mas a {
   background: #092755;
+  border-radius: 15px;
   color: white;
   font-weight: bold;
-  border-radius: 15px;
   padding: 4px 10px;
 }
 
@@ -210,8 +210,8 @@ header {
 }
 
 .pager__items {
-  text-align: end;
   padding-top: 10px;
+  text-align: end;
 }
 
 .pager__item.is-active {
@@ -219,12 +219,12 @@ header {
 }
 
 .pager li>a, .pager li>span {
+  border-radius: 50px !important;
+  border: 2px solid #000000a6 !important;
   color: #e99d00 !important;
   font-weight: bold;
   font-size: 25px !important;
   padding: 0px 11px !important;
-  border-radius: 50px !important;
-  border: 2px solid #000000a6 !important;
 }
 
 .pager li>a, .pager li>span {
@@ -232,36 +232,36 @@ header {
 }
 
 .varios h2 {
-  position: relative;
-  margin-left: 15px;
-  padding-left: 35px;
+  color: #1f2a5a;
   font-size: 28px;
   font-weight: 700;
-  color: #1f2a5a; 
+  margin-left: 15px;
+  position: relative;
+  padding-left: 35px;
 }
 
 .varios h2::before, .know-fucs h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 25px;
-  height: 100%;
   background: linear-gradient(
     to right,
     #cfd3de 70%,
     #71799b 30%
   );
+  content: "";
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 25px;
 }
 
 .know-fucs h2 {
-  position: relative;
+  color: #092755;
   font-size: 24px;
   font-weight: bold;
-  padding-left: 30px;
   margin-bottom: 15px;
   margin-top: 2px;
-  color: #092755;
+  padding-left: 30px;
+  position: relative;
 }
 
 .eventos-seccion {
@@ -278,38 +278,37 @@ header {
 }
 
 .tabs p::before {
+  background: linear-gradient(to right, #cfd3de 70%, #71799b 30%);
   content: "";
+  height: 35px;
   position: absolute;
   width: 25px;
-  height: 35px;
-  background: linear-gradient(to right, #cfd3de 70%, #71799b 30%);
 }
 
 .tabs p img {
   margin-left: 25px;
-  width: 40px;
   margin-right: 0px;
   margin-top: -2px;
-
+  width: 40px;
 }
 
 .views-element-container h2 {
-  position: relative;
+  color: #092755;
   font-size: 24px;
   font-weight: bold;
-  padding-left: 30px;
   margin-bottom: 15px;
   margin-top: 2px;
-  color: #092755;
+  padding-left: 30px;
+  position: relative;
 }
 
 .views-element-container h2::before {
+  background: linear-gradient(to right, #cfd3de 70%, #71799b 30%);
   content: "";
+  left: 0;
+  height: 35px;
   position: absolute;
   width: 25px;
-  height: 35px;
-  left: 0;
-  background: linear-gradient(to right, #cfd3de 70%, #71799b 30%);
 }
 
 .block-views-blockslider-segundo-home-block-1 > div {
@@ -333,9 +332,9 @@ header {
 }
 
 .conoce-fucs .views-row img {
-  width: 100%;
-  height: auto;
   border-radius: 15px;
+  height: auto;
+  width: 100%;
 }
 
 .banner-eventos .flex-control-nav {
@@ -348,9 +347,9 @@ header {
 
 .news-fucs-informa, .news-eventos {
   display: inline-block;
+  margin-left: -3px;
   vertical-align: top;
   width: 50%;
-  margin-left: -3px;
 }
 
 .news-fucs-informa {
@@ -359,8 +358,8 @@ header {
 
 .news-eventos {
   border-left: 1px solid #707070;
-  padding-left: 30px;
   margin-bottom: 30px;
+  padding-left: 30px;
 }
 
 .events {
@@ -386,9 +385,9 @@ header {
 
 .events-more a {
   background: #092755;
+  border-radius: 15px;
   color: white;
   font-weight: bold;
-  border-radius: 15px;
   padding: 4px 10px;
 }
 
@@ -414,8 +413,8 @@ header {
 }
 
 .noticias-body {
-  width: 57%;
   padding: 0;
+  width: 57%;
 }
 
 .noticias-image img {
@@ -431,9 +430,9 @@ header {
 }
 
 .search-section h1 {
+  color: #6b7aa1;
   font-size: 4.5rem;
   margin-bottom: 20px;
-  color: #6b7aa1;
 }
 
 /* Filtros */
@@ -451,14 +450,14 @@ header {
 .filters button {
   background: transparent;
   border: none;
+  border-radius: 20px;
   color: #1f2a44;
+  cursor: pointer;
   font-size: 1.4rem;
   font-weight: bold;
-  cursor: pointer;
   padding: 6px 10px;
-  border-radius: 20px;
-  width: auto;
   transition: background 0.2s;
+  width: auto;
 }
 
 .filters button:hover {
@@ -474,18 +473,18 @@ header {
 
 /* Buscador */
 .search-box {
-  position: relative;
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
 .search-box input {
-  width: 100%;
-  padding: 18px 60px 18px 24px;
-  font-size: 1.6rem;
   border-radius: 40px;
   border: 1.8px solid grey;
   outline: none;
+  font-size: 1.6rem;
+  padding: 18px 60px 18px 24px;
+  width: 100%;
 }
 
 .search-btn:before {
@@ -499,19 +498,19 @@ header {
 }
 
 .search-btn {
+  background: #1dd3b0;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 44px;
   position: absolute;
   right: 8px;
+  transition: background 0.2s;
   top: 50%;
   transform: translateY(-50%);
   width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-  background: #1dd3b0;
-  color: white;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.2s;
 }
 
 .search-btn:hover {
@@ -527,15 +526,15 @@ header {
 }
 
 .banner-eventos .flexslider .views-field-field-link {
-  width: 95%;
   margin: auto;
+  width: 95%;
 }
 
 .know-fucs {
-  width: 65%;
   display: inline-block;
   padding-right: 20px;
   vertical-align: top;
+  width: 65%;
 }
 
 .banner-eventos .flex-control-paging li a {
@@ -578,16 +577,16 @@ footer {
 
 .footer-redes-sociales a {
   background: #0A3E7C;
+  border-radius: 50px;
   display: inline-block;
   margin-right: 15px;
-  border-radius: 50px;
   text-align: center;
 }
 
 .footer-redes-sociales a img {
-  width: 55px;
   height: auto;
   padding: 8px;
+  width: 55px;
 }
 
 .footer-wrapper .footer-full p {
@@ -600,8 +599,8 @@ footer {
 }
 
 .region-second-footer {
-  width: 97%;
   margin: auto;
+  width: 97%;
 }
 
 .footer-bottom {
