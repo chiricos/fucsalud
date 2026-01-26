@@ -14,7 +14,7 @@ class GoogleAuthController extends ControllerBase{
 	protected $config;
 
 	public function __construct() {
-		$this->config = \Drupal::config('google_auth.config');
+		$this->config = \Drupal::config('drupal_google_auth.config');
 		$this->client = new Client();
 		$this->client->setClientId($this->config->get('google')['clientId']);
 		$this->client->setClientSecret($this->config->get('google')['clientSecret']);
