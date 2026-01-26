@@ -590,10 +590,6 @@ footer {
   padding: 8px;
 }
 
-.footer-wrapper .footer-full {
-
-}
-
 .footer-wrapper .footer-full p {
   font-size: 14px !important;
   font-weight: 500;
@@ -631,14 +627,52 @@ footer {
   }
 
   .filters button {
-    font-size: 0.85rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .conoce-fucs .view-content  {
-    flex-direction: column;
+
+  .news-fucs-informa, .news-eventos {
     width: 100%;
+    
+  }
+
+  .news-fucs-informa {
+    padding-right: 0;
+  }
+
+  .know-fucs {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .conoce-fucs .view-content {
+    padding: 15px;
+  }
+
+  .banner-eventos {
+    border-left: none;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .news-eventos {
+    border-left: none;
+  }
+
+  .programas-destacados {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 980px) {
+  .slider {
+    margin-top: 85px;
+  }
+
+  header {
+    position: fixed;
   }
 }
 
