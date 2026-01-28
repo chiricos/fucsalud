@@ -617,6 +617,24 @@ footer {
 }
 
 @media (max-width: 600px) {
+  body .slider .flexslider {
+    margin-bottom: -95px;
+    width: 100%;
+  }
+
+  .capa {
+    display: none;
+  }
+
+  .info-slider {
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+
+  .drawde-content {
+    padding: 0 10px;
+  }
+  
   .search-section h1 {
     font-size: 2rem;
   }
