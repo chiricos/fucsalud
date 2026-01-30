@@ -2,11 +2,8 @@ uuid: 59f3be00-7331-4bbb-940d-76b3f420feb7
 langcode: es
 status: false
 dependencies:
-  config:
-    - views.view.noticias_infraestructura
   module:
     - system
-    - views
   theme:
     - fucs
 id: views_block__noticias_infraestructura_block_1

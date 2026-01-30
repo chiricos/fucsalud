@@ -12,7 +12,7 @@ dependencies:
 id: bannercolaboradores
 theme: fucs
 region: slider_page
-weight: 0
+weight: 18
 provider: null
 plugin: 'block_content:6c0dbc0e-e01e-4b75-96da-3dde70796652'
 settings:

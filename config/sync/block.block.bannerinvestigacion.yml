@@ -12,7 +12,7 @@ dependencies:
 id: bannerinvestigacion
 theme: fucs
 region: slider_page
-weight: 0
+weight: 24
 provider: null
 plugin: 'block_content:32194afa-3073-459c-9fcb-0ddf442db768'
 settings:

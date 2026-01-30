@@ -12,7 +12,7 @@ dependencies:
 id: bannerservicios
 theme: fucs
 region: slider_page
-weight: 0
+weight: 28
 provider: null
 plugin: 'block_content:6661562b-e65e-4e36-8f02-f37aa1d480bd'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: views_block__slider_biblioteca_block_1
 theme: fucs
 region: slider_page
-weight: 0
+weight: 37
 provider: null
 plugin: 'views_block:slider_biblioteca-block_1'
 settings:

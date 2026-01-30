@@ -12,7 +12,7 @@ dependencies:
 id: encabezadocentrodeinvestigacion
 theme: fucs
 region: slider_page
-weight: 0
+weight: 34
 provider: null
 plugin: 'block_content:1a4a0eed-94e4-4534-81d4-4b22ddfb20c1'
 settings:

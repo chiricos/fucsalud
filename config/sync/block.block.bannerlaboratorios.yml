@@ -12,7 +12,7 @@ dependencies:
 id: bannerlaboratorios
 theme: fucs
 region: slider_page
-weight: 0
+weight: 25
 provider: null
 plugin: 'block_content:2b849775-8ad4-44ea-94aa-5d65bd8523fe'
 settings:

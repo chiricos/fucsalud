@@ -56,4 +56,10 @@ function fucs_preprocess_page(&$variables) {
   if (\Drupal::service('path.matcher')->isFrontPage()) {
     $variables['#attached']['library'][] = 'fucs/new_fucs';
   }
+  $current_path = \Drupal::service('path.current')->getPath();
+  $alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+
+  if ($alias == '/oferta-academica') {
+    $variables['#attached']['library'][] = 'fucs/new_fucs';
+  }
 }

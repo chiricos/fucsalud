@@ -1,0 +1,24 @@
+uuid: 2a39ffd4-906f-4950-bac2-d2f2d2394bc9
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fucs
+id: titulodelapagina
+theme: fucs
+region: slider_page
+weight: 41
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /oferta-academica

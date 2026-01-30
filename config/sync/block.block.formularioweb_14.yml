@@ -2,6 +2,8 @@ uuid: 10db2fb4-9ea1-4387-9c28-7d529790ed8d
 langcode: es
 status: true
 dependencies:
+  config:
+    - webform.webform.contacto_webmaster
   module:
     - system
     - webform
@@ -20,6 +22,8 @@ settings:
   provider: webform
   webform_id: contacto_webmaster
   default_data: ''
+  redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path

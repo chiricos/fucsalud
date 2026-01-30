@@ -2,11 +2,8 @@ uuid: 30df1582-e30a-4e11-be59-bca87f2e07e0
 langcode: es
 status: false
 dependencies:
-  config:
-    - views.view.infraestructura_videos
   module:
     - system
-    - views
   theme:
     - fucs
 id: views_block__infraestructura_videos_block_1

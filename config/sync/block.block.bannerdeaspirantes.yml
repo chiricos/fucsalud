@@ -12,7 +12,7 @@ dependencies:
 id: bannerdeaspirantes
 theme: fucs
 region: slider_page
-weight: 0
+weight: 20
 provider: null
 plugin: 'block_content:625ea381-db18-461e-8304-8f692b8d79c8'
 settings:
