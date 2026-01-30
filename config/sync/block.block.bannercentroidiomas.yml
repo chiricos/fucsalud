@@ -12,7 +12,7 @@ dependencies:
 id: bannercentroidiomas
 theme: fucs
 region: slider_page
-weight: 0
+weight: 17
 provider: null
 plugin: 'block_content:405aabc1-4222-4b4f-a8f3-83b0e0f51146'
 settings:

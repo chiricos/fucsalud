@@ -12,7 +12,7 @@ dependencies:
 id: banneraudiovisuales
 theme: fucs
 region: slider_page
-weight: -7
+weight: 9
 provider: null
 plugin: 'block_content:19dd789e-aeb1-4cf2-80fd-a3f0630e1ace'
 settings:

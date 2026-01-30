@@ -2,6 +2,8 @@ uuid: 135d0a17-3d59-4c8c-b69d-352a12d9074f
 langcode: es
 status: true
 dependencies:
+  config:
+    - webform.webform.solicitud_capacitacion
   module:
     - system
     - webform
@@ -20,6 +22,8 @@ settings:
   provider: webform
   webform_id: solicitud_capacitacion
   default_data: ''
+  redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path

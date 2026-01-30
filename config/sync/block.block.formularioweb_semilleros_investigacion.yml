@@ -2,6 +2,8 @@ uuid: 840601c1-d438-4f06-b2cd-f846f91b2b43
 langcode: es
 status: true
 dependencies:
+  config:
+    - webform.webform.semilleros_de_investigacion
   module:
     - system
     - webform
@@ -20,6 +22,8 @@ settings:
   provider: webform
   webform_id: semilleros_de_investigacion
   default_data: ''
+  redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path

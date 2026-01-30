@@ -12,7 +12,7 @@ dependencies:
 id: bannerhome
 theme: fucs
 region: slider_page
-weight: 0
+weight: 22
 provider: null
 plugin: 'block_content:0109ef67-7ede-45e7-bfb4-e3e21806a8bf'
 settings:

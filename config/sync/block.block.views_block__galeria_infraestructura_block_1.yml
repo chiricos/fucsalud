@@ -2,11 +2,8 @@ uuid: c57bee32-c6fc-4e68-b80f-67849efbd448
 langcode: es
 status: false
 dependencies:
-  config:
-    - views.view.galeria_infraestructura
   module:
     - system
-    - views
   theme:
     - fucs
 id: views_block__galeria_infraestructura_block_1

@@ -12,7 +12,7 @@ dependencies:
 id: encabezadopsocial
 theme: fucs
 region: slider_page
-weight: 0
+weight: 43
 provider: null
 plugin: 'block_content:7b2905e5-d3a5-47f0-b8d8-6599049f1b8e'
 settings:
