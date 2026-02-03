@@ -1,0 +1,6 @@
+online_shop_fucs.ecollet:
+  title: 'Configuración Ecollet'
+  description: 'Configuración de Ecollet'
+  route_name: ecollet
+  parent: system.admin_config_system
+  weight: 100

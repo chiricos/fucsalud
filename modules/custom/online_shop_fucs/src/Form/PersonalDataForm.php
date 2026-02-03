@@ -190,7 +190,7 @@ class PersonalDataForm extends FormBase
 
     $payment = $this->dataPayments->sendPayment($data);
     if ($payment) {
-      $response = new TrustedRedirectResponse($payment['createTransactionPaymentResult']['eCollectUrl']);
+      $response = new TrustedRedirectResponse($payment['eCollectUrl']);
       $form_state->setResponse($response);
     }
     return $form_state;
