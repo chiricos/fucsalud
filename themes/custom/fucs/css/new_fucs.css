@@ -685,6 +685,79 @@ footer {
   margin-bottom: 40px;
 }
 
+.oc-filter {
+
+}
+
+.oc-filter h2 {
+  margin: 0;
+  background: #cfd3ddc7;
+  padding: 5px 10px;
+  border-bottom: 1px solid #0000006b;
+  color: #092755;
+  font-weight: bold;
+}
+
+.oc-filter ul.menu {
+  margin-left: 0;
+}
+
+.oc-filter .icon-down-dir:before {
+  content: none;
+}
+
+.oc-filter .menu-item span {
+  margin: 0;
+  padding: 10px 0px;
+  color: #092755;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.oc-filter .menu-item--expanded {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.oc-filter .menu ul {
+  text-align: justify;
+}
+
+.oc-filter .menu ul li a {
+  color: #092755;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.oc-filter .menu ul li a:hover {
+  color: #092755;
+  opacity: 0.5;
+}
+
+.oc-filter .menu ul li>ul>li>a:hover {
+  color: #092755;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.oc-filter .menu ul li>ul {
+  display: block;
+  background: none;
+  border-top: none;
+  position: initial;
+  margin-top: 0;
+  z-index: 0;
+  min-width: 100%;
+  padding: 0;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  list-style: none;
+  padding: 10px 15px;
+}
+
 @media (max-width: 600px) {
   body .slider .flexslider {
     margin-bottom: -95px;
