@@ -1,0 +1,29 @@
+uuid: d1fa3ecc-2091-4511-a7f9-4ab7f0cef16f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.filtros
+  module:
+    - system
+  theme:
+    - fucs
+id: filtros
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:filtros'
+settings:
+  id: 'system_menu_block:filtros'
+  label: Filtros
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /oferta-academica
