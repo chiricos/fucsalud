@@ -24,11 +24,11 @@ module:
   contextual: 0
   contribute: 0
   datetime: 0
-  dblog: 0
   drupal_google_auth: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
+  facebook_pixel: 0
   field: 0
   field_ui: 0
   file: 0
@@ -36,6 +36,7 @@ module:
   filter: 0
   formblock: 0
   fucs_form: 0
+  fucs_modal: 0
   fucs_payments: 0
   fucs_studio_apartments: 0
   gtranslate: 0

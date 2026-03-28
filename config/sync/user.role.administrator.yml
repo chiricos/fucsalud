@@ -96,6 +96,7 @@ dependencies:
     - contact
     - content_translation
     - contextual
+    - facebook_pixel
     - field_ui
     - file
     - file_replace
@@ -211,6 +212,7 @@ permissions:
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'
+  - 'configure facebook_pixel'
   - 'create acordion content'
   - 'create acordion_lateral content'
   - 'create arbol content'
@@ -752,6 +754,7 @@ permissions:
   - 'update content translations'
   - 'use advanced search'
   - 'use menu link attributes'
+  - 'use php for page_visibility'
   - 'use text format drawde'
   - 'use text format full_html'
   - 'use text format restricted_html'

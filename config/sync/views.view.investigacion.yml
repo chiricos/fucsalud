@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ''
+      title: Investigación
       fields: {  }
       pager:
         type: full
@@ -304,7 +304,7 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      path: ensi
+      path: investigacion
     cache_metadata:
       max-age: -1
       contexts:

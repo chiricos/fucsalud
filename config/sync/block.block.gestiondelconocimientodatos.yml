@@ -1,0 +1,30 @@
+uuid: da3dd11e-e0ca-419c-b69e-19f7f109c7cd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:756b1f1b-67c3-42a4-bd95-4b96cdc8d8df'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: gestiondelconocimientodatos
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'block_content:756b1f1b-67c3-42a4-bd95-4b96cdc8d8df'
+settings:
+  id: 'block_content:756b1f1b-67c3-42a4-bd95-4b96cdc8d8df'
+  label: 'Gestión Del Conocimiento-datos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/conocimiento/*\r\n/investigacion/conocimiento"

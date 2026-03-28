@@ -1,58 +1,18 @@
-uuid: c5d948be-d04e-480a-8065-c675d51f91b0
+uuid: a3742989-77b7-4640-a073-587f7db1d65a
 langcode: es
-status: closed
+status: open
 dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: 63
+uid: 2245
 template: false
 archive: false
-id: gestihormiga
-title: Gestihormiga
-description: "&iexcl;Hola! Mi nombre es&nbsp;<strong>Gestihormiga</strong>, y mi funci&oacute;n es comunicar todas la novedades del Sistema de Gesti&oacute;n Organizacional de la FUCS, si tiene dudas o inquietudes escr&iacute;bame al correo&nbsp;<a href=\"mailto:gestihormiga@fucsalud.edu.co\">gestihormiga@fucsalud.edu.co</a>&nbsp;o&nbsp;<a href=\"mailto:gestion.proyectos@fucsalud.edu.co\">gestion.proyectos@fucsalud.edu.co</a>&nbsp;y le responder&eacute; a la mayor brevedad.&nbsp;&nbsp;&nbsp;<br />\r\n&nbsp;"
+id: contacto_medicina
+title: 'contacto medicina'
+description: 'contacto medicina'
 categories: {  }
-elements: |-
-  nombres_y_apellidos:
-    '#type': textfield
-    '#title': 'Nombres y apellidos'
-    '#title_display': invisible
-    '#placeholder': 'Nombres y apellidos *'
-    '#required': true
-    '#required_error': 'Debe ingresar nombres y apellidos'
-  email:
-    '#type': email
-    '#title': Email
-    '#title_display': invisible
-    '#placeholder': 'Email *'
-    '#required': true
-    '#required_error': 'Debe ingresar correo electrónico'
-  asunto:
-    '#type': textfield
-    '#title': 'Cargo y área'
-    '#title_display': invisible
-    '#placeholder': 'Cargo y área *'
-    '#required': true
-    '#required_error': 'Debe ingresar su cargo y área a la que pertenece.'
-  observaciones:
-    '#type': textarea
-    '#title': Observaciones
-    '#title_display': invisible
-    '#placeholder': 'Observaciones *'
-    '#required': true
-    '#required_error': 'Debe ingresar observaciones'
-  terminos:
-    '#type': checkbox
-    '#title': Terminos
-    '#description': 'Acepto, consiento y autorizo que mis datos personales sean tratados por la FUCS conforme a lo previsto en la presente <a href="https://www.fucsalud.edu.co/politicas-de-uso">autorizaci&oacute;n</a> y de acuerdo con su <a href="https://www.fucsalud.edu.co/PolItica-de-tratamiento-y-proteccion-de-datos-personales">Pol&iacute;tica de Tratamiento y protecci&oacute;n de Datos Personales</a>'
-    '#title_display': invisible
-    '#description_display': after
-    '#required': true
-    '#required_error': 'Debe aceptar la Política de Tratamiento y protección de Datos Personales y la autorización de tratamiento de datos'
-  actions:
-    '#type': webform_actions
-    '#title': Enviar
-    '#submit__label': Enviar
+elements: null
 css: ''
 javascript: ''
 settings:
@@ -65,7 +25,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''
@@ -159,11 +119,11 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: page
   confirmation_url: ''
-  confirmation_title: 'Información enviada'
-  confirmation_message: "<p class=\"text-align-center\"><img alt=\"sdxz\" height=\"286\" src=\"https://www.fucsalud.edu.co/sites/default/files/inline-images/hormiga%20elegante.png\" width=\"210\" /><br />\r\nPronto estaremos dando respuesta a su requerimiento.<br />\r\n<br />\r\n<strong>&iexcl;Gracias por el inter&eacute;s en el crecimiento organizacional!</strong><br />\r\n&nbsp;</p>"
+  confirmation_title: ''
+  confirmation_message: ''
   confirmation_attributes: {  }
   confirmation_back: true
-  confirmation_back_label: Volver
+  confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
   confirmation_exclude_token: false
@@ -236,46 +196,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  correo_electronico:
-    id: email
-    handler_id: correo_electronico
-    label: 'Correo electrónico'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 0
-    settings:
-      states:
-        - completed
-      to_mail: gestihormiga@fucsalud.edu.co
-      to_options: {  }
-      bcc_mail: coordinacionweb@fucsalud.edu.co
-      bcc_options: {  }
-      cc_mail: gestion.proyectos@fucsalud.edu.co
-      cc_options: {  }
-      from_mail: coordinacionweb@fucsalud.edu.co
-      from_options: {  }
-      from_name: '[webform_submission:values:nombres_y_apellidos:raw]'
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: 'Nuevo formulario Gestihormiga [webform_submission:source-entity]'
-      body: |-
-        <p>Fecha de envío [webform_submission:created]</p>
-        <p>Enviado por: [webform_submission:user]</p>
-        <p>Datos enviados:</p>
-        [webform_submission:values]
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
+handlers: {  }
 variants: {  }

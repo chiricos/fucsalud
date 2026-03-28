@@ -1,0 +1,8 @@
+uuid: c4b040de-0560-448f-8591-83d9132d2d53
+langcode: es
+status: true
+dependencies: {  }
+id: abitaciontipo-4
+label: 'AbitaciónTipo 4'
+description: ''
+locked: false

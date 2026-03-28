@@ -16,8 +16,8 @@ provider: null
 plugin: 'system_menu_block:comite-etica'
 settings:
   id: 'system_menu_block:comite-etica'
-  label: 'Comite de etica'
-  label_display: '0'
+  label: 'Comité de investigaciones:'
+  label_display: visible
   provider: system
   level: 1
   depth: 0

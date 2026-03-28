@@ -1,0 +1,29 @@
+uuid: 112a0cfc-729e-4a02-8f90-3cfb53d8e681
+langcode: es
+status: false
+dependencies:
+  module:
+    - fucs_modal
+    - system
+  theme:
+    - fucs
+id: modalfucsblock
+theme: fucs
+region: slider_principal
+weight: 0
+provider: null
+plugin: fucs_modal_block
+settings:
+  id: fucs_modal_block
+  label: 'Modal fucs Block'
+  label_display: '0'
+  provider: fucs_modal
+  configurations:
+    title: 'modal oferta academica'
+    image: '13134'
+    link: /noticias-principales/acreditacion-internacional-equaa
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

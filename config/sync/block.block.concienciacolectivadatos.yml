@@ -1,0 +1,30 @@
+uuid: 2ef9fbf5-4b42-45b4-acd9-8984ece758c0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5514c9fe-67ad-4588-9a44-ddf9fe798ed1'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: concienciacolectivadatos
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'block_content:5514c9fe-67ad-4588-9a44-ddf9fe798ed1'
+settings:
+  id: 'block_content:5514c9fe-67ad-4588-9a44-ddf9fe798ed1'
+  label: 'ConCiencia Colectiva datos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/investigacion/apropiacion\r\n/investigacion/apropiacion/*"

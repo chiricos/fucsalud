@@ -1,0 +1,30 @@
+uuid: e667e5bc-9f02-4e65-80b8-231959b64305
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:daffc787-bbf3-4576-8adc-005c31f95e17'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: facultaddecienciasdelmovimientobanner
+theme: fucs
+region: slider_page
+weight: 0
+provider: null
+plugin: 'block_content:daffc787-bbf3-4576-8adc-005c31f95e17'
+settings:
+  id: 'block_content:daffc787-bbf3-4576-8adc-005c31f95e17'
+  label: 'Facultad de Ciencias del Movimiento - banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/6260\r\n/Facultad-de-Ciencias-del-Movimiento"

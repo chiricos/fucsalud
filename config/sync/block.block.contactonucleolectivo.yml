@@ -1,0 +1,30 @@
+uuid: c297ca46-d27f-44ab-bdcf-1d97f0087081
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3645d933-539b-4e53-aea6-bc5988f175dd'
+  module:
+    - block_content
+    - system
+  theme:
+    - fucs
+id: contactonucleolectivo
+theme: fucs
+region: pregrado_contenido_3
+weight: 0
+provider: null
+plugin: 'block_content:3645d933-539b-4e53-aea6-bc5988f175dd'
+settings:
+  id: 'block_content:3645d933-539b-4e53-aea6-bc5988f175dd'
+  label: 'Contacto núcleo lectivo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/estudiantes/nucleo-electivo\r\n /estudiantes/nucleo-electivo/*\r\n/estudiantes/nucleo-electivo-por-facultad\r\n/estudiantes/nucleo-electivo-funciones\r\n/estudiantes/nucleo-electivo-fundamentacion-social-humanistica\r\n/estudiantes/nucleo-electivo-portafolio-electivas\r\n/estudiantes/nucleo-electivo-gestion-curricular\r\n/estudiantes/nucleo-electivo-inscripcion\r\n"
