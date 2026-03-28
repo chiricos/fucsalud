@@ -5,7 +5,7 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: themes/custom/fucs/images/logo/logo-fucs-vigilado-fondo-blanco.png
+  path: sites/default/files/logo-fucs.svg
 favicon:
   use_default: 0
   path: sites/default/files/favicon.ico
