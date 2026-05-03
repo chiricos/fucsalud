@@ -60,3 +60,4 @@ sites/default/settings.php
 *.zip
 *.doc
 *.xlsx
+modules/fucs/
