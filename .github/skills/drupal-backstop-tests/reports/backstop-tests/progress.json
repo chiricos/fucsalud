@@ -1,0 +1,7 @@
+{
+  "phase": "analisis",
+  "docroot": ".",
+  "sites": ["default"],
+  "site_urls": {"default": "https://fucsalud.ddev.site"},
+  "timestamp": "2026-05-06T21:49:05Z"
+}

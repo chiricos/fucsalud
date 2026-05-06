@@ -1,0 +1,102 @@
+{
+  "step": "6b-detect",
+  "timestamp": "2026-05-06T16:47:44-05:00",
+  "status": "needs_action",
+  "deprecated_count": 9,
+  "obsolete_count": 0,
+  "auto_fixable": 2,
+  "manual_review": 7,
+  "ckeditor4_detected": true,
+  "items": [
+  {
+    "name": "bartik",
+    "lifecycle": "deprecated",
+    "package": "theme",
+    "version": "9.5.11",
+    "lifecycle_link": "https://www.drupal.org/node/3223395#s-bartik",
+    "recommended_action": "theme_switch",
+    "detail": "Migrar a Olivero o drupal/bartik contrib.",
+    "auto_fixable": false
+  },
+  {
+    "name": "ckeditor",
+    "lifecycle": "deprecated",
+    "package": "Core",
+    "version": "9.5.11",
+    "lifecycle_link": "https://www.drupal.org/node/3223395#s-ckeditor",
+    "recommended_action": "migrate_ckeditor5",
+    "detail": "Migrar formatos a CKEditor 5.",
+    "auto_fixable": true
+  },
+  {
+    "name": "classy",
+    "lifecycle": "deprecated",
+    "package": "theme",
+    "version": "9.5.11",
+    "lifecycle_link": "https://drupal.org/node/3223395#s-classy",
+    "recommended_action": "theme_switch",
+    "detail": "Migrar a Starterkit o instalar contrib.",
+    "auto_fixable": false
+  },
+  {
+    "name": "color",
+    "lifecycle": "deprecated",
+    "package": "Core",
+    "version": "9.5.11",
+    "lifecycle_link": "https://www.drupal.org/node/3223395#s-color",
+    "recommended_action": "check_usage_then_uninstall_or_contrib",
+    "detail": "Si no se usa -> desinstalar. Sino -> instalar contrib drupal/color.",
+    "auto_fixable": false
+  },
+  {
+    "name": "quickedit",
+    "lifecycle": "deprecated",
+    "package": "Core",
+    "version": "9.5.11",
+    "lifecycle_link": "https://www.drupal.org/node/3223395#s-quick-edit",
+    "recommended_action": "uninstall_safe",
+    "detail": "Funcionalidad integrada en core. Desinstalar sin perdida de datos.",
+    "auto_fixable": true
+  },
+  {
+    "name": "rdf",
+    "lifecycle": "deprecated",
+    "package": "Core",
+    "version": "9.5.11",
+    "lifecycle_link": "https://www.drupal.org/docs/core-modules-and-themes/deprecated-and-obsolete-modules-and-themes#s-rdf",
+    "recommended_action": "check_usage_then_uninstall_or_contrib",
+    "detail": "Si no se usa -> desinstalar. Sino -> instalar contrib drupal/rdf.",
+    "auto_fixable": false
+  },
+  {
+    "name": "seven",
+    "lifecycle": "deprecated",
+    "package": "theme",
+    "version": "9.5.11",
+    "lifecycle_link": "https://www.drupal.org/node/3223395#s-seven",
+    "recommended_action": "theme_switch",
+    "detail": "Migrar a Claro (admin theme D10+).",
+    "auto_fixable": false
+  },
+  {
+    "name": "stable",
+    "lifecycle": "deprecated",
+    "package": "theme",
+    "version": "9.5.11",
+    "lifecycle_link": "https://www.drupal.org/project/drupal/issues/3308890",
+    "recommended_action": "theme_switch",
+    "detail": "Migrar a Starterkit o instalar contrib.",
+    "auto_fixable": false
+  },
+  {
+    "name": "webform_jqueryui_buttons",
+    "lifecycle": "deprecated",
+    "package": "Webform [DEPRECATED]",
+    "version": "6.2.6",
+    "lifecycle_link": "https://www.drupal.org/docs/8/modules/webform/webform-frequently-asked-questions/what-to-do-about-deprecated-external-libraries-in-webform-6x",
+    "recommended_action": "review_manual",
+    "detail": "Deprecated. Consultar: https://www.drupal.org/docs/8/modules/webform/webform-frequently-asked-questions/what-to-do-about-deprecated-external-libraries-in-webform-6x",
+    "auto_fixable": false
+  }
+]
+}

@@ -1,0 +1,47 @@
+{
+  "step": 1,
+  "name": "telemetria",
+  "timestamp": "2026-05-06T16:44:42-05:00",
+  "status": "warning",
+  "data": {
+    "docroot": ".",
+    "ddev": {
+      "status": "running",
+      "name": "fucsalud",
+      "php_version": "8.1",
+      "webserver": "nginx-fpm",
+      "database": "mariadb",
+      "db_version": "10.11.11",
+      "router_url": "http://fucsalud.ddev.site"
+    },
+    "drupal": {
+      "version": "9.5.11",
+      "major": 9,
+      "profile": "standard",
+      "theme_default": "fucs",
+      "theme_admin": "seven",
+      "config_sync": "unknown",
+      "files_path": "sites/default/files"
+    },
+    "composer": {
+      "version": "2.9.5"
+    },
+    "drush": {
+      "version": "10.6.2"
+    },
+    "php": {
+      "version": "8.1.32",
+      "memory_limit": "-1",
+      "max_execution_time": "0"
+    },
+    "git": {
+      "branch": "master",
+      "dirty_files": 2,
+      "clean": false
+    }
+  },
+  "warnings": [
+  "Hay 2 archivo(s) sin commit. Recomendamos commit o stash."
+],
+  "blockers": []
+}

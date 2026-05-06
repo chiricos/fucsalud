@@ -1,0 +1,11 @@
+{
+  "step": 2,
+  "name": "snapshot",
+  "timestamp": "2026-05-06T16:45:24-05:00",
+  "status": "ok",
+  "data": {
+    "snapshot_name": "pre-update-20260506-164451",
+    "verified": true
+  },
+  "rollback_command": "ddev snapshot restore pre-update-20260506-164451"
+}

@@ -1,0 +1,29 @@
+{
+  "step": 3,
+  "name": "version_objetivo",
+  "timestamp": "2026-05-06T16:45:56-05:00",
+  "status": "ok",
+  "data": {
+    "current_version": "9.5.11",
+    "current_major": 9,
+    "target_version": "10.2.9",
+    "jump_type": "major (D9→D10, PHP limitado)",
+    "upgrade_strategy": "major_jump_approved",
+    "ready_for_major_jump": true,
+    "next_major_available": null,
+    "php_version": "8.1.32",
+    "php_adequate": false,
+    "php_action_needed": "Subir a PHP 8.2+ para acceder a Drupal 10.3+",
+    "drush_target": "^12",
+    "latest_d9": "9.5.11",
+    "latest_d10": "10.6.8",
+    "latest_d11": "11.3.9",
+    "flags": {
+      "allow_major_jump": true,
+      "force_major_jump": false
+    }
+  },
+  "warnings": [
+    "PHP 8.1 limita a Drupal 10.2.x. Recomendamos subir PHP."
+  ]
+}
