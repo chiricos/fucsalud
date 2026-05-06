@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/bienestar/becas-sembrando-futuro\r\n/bienestar/sembrando-futuro\r\n/bienestar/cena-sembrando-futuro\r\n/bienestar/donaciones-sembrando-futuro\r\n/bienestar/aliados-sembrando-futuro"
+    pages: "/bienestar/becas-sembrando-futuro\r\n/bienestar/sembrando-futuro\r\n/bienestar/cena-sembrando-futuro\r\n/bienestar/donaciones-sembrando-futuro\r\n/bienestar/aliados-sembrando-futuro\r\n/bienestar/gestor_de_sueños"

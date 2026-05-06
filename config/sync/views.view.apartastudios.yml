@@ -77,7 +77,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 3
+          items_per_page: 4
       exposed_form:
         type: basic
         options:
@@ -424,7 +424,9 @@ display:
         filter_groups: false
       css_class: apartastudios-tipos
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:

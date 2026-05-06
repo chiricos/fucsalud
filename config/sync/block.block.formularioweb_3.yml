@@ -2,8 +2,6 @@ uuid: 5458a74f-0ed0-4201-96b2-748e3c953add
 langcode: es
 status: true
 dependencies:
-  config:
-    - webform.webform.contactenos_revista_repertorio
   module:
     - system
     - webform
@@ -22,8 +20,6 @@ settings:
   provider: webform
   webform_id: contactenos_revista_repertorio
   default_data: ''
-  redirect: false
-  lazy: false
 visibility:
   request_path:
     id: request_path

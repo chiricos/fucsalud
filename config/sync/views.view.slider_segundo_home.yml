@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_link
     - field.storage.node.field_slider_1400x600_
-    - image.style.large
     - node.type.slider_segundo_home
   module:
     - image
@@ -144,8 +143,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: content
-            image_style: large
+            image_link: ''
+            image_style: ''
             image_loading:
               attribute: lazy
           group_column: ''

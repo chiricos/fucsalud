@@ -1,0 +1,23 @@
+uuid: e6c00cd1-9b67-4600-887c-c3d3d14e919c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.prueba_drawde
+  module:
+    - text
+id: node.prueba_drawde.body
+field_name: body
+entity_type: node
+bundle: prueba_drawde
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

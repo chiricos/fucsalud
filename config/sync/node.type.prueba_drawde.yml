@@ -1,0 +1,18 @@
+uuid: ad86721d-81c3-4f80-b60f-69be0a9961de
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'prueba drawde'
+type: prueba_drawde
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,29 @@
+uuid: 2a1b3215-7657-4dc0-bec8-631628445f5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.abitaciontipo-4
+  module:
+    - system
+  theme:
+    - fucs
+id: abitaciontipo4
+theme: fucs
+region: sub_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:abitaciontipo-4'
+settings:
+  id: 'system_menu_block:abitaciontipo-4'
+  label: Abitacion-Tipo-4
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/apartaestudios/habitacion_tipo4\r\n/apartaestudios/apartamento_tipo4\r\n/apartaestudios/apartamento_tipo4/*\r\n/apartaestudios/habitacion_tipo4/*"

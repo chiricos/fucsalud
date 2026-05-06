@@ -1,0 +1,11 @@
+uuid: baa3acf5-28a0-4ad0-9c12-3930b0c5234c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.prueba_drawde
+id: node.prueba_drawde
+target_entity_type_id: node
+target_bundle: prueba_drawde
+default_langcode: site_default
+language_alterable: false

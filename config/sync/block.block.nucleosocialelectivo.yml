@@ -27,4 +27,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/estudiantes/nucleo-electivo\r\n/estudiantes/nucleo-electivo-funciones\r\n/estudiantes/nucleo-electivo-fundamentacion-social-humanistica\r\n/estudiantes/nucleo-electivo-portafolio-electivas\r\n/estudiantes/nucleo-electivo-gestion-curricular\r\n/estudiantes/nucleo-electivo-temas-interes\r\n/estudiantes/nucleo-electivo-por-facultad\r\n/estudiantes/nucleo-electivo-inscripcion"
+    pages: "/estudiantes/nucleo-electivo\r\n/estudiantes/nucleo-electivo-funciones\r\n/estudiantes/nucleo-electivo-fundamentacion-social-humanistica\r\n/estudiantes/nucleo-electivo-portafolio-electivas\r\n/estudiantes/nucleo-electivo-gestion-curricular\r\n/estudiantes/nucleo-electivo-temas-interes\r\n/estudiantes/nucleo-electivo-por-facultad\r\n/estudiantes/nucleo-electivo-inscripcion\r\n/estudiantes/nucleo-electivo-podcast"

@@ -2,7 +2,7 @@ uuid: 9ef376b1-541e-48ba-abd9-b2827f89f1b8
 langcode: es
 status: true
 dependencies: {  }
-name: drawde
+name: 'Texto plano'
 format: drawde
 weight: -8
 filters:

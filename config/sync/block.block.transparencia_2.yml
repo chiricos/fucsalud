@@ -12,7 +12,7 @@ dependencies:
 id: transparencia_2
 theme: fucs
 region: slider_page
-weight: 12
+weight: 0
 provider: null
 plugin: 'block_content:cec7d46f-f283-4384-b6d4-a1aaf8e8e5ae'
 settings:

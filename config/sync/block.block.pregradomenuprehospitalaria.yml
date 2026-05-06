@@ -27,4 +27,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/node/229\r\n/node/230\r\n/node/231\r\n/pregrado/carreras_tecnologicas/prehospitalaria\r\n/pregrado/carreras_tecnologicas/prehospitalaria1"
+    pages: "/node/229\r\n/node/230\r\n/node/231\r\n/node/7923\r\n/pregrado/carreras_tecnologicas/prehospitalaria\r\n/pregrado/carreras_tecnologicas/prehospitalaria/*\r\n/pregrado/carreras_tecnologicas/prehospitalaria1"

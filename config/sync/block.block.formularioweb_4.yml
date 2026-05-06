@@ -2,8 +2,6 @@ uuid: aaeb0af0-36d1-43f7-b50b-1dbfa4bbe90e
 langcode: es
 status: true
 dependencies:
-  config:
-    - webform.webform.programas_a_la_medida
   module:
     - system
     - webform
@@ -22,8 +20,6 @@ settings:
   provider: webform
   webform_id: programas_a_la_medida
   default_data: ''
-  redirect: false
-  lazy: false
 visibility:
   request_path:
     id: request_path

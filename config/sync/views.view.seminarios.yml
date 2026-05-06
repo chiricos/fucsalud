@@ -785,10 +785,23 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: some
+        type: mini
         options:
           offset: 0
-          items_per_page: 100
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
@@ -966,7 +979,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: "<div class=\"preuniversitario-botton\" style=\"    float: right;width: 97%;margin-top: 15px;\">\r\n   <section>\r\n       <div>\r\n           <img src=\"/themes/custom/fucs/images/preuniversitario/archivo.png\" alt=\"\">\r\n           <div>\r\n               <p>\r\n                   Nota: los programas de educación continuada, hacen parte de la oferta de educación informal de la Fundación Universitaria de Ciencias de la Salud - FUCS y no conducen a título alguno o certificado de aptitud ocupacional, por lo cual su desarrollo solo conduce a la expedición de una constancia o certificación de asistencia y se efectúan bajo las normas internas institucionales y (Artículo 2.6.6.8 Decreto 1075 de 2015). La FUCS se reserva el derecho de modificar la oferta de programas de educación continuada, sus horarios, fechas, docentes y contenidos, así como la facultad de aplazar o cancelar los programas, de acuerdo con las necesidades institucionales y según el número mínimo de inscritos requerido para dar apertura. Si las condiciones de oferta del programa cambian, el participante tendrá la opción de tomar otro programa de Educación Continuada que se esté ofreciendo, reservar su cupo para tomar el mismo una vez se ofrezca de nuevo, o solicitar la devolución del valor de matrícula pagado. Los gastos en que el participante incurra para tomar los programas presenciales, serán asumidos por su propia cuenta, por lo cual deberá verificar las fechas de oferta antes de matricularse y constatar su apertura antes de la fecha de inicio. La FUCS en ningún caso responderá por los gastos en que incurran los participantes para tomar los cursos ofrecidos.\r\n               </p>\r\n           </div>\r\n       </div>\r\n    </section>\r\n    <section>\r\n       <div>\r\n           <img src=\"/themes/custom/fucs/images/preuniversitario/telefono.png\" alt=\"\">\r\n           <div>\r\n               <h5>CONTÁCTANOS:</h5>\r\n               <p>\r\n                   Educación Continuada<br>\r\n                   e-educationfucs<br>\r\n                   Teléfono: +(571) 3538099, +(571) 3538100 Ext: 3645 - 3543 -3640<br>\r\n                   <a href=\"[site:url]formulario-PQRS\">Formulario de PQRS</a>\r\n               </p>\r\n           </div>\r\n       </div>\r\n    </section>\r\n</div>"
+          content: "<div class=\"preuniversitario-botton\" style=\"    float: right;width: 97%;margin-top: 15px;\">\r\n   <section>\r\n       <div>\r\n           <img src=\"/themes/custom/fucs/images/preuniversitario/archivo.png\" alt=\"\">\r\n           <div>\r\n               <p>\r\n                   Nota: Programas de educación informal ofertados por la Fundación Universitaria de Ciencias de la Salud - FUCS, no conducen a título o certificado alguno, solo conducen a la expedición de una constancia de asistencia (Art. 2.6.6.8 Decreto 1075 de 2015). | VIGILADA MINEDUCACIÓN | Personería Jurídica - Res. 10917 de 1976. Reconocimiento como Universidad y Estatutos vigentes Res. 8468/2026. Acreditación Alta Calidad Res. 000106/2024 Vigencia 6 años.\r\n               </p>\r\n           </div>\r\n       </div>\r\n    </section>\r\n    <section>\r\n       <div>\r\n           <img src=\"/themes/custom/fucs/images/preuniversitario/telefono.png\" alt=\"\">\r\n           <div>\r\n               <h5>CONTÁCTANOS:</h5>\r\n               <p>\r\n                   Educación Continuada<br>\r\n                   e-educationfucs<br>\r\n                   Teléfono: +(571) 3538099, +(571) 3538100 Ext: 3645 - 3543 -3640<br>\r\n                   <a href=\"[site:url]formulario-PQRS\">Formulario de PQRS</a>\r\n               </p>\r\n           </div>\r\n       </div>\r\n    </section>\r\n</div>"
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -974,6 +987,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
@@ -995,13 +1009,16 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: seminarios
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions

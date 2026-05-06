@@ -1,25 +1,27 @@
-uuid: b329aadc-813b-4e43-8e24-051026bbd476
+uuid: a366fd8f-c32e-4826-a949-4805db9002c4
 langcode: es
 status: true
 dependencies:
   module:
     - dblog
     - user
+_core:
+  default_config_hash: j0txIxY4nkJT_dscmXckM-1vanygDkJAeHPawZKfyH0
 id: watchdog
-label: Watchdog
+label: Guardián
 module: views
-description: 'Recent log messages'
+description: 'Mensajes recientes del registro'
 tag: ''
 base_table: watchdog
 base_field: wid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Predeterminado
     display_plugin: default
     position: 0
     display_options:
-      title: 'Recent log messages'
+      title: 'Mensajes recientes del registro'
       fields:
         nothing:
           id: nothing
@@ -27,7 +29,7 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: Icon
+          admin_label: Icono
           plugin_id: custom
           label: ''
           exclude: false
@@ -127,7 +129,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: machine_name
-          label: Severity
+          label: Gravedad
           exclude: true
           alter:
             alter_text: false
@@ -177,7 +179,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: Type
+          label: Tipo
           exclude: false
           alter:
             alter_text: false
@@ -278,7 +280,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: dblog_message
-          label: Message
+          label: Mensaje
           exclude: false
           alter:
             alter_text: false
@@ -393,7 +395,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: dblog_operations
-          label: Operations
+          label: Operaciones
           exclude: false
           alter:
             alter_text: false
@@ -476,10 +478,10 @@ display:
           field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: 'No log messages available.'
+          admin_label: 'No hay mensajes disponibles.'
           plugin_id: text_custom
           empty: true
-          content: 'No log messages available.'
+          content: 'No hay mensajes disponibles.'
           tokenize: false
       sorts:
         wid:
@@ -511,7 +513,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: Tipo
             description: ''
             use_operator: false
             operator: type_op
@@ -552,7 +554,7 @@ display:
           exposed: true
           expose:
             operator_id: severity_op
-            label: Severity
+            label: Gravedad
             description: ''
             use_operator: false
             operator: severity_op
@@ -601,8 +603,6 @@ display:
           default: wid
           info:
             nothing:
-              sortable: false
-              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
