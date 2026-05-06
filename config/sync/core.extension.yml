@@ -15,7 +15,7 @@ module:
   calendar_datetime: 0
   captcha: 0
   certificados: 0
-  ckeditor: 0
+  ckeditor5: 0
   comment: 0
   config: 0
   config_translation: 0
@@ -95,4 +95,5 @@ theme:
   stable: 0
   classy: 0
   fucs: 0
+  claro: 0
 profile: standard
