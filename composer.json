@@ -33,7 +33,7 @@
         "drupal/image_captcha": "^2.0",
         "drupal/jquery_ui_checkboxradio": "^2.1",
         "drupal/login_destination": "^2.0@beta",
-        "drupal/menu_breadcrumb": "^1.16",
+        "drupal/menu_breadcrumb": "^2",
         "drupal/menu_link_attributes": "^1.5",
         "drupal/metatag": "^1.16",
         "drupal/owlcarousel": "^3.0",

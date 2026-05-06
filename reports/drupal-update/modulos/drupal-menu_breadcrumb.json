@@ -1,0 +1,16 @@
+{
+  "module": "drupal/menu_breadcrumb",
+  "timestamp": "2026-05-06T17:05:47-05:00",
+  "status": "updated",
+  "from_version": "1.16.0",
+  "to_version": "2.0.1",
+  "command": "ddev composer require drupal/menu_breadcrumb:^2 --ignore-platform-reqs",
+  "composer_exit_code": 0,
+  "patches": {
+    "count": 0,
+    "status": "none",
+    "definitions": [],
+    "failed": [],
+    "applied": []
+  }
+}
