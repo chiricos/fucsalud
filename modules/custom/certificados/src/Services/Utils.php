@@ -19,7 +19,7 @@ class Utils {
 
         // Si sigue mal, aplica utf8_encode
         if (\mb_detect_encoding($row[$key], 'UTF-8', true) === false) {
-          $row[$key] = \utf8_encode($value);
+          $row[$key] = \mb_convert_encoding($value, 'UTF-8', 'Latin-1');
         }
       }
     }

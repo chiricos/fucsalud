@@ -164,7 +164,7 @@ class EmailUtils {
    */
   public function sendEmail($body, $headers) {
     $the_subject = "Nueva transacción tienda virtual FUCS";
-    $from_name = utf8_decode($headers);
+    $from_name = mb_convert_encoding($headers, 'UTF-8', 'Latin-1');
     try {
       foreach ($this->getRecipients() as $userEmail) {
         $address_to = $userEmail;
@@ -178,8 +178,8 @@ class EmailUtils {
         $phpmailer->SMTPAuth = TRUE;
         $phpmailer->setFrom($phpmailer->Username, $from_name);
         $phpmailer->AddAddress($address_to);
-        $phpmailer->Subject = utf8_decode($the_subject);
-        $phpmailer->Body = utf8_decode($body);
+        $phpmailer->Subject = mb_convert_encoding($the_subject, 'UTF-8', 'Latin-1');
+        $phpmailer->Body = mb_convert_encoding($body, 'UTF-8', 'Latin-1');
         $phpmailer->IsHTML(TRUE);
         $phpmailer->Send();
       }
