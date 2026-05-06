@@ -1,0 +1,16 @@
+{
+  "module": "drupal/externalauth",
+  "timestamp": "2026-05-06T17:02:59-05:00",
+  "status": "updated",
+  "from_version": "1.4.0",
+  "to_version": "2.0.10",
+  "command": "ddev composer require drupal/externalauth:^2 --ignore-platform-reqs",
+  "composer_exit_code": 0,
+  "patches": {
+    "count": 0,
+    "status": "none",
+    "definitions": [],
+    "failed": [],
+    "applied": []
+  }
+}
