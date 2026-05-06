@@ -78,7 +78,7 @@ return ;
    * {@inheritdoc}
    */
   public function generateHeader() {
-    return utf8_decode($this->configFucs->get('contact')['header'] . " | " . $this->data["document"]);
+    return mb_convert_encoding($this->configFucs->get('contact')['header'] . " | " . $this->data["document"], 'UTF-8', 'Latin-1');
   }
 
   /**
