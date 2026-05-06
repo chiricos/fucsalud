@@ -19,6 +19,7 @@
         "dompdf/dompdf": "^3.0",
         "drupal/backup_migrate": "^5.0",
         "drupal/captcha": "^1.16",
+        "drupal/classy": "^1",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
