@@ -112,7 +112,6 @@ dependencies:
     - node
     - path
     - poll
-    - quickedit
     - search
     - shortcut
     - smtp
@@ -141,7 +140,6 @@ permissions:
   - 'access contextual links'
   - 'access files overview'
   - 'access fucs form settings'
-  - 'access in-place editing'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access site-wide contact form'

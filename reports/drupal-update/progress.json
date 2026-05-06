@@ -2,5 +2,7 @@
   "vrt_baseline": "N/A",
   "vrt_baseline_reason": "BackstopJS addon not installed",
   "plan_approved": true,
-  "plan_approved_at": "2026-05-06T16:53:00-05:00"
+  "plan_approved_at": "2026-05-06T16:53:00-05:00",
+  "vrt_post_modules": "N/A",
+  "vrt_post_reason": "BackstopJS addon not installed"
 }
