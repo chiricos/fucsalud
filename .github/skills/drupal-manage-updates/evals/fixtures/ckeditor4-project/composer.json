@@ -1,0 +1,36 @@
+{
+  "name": "drupal/recommended-project",
+  "description": "Fixture: Drupal 10.2.0 with CKEditor 4 and custom plugins",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "composer/installers": "^2.2",
+    "drupal/admin_toolbar": "^3.4",
+    "drupal/ckeditor": "^1.0",
+    "drupal/ckeditor_accordion": "^2.0",
+    "drupal/ckeditor_codemirror": "^3.0",
+    "drupal/core-composer-scaffold": "10.2.0",
+    "drupal/core-recommended": "10.2.0",
+    "drupal/field_group": "^3.4",
+    "drupal/metatag": "^2.0",
+    "drupal/pathauto": "^1.11",
+    "drupal/token": "^1.12",
+    "drupal/redirect": "^1.8",
+    "drupal/paragraphs": "^1.15",
+    "drupal/entity_reference_revisions": "^1.10"
+  },
+  "extra": {
+    "drupal-scaffold": {"locations": {"web-root": "web/"}},
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true
+    }
+  }
+}

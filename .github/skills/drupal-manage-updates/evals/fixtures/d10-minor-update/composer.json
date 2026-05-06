@@ -1,0 +1,52 @@
+{
+  "name": "drupal/recommended-project",
+  "description": "Fixture: Drupal 10.2.5 minor update scenario",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "composer/installers": "^2.2",
+    "drupal/address": "^2.0",
+    "drupal/admin_toolbar": "^3.4",
+    "drupal/ckeditor5": "^1.0",
+    "drupal/core-composer-scaffold": "10.2.5",
+    "drupal/core-recommended": "10.2.5",
+    "drupal/ctools": "^4.0",
+    "drupal/devel": "^5.0",
+    "drupal/field_group": "^3.4",
+    "drupal/metatag": "^2.0",
+    "drupal/paragraphs": "^1.15",
+    "drupal/pathauto": "^1.11",
+    "drupal/redirect": "^1.8",
+    "drupal/token": "^1.12",
+    "drupal/views_bulk_operations": "^4.2",
+    "drupal/webform": "^6.1",
+    "drupal/xmlsitemap": "^1.4",
+    "drupal/search_api": "^1.29",
+    "drupal/facets": "^2.0",
+    "drupal/entity_reference_revisions": "^1.10",
+    "drupal/layout_builder_restrictions": "^2.14",
+    "drupal/block_visibility_groups": "^2.0",
+    "drupal/crop": "^2.3",
+    "drupal/focal_point": "^2.0",
+    "drupal/media_entity_browser": "^2.0"
+  },
+  "extra": {
+    "drupal-scaffold": {"locations": {"web-root": "web/"}},
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"]
+    },
+    "patches": {
+      "drupal/core": {"Fix node access query issue": "patches/node-access-fix.patch"},
+      "drupal/metatag": {"SEO canonical URL fix": "patches/metatag-seo.patch"},
+      "drupal/token": {"Token cache invalidation fix": "patches/token-cache.patch"}
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true
+    }
+  }
+}

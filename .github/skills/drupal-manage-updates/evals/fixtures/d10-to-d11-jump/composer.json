@@ -1,0 +1,49 @@
+{
+  "name": "drupal/recommended-project",
+  "description": "Fixture: Drupal 10.6.3 major jump to D11 scenario",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "composer/installers": "^2.2",
+    "drupal/address": "^2.0",
+    "drupal/admin_toolbar": "^3.4",
+    "drupal/core-composer-scaffold": "10.6.3",
+    "drupal/core-recommended": "10.6.3",
+    "drupal/ctools": "^4.0",
+    "drupal/devel": "^5.0",
+    "drupal/field_group": "^3.4",
+    "drupal/gin": "^3.0",
+    "drupal/gin_toolbar": "^1.0",
+    "drupal/metatag": "^2.0",
+    "drupal/paragraphs": "^1.17",
+    "drupal/pathauto": "^1.12",
+    "drupal/redirect": "^1.9",
+    "drupal/search_api": "^1.31",
+    "drupal/facets": "^2.0",
+    "drupal/token": "^1.13",
+    "drupal/views_bulk_operations": "^4.3",
+    "drupal/webform": "^6.2",
+    "drupal/layout_builder_restrictions": "^2.14",
+    "drupal/scheduler": "^2.0",
+    "drupal/entity_browser": "^2.9",
+    "drupal/media_library_form_element": "^2.0",
+    "drupal/focal_point": "^2.0",
+    "drupal/crop": "^2.3",
+    "drupal/legacy_media_widget": "1.0.3",
+    "drupal/node_export_old": "2.0.1"
+  },
+  "extra": {
+    "drupal-scaffold": {"locations": {"web-root": "web/"}},
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true
+    }
+  }
+}

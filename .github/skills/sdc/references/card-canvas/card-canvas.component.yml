@@ -1,0 +1,81 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Card Canvas
+status: stable
+group: Molecules
+
+props:
+  type: object
+  properties:
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: "Card image. Handles responsive sizes and lazy loading automatically."
+      examples:
+        - src: "https://placehold.co/400x300"
+          alt: "Card placeholder image"
+          width: 400
+          height: 300
+
+    title:
+      type: string
+      title: Title
+      description: "Main heading of the card."
+      examples:
+        - "Card title"
+
+    text:
+      type: string
+      title: Text
+      description: "Body text content. Can include HTML markup."
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - "This is the main content of the card."
+        - "<strong>Bold</strong> and <em>italic</em> text."
+
+    tags:
+      type: array
+      title: Tags
+      description: "List of tag labels displayed on the card."
+      items:
+        type: string
+      maxItems: 5
+      examples:
+        - ["Nature", "Travel", "Culture"]
+
+    link_url:
+      type: string
+      title: Link URL
+      description: "Destination URL. Can be absolute or relative."
+      format: uri-reference
+      examples:
+        - "/destinations/example"
+        - "https://www.example.com"
+
+    link_text:
+      type: string
+      title: Link text
+      description: "Label for the call-to-action."
+      examples:
+        - "Read more"
+
+    link_target:
+      type: string
+      title: Link target
+      description: "Where to open the linked document."
+      enum:
+        - _self
+        - _blank
+      default: _self
+      examples:
+        - _self
+
+    is_featured:
+      type: boolean
+      title: Featured
+      description: "Applies a highlighted visual style to the card."
+      default: false
+      examples:
+        - false
+        - true

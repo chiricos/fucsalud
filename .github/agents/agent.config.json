@@ -1,0 +1,25 @@
+{
+  "project": {
+    "name": "My Drupal Project",
+    "theme_name": "my_theme",
+    "drupal_root": "docroot",
+    "structure": "docroot"
+  },
+  "paths": {
+    "theme_base": "{drupal_root}/themes/custom/{theme_name}",
+    "theme_file": "{drupal_root}/themes/custom/{theme_name}/{theme_name}.theme",
+    "libraries": "{drupal_root}/themes/custom/{theme_name}/{theme_name}.libraries.yml",
+    "breakpoints": "{drupal_root}/themes/custom/{theme_name}/{theme_name}.breakpoints.yml",
+    "components": "{drupal_root}/themes/custom/{theme_name}/components",
+    "templates": "{drupal_root}/themes/custom/{theme_name}/templates",
+    "scss_variables": "{drupal_root}/themes/custom/{theme_name}/scss/variables",
+    "icons": "{drupal_root}/themes/custom/{theme_name}/assets/fonts/icomoon/style.css",
+    "golden_sample": "{drupal_root}/themes/custom/{theme_name}/components/molecules/slider",
+    "config": "config/default"
+  },
+  "agent": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-13",
+    "description": "Drupal Frontend Agent System configuration - Update project.name and project.theme_name for your project"
+  }
+}

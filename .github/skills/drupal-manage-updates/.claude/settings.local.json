@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash scripts/preflight.sh*)",
+      "Bash(bash scripts/paso-*.sh*)",
+      "Bash(bash scripts/health-check.sh*)",
+      "Bash(bash scripts/rollback.sh*)",
+      "Bash(bash scripts/progress.sh*)",
+      "Bash(ddev composer*)",
+      "Bash(ddev drush*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "skill_name": "drupal-manage-updates",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Hola, necesito actualizar mi Drupal. Está en la versión 10.2.5 y me gustaría tenerlo al día. ¿Cómo procedemos?",
+      "expected_output": "El agente propone estrategia incremental minor-first hacia D10.x, clasifica módulos contrib, y NO menciona salto a D11 sin que el usuario lo pida.",
+      "files": [
+        "evals/fixtures/d10-minor-update/composer.json",
+        "evals/fixtures/d10-minor-update/.ddev/config.yaml"
+      ],
+      "expectations": [
+        "El agente propone actualizar a la última versión minor de D10 (10.x), no a D11",
+        "La estrategia usada es incremental_minor_first (no major_jump ni force_major)",
+        "El agente clasifica los módulos contrib en categorías (bridge, target-only, manual o similar)",
+        "El agente no usa el flag --major-jump en los comandos propuestos",
+        "El agente menciona una estimación de tiempo o número de módulos a actualizar"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Mi sitio está en Drupal 10.6.3 y quiero migrar a Drupal 11. ¿Qué necesito hacer?",
+      "expected_output": "El agente detecta que ya está en la última minor de D10, aprueba el salto mayor, presenta checkpoint gate y recomienda dry-run antes de actualizar el core.",
+      "files": [
+        "evals/fixtures/d10-to-d11-jump/composer.json",
+        "evals/fixtures/d10-to-d11-jump/.ddev/config.yaml"
+      ],
+      "expectations": [
+        "El agente detecta que 10.6.3 es la última minor disponible de D10 y valida el salto mayor",
+        "El agente usa el flag --major-jump en los comandos de actualización de core",
+        "El agente presenta un checkpoint de validación antes de actualizar el core (gate de confirmación)",
+        "El agente recomienda ejecutar dry-run antes de aplicar la actualización del core a D11"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Tenemos un Drupal 9.4 que lleva tiempo sin actualizar. Hay que ponerlo al día. ¿Por dónde empezamos?",
+      "expected_output": "El agente propone ir primero a D9.5 (última minor D9), detecta módulos legacy incompatibles (swiftmailer, panelizer), advierte sobre PHP 8.1+ y NO salta directamente a D10.",
+      "files": [
+        "evals/fixtures/d9-legacy-migration/composer.json",
+        "evals/fixtures/d9-legacy-migration/.ddev/config.yaml"
+      ],
+      "expectations": [
+        "El agente propone actualizar primero a la última minor de D9 (9.5.x), no salta directamente a D10",
+        "El agente detecta o menciona módulos legacy problemáticos (swiftmailer, panelizer o similares)",
+        "El agente advierte sobre el requisito de PHP 8.1 o superior para D10",
+        "El agente no ejecuta el salto a D10 sin confirmación explícita del usuario"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "En mi Drupal 10 tenemos CKEditor 4 con un par de plugins personalizados. Queremos actualizar pero nos preocupa la migración del editor. ¿Cómo lo gestionamos?",
+      "expected_output": "El agente invoca el flujo de paso-06b-ckeditor (o equivalente CKEditor migrator), genera un mapa de plugins, e identifica los plugins sin equivalencia en CKEditor 5.",
+      "files": [
+        "evals/fixtures/ckeditor4-project/composer.json",
+        "evals/fixtures/ckeditor4-project/.ddev/config.yaml"
+      ],
+      "expectations": [
+        "El agente identifica que hay CKEditor 4 instalado y activa el flujo de migración CKEditor 4→5",
+        "El agente genera o menciona un mapa de plugins CKEditor con su estado de compatibilidad",
+        "El agente identifica los plugins personalizados que no tienen equivalencia directa en CKEditor 5",
+        "El agente no omite el paso de CKEditor aunque haya otros módulos a actualizar"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Estaba en medio de una actualización de Drupal y se me cerró la sesión. Al volver veo que dejé el proceso a medias. ¿Puedo continuar desde donde lo dejé?",
+      "expected_output": "El agente lee progress.json, identifica el estado del pipeline interrumpido (8/13 módulos actualizados, bloqueado en drupal/redirect), y propone continuar desde el punto de interrupción en paso-06.",
+      "files": [
+        "evals/fixtures/resume-mid-pipeline/composer.json",
+        "evals/fixtures/resume-mid-pipeline/reports/drupal-update/progress.json"
+      ],
+      "expectations": [
+        "El agente lee o menciona el fichero progress.json para determinar el estado actual",
+        "El agente identifica que las fases preflight y análisis ya están completadas y no propone repetirlas",
+        "El agente propone continuar desde la fase correcta (paso-06 o actualización de módulos)"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Antes de tocar nada, ¿puedo saber exactamente qué cambiaría si actualizo mi Drupal 10.3? Quiero ver el plan sin que se modifique nada en el servidor.",
+      "expected_output": "El agente activa el flag --dry-run, no modifica composer.json ni composer.lock, y genera el fichero dry-run-summary.json con el listado de cambios simulados.",
+      "files": [
+        "evals/fixtures/resume-mid-pipeline/composer.json",
+        "evals/fixtures/resume-mid-pipeline/.ddev/config.yaml"
+      ],
+      "expectations": [
+        "El agente activa el modo dry-run en los comandos de actualización",
+        "El agente indica explícitamente que no se modificarán ficheros reales",
+        "El agente menciona la generación de un reporte o resumen de la simulación (dry-run-summary)",
+        "El agente genera específicamente el fichero reports/drupal-update/dry-run-summary.json (path exacto) como output estructurado de la simulación"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "3.2.0",
+  "timestamp": "2026-05-06T21:40:10.238Z",
+  "files": {
+    "agent.config.json": "f000a03a44e713e3c5ad6b1ac6e695cdc4dd82359547485a62068cd5fb681db9",
+    "code-reviewer.agent.md": "86f65ef448c3623e5c8d461a94e6cc2a25654925a0f1bb5bfd665d54bcaac605",
+    "drupal-backend-specialist.agent.md": "aed260d95644bfa6954dd50dc38d26369cac960af8668bf20f298a71b4054746",
+    "drupal-frontend-engineer.agent.md": "471a33b471008d5951b697f760d7396c140a3293de0745ca221ccfd957cdeb9d",
+    "drupal-views-expert.agent.md": "6ce515c639341a799f4625b6cf6e63abc3e2a3d689ecf154020941a45a4204fd",
+    "technical-writer.agent.md": "da05c8d539bb6dffe8dc060bc674fde2ecaf6f85da4943dce5f50a49e0666a12",
+    "testing-qa-engineer.agent.md": "069f1d8f80eb50a2bf07e7b1ac7e941a719e321a2e0e71d40e1b3f9513e80591"
+  }
+}

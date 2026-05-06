@@ -1,0 +1,104 @@
+/*
+ * Card Canvas — Reference component styles (Canvas mode)
+ */
+
+@use '../../../scss/variables' as *;
+
+.c-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--white);
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%);
+
+  &--featured {
+    box-shadow: 0 4px 16px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__image {
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__tag {
+    padding: var(--spacing-3xs) var(--spacing-2xs);
+    border-radius: var(--spacing-lg);
+    background-color: var(--brand-000);
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--primary-semi);
+    font-size: 18px;
+    line-height: 24px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__footer {
+    margin-top: auto;
+    padding-top: var(--spacing-sm);
+  }
+
+  &__link {
+    display: inline-block;
+    color: var(--primary-complementary-link);
+    font-family: var(--primary-semi);
+    font-size: 14px;
+    text-decoration: underline;
+    transition: var(--base-trans);
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--primary-complementary-link);
+      outline-offset: 4px;
+    }
+  }
+
+  &:hover {
+    .c-card__img {
+      transform: scale(1.05);
+    }
+  }
+}

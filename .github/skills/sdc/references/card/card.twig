@@ -1,0 +1,113 @@
+{#
+/**
+ * @file
+ * Template for the Card Generic component.
+ *
+ * A flexible content block for displaying structured information including
+ * title, text, images, and links. Supports multiple view modes and color variants.
+ *
+ * Available variables (props):
+ * - title: (string) Main card title
+ * - heading_level: (string) Heading level for title (2-6, default: '3')
+ * - title_link: (string) URL to make the title clickable
+ * - text: (string) Descriptive text content for the card body
+ * - image: (string) Image path or URL to display
+ * - url: (string) Primary URL for link buttons and card actions
+ * - url_target: (string) Target attribute for links (_self, _blank, etc.)
+ * - view_mode: (string) Card display variant (default: 'primary')
+ * - variant_color: (string) Color theme variant ('light' or 'dark')
+ * - card_classes: (array) Custom CSS classes for the card element
+ * - card_utility_classes: (array) Utility classes for additional styling
+ * - card_attributes: (Drupal\Core\Template\Attribute) HTML attributes object
+ *
+ * Available slots:
+ * - header: Optional header content (badges, icons, etc.)
+ * - tags: Optional tags/categories content
+ * - content: Main content area (required)
+ * - footer: Optional footer content (buttons, metadata, etc.)
+ *
+ * @see card.component.yml
+ */
+#}
+
+{# Build array of CSS classes for the card #}
+{% set classes = [
+  'c-card',
+  variant ? 'c-card__' ~ variant : 'c-card__primary',
+  variant_color ? 'c-card--' ~ variant_color : ''
+] %}
+
+{# Initialize attributes object if not provided #}
+{% set card_attributes = card_attributes ?: create_attribute() %}
+
+{# Merge custom card classes if provided #}
+{% if card_classes %}
+  {% set classes = classes|merge(card_classes) %}
+{% endif %}
+
+{# Merge utility classes if provided #}
+{% if card_utility_classes %}
+  {% set classes = classes|merge(card_utility_classes) %}
+{% endif %}
+
+{# Main card wrapper - semantic article element #}
+<article {{ card_attributes.addClass(classes) }}>
+
+  {# Drupal contextual links placeholder #}
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  {# Image section - only render if image is provided and not empty #}
+  {% if image is not empty %}
+    <div class="c-card__image">
+      {{ image }}
+
+      {# Header slot - for badges, icons, or custom top content #}
+      {% block header %}
+        {# Slot content injected here if provided #}
+      {% endblock %}
+    </div>
+  {% endif %}
+
+  {# Main content wrapper #}
+  <div class="c-card__content">
+
+    {# Tags slot - for categories, labels, or taxonomy terms #}
+    {% block tags %}
+      {# Slot content injected here if provided #}
+    {% endblock %}
+
+    {# Primary content block #}
+    {% block content %}
+
+      {# Title section with configurable heading level and optional link #}
+      {% if title is not empty %}
+        {% include 'cederna:heading' with {
+          content: title,
+          title_link: title_link|default(''),
+          heading_html_tag: heading_level|default('3'),
+          heading_classes: ['c-card__title'],
+          heading_link_utility_classes: ['stretched-link']
+        } only %}
+      {% endif %}
+
+      {# Body text section #}
+      {% if text is not empty %}
+        <div class="c-card__text">
+          {{ text }}
+        </div>
+      {% endif %}
+
+    {% endblock %}
+
+    {# Footer block - for action buttons, metadata, or additional content #}
+    {% block footer %}
+      {% if footer is not empty %}
+        <div class="c-card__footer">
+          {{ footer }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+  </div>
+</article>

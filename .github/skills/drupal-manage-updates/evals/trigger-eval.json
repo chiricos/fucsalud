@@ -1,0 +1,82 @@
+[
+  {
+    "query": "tengo drupal 10.2 y quiero actualizarlo a la última versión estable, ¿cómo lo hago con ddev?",
+    "should_trigger": true
+  },
+  {
+    "query": "me ha salido un aviso de security release en drupal, ¿cómo aplico el parche?",
+    "should_trigger": true
+  },
+  {
+    "query": "quiero migrar de drupal 9 a drupal 10 en mi proyecto, lleva sin actualizarse 2 años",
+    "should_trigger": true
+  },
+  {
+    "query": "composer update falla con conflictos de versiones en mi drupal, ¿cómo lo resuelvo?",
+    "should_trigger": true
+  },
+  {
+    "query": "after running composer outdated i see drupal/core is 3 minor versions behind, help me update it safely",
+    "should_trigger": true
+  },
+  {
+    "query": "my drupal 10.6 site needs to go to drupal 11, what's the upgrade path?",
+    "should_trigger": true
+  },
+  {
+    "query": "tengo módulos deprecated en drupal que hay que reemplazar antes de subir a D11",
+    "should_trigger": true
+  },
+  {
+    "query": "ckeditor 4 ya no está soportado en mi drupal, ¿qué tengo que hacer para migrar a ckeditor 5?",
+    "should_trigger": true
+  },
+  {
+    "query": "estaba actualizando drupal y se cortó internet a medias, ¿cómo retomo desde donde lo dejé?",
+    "should_trigger": true
+  },
+  {
+    "query": "antes de actualizar drupal quiero simular qué cambiaría sin modificar nada en el servidor",
+    "should_trigger": true
+  },
+  {
+    "query": "¿cómo instalo drupal 10 desde cero en mi servidor?",
+    "should_trigger": false
+  },
+  {
+    "query": "necesito crear un módulo custom en drupal que gestione cupones de descuento",
+    "should_trigger": false
+  },
+  {
+    "query": "¿cómo configuro ddev para trabajar con mi proyecto drupal?",
+    "should_trigger": false
+  },
+  {
+    "query": "quiero hacer un composer require de un nuevo módulo de drupal",
+    "should_trigger": false
+  },
+  {
+    "query": "cómo ejecuto los tests de phpunit en drupal",
+    "should_trigger": false
+  },
+  {
+    "query": "my wordpress site needs to be updated to the latest version",
+    "should_trigger": false
+  },
+  {
+    "query": "¿cuál es la diferencia entre drupal 9 y drupal 10?",
+    "should_trigger": false
+  },
+  {
+    "query": "quiero habilitar el módulo devel en mi drupal de producción",
+    "should_trigger": false
+  },
+  {
+    "query": "how do i update my npm packages in a next.js project",
+    "should_trigger": false
+  },
+  {
+    "query": "drupal dice que hay una actualización disponible en la página de estado, ¿qué significa eso?",
+    "should_trigger": false
+  }
+]

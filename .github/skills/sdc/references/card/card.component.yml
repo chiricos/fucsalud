@@ -1,0 +1,133 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.3.x/core/assets/schemas/v1/metadata.schema.json
+name: Card Generic
+status: stable
+description: "A flexible content block for displaying structured information including title, text, images, and links. Supports multiple view modes and color variants."
+
+variants:
+  default:
+    title: Default
+    description: Standard banner with balanced text and image layout
+  text_image:
+    title: Text Image
+    description: Banner with prominent text content alongside an image
+
+props:
+  type: object
+  properties:
+    # Title and heading configuration
+    title:
+      type: string
+      title: Title
+      description: "The main title for the card"
+      examples:
+        - "Discover Cederna"
+        - "Sierra Castle"
+
+    heading_level:
+      type: string
+      title: Heading level
+      description: "The heading level (h2-h6) for semantic HTML structure"
+      default: "3"
+      enum:
+        - "2"
+        - "3"
+        - "4"
+
+    title_link:
+      type: string
+      title: Title link
+      description: "URL to make the title clickable"
+      examples:
+        - "/destinations/example"
+
+    # Content properties
+    text:
+      type: string
+      title: Text
+      description: "Descriptive text content for the card body"
+      examples:
+        - "Discover places, culture and unique experiences in our region."
+
+    image:
+      type: string
+      title: Image
+      description: "Image path or URL to display in the card"
+      examples:
+        - "/sites/default/files/2025-01/sample-card.jpg"
+
+    # Link properties
+    url:
+      type: string
+      title: URL
+      description: "Primary URL for link buttons and card actions"
+      examples:
+        - "/destinations/example"
+
+    url_target:
+      type: string
+      title: Target
+      description: "Target attribute for link buttons (_self, _blank, _parent, _top)"
+      examples:
+        - "_self"
+        - "_blank"
+
+    # Metadata
+    variant_color:
+      type: string
+      title: Variant color
+      description: "Color theme variant for the card"
+      enum:
+        - light
+        - dark
+
+    # Styling and attributes
+    card_classes:
+      type: array
+      items:
+        type: string
+      title: Card Classes
+      description: "Array of custom CSS classes for the card element. Use for Drupal-generated or component-specific classes."
+      default: []
+      examples:
+        - ["card--elevated"]
+        - ["card--media", "card--dark"]
+
+    card_utility_classes:
+      type: array
+      items:
+        type: string
+      title: Card Utility Classes
+      description: "Array of utility classes (e.g., Bootstrap utilities or custom CSS) for additional styling"
+      default: []
+      examples:
+        - ["mb-4"]
+        - ["mb-3", "shadow-lg"]
+
+    card_attributes:
+      type: Drupal\Core\Template\Attribute
+      title: Attributes
+      description: "HTML attributes object for the card wrapper element"
+      examples:
+        - { "data-test": "card-cederna" }
+        - { "id": "featured-card", "data-category": "tourism" }
+
+slots:
+  header:
+    title: Header
+    required: false
+    description: "Optional header slot for badges, icons, or additional top content"
+
+  tags:
+    title: Tags
+    required: false
+    description: "Optional tags slot for categories, labels, or taxonomy terms"
+
+  content:
+    title: Content
+    required: true
+    description: "Main content area of the card (required)"
+
+  footer:
+    title: Footer content
+    required: false
+    description: "Optional footer slot for action buttons, metadata, or additional links"

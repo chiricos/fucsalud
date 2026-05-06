@@ -1,0 +1,50 @@
+{
+  "version": "1.1.0",
+  "schema_version": "1.0",
+  "last_updated": "2026-04-07",
+  "golden_sample": "card",
+  "docs": [
+    {
+      "file": "references/mode-drupal-layout-builder.md",
+      "mode": "drupal-layout-builder",
+      "summary": "Full prop type rules, YAML examples, and Twig patterns for Layout Builder / block / node components."
+    },
+    {
+      "file": "references/mode-canvas.md",
+      "mode": "canvas",
+      "summary": "Full prop type rules, |raw safety rules, canvas:image include reference, and Twig patterns for Canvas components."
+    },
+    {
+      "file": "references/sdc-standards.md",
+      "mode": "all",
+      "summary": "Component structure, atomic design levels, required files, metadata schema, slots, variants, shared Twig patterns, SCSS/JS rules, icons, asset loading, and debugging."
+    }
+  ],
+  "references": [
+    {
+      "component": "card",
+      "path": "skills/sdc/references/card",
+      "type": "reference",
+      "mode": "drupal-layout-builder",
+      "summary": "Reference component for Drupal Layout Builder mode with variants and complete structure.",
+      "files": [
+        "card.component.yml",
+        "card.twig",
+        "card.scss",
+        "card.js"
+      ]
+    },
+    {
+      "component": "card-canvas",
+      "path": "skills/sdc/references/card-canvas",
+      "type": "reference",
+      "mode": "canvas",
+      "summary": "Reference component for Canvas mode with canvas:image, responsive sizes, HTML text, tags array and complete structure.",
+      "files": [
+        "card-canvas.component.yml",
+        "card-canvas.twig",
+        "card-canvas.scss"
+      ]
+    }
+  ]
+}

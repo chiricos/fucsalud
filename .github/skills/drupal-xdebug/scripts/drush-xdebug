@@ -1,0 +1,85 @@
+#!/bin/bash
+## Description: Execute Drush commands with Xdebug connecting to xdebug-mcp (OpenCode)
+## Usage: drush-xdebug <drush-command> [args]
+## Example: ddev drush-xdebug cr
+
+# Verificar que hay argumentos
+if [ $# -eq 0 ]; then
+    cat << 'USAGE'
+Usage: ddev drush-xdebug <drush-command> [args]
+
+Execute Drush commands with Xdebug connecting to xdebug-mcp (OpenCode).
+Overrides client_host and client_port to point to xdebug-mcp on port 9010,
+separate from PHPStorm which uses port 9003 for web debugging.
+
+PREREQUISITE:
+  - Xdebug must be enabled: ddev xdebug on
+  - OpenCode must be running with xdebug MCP server active on port 9010
+
+This command:
+  - Sets DRUSH_ALLOW_XDEBUG=1 (prevents Drush from disabling Xdebug)
+  - Overrides xdebug.client_host to the Docker bridge gateway IP
+  - Overrides xdebug.client_port to 9010 (OpenCode), not 9003 (PHPStorm)
+  - For 'ev' subcommand: supports reading PHP code from stdin to avoid
+    quoting issues with parentheses and special characters
+
+Port allocation:
+  - Port 9003: PHPStorm (web/HTTP debugging)
+  - Port 9010: OpenCode xdebug-mcp (CLI/drush debugging)
+  - Both can coexist without conflicts
+
+Examples:
+  ddev drush-xdebug cr
+  ddev drush-xdebug status
+  ddev drush-xdebug config:get system.site
+  ddev drush-xdebug scr my_script.php
+
+  # Eval with stdin (avoids quoting problems):
+  echo 'phpinfo();' | ddev drush-xdebug ev
+  echo '\Drupal::service("my_service")->myMethod();' | ddev drush-xdebug ev
+
+Workflow:
+  0. ddev xdebug on
+  1. In OpenCode: set pending breakpoints
+  2. Run: ddev drush-xdebug <command> &
+  3. In OpenCode: xdebug_continue() -> breakpoint hit
+  4. ddev xdebug off
+USAGE
+    exit 1
+fi
+
+# Detect Docker bridge gateway IP (where xdebug-mcp listens in WSL2)
+GATEWAY_IP=$(ip route | awk '/default/{print $3; exit}')
+
+# Allow Xdebug in Drush (prevents the wrapper from disabling it)
+export DRUSH_ALLOW_XDEBUG=1
+
+# Handle 'ev' subcommand with stdin support
+# When 'ev' is called without a code argument and stdin is piped,
+# read the PHP code from stdin, write to a temp file, and use 'scr' instead.
+# This avoids DDEV's bash -c quoting that breaks parentheses.
+if [ "$1" = "ev" ] || [ "$1" = "eval" ] || [ "$1" = "php:eval" ] || [ "$1" = "php-eval" ]; then
+    if [ $# -eq 1 ] && [ ! -t 0 ]; then
+        # No code argument provided and stdin is piped — read code from stdin
+        PHP_CODE=$(cat)
+        if [ -z "$PHP_CODE" ]; then
+            echo "Error: No PHP code received from stdin" >&2
+            exit 1
+        fi
+        TMPFILE=$(mktemp /tmp/drush-xdebug-eval.XXXXXX.php)
+        # Write with <?php tag — drush scr requires it
+        printf '<?php\n%s\n' "$PHP_CODE" > "$TMPFILE"
+        trap "rm -f '$TMPFILE'" EXIT
+        # Use 'scr' (php:script) instead of 'ev' to avoid quoting entirely
+        # Port 9010 is for xdebug-mcp (OpenCode), port 9003 is for PHPStorm
+        php -dxdebug.client_host="$GATEWAY_IP" -dxdebug.client_port=9010 vendor/drush/drush/drush.php scr "$TMPFILE"
+        exit $?
+    fi
+    # If code argument IS provided (no parens or simple enough to survive quoting),
+    # fall through to normal execution below
+fi
+
+# Execute Drush PHP entry point with client_host override pointing to xdebug-mcp
+# Must use drush.php directly (vendor/bin/drush is a shell wrapper)
+# Port 9010 is for xdebug-mcp (OpenCode), port 9003 is for PHPStorm
+php -dxdebug.client_host="$GATEWAY_IP" -dxdebug.client_port=9010 vendor/drush/drush/drush.php "$@"

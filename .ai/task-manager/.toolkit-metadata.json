@@ -1,0 +1,9 @@
+{
+  "version": "3.2.0",
+  "timestamp": "2026-05-06T21:40:10.210Z",
+  "files": {
+    "config/TASK_MANAGER.md": "8c188cb387b7a57f16f079d2c8cb16cf81a41df496a5c28143b9f1f286927ff2",
+    "config/hooks/POST_PHASE.md": "84c37bcadf4b0ec858f752b892df176f5789a2b104403dbdb194e8ae1b3ea1bf",
+    "config/templates/PLAN_TEMPLATE.md": "27c6075e143e56a898ac4ead6f24768df0da56a54e192b468922b83e74a5ebed"
+  }
+}

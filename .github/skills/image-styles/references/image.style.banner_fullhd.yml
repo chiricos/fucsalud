@@ -1,0 +1,24 @@
+uuid: 187e2dd3-0bd8-4830-be95-c97d02439805
+langcode: es
+status: true
+dependencies:
+  module:
+    - focal_point
+name: banner_fullhd
+label: 'Banner 16/9 (1280x720px)'
+effects:
+  213f4d86-0e20-4f80-8fbe-99ddacb915f2:
+    uuid: 213f4d86-0e20-4f80-8fbe-99ddacb915f2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 720
+      crop_type: focal_point
+  8ca573dc-f97b-4f99-8bbb-ee8d1af9feca:
+    uuid: 8ca573dc-f97b-4f99-8bbb-ee8d1af9feca
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: ''

@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Card Canvas — Reference component (Canvas mode).
+ *
+ * Props:
+ * - image: { src, alt, width, height }
+ * - title: string
+ * - text: string (HTML allowed)
+ * - tags: string[]
+ * - link_url: string
+ * - link_text: string
+ * - link_target: string (_self|_blank)
+ * - is_featured: boolean
+ */
+#}
+
+{% set attributes = attributes ?: create_attribute() %}
+{% set classes = [
+  'c-card',
+  is_featured ? 'c-card--featured' : '',
+] %}
+
+<article {{ attributes.addClass(classes) }}>
+
+  {% if image.src is not empty %}
+    <div class="c-card__image">
+      {% include 'canvas:image' with image|merge({
+        loading: 'lazy',
+        sizes: '(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw',
+        class: 'c-card__img',
+      }) only %}
+    </div>
+  {% endif %}
+
+  <div class="c-card__content">
+
+    {% if tags is not empty %}
+      <ul class="c-card__tags">
+        {% for tag in tags %}
+          <li class="c-card__tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if title is not empty %}
+      <h3 class="c-card__title">{{ title }}</h3>
+    {% endif %}
+
+    {% if text is not empty %}
+      <div class="c-card__text">{{ text|raw }}</div>
+    {% endif %}
+
+    {% if link_url is not empty and link_text is not empty %}
+      <div class="c-card__footer">
+        <a
+          href="{{ link_url }}"
+          class="c-card__link"
+          target="{{ link_target|default('_self') }}"
+          {% if (link_target|default('_self')) == '_blank' %}rel="noopener noreferrer"{% endif %}
+        >
+          {{ link_text }}
+        </a>
+      </div>
+    {% endif %}
+
+  </div>
+</article>
