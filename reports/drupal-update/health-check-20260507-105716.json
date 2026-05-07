@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-05-07T10:57:16-05:00",
+  "overall": "pass",
+  "counts": { "pass": 11, "warn": 0, "fail": 0 },
+  "checks": [{"name":"DDEV","status":"pass","detail":"running"},{"name":"HTTP Response","status":"pass","detail":"HTTP 200"},{"name":"Drush Bootstrap","status":"pass","detail":"Successful"},{"name":"Drupal Version","status":"pass","detail":"v10.6.8"},{"name":"Route /","status":"pass","detail":"HTTP 200"},{"name":"Route /user/login","status":"pass","detail":"HTTP 200"},{"name":"Cron","status":"pass","detail":"executed successfully"},{"name":"Watchdog Errors","status":"pass","detail":"no recent errors"},{"name":"Requirements","status":"pass","detail":"no errors"},{"name":"DB Updates","status":"pass","detail":"no pending updates"},{"name":"Config Sync","status":"pass","detail":"in sync"}]
+}

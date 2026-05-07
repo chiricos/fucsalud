@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Drupal\Core\Url;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Drupal\Core\Session\AccountProxyInterface;
 
 class CustomRedirectSubscriber implements EventSubscriberInterface {
@@ -22,7 +22,7 @@ class CustomRedirectSubscriber implements EventSubscriberInterface {
         return $events;
       }
 
-    public function checkForRedirection(GetResponseEvent $event) {
+    public function checkForRedirection(RequestEvent $event) {
         $request = $event->getRequest();
         $path = $request->getPathInfo();
         $route_name = $event->getRequest()->attributes->get('_route');
