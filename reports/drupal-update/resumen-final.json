@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-05-07T10:58:14.701065",
+  "drupal_version": {
+    "before": "9.5.11",
+    "after": "10.6.8"
+  },
+  "php_version": {
+    "before": "8.1.32",
+    "after": "8.2.28"
+  },
+  "status": "success",
+  "health_check": "PASS (11/11)",
+  "security_advisory": "phpseclib CVE-2026-40194 (3rd-party lib, not Drupal core)",
+  "modules_updated": [
+    "drupal/externalauth",
+    "drupal/menu_breadcrumb",
+    "drupal/core 9→10.6.8",
+    "drupal/ckeditor (removed)",
+    "drupal/ckeditor5 (added)"
+  ],
+  "modules_fixed_for_d10": [
+    "admitidos",
+    "biblioteca_form",
+    "contribute",
+    "fucs_payments",
+    "gtranslate",
+    "views_breadcrumb",
+    "fucs (theme)"
+  ],
+  "custom_code_fixes": [
+    "online_shop_fucs: GetResponseEvent → RequestEvent (Symfony 6)",
+    "online_shop_fucs/certificados: utf8_decode/encode deprecated functions",
+    "fucs_form: utf8_decode deprecated",
+    "quickedit module removed"
+  ],
+  "commits": [
+    "d85e106 - config baseline pre-update",
+    "9c73de6 - update: drupal/externalauth",
+    "995939c - update: drupal/menu_breadcrumb",
+    "35b2625 - remove deprecated/obsolete extensions",
+    "8ba4df1 - remove deprecated extensions; add classy contrib; switch to Claro",
+    "0967c09 - migrate CKEditor 4 to CKEditor 5",
+    "1e073fc - fix(fucs_form): replace deprecated utf8_decode()",
+    "c0a01e3 - fix(online_shop_fucs,certificados): replace deprecated utf8_decode/encode",
+    "8955a8f - feat: update Drupal core to 10.6.8",
+    "5d713e5 - fix(online_shop_fucs): update GetResponseEvent to RequestEvent"
+  ],
+  "manual_pending": [
+    "Restore Hiberus repo in DDEV global composer config from backup (~/.composer/config.json.bak)",
+    "Orphan modules in DB (compras, drawdeBlock, drawdeBlog, drawde_bloque, formBiblioteca, simple_ldap, simple_ldap_user) — pre-existing, not blockers",
+    "social_auth_google schema entry but not installed — pre-existing",
+    "phpseclib advisory (CVE-2026-40194) — update phpseclib if needed"
+  ],
+  "branch": "drupal10_ia",
+  "ddev_project": "fucsalud"
+}

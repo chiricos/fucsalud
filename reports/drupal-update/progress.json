@@ -10,5 +10,7 @@
   "custom_code_status": "clean",
   "checkpoint_approved": true,
   "checkpoint_approved_at": "2026-05-06T17:30:00-05:00",
-  "core_status": "completed"
+  "core_status": "completed",
+  "validated": "completed",
+  "vrt_final": "N/A"
 }
