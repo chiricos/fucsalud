@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
+    - file
     - yoast_seo
 id: colaboradores
 label: Colaboradores
@@ -10,4 +11,5 @@ weight: 9
 is_admin: null
 permissions:
   - 'administer yoast seo'
+  - 'delete own files'
   - 'use yoast seo'

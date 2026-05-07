@@ -6,5 +6,6 @@ dependencies:
     - poll
 id: poll.token
 label: Token
+description: ''
 targetEntityType: poll
 cache: true

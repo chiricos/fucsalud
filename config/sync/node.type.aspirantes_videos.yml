@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Aspirantes Videos'
 type: aspirantes_videos
 description: 'Videos del micrositio aspirantes'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

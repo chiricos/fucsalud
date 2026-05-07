@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'base de datos'
 vid: base_de_datos
-description: ''
+description: null
 weight: 0
+new_revision: false

@@ -12,7 +12,7 @@ third_party_settings:
 name: 'Galeria historia'
 type: galeria_historia
 description: 'fotos de la historia de la fucs'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

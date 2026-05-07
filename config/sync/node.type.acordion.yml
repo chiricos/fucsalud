@@ -24,7 +24,7 @@ third_party_settings:
 name: acordion
 type: acordion
 description: 'tipo de contenido acordion'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

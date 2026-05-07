@@ -11,7 +11,7 @@ third_party_settings:
 name: 'bloque lateral'
 type: bloque_lateral
 description: 'Para la busqueda de la base de datos de biblioteca'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

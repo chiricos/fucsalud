@@ -6,3 +6,4 @@ name: cursos
 vid: cursos
 description: 'cursos virtuales, presenciales y a distancia'
 weight: 0
+new_revision: false

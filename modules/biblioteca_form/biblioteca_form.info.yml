@@ -3,7 +3,7 @@
 name: formulario de biblioteca
 description: formulario de biblioteca
 package: drawde
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 type: module
 core: 8.x
 

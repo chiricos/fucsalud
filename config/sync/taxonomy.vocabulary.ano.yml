@@ -6,3 +6,4 @@ name: año
 vid: ano
 description: 'año del volumen'
 weight: 0
+new_revision: false

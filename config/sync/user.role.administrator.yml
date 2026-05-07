@@ -103,6 +103,7 @@ dependencies:
     - filter
     - fucs_form
     - gtranslate
+    - help
     - image
     - language
     - locale
@@ -134,12 +135,14 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access backup files'
+  - 'access block library'
   - 'access comments'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
   - 'access fucs form settings'
+  - 'access help pages'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access site-wide contact form'
@@ -151,6 +154,8 @@ permissions:
   - 'administer CAPTCHA settings'
   - 'administer account settings'
   - 'administer backup and migrate'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer block_content display'
   - 'administer block_content fields'
   - 'administer block_content form display'
@@ -418,6 +423,7 @@ permissions:
   - 'delete own estudiantes_eventos content'
   - 'delete own estudiantes_noticias content'
   - 'delete own eventos_bienestar content'
+  - 'delete own files'
   - 'delete own galeria_bienestar content'
   - 'delete own galeria_historia content'
   - 'delete own internacionalizacion_noticias content'

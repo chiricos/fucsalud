@@ -1,0 +1,31 @@
+{
+  "iframe": {
+    "total_records": 11,
+    "tables_affected": 1,
+    "details": [
+      {
+        "table": "block_content_revision__body",
+        "column": "body_value",
+        "count": 11
+      }
+    ]
+  },
+  "div_with_class": {
+    "total_records": 145,
+    "tables_affected": 1
+  },
+  "templates_plugin_active_in": [],
+  "source_editing_recommendations": [
+    {
+      "tag": "<iframe>",
+      "reason": "iframe content found in database",
+      "count": 11
+    },
+    {
+      "tag": "<div class=\"...\">",
+      "reason": "CKE5 Style plugin does not support <div>; use SourceEditing",
+      "count": 145
+    }
+  ],
+  "dry_run": false
+}

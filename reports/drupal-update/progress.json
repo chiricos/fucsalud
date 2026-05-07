@@ -4,5 +4,10 @@
   "plan_approved": true,
   "plan_approved_at": "2026-05-06T16:53:00-05:00",
   "vrt_post_modules": "N/A",
-  "vrt_post_reason": "BackstopJS addon not installed"
+  "vrt_post_reason": "BackstopJS addon not installed",
+  "deprecated_status": "resolved",
+  "ckeditor_status": "completed",
+  "custom_code_status": "clean",
+  "checkpoint_approved": true,
+  "checkpoint_approved_at": "2026-05-06T17:30:00-05:00"
 }

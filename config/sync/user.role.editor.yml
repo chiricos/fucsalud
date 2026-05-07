@@ -63,6 +63,7 @@ dependencies:
     - contextual
     - easy_breadcrumb
     - field_ui
+    - file
     - file_replace
     - filter
     - menu_link_attributes
@@ -137,6 +138,7 @@ permissions:
   - 'create url aliases'
   - 'create videos content'
   - 'create webform content'
+  - 'delete own files'
   - 'edit any acordion content'
   - 'edit any acordion_lateral content'
   - 'edit any bloque_lateral content'

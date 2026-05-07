@@ -95,6 +95,7 @@ display:
             items_per_page_options_all_label: '— Todo(s) —'
             offset: false
             offset_label: Desplazamiento
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -572,6 +573,7 @@ display:
             items_per_page_options_all_label: '— Todo(s) —'
             offset: false
             offset_label: Desplazamiento
+          pagination_heading_level: h4
       style:
         type: default
         options:

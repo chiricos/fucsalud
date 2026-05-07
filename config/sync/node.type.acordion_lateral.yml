@@ -52,7 +52,7 @@ third_party_settings:
 name: 'acordion lateral'
 type: acordion_lateral
 description: 'tipo de contenido acordion con menu lateral'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

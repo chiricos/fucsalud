@@ -12,7 +12,7 @@ third_party_settings:
 name: 'Slider bienestar'
 type: slider_bienestar
 description: 'imagenes de banner de bienetar'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

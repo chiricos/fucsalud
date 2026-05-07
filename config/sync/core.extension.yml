@@ -1,6 +1,5 @@
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
-langcode: es
 module:
   admin_toolbar: 0
   admin_toolbar_search: 0
@@ -64,6 +63,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   poll: 0
   search: 0
   shortcut: 0

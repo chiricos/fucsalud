@@ -6,5 +6,6 @@ dependencies:
     - poll
 id: poll_choice.token
 label: Token
+description: ''
 targetEntityType: poll_choice
 cache: true

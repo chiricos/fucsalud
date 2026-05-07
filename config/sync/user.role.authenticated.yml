@@ -9,6 +9,7 @@ dependencies:
     - comment
     - contact
     - contextual
+    - file
     - filter
     - poll
     - search
@@ -33,6 +34,7 @@ permissions:
   - 'administer polls'
   - 'administer smtp module'
   - 'cancel own vote'
+  - 'delete own files'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

@@ -1,6 +1,5 @@
 _core:
   default_config_hash: uWCYoez96nX2cwvfGvSPrOuehWpgXxnqRRuhhoCGiu8
-langcode: es
 facebook_id: '1840504200145069'
 visibility:
   request_path_mode: all_pages

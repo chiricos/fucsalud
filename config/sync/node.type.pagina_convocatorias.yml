@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Pagina convocatorias'
 type: pagina_convocatorias
 description: 'Aqui van las convocatorias recientes'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

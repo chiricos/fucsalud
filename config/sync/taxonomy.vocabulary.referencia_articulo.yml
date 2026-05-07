@@ -6,3 +6,4 @@ name: 'Referencia articulo'
 vid: referencia_articulo
 description: 'Referencias para los artículos de la tienda virtual'
 weight: 0
+new_revision: false

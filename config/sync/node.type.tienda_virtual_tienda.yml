@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Tienda virtual footer'
 type: tienda_virtual_tienda
 description: 'Contenido de la parte de abajo de la tienda virtual'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

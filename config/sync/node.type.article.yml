@@ -14,7 +14,7 @@ _core:
 name: zArtículo
 type: article
 description: 'Use los <em>artículos</em> para contenido que tenga relevancia temporal como las noticias o las publicaciones en blogs.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

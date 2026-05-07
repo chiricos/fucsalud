@@ -61,3 +61,4 @@ sites/default/settings.php
 *.doc
 *.xlsx
 modules/fucs/
+/README.md

@@ -12,23 +12,25 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "gitlabdes.hiberus.com/7796": false
         }
     ],
     "require": {
-        "composer/installers": "^1.2",
+        "composer/installers": "^2.0",
         "dompdf/dompdf": "^3.0",
         "drupal/backup_migrate": "^5.0",
         "drupal/captcha": "^1.16",
         "drupal/classy": "^1",
-        "drupal/core-composer-scaffold": "^9",
-        "drupal/core-project-message": "^9",
-        "drupal/core-recommended": "^9",
-        "drupal/core-vendor-hardening": "^8.8",
+        "drupal/core-composer-scaffold": "~10.2",
+        "drupal/core-project-message": "~10.2",
+        "drupal/core-recommended": "~10.2",
         "drupal/db_maintenance": "^3.0@RC",
         "drupal/externalauth": "^2",
         "drupal/facebook_pixel": "^2.0@RC",
         "drupal/file_replace": "^1.4",
-        "drupal/filefield_sources": "^1.0@alpha",
+        "drupal/filefield_sources": "2.0.x-dev",
         "drupal/force_password_change": "^2.0",
         "drupal/formblock": "^2.0@beta",
         "drupal/image_captcha": "^2.0",
@@ -44,11 +46,11 @@
         "drupal/social_api": "^3.0",
         "drupal/social_auth_google": "^3.0",
         "drupal/token": "^1.10",
-        "drupal/upgrade_status": "^3.0",
+        "drupal/upgrade_status": "^4.0",
         "drupal/views_templates": "^1.4",
         "drupal/webform": "^6.1",
         "drupal/yoast_seo": "1.8",
-        "drush/drush": "^10.6",
+        "drush/drush": "^12",
         "google/apiclient": "^2.10",
         "nguyenanhung/nusoap": "^0.9.15",
         "phpmailer/phpmailer": "^6.9"
@@ -60,12 +62,37 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
+        "audit": {
+            "ignore": [
+                "SA-CORE-2025-001",
+                "SA-CORE-2025-002",
+                "SA-CORE-2025-003",
+                "SA-CORE-2025-004",
+                "SA-CORE-2025-005",
+                "SA-CORE-2025-006",
+                "SA-CORE-2025-007",
+                "SA-CORE-2025-008",
+                "SA-CORE-2026-001",
+                "SA-CORE-2026-002",
+                "PKSA-d8tb-wwz2-ctxk",
+                "PKSA-dh1f-zjm5-qg8y",
+                "PKSA-bn52-vyzy-rmnm",
+                "PKSA-xj83-g6g8-41vf",
+                "PKSA-s1zc-gcfk-ddw5",
+                "PKSA-ctyc-dmct-npkz",
+                "PKSA-42zc-x5ss-z64p",
+                "PKSA-s6zc-mws4-ngh4"
+            ]
+        },
         "allow-plugins": {
             "composer/installers": true,
-            "drupal/core-composer-scaffold": false,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "php-http/discovery": false,
+            "phpstan/extension-installer": false,
+            "tbachert/spi": false
         }
     },
     "extra": {
@@ -107,7 +134,7 @@
             ],
             "post-create-project-cmd-message": [
                 "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  Congratulations, you\u2019ve installed the Drupal codebase  </>",
                 "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
                 "<bg=blue;fg=white>                                                         </>",
                 "",
@@ -123,7 +150,7 @@
         }
     },
     "require-dev": {
-        "drupal/core-dev": "^9",
+        "drupal/core-dev": "^10",
         "mglaman/drupal-check": "^1.4",
         "palantirnet/drupal-rector": "^0.20.3"
     }
