@@ -38,7 +38,7 @@ class PersonalDataForm extends FormBase
   {
 
     $form['#theme'] = 'personal_data_form_build';
-    $form['user'] = $this->user;
+    $form['#user'] = $this->user;
 
     $form['content'] = [
       '#prefix' => '<div class="row">',

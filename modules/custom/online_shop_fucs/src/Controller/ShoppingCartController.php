@@ -53,10 +53,13 @@ class ShoppingCartController {
       $message = "Item no pudo ser agregado";
     }
     $build = [
+      '#type' => 'markup',
+      '#markup' => $message,
       '#title' => $message,
-      'markup' => '',
+      '#cache' => [
+        'max-age' => 0,
+      ],
     ];
-    $build['#cache']['max-age'] = 0;
     return $build;
   }
 
