@@ -1,4 +1,4 @@
-uuid: 73aa2507-e7fc-4885-b429-01f180a50dd4
+uuid: 2e8b49b4-3e2c-4214-b185-80afe575957a
 langcode: es
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor5
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
 format: full_html
 editor: ckeditor5
 settings:
@@ -31,9 +33,11 @@ settings:
       - heading
       - codeBlock
       - '|'
+      - showBlocks
       - sourceEditing
       - alignment
       - '|'
+      - style
       - '|'
       - specialCharacters
       - '|'
@@ -46,10 +50,10 @@ settings:
   plugins:
     ckeditor5_alignment:
       enabled_alignments:
-        - left
         - center
-        - right
         - justify
+        - left
+        - right
     ckeditor5_codeBlock:
       languages:
         -
@@ -111,8 +115,9 @@ settings:
         startIndex: true
       multiBlock: true
     ckeditor5_sourceEditing:
-      allowed_tags:
-        - '<iframe>'
+      allowed_tags: {  }
+    ckeditor5_style:
+      styles: {  }
 image_upload:
   status: true
   scheme: public
