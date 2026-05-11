@@ -11376,7 +11376,7 @@ strong {
   .events .views-row:nth-child(2) .noticias-image,
   .events .views-row:nth-child(3) .noticias-image,
   .events .views-row:nth-child(4) .noticias-image {
-    width: 50%;
+    width: 100%;
   }
 
   .events .views-row:nth-child(2) .noticias-body,
