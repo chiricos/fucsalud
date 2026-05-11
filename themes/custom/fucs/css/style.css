@@ -11362,7 +11362,11 @@ strong {
   }
 
   .noticias-image {
-    width: 50%;
+    width: 100%;
+  }
+
+  .events-image {
+    width: 100%;
   }
 
   .noticias-body {
@@ -12010,7 +12014,7 @@ strong {
 
   .drawde-content {
     margin-top: 0;
-    padding: 0 50px;
+    padding: 0 25px;
   }
 
   .laboratorios {
