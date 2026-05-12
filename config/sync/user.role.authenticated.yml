@@ -11,6 +11,7 @@ dependencies:
     - contextual
     - file
     - filter
+    - media
     - poll
     - search
     - shortcut
@@ -40,3 +41,4 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'use text format webform_default'
+  - 'view media'
