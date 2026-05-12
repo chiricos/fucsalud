@@ -12,9 +12,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "gitlabdes.hiberus.com/7796": false
         }
     ],
     "require": {
@@ -50,6 +47,7 @@
         "drupal/token": "^1.10",
         "drupal/views_templates": "^1.4",
         "drupal/webform": "^6.1",
+        "drupal/webp": "^1.0",
         "drupal/yoast_seo": "1.8",
         "drush/drush": "^12",
         "google/apiclient": "^2.10",
