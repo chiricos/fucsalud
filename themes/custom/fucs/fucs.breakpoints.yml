@@ -1,0 +1,20 @@
+fucs.mobile:
+  label: Mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+
+fucs.tablet:
+  label: Tablet
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+
+fucs.desktop:
+  label: Desktop
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x

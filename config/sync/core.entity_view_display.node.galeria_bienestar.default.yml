@@ -7,23 +7,28 @@ dependencies:
     - field.field.node.galeria_bienestar.field_meta_tags
     - field.field.node.galeria_bienestar.field_yoast_seo
     - node.type.galeria_bienestar
+    - responsive_image.styles.fucs_content
+    - responsive_image.styles.fucs_general
+    - responsive_image.styles.fucs_slider
+    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - user
+    - responsive_image
 id: node.galeria_bienestar.default
 targetEntityType: node
 bundle: galeria_bienestar
 mode: default
 content:
   field_imagen_bienestar:
-    type: image
+    type: responsive_image
     label: above
     settings:
+      responsive_image_style: fucs_general
       image_link: ''
-      image_style: ''
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 102
     region: content

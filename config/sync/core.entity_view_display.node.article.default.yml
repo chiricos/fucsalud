@@ -12,12 +12,17 @@ dependencies:
     - field.field.node.article.field_yoast_seo
     - image.style.large
     - node.type.article
+    - responsive_image.styles.fucs_content
+    - responsive_image.styles.fucs_general
+    - responsive_image.styles.fucs_slider
+    - responsive_image.styles.fucs_thumbnail
   module:
     - comment
     - image
     - metatag
     - text
     - user
+    - responsive_image
 _core:
   default_config_hash: JtAg_-waIt1quMtdDtHIaXJMxvTuSmxW7bWyO6Zd68E
 id: node.article.default
@@ -47,13 +52,13 @@ content:
     weight: 20
     region: content
   field_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: fucs_general
       image_link: ''
-      image_style: large
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: -1
     region: content

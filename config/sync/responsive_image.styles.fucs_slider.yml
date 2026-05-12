@@ -1,0 +1,30 @@
+uuid: 25d5971d-dbb8-452e-9884-8fad08365f54
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.home
+    - image.style.home_slider
+    - image.style.medium
+  theme:
+    - fucs
+id: fucs_slider
+label: 'FUCS Slider'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: home_slider
+    breakpoint_id: fucs.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: home
+    breakpoint_id: fucs.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: fucs.mobile
+    multiplier: 1x
+breakpoint_group: fucs
+fallback_image_style: home_slider

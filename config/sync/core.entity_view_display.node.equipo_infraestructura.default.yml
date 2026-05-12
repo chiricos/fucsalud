@@ -9,11 +9,16 @@ dependencies:
     - field.field.node.equipo_infraestructura.field_testimonio_imagen
     - field.field.node.equipo_infraestructura.field_yoast_seo
     - node.type.equipo_infraestructura
+    - responsive_image.styles.fucs_content
+    - responsive_image.styles.fucs_general
+    - responsive_image.styles.fucs_slider
+    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - text
     - user
+    - responsive_image
 id: node.equipo_infraestructura.default
 targetEntityType: node
 bundle: equipo_infraestructura
@@ -42,13 +47,13 @@ content:
     weight: 104
     region: content
   field_testimonio_imagen:
-    type: image
+    type: responsive_image
     label: above
     settings:
+      responsive_image_style: fucs_general
       image_link: ''
-      image_style: ''
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 102
     region: content

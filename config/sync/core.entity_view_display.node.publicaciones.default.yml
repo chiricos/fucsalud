@@ -15,11 +15,16 @@ dependencies:
     - field.field.node.publicaciones.field_yoast_seo
     - image.style.publicaciones
     - node.type.publicaciones
+    - responsive_image.styles.fucs_content
+    - responsive_image.styles.fucs_general
+    - responsive_image.styles.fucs_slider
+    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - text
     - user
+    - responsive_image
 id: node.publicaciones.default
 targetEntityType: node
 bundle: publicaciones
@@ -49,13 +54,13 @@ content:
     weight: 7
     region: content
   field_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: fucs_content
       image_link: ''
-      image_style: publicaciones
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 3
     region: content

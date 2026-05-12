@@ -20,11 +20,16 @@ dependencies:
     - field.field.node.cursos.field_titulos_acordion_3
     - field.field.node.cursos.field_yoast_seo
     - node.type.cursos
+    - responsive_image.styles.fucs_content
+    - responsive_image.styles.fucs_general
+    - responsive_image.styles.fucs_slider
+    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - text
     - user
+    - responsive_image
 id: node.cursos.default
 targetEntityType: node
 bundle: cursos
@@ -74,13 +79,13 @@ content:
     weight: 8
     region: content
   field_cursos_imagen:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: fucs_general
       image_link: ''
-      image_style: ''
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 2
     region: content

@@ -10,12 +10,17 @@ dependencies:
     - field.field.node.eventos_bienestar.field_titulo_bienestar
     - field.field.node.eventos_bienestar.field_yoast_seo
     - node.type.eventos_bienestar
+    - responsive_image.styles.fucs_content
+    - responsive_image.styles.fucs_general
+    - responsive_image.styles.fucs_slider
+    - responsive_image.styles.fucs_thumbnail
   module:
     - datetime
     - image
     - metatag
     - text
     - user
+    - responsive_image
 id: node.eventos_bienestar.default
 targetEntityType: node
 bundle: eventos_bienestar
@@ -45,13 +50,13 @@ content:
     weight: 5
     region: content
   field_noticias_imagen:
-    type: image
+    type: responsive_image
     label: above
     settings:
+      responsive_image_style: fucs_general
       image_link: ''
-      image_style: ''
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 4
     region: content

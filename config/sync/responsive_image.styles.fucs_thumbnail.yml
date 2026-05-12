@@ -1,0 +1,28 @@
+uuid: 6994c831-ee53-4c9f-a99d-e37d4a79f685
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+  theme:
+    - fucs
+id: fucs_thumbnail
+label: 'FUCS Thumbnail'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: fucs.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: fucs.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: fucs.mobile
+    multiplier: 1x
+breakpoint_group: fucs
+fallback_image_style: thumbnail

@@ -11,11 +11,16 @@ dependencies:
     - field.field.node.slider_principal.field_yoast_seo
     - image.style.home_slider
     - node.type.slider_principal
+    - responsive_image.styles.fucs_content
+    - responsive_image.styles.fucs_general
+    - responsive_image.styles.fucs_slider
+    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - text
     - user
+    - responsive_image
 id: node.slider_principal.default
 targetEntityType: node
 bundle: slider_principal
@@ -51,13 +56,13 @@ content:
     weight: 105
     region: content
   field_slider_1400x600_:
-    type: image
+    type: responsive_image
     label: above
     settings:
+      responsive_image_style: fucs_slider
       image_link: ''
-      image_style: home_slider
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 102
     region: content
