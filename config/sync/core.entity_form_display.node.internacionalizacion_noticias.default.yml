@@ -52,7 +52,22 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings:
+      filefield_sources:
+        filefield_sources:
+          sources:
+            upload: true
+            reference: true
+            remote: false
+            clipboard: false
+            attach: false
+          source_reference:
+            autocomplete: '0'
+            search_all_fields: '0'
+          source_attach:
+            path: file_attach
+            absolute: 0
+            attach_mode: move
   field_noticias_titulo:
     type: text_textarea_with_summary
     weight: 32
