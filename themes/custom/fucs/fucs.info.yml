@@ -61,5 +61,8 @@ regions:
   pregrado_contenido_3: "Pregrado contenido 3"
 
 
+ckeditor5-stylesheets:
+  - css/ckeditor5.css
+
 libraries:
   - fucs/base
