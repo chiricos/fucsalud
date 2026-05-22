@@ -70,7 +70,6 @@ module:
   poll: 0
   quickedit: 0
   rdf: 0
-  responsive_image: 0
   search: 0
   shortcut: 0
   smtp: 0
@@ -90,7 +89,6 @@ module:
   webform_jqueryui_buttons: 0
   webform_node: 0
   webform_ui: 0
-  webp: 0
   yoast_seo: 0
   filefield_sources: 1
   menu_link_content: 1

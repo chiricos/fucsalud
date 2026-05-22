@@ -10,17 +10,12 @@ dependencies:
     - field.field.node.investigacion_noticias.field_noticias_titulo
     - field.field.node.investigacion_noticias.field_yoast_seo
     - node.type.investigacion_noticias
-    - responsive_image.styles.fucs_content
-    - responsive_image.styles.fucs_general
-    - responsive_image.styles.fucs_slider
-    - responsive_image.styles.fucs_thumbnail
   module:
     - datetime
     - image
     - metatag
     - text
     - user
-    - responsive_image
 id: node.investigacion_noticias.default
 targetEntityType: node
 bundle: investigacion_noticias
@@ -50,13 +45,13 @@ content:
     weight: 105
     region: content
   field_noticias_imagen:
-    type: responsive_image
+    type: image
     label: hidden
     settings:
-      responsive_image_style: fucs_general
       image_link: ''
+      image_style: ''
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
     weight: 103
     region: content

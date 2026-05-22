@@ -9,16 +9,11 @@ dependencies:
     - field.field.node.slider_segundo_home_investigacio.field_slider_1400x600_
     - field.field.node.slider_segundo_home_investigacio.field_yoast_seo
     - node.type.slider_segundo_home_investigacio
-    - responsive_image.styles.fucs_content
-    - responsive_image.styles.fucs_general
-    - responsive_image.styles.fucs_slider
-    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - text
     - user
-    - responsive_image
 id: node.slider_segundo_home_investigacio.default
 targetEntityType: node
 bundle: slider_segundo_home_investigacio
@@ -47,13 +42,13 @@ content:
     weight: 104
     region: content
   field_slider_1400x600_:
-    type: responsive_image
+    type: image
     label: above
     settings:
-      responsive_image_style: fucs_general
       image_link: ''
+      image_style: ''
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
     weight: 102
     region: content

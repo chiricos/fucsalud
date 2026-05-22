@@ -9,15 +9,10 @@ dependencies:
     - field.field.node.slider_egresados.field_slider_1400x600_
     - field.field.node.slider_egresados.field_yoast_seo
     - node.type.slider_egresados
-    - responsive_image.styles.fucs_content
-    - responsive_image.styles.fucs_general
-    - responsive_image.styles.fucs_slider
-    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - user
-    - responsive_image
 id: node.slider_egresados.default
 targetEntityType: node
 bundle: slider_egresados
@@ -46,13 +41,13 @@ content:
     weight: 105
     region: content
   field_slider_1400x600_:
-    type: responsive_image
+    type: image
     label: above
     settings:
-      responsive_image_style: fucs_general
       image_link: ''
+      image_style: ''
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
     weight: 102
     region: content

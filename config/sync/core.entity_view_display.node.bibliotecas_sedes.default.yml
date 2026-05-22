@@ -10,15 +10,10 @@ dependencies:
     - field.field.node.bibliotecas_sedes.field_sede
     - field.field.node.bibliotecas_sedes.field_yoast_seo
     - node.type.bibliotecas_sedes
-    - responsive_image.styles.fucs_content
-    - responsive_image.styles.fucs_general
-    - responsive_image.styles.fucs_slider
-    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - user
-    - responsive_image
 id: node.bibliotecas_sedes.default
 targetEntityType: node
 bundle: bibliotecas_sedes
@@ -41,13 +36,13 @@ content:
     weight: 105
     region: content
   field_image:
-    type: responsive_image
+    type: image
     label: above
     settings:
-      responsive_image_style: fucs_general
       image_link: ''
+      image_style: ''
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
     weight: 102
     region: content

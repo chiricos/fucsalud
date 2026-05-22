@@ -24,16 +24,11 @@ dependencies:
     - field.field.node.posgrado.field_titulo_acordion_
     - field.field.node.posgrado.field_yoast_seo
     - node.type.posgrado
-    - responsive_image.styles.fucs_content
-    - responsive_image.styles.fucs_general
-    - responsive_image.styles.fucs_slider
-    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - text
     - user
-    - responsive_image
 id: node.posgrado.default
 targetEntityType: node
 bundle: posgrado
@@ -136,13 +131,13 @@ content:
     weight: 116
     region: content
   field_imagen_nueva:
-    type: responsive_image
+    type: image
     label: hidden
     settings:
-      responsive_image_style: fucs_general
       image_link: ''
+      image_style: ''
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
     weight: 113
     region: content

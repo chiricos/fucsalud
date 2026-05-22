@@ -12,17 +12,12 @@ dependencies:
     - field.field.node.testimonios.field_testimonio_nombre
     - field.field.node.testimonios.field_yoast_seo
     - node.type.testimonios
-    - responsive_image.styles.fucs_content
-    - responsive_image.styles.fucs_general
-    - responsive_image.styles.fucs_slider
-    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - link
     - metatag
     - text
     - user
-    - responsive_image
 id: node.testimonios.default
 targetEntityType: node
 bundle: testimonios
@@ -70,13 +65,13 @@ content:
     weight: 106
     region: content
   field_testimonio_imagen:
-    type: responsive_image
+    type: image
     label: hidden
     settings:
-      responsive_image_style: fucs_general
       image_link: ''
+      image_style: ''
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
     weight: 102
     region: content

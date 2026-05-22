@@ -10,15 +10,10 @@ dependencies:
     - field.field.node.slider_colaboradores.field_yoast_seo
     - image.style.slider_bi
     - node.type.slider_colaboradores
-    - responsive_image.styles.fucs_content
-    - responsive_image.styles.fucs_general
-    - responsive_image.styles.fucs_slider
-    - responsive_image.styles.fucs_thumbnail
   module:
     - image
     - metatag
     - user
-    - responsive_image
 id: node.slider_colaboradores.default
 targetEntityType: node
 bundle: slider_colaboradores
@@ -47,13 +42,13 @@ content:
     weight: 105
     region: content
   field_slider_1400x600_:
-    type: responsive_image
+    type: image
     label: above
     settings:
-      responsive_image_style: fucs_slider
       image_link: ''
+      image_style: slider_bi
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
     weight: 102
     region: content
