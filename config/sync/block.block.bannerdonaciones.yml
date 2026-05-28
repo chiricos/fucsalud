@@ -12,7 +12,7 @@ dependencies:
 id: bannerdonaciones
 theme: fucs
 region: slider_page
-weight: 0
+weight: 10
 provider: null
 plugin: 'block_content:5eed767e-c29f-4fb5-8abc-b70755d5472d'
 settings:

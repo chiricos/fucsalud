@@ -2,6 +2,8 @@ uuid: a98abcaa-c615-43bf-a856-6a7c62627db2
 langcode: es
 status: true
 dependencies:
+  config:
+    - webform.webform.reservacion_de_instalaciones
   module:
     - system
     - webform
@@ -20,6 +22,8 @@ settings:
   provider: webform
   webform_id: reservacion_de_instalaciones
   default_data: ''
+  redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path

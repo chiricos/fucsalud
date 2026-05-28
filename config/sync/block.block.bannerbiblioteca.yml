@@ -12,7 +12,7 @@ dependencies:
 id: bannerbiblioteca
 theme: fucs
 region: slider_page
-weight: 0
+weight: 15
 provider: null
 plugin: 'block_content:d9e5ea1f-334b-4148-98c7-9582c280e485'
 settings:

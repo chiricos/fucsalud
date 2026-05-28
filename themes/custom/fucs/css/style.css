@@ -1423,7 +1423,6 @@ CONTENIDO DE LA PAGINA
 
 .gtranslate select {
   border-radius: 5px;
-  border-left: 1px solid white;
   background: white !important;
   height: 30px;
   margin-left: 13px;
@@ -1560,7 +1559,7 @@ p {
   border: none;
   border-radius: 0;
   color: gray;
-  height: 0;
+  /*height: 0;*/
   font-size: 20px;
   padding: 0;
 }
@@ -1612,7 +1611,7 @@ p {
 .noticias .views-field-title {}
 
 .row-events {
-  border-bottom: 1px dashed #707070 !important;
+  border-bottom: 1px dashed #707070;
 }
 
 .video {}

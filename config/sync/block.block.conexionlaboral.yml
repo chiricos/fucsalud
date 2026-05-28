@@ -12,7 +12,7 @@ dependencies:
 id: conexionlaboral
 theme: fucs
 region: slider_page
-weight: 0
+weight: 33
 provider: null
 plugin: 'block_content:1eb9e756-d175-4fc0-b70a-7bc9cc4cf9da'
 settings:

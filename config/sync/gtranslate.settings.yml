@@ -2,7 +2,7 @@ gtranslate_method: onfly
 gtranslate_pro: 0
 gtranslate_enterprise: 0
 gtranslate_analytics: 0
-gtranslate_look: dropdown
+gtranslate_look: dropdown_with_flags
 gtranslate_flag_size: '16'
 gtranslate_new_window: 0
 gtranslate_main_lang: es
@@ -15,7 +15,7 @@ gtranslate_eu: '0'
 gtranslate_be: '0'
 gtranslate_bg: '0'
 gtranslate_ca: '0'
-gtranslate_zh-CN: '2'
+gtranslate_zh-CN: '0'
 gtranslate_zh-TW: '0'
 gtranslate_hr: '0'
 gtranslate_cs: '0'

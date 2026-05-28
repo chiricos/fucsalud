@@ -12,7 +12,7 @@ dependencies:
 id: views_block__slider_block_semilleros_block_1
 theme: fucs
 region: slider_page
-weight: -8
+weight: 8
 provider: null
 plugin: 'views_block:slider_block_semilleros-block_1'
 settings:

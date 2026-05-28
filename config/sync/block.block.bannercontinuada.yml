@@ -12,7 +12,7 @@ dependencies:
 id: bannercontinuada
 theme: fucs
 region: slider_page
-weight: 0
+weight: 19
 provider: null
 plugin: 'block_content:d3f69449-80cb-46a6-b8e6-35322c16aed3'
 settings:

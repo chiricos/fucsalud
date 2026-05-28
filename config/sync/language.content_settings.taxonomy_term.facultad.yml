@@ -1,0 +1,11 @@
+uuid: a0ca05f1-b9d9-4f35-9c86-4379d3b9c94c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.facultad
+id: taxonomy_term.facultad
+target_entity_type_id: taxonomy_term
+target_bundle: facultad
+default_langcode: site_default
+language_alterable: false

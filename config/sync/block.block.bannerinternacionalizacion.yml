@@ -12,7 +12,7 @@ dependencies:
 id: bannerinternacionalizacion
 theme: fucs
 region: slider_page
-weight: 0
+weight: 23
 provider: null
 plugin: 'block_content:ef836ee4-e734-4628-bc28-816b456fcbeb'
 settings:

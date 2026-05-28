@@ -2,11 +2,8 @@ uuid: 6c3b1c76-9d99-47df-924c-1b4c668a9396
 langcode: es
 status: false
 dependencies:
-  config:
-    - views.view.infraestructura_eventos
   module:
     - system
-    - views
   theme:
     - fucs
 id: views_block__infraestructura_eventos_block_1

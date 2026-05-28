@@ -2,6 +2,8 @@ uuid: d4fba579-450e-4bae-925c-5ac044a8dc6a
 langcode: es
 status: true
 dependencies:
+  config:
+    - webform.webform.solicitud_asesorias
   module:
     - system
     - webform
@@ -20,6 +22,8 @@ settings:
   provider: webform
   webform_id: solicitud_asesorias
   default_data: ''
+  redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path

@@ -12,7 +12,7 @@ dependencies:
 id: bannerbienestar
 theme: fucs
 region: slider_page
-weight: 0
+weight: 16
 provider: null
 plugin: 'block_content:d9c8edb6-162e-4c98-be80-bd63b8e24f44'
 settings:

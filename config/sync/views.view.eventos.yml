@@ -274,7 +274,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: vista
+          text: 'Leer más'
           output_url_as_text: false
           absolute: false
         body:
@@ -289,7 +289,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"events-image\">\r\n    {{ field_noticias_imagen }}\r\n</div>\r\n<div class=\"events-body\">\r\n    <div class=\"events-title\">\r\n        <span class=\"noticias-title-content\">\r\n            {{ title }}\r\n        </span>\r\n    </div>\r\n    <div class=\"events-date\">\r\n        {{ field_home_even_fecha }}\r\n    </div>\r\n    <div class=\"events-text\">\r\n        {{ body }}\r\n    </div>\r\n    <div class=\"events-more\">\r\n        {{view_node}}\r\n    </div>\r\n</div>"
+            text: "<div class=\"events-image\">\r\n    {{ field_noticias_imagen }}\r\n</div>\r\n<div class=\"events-body\">\r\n    <div class=\"events-title\">\r\n        <span class=\"noticias-title-content\">\r\n            {{ title }}\r\n        </span>\r\n    </div>\r\n    <div class=\"events-text\">\r\n        {{ body }}\r\n    </div>\r\n    <div class=\"events-more\">\r\n        {{view_node}}\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -344,12 +344,12 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 1
           total_pages: null
           id: 0
           tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
+            next: '>'
+            previous: '<'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -439,6 +439,7 @@ display:
           query_tags: {  }
       relationships: {  }
       css_class: ' events'
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -461,7 +462,9 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:

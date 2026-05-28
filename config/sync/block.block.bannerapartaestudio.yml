@@ -12,7 +12,7 @@ dependencies:
 id: bannerapartaestudio
 theme: fucs
 region: slider_page
-weight: 0
+weight: 14
 provider: null
 plugin: 'block_content:42e3eb6e-20e6-47cb-b444-6b802a073de5'
 settings:

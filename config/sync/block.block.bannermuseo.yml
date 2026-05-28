@@ -12,7 +12,7 @@ dependencies:
 id: bannermuseo
 theme: fucs
 region: slider_page
-weight: 0
+weight: 26
 provider: null
 plugin: 'block_content:6876503d-6e5b-40d1-b4c4-0d7ced41ba2f'
 settings:

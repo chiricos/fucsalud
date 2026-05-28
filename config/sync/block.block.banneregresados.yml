@@ -12,7 +12,7 @@ dependencies:
 id: banneregresados
 theme: fucs
 region: slider_page
-weight: 0
+weight: 21
 provider: null
 plugin: 'block_content:3d4363eb-6724-4907-ab25-57ac7ea46b21'
 settings:

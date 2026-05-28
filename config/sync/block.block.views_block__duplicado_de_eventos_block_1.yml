@@ -27,4 +27,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "<front>\r\n/estudiantes\r\n/egresados\r\n/biblioteca\r\n/proyeccion-social\r\n/biblioteca"
+    pages: "/estudiantes\r\n/egresados\r\n/biblioteca\r\n/proyeccion-social\r\n/biblioteca"

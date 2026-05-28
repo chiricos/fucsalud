@@ -12,7 +12,7 @@ dependencies:
 id: colaboradoractivarmenuserviciosenlinea
 theme: fucs
 region: slider_page
-weight: 0
+weight: 32
 provider: null
 plugin: 'block_content:e39cc9f5-4e53-4e6f-86b9-71f438c1c2b0'
 settings:

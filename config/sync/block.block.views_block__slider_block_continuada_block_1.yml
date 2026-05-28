@@ -12,7 +12,7 @@ dependencies:
 id: views_block__slider_block_continuada_block_1
 theme: fucs
 region: slider_page
-weight: -12
+weight: 4
 provider: null
 plugin: 'views_block:slider_block_continuada-block_1'
 settings:

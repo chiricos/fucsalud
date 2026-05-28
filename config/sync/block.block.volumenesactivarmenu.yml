@@ -12,7 +12,7 @@ dependencies:
 id: volumenesactivarmenu
 theme: fucs
 region: slider_page
-weight: 0
+weight: 40
 provider: null
 plugin: 'block_content:466c6725-4caf-460f-95ce-9032b0e8f182'
 settings:

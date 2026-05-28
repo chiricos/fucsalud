@@ -12,7 +12,7 @@ dependencies:
 id: bannerferiavirtual
 theme: fucs
 region: slider_page
-weight: 0
+weight: 42
 provider: null
 plugin: 'block_content:10dd1267-5a05-4481-834f-3f4f9ba71ca4'
 settings:

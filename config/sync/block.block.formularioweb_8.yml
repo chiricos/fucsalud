@@ -2,6 +2,8 @@ uuid: 2d863243-90ff-4826-9f36-815ad9e6d6bd
 langcode: es
 status: true
 dependencies:
+  config:
+    - webform.webform.formulario_normalizacion_de_refe
   module:
     - system
     - webform
@@ -20,6 +22,8 @@ settings:
   provider: webform
   webform_id: formulario_normalizacion_de_refe
   default_data: ''
+  redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path

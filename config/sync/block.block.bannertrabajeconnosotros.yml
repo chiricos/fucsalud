@@ -12,7 +12,7 @@ dependencies:
 id: bannertrabajeconnosotros
 theme: fucs
 region: slider_page
-weight: 0
+weight: 31
 provider: null
 plugin: 'block_content:b9bc6997-fca6-4c8d-aa60-8468a3d0a1c6'
 settings:

@@ -1,11 +1,11 @@
-uuid: baa3acf5-28a0-4ad0-9c12-3930b0c5234c
+uuid: 0deed76b-ebcf-4f0c-a5a9-324b971ae160
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.prueba_drawde
-id: node.prueba_drawde
+    - node.type.conoce_la_fucs
+id: node.conoce_la_fucs
 target_entity_type_id: node
-target_bundle: prueba_drawde
+target_bundle: conoce_la_fucs
 default_langcode: site_default
 language_alterable: false

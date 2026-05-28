@@ -12,7 +12,7 @@ dependencies:
 id: bannersst
 theme: fucs
 region: slider_page
-weight: 0
+weight: 29
 provider: null
 plugin: 'block_content:6c2deba4-ca4b-4787-a9b9-69aebcf06676'
 settings:

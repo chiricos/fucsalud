@@ -12,7 +12,7 @@ dependencies:
 id: encabezadoensi
 theme: fucs
 region: slider_page
-weight: 0
+weight: 11
 provider: null
 plugin: 'block_content:634a241a-fc73-408e-aecd-1f27d3dc31b8'
 settings:

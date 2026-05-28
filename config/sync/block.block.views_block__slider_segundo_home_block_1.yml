@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:slider_segundo_home-block_1'
 settings:
   id: 'views_block:slider_segundo_home-block_1'
-  label: ''
-  label_display: '0'
+  label: 'Educación continuada'
+  label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'Educación continuada'
   items_per_page: none
 visibility:
   request_path:

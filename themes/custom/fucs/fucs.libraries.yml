@@ -16,3 +16,8 @@ base:
     js/scripts.js: {}
   dependencies:
     - core/jquery
+
+new_fucs:
+  css:
+    theme:
+      css/new_fucs.css: {}

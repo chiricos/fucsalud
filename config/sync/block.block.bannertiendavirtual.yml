@@ -12,7 +12,7 @@ dependencies:
 id: bannertiendavirtual
 theme: fucs
 region: slider_page
-weight: 0
+weight: 30
 provider: null
 plugin: 'block_content:1ac80d6d-6e03-4907-91de-1246c60980c2'
 settings:

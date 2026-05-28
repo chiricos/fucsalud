@@ -2,6 +2,8 @@ uuid: 31d216be-74db-45a2-ae65-42fb8ae141c3
 langcode: es
 status: true
 dependencies:
+  config:
+    - webform.webform.contacto_home
   module:
     - system
     - webform
@@ -20,6 +22,8 @@ settings:
   provider: webform
   webform_id: contacto_home
   default_data: ''
+  redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path
