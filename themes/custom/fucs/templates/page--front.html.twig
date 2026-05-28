@@ -89,6 +89,30 @@
 	<!-- end pop up -->
 
 	<div class="varios">
+		<section class="search-section home-program-search" aria-label="{{ 'Buscador de programas'|t }}" aria-expanded="false">
+			<h2>{{ '¿Qué quieres estudiar?'|t }}</h2>
+			<div class="filters home-program-search__filters" role="group" aria-label="{{ 'Categorías del buscador'|t }}">
+				<button class="home-program-search__filter active" type="button" data-query="" aria-pressed="true">
+					<span>{{ 'Todo'|t }}</span>
+					<span class="home-program-search__chevron" aria-hidden="true"></span>
+				</button>
+				<button class="home-program-search__filter" type="button" data-query="pregrado" aria-pressed="false">{{ 'Carreras Universitarias'|t }}</button>
+				<button class="home-program-search__filter" type="button" data-query="posgrado" aria-pressed="false">{{ 'Posgrados'|t }}</button>
+				<button class="home-program-search__filter" type="button" data-query="especializacion" aria-pressed="false">{{ 'Especializaciones'|t }}</button>
+				<button class="home-program-search__filter" type="button" data-query="maestria" aria-pressed="false">{{ 'Maestrías'|t }}</button>
+				<button class="home-program-search__filter" type="button" data-query="doctorado" aria-pressed="false">{{ 'Doctorados'|t }}</button>
+				<button class="home-program-search__filter" type="button" data-query="posdoctorado" aria-pressed="false">{{ 'Posdoctorados'|t }}</button>
+				<button class="home-program-search__filter" type="button" data-query="educacion continuada" aria-pressed="false">{{ 'Educación Continua'|t }}</button>
+				<button class="home-program-search__filter" type="button" data-query="preuniversitario" aria-pressed="false">{{ 'Cursos Preuniversitarios'|t }}</button>
+			</div>
+			<form class="search-box home-program-search__form" action="{{ path('search.view_node_search') }}" method="get" role="search">
+				<label class="visually-hidden" for="home-program-search-input">{{ 'Buscar programas'|t }}</label>
+				<input class="home-program-search__input" type="search" name="keys" id="home-program-search-input" placeholder="{{ 'Ingresa palabras claves'|t }}" autocomplete="off">
+				<button class="search-btn home-program-search__submit" type="submit" aria-label="{{ 'Buscar'|t }}">
+					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+				</button>
+			</form>
+		</section>
 		{{ page.various }}
 	</div>
 
@@ -156,7 +180,6 @@
 		{{ page.second_footer }}
 	</div>
 </footer>
-
 
 
 
