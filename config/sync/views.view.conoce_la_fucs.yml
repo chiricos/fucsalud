@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_noticias_imagen
-    - image.style.large
     - node.type.calendario
   module:
     - image
@@ -79,7 +78,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: large
+            image_style: ''
             image_loading:
               attribute: lazy
           group_column: ''
@@ -181,7 +180,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -201,7 +199,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:

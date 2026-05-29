@@ -35,6 +35,7 @@ module:
   file_replace: 0
   filter: 0
   formblock: 0
+  fucs_floating_buttons: 0
   fucs_form: 0
   fucs_modal: 0
   fucs_payments: 0

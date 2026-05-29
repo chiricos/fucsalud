@@ -1,0 +1,30 @@
+uuid: 2d22e048-028d-4aeb-90b5-0e5e2f19d465
+langcode: es
+status: true
+dependencies:
+  module:
+    - fucs_floating_buttons
+  theme:
+    - fucs
+id: fucs_floating_buttons_block
+theme: fucs
+region: floating_buttons
+weight: 0
+provider: null
+plugin: fucs_floating_buttons_block
+settings:
+  id: fucs_floating_buttons_block
+  label: 'Botones flotantes'
+  label_display: '0'
+  provider: fucs_floating_buttons
+  configurations:
+    btn_inscripcion_url: /aspirantes/admisiones
+    btn_inscripcion_titulo: Inscripción
+    btn_inscripcion_activo: true
+    btn_whatsapp_url: 'https://wa.me/573013367384'
+    btn_whatsapp_titulo: WhatsApp
+    btn_whatsapp_activo: true
+    btn_soporte_url: /pqrs
+    btn_soporte_titulo: 'Soporte PQRS'
+    btn_soporte_activo: true
+visibility: {  }
