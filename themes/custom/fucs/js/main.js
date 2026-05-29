@@ -1,5 +1,10 @@
 (function ($) {
 	$(window).on('load', function () {
+		$('.conoce-fucs-slider').flexslider({
+			animation: "slide",
+			animationLoop: true,
+			controlNav: true
+		});
 
 		$('#videoFondo').on('click', function () {
       if (this.paused) {
@@ -8,7 +13,7 @@
         this.pause();
       }
     });
-		$('.flexslider').flexslider({
+		$('.flexslider').not('.conoce-fucs-slider').flexslider({
 			animation: "slide",
 			controlNav: true/*,
 			start: function (slider) {

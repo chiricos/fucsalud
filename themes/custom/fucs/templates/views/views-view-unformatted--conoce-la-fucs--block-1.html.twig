@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Two-up flexslider layout for Conoce la FUCS home block.
+ */
+#}
+
+{% set total_rows = rows|length %}
+
+{% if total_rows %}
+  <ul class="slides">
+    {% for row in rows %}
+      {% if loop.index0 is divisible by(2) %}
+        <li>
+          <div class="conoce-fucs-slider__group">
+      {% endif %}
+
+      {% set row_classes = [default_row_class ? 'views-row'] %}
+      <div{{ row.attributes.addClass(row_classes) }}>
+        {{- row.content -}}
+      </div>
+
+      {% if loop.index0 is odd or loop.last %}
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}
