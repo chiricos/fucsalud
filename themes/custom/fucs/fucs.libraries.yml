@@ -21,3 +21,8 @@ new_fucs:
   css:
     theme:
       css/new_fucs.css: {}
+
+floating-actions:
+  css:
+    theme:
+      css/floating-actions.css: {}

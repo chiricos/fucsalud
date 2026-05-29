@@ -1,0 +1,69 @@
+/* ============================================================
+   Elementos flotantes laterales (derecha)
+   ============================================================ */
+
+.fucs-floating-actions {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fucs-floating-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.fucs-floating-btn:hover {
+  transform: translateX(-5px);
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-decoration: none;
+}
+
+.fucs-floating-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+
+/* Inscripción — azul oscuro */
+.fucs-floating-btn--inscripcion {
+  background-color: #003366;
+}
+
+/* WhatsApp — verde WhatsApp */
+.fucs-floating-btn--whatsapp {
+  background-color: #25A244;
+}
+
+/* Soporte / PQRS — verde oliva */
+.fucs-floating-btn--soporte {
+  background-color: #8FB04A;
+}
+
+/* Responsive: achica un poco en móvil */
+@media (max-width: 768px) {
+  .fucs-floating-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .fucs-floating-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+}

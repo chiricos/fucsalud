@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^2.0",
         "dompdf/dompdf": "^3.0",
         "drupal/backup_migrate": "^5.0",
         "drupal/captcha": "^1.16",
@@ -91,7 +92,8 @@
             "drupal/core-vendor-hardening": true,
             "php-http/discovery": false,
             "phpstan/extension-installer": false,
-            "tbachert/spi": false
+            "tbachert/spi": false,
+            "cweagans/composer-patches": true
         }
     },
     "extra": {
@@ -133,7 +135,7 @@
             ],
             "post-create-project-cmd-message": [
                 "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you\u2019ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
                 "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
                 "<bg=blue;fg=white>                                                         </>",
                 "",
@@ -146,7 +148,13 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
-        }
+        },
+        "patches": {
+            "drupal/yoast_seo": {
+                "Fix dynamic property deprecation for PHP 8.2": "patches/yoast_seo-dynamic-property-php82.patch"
+            }
+        },
+        "composer-exit-on-patch-failure": true
     },
     "require-dev": {
         "drupal/core-dev": "^10",

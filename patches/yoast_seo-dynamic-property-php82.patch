@@ -1,0 +1,16 @@
+--- a/src/YoastSeoManager.php	2026-05-28 21:14:40.173465554 -0500
++++ b/src/YoastSeoManager.php	2026-05-28 21:11:55.162482401 -0500
+@@ -22,6 +22,13 @@
+   protected $moduleHandler;
+ 
+   /**
++   * Yoast SEO field manager service.
++   *
++   * @var mixed
++   */
++  protected $yoast_seo_field_manager;
++
++  /**
+    * Target elements for Javascript.
+    *
+    * @var array
