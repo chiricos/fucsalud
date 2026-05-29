@@ -1,0 +1,5 @@
+name: 'FUCS Botones Flotantes'
+type: module
+description: 'Bloque de botones flotantes laterales con URLs configurables desde el administrador.'
+core_version_requirement: ^10
+package: fucs

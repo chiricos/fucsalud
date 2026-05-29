@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Module file for fucs_floating_buttons.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function fucs_floating_buttons_theme($existing, $type, $theme, $path) {
+  return [
+    'fucs_floating_buttons' => [
+      'variables' => [
+        'config' => NULL,
+      ],
+      'template' => 'block--floating-buttons',
+    ],
+  ];
+}

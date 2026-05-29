@@ -60,6 +60,7 @@ regions:
   pregrado_contenido_1: "Pregrado contenido 1"
   pregrado_contenido_2: "Pregrado contenido 2"
   pregrado_contenido_3: "Pregrado contenido 3"
+  floating_buttons: "Botones flotantes"
 
 
 ckeditor5-stylesheets:
