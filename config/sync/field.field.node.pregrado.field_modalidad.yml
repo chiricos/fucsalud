@@ -10,7 +10,7 @@ field_name: field_modalidad
 entity_type: node
 bundle: pregrado
 label: modalidad
-description: 'Presencial - Vritual 2025-2'
+description: 'Presencial - Virtual 2026-2'
 required: true
 translatable: false
 default_value: {  }
