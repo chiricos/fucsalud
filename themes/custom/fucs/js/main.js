@@ -3,7 +3,9 @@
 		$('.conoce-fucs-slider').flexslider({
 			animation: "slide",
 			animationLoop: true,
-			controlNav: true
+			controlNav: true,
+			prevText: '',
+			nextText: ''
 		});
 
 		$('#videoFondo').on('click', function () {
