@@ -16,6 +16,7 @@
 		$widget.find('.floating-wpp-button img').each(function () {
 			this.style.setProperty('border', 'none', 'important');
 			this.style.setProperty('box-shadow', 'none', 'important');
+			this.style.setProperty('border-radius', '0', 'important');
 		});
 
 		$widget.find('.floating-wpp-button-image').each(function () {
