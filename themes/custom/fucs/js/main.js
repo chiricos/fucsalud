@@ -1,5 +1,53 @@
 (function ($) {
+	function stripWhatsAppWidgetStyles() {
+		var $widget = $('#AsisteClickWhatsAppWidget');
+		if (!$widget.length) {
+			return;
+		}
+
+		$widget.find('.floating-wpp-button').each(function () {
+			this.style.setProperty('background', 'transparent', 'important');
+			this.style.setProperty('background-color', 'transparent', 'important');
+			this.style.setProperty('border', 'none', 'important');
+			this.style.setProperty('border-radius', '0', 'important');
+			this.style.setProperty('box-shadow', 'none', 'important');
+		});
+
+		$widget.find('.floating-wpp-button img').each(function () {
+			this.style.setProperty('border', 'none', 'important');
+			this.style.setProperty('box-shadow', 'none', 'important');
+		});
+
+		$widget.find('.floating-wpp-button-image').each(function () {
+			this.style.setProperty('display', 'none', 'important');
+		});
+	}
+
+	function observeWhatsAppWidget() {
+		stripWhatsAppWidgetStyles();
+
+		if (!window.MutationObserver) {
+			return;
+		}
+
+		var target = document.getElementById('AsisteClickWhatsAppWidget') || document.body;
+		if (!target || target.hasAttribute('data-wpp-style-observer')) {
+			return;
+		}
+
+		target.setAttribute('data-wpp-style-observer', 'true');
+		new MutationObserver(function () {
+			stripWhatsAppWidgetStyles();
+		}).observe(target, {
+			attributes: true,
+			attributeFilter: ['style', 'class'],
+			childList: true,
+			subtree: true
+		});
+	}
+
 	$(window).on('load', function () {
+		observeWhatsAppWidget();
 
 		$('#videoFondo').on('click', function () {
       if (this.paused) {
@@ -24,6 +72,7 @@
 		});
 	});
 	$(document).ready(function() {
+		observeWhatsAppWidget();
 		$(".retroceder").click(function(){
 			window.history.back();
 		});
