@@ -69,18 +69,22 @@ class ImportFormTrabajo extends FormBase {
 		$utils = new Utils();
 
     foreach ($data as $row) {
+      if (!is_array($row) || empty(array_filter($row))) {
+        continue;
+      }
+
       $conteo++;
-			$row = $utils->fix_row_utf8($row);
-      $result = $connection->insert('certificado_trabajo')
+      $row = $utils->fix_row_utf8($row);
+      $connection->insert('certificado_trabajo')
         ->fields([
-          'Nombre_autores' => $row['nombre_autores'],
-          'Nombre_trabajo' => $row['nombre_trabajo'],
-          'Modalidad' => $row['modalidad'],
-          'Tipo' => $row['tipo'],
-          'Documento' => $row['documento'],
-          'Evento' => $row['evento'],
-          'Fecha' => $row['fecha'],
-          'codigo' => $row['codigo'],
+          'Nombre_autores' => $row['nombre_autores'] ?? NULL,
+          'Nombre_trabajo' => $row['nombre_trabajo'] ?? NULL,
+          'Modalidad' => $row['modalidad'] ?? NULL,
+          'Tipo' => $row['tipo'] ?? NULL,
+          'Documento' => $row['documento'] ?? NULL,
+          'Evento' => $row['evento'] ?? NULL,
+          'Fecha' => $row['fecha'] ?? NULL,
+          'codigo' => $row['codigo'] ?? NULL,
         ])->execute();
     }
 
@@ -92,9 +96,6 @@ class ImportFormTrabajo extends FormBase {
    *
    */
   public function readCSV($csvFile) {
-    // Detecta en que momento se termina cada fila del archivo CSV.
-    ini_set('auto_detect_line_endings', TRUE);
-
     // Variable que controla numero de filas.
     $row = 0;
     // Variable para identificar los encabezados de las filas.
@@ -109,8 +110,9 @@ class ImportFormTrabajo extends FormBase {
       $line_of_text[] = fgetcsv($file_handle, 1024, ';');
 
       if (!$header) {
-        // Guarda en la variable los encabezados de las filas del CSV.
-        $header = $line_of_text[$row];
+        foreach ($line_of_text[$row] as $key) {
+          $header[] = preg_replace('/^\xEF\xBB\xBF/', '', trim($key));
+        }
       }
       // Guarda los datos en un array con cadaencabezado correspondiente.
       else {
@@ -125,9 +127,6 @@ class ImportFormTrabajo extends FormBase {
     fclose($file_handle);
 
     return $datos;
-
-    // Cierra la lectura de fin de filas.
-    ini_set('auto_detect_line_endings', FALSE);
   }
 
 }
