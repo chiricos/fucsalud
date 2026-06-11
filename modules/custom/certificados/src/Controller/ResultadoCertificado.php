@@ -724,6 +724,12 @@ class ResultadoCertificado extends ControllerBase {
 	public function consulta_resultado_trabajo_pdf($id = null) {//certificados trabajos
 
 		$connection = \Drupal::database();
+		$image_dir = \Drupal::root() . '/modules/custom/certificados/css/images/';
+
+		$logo = $this->imageToDataUri($image_dir . 'logo.png');
+		$firma1 = $this->imageToDataUri($image_dir . 'firma1.png');
+		$firma2 = $this->imageToDataUri($image_dir . 'firma2.png');
+		$franja = $this->imageToDataUri($image_dir . 'franja.png');
 
 		if ($id <> null) {
 			$query = $connection->query("SELECT Nombre_autores, Nombre_trabajo, Evento, Modalidad, Tipo, Documento, Fecha, codigo, Id FROM {certificado_trabajo} cert WHERE Id = '".$id."'");
@@ -749,7 +755,7 @@ class ResultadoCertificado extends ControllerBase {
 														<col style="width: 528px">
 													</colgroup>
 												  <tr>
-												    <td colspan="4"><img src="https://fucsaludalterno.online//modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+                                                    <td colspan="4"><img src="' . $logo . '" class="imgLogo"></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -780,22 +786,22 @@ class ResultadoCertificado extends ControllerBase {
 												  </tr>
 												  <tr>
 														<td></td>
-												    <td><img src="https://fucsaludalterno.online//modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-												    <td><img src="https://fucsaludalterno.online//modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+                                                    <td><img src="' . $firma1 . '" class="imgFirma"></td>
+                                                    <td><img src="' . $firma2 . '" class="imgFirma"></td>
 														<td></td>
 												  </tr>
 													<tr>
 												    <td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												  </tr>
 												  <tr>
-												  	<td colspan="4"><img src="https://fucsaludalterno.online//modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+                                                 <td colspan="4"><img src="' . $franja . '" style="width: 100%"></td>
 												  </tr>
 												</table>
 											</body>';
 				}
 
 				$options = new Options();
-				$options->set('isRemoteEnabled', true); 
+				$options->set('isRemoteEnabled', false);
 				$dompdf = new Dompdf($options);
 				$dompdf->loadHtml($markup);
 				$dompdf->setPaper('letter', 'landscape');
@@ -1510,6 +1516,15 @@ class ResultadoCertificado extends ControllerBase {
 				font-size:10px
 			}
 		';
+	}
+
+	private function imageToDataUri($filePath) {
+		if (!file_exists($filePath)) {
+			return '';
+		}
+		$contents = file_get_contents($filePath);
+		$mimeType = mime_content_type($filePath);
+		return 'data:' . $mimeType . ';base64,' . base64_encode($contents);
 	}
 
 }
