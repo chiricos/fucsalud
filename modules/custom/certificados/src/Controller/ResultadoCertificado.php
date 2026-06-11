@@ -9,6 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ResultadoCertificado extends ControllerBase {
 
+	private $fontCache = [];
+
+	private $imageCache = [];
+
 	public function consulta_resultado($documento = null) {//certificados conferencista
 
 		$connection = \Drupal::database();
@@ -54,16 +58,17 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = $row->codigo;
 
-					$markup = '
+					$css = $this->getCssWithFonts('getCssStyle');
+					$markupTemplate = '
 											<body>
-												<style> ' . $this->getCssStyle() . '</style>
+												<style>' . $css . '</style>
 												<table style="table-layout: fixed; width: 1056px">
 													<colgroup>
 														<col style="width: 528px">
 														<col style="width: 528px">
 													</colgroup>
 												  <tr>
-												    <td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+												    <td colspan="4"><img src="IMAGE:logo.png"></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -91,37 +96,20 @@ class ResultadoCertificado extends ControllerBase {
 												  </tr>
 												  <tr>
 														<td></td>
-												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma1.png" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma2.png" class="imgFirma"></td>
 												  </tr>
 													<tr>
 												    <td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												  </tr>
 												  <tr>
-												  	<td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+												  	<td colspan="4"><img src="IMAGE:franja.png" style="width: 100%"></td>
 												  </tr>
 												</table>
 											</body>';
-
-					$options = new Options();
-					$options->set('isRemoteEnabled', true);
-					$dompdf = new Dompdf($options);
-					$dompdf->loadHtml($markup);
-					$dompdf->setPaper('letter', 'landscape');
-					$dompdf->render();
-					
-					// Captura el contenido del PDF
-					$pdfOutput = $dompdf->output();
-					
-					// Crea la respuesta HTTP adecuada
-					$response = new Response($pdfOutput);
-					$response->headers->set('Content-Type', 'application/pdf');
-					$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
-
-					return $response;
+					$markup = $this->makeMarkupWithImages($markupTemplate);
+					return $this->renderCertPdf($markup);
 				}
-
-
 			}
 
 			else {
@@ -216,16 +204,17 @@ class ResultadoCertificado extends ControllerBase {
 				$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 				$base_url = \Drupal::request()->getSchemeAndHttpHost();
 
-				$markup = '
+				$css = $this->getCssWithFonts('getCssTrabajo');
+				$markupTemplate = '
 										<body>
-										<style>' . $this->getCssTrabajo() .'</style>
+										<style>' . $css .'</style>
 											<table style="table-layout: fixed; width: 1056px">
 												<colgroup>
 													<col style="width: 528px">
 													<col style="width: 528px">
 												</colgroup>
 											  <tr>
-											    <td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+											    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 											  </tr>
 											  <tr>
 											    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -256,39 +245,25 @@ class ResultadoCertificado extends ControllerBase {
 											  </tr>
 											  <tr>
 											  	<td></td>
-											    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-											    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+											    <td><img src="IMAGE:firma1.png" class="imgFirma"></td>
+											    <td><img src="IMAGE:firma2.png" class="imgFirma"></td>
 											    <td></td>
 											  </tr>
 												<tr>
 													<td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												</tr>
 											  <tr>
-											  	<td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+											  	<td colspan="4"><img src="IMAGE:franja.png" style="width: 100%"></td>
 											  </tr>
 											</table>
 										</body>';
 
-					$options = new Options();
-					$options->set('isRemoteEnabled', true); 
-					$dompdf = new Dompdf($options);
-					$dompdf->loadHtml($markup);
-					$dompdf->setPaper('letter', 'landscape');
-					$dompdf->render();
-					
-					// Captura el contenido del PDF
-					$pdfOutput = $dompdf->output();
-					
-					// Crea la respuesta HTTP adecuada
-					$response = new Response($pdfOutput);
-					$response->headers->set('Content-Type', 'application/pdf');
-					$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
-					
-					return $response;
-				}
+				$markup = $this->makeMarkupWithImages($markupTemplate);
+				return $this->renderCertPdf($markup);
+			}
 
-				$contenido = array();
-				$contenido['linea1'] = array(
+			$contenido = array();
+			$contenido['linea1'] = array(
 					'#markup' => '<strong> No hay resultados!!! </strong><br><br>',
 				);
 
@@ -314,12 +289,19 @@ class ResultadoCertificado extends ControllerBase {
 
 	public function consulta_resultado_eventos_conferencista_pdf($id = null) {
 		$connection = \Drupal::database();
+		$contenido = array();
 
-		if ($id <> null) {
-			$query = $connection->query("SELECT Nombre, Tipo, Documento, Ponencia, Evento, Fecha, codigo, Id FROM {certificado_eventos_conferencista} cert WHERE Id = '".$id."'");
-			$certificate = [];
-			if ($query) {
-				foreach ($query as $row) {
+		if (!($id <> null)) {
+			$contenido['linea1'] = array(
+				'#markup' => '<strong> No hay resultados!!! </strong><br><br>',
+			);
+			return $contenido;
+		}
+
+		$query = $connection->query("SELECT Nombre, Tipo, Documento, Ponencia, Evento, Fecha, codigo, Id FROM {certificado_eventos_conferencista} cert WHERE Id = '".$id."'");
+		$certificate = [];
+		if ($query) {
+			foreach ($query as $row) {
 				$nombre = isset($row->Nombre) ? $row->Nombre : '';
 				$tipo = isset($row->Tipo) ? $row->Tipo : '';
 				$documento = isset($row->Documento) ? $row->Documento : '';
@@ -329,16 +311,17 @@ class ResultadoCertificado extends ControllerBase {
 				$id = isset($row->Id) ? $row->Id : $row['Id'];
 				$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 
-				$markup = '
+				$css = $this->getCssWithFonts('getCssTrabajo');
+				$markupTemplate = '
 										<body>
-										<style>' . $this->getCssTrabajo() .'</style>
+										<style>' . $css .'</style>
 											<table style="table-layout: fixed; width: 1056px">
 												<colgroup>
 													<col style="width: 528px">
 													<col style="width: 528px">
 												</colgroup>
 											  <tr>
-											    <td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+											    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 											  </tr>
 											  <tr>
 											    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -372,49 +355,29 @@ class ResultadoCertificado extends ControllerBase {
 											  </tr>
 											  <tr>
 											  	<td></td>
-											    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-											    <td><img src="'.DRUPAL_ROOT .'/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+											    <td><img src="IMAGE:firma1.png" class="imgFirma"></td>
+											    <td><img src="IMAGE:firma2.png" class="imgFirma"></td>
 											    <td></td>
 											  </tr>
 												<tr>
 													<td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												</tr>
 											  <tr>
-											  	<td colspan="4"><img src="'.DRUPAL_ROOT.'/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+											  	<td colspan="4"><img src="IMAGE:franja.png" style="width: 100%"></td>
 											  </tr>
 											</table>
 										</body>';
 
-					$dompdf = new Dompdf();
-					$dompdf->loadHtml($markup);
-
-					// (Optional) Setup the paper size and orientation
-					$dompdf->setPaper('letter', 'landscape');
-
-					// Render the HTML as PDF
-					$dompdf->render();
-				}
-
-				// Output the generated PDF to Browser
-				$dompdf->stream("certificado", array("Attachment" => 0));
-
-			}
-
-			else {
-				$contenido = array();
-				$contenido['linea1'] = array(
-					'#markup' => '<strong> No hay resultados!!! </strong><br><br>',
-				);
+				$markup = $this->makeMarkupWithImages($markupTemplate);
+				$response = $this->renderCertPdf($markup);
+				$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
+				return $response;
 			}
 		}
 
-		else {
-			$contenido = array();
-			$contenido['linea1'] = array(
-				'#markup' => '<strong> No hay resultados!!! </strong><br><br>',
-			);
-		}
-
+		$contenido['linea1'] = array(
+			'#markup' => '<strong> No hay resultados!!! </strong><br><br>',
+		);
 		return $contenido;
 	}
 
@@ -463,16 +426,17 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 
-					$markup = '
+					$css = $this->getCssWithFonts('getCssTrabajo');
+					$markupTemplate = '
 											<body>
-											<style>' . $this->getCssTrabajo() .'</style>
+											<style>' . $css .'</style>
 												<table style="table-layout: fixed; width: 1056px">
 													<colgroup>
 														<col style="width: 528px">
 														<col style="width: 528px">
 													</colgroup>
 												  <tr>
-												    <td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+												    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -500,39 +464,22 @@ class ResultadoCertificado extends ControllerBase {
 												  </tr>
 												  <tr>
 														<td></td>
-												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma1.png" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma2.png" class="imgFirma"></td>
 														<td></td>
 												  </tr>
 													<tr>
 												    <td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												  </tr>
 												  <tr>
-												  	<td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+												  	<td colspan="4"><img src="IMAGE:franja.png" style="width: 100%"></td>
 												  </tr>
 												</table>
 											</body>';
 
-				
+					$markup = $this->makeMarkupWithImages($markupTemplate);
+					return $this->renderCertPdf($markup);
 				}
-
-				$options = new Options();
-				$options->set('isRemoteEnabled', true); 
-				$dompdf = new Dompdf($options);
-				$dompdf->loadHtml($markup);
-				$dompdf->setPaper('letter', 'landscape');
-				$dompdf->render();
-				
-				// Captura el contenido del PDF
-				$pdfOutput = $dompdf->output();
-				
-				// Crea la respuesta HTTP adecuada
-				$response = new Response($pdfOutput);
-				$response->headers->set('Content-Type', 'application/pdf');
-				$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
-				
-				return $response;
-
 			}
 
 			else {
@@ -601,17 +548,17 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 
-					$markup = '
+					$css = $this->getCssWithFonts('getCssTrabajo') . $this->getCssWithFonts('getCssGanador');
+					$markupTemplate = '
 											<body>
-											<style>' . $this->getCssTrabajo() .'</style>
-											  <style>' . $this->getCssGanador() .'</style>
-												<table style="table-layout: fixed; width: 1056px">
+											<style>' . $css .'</style>
+											  <table style="table-layout: fixed; width: 1056px">
 													<colgroup>
 														<col style="width: 528px">
 														<col style="width: 528px">
 													</colgroup>
 												  <tr>
-												    <td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/logo.png" class="imgLogo"></td>
+												    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -642,37 +589,22 @@ class ResultadoCertificado extends ControllerBase {
 												  </tr>
 												  <tr>
 														<td></td>
-												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma1.png" class="imgFirma"></td>
-												    <td><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/firma2.png" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma1.png" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma2.png" class="imgFirma"></td>
 														<td></td>
 												  </tr>
 													<tr>
 												    <td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												  </tr>
 												  <tr>
-												  	<td colspan="4"><img src="https://fucsaludalterno.online/modules/custom/certificados/css/images/franja.png" style="width: 100%"></td>
+												  	<td colspan="4"><img src="IMAGE:franja.png" style="width: 100%"></td>
 												  </tr>
 												</table>
 											</body>';
 
+					$markup = $this->makeMarkupWithImages($markupTemplate);
+					return $this->renderCertPdf($markup);
 				}
-				$options = new Options();
-				$options->set('isRemoteEnabled', true); 
-				$dompdf = new Dompdf($options);
-				$dompdf->loadHtml($markup);
-				$dompdf->setPaper('letter', 'landscape');
-				$dompdf->render();
-				
-				// Captura el contenido del PDF
-				$pdfOutput = $dompdf->output();
-				
-				// Crea la respuesta HTTP adecuada
-				$response = new Response($pdfOutput);
-				$response->headers->set('Content-Type', 'application/pdf');
-				$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
-				
-				return $response;
-
 			}
 
 			else {
@@ -724,12 +656,6 @@ class ResultadoCertificado extends ControllerBase {
 	public function consulta_resultado_trabajo_pdf($id = null) {//certificados trabajos
 
 		$connection = \Drupal::database();
-		$image_dir = \Drupal::root() . '/modules/custom/certificados/css/images/';
-
-		$logo = $this->imageToDataUri($image_dir . 'logo.png');
-		$firma1 = $this->imageToDataUri($image_dir . 'firma1.png');
-		$firma2 = $this->imageToDataUri($image_dir . 'firma2.png');
-		$franja = $this->imageToDataUri($image_dir . 'franja.png');
 
 		if ($id <> null) {
 			$query = $connection->query("SELECT Nombre_autores, Nombre_trabajo, Evento, Modalidad, Tipo, Documento, Fecha, codigo, Id FROM {certificado_trabajo} cert WHERE Id = '".$id."'");
@@ -746,16 +672,17 @@ class ResultadoCertificado extends ControllerBase {
 					$id = $row->Id;
 					$codigo = isset($row->codigo) ? $row->codigo : $row['codigo'];
 
-					$markup = '
+					$css = $this->getCssWithFonts('getCssTrabajo');
+					$markupTemplate = '
 											<body>
-												<style>' . $this->getCssTrabajo() .'</style>
+												<style>' . $css .'</style>
 												<table style="table-layout: fixed; width: 1056px">
 													<colgroup>
 														<col style="width: 528px">
 														<col style="width: 528px">
 													</colgroup>
 												  <tr>
-                                                    <td colspan="4"><img src="' . $logo . '" class="imgLogo"></td>
+												    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
@@ -786,36 +713,21 @@ class ResultadoCertificado extends ControllerBase {
 												  </tr>
 												  <tr>
 														<td></td>
-                                                    <td><img src="' . $firma1 . '" class="imgFirma"></td>
-                                                    <td><img src="' . $firma2 . '" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma1.png" class="imgFirma"></td>
+												    <td><img src="IMAGE:firma2.png" class="imgFirma"></td>
 														<td></td>
 												  </tr>
 													<tr>
 												    <td colspan="4"><p class="acuerdo"> AR' . $id . '-' . $codigo .'</p></td>
 												  </tr>
 												  <tr>
-                                                 <td colspan="4"><img src="' . $franja . '" style="width: 100%"></td>
+												  	<td colspan="4"><img src="IMAGE:franja.png" style="width: 100%"></td>
 												  </tr>
 												</table>
 											</body>';
+					$markup = $this->makeMarkupWithImages($markupTemplate);
+					return $this->renderCertPdf($markup);
 				}
-
-				$options = new Options();
-				$options->set('isRemoteEnabled', false);
-				$dompdf = new Dompdf($options);
-				$dompdf->loadHtml($markup);
-				$dompdf->setPaper('letter', 'landscape');
-				$dompdf->render();
-				
-				// Captura el contenido del PDF
-				$pdfOutput = $dompdf->output();
-				
-				// Crea la respuesta HTTP adecuada
-				$response = new Response($pdfOutput);
-				$response->headers->set('Content-Type', 'application/pdf');
-				$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
-				
-				return $response;
 			}
 
 			else {
@@ -1518,13 +1430,125 @@ class ResultadoCertificado extends ControllerBase {
 		';
 	}
 
-	private function imageToDataUri($filePath) {
+	/**
+	 * Helper to render PDF from markup.
+	 */
+	private function renderCertPdf($markup) {
+		$options = new Options();
+		$options->set('isRemoteEnabled', false);
+		$dompdf = new Dompdf($options);
+		$dompdf->loadHtml($markup);
+		$dompdf->setPaper('letter', 'landscape');
+		$dompdf->render();
+
+		$pdfOutput = $dompdf->output();
+
+		$response = new Response($pdfOutput);
+		$response->headers->set('Content-Type', 'application/pdf');
+		$response->headers->set('Content-Disposition', 'inline; filename="certificado.pdf"');
+
+		return $response;
+	}
+
+	/**
+	 * Helper to get CSS with embedded base64 fonts.
+	 */
+	private function getCssWithFonts($cssMethod) {
+		$fonts = $this->getEmbeddedFonts();
+		$rawCss = $this->$cssMethod();
+		$root = \Drupal::root();
+		$imageDir = $root . '/modules/custom/certificados/css/images/';
+
+		$replacements = [];
+		foreach ($fonts as $name => $fontData) {
+			foreach ($fontData as $format => $dataUri) {
+				$oldFont = 'url("' . $root . '/modules/custom/certificados/css/fonts/' . $name . '")';
+				$replacements[$oldFont] = $dataUri;
+				$oldFix = 'url("' . $root . '/modules/custom/certificados/css/fonts/' . $name . '?#iefix")';
+				$replacements[$oldFix] = $dataUri;
+			}
+		}
+		$fondoPath = $imageDir . 'fondoNombre.png';
+		if (file_exists($fondoPath)) {
+			$fondoB64 = 'data:' . mime_content_type($fondoPath) . ';base64,' . base64_encode(file_get_contents($fondoPath));
+			$replacements['url(' . $imageDir . 'fondoNombre.png)'] = $fondoB64;
+		}
+
+		return str_replace(array_keys($replacements), array_values($replacements), $rawCss);
+	}
+
+	/**
+	 * Load and cache all fonts as base64 data URIs.
+	 */
+	private function getEmbeddedFonts() {
+		if (!empty($this->fontCache)) {
+			return $this->fontCache;
+		}
+
+		$fontDir = \Drupal::root() . '/modules/custom/certificados/css/fonts/';
+		$fonts = [
+			'Coronet' => ['eot', 'woff2', 'woff', 'ttf', 'svg'],
+			'ErasITC-Demi' => ['eot', 'woff2', 'woff', 'ttf', 'svg'],
+			'ErasITC-Medium' => ['eot', 'woff2', 'woff', 'ttf', 'svg'],
+			'ErasITC-Bold' => ['eot', 'woff2', 'woff', 'ttf', 'svg'],
+		];
+
+		foreach ($fonts as $name => $formats) {
+			$this->fontCache[$name] = [];
+			foreach ($formats as $fmt) {
+				$file = $fontDir . $name . '.' . $fmt;
+				if (file_exists($file)) {
+					$contents = file_get_contents($file);
+					if ($fmt === 'svg') {
+						$mimeType = 'image/svg+xml';
+					} elseif ($fmt === 'woff2') {
+						$mimeType = 'font/woff2';
+					} elseif ($fmt === 'woff') {
+						$mimeType = 'font/woff';
+					} elseif ($fmt === 'ttf') {
+						$mimeType = 'font/ttf';
+					} else {
+						$mimeType = 'application/vnd.ms-fontobject';
+					}
+					$this->fontCache[$name][$fmt] = 'data:' . $mimeType . ';base64,' . base64_encode($contents);
+				}
+			}
+		}
+
+		return $this->fontCache;
+	}
+
+	/**
+	 * Replace IMAGE: placeholders in markup with base64 data URIs.
+	 */
+	private function makeMarkupWithImages($markup) {
+		$imageDir = \Drupal::root() . '/modules/custom/certificados/css/images/';
+		$imageFiles = ['logo.png', 'firma1.png', 'firma2.png', 'franja.png'];
+		$imageNames = ['logo', 'firma1', 'firma2', 'franja'];
+		$keys = [];
+		$values = [];
+		foreach ($imageFiles as $i => $f) {
+			$name = $imageNames[$i];
+			$dataUri = $this->base64Image($imageDir . $f);
+			$keys[] = '"IMAGE:' . $f . '"';
+			$values[] = '"' . $dataUri . '"';
+		}
+		return str_replace($keys, $values, $markup);
+	}
+
+	/**
+	 * Convert an image file to base64 data URI with caching.
+	 */
+	private function base64Image($filePath) {
 		if (!file_exists($filePath)) {
 			return '';
 		}
-		$contents = file_get_contents($filePath);
-		$mimeType = mime_content_type($filePath);
-		return 'data:' . $mimeType . ';base64,' . base64_encode($contents);
+		if (!isset($this->imageCache[$filePath])) {
+			$contents = file_get_contents($filePath);
+			$mimeType = mime_content_type($filePath);
+			$this->imageCache[$filePath] = 'data:' . $mimeType . ';base64,' . base64_encode($contents);
+		}
+		return $this->imageCache[$filePath];
 	}
 
 }
