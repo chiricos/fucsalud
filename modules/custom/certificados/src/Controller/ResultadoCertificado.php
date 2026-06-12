@@ -71,7 +71,7 @@ class ResultadoCertificado extends ControllerBase {
 												    <td colspan="4"><img src="IMAGE:logo.png"></td>
 												  </tr>
 												  <tr>
-												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
+												    <td colspan="4"><h2 class="titulo">UNIVERSIDAD FUCS</h2></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><p class="certifica">Certifica que:</p></td>
@@ -217,7 +217,7 @@ class ResultadoCertificado extends ControllerBase {
 											    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 											  </tr>
 											  <tr>
-											    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
+											    <td colspan="4"><h2 class="titulo">UNIVERSIDAD FUCS</h2></td>
 											  </tr>
 											  <tr>
 											    <td colspan="4"><p class="certifica">Certifica que:</p></td>
@@ -324,7 +324,7 @@ class ResultadoCertificado extends ControllerBase {
 											    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 											  </tr>
 											  <tr>
-											    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
+											    <td colspan="4"><h2 class="titulo">UNIVERSIDAD FUCS</h2></td>
 											  </tr>
 											  <tr>
 											    <td colspan="4"><p class="certifica">Certifica que:</p></td>
@@ -439,7 +439,7 @@ class ResultadoCertificado extends ControllerBase {
 												    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
-												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
+												    <td colspan="4"><h2 class="titulo">UNIVERSIDAD FUCS</h2></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><p class="certifica">Certifica que:</p></td>
@@ -561,7 +561,7 @@ class ResultadoCertificado extends ControllerBase {
 												    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
-												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
+												    <td colspan="4"><h2 class="titulo">UNIVERSIDAD FUCS</h2></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><p class="certifica">Certifica que el trabajo titulado:</p></td>
@@ -685,7 +685,7 @@ class ResultadoCertificado extends ControllerBase {
 												    <td colspan="4"><img src="IMAGE:logo.png" class="imgLogo"></td>
 												  </tr>
 												  <tr>
-												    <td colspan="4"><h2 class="titulo">FUNDACIÓN UNIVERSITARIA DE CIENCIAS DE LA SALUD - FUCS</h2></td>
+												    <td colspan="4"><h2 class="titulo">UNIVERSIDAD FUCS</h2></td>
 												  </tr>
 												  <tr>
 												    <td colspan="4"><p class="certifica">Certifica que el trabajo titulado:</p></td>
