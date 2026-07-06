@@ -110,8 +110,12 @@ class ImportFormEventosConferencista extends FormBase {
 		while (!feof($file_handle) ) {
 			$line_of_text[] = fgetcsv($file_handle, 1024, ';');
 
-			if(!$header)
-				$header = $line_of_text[$row]; //Guarda en la variable los encabezados de las filas del CSV
+			if(!$header) {
+				$header = $line_of_text[$row];
+				if (isset($header[0])) {
+					$header[0] = preg_replace('/^\xEF\xBB\xBF/', '', $header[0]);
+				}
+			}
 			else
 				$datos[] = array_combine($header, $line_of_text[$row]); //Guarda los datos en un array con cadaencabezado correspondiente
 
